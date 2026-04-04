@@ -49,6 +49,10 @@
     print-color-adjust: exact;
   }
 
+  .rival-header {
+    display: none !important;
+  }
+
   .rival-sidebar {
     display: none !important;
   }
@@ -59,7 +63,7 @@
   }
 
   .rival-content {
-    padding: 3mm 0 0;
+    padding: 0;
   }
 
   .ability-card,
@@ -70,7 +74,7 @@
   }
 
   .rival-group {
-    margin: 0 0 3mm;
+    margin: 0;
     page-break-inside: auto;
     break-inside: auto;
   }
@@ -96,7 +100,7 @@
     max-width: 63.5mm;
     height: 88mm;
     margin: 0;
-    padding: 3mm;
+    padding: 2mm;
     box-sizing: border-box;
     border: 0.4mm solid #333 !important;
     border-radius: 0;
@@ -110,8 +114,8 @@
 
   .rival-card-top {
     align-items: flex-start;
-    gap: 2mm;
-    margin-bottom: 2mm;
+    gap: 1.5mm;
+    margin-bottom: 1.5mm;
   }
 
   .rival-card-top > div:first-child {
@@ -120,29 +124,31 @@
   }
 
   .rival-card h4 {
-    font-size: 8.5pt;
-    line-height: 1.15;
+    font-size: 17pt;
+    line-height: 1.05;
     margin-bottom: 0;
+    overflow-wrap: anywhere;
   }
 
   .rival-card-id {
-    font-size: 6.5pt;
+    font-size: 13pt;
     letter-spacing: 0.8px;
-    margin-bottom: 1mm;
+    margin-bottom: 0.6mm;
   }
 
   .rival-card-value {
     min-width: 7mm;
-    padding: 1mm 1.6mm;
+    padding: 0.8mm 1.3mm;
     border: 0.3mm solid #8b7355;
     background: #e8e0cc !important;
-    font-size: 8pt;
+    font-size: 16pt;
   }
 
   .rival-card .rules {
-    font-size: 7.2pt;
-    line-height: 1.3;
+    font-size: 14.4pt;
+    line-height: 1.15;
     margin-top: 0;
+    overflow-wrap: anywhere;
   }
 
   .icon-token {
