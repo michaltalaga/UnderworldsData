@@ -22,3 +22,14 @@ export interface RivalCard {
 export interface RivalDeck extends RivalDeckMeta {
   cards: RivalCard[];
 }
+
+export interface RivalCardTranslation {
+  name?: string;
+  text?: string | null;
+}
+
+export interface RivalDeckTranslation {
+  name?: string;
+  plot?: string | null;
+  cards: RivalCardTranslation[];
+}

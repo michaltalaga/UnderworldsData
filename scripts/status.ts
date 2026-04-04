@@ -67,15 +67,25 @@ function main() {
       const deckDir = join(RIVALS_DIR, deck.slug);
       return !(existsSync(deckDir) && statSync(deckDir).isDirectory() && existsSync(join(deckDir, 'deck.json')));
     });
+    const missingRivalTranslations = rivalIndex.filter((deck) => {
+      const deckDir = join(RIVALS_DIR, deck.slug);
+      return !(existsSync(deckDir) && statSync(deckDir).isDirectory() && existsSync(join(deckDir, 'deck.pl.json')));
+    });
 
     console.log(`\n  Rival Deck Status Report`);
     console.log(`  =======================\n`);
     console.log(`  Total rival decks: ${rivalIndex.length}`);
     console.log(`  Synced decks:      ${rivalIndex.length - missingRivalDecks.length}/${rivalIndex.length}`);
+    console.log(`  Translated (PL):   ${rivalIndex.length - missingRivalTranslations.length}/${rivalIndex.length}`);
 
     if (missingRivalDecks.length > 0) {
       console.log(`\n  Missing rival decks (run: npm run rivals:sync):`);
       missingRivalDecks.forEach((deck) => console.log(`    - ${deck.name}`));
+    }
+
+    if (missingRivalTranslations.length > 0) {
+      console.log(`\n  Missing rival translations (run: npm run rivals:translate):`);
+      missingRivalTranslations.forEach((deck) => console.log(`    - ${deck.name}`));
     }
   }
 

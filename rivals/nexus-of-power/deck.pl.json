@@ -1,0 +1,134 @@
+{
+  "name": "Nexus of Power – talia Rivals",
+  "plot": "Podczas korzystania z tej talii Rivals:\n\nPrzyjazne modele są zachłanne, gdy znajdują się w odległości 1 heksu od żetonu skarbu.\n\nBroń do walki wręcz o Zasięgu 1 zachłannych przyjaznych modeli (z wyjątkiem Ulepszeń) ma +1 Zasięg, gdy trzymają żeton skarbu.\n\nPo tym, jak numerowana strona żetonów cech zostanie odkryta podczas sekwencji Umieszczania Żetonów Skarbu, twój przeciwnik może odwrócić do dwóch żetonów skarbu. Jeśli obaj gracze posiadają tę kartę Fabuły, to zaczynając od gracza, który ostatni umieścił żeton skarbu, obaj gracze na zmianę odwracają żeton lub pasują. Gracz musi spasować, jeśli odwrócił już 2 żetony skarbu. Sekwencja kończy się, gdy obaj gracze spasują po sobie.",
+  "cards": [
+    {
+      "name": "Zagarnięto",
+      "text": "Zdobądź tę kartę natychmiast po udanym ataku wręcz przyjaznego modelu, jeśli cel znajdował się w odległości 1 heksu od żetonu skarbu."
+    },
+    {
+      "name": "Wypad",
+      "text": "Zdobądź tę kartę natychmiast na końcu kroku Akcji przeciwnika, jeśli 2 lub więcej przyjaznych zachłannych modeli znajduje się na neutralnym i/lub wrogim terytorium."
+    },
+    {
+      "name": "Przejęto",
+      "text": "Zdobądź tę kartę natychmiast na końcu kroku Akcji przeciwnika, jeśli 3 lub więcej przyjaznych modeli jest zachłannych."
+    },
+    {
+      "name": "Równy z Równym",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku zachłannego przyjaznego modelu, który był skierowany przeciwko wrogiemu modelowi o wartości cechy Nagrody wynoszącej 2 lub więcej, znajdującemu się w odległości 1 heksu od żetonu skarbu. Jeśli jesteś underdogiem, zdobądź tę kartę, jeśli cel miał wartość cechy Nagrody wynoszącą 1 lub więcej."
+    },
+    {
+      "name": "Wszystko Szło Zgodnie z Planem",
+      "text": "Zdobądź tę kartę natychmiast po twoim kroku Akcji, jeśli wrogi model, który trzymał żeton skarbu w momencie wybrania go jako celu ataku przyjaznego modelu, nie trzyma już tego żetonu skarbu, a ty trzymasz ten żeton skarbu."
+    },
+    {
+      "name": "Wyrachowane Uderzenie",
+      "text": "Zdobądź tę kartę natychmiast po wykonaniu rzutu na Atak za zachłannego przyjaznego modelu, jeśli którykolwiek z wyników był {icon:crit}."
+    },
+    {
+      "name": "Zuchwałość",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli zachłanny przyjazny model wykonał udany Atak w poprzedniej fazie walki, będąc na wrogim terytorium."
+    },
+    {
+      "name": "Zaciśnij Imadło",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 3 różne zachłanne przyjazne modele Atakowały w poprzedniej fazie walki."
+    },
+    {
+      "name": "Powolny Marsz",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli twoja drużyna trzyma żetony skarbu zarówno na terytorium neutralnym, jak i wrogim."
+    },
+    {
+      "name": "Dominacja",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 3 lub więcej przyjaznych modeli znajduje się w odległości 1 heksu od różnych żetonów skarbu."
+    },
+    {
+      "name": "Samotne Wilki",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 2 lub więcej przyjaznych modeli znajduje się w odległości 1 heksu od tego samego żetonu skarbu i żaden z tych modeli nie jest w sąsiedztwie innego modelu."
+    },
+    {
+      "name": "Ledwo Zipią",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 2 lub więcej przyjaznych modeli trzyma żetony skarbu, a którykolwiek z tych modeli jest ranny."
+    },
+    {
+      "name": "Grabież",
+      "text": "Wybierz przyjazny model. Odsuń ten model o 1 heks. To przesunięcie musi zakończyć się w odległości 1 heksu od żetonu skarbu."
+    },
+    {
+      "name": "Rusz się przy Okazji",
+      "text": "Zagraj tę kartę natychmiast po tym, jak przyjazny model Ruszył się. Wybierz inny przyjazny model bez żetonów Ruchu ani Szarży. Ten model Rusza się i musi zakończyć ten Ruch w odległości 1 heksu od żetonu skarbu."
+    },
+    {
+      "name": "Zorganizowane Działania",
+      "text": "Wybierz 2 przyjazne modele trzymające żetony skarbu. Usuń te modele z pola bitwy, a następnie umieść każdy z nich na żetonie skarbu, z którego usunięto drugi model."
+    },
+    {
+      "name": "Bunt",
+      "text": "Zagraj tę kartę natychmiast po wyborze broni w ramach Ataku za przyjazny model znajdujący się w odległości 1 heksu od żetonu skarbu. Ta broń ma +1 kość Ataku na czas tego Ataku."
+    },
+    {
+      "name": "W Głąb Puszczy",
+      "text": "Wybierz przyjazny model w odległości 1 heksu od żetonu skarbu, który znajduje się na neutralnym lub wrogim terytorium. Daj temu modelowi żeton Warty."
+    },
+    {
+      "name": "Odkopany Skarb",
+      "text": "Wybierz żeton zasłony, na którym nie stoi żaden model. Odwróć ten żeton zasłony."
+    },
+    {
+      "name": "Terytorialne Powitanie",
+      "text": "Wybierz nienaruszonego wrogiego modelu w odległości 1 heksu od żetonu skarbu. Ataki wręcz skierowane przeciwko temu wrogiemu modelowi w następnej turze mają Cleave."
+    },
+    {
+      "name": "Trzymać Linię!",
+      "text": "Modele nie mogą być odpychane. Ten efekt trwa do końca następnego kroku Akcji."
+    },
+    {
+      "name": "Okop się",
+      "text": "Zagraj tę kartę natychmiast po tym, jak przyjazny model w odległości 1 heksu od żetonu skarbu zostanie wybrany jako cel Ataku. Możesz przerzucić 1 kość Obrony w rzucie na Obronę za ten Atak."
+    },
+    {
+      "name": "Wyższe Tereny",
+      "text": "Zagraj tę kartę natychmiast po wyborze broni w ramach Ataku za przyjazny model znajdujący się w odległości 1 heksu od żetonu skarbu. Ta broń ma Grapple i Brutal na czas tego Ataku."
+    },
+    {
+      "name": "Przebiegły Poszukiwacz",
+      "text": "Ten model jest zachłanny, gdy znajduje się w odległości 1 heksu od żetonu zasłony."
+    },
+    {
+      "name": "Ostrożne Nastawienie",
+      "text": "Broń o Zasięgu 1 tego modelu ma +2 Zasięg, gdy jest zachłanny. Gdy cel Ataku tego modelu znajduje się w odległości 3 lub więcej heksów od tego modelu, broń do walki wręcz o Zasięgu 1 tego modelu ma maksymalną wartość cechy Obrażeń równą 2. Natychmiast po tym, jak ten model wykona udany Atak, jeśli cel znajdował się w odległości 3 lub więcej heksów od tego modelu, odrzuć tę kartę."
+    },
+    {
+      "name": "Lustrzana Tarcza",
+      "text": "Ataki dystansowe skierowane na ten model mają -1 kość Ataku."
+    },
+    {
+      "name": "Napędzany Bólem",
+      "text": "Insensate: Natychmiast po tym, jak ten model zostanie odparty, możesz uleczyć ten model."
+    },
+    {
+      "name": "Nienaruszalny",
+      "text": "Ten model nie może być Flanked ani Surrounded, gdy trzyma żeton skarbu."
+    },
+    {
+      "name": "Oportunista",
+      "text": "Unearth: Natychmiast po tym, jak wrogi model Szarżował, jeśli ten model znajduje się w odległości 1 heksu od żetonu zasłony, odwróć ten żeton zasłony."
+    },
+    {
+      "name": "Nadmierny Zasięg",
+      "text": "Gdy ten model znajduje się w odległości 1 heksu od żetonu skarbu, jego broń dystansowa ma +2 Zasięg. Natychmiast odrzuć to Ulepszenie po tym, jak ten model wykona udany Atak dystansowy, będąc w odległości 1 heksu od żetonu skarbu."
+    },
+    {
+      "name": "Zawzięty Obrońca",
+      "text": "Broń do walki wręcz tego modelu ma Grievous, gdy znajduje się w odległości 1 heksu od żetonu skarbu i nie posiada żetonów Szarży."
+    },
+    {
+      "name": "Te Szanse Mi Odpowiadają",
+      "text": "Ten model ma +1 do Obrony (maksymalnie 2), gdy trzyma żeton skarbu z nieparzystym numerem."
+    },
+    {
+      "name": "Starmaw",
+      "text": "Akcja Ataku dystansowego\n{icon:hex} 4 {icon:hammer} 2 {icon:damage} 1\nStagger\nTa broń ma +1 kość Ataku, gdy atakujący znajduje się w odległości 1 heksu od żetonu skarbu."
+    }
+  ]
+}

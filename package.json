@@ -11,7 +11,8 @@
     "translate": "tsx scripts/translate.ts",
     "download": "tsx scripts/download.ts",
     "status": "tsx scripts/status.ts",
-    "rivals:sync": "tsx scripts/sync-rivals.ts"
+    "rivals:sync": "tsx scripts/sync-rivals.ts",
+    "rivals:translate": "tsx scripts/translate-rivals.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

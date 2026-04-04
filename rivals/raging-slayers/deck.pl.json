@@ -1,0 +1,134 @@
+{
+  "name": "Talia Wściekłych Pogromców",
+  "plot": "(Aktualizacja errata) Używając tej talii Rivals, możesz korzystać z następujących zdolności:\n\nWściekły Szarż: Bezpośrednio po wybraniu przyjaznego wojownika do wykonania Szarży lub wybraniu przyjaznego wojownika do Ataku, jeśli miał już żeton Szarży na początku tury, możesz dać temu wojownikowi i/lub innemu przyjaznemu wojownikowi w tym samym terytorium żeton Wściekłości. Wojownicy posiadający jakiekolwiek żetony Wściekłości są wściekli.\n\nWściekłe Uderzenie: Po wykonaniu rzutu na Atak jako część wręcz Ataku wściekłego przyjaznego wojownika, możesz natychmiast zmienić jeden udany wynik na wynik Krytycznego Ataku ( {icon:crit} ).\n\nSłabe Ustawienie: Musisz użyć tej zdolności natychmiast po tym, jak wściekły przyjazny wojownik został Zaatakowany, jeśli ten wojownik nie został odrzucony ani chwycony. Odepchnij cel o 1 hex od atakującego. Twój przeciwnik wybiera kierunek tego odepchnięcia.\n\nUsuń wszystkie żetony Wściekłości od wściekłych przyjaznych wojowników na końcu rundy bitewnej.",
+  "cards": [
+    {
+      "name": "Agresywna Ekspansja",
+      "text": "Zdobądź to w fazie końcowej, jeśli 3 lub więcej wściekłych przyjaznych wojowników znajduje się na terytorium wroga."
+    },
+    {
+      "name": "Najlepsze Wejście",
+      "text": "Zdobądź to natychmiast po udanym Ataku przyjaznego wojownika, jeśli ten wojownik posiada jakiekolwiek żetony Szarży i znajduje się na terytorium wroga."
+    },
+    {
+      "name": "Zaślepiony Wściekłością",
+      "text": "Zdobądź to natychmiast po tym, jak wrogi wojownik zostaje zabity wręcz Atakiem wściekłego przyjaznego wojownika, jeśli ten przyjazny wojownik był wściekły na początku tury."
+    },
+    {
+      "name": "Skoordynowany Szturm",
+      "text": "Zdobądź to natychmiast po kroku Akcji, jeśli każdy przyjazny wojownik jest wściekły i znajduje się na terytorium wroga."
+    },
+    {
+      "name": "W Ogień",
+      "text": "(Aktualizacja errata) Zdobądź to w fazie końcowej, jeśli twój przywódca znajduje się na terytorium wroga i w zasięgu 2 hexów od 2 lub więcej innych wojowników."
+    },
+    {
+      "name": "Bez Konkurencji",
+      "text": "Zdobądź to w fazie końcowej, jeśli wrogi przywódca zostaje zabity."
+    },
+    {
+      "name": "Bez Ucieczki",
+      "text": "Zdobądź to w fazie końcowej, jeśli każdy przyjazny wojownik jest wściekły i znajduje się na terytorium wroga, oraz żaden wrogi wojownik nie znajduje się na twoim terytorium."
+    },
+    {
+      "name": "Bez Wytchnienia",
+      "text": "Zdobądź to natychmiast po kroku Akcji przeciwnika, jeśli na każdym terytorium znajduje się wściekły przyjazny wojownik."
+    },
+    {
+      "name": "Przytłaczająca Obecność",
+      "text": "Zdobądź to w fazie końcowej, jeśli każdy przyjazny wojownik jest wściekły i żaden wojownik nie trzyma żetonów skarbu."
+    },
+    {
+      "name": "Ściąć Głowę",
+      "text": "Zdobądź to natychmiast po tym, jak wrogi przywódca zostaje zabity wręcz Atakiem wściekłego przyjaznego wojownika."
+    },
+    {
+      "name": "Najwyższy Pogromca",
+      "text": "Zdobądź to natychmiast po udanym Ataku twojego przywódcy, jeśli cel został zabity i był to drugi lub kolejny wojownik zabity przez twojego przywódcę."
+    },
+    {
+      "name": "Nieubłagana Masakra",
+      "text": "Zdobądź to w fazie końcowej, jeśli wszyscy wojownicy posiadają żetony Szarży."
+    },
+    {
+      "name": "Przypływ Adrenaliny",
+      "text": "Wybierz do 2 wściekłych przyjaznych wojowników. Usuń ich żetony Stagger."
+    },
+    {
+      "name": "Wyostrzone Refleksy",
+      "text": "Domain: Za każdym razem, gdy wykonujesz rzut na Obronę dla wściekłego przyjaznego wojownika, możesz przerzucić 1 kość Obrony w tym rzucie. Ten efekt utrzymuje się do końca rundy bitewnej lub do zagrania kolejnej karty Domain."
+    },
+    {
+      "name": "Nóż w Serce",
+      "text": "Wybierz wrogiego wojownika, który nie jest bezbronny i który sąsiaduje z wściekłym przyjaznym wojownikiem. Zadaj temu wrogiemu wojownikowi 1 obrażenie. Następnie usuń żetony Wściekłości tego przyjaznego wojownika."
+    },
+    {
+      "name": "Żądza Mordu",
+      "text": "Zagraj to natychmiast po tym, jak wręcz Atak wściekłego przyjaznego wojownika nie powiedzie się. Wręcz bronie przyjaznych wojowników mają +1 kość Ataku podczas atakowania celu tego nieudanego Ataku do końca rundy bitewnej."
+    },
+    {
+      "name": "Bezmyślny Pośpiech",
+      "text": "Przyjazni wojownicy mają +1 Ruch w następnej turze. Po tym, jak jakikolwiek przyjazny wojownik Poruszy się w twojej następnej turze, daj temu wojownikowi żeton Stagger."
+    },
+    {
+      "name": "Pomoc Pogromcy",
+      "text": "Wybierz wściekłego przyjaznego wojownika. Odepchnij tego wojownika o do 3 hexów. To odepchnięcie musi zakończyć się w sąsiedztwie twojego przywódcy."
+    },
+    {
+      "name": "Arena Pogromcy",
+      "text": "Domain: Po każdym nieudanym Ataku daj atakującemu żeton Stagger. Ten efekt utrzymuje się do końca rundy bitewnej lub do zagrania kolejnej karty Domain."
+    },
+    {
+      "name": "Uderzenie z Wściekłością",
+      "text": "Zagraj to natychmiast po wybraniu broni wręcz jako części Ataku wykonywanego przez wściekłego przyjaznego wojownika. Ta broń ma +1 kość Ataku w tym Ataku. Natychmiast po tym Ataku usuń żetony Wściekłości tego wojownika."
+    },
+    {
+      "name": "Jaki Ból?",
+      "text": "Wybierz do 2 wściekłych przyjaznych wojowników. Ulecz tych wojowników. Następnie usuń ich żetony Wściekłości i daj im żeton Stagger."
+    },
+    {
+      "name": "Chwiejna Postawa",
+      "text": "Domain: Jeśli wojownik wejdzie lub zostanie umieszczony na polu stagger, daj mu żeton Ruchu dodatkowo do żetonu Stagger. Ten efekt utrzymuje się do końca rundy bitewnej lub do zagrania kolejnej karty Domain."
+    },
+    {
+      "name": "Zwinny",
+      "text": "Deft: Po wykonaniu rzutu na Obronę dla tego wojownika, możesz natychmiast przerzucić 1 kość Obrony w tym rzucie."
+    },
+    {
+      "name": "Agresywny Zasadzkarz",
+      "text": "Dopóki ten wojownik jest wściekły, jego bronie wręcz mają Cleave i Ensnare, jeśli cel jest Flanked i/lub Surrounded."
+    },
+    {
+      "name": "Wściekłe Cięcie",
+      "text": "Akcja Ataku wręcz\n{icon:hex} 1 {icon:sword} 3 {icon:damage} 2\nWojownik może używać tej broni tylko będąc wściekłym. Używając zdolności Wściekłe Uderzenie z tą bronią, musisz zamiast tego przerzucić każdą kość Ataku."
+    },
+    {
+      "name": "Pewna Rzeź",
+      "text": "Dopóki ten wojownik jest wściekły, jego bronie wręcz mają Grapple i Brutal."
+    },
+    {
+      "name": "Obdarzona Żywotność",
+      "text": "Ulecz tego wojownika na końcu każdej rundy bitewnej."
+    },
+    {
+      "name": "Miażdżący Cios",
+      "text": "Bronie wręcz tego wojownika (z wyłączeniem Ulepszeń) mają zdolność Lethal Weapon. Po tym, jak ten wojownik wykona udany Atak z Lethal, odrzuć tę kartę.\nLethal: Broń tego wojownika ma +2 Obrażenia w tym Ataku, maksymalnie do 4."
+    },
+    {
+      "name": "Bystre Oko",
+      "text": "Bronie wręcz tego wojownika mają +1 kość Ataku."
+    },
+    {
+      "name": "Morderczy Instynkt",
+      "text": "Bronie wręcz Zasięgu 1 tego wojownika (z wyłączeniem Ulepszeń) mają Grievous.\nTen wojownik nie może używać zdolności Podstawowych innych niż zdolność Szarży."
+    },
+    {
+      "name": "Uparty do Szpiku Kości",
+      "text": "Dopóki ten wojownik jest wściekły, nie może być odpychany ani otrzymywać żetonów Stagger."
+    },
+    {
+      "name": "Zjednoczeni w Gniewie",
+      "text": "Rally Together: Natychmiast po tym, jak wściekły przyjazny wojownik zostaje odepchnięty, możesz odepchnąć tego wojownika o do 1 hexu bliżej tamtego wojownika."
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+@page {
+  margin: 5mm;
+}
+
 @media print {
   body {
     background: white !important;
@@ -19,11 +23,17 @@
     display: none !important;
   }
 
-  .warscroll,
-  .rival-deck {
+  .warscroll {
     box-shadow: none;
     border: 2px solid #333;
     page-break-inside: avoid;
+  }
+
+  .rival-deck {
+    box-shadow: none;
+    border: none;
+    background: white !important;
+    page-break-inside: auto;
   }
 
   .warscroll-header,
@@ -33,18 +43,106 @@
     print-color-adjust: exact;
   }
 
-  .warscroll-left,
-  .rival-sidebar {
+  .warscroll-left {
     background: #f0ece0 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
+  .rival-sidebar {
+    display: none !important;
+  }
+
+  .rival-body {
+    display: block;
+    min-height: 0;
+  }
+
+  .rival-content {
+    padding: 3mm 0 0;
+  }
+
   .ability-card,
   .inspire-box,
-  .reaction-box,
-  .rival-group {
+  .reaction-box {
     page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .rival-group {
+    margin: 0 0 3mm;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  .rival-group + .rival-group {
+    margin-top: 0;
+  }
+
+  .rival-group-header {
+    display: none !important;
+  }
+
+  .rival-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 63.5mm);
+    gap: 3mm;
+    justify-content: center;
+  }
+
+  .rival-card {
+    width: 63.5mm;
+    min-width: 63.5mm;
+    max-width: 63.5mm;
+    height: 88mm;
+    margin: 0;
+    padding: 3mm;
+    box-sizing: border-box;
+    border: 0.4mm solid #333 !important;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .rival-card-top {
+    align-items: flex-start;
+    gap: 2mm;
+    margin-bottom: 2mm;
+  }
+
+  .rival-card-top > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .rival-card h4 {
+    font-size: 8.5pt;
+    line-height: 1.15;
+    margin-bottom: 0;
+  }
+
+  .rival-card-id {
+    font-size: 6.5pt;
+    letter-spacing: 0.8px;
+    margin-bottom: 1mm;
+  }
+
+  .rival-card-value {
+    min-width: 7mm;
+    padding: 1mm 1.6mm;
+    border: 0.3mm solid #8b7355;
+    background: #e8e0cc !important;
+    font-size: 8pt;
+  }
+
+  .rival-card .rules {
+    font-size: 7.2pt;
+    line-height: 1.3;
+    margin-top: 0;
   }
 
   .icon-token {

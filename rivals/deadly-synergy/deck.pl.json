@@ -1,0 +1,134 @@
+{
+  "name": "Deadly Synergy – Talia Rivals",
+  "plot": "Podczas używania tej talii Rivals, sąsiadujący przyjazni wojownicy są zjednoczeni.\n\nWrodzy wojownicy sąsiadujący ze zjednoczonym przyjaznym wojownikiem są Flankowani.\n\nJeśli każdy inny przyjazny wojownik zostanie pokonany, pozostały przyjazny wojownik jest zjednoczony.",
+  "cards": [
+    {
+      "name": "Agresywna Jedność",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli zjednoczeni przyjazni wojownicy wykonali 3 lub więcej Ataków wręcz w tej rundzie bitwy."
+    },
+    {
+      "name": "Lanie",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli ten sam wrogi wojownik był celem 3 lub więcej Ataków wręcz różnych przyjaznych wojowników w tej rundzie bitwy."
+    },
+    {
+      "name": "Odcięty",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli zjednoczony przyjazny wojownik trzyma żeton skarbu, który był trzymany przez wrogiego wojownika w tej rundzie bitwy."
+    },
+    {
+      "name": "Mam Cię!",
+      "text": "Zdobądź tę kartę natychmiast po nieudanym Ataku wrogiego wojownika, jeśli celem był zjednoczony przyjazny wojownik."
+    },
+    {
+      "name": "Pomocna Dłoń",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku zjednoczonego przyjaznego wojownika, jeśli rzut na Atak zawierał jakiekolwiek {icon:single-support}."
+    },
+    {
+      "name": "W Potrzasku",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli wrogi przywódca został pokonany przez zjednoczonego przyjaznego wojownika w tej rundzie bitwy."
+    },
+    {
+      "name": "Nieuchronny Wynik",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 2 lub więcej zjednoczonych przyjaznych wojowników sąsiaduje z tym samym wrogim wojownikiem."
+    },
+    {
+      "name": "Infiltracja",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel znajdował się na neutralnym lub wrogim terytorium, a atakujący był zjednoczony lub cel był Flankowany i/lub Otoczony."
+    },
+    {
+      "name": "Przewaga Siły",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli wrogi wojownik został odrzucony w wyniku udanego Ataku zjednoczonego przyjaznego wojownika w tej rundzie bitwy. Restricted"
+    },
+    {
+      "name": "Tandem",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku przyjaznego wojownika, jeśli nie posiada żetonów Ruchu ani Szarży, a atakujący był zjednoczony lub cel był Flankowany i/lub Otoczony."
+    },
+    {
+      "name": "Wspólny Szturm",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak wrogi wojownik zostanie pokonany przez Atak przyjaznego wojownika, jeśli atakujący był zjednoczony lub cel był Flankowany i/lub Otoczony."
+    },
+    {
+      "name": "Zjednoczona Pomoc",
+      "text": "Zdobądź tę kartę natychmiast po wykonaniu rzutu na Obronę za zjednoczonego przyjaznego wojownika, jeśli rzut na Obronę zawierał więcej sukcesów niż rzut na Atak i zawierał jakiekolwiek {icon:single-support}. Jeśli jesteś underdog, rzut na Obronę nie musi zawierać żadnych {icon:single-support}."
+    },
+    {
+      "name": "Jeszcze Raz",
+      "text": "Zagraj tę kartę natychmiast po nieudanym Ataku wręcz zjednoczonego przyjaznego wojownika, jeśli atakujący sąsiaduje z 2 zjednoczonymi przyjaznymi wojownikami. Ten wojownik ponownie Atakuje bronią białą, ale cecha Obrażeń tej broni jest obniżona do 1."
+    },
+    {
+      "name": "Armia Dwóch",
+      "text": "Wybierz przyjaznego wojownika. Ten wojownik jest zjednoczony w następnej turze."
+    },
+    {
+      "name": "Towarzysz Broni",
+      "text": "Zagraj tę kartę bezpośrednio przed wybraniem broni białej w ramach Ataku zjednoczonego przyjaznego wojownika. Wybierz zjednoczonego przyjaznego wojownika sąsiadującego z atakującym. Użyj zamiast tego jednej z broni białych tego wojownika dla tego Ataku."
+    },
+    {
+      "name": "Nieugięty Duet",
+      "text": "Wybierz 2 sąsiadujących zjednoczonych przyjaznych wojowników. Jeśli jesteś underdog, wybierz zamiast tego 2 zjednoczonych przyjaznych wojowników. Daj jednemu z tych wojowników żeton Straży, a następnie ulecz drugiego wojownika."
+    },
+    {
+      "name": "Znikąd",
+      "text": "Zagraj tę kartę natychmiast po wykonaniu rzutu na Atak za zjednoczonego przyjaznego wojownika. Zmień 1 kość w tym rzucie na Atak na {icon:single-support} lub {icon:double-support}."
+    },
+    {
+      "name": "Bezinteresowna Parada",
+      "text": "Zagraj tę kartę natychmiast po tym, jak zjednoczony przyjazny wojownik zostanie wybrany jako cel Ataku. Wybierz zjednoczonego przyjaznego wojownika sąsiadującego z celem. Cel używa cechy Obrony tamtego wojownika dla tego Ataku."
+    },
+    {
+      "name": "Unik",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o 1 heks."
+    },
+    {
+      "name": "Weź Cios za Drużynę",
+      "text": "Zagraj tę kartę natychmiast po tym, jak zjednoczony przyjazny wojownik zostanie wybrany jako cel Ataku. Wybierz zjednoczonego przyjaznego wojownika sąsiadującego z celem i w zasięgu broni używanej do tego Ataku. Ten wojownik musi być zamiast tego celem tego Ataku."
+    },
+    {
+      "name": "Wymierzony Cios",
+      "text": "Zagraj tę kartę natychmiast po wybraniu broni białej w ramach Ataku przyjaznego wojownika, który nie jest zjednoczony. Ta broń ma +1 kostkę Ataku dla tego Ataku."
+    },
+    {
+      "name": "Zjednoczony Front",
+      "text": "Zjednoczeni przyjazni wojownicy mają +1 do Obrony w następnej turze, maksymalnie do 3."
+    },
+    {
+      "name": "Taran",
+      "text": "(Errata) Rzuty na Atak wykonywane za tego wojownika w ramach Ataków wręcz zawsze są traktowane jako zawierające więcej {icon:crit} niż rzut na Obronę dla celów Stand Fast i Overrun."
+    },
+    {
+      "name": "Skoordynowany Śmiertelny Cios",
+      "text": "Atak wręcz\n{icon:hex} 1 {icon:sword} 3 {icon:damage} 2\nTa broń ma Grievous, gdy ten wojownik jest zjednoczony."
+    },
+    {
+      "name": "Pojedynkista",
+      "text": "Footwork: Natychmiast po tym, jak ten wojownik zaatakuje, możesz go przesunąć o 1 heks."
+    },
+    {
+      "name": "Splątane Uderzenie",
+      "text": "Atak wręcz\n{icon:hex} 1 {icon:hammer} 3 {icon:damage} 1\nTa broń ma Cleave i Ensnare, jeśli cel jest Flankowany i/lub Otoczony."
+    },
+    {
+      "name": "Wielka Wytrwałość",
+      "text": "Ten wojownik ma +1 Zdrowie."
+    },
+    {
+      "name": "Bystre Oko",
+      "text": "Bronie białe tego wojownika mają +1 kostkę Ataku."
+    },
+    {
+      "name": "Pospieszna Pomoc",
+      "text": "Assist: Natychmiast po tym, jak ten wojownik zaatakuje, możesz wybrać zjednoczonego przyjaznego wojownika. Przesuń tego wojownika o maksymalnie 2 heksy. To przesunięcie musi zakończyć się sąsiadując z tym zjednoczonym przyjaznym wojownikiem."
+    },
+    {
+      "name": "Wspólna Motywacja",
+      "text": "Ta karta ulepszenia może być nadana tylko twojemu przywódcy.\nTen wojownik ma +1 Ruch.\nZjednoczeni przyjazni wojownicy mają +1 Ruch, jeśli sąsiadują z tym wojownikiem w chwili rozpoczęcia tego Ruchu."
+    },
+    {
+      "name": "Napędzony Impet",
+      "text": "Driven: Natychmiast po udanym Ataku tego wojownika, jeśli był zjednoczony, usuń jego żetony Ruchu i Stagger, a następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Tytan Walki",
+      "text": "Ten wojownik jest zjednoczony."
+    }
+  ]
+}

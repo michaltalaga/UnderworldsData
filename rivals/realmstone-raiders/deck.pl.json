@@ -1,0 +1,134 @@
+{
+  "name": "Talia Łupieżców Realmstone Rivals",
+  "plot": "(Errata) Używając tej talii Rivals, natychmiast po pierwszym udanym przyjaznym ataku wręcz w kroku Akcji możesz: złupić raz lub tyle razy, ile wynosi cecha Bounty celu.\n\nŁupienie: Odkryj wierzchnią kartę swojej talii Power. Ta karta zostaje złupiona. Jeśli jest to karta Emberstone, możesz ją odłożyć na wierzch lub na spód swojej talii Power.\n\nKarty Emberstone mają następujące dodatkowe zasady:\n\nEmberstone Ploy: Możesz zagrać ten Ploy natychmiast po jego złupieniu.\n\nEmberstone Upgrade: Możesz wyekwipować ten Upgrade natychmiast po jego złupieniu, jeśli masz wymaganą liczbę punktów Chwały.\n\nJeśli złupiona karta nie jest kartą Emberstone, połóż ją na spodzie swojej talii Power.\n\nMagazynowanie: Zamiast Łupienia możesz odkryć kartę Emberstone ze swojej ręki, a następnie położyć ją na spodzie swojej talii Power. Ta karta nie została złupiona.",
+  "cards": [
+    {
+      "name": "Pewny Zakład",
+      "text": "Zdobądź to natychmiast po złupieniu karty Emberstone po ataku wręcz, jeśli rzut na Atak zawierał 3 lub więcej kości Ataku."
+    },
+    {
+      "name": "Bezwzględna Agresja",
+      "text": "Zdobądź to w fazie końcowej, jeśli złupiłeś 2 lub więcej razy w tej rundzie bitwy i nie ma wrogich wojowników na przyjaznym terytorium."
+    },
+    {
+      "name": "Krytyczne Ryzyko",
+      "text": "Zdobądź to natychmiast po złupieniu karty Emberstone, jeśli poprzedzający atak był udany, a rzut na Atak zawierał jakiekolwiek {icon:crit}."
+    },
+    {
+      "name": "Zapas Emberstone",
+      "text": "Zdobądź to w fazie końcowej, jeśli złupiłeś 4 lub więcej różnych kart Emberstone w tej rundzie bitwy."
+    },
+    {
+      "name": "Skrytka Skąpca",
+      "text": "Zdobądź to w fazie końcowej, jeśli którykolwiek przyjazny wojownik posiada żeton skarbu o wartości równej cesze Bounty tego wojownika."
+    },
+    {
+      "name": "Inwazja",
+      "text": "Zdobądź to w fazie końcowej, jeśli złupiłeś jakiekolwiek karty Emberstone w tej rundzie bitwy po ataku wręcz, gdy cel posiadał żeton skarbu."
+    },
+    {
+      "name": "Złupiony Realmstone",
+      "text": "Zdobądź to natychmiast po złupieniu 2 lub więcej różnych kart Emberstone z tego samego ataku wręcz."
+    },
+    {
+      "name": "Rabunek",
+      "text": "Zdobądź to natychmiast po złupieniu 2 lub więcej różnych kart Emberstone po ataku wręcz, jeśli cel znajdował się na neutralnym lub wrogim terytorium."
+    },
+    {
+      "name": "Uderzenie Ragerock",
+      "text": "Zdobądź to natychmiast po użyciu zdolności Emberstone Ploy lub zdolności Emberstone Upgrade (patrz karta Fabuły)."
+    },
+    {
+      "name": "Nalot na Realmstone",
+      "text": "Zdobądź to w fazie końcowej, jeśli złupiłeś 3 lub więcej razy po atakach różnych przyjaznych wojowników w tej rundzie bitwy."
+    },
+    {
+      "name": "Ryzykowny Hazard",
+      "text": "Zdobądź to natychmiast po złupieniu karty Emberstone po raz drugi lub kolejny w tej rundzie bitwy, o ile każda złupiona karta Emberstone była inną kartą."
+    },
+    {
+      "name": "Rozbudzona Przemoc",
+      "text": "Zdobądź to w fazie końcowej, jeśli liczba żetonów skarbu na polu bitwy jest równa lub mniejsza od liczby kart Emberstone, które złupiłeś w tej rundzie bitwy."
+    },
+    {
+      "name": "Zasadzka",
+      "text": "Zagraj to natychmiast po wybraniu broni dystansowej w ramach Ataku. Możesz złupić po udanym przyjaznym ataku dystansowym zamiast ataku wręcz w tej turze."
+    },
+    {
+      "name": "Rozgniewana Koncentracja",
+      "text": "Emberstone Ploy\nWybierz przyjaznego wojownika trzymającego żeton skarbu na przyjaznym terytorium, który nie posiada żadnych żetonów Ruchu, Szarży ani Staggera. Złup liczbę kart równą cesze Bounty tego wojownika. Karty złupione w ten sposób nie są traktowane jako złupione w wyniku udanego Ataku."
+    },
+    {
+      "name": "Krok Do Przodu",
+      "text": "Emberstone Ploy\nWybierz przyjaznego wojownika na neutralnym lub wrogim terytorium. Przesuń tego wojownika o 1 pole. To przesunięcie musi zakończyć się bliżej wrogiego wojownika."
+    },
+    {
+      "name": "Blask Przygasł",
+      "text": "Wybierz przyjaznego wojownika sąsiadującego z wrogim wojownikiem, który nie jest vulnerable. Zadaj 1 obrażenie obu wojownikom."
+    },
+    {
+      "name": "Ukryta Wiedza",
+      "text": "Emberstone Ploy\nWybierz wrogiego wojownika sąsiadującego z przyjaznym wojownikiem. Daj temu wojownikowi żeton Ruchu."
+    },
+    {
+      "name": "Upojony Gniewem",
+      "text": "Emberstone Ploy\nWybierz przyjaznego wojownika, który nie posiada żetonów Ruchu i/lub Szarży. Daj temu wojownikowi żeton Guardu."
+    },
+    {
+      "name": "Manipulowany Los",
+      "text": "Zagraj to natychmiast po wybraniu przyjaznego wojownika jako celu Ataku. Rzuty na Obronę wykonane dla tego Ataku są traktowane jako zawierające więcej {icon:crit} niż rzut na Atak dla celów zdolności Stand Fast."
+    },
+    {
+      "name": "Potknięcie",
+      "text": "Emberstone Ploy\nWybierz wrogiego wojownika. Daj temu wojownikowi żeton Staggera."
+    },
+    {
+      "name": "Ekstaza Łupieżcy",
+      "text": "Domain: Kiedy łupisz, możesz odkryć 1 dodatkową kartę. Ten efekt utrzymuje się do końca rundy lub do momentu zagrania innej karty Domain."
+    },
+    {
+      "name": "Przeczucie Łupieżcy",
+      "text": "Emberstone Ploy\nWybierz kartę Objective ze swojej ręki i połóż ją na spodzie swojej talii Objective. Następnie dobierz 1 kartę Objective."
+    },
+    {
+      "name": "Przebijacz Zbroi",
+      "text": "Emberstone Upgrade:\nPrzebicie: Natychmiast po remisowym Ataku wykonanym przez tego wojownika, jeśli cecha Obrażeń broni atakującego jest większa niż cecha Obrony celu, zadaj 1 obrażenie celowi. Następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Wigoria Brightstone",
+      "text": "Emberstone Upgrade:\nUkojenie Rzezią: Natychmiast po udanym Ataku wykonanym przez tego wojownika, jeśli cecha Obrażeń użytej broni jest większa niż cecha Obrony celu, możesz uleczyć atakującego. Następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Wezwanie Mocy",
+      "text": "Emberstone Upgrade:\nUsłysz Wezwanie: Natychmiast po udanym Ataku wykonanym przez tego wojownika możesz dobierać 1 kartę Power. Następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Ostrze Emberstone",
+      "text": "Emberstone Upgrade:\nAkcja Ataku wręcz\n{icon:hex} 1 {icon:hammer} 2 {icon:damage} 1\nTa broń ma +1 kość Ataku, jeśli łupiłeś w tej samej fazie."
+    },
+    {
+      "name": "Zapomniana Fortuna",
+      "text": "Emberstone Upgrade:\nPrzetrwała Moc: Natychmiast po udanym Ataku wykonanym przez tego wojownika możesz wybrać 1 Emberstone Ploy ze swojego stosu odrzuconych kart Power. Dodaj go do swojej ręki. Następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Wielka Wytrzymałość",
+      "text": "Ten wojownik ma +1 Zdrowie."
+    },
+    {
+      "name": "Wielka Szybkość",
+      "text": "Ten wojownik ma +1 Ruch."
+    },
+    {
+      "name": "Wielka Siła",
+      "text": "Bronie wręcz tego wojownika mają Grievous."
+    },
+    {
+      "name": "Sokole Oko",
+      "text": "Bronie wręcz tego wojownika mają +1 kość Ataku."
+    },
+    {
+      "name": "Przekuta Pomoc",
+      "text": "Emberstone Upgrade:\nOdzyskane Uzbrojenie: Natychmiast po udanym Ataku wykonanym przez tego wojownika możesz wybrać 1 Emberstone Upgrade ze swojego stosu odrzuconych kart Power. Dodaj go do swojej ręki. Następnie odrzuć tę kartę."
+    }
+  ]
+}

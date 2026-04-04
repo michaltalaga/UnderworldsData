@@ -1,0 +1,134 @@
+{
+  "name": "Talia Płonącego Szturmu",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Uderzenie w Głowę",
+      "text": "Zdobądź ten cel natychmiast po tym, jak wrogi wojownik zostanie pokonany przez przyjaznego wojownika, jeśli cel był przywódcą lub wartość cechy Zdrowie celu była równa lub wyższa niż wartość atakującego."
+    },
+    {
+      "name": "Rozwidlony Los",
+      "text": "Zdobądź ten cel natychmiast po wykonaniu rzutu na Atak zawierającego 3 lub więcej kości, jeśli każdy wynik był innym symbolem. Jeśli jesteś underdog'iem, rzut na Atak może zawierać zamiast tego 2 lub więcej kości."
+    },
+    {
+      "name": "Doskonały Cios",
+      "text": "Zdobądź ten cel natychmiast po wykonaniu rzutu na Atak, jeśli wszystkie wyniki były sukcesami."
+    },
+    {
+      "name": "Krytyczny Wysiłek",
+      "text": "Zdobądź ten cel natychmiast po wykonaniu rzutu na Atak, jeśli którykolwiek wynik był {icon:crit}."
+    },
+    {
+      "name": "Do Boju",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli cel znajdował się na wrogim terytorium."
+    },
+    {
+      "name": "Mocny Początek",
+      "text": "Zdobądź ten cel natychmiast po pokonaniu wrogiego wojownika, jeśli był to pierwszy wojownik pokonany w tej fazie walki."
+    },
+    {
+      "name": "Rąbać Dalej!",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twoja drużyna Atakowała 3 lub więcej razy w tej fazie walki."
+    },
+    {
+      "name": "Pola Krwi",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 4 lub więcej wojowników jest rannych i/lub pokonanych."
+    },
+    {
+      "name": "Wszystko na Jedną Kartę",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 5 lub więcej wojowników posiada żetony Ruchu i/lub Szarży."
+    },
+    {
+      "name": "Na Skraju",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli jacykolwiek wrodzy wojownicy są vulnerable."
+    },
+    {
+      "name": "Odmowa",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli na przyjaznym terytorium nie ma żadnych wrogich wojowników."
+    },
+    {
+      "name": "Unicestwienie",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli każdy wrogi wojownik jest pokonany."
+    },
+    {
+      "name": "Zdeterminowany Wysiłek",
+      "text": "Zagraj tę kartę natychmiast po wybraniu broni w ramach Ataku. Ta broń ma +1 kość Ataku dla tego Ataku. Jeśli jesteś underdog'iem, ta broń ma zamiast tego +2 kości Ataku dla tego Ataku."
+    },
+    {
+      "name": "Przekręcić Nóż",
+      "text": "Zagraj tę kartę natychmiast po wybraniu broni do walki wręcz w ramach Ataku. Ta broń ma Grievous dla tego Ataku."
+    },
+    {
+      "name": "Powab Bitwy",
+      "text": "Wybierz 1 przyjaznego wojownika znajdującego się w odległości 2 heksów od innego wojownika. Przesuń tego innego wojownika o 1 heks bliżej tego przyjaznego wojownika."
+    },
+    {
+      "name": "Unik",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o 1 heks."
+    },
+    {
+      "name": "Dowódczy Krok",
+      "text": "Przesuń swojego przywódcę o do 3 heksów. To przesunięcie musi zakończyć się na polu startowym."
+    },
+    {
+      "name": "Iluzoryczny Wojownik",
+      "text": "Wybierz przyjaznego wojownika. Usuń tego wojownika z pola bitwy, a następnie umieść go na pustym polu startowym na przyjaznym terytorium. Restricted"
+    },
+    {
+      "name": "Skrzydła Wojny",
+      "text": "Zagraj tę kartę natychmiast po wybraniu wojownika do Ruchu. Ten wojownik ma +2 Ruch dla tego Ruchu."
+    },
+    {
+      "name": "Tarcze w Górę!",
+      "text": "Wybierz przyjaznego wojownika. Daj temu wojownikowi żeton Warty."
+    },
+    {
+      "name": "Krzyk Gniewu",
+      "text": "Wybierz przyjaznego wojownika. Zadaj 2 obrażenia temu wojownikowi, a następnie usuń 1 żeton Ruchu lub Szarży tego wojownika."
+    },
+    {
+      "name": "Eliksir Leczniczy",
+      "text": "Wybierz przyjaznego wojownika. Ulecz tego wojownika. Jeśli jesteś underdog'iem, możesz rzucić kością Obrony. Na {icon:block} lub {icon:crit} ulecz tego wojownika ponownie."
+    },
+    {
+      "name": "Twardziel",
+      "text": "Ten wojownik nie może być Flanked ani Surrounded."
+    },
+    {
+      "name": "Ukryta Pomoc",
+      "text": "Wrodzy wojownicy sąsiadujący z tym wojownikiem są Flanked."
+    },
+    {
+      "name": "Precyzyjny",
+      "text": "Celny Cios: Po wykonaniu rzutu na Atak dla tego wojownika możesz natychmiast przerzucić 1 kość Ataku w tym rzucie na Atak."
+    },
+    {
+      "name": "Wielka Siła",
+      "text": "Bronie do walki wręcz tego wojownika mają Grievous."
+    },
+    {
+      "name": "Śmiertelna Celność",
+      "text": "Bronie tego wojownika mają Ensnare."
+    },
+    {
+      "name": "Wyostrzone Ostrza",
+      "text": "Bronie tego wojownika mają Cleave."
+    },
+    {
+      "name": "Duelist",
+      "text": "Praca Nóg: Natychmiast po tym, jak ten wojownik Zaatakował, możesz przesunąć go o 1 heks."
+    },
+    {
+      "name": "Twardy",
+      "text": "Nie więcej niż 3 obrażenia mogą zostać zadane temu wojownikowi w tej samej turze."
+    },
+    {
+      "name": "Wielka Wytrzymałość",
+      "text": "Ten wojownik ma +1 Zdrowie."
+    },
+    {
+      "name": "Sokole Oko",
+      "text": "Bronie do walki wręcz tego wojownika mają +1 kość Ataku."
+    }
+  ]
+}

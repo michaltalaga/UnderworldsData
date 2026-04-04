@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Language, WarbandMeta, Warscroll, WarscrollTranslation } from '../types/warscroll';
-import type { RivalDeck, RivalDeckMeta } from '../types/rivals';
+import type { RivalDeck, RivalDeckMeta, RivalDeckTranslation } from '../types/rivals';
 import { t } from '../i18n/labels';
 import { LanguageToggle } from './LanguageToggle';
 import { WarbandSelector } from './WarbandSelector';
@@ -27,6 +27,11 @@ const rivalModules = import.meta.glob<RivalDeck>('../../rivals/*/deck.json', {
   import: 'default',
 });
 
+const rivalPlModules = import.meta.glob<RivalDeckTranslation>('../../rivals/*/deck.pl.json', {
+  eager: true,
+  import: 'default',
+});
+
 function extractSlug(path: string): string {
   // path like "../../warbands/the-thricefold-discord/warscroll.json"
   const parts = path.split('/');
@@ -41,6 +46,40 @@ function loadMap<T>(modules: Record<string, T>): Map<string, T> {
   return map;
 }
 
+function mergeRivalMeta(base: RivalDeckMeta, translation: RivalDeckTranslation | null): RivalDeckMeta {
+  if (!translation) {
+    return base;
+  }
+
+  return {
+    ...base,
+    name: translation.name ?? base.name,
+    plot: translation.plot === undefined ? base.plot : translation.plot,
+  };
+}
+
+function mergeRivalDeck(base: RivalDeck, translation: RivalDeckTranslation | null): RivalDeck {
+  if (!translation) {
+    return base;
+  }
+
+  return {
+    ...mergeRivalMeta(base, translation),
+    cards: base.cards.map((card, index) => {
+      const translatedCard = translation.cards[index];
+      if (!translatedCard) {
+        return card;
+      }
+
+      return {
+        ...card,
+        name: translatedCard.name ?? card.name,
+        text: translatedCard.text === undefined ? card.text : translatedCard.text,
+      };
+    }),
+  };
+}
+
 export function App() {
   const [language, setLanguage] = useState<Language>('en');
   const [view, setView] = useState<AppView>('warscrolls');
@@ -49,6 +88,7 @@ export function App() {
   const [warscrolls] = useState(() => loadMap(enModules));
   const [translations] = useState(() => loadMap(plModules));
   const [rivals] = useState(() => loadMap(rivalModules));
+  const [rivalTranslations] = useState(() => loadMap(rivalPlModules));
 
   const warbands: WarbandMeta[] = warbandIndex as WarbandMeta[];
   const rivalDecks: RivalDeckMeta[] = rivalIndex as RivalDeckMeta[];
@@ -58,8 +98,15 @@ export function App() {
   const selectedWarscroll = selectedWarbandSlug ? warscrolls.get(selectedWarbandSlug) ?? null : null;
   const selectedTranslation = selectedWarbandSlug ? translations.get(selectedWarbandSlug) ?? null : null;
   const selectedRivalDeck = selectedRivalSlug ? rivals.get(selectedRivalSlug) ?? null : null;
+  const selectedRivalTranslation = selectedRivalSlug ? rivalTranslations.get(selectedRivalSlug) ?? null : null;
+  const displayedRivalDeck = language === 'pl' && selectedRivalDeck
+    ? mergeRivalDeck(selectedRivalDeck, selectedRivalTranslation)
+    : selectedRivalDeck;
+  const displayedRivalDecks = language === 'pl'
+    ? rivalDecks.map((deck) => mergeRivalMeta(deck, rivalTranslations.get(deck.slug) ?? null))
+    : rivalDecks;
   const currentTitle = view === 'warscrolls' ? t('warscrollTitle', language) : t('rivalsTitle', language);
-  const canPrint = view === 'warscrolls' ? Boolean(selectedWarscroll) : Boolean(selectedRivalDeck);
+  const canPrint = view === 'warscrolls' ? Boolean(selectedWarscroll) : Boolean(displayedRivalDeck);
 
   const handlePrint = useCallback(() => {
     window.print();
@@ -128,7 +175,7 @@ export function App() {
         <>
           {rivalDecks.length > 0 ? (
             <RivalDeckSelector
-              decks={rivalDecks}
+              decks={displayedRivalDecks}
               selected={selectedRivalSlug}
               onSelect={setSelectedRivalSlug}
               language={language}
@@ -146,9 +193,9 @@ export function App() {
             </div>
           )}
 
-          {selectedRivalDeck && (
+          {displayedRivalDeck && (
             <RivalDeckView
-              deck={selectedRivalDeck}
+              deck={displayedRivalDeck}
               language={language}
             />
           )}

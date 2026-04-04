@@ -1,0 +1,134 @@
+{
+  "name": "Talia Rywali: Grabież i Łup",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Zniweczone Nadzieje",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 3 lub więcej różnych żetonów skarbów zostało Przeszukanych przez twoją drużynę w tej rundzie bitwy lub jeśli żeton skarbu trzymany przez wrogiego wojownika na początku rundy bitwy został Przeszukany przez twoją drużynę w tej rundzie bitwy."
+    },
+    {
+      "name": "Wbrew Szansom",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli żeton skarbu o numerze nieparzystym został Przeszukany przez twoją drużynę w tej rundzie bitwy."
+    },
+    {
+      "name": "Zagubiony w Głębinach",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli żaden przyjazny wojownik nie jest sąsiadujący i przynajmniej jeden przyjazny wojownik nie jest poległy."
+    },
+    {
+      "name": "Spustoszona Ojczyzna",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli w przyjaznym terytorium znajduje się 1 lub mniej żetonów skarbów."
+    },
+    {
+      "name": "Rozdarte Ziemie",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli na polu bitwy znajdują się 2 lub mniej żetonów skarbów."
+    },
+    {
+      "name": "Złupić Krainę",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli na polu bitwy nie ma żadnych żetonów skarbów lub jeśli żaden wróg nie trzyma żadnego żetonu skarbu."
+    },
+    {
+      "name": "Agresywny Pretendent",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel znajdował się na neutralnym terytorium lub jeśli cel trzymał żeton skarbu w momencie wybrania go jako celu tego Ataku i nie trzyma już tego żetonu skarbu."
+    },
+    {
+      "name": "Zdobyć Nagrodę",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak przyjazny wojownik Przeszukuje na wrogim terytorium. Jeśli jesteś underdogiem, to Przeszukanie może zamiast tego odbywać się na przyjaznym terytorium. Restricted"
+    },
+    {
+      "name": "Przeszukiwanie dla Bogactwa",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak twoja drużyna Przeszukuje po raz trzeci lub kolejny w tej fazie walki. Restricted"
+    },
+    {
+      "name": "Podzielić Ciężar",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak przyjazny wojownik Porusza się, jeśli ten wojownik i przynajmniej jeden inny przyjazny wojownik stoją każdy na żetonach terenu."
+    },
+    {
+      "name": "Wrogie Przejęcie",
+      "text": "Zdobądź tę kartę natychmiast po drugim lub kolejnym Ataku twojej drużyny, który nie był częścią Szarży."
+    },
+    {
+      "name": "Staranne Rozpoznanie",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji, jeśli na każdym terytorium znajduje się co najmniej jeden przyjazny wojownik."
+    },
+    {
+      "name": "Unik",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o 1 pole."
+    },
+    {
+      "name": "Hardy Pojedynkowicz",
+      "text": "Zagraj tę kartę natychmiast po Ataku przyjaznego wojownika, jeśli atakujący znajduje się na wrogim terytorium. Ulecz atakującego."
+    },
+    {
+      "name": "Władczy Krok",
+      "text": "Przesuń swojego przywódcę o maksymalnie 3 pola. To przesunięcie musi zakończyć się na polu startowym."
+    },
+    {
+      "name": "Walące się Kopalnie",
+      "text": "Wybierz żeton skarbu, który nie jest trzymany. Odwróć ten żeton skarbu."
+    },
+    {
+      "name": "Ładunki Wybuchowe",
+      "text": "Domain: Przyjazni wojownicy mają +1 do Ruchu podczas używania zdolności Szarży. Efekt ten utrzymuje się do końca rundy bitwy lub do chwili zagrania kolejnej karty Domain."
+    },
+    {
+      "name": "Ostrożny Poszukiwacz",
+      "text": "Wybierz przyjaznego wojownika posiadającego żetony Szarży. Daj temu wojownikowi żeton Warty."
+    },
+    {
+      "name": "Zuchwały Zwiadowca",
+      "text": "Zagraj tę kartę natychmiast po wykonaniu rzutu na Atak za wojownika na wrogim terytorium. Przerzuć 1 kość w tym rzucie na Atak. Jeśli jesteś underdogiem, możesz zamiast tego przerzucić każdą kość w tym rzucie na Atak."
+    },
+    {
+      "name": "Nagły Wybuch",
+      "text": "Wybierz wrogiego wojownika sąsiadującego z przyjaznym wojownikiem. Daj temu wrogiemu wojownikowi żeton Ogłuszenia."
+    },
+    {
+      "name": "Tunelujący Terror",
+      "text": "Wybierz przyjaznego wojownika nieposiadającego żetonów Ruchu ani Szarży. Usuń tego wojownika z pola bitwy, a następnie umieść go na pustym polu ogłuszenia. Następnie daj temu wojownikowi żeton Szarży. Jeśli jesteś underdogiem, możesz zamiast tego dać temu wojownikowi żeton Ruchu."
+    },
+    {
+      "name": "Pułapka na Skarb",
+      "text": "Wybierz nieuszkodzonego wrogiego wojownika w odległości 1 pola od żetonu skarbu. Zadaj temu wojownikowi 1 obrażenie."
+    },
+    {
+      "name": "Wielka Szybkość",
+      "text": "Ten wojownik ma +1 do Ruchu."
+    },
+    {
+      "name": "Błyskawiczny Krok",
+      "text": "Quick: Natychmiast po tym, jak ten wojownik wykonał Szarżę, możesz go przesunąć o 1 pole."
+    },
+    {
+      "name": "Drążący Cios",
+      "text": "Atak wręcz\n{icon:hex} 2 {icon:sword} 2 {icon:damage} 2\nTa broń ma +1 kość Ataku, gdy ten wojownik posiada żetony Ogłuszenia lub stoi na żetonie terenu."
+    },
+    {
+      "name": "Wystarczająco Twardy",
+      "text": "Gdy ten wojownik znajduje się na wrogim terytorium, rzuty na Obronę tego wojownika nie mogą być modyfikowane przez Cleave i Ensnare."
+    },
+    {
+      "name": "Przebiegły Saper",
+      "text": "Sneaky: Natychmiast po zagraniu karty Zagrania w kroku Mocy możesz usunąć tego wojownika z pola bitwy. Umieść tego wojownika na pustym polu ogłuszenia lub na pustym polu startowym na przyjaznym terytorium, a następnie odrzuć tę kartę."
+    },
+    {
+      "name": "Niewiarygodnie Szybki",
+      "text": "Ten wojownik ma +1 do Obrony.\nNatychmiast odrzuć tę Kartę Ulepszenia po nieudanym Ataku wrogiego wojownika, jeśli ten wojownik był celem."
+    },
+    {
+      "name": "Przełamywacz Linii",
+      "text": "Broń tego wojownika ma Brutal."
+    },
+    {
+      "name": "Wykopaliskowy Wybuch",
+      "text": "Atak na odległość\n{icon:hex} 3 {icon:hammer} 2 {icon:damage} 1\nTa broń ma Stagger, gdy ten wojownik znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Poszukiwacz Chwały",
+      "text": "Broń biała tego wojownika ma Grievous, jeśli cel ma cechę Zdrowia równą 4 lub więcej."
+    },
+    {
+      "name": "Szał Chciwości",
+      "text": "Gdy ten wojownik stoi na żetonie skarbu na wrogim terytorium lub znajduje się na polu ogłuszenia, rzuty na Obronę tego wojownika nie są modyfikowane przez Cleave i Ensnare, a ten wojownik nie może otrzymywać żetonów Ogłuszenia."
+    }
+  ]
+}

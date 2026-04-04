@@ -1,0 +1,134 @@
+{
+  "name": "Talia Ostrza – Talia Rywali",
+  "plot": "Podczas używania tej talii Rywali, wojownicy z cechą Wytrzymałości równą 2 lub mniej i/lub z 2 lub więcej żetonami obrażeń są zahartowani.",
+  "cards": [
+    {
+      "name": "Agresywny Obrońca",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli atakujący trzyma żeton skarbu."
+    },
+    {
+      "name": "Na Całość",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli na przyjaznym terytorium nie ma zahartowanych przyjaznych wojowników, a zahartowani przyjaźni wojownicy znajdują się na neutralnym i/lub wrogim terytorium."
+    },
+    {
+      "name": "Za Liniami Wroga",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli zahartowany przyjazny wojownik trzyma żeton elementu terenu na wrogim terytorium."
+    },
+    {
+      "name": "Cisza Przed Burzą",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli są jacyś ranni wojownicy i ci wojownicy nie sąsiadują ze sobą."
+    },
+    {
+      "name": "Gra Zespołowa",
+      "text": "Zdobądź ten cel natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel był Flankowany przez przyjaznego wojownika."
+    },
+    {
+      "name": "Nieruszony",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli przyjazny wojownik był celem Ataku w tym kroku Akcji, gdy był zahartowany, i cel nie został pokonany."
+    },
+    {
+      "name": "Siła w Liczbach",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji, jeśli 3 lub więcej zahartowanych wojowników bez żetonów Ruchu sąsiaduje ze sobą. Jeśli jesteś underdog, zdobądź ten cel, jeśli zamiast tego sąsiadują ze sobą 2 lub więcej zahartowanych wojowników bez żetonów Ruchu."
+    },
+    {
+      "name": "Ryzykowna Pozycja",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli zahartowany przyjazny wojownik znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Skradanie się na Pozycję",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli 2 lub więcej zahartowanych przyjaznych wojowników sąsiaduje z tym samym wrogim wojownikiem."
+    },
+    {
+      "name": "Próba Zahartowanych",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli każdy wojownik jest zahartowany."
+    },
+    {
+      "name": "Atak Dwukierunkowy",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 2 lub więcej zahartowanych przyjaznych wojowników znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Uzurpator",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli wróg-dowódca został pokonany przez zahartowanego przyjaznego wojownika w tej rundzie bitwy."
+    },
+    {
+      "name": "Ostatnie Drgania",
+      "text": "Wybierz zahartowanego przyjaznego wojownika. W następnym kroku Akcji Ataki, których celem jest ten wojownik, mają -2 kości Ataku."
+    },
+    {
+      "name": "Fałszywy Ruch!",
+      "text": "Wybierz wrogiego wojownika z cechą Wytrzymałości równą 3 lub więcej, który sąsiaduje z zahartowanym przyjaznym wojownikiem, a następnie rzuć kością Ataku. Jeśli wynik zawiera jakikolwiek {icon:hammer} lub {icon:sword}, zadaj temu wojownikowi 1 obrażenie, a następnie daj temu wojownikowi żeton ogłuszenia. Jeśli jesteś underdog, wynik może również zawierać {icon:crit}."
+    },
+    {
+      "name": "Ostatni Bastion",
+      "text": "W następnym kroku Akcji zahartowani przyjaźni wojownicy nie mogą być przepychani."
+    },
+    {
+      "name": "Okazja Czyni Złodzieja",
+      "text": "Zagraj tę kartę natychmiast po wybraniu broni jako części Ataku zahartowanego przyjaznego wojownika. Ta broń miała +1 kości Ataku podczas tego Ataku."
+    },
+    {
+      "name": "Moc ze Śmierci",
+      "text": "Zagraj tę kartę natychmiast po tym, jak przyjazny wojownik z nagrodą 1 lub więcej zostaje pokonany przez wrogiego wojownika, jeśli ten wojownik był zahartowany przed zadaniem obrażeń, które go pokonały. Dobierz do 3 kart Mocy."
+    },
+    {
+      "name": "Szał Ataku",
+      "text": "Zagraj tę kartę natychmiast po udanym Ataku zahartowanego przyjaznego wojownika. Wybierz innego przyjaznego wojownika. Ten wojownik jest zahartowany."
+    },
+    {
+      "name": "Unik",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o 1 pole."
+    },
+    {
+      "name": "Złośliwe Pułapki",
+      "text": "Wybierz wrogiego wojownika z cechą Wytrzymałości równą 3 lub więcej w odległości 2 pól od twojego dowódcy. Daj temu wojownikowi żeton Ruchu."
+    },
+    {
+      "name": "Skoordynowany Wysiłek",
+      "text": "Wybierz 2 zahartowanych przyjaznych wojowników w odległości 4 pól od siebie. Usuń tych wojowników z pola bitwy, a następnie umieść każdego z nich na polu, z którego usunięto drugiego."
+    },
+    {
+      "name": "Powstanie!",
+      "text": "Wszyscy przyjaźni wojownicy są zahartowani w następnym kroku Akcji."
+    },
+    {
+      "name": "Ciemny Koń",
+      "text": "Ten wojownik jest zahartowany."
+    },
+    {
+      "name": "Śmiertelna Celność",
+      "text": "Broń tego wojownika ma Ensnare."
+    },
+    {
+      "name": "Napędzany Bólem",
+      "text": "Akcja Ataku wręcz\n{icon:hex} 1 {icon:hammer} X {icon:damage} 2\n{icon:crit} Ensnare\nX jest równe liczbie żetonów obrażeń tego wojownika."
+    },
+    {
+      "name": "Wielka Wytrzymałość",
+      "text": "Ten wojownik ma +1 Wytrzymałości."
+    },
+    {
+      "name": "Nieodparty",
+      "text": "Gdy ten wojownik jest zahartowany, rzuty na Obronę tego wojownika nie mogą być modyfikowane przez Cleave i Ensnare."
+    },
+    {
+      "name": "Ostatni Cios",
+      "text": "Thrash: Natychmiast po tym, jak ten wojownik zostaje pokonany, przed usunięciem go z pola bitwy, rzuć liczbą kości Obrony równą rundzie bitwy. Za każdy {icon:block} daj wrogiego wojownika w odległości 2 pól od tego wojownika żeton Ruchu."
+    },
+    {
+      "name": "Otoczony!",
+      "text": "Gdy ten wojownik Atakuje, jeśli cel znajduje się w odległości 3 pól od jakichkolwiek innych przyjaznych wojowników, cel jest Flankowany i Otoczony podczas tego Ataku. Restricted"
+    },
+    {
+      "name": "Ostatni Strzał",
+      "text": "Pyrrhic Strike: Natychmiast po tym, jak ten wojownik zostaje pokonany przez wrogiego wojownika, przed usunięciem go z pola bitwy, wybierz wrogiego wojownika w odległości 2 pól od niego. Daj temu wojownikowi żeton ogłuszenia. Jeśli ten wojownik był zahartowany przed zadaniem obrażeń, które go pokonały, zadaj temu wojownikowi 1 obrażenie."
+    },
+    {
+      "name": "Uciążliwy Zawalidroga",
+      "text": "Wrodzy wojownicy sąsiadujący z tym wojownikiem muszą obierać tego wojownika za cel wszelkich Ataków."
+    },
+    {
+      "name": "Naostrzony Oręż",
+      "text": "Broń tego wojownika ma Cleave."
+    }
+  ]
+}

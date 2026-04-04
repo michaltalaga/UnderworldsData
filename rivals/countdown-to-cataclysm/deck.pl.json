@@ -1,0 +1,134 @@
+{
+  "name": "Odliczanie do Katastrofy – Talia Rivals",
+  "plot": "(Errata) Używając tej talii Rivals, podczas kroku Zbieranie Drużyn w 'Przygotowaniu', umieść żeton ogólny na 1. kroku karty odliczania dołączonej do tej talii. Ten żeton to twój wskaźnik Katastrofy.\n\nMusisz przesunąć swój wskaźnik Katastrofy o 1 krok za pierwszym razem, gdy przyjazny wojownik zostaje pokonany w każdej fazie walki, oraz musisz przesunąć swój wskaźnik Katastrofy o 1 krok po ostatnim kroku mocy w każdej rundzie bitwy za każdy żeton terenu, na którym nie ma wrogich wojowników.\n\nGdy twój wskaźnik jest:\n\n- na kroku 1–5, twoja wartość Katastrofy wynosi 1.\n\n- na kroku 6–9, twoja wartość Katastrofy wynosi 2.\n\n- na kroku 10–13, twoja wartość Katastrofy wynosi 3.\n\n- na ostatnim kroku, twoja wartość Katastrofy wynosi 4.",
+  "cards": [
+    {
+      "name": "Siać Spustoszenie",
+      "text": "Zdobądź ten cel w fazie końcowej. Zdobądź liczbę punktów Chwały równą twojej wartości Katastrofy, maksymalnie 2. Restricted"
+    },
+    {
+      "name": "Psy Wojny",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 2 lub więcej wrogich wojowników zostało pokonanych i/lub rannych, a przynajmniej jeden z nich został pokonany w poprzedniej fazie walki."
+    },
+    {
+      "name": "Podłożyć Materiały Wybuchowe",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twoja drużyna kontroluje 2 lub więcej żetonów skarbów i kontroluje wszystkie żetony skarbów w jakichkolwiek terytoriach."
+    },
+    {
+      "name": "Niszczyciele",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli liczba rannych i/lub pokonanych wrogich wojowników jest większa niż twoja wartość Katastrofy."
+    },
+    {
+      "name": "Nierówna Walka",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twoja drużyna kontroluje każdy żeton skarbu z numerem nieparzystym."
+    },
+    {
+      "name": "W Pełni Wyposażony",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli jacykolwiek przyjazni wojownicy są wyposażeni w 3 lub więcej Ulepszeń każdy."
+    },
+    {
+      "name": "Szkody Uboczne",
+      "text": "Zdobądź ten cel natychmiast po przesunięciu wskaźnika Katastrofy o 1 krok w wyniku pokonania przyjaznego wojownika. Jeśli jesteś underdogiem, zdobądź ten cel po przesunięciu wskaźnika Katastrofy o 1 krok z dowolnego powodu."
+    },
+    {
+      "name": "Za Blisko",
+      "text": "Zdobądź ten cel natychmiast po kroku Mocy przeciwnika, jeśli każdy przyjazny wojownik jest w odległości 2 heksów od jakichkolwiek wrogich wojowników."
+    },
+    {
+      "name": "Szokujący Szturm",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli twoja drużyna kontroluje wszystkie żetony skarbów na terytorium neutralnym."
+    },
+    {
+      "name": "Bez Wyjścia",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji, jeśli wszyscy przyjazni wojownicy posiadają żetony Ruchu i/lub Szarży oraz w każdym terytorium znajduje się przyjazny wojownik."
+    },
+    {
+      "name": "Perfekcyjne Cięcie",
+      "text": "Zdobądź ten cel natychmiast po udanym Ataku wręcz przyjaznego wojownika, jeśli żaden wynik w rzucie na Obronę celu nie był sukcesem."
+    },
+    {
+      "name": "Przytłaczająca Siła",
+      "text": "Zdobądź ten cel natychmiast po udanym Ataku wręcz przyjaznego wojownika, jeśli rzut na Atak zawierał 4 lub więcej kości."
+    },
+    {
+      "name": "Brutalny Cios",
+      "text": "Zagraj tę kartę natychmiast po wybraniu broni w ramach Ataku. Wyniki {icon:double-support} liczą się jako sukcesy dla tego Ataku."
+    },
+    {
+      "name": "Koniec Jest Bliski",
+      "text": "Domain: Po każdym kroku Akcji gracz, którego jest tura, rzuca liczbą kości Ataku równą jego wartości Katastrofy, lub 1 kością Ataku, jeśli nie posiada takiej wartości.\nJeśli rzut zawiera jakiekolwiek {icon:sword} lub {icon:crit}, jego przeciwnik musi odrzucić kartę Mocy. Ten efekt utrzymuje się do końca rundy bitwy, do momentu zagrania kolejnej karty Domain lub do czasu przesunięcia twojego wskaźnika Katastrofy."
+    },
+    {
+      "name": "Narastające Obawy",
+      "text": "Wrodzy wojownicy mają -X do Ruchu w następnym kroku Akcji, gdzie X to twoja wartość Katastrofy."
+    },
+    {
+      "name": "Totalne Zawalenie",
+      "text": "Rzuć liczbą kości Ataku równą twojej wartości Katastrofy. Jeśli rzut zawiera {icon:sword} lub {icon:crit}, wybierz wojownika.\nZadaj temu wojownikowi 1 obrażenie. Jeśli wybrałeś przyjaznego wojownika, możesz zamiast tego zadać mu obrażenia do wartości twojej Katastrofy."
+    },
+    {
+      "name": "Gwałtowna Eksplozja",
+      "text": "Wybierz hex zagłuszenia. Odepchnij każdego wojownika w odległości 1 hexu od tego hexu zagłuszenia o 1 hex."
+    },
+    {
+      "name": "Rozerwać Krainę",
+      "text": "Rzuć liczbą kości Ataku równą twojej wartości Katastrofy za każdego wojownika w odległości 1 hexu od terytorium neutralnego.\nJeśli rzut zawiera jakiekolwiek {icon:hammer} lub {icon:crit}, zadaj temu wojownikowi 1 obrażenie."
+    },
+    {
+      "name": "Wściekłe Wstrząsy",
+      "text": "Wybierz liczbę wrogich wojowników do wartości twojej Katastrofy. Daj każdemu z tych wojowników żeton Staggera."
+    },
+    {
+      "name": "Kontrszykowanie",
+      "text": "Zagraj tę kartę natychmiast po wybraniu przyjaznego wojownika jako celu Ataku. Wybierz innego przyjaznego wojownika. Odepchnij tego wojownika o do 3 hexów. To odepchnięcie musi zakończyć się przylegająco do atakującego."
+    },
+    {
+      "name": "Wszystko albo Nic",
+      "text": "Wybierz przyjaznego wojownika. Zainspiruj tego wojownika. Ten efekt utrzymuje się przez X kroków Akcji, gdzie X to twoja wartość Katastrofy. Po zakończeniu tego efektu nie odrzucaj tej karty. Zamiast tego Cofnij Inspirację tego wojownika. Ten wojownik nie może być ponownie Zainspirowany. Ten efekt utrzymuje się do końca gry."
+    },
+    {
+      "name": "Improwizowany Atak",
+      "text": "Wybierz przyjaznego wojownika. Ten wojownik natychmiast Atakuje następującą bronią, gdzie X to twoja wartość Katastrofy.\nAkcja Ataku dystansowego\n{icon:hex} 3 {icon:hammer} X {icon:damage} 1\nTej broni nie można modyfikować."
+    },
+    {
+      "name": "Zwiastun Zagłady",
+      "text": "Tick Tock: Po odrzuceniu tej karty podczas Fazy Walki możesz natychmiast przesunąć swój wskaźnik Katastrofy o 1 krok."
+    },
+    {
+      "name": "Wizje Ruiny",
+      "text": "Ten wojownik ma +X do Ruchu, gdzie X to twoja wartość Katastrofy.\nNatychmiast po tym, jak ten wojownik się Poruszy, daj mu żeton Staggera."
+    },
+    {
+      "name": "Ostrze Zagłady",
+      "text": "Ever Closer: Natychmiast przesuń swój wskaźnik Katastrofy o 1 krok po pokonaniu przez tego wojownika wrogiego wojownika. Następnie, jeśli twoja wartość Katastrofy wynosi 2 lub więcej, odrzuć tę kartę."
+    },
+    {
+      "name": "Napędzany Bólem",
+      "text": "Insensate: Natychmiast po tym, jak ten wojownik zostanie odrzucony, możesz go uleczyć."
+    },
+    {
+      "name": "Nieuchronny Uścisk",
+      "text": "Bronie wręcz tego wojownika mają Ensnare."
+    },
+    {
+      "name": "Absolutne Przekonanie",
+      "text": "Charakterystyka Obrony tego wojownika wynosi X, gdzie X to twoja wartość Katastrofy, i nie może być dalej modyfikowana.\nTen wojownik nie może używać zdolności Critical Weapon."
+    },
+    {
+      "name": "Wypalony",
+      "text": "Smoulder: Wybierz przyjaznego wojownika. Daj temu wojownikowi żeton Staggera. Następnie dobierz 2 karty Mocy. Jeśli jesteś underdogiem, dobierz zamiast tego 3 karty Mocy."
+    },
+    {
+      "name": "Wielka Wytrzymałość",
+      "text": "Ten wojownik ma +1 do Wytrzymałości."
+    },
+    {
+      "name": "Rzucona Broń",
+      "text": "Akcja Ataku dystansowego\n{icon:hex} 3 {icon:hammer} 2 {icon:damage} 1\n{icon:crit} Cleave"
+    },
+    {
+      "name": "Desperacka Furia",
+      "text": "Akcja Ataku wręcz\n{icon:hex} 1 {icon:hammer} 2 {icon:damage} 3\nNatychmiast po tym, jak ten wojownik zaatakuje tą bronią, zadaj 1 obrażenie temu wojownikowi."
+    }
+  ]
+}

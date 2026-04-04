@@ -1,0 +1,134 @@
+{
+  "name": "Talia Rywali Strażników Kamienia Żaru",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Wypad",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli przyjazny wojownik posiadający żetony Szarży trzyma żeton skarbu na terytorium wroga."
+    },
+    {
+      "name": "Utrzymaj Pozycję",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli przyjazny wojownik posiadający żetony Zachwiania trzyma żeton skarbu na terytorium wroga."
+    },
+    {
+      "name": "Krok po Kroku",
+      "text": "Zdobądź ten cel natychmiast po kroku Akcji przeciwnika, jeśli przyjazny wojownik posiadający żetony Ruchu trzyma żeton skarbu na terytorium wroga. Jeśli jesteś underdog, ten przyjazny wojownik może mieć zamiast tego żetony Szarży."
+    },
+    {
+      "name": "Niezdobyty",
+      "text": "Zdobądź ten cel natychmiast po Ataku wrogiego wojownika, jeśli przyjazny wojownik trzymający żeton skarbu był celem tego Ataku."
+    },
+    {
+      "name": "Agresywny Obrońca",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli atakujący trzyma żeton skarbu."
+    },
+    {
+      "name": "Ostrożne Natarcie",
+      "text": "Zdobądź ten cel natychmiast po tym, jak przyjazny wojownik Ruszy się, jeśli 2 lub więcej przyjaznych wojowników posiadających żetony Ruchu znajduje się na terytorium wroga."
+    },
+    {
+      "name": "Trzymaj Żeton Skarbu 1 lub 2",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli przyjazny wojownik trzyma żeton skarbu 1 lub 2."
+    },
+    {
+      "name": "Trzymaj Żeton Skarbu 3 lub 4",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli przyjazny wojownik trzyma żeton skarbu 3 lub 4."
+    },
+    {
+      "name": "Trzymaj Żeton Skarbu 5",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli przyjazny wojownik trzyma żeton skarbu 5."
+    },
+    {
+      "name": "Powolne Natarcie",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twoja drużyna trzyma jakiekolwiek żetony skarbu zarówno na terytorium neutralnym, jak i na terytorium wroga."
+    },
+    {
+      "name": "Żelazny Uchwyt",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twoja drużyna trzyma wszystkie żetony skarbu na terytorium przyjaznym i/lub wrogim."
+    },
+    {
+      "name": "Supremacja",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 2 lub więcej przyjaznych wojowników o łącznej charakterystyce Łupu wynoszącej 3 lub więcej trzyma żetony skarbu. Restricted"
+    },
+    {
+      "name": "Zamień Miejscami",
+      "text": "Wybierz 2 żetony skarbu. Zamień miejscami te żetony skarbu."
+    },
+    {
+      "name": "Unik",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o 1 hex."
+    },
+    {
+      "name": "Ten Dodatkowy Krok",
+      "text": "Zagraj tę kartę natychmiast po tym, jak przyjazny wojownik Ruszy się. Przesuń tego wojownika o 1 hex. To przesunięcie musi zakończyć się na żetonie terenu."
+    },
+    {
+      "name": "Okopać Się",
+      "text": "Wybierz przyjaznego wojownika stojącego na żetonie terenu. Daj temu wojownikowi żeton Warty."
+    },
+    {
+      "name": "Mikstura Lecznicza",
+      "text": "Wybierz przyjaznego wojownika. Ulecz tego wojownika. Jeśli jesteś underdog, możesz rzucić kością Obrony. Na {icon:block} lub {icon:crit} ulecz tego wojownika ponownie."
+    },
+    {
+      "name": "Ukryte Ścieżki",
+      "text": "Wybierz przyjaznego wojownika w hexie przy krawędzi. Usuń tego wojownika z pola bitwy, a następnie umieść go w innym pustym hexie przy krawędzi. Następnie daj temu wojownikowi żeton Ruchu, chyba że jesteś underdog."
+    },
+    {
+      "name": "Zamieszanie",
+      "text": "Wybierz 2 sąsiadujących ze sobą wojowników. Usuń ich z pola bitwy, a następnie umieść każdego z nich w hexie, z którego usunięto drugiego."
+    },
+    {
+      "name": "Utrzymać Linię!",
+      "text": "Wojownicy nie mogą być odpychani. Ten efekt trwa do końca następnego kroku Akcji."
+    },
+    {
+      "name": "Rzut przez Ramię",
+      "text": "Zagraj tę kartę natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel jest sąsiadujący. Usuń cel z pola bitwy, a następnie umieść go w innym pustym hexie sąsiadującym z atakującym."
+    },
+    {
+      "name": "Według Planu",
+      "text": "Dobierz liczbę kart Mocy równą liczbie żetonów skarbu trzymanych przez twoją drużynę."
+    },
+    {
+      "name": "Uparty do Końca",
+      "text": "Jeśli ten wojownik jest celem Ataku, atakujący nie może użyć Overrun."
+    },
+    {
+      "name": "Nienaruszalny",
+      "text": "Ten wojownik nie może być Flanked ani Surrounded, gdy trzyma żeton skarbu."
+    },
+    {
+      "name": "Wielka Szybkość",
+      "text": "Ten wojownik ma +1 do Ruchu."
+    },
+    {
+      "name": "Błyskawiczne Refleksy",
+      "text": "Ten wojownik ma +1 do Obrony, maksymalnie 2."
+    },
+    {
+      "name": "Impet Brutala",
+      "text": "Ten wojownik nie może być odpychany, gdy posiada jakiekolwiek żetony Szarży."
+    },
+    {
+      "name": "Zwinny",
+      "text": "Deft: Po wykonaniu rzutu na Obronę dla tego wojownika możesz natychmiast przerzucić 1 kość Obrony z tego rzutu."
+    },
+    {
+      "name": "Pojedynkowicz",
+      "text": "Footwork: Natychmiast po tym, jak ten wojownik zaatakował, możesz go przesunąć o 1 hex."
+    },
+    {
+      "name": "Wielka Wytrzymałość",
+      "text": "Ten wojownik ma +1 do Zdrowia."
+    },
+    {
+      "name": "Bystre Oko",
+      "text": "Bronie do walki wręcz tego wojownika mają +1 kość Ataku."
+    },
+    {
+      "name": "Wielka Siła",
+      "text": "Bronie do walki wręcz tego wojownika mają Grievous."
+    }
+  ]
+}

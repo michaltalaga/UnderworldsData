@@ -1,0 +1,134 @@
+{
+  "name": "Zestaw Rywali Reckless Fury",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Celuj w Szczyt",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli łączna cecha Bounty poległych i/lub rannych wrogich wojowników wynosi 4 lub więcej."
+    },
+    {
+      "name": "Arena Mortis",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli wszyscy wojownicy na tym samym terytorium mają żetony Charge, a ich łączna cecha Bounty wynosi 4 lub więcej."
+    },
+    {
+      "name": "Najlepsza Noga Naprzód",
+      "text": "Zdobądź tę kartę natychmiast po udanym Ataku przyjaznego wojownika, jeśli ten wojownik ma jakiekolwiek żetony Charge i znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Zbroczony Krwią Szaleniec",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli przyjazny wojownik ma 2 lub więcej żetonów Charge."
+    },
+    {
+      "name": "Krwawy Impet",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 2 lub więcej przyjaznych wojowników z łączną cechą Bounty wynoszącą 4 lub więcej ma żetony Charge i znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Szaleńczy Szturm",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji, jeśli przyjazni wojownicy z łączną cechą Bounty wynoszącą 3 lub więcej mają żetony Charge i znajdują się na wrogim terytorium."
+    },
+    {
+      "name": "Żywa Pałka",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji, jeśli przyjazny wojownik ma żeton Guard i żeton Charge oraz nie znajduje się na przyjaznym terytorium."
+    },
+    {
+      "name": "Czerwone Następstwo",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli łączna cecha Bounty poległych wrogich wojowników wynosi 2 lub więcej."
+    },
+    {
+      "name": "Wypad",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji przeciwnika, jeśli przyjazny wojownik z jakimikolwiek żetonami Charge posiada żeton skarbu na wrogim terytorium."
+    },
+    {
+      "name": "Dziki Sprinter",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji, jeśli przyjazny wojownik na wrogim terytorium ma 2 lub więcej żetonów Move."
+    },
+    {
+      "name": "Nieustanna Masakra",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli wszyscy wojownicy mają żetony Charge."
+    },
+    {
+      "name": "Zacięta Bijatyka",
+      "text": "Zdobądź tę kartę natychmiast po kroku Akcji, jeśli 3 lub więcej wojowników z żetonami Charge jest sąsiadujących ze sobą. Jeśli jesteś underdog, wystarczą 2 lub więcej wojowników."
+    },
+    {
+      "name": "Gotowość",
+      "text": "Wybierz przyjaznego wojownika. Daj temu wojownikowi żeton Charge."
+    },
+    {
+      "name": "Złapać Broń",
+      "text": "Zagraj tę kartę natychmiast po udanym Ataku wojownika. Daj temu wojownikowi żeton Charge."
+    },
+    {
+      "name": "Skok w Wir Walki",
+      "text": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o maksymalnie 2 heksy. To przesunięcie musi zakończyć się w sąsiedztwie dowolnego wojownika z żetonami Charge."
+    },
+    {
+      "name": "Do Roboty",
+      "text": "Wybierz 2 przyjaznych wojowników. Usuń żeton Charge od 1 z tych wojowników, a następnie daj drugiemu wojownikowi żeton Charge. Forsaken"
+    },
+    {
+      "name": "Utracone Dziedzictwo",
+      "text": "Zagraj tę kartę natychmiast po odrzuceniu Ulepszeń poległego przyjaznego wojownika. Wybierz 1 z tych Ulepszeń, weź je do ręki, a następnie dobierz 1 kartę Power."
+    },
+    {
+      "name": "Wybuch Wściekłości",
+      "text": "Wybierz przyjaznego wojownika z jakimikolwiek żetonami Charge. Rzuć kością Ataku za każdego wrogiego wojownika sąsiadującego z nim. Jeśli jesteś underdog, zamiast tego rzuć liczbą kości równą numerowi rundy bitwy. Jeśli wynik zawiera jakiekolwiek {icon:hammer}, zadaj 1 obrażenie temu wojownikowi."
+    },
+    {
+      "name": "Twoja Kolej",
+      "text": "Zagraj tę kartę natychmiast przed usunięciem żetonów poległego przyjaznego wojownika, jeśli ten wojownik został poległy przez atakującego i miał jakiekolwiek żetony Move, Charge, Guard i/lub Stagger. Wybierz przyjaznego wojownika lub atakującego. Daj wybranemu wojownikowi wszystkie żetony Move, Charge, Guard i Stagger poległego wojownika."
+    },
+    {
+      "name": "Przez Wszystko",
+      "text": "Wybierz przyjaznego wojownika z cechą Bounty wynoszącą 2 lub mniej. Zadaj temu wojownikowi 1 obrażenie. W następnym kroku Akcji ten wojownik może używać zdolności Core tak, jakby nie miał żadnych żetonów Move ani Charge."
+    },
+    {
+      "name": "Szybka Zmiana",
+      "text": "Wybierz przyjaznego wojownika, który ma jakiekolwiek żetony Move. Usuń 1 żeton Move tego wojownika, a następnie daj temu wojownikowi żeton Charge."
+    },
+    {
+      "name": "Niepohamowane Postawy",
+      "text": "Wrodzy wojownicy nie mogą używać zdolności Core innych niż zdolność Charge w następnym kroku Akcji."
+    },
+    {
+      "name": "Ryczący Tyran",
+      "text": "Ryk: Ten wojownik może używać tej zdolności Core, jeśli ma jakiekolwiek żetony Charge. Przesuń każdego innego przyjaznego wojownika z jakimikolwiek żetonami Charge o maksymalnie 2 heksy. Następnie wybierz 1 z tych wojowników. Usuń 1 żeton Charge tego wojownika."
+    },
+    {
+      "name": "Łapacz Ostrzy",
+      "text": "Gdy ten wojownik jest celem Ataku, atakujący nie może używać zdolności Weapon. Restricted"
+    },
+    {
+      "name": "Ostrza Gniewu",
+      "text": "Jeśli ten wojownik zostanie poległy, przed usunięciem go z pola bitwy rzuć liczbą kości Ataku równą numerowi rundy bitwy za każdego wrogiego wojownika sąsiadującego z nim. Jeśli wynik zawiera jakiekolwiek {icon:hammer}, zadaj 1 obrażenie temu wojownikowi."
+    },
+    {
+      "name": "Wściekła Moc",
+      "text": "Bronie wręcz tego wojownika mają Grievous, gdy ten wojownik ma jakiekolwiek żetony Charge i nie używa zdolności Charge."
+    },
+    {
+      "name": "Furia Aqshy",
+      "text": "Wojownicy sąsiadujący z tym wojownikiem nie mogą używać zdolności Core innych niż zdolność Charge. Forsaken"
+    },
+    {
+      "name": "Szaleniec",
+      "text": "Jeśli ten wojownik nie ma żetonów Charge, zamiast zagrywania karty Power w kroku Power możesz dać temu wojownikowi żeton Charge."
+    },
+    {
+      "name": "Szaleńczy Szarż",
+      "text": "Ten wojownik ma +2 Move podczas używania zdolności Charge."
+    },
+    {
+      "name": "Sokole Oko",
+      "text": "Bronie wręcz tego wojownika mają +1 kość Ataku."
+    },
+    {
+      "name": "Wciąż Walczący",
+      "text": "Bronie wręcz tego wojownika mają Ensnare, gdy ten wojownik ma jakiekolwiek żetony Charge i nie używa zdolności Charge."
+    },
+    {
+      "name": "Totalna Ignorancja",
+      "text": "Jeśli ten wojownik miałby zostać poległy, nie zostaje poległy. Usuń żetony obrażeń od tego wojownika, aż będzie vulnerable, a następnie odrzuć tę kartę. Forsaken"
+    }
+  ]
+}

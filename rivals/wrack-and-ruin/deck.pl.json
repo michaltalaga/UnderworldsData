@@ -1,0 +1,134 @@
+{
+  "name": "Talia i Zagłada – Talia Rivals",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Sam na Ciemności",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli żadne figurki nie są sąsiadujące."
+    },
+    {
+      "name": "Zakrwawiony i Poobijany",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak twoja banda zadała obrażenia wrogiej figurce, jeśli 3 lub więcej figurek jest uszkodzonych."
+    },
+    {
+      "name": "Ostrożne Natarcie",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak przyjazna figurka Poruszyła się, jeśli 2 lub więcej przyjaznych figurek posiadających żetony Ruchu znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Życie na Krawędzi",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli narażona przyjazna figurka znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Bez Wyboru",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak odrzucisz kartę Mocy, jeśli 5 lub więcej kart Intrygi znajduje się na twoim stosie odrzuconych kart Mocy."
+    },
+    {
+      "name": "Z Deszczu pod Rynnę",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli 3 lub więcej uszkodzonych przyjaznych figurek posiadających żetony Ruchu i/lub Szarży znajduje się na wrogim terytorium."
+    },
+    {
+      "name": "Mistrz Intryg",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli zagrałeś 3 lub więcej Intryg w tej rundzie bitwy."
+    },
+    {
+      "name": "Przewidywalny Koniec",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak zdolność na przyjaznej karcie Talia i Zagłada zadała obrażenia wrogiej figurce trzymającej żeton skarbu."
+    },
+    {
+      "name": "Rozejść się!",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli na każdym terytorium znajduje się przyjazna figurka."
+    },
+    {
+      "name": "Trzymaj się Blisko",
+      "text": "Zdobądź tę kartę w fazie końcowej, jeśli żadne figurki nie znajdują się w skrajnych heksach."
+    },
+    {
+      "name": "Mocny Start",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak wroga figurka zostanie pokonana, jeśli była to pierwsza figurka pokonana w tej fazie walki."
+    },
+    {
+      "name": "Niebezpieczny Teren",
+      "text": "Zdobądź tę kartę natychmiast po tym, jak twoja banda zadała obrażenia wrogiej figurce w skrajnym heksie. Jeśli jesteś underdogiem, ta wroga figurka może zamiast tego znajdować się w odległości 1 heksa od skrajnego heksu."
+    },
+    {
+      "name": "Zamieszanie",
+      "text": "Wybierz 2 sąsiadujące figurki. Usuń te figurki z pola bitwy, a następnie umieść każdą z nich w heksie, z którego usunięto tę drugą."
+    },
+    {
+      "name": "Jak nie tak, to tak",
+      "text": "Twój przeciwnik musi wybrać 1 z poniższych zdolności, abyś mógł ją rozwiązać:\nWybierz wrogą figurkę. Odepchnij tę figurkę o 1 heks.\nWybierz wrogą figurkę, która nie jest narażona. Zadaj tej figurce 1 obrażenie."
+    },
+    {
+      "name": "Śmiertelne Pułapki",
+      "text": "Zagraj tę kartę natychmiast po remisowym Ataku przyjaznej figurki, jeśli cel nie jest narażony i został odrzucony. Zadaj celowi 1 obrażenie."
+    },
+    {
+      "name": "Linie Uskoków",
+      "text": "Wybierz nieuszkodzoną wrogą figurkę. Zadaj tej figurce 1 obrażenie. Następnie twój przeciwnik może wybrać figurkę. Zadaj tej figurce 1 obrażenie."
+    },
+    {
+      "name": "Ognioodporność",
+      "text": "Gdy po raz pierwszy obrażenia zostaną zadane przyjaznej figurce w następnej turze, zredukuj te obrażenia do 1."
+    },
+    {
+      "name": "Uciekaj!",
+      "text": "Wybierz przyjazną figurkę na przyjaznym terytorium. Ta figurka ma +3 do Ruchu w twoim następnym kroku Akcji. Jeśli ta figurka Poruszy się w tym kroku Akcji, ten Ruch nie może zakończyć się na przyjaznym terytorium."
+    },
+    {
+      "name": "Złowrogie Pomruki",
+      "text": "Twój przeciwnik musi wybrać 1 z poniższych zdolności, abyś mógł ją rozwiązać:\nWybierz 2 wrogie figurki. Daj każdej z tych figurek żeton Oszołomienia.\nWybierz wrogą figurkę, która nie jest narażona. Zadaj tej figurce 1 obrażenie."
+    },
+    {
+      "name": "Wciśnij się",
+      "text": "Wybierz przyjazną figurkę. Odepchnij tę figurkę o maksymalnie 2 heksy. To odepchnięcie musi zakończyć się sąsiadująco z 2 lub więcej figurkami."
+    },
+    {
+      "name": "Złowrogi Zamiar",
+      "text": "Zagraj tę kartę natychmiast po tym, jak wybierzesz broń do walki wręcz w ramach Ataku. Ta broń ma +1 kość Ataku dla tego Ataku. Jeśli cel jest nieuszkodzony, ta broń ma zamiast tego +2 kości Ataku dla tego Ataku."
+    },
+    {
+      "name": "Erupcja Wulkanu",
+      "text": "Wybierz figurkę. Następnie twój przeciwnik może wybrać wrogą figurkę. Zaczynając od wybranej przez ciebie figurki, rzuć liczbą kości Ataku równą charakterystyce Bounty każdej z tych figurek, minimum 1. Jeśli rzut zawiera jakiekolwiek {icon:hammer}, zadaj tej figurce 1 obrażenie."
+    },
+    {
+      "name": "Taranowanie",
+      "text": "Taranowanie: Ta figurka może użyć tej zdolności Podstawowej, jeśli nie ma żetonów Ruchu ani Szarży. Ta figurka Poruszy się. Ten Ruch musi zakończyć się sąsiadująco z wrogą figurką. Daj tej figurce żeton Szarży. Następnie wybierz wrogą figurkę sąsiadującą z tą figurką. Odepchnij tę figurkę o 1 heks, a następnie daj jej żeton Oszołomienia."
+    },
+    {
+      "name": "Desperacka Obrona",
+      "text": "Gdy ta figurka jest celem Ataku, bronie atakującego mają -1 do Obrażeń. Następnym razem, gdy obrażenia zostaną zadane tej figurce w ramach Ataku, odrzuć tę kartę."
+    },
+    {
+      "name": "Ognisty Temperament",
+      "text": "Kłótliwy: Natychmiast po tym, jak ta figurka zostanie wybrana do odepchnięcia, możesz zadać tej figurce 1 obrażenie. Jeśli tak zrobisz, ta figurka nie zostaje odepchnięta."
+    },
+    {
+      "name": "Wielka Szybkość",
+      "text": "Ta figurka ma +1 do Ruchu."
+    },
+    {
+      "name": "Pachołek",
+      "text": "Zdyscyplinowany: Natychmiast po wykonaniu rzutu Ataku dla tej figurki możesz zmienić 1 wynik na {icon:single-support}. Nie możesz przerzucać rzutów Ataku dla tej figurki."
+    },
+    {
+      "name": "Nieszczęście",
+      "text": "Pechowy: Natychmiast po tym, jak ta figurka użyje zdolności Podstawowej, możesz zadać tej figurce 1 obrażenie. Następnie możesz usunąć ten Ulepszenie z tej figurki i wyposażyć w to Ulepszenie inną przyjazną figurkę."
+    },
+    {
+      "name": "Krok Kruszący Skały",
+      "text": "Tratowanie: Natychmiast po twoim ostatnim kroku Akcji w rundzie bitwy wybierz sąsiadującą wrogą figurkę, która nie jest narażona. Zadaj tej figurce 1 obrażenie. Następnie rzuć kością Ataku. Na {icon:hammer} odrzuć tę kartę."
+    },
+    {
+      "name": "Druzgocąca Broń",
+      "text": "Bronie do walki wręcz tej figurki mają Cleave."
+    },
+    {
+      "name": "Niepohamowany",
+      "text": "Gdy ta figurka jest narażona, za każdym razem gdy zadane jej zostaje 1 obrażenie, zredukuj to obrażenie do 0."
+    },
+    {
+      "name": "Ostrożny Krok",
+      "text": "Możesz użyć tej zdolności po ostatnim kroku Mocy w rundzie bitwy. Odepchnij tę figurkę o 1 heks. To odepchnięcie nie może zakończyć się sąsiadująco z żadnymi figurkami."
+    }
+  ]
+}

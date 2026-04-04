@@ -1,0 +1,134 @@
+{
+  "name": "Talia Łowieckich Ostępów",
+  "plot": null,
+  "cards": [
+    {
+      "name": "Cofaj się!",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli cel został zepchnięty na inne terytorium."
+    },
+    {
+      "name": "Wyczucie krwi",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli jacyś wrodzy wojownicy na przyjaznym terytorium mają 2 lub więcej żetonów obrażeń i/lub są vulnerable. Jeśli jesteś underdog, ci wrodzy wojownicy mogą zamiast tego znajdować się na wrogim terytorium."
+    },
+    {
+      "name": "Ręce przy sobie!",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli cel znajdował się na żetonie cechy i został odrzucony."
+    },
+    {
+      "name": "Przewaga terenu",
+      "text": "Zdobądź ten cel natychmiast po nieudanym Ataku wrogiego wojownika, jeśli celem był przyjazny wojownik na przyjaznym terytorium."
+    },
+    {
+      "name": "Przewodź przykładem",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twój przywódca znajduje się na przyjaznym terytorium i Atakował 2 lub więcej razy w tej rundzie bitwy."
+    },
+    {
+      "name": "Nie ma tu dla was miejsca",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli cel znajdował się na przyjaznym terytorium i był Flanked i/lub Surrounded."
+    },
+    {
+      "name": "Żadnych intruzów",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli cel znajdował się na przyjaznym terytorium i został pokonany."
+    },
+    {
+      "name": "Przyparty do muru!",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli wrogi wojownik został zepchnięty do skrajnego hexu na przyjaznym terytorium w tej rundzie bitwy."
+    },
+    {
+      "name": "Gotowi czy nie",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli 2 lub więcej wrogich wojowników znajduje się na przyjaznym terytorium i każdy wrogi wojownik jest uszkodzony i/lub sąsiaduje z jakimkolwiek przyjaznym wojownikiem."
+    },
+    {
+      "name": "Szukanie zwady",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli twój przywódca znajduje się na przyjaznym terytorium i jest w odległości 2 hexów od 2 lub więcej innych wojowników z 2 lub więcej drużyn."
+    },
+    {
+      "name": "To nasze terytorium!",
+      "text": "Zdobądź ten cel w fazie końcowej, jeśli na przyjaznym terytorium znajduje się więcej przyjaznych wojowników z żetonami Ruchu i/lub Szarży niż wrogich wojowników z żetonami Ruchu i/lub Szarży na przyjaznym terytorium."
+    },
+    {
+      "name": "Uzurpacja",
+      "text": "Zdobądź ten cel natychmiast po Ataku przyjaznego wojownika, jeśli atakujący stoi na żetonie cechy, na którym stał cel w momencie wybrania go jako celu tego Ataku."
+    },
+    {
+      "name": "Bezczelna odmowa",
+      "text": "Jeśli twój przywódca znajduje się na przyjaznym terytorium, wybierz wrogiego wojownika sąsiadującego z nim na przyjaznym terytorium. Twój przywódca natychmiast Atakuje tego wojownika jedną ze swoich broni wręcz o wartości Obrażeń równej 1."
+    },
+    {
+      "name": "Odeprzyjcie najeźdźców",
+      "text": "W następnej turze bronie przyjaznych wojowników mają +1 kostkę Ataku, gdy znajdują się na przyjaznym terytorium."
+    },
+    {
+      "name": "Ukryte sidła",
+      "text": "Wybierz wrogiego wojownika na przyjaznym terytorium i w odległości 1 hexu od żetonu cechy. Jeśli jesteś underdog, możesz zamiast tego wybrać wrogiego wojownika na wrogim terytorium i w odległości 1 hexu od żetonu cechy. Bronie tego wojownika mają -1 kostkę Ataku w następnej turze."
+    },
+    {
+      "name": "Trzymajcie ich z daleka",
+      "text": "W następnej turze bronie wręcz przyjaznych wojowników mają +1 Zasięgu, maksymalnie do 2, dla Ataków celujących we wrogich wojowników na przyjaznym terytorium."
+    },
+    {
+      "name": "Uważaj, gdzie stąpasz",
+      "text": "Wybierz wrogiego wojownika na przyjaznym terytorium. Zepchnij tego wojownika o maksymalnie 2 hexy. To zepchnięcie musi zakończyć się na neutralnym lub wrogim terytorium."
+    },
+    {
+      "name": "Mistyczne wprowadzenie w błąd",
+      "text": "Wybierz 2 żetony skarbów na przyjaznym terytorium. Zamień miejscami te żetony skarbów."
+    },
+    {
+      "name": "Nieznane ścieżki",
+      "text": "Wybierz przyjaznego wojownika na przyjaznym terytorium. Jeśli jesteś underdog, możesz zamiast tego wybrać przyjaznego wojownika na wrogim terytorium. W następnej turze ten wojownik nie może zostać wybrany jako cel Ataku."
+    },
+    {
+      "name": "Niepewny grunt",
+      "text": "Wybierz wrogiego wojownika na przyjaznym terytorium i w odległości 1 hexu od żetonu cechy. Daj temu wojownikowi żeton Ruchu."
+    },
+    {
+      "name": "Tajemnice krainy",
+      "text": "Daj każdemu wrogiemu wojownikowi na przyjaznym terytorium, który sąsiaduje z przyjaznym wojownikiem i/lub żetonem cechy, żeton Stagger."
+    },
+    {
+      "name": "Unik w bok",
+      "text": "Wybierz przyjaznego wojownika. Zepchnij tego wojownika o 1 hex."
+    },
+    {
+      "name": "Równowaga Ghyranu",
+      "text": "Equilibrium: Natychmiast po udanym Ataku wrogiego wojownika, jeśli ten wojownik był celem tego Ataku i atakujący jest w odległości 3 hexów od niego, rzuć 3 kostkami Ataku. Jeśli rzut zawiera jakiekolwiek {icon:sword}, zadaj 1 obrażenie atakującemu."
+    },
+    {
+      "name": "Zablokowany!",
+      "text": "Hinder: Pierwszy raz, gdy każdy wrogi wojownik wchodzi do hexu sąsiadującego z tym wojownikiem w ramach Ruchu, rzuć kostką Ataku. Na {icon:hammer} lub {icon:crit}, ten wojownik musi zakończyć ten Ruch w tym hexie."
+    },
+    {
+      "name": "Obfitość Ghyranu",
+      "text": "Ten wojownik jest Inspired, gdy znajduje się na przyjaznym terytorium. Natychmiast po następnym kroku Akcji, Uninspire tego wojownika i odrzuć tę kartę."
+    },
+    {
+      "name": "Okaleczający cios",
+      "text": "Atak dystansowy\n{icon:hex} 2 {icon:sword} 3 {icon:damage} 1\nJeśli cel znajduje się na przyjaznym terytorium, daj temu wojownikowi żeton Ruchu."
+    },
+    {
+      "name": "Prowokujący obrońca",
+      "text": "Ten wojownik ma +1 Save, gdy znajduje się na przyjaznym terytorium. Odrzuć tę kartę, jeśli ten wojownik zostanie wybrany jako cel Ployu lub zostanie uszkodzony."
+    },
+    {
+      "name": "Wielka szybkość",
+      "text": "Ten wojownik ma +1 Move."
+    },
+    {
+      "name": "Ukryta pomoc",
+      "text": "Wrodzy wojownicy sąsiadujący z tym wojownikiem są Flanked."
+    },
+    {
+      "name": "Ukryte pułapki",
+      "text": "Atak wręcz\n{icon:hex} 1 {icon:hammer} 3 {icon:damage} 1\nTa broń ma Grievous, jeśli cel znajduje się w odległości 1 hexu od żetonu cechy na przyjaznym terytorium."
+    },
+    {
+      "name": "Zabójczy cios",
+      "text": "Bronie wręcz tego wojownika mają Grievous, jeśli cel jest uszkodzony."
+    },
+    {
+      "name": "Hartowany w boju",
+      "text": "To Ulepszenie może zostać przyznane tylko twojemu przywódcy.\nRzuty {icon:block} i {icon:dodge} liczą się jako sukcesy w rzutach Save dla przyjaznych wojowników sąsiadujących z tym wojownikiem."
+    }
+  ]
+}
