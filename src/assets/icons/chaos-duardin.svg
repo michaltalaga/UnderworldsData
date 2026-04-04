@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- anvil body -->
+  <path d="M3 12h18v3c0 1-1 2-2 2H5c-1 0-2-1-2-2v-3z" fill="currentColor"/>
+  <!-- anvil horn (left) -->
+  <path d="M3 12c-1 0-2-.5-2-1.5S2 9 3 9h2v3H3z" fill="currentColor"/>
+  <!-- anvil top -->
+  <path d="M6 9h12v3H6z" fill="currentColor"/>
+  <!-- anvil base/pedestal -->
+  <path d="M7 17h10v1c0 .5-.5 1-1 1H8c-.5 0-1-.5-1-1v-1z" fill="currentColor"/>
+  <path d="M8 19h8v2H8z" fill="currentColor"/>
+  <!-- hammer above -->
+  <rect x="10.5" y="1" width="3" height="5" rx="0.5" fill="currentColor"/>
+  <line x1="12" y1="6" x2="12" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>

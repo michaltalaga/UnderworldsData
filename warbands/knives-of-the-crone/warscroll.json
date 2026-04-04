@@ -1,0 +1,24 @@
+{
+  "id": "knives-of-the-crone",
+  "name": "Knives of the Crone",
+  "version": "1.1",
+  "grandAlliance": "Order",
+  "inspire": "If Foretold Wisdom is foretold after a friendly fighter's successful Attack as a result of the Visions in the Blood ability, Inspire that fighter.\n\nIf Foretold Wisdom is foretold as a result of the prophecy roll at the start of the first Action step in a battle round, Inspire a friendly fighter.",
+  "reactions": [
+    {
+      "name": "Visions in the Blood",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly fighter's successful Attack.",
+      "flavorText": null,
+      "rulesText": "Make a prophecy roll (see Rituals of Prophecy)."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Rituals of Prophecy",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "At the start of the first Action step in each battle round, you can make a prophecy roll by rolling 4 Attack dice.\n\n- If the roll contains 1 of the results on the prophecy table, that prophecy is foretold.\n- If the roll contains 2 different results on the prophecy table, both of those prophecies are foretold.\n- If the roll contains 3 of the same symbol, you can pick 1 prophecy from the prophecy table. That prophecy is foretold.\n- If the roll contains 4 of the same symbol, you can pick 2 different prophecies from the prophecy table. Both of those prophecies are foretold.\n- If the roll contains any {icon:skull}, you can replace each {icon:skull} with another symbol of your choice ({icon:crit}, {icon:fury}, {icon:grievous} or {icon:hex}).\n\nWhen a prophecy is foretold, immediately use its ability.\n\nProphecy Table:\n\nResult: {icon:crit}{icon:crit} - Foretold Slaughter: The next time you pick a melee weapon as part of an Attack this battle round, that weapon has Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) for that Attack.\n\nResult: {icon:fury}{icon:fury} - Foretold Wisdom: Look at the top card of your Objective deck. Put that card on the top or bottom of that deck.\n\nResult: {icon:grievous}{icon:grievous} or {icon:hex}{icon:hex} or {icon:grievous}{icon:hex} - Foretold Protection: The next time you make a Save roll this battle round, you can immediately re-roll 1 Save dice in that Save roll."
+    }
+  ]
+}

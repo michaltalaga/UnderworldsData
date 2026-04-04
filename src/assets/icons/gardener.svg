@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Nurgle triple circle: three circles in triangular arrangement -->
+  <circle cx="12" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="7.5" cy="15.5" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="16.5" cy="15.5" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+</svg>

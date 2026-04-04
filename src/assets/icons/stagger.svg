@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Dizzy star / spiral stagger symbol -->
+  <path d="M12 5a7 7 0 1 1 0 14 7 7 0 1 1 0-14z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <circle cx="12" cy="12" r="1.2" fill="currentColor"/>
+  <!-- small orbiting stars -->
+  <path d="M4 4l1.2 0.8-0.4 1.4 1.2-0.8 1.2 0.8-0.4-1.4L8 4 6.6 4l-0.6-1.4L5.4 4z" fill="currentColor"/>
+  <path d="M17 2l0.8 0.5-0.3 1 0.8-0.6 0.8 0.6-0.3-1L20 2l-1 0-.4-1-.4 1z" fill="currentColor"/>
+  <path d="M18 19l0.8 0.5-0.3 1 0.8-0.6 0.8 0.6-0.3-1L21 19l-1 0-.4-1-.4 1z" fill="currentColor"/>
+</svg>
