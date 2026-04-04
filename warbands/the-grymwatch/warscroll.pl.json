@@ -1,0 +1,26 @@
+{
+  "inspire": "Po ostatnim kroku Akcji w rundzie bitewnej wybierz do X przyjaznych wojowników, gdzie X jest sumą charakterystyk Bounty zabitych wrogich wojowników oraz wrogich wojowników na wrogim i neutralnym terytorium. Zainspiruj tych przyjaznych wojowników.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "W Imię Króla!",
+      "flavorText": null,
+      "rulesText": "Raz na rundę bitewną, podczas twojego Power stepu, jeśli twój przywódca ({icon:leader}) jest na polu bitwy, możesz użyć 1 z następujących zdolności:\n• Wybierz przyjaznego wojownika. Zainspiruj tego wojownika.\n• Wybierz zabitego przyjaznego wojownika. Wskrześ go i umieść w pustym polu na krawędzi.\nJeśli jesteś underdog ({icon:skull}), możesz zamiast tego użyć obu zdolności."
+    },
+    {
+      "name": "Obrońcy Królestwa",
+      "flavorText": "Obowiązkiem każdego prawego wojownika jest służyć jako ochrona ludu i tarcza przeciw złu. Żaden wróg nie przełamie kordonu!",
+      "rulesText": "Za każdym razem, gdy wykonujesz rzut na Obronę za przyjaznego wojownika na przyjaznym terytorium, możesz przerzucić 1 kostkę w tym rzucie."
+    },
+    {
+      "name": "Królewskie Łowy",
+      "flavorText": "Hej! Rozbrzmiały rogi i obwieszczono proklamacje – królestwo musi zostać oczyszczone z bestii i łotrów. Nikt nie ucieknie przed królewskim wymiarem sprawiedliwości!",
+      "rulesText": "Bronie do walki wręcz przyjaznych wojowników otrzymują +1 kostkę Ataku, jeśli cel Ataku jest ranny."
+    },
+    {
+      "name": "Na Mury!",
+      "flavorText": "W chwilach najstraszliwszego niebezpieczeństwa, gdy wszystko co rycerskie i czyste staje w obliczu zagłady, rodzą się prawdziwi bohaterowie. A uczta zwycięstwa z pewnością będzie niezapomniana...",
+      "rulesText": "Możesz użyć zdolności 'W Imię Króla!' dwa razy w tej rundzie bitewnej zamiast raz."
+    }
+  ]
+}

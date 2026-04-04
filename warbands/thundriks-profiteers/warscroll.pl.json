@@ -1,0 +1,35 @@
+{
+  "inspire": "Po tym, jak zdobędziesz kartę Celu, jeśli przyjazny lider ({icon:leader}) jest na polu bitwy, możesz wybrać przyjaznego wojownika. Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Izolacja Atmosferyczna",
+      "trigger": "Użyj tej zdolności natychmiast po twoim kroku Akcji, jeśli przyjazny lider ({icon:leader}) użył jakichkolwiek podstawowych zdolności w tym kroku.",
+      "flavorText": "Jednym naciśnięciem przycisku Thundrik tworzy próżnię, by udusić swoich wrogów.",
+      "rulesText": "Do końca następnego kroku Akcji, za każdym razem gdy wrogi wojownik zostanie umieszczony na, pchnięty na lub wejdzie na pole przylegające do tego lidera ({icon:leader}), zadaj 1 obrażenie temu wojownikowi."
+    },
+    {
+      "name": "Specjalne Pociski Eteryczne",
+      "trigger": "Użyj tej zdolności natychmiast po wybraniu broni dystansowej w ramach Ataku.",
+      "flavorText": "Może i nie mają wyrytego imienia wroga na łuskach, ale te pociski nie są przez to mniej śmiercionośne.",
+      "rulesText": "Ta broń ma +1 Zasięg i +1 kostkę Ataku dla tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Grad Pocisków Eterycznych",
+      "trigger": "Użyj tej zdolności natychmiast po Ataku dystansowym przyjaznego wojownika, jeśli nie ma on tokenów Ruchu ani Szarży.",
+      "flavorText": "Objętość ognia rozwiązuje większość problemów.",
+      "rulesText": "Ten wojownik Atakuje ponownie tą samą bronią. Cel tego Ataku musi być inny niż cel pierwszego Ataku i musi znajdować się w odległości 2 hexów od pierwszego celu. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "\"To moje, uczciwie zdobyte\"",
+      "flavorText": "Kharadron nie mają czasu na niewiążące kontrakty.",
+      "rulesText": "Dopóki przyjazny wojownik trzyma token skarbu i nie ma wrogich wojowników przylegających do niego, ten wojownik nie może być pchany przez wrogie zdolności."
+    },
+    {
+      "name": "Według Kodeksu",
+      "flavorText": "Kodeks Kharadron daje duardinom swobodę w realizacji celów, pod warunkiem że zyski są uczciwe, a podatki należycie opłacone.",
+      "rulesText": "Użyj tej zdolności w Power step. Wybierz przyjaznego wojownika. Pchnij tego wojownika o maksymalnie 3 hexy. Ten ruch musi zakończyć się na tokenie terenu. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

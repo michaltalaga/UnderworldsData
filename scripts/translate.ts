@@ -36,25 +36,71 @@ Example output format:
   ]
 }
 
-Return ONLY valid JSON, no markdown code fences or explanation.`;
+CRITICAL: Return ONLY valid JSON, no markdown code fences or explanation.
+Properly escape special characters in JSON strings: use \\" for double quotes, \\\\ for backslashes.
+If an English field contains single quotes like 'This is Mine', keep them as-is in the JSON string (single quotes don't need escaping in JSON).`;
+
+function cleanJson(raw: string): string {
+  return raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
+}
+
+function parseJsonSafe(raw: string): Record<string, unknown> | null {
+  const cleaned = cleanJson(raw);
+  try {
+    return JSON.parse(cleaned);
+  } catch {
+    return null;
+  }
+}
 
 async function translateWarscroll(
   client: Anthropic,
   data: Record<string, unknown>,
-): Promise<string> {
+): Promise<Record<string, unknown>> {
+  const input = JSON.stringify(data, null, 2);
+
+  // Attempt 1: normal translation
   const response = await client.messages.create({
     model: 'claude-sonnet-4-6',
     max_tokens: 8192,
     messages: [
       {
         role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${JSON.stringify(data, null, 2)}`,
+        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${input}`,
       },
     ],
   });
 
-  const textBlock = response.content.find((b) => b.type === 'text');
-  return textBlock?.text ?? '';
+  const rawText = response.content.find((b) => b.type === 'text')?.text ?? '';
+  const parsed = parseJsonSafe(rawText);
+  if (parsed) return parsed;
+
+  // Attempt 2: ask the API to fix its own broken JSON
+  console.log('(retrying with repair) ... ');
+  const repairResponse = await client.messages.create({
+    model: 'claude-sonnet-4-6',
+    max_tokens: 8192,
+    messages: [
+      {
+        role: 'user',
+        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${input}`,
+      },
+      {
+        role: 'assistant',
+        content: rawText,
+      },
+      {
+        role: 'user',
+        content: 'Your JSON output was invalid and failed to parse. Please return the same translation but as valid JSON. Make sure all quotes and special characters inside strings are properly escaped. Return ONLY the fixed JSON.',
+      },
+    ],
+  });
+
+  const repairText = repairResponse.content.find((b) => b.type === 'text')?.text ?? '';
+  const repaired = parseJsonSafe(repairText);
+  if (repaired) return repaired;
+
+  throw new Error(`Invalid JSON after retry. Last parse error at: ${repairText.substring(0, 200)}...`);
 }
 
 async function main() {
@@ -109,9 +155,7 @@ async function main() {
     process.stdout.write(`  ${name} ... `);
 
     try {
-      const raw = await translateWarscroll(client, data);
-      const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-      const translated = JSON.parse(jsonStr);
+      const translated = await translateWarscroll(client, data);
 
       if (!translated.inspire && !translated.abilities) {
         throw new Error('Invalid structure in response');

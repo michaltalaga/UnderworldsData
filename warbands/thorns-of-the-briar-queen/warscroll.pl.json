@@ -1,0 +1,46 @@
+{
+  "inspire": "Na początku swojej tury, Inspire każdego przyjaznego wojownika, który jest sąsiadujący z dowolnym wrogim wojownikiem.",
+  "reactions": [
+    {
+      "name": "Zgrany Duet",
+      "trigger": "Użyj natychmiast po tym, jak przyjazny wojownik wykona Ruch.",
+      "flavorText": "Przestępcy i zabójcy za życia, przestępcy i zabójcy na wieki...",
+      "rulesText": "Wybierz wrogiego wojownika sąsiadującego z tamtym wojownikiem, który zostanie napadnięty. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Nie Ma Miejsca na Szczycie",
+      "trigger": "Użyj natychmiast po tym, jak wrogi przywódca ({icon:leader}) użyje zdolności podstawowej.",
+      "flavorText": "Wzbudzić zazdrość i gniew Królowej Cierni to skazać się na ponury los.",
+      "rulesText": "Wybierz tamtego wojownika, który zostanie napadnięty. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Odwet",
+      "trigger": "Użyj natychmiast po udanym Ataku wrogiego wojownika.",
+      "flavorText": "'Wznieś przeciw nam ostrze, a będziesz przeklęty...'",
+      "rulesText": "Wybierz tamtego wojownika, który zostanie napadnięty. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Zostaw To w Spokoju",
+      "trigger": "Użyj natychmiast po tym, jak wrogi wojownik wykona Ruch, jeśli trzyma żeton skarbu.",
+      "flavorText": "Czy śmiesz dotykać reliktu dawnych czasów, gdy duchy umarłych krążą wśród żywych?",
+      "rulesText": "Wybierz tamtego wojownika, który zostanie napadnięty. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Fala Terroru",
+      "flavorText": "",
+      "rulesText": "Jeśli cel Ataku przyjaznego wojownika sąsiaduje z innym przyjaznym wojownikiem posiadającym jakiekolwiek żetony Szarży, cel jest Otoczony podczas tego Ataku."
+    },
+    {
+      "name": "Strażnik Dusz",
+      "flavorText": "",
+      "rulesText": "Wybierz przyjaznego Varclave'a, aby użył tej zdolności. Wybierz do 2 przyjaznych sługusów ({icon:minion}). Przesuń każdego z tych wojowników o do 2 pól. Następnie możesz dać każdemu z tych wojowników żeton Szarży. Ta zdolność może być użyta tylko raz na rundę bitewną."
+    },
+    {
+      "name": "Napad",
+      "flavorText": "",
+      "rulesText": "Natychmiast po tym, jak wrogi wojownik zostanie wybrany do napadnięcia (patrz obok), wybierz przyjaznego wojownika, który nie jest twoim przywódcą ({icon:leader}). Usuń tamtego wojownika z pola bitwy i umieść go w pustym polu sąsiadującym z tamtym wrogim wojownikiem. Następnie możesz dać temu przyjaznemu wojownikowi żeton Szarży."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "inspire": "Natychmiast po tym, jak przyznasz przyjaznym wojowniku żeton Raise, Inspire tego wojownika.\n\nNatychmiast po tym, jak przyznasz przyjaznym przeznaczonemu ({icon:destined}) wojownikowi jego drugie lub kolejne Ulepszenie, Inspire drugiego przyjaznego przeznaczonego ({icon:destined}) wojownika.",
+  "reactions": [
+    {
+      "name": "Gravebreakers",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny pachołek ({icon:minion}) delwuje. Ten wojownik może wykonać akcję Unearth lub przyjazny dowódca ({icon:leader}) może wykonać akcję Exhume.",
+      "flavorText": null,
+      "rulesText": "Użyj tej reakcji natychmiast po tym, jak przyjazny pachołek ({icon:minion}) delwuje. Ten wojownik może wykonać akcję Unearth lub przyjazny dowódca ({icon:leader}) może wykonać akcję Exhume."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Przeznaczeni",
+      "flavorText": "Gdyby Zondara lub Ferlain miałaby paść, jej ukochany zostałby ogarnięty całkowitym, morderczym żalem.",
+      "rulesText": "Kiedy przyjazny przeznaczony ({icon:destined}) wojownik jest zabity, drugi przyjazny przeznaczony ({icon:destined}) wojownik otrzymuje +1 Move i jego bronie mają +1 kość Ataku."
+    },
+    {
+      "name": "Nieśmiertelna Miłość",
+      "flavorText": "Mimo mroku, który ogarnął ich oboje, Zondara i Ferlain pozostają sobie oddani.",
+      "rulesText": "Użyj tej akcji w Power step. Wybierz 2 przyjaznych przeznaczonych ({icon:destined}) wojowników. Ulecz 1 z tych wojowników i przesuń drugiego wojownika o maksymalnie 3 heksy w kierunku pierwszego. Możesz użyć tej umiejętności tylko raz na rundę bitwy."
+    },
+    {
+      "name": "Exhume",
+      "flavorText": "Zondara nie jest osobą, która rezygnuje ze swych pachołków, dopóki jeszcze potrzebuje ich usług.",
+      "rulesText": "Wybierz zabitego przyjaznego pachołka ({icon:minion}). Raise tego wojownika i umieść go w heksie przylegającym do przyjaznego wojownika, który delwował. Możesz użyć tej umiejętności tylko wtedy, gdy zostanie ona wybrana podczas rozpatrywania umiejętności Gravebreakers."
+    },
+    {
+      "name": "Unearth",
+      "flavorText": "We krwi i kościach zmarłych mogą kryć się sekrety, których poszukuje Zondara.",
+      "rulesText": "Dobierz liczbę kart Power równą liczbie zabitych przyjaznych wojowników. Możesz użyć tej umiejętności tylko wtedy, gdy zostanie ona wybrana podczas rozpatrywania umiejętności Gravebreakers."
+    }
+  ]
+}

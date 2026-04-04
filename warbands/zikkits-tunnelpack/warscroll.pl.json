@@ -1,0 +1,28 @@
+{
+  "inspire": "Po kroku Akcji, jeśli sojuszniczy wojownik otrzymał obrażenia lub został pokonany w tym kroku, wybierz jednego innego sojuszniczego wojownika. Zainspiruj tego wojownika.",
+  "reactions": [
+    {
+      "name": "Więcej-więcej Mocy!",
+      "trigger": "Użyj tej reakcji natychmiast na początku swojego kroku Akcji, jeśli każdy sojuszniczy wojownik posiada żeton Szarży.",
+      "flavorText": "Skaveni z Tunelowej Paczki Zikkita przekraczają granice swoich wynalazków, posługując się wypaczoną nauką Klanów Skryre.",
+      "rulesText": "Użyj tej reakcji natychmiast na początku swojego kroku Akcji, jeśli każdy sojuszniczy wojownik posiada żeton Szarży. Wybierz sojuszniczego wojownika. Usuń żetony Ruchu i/lub Szarży tego wojownika. Po tym kroku Akcji rzuć kością Ataku. Na wynik {icon:fury} lub {icon:crit} ten wojownik zostaje pokonany."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Skitter",
+      "flavorText": "Skaveni słyną z nerwowości, paranoi, agresji i z tego, że rzadko długo pozostają w jednym miejscu.",
+      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Wybierz sojuszniczego wojownika bez żetonów Ruchu ani Szarży. Ten wojownik wykonuje Ruch. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Naładowany Wypaczeniem",
+      "flavorText": "Klany Skryre tworzą broń równie słynną ze swej śmiercionośności, co nieprzewidywalności.",
+      "rulesText": "Użyj tej zdolności natychmiast po wyborze broni w ramach Ataku. Zadaj 1 obrażenie atakującemu. Ta broń posiada Cleave ({icon:cleave}), Ensnare ({icon:ensnare}) oraz Brutal ({icon:grievous}) podczas tego Ataku. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Kabum!",
+      "flavorText": "Szczur z bombą… proste, a jakże skuteczne.",
+      "rulesText": "Wybierz sojuszniczego sługusa ({icon:minion}) bez żetonów Szarży, aby użyć tej zdolności. Ten sługus wykonuje Ruch. Następnie rzuć liczbą kości Ataku równą numerowi rundy bitewnej za każdego wojownika w odległości 2 heksów od tego sługusa. Jeśli rzut zawiera jakikolwiek wynik {icon:fury}, zadaj 1 obrażenie temu wojownikowi. Jeśli rzut zawiera jakikolwiek wynik {icon:crit}, zadaj zamiast tego 2 obrażenia temu wojownikowi. Następnie ten sługus zostaje pokonany."
+    }
+  ]
+}

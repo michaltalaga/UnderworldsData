@@ -1,0 +1,28 @@
+{
+  "inspire": "Po tym, jak wrogi wojownik zostanie pokonany przez atak wręcz wykonany przez twojego lidera ({icon:leader}), Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Zaskakujące Kompetencje",
+      "trigger": "Użyj natychmiast po tym, jak przyjazny Gnoblar ({icon:minion}) wykona Ruch, jeśli ten wojownik sąsiaduje z przyjaznym modelem pułapki.",
+      "flavorText": "Zwinnopalcy gnoblarscy pochlebcy Hrothgorna są niezastąpieni przy przestawianiu pułapek w potrzebie. Jeśli przy tym nie urwą sobie własnych rąk – cóż, to już premia.",
+      "rulesText": "Użyj natychmiast po tym, jak przyjazny Gnoblar ({icon:minion}) wykona Ruch, jeśli ten wojownik sąsiaduje z przyjaznym modelem pułapki. Usuń ten model pułapki z pola bitwy i umieść go w innym pustym sześciokącie sąsiadującym z tym Gnoblarem ({icon:minion}). Następnie daj temu Gnoblarowi żeton Guard."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Zasadzka Wiecznej Zimy",
+      "flavorText": "Bestia pradawnego śniegu i lodu, Thrafnir jest najbardziej śmiercionośny, gdy uderza z głębi zaczarowanej zamieci.",
+      "rulesText": "Kiedy rozmieszczasz przyjaznego Thrafnira, możesz umieścić go w pustym sześciokącie na terytorium wroga, który nie jest polem startowym i nie zawiera żetonu przeszkody."
+    },
+    {
+      "name": "Głodne Pułapki",
+      "flavorText": "Przydomek Hrothgorna – 'Zastawiacz Pułapek' – jest w pełni zasłużony; on i jego gnoblarska drużyna mają talent do pozostawiania okrutnych, żelaznozębnych pułapek zatrzaskowych w prawdziwie śmiertelnych miejscach. Byle tylko nie zapomnieli, gdzie je postawili…",
+      "rulesText": "Na początku pierwszego kroku Akcji w pierwszej rundzie bitwy umieść przyjazny model pułapki w pustym sześciokącie na przyjaznym terytorium.\n\nJeśli wojownik zostanie umieszczony w, wepchnięty do lub wejdzie na sześciokąt zawierający przyjazny model pułapki, zadaj temu wojownikowi 2 obrażenia, a następnie usuń model pułapki z pola bitwy."
+    },
+    {
+      "name": "Więcej Pułapek",
+      "flavorText": "'Zawsze jest ich więcej, skąd przyszły…'",
+      "rulesText": "Użyj tego w swoim Power step, jeśli na polu bitwy nie ma żadnych przyjaznych modeli pułapek. Umieść przyjazny model pułapki w pustym sześciokącie sąsiadującym z przyjaznym Gnoblarem ({icon:minion}). Następnie wepchnij tego Gnoblara o 1 sześciokąt."
+    }
+  ]
+}

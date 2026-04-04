@@ -1,0 +1,39 @@
+{
+  "inspire": "Natychmiast po rozstrzygnięciu Ploy, który wskazał przyjaznego wojownika, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Skitter",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik sąsiadujący z dowolnym przyjaznym wojownikiem zostanie wskazany do użycia zdolności Core.",
+      "flavorText": "'Kto walczy i ucieka...'",
+      "rulesText": "Przesuń tego wojownika o 1 hex. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Uzasadniona Paranoja",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik sąsiadujący z dowolnym przyjaznym wojownikiem zostanie wskazany do użycia zdolności Core.",
+      "flavorText": "Skaven musi zawsze być czujny. Szczególnie gdy przebywa wśród innych Skavenów.",
+      "rulesText": "Daj temu wojownikowi token Guard. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Rój",
+      "flavorText": "",
+      "rulesText": "Wskaż przyjaznego lidera ({icon:leader}), aby użyć tej zdolności. Wskaż poległego przyjaznego miniona ({icon:minion}). Wskrześ tego wojownika, umieść go na pustym polu startowym, a następnie daj mu token Raise."
+    },
+    {
+      "name": "Knująca Sfora",
+      "flavorText": "",
+      "rulesText": "Broń biała przyjaznych skrzętnych ({icon:destined}) posiada cechę Grievous ({icon:grievous}), gdy cel jest Flanked lub Surrounded."
+    },
+    {
+      "name": "Przedwczesny Awans",
+      "flavorText": "",
+      "rulesText": "Dopóki przyjazny Skritch jest poległy, Krrk jest liderem ({icon:leader})."
+    },
+    {
+      "name": "'Zejdź mi z drogi, głuptasie!'",
+      "flavorText": "Skritch i jego bardziej użyteczni słudzy są dobrze wprawieni w wyciąganiu się z opałów i zajmowaniu najlepszych pozycji.",
+      "rulesText": "Użyj tej zdolności podczas swojego Power step. Wskaż przyjaznego wojownika i innego wojownika sąsiadującego z nim. Usuń obydwu wojowników z pola bitwy, a następnie umieść każdego z nich na heksie, z którego usunięto drugiego. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

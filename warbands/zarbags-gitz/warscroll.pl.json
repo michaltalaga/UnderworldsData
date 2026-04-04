@@ -1,0 +1,44 @@
+{
+  "inspire": "Za każdym razem, gdy zdobywasz szósty lub kolejny punkt Chwały, zainspiruj przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Śliskie Gity",
+      "trigger": "Użyj natychmiast po tym, jak wybierzesz przyjaznego wojownika do Ruchu.",
+      "flavorText": "Groty są trudne do przychwycenia w najlepszych czasach – a Gity Zarbaga szczególnie.",
+      "rulesText": "Wybierz przyjaznego Grota ({icon:minion}), który nie ma przy sobie żetonów Ruchu ani Szarży. Po tym jak pierwszy wojownik wykona Ruch, ten przyjazny Grot ({icon:minion}) może się Ruszyć. Możesz użyć tej zdolności tylko raz na turę."
+    },
+    {
+      "name": "Grzybowy Wybuch",
+      "trigger": "Użyj natychmiast po tym, jak przyjazny Grot ({icon:minion}) zostaje pokonany przez atakującego znajdującego się w przyległym polu.",
+      "flavorText": "Groty często noszą przy sobie pęki grzybów, które po uderzeniu uwalniają chmury trujących zarodników.",
+      "rulesText": "Daj atakującemu żeton Ogłuszenia. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Pasterz Squigów",
+      "flavorText": null,
+      "rulesText": "Po wystawieniu przyjaznego Drizgita musisz natychmiast umieścić każdego przyjaznego Squiga ({icon:minion}) w pustym polu przyległym do niego, które nie jest polem startowym i nie zawiera żetonu terenu."
+    },
+    {
+      "name": "Wirowanie",
+      "flavorText": null,
+      "rulesText": "Snirkowi nie można przyznawać żetonów Warty.\nZa każdym razem, gdy wojownik zostaje umieszczony w, wepchniętty do lub wchodzi w pole przyległe do przyjaznego Snirka, zadaj temu wojownikowi 1 obrażenie."
+    },
+    {
+      "name": "Salwa",
+      "flavorText": null,
+      "rulesText": "Jeśli broń przyjaznego wojownika posiada runiczną odznakę {icon:volley}, masz dostęp do następującej zdolności Broni:\n\nSalwa ({icon:volley}): Natychmiast po Ataku, jeśli zakończył się sukcesem, możesz wybrać innego przyjaznego wojownika, którego broń posiada Salwę ({icon:volley}). Ten wojownik Atakuje tą bronią. Możesz użyć tej zdolności tylko raz na turę."
+    },
+    {
+      "name": "Grupowy Atak",
+      "flavorText": "Gity Zarbaga słyszały o walce fair play. Po prostu wybierają inaczej.",
+      "rulesText": "Użyj w fazie Power step. W następnej turze, bronie do walki wręcz przyjaznych wojowników otrzymują +1 kość Ataku za każdego innego przyjaznego Grota ({icon:minion}) przyległego do celu. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Naróbcie Hałasu!",
+      "flavorText": "Niewiele rzeczy potrafi tak rozkręcić squiga jak porządny harmider.",
+      "rulesText": "Użyj w fazie Power step. Przesuń każdego przyjaznego Squiga ({icon:minion}) o do 2 pól. Do końca rundy bitewnej te Squigi ({icon:minion}) nie mogą trzymać żetonów skarbów ani wykonywać akcji Delve. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

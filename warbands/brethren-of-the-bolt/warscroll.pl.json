@@ -1,0 +1,31 @@
+{
+  "inspire": "Każdy przyjazny wojownik rozpoczyna grę jako Natchniony.\n\nBezpośrednio po kroku Akcji, w którym przyjazny wojownik był wojownikiem przewodzącym, Inspire tego wojownika.\n\nUNINSPIRE\nBezpośrednio po udanym Ataku przyjaznego wojownika, Uninspire tego przyjaznego wojownika.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Święte Kondensatory",
+      "flavorText": null,
+      "rulesText": "Odejmij 1 od dystansu między przyjaznym atakującym a jego celem za każdego przyjaznego wojownika znajdującego się między atakującym a celem. Ci przyjazni wojownicy są przewodzącymi."
+    },
+    {
+      "name": "Piorunujący Hymn",
+      "flavorText": "Pieśni Braci zdają się rozpalać święte błyskawice.",
+      "rulesText": "Wybierz jedną z poniższych zdolności na początku fazy walki. Dopóki na polu gry znajdują się dwóch lub więcej przyjaznych wojowników, każdy wojownik może używać tej zdolności.\n\nNaładowana Aura: Przyjaźni wojownicy nie mogą być Flankowani.\nBezwzględne Natarcie: Za każdym razem, gdy przyjazny wojownik miałby otrzymać żeton Charge, możesz zamiast tego zadać temu wojownikowi 1 obrażenie.\nWierni Dynamo: Broń przyjaznych wojowników posiada Stagger ({icon:stagger})."
+    },
+    {
+      "name": "Trzaskający Wybuch",
+      "flavorText": "Wypełnieni żarliwym dynamizmem, Bracia ruszają naprzód.",
+      "rulesText": "Użyj tej zdolności w kroku Power step. Wybierz przyjaznego wojownika. Ten wojownik wykonuje ruch Move. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Szarża Niebios",
+      "flavorText": "Skandując, kultyści 'dzielą się' swoim elektrycznym darem.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika. Uninspire tego wojownika, a następnie zadaj 1 obrażenie sąsiadującemu wrogemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Błyskawiczne Ożywienie",
+      "flavorText": "Dotyk pioruna tchnął życie w braci.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika, który był przewodzącym podczas tego kroku. Ulecz tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}
