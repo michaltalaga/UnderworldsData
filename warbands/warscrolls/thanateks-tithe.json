@@ -1,0 +1,112 @@
+{
+  "id": "thanateks-tithe",
+  "name": "Thanatek's Tithe",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": {
+    "en": "Once per turn, in your Power step, instead of playing a Power card, you can pick a friendly fighter and remove a number of your cadaver tokens equal to their Bounty characteristic. Inspire that fighter.",
+    "pl": "Raz na turę, w swoim Power step, zamiast zagrywać kartę Power, możesz wybrać przyjaznego wojownika i usunąć liczbę swoich cadaver tokenów równą ich charakterystyce Bounty. Inspire tego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Morbid Retainers",
+        "pl": "Makabryczni Słudzy"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after a friendly fighter's successful Attack, if the target is adjacent to any friendly Retainers {icon:minion}",
+        "pl": "Natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel jest sąsiaduje z jakimkolwiek przyjaznym Retainer {icon:minion}"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "gain 1 cadaver token.",
+        "pl": "zyskaj 1 cadaver token."
+      }
+    },
+    {
+      "name": {
+        "en": "Elusive Mirages",
+        "pl": "Ulotne Miraże"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after an enemy fighter's successful Attack that targeted a friendly Mortis Reaper {icon:destined}, if the Save roll contained any successes",
+        "pl": "Natychmiast po udanym Ataku wrogiego wojownika wymierzonym w przyjaznego Mortis Reaper {icon:destined}, jeśli rzut na Save zawierał jakiekolwiek sukcesy"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "that friendly fighter can use Stand Fast.",
+        "pl": "ten przyjazny wojownik może użyć Stand Fast."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Soul-linked Constructs",
+        "pl": "Konstrukty Związane Duszą"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Your leader's {icon:leader} weapons' characteristics cannot be modified. When you pick a target as part of your leader's {icon:leader} Attack using a non-Upgrade melee weapon, you can measure the range of that weapon from a friendly Retainer {icon:minion} instead of from your leader {icon:leader}.",
+        "pl": "Charakterystyki broni twojego lidera {icon:leader} nie mogą być modyfikowane. Gdy wybierasz cel w ramach Ataku twojego lidera {icon:leader} z użyciem broni do walki wręcz niebędącej Ulepszeniem, możesz mierzyć zasięg tej broni od przyjaznego Retainer {icon:minion} zamiast od swojego lidera {icon:leader}."
+      }
+    },
+    {
+      "name": {
+        "en": "Unwilling Donors",
+        "pl": "Niedobrowolni Ofiarodawcy"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "The living will sacrifice their bones unto the great Ossiarch empire, whether willingly or otherwise.",
+        "pl": "Żywi złożą swe kości w ofierze wielkiemu imperium Ossiarchów — czy tego chcą, czy nie."
+      },
+      "rulesText": {
+        "en": "Use this at the start of your opponent's Action step if your leader {icon:leader} is on the battlefield. Pick an enemy fighter to be the possessor until the end of your next turn. Immediately after damage is inflicted on the possessor as part of a friendly fighter's Attack, you can push each friendly Retainer {icon:minion} 1 hex closer to the possessor.",
+        "pl": "Użyj tego na początku kroku Action przeciwnika, jeśli twój lider {icon:leader} jest na polu bitwy. Wybierz wrogiego wojownika, który będzie posiadaczem do końca twojej następnej tury. Natychmiast po tym, jak posiadacz otrzyma obrażenia w wyniku Ataku przyjaznego wojownika, możesz przesunąć każdego przyjaznego Retainer {icon:minion} o 1 hex bliżej posiadacza."
+      }
+    },
+    {
+      "name": {
+        "en": "Endless Duty",
+        "pl": "Wieczna Służba"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Even the destruction of their physical form does not release a Bonereaper from their eternal service to Nagash.",
+        "pl": "Nawet zniszczenie ich fizycznej postaci nie zwalnia Bonereapera z wiecznej służby Nagashowi."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Remove any of your cadaver tokens. Pick a slain friendly Mortis Reaper {icon:destined}, then roll an Attack dice for each cadaver token you removed. If the roll contains any {icon:fury} or {icon:crit}, Raise that fighter and place them in a starting hex in friendly territory. You can only use this ability once per battle round.",
+        "pl": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Wybierz poległego przyjaznego Mortis Reaper {icon:destined}, a następnie rzuć kostką Ataku za każdy usunięty cadaver token. Jeśli rzut zawiera jakikolwiek {icon:fury} lub {icon:crit}, Raise tego wojownika i umieść go na startowym polu w przyjaznym terytorium. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+      }
+    },
+    {
+      "name": {
+        "en": "Necromantic Pulse",
+        "pl": "Nekromantyczny Impuls"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Thanatek channels deathly energy into a crushing wave to drive his enemies back.",
+        "pl": "Thanatek kanalizuje śmiertelną energię w druzgocącą falę, odpychając wrogów."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Remove any of your cadaver tokens. For each enemy fighter adjacent to any friendly Retainers {icon:minion}, roll a number of Attack dice equal to the number of cadaver tokens you removed. If the roll contains any {icon:skull} or {icon:crit}, inflict 1 damage on that enemy fighter. Otherwise, remove that enemy fighter's Guard tokens and give them a Stagger token. You can only use this ability once per game.",
+        "pl": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Dla każdego wrogiego wojownika sąsiadującego z jakimkolwiek przyjaznym Retainer {icon:minion}, rzuć liczbą kostek Ataku równą liczbie usuniętych cadaver tokenów. Jeśli rzut zawiera jakikolwiek {icon:skull} lub {icon:crit}, zadaj 1 obrażenie temu wrogiemu wojownikowi. W przeciwnym razie usuń Guard tokeny tego wrogiego wojownika i daj mu Stagger token. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

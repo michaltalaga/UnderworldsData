@@ -1,0 +1,88 @@
+{
+  "id": "myaris-purifiers",
+  "name": "Myari's Purifiers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "After you make an Attack roll or Save roll for a friendly fighter, if all of the results were successes, Inspire that fighter.",
+    "pl": "Po wykonaniu rzutu na Atak lub rzutu na Obronę za przyjaznego wojownika, jeśli wszystkie wyniki były sukcesami, Inspire tego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Aetherquartz Reserve",
+        "pl": "Rezerwa Eterycznego Kwarcu"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "After a friendly fighter is deployed, give that fighter an aetherquartz token.\n\nA friendly fighter that has an aetherquartz token can use the Heightened Senses ability:\n\n{icon:fury} Heightened Senses: Use this immediately after you make an Attack roll or Save roll. Discard this fighter's aetherquartz token. Re-roll any dice in that Attack roll or Save roll.",
+        "pl": "Po wystawieniu przyjaznego wojownika, daj temu wojownikowi żeton eterycznego kwarcu.\n\nPrzyjazny wojownik posiadający żeton eterycznego kwarcu może użyć zdolności Wyostrzone Zmysły:\n\n{icon:fury} Wyostrzone Zmysły: Użyj tej zdolności natychmiast po wykonaniu rzutu na Atak lub rzutu na Obronę. Odrzuć żeton eterycznego kwarcu tego wojownika. Przerzuć dowolne kości w tym rzucie na Atak lub rzucie na Obronę."
+      }
+    },
+    {
+      "name": {
+        "en": "Blinding Corona",
+        "pl": "Oślepiająca Korona"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "A dazzling halo of pure Hyshian energy crackles around Myari, shielding him from attack.",
+        "pl": "Olśniewająca aureola czystej hyszańskiej energii trzeszczy wokół Myariego, chroniąc go przed atakami."
+      },
+      "rulesText": {
+        "en": "If a friendly Myari has an aetherquartz token at the start of a turn, they have +1 Save until the end of that turn.",
+        "pl": "Jeśli przyjazny Myari posiada żeton eterycznego kwarcu na początku tury, ma +1 do Obrony do końca tej tury."
+      }
+    },
+    {
+      "name": {
+        "en": "Enduring as Rock",
+        "pl": "Trwały jak Skała"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "During the battle for Beastgrave's soul, Bahannar was the warrior around whom the Purifiers rallied.",
+        "pl": "Podczas bitwy o duszę Bestiegrobowca to wokół Bahannara skupiali się Oczyszczyciele."
+      },
+      "rulesText": {
+        "en": "While a friendly Bahannar has an aetherquartz token, they cannot be pushed by enemy abilities.",
+        "pl": "Dopóki przyjazny Bahannar posiada żeton eterycznego kwarcu, nie może być odpychany przez wrogie zdolności."
+      }
+    },
+    {
+      "name": {
+        "en": "Impeccable Aim",
+        "pl": "Nieskazitelna Celność"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Senaela can guide a blazing sunmetal arrow to its target under the most difficult of conditions.",
+        "pl": "Senaela potrafi naprowadzić płonącą strzałę ze słonecznego metalu na cel nawet w najtrudniejszych warunkach."
+      },
+      "rulesText": {
+        "en": "While a friendly Senaela has an aetherquartz token, their ranged weapons have Brutal ({icon:grievous}) and Ensnare ({icon:cleave}).",
+        "pl": "Dopóki przyjazna Senaela posiada żeton eterycznego kwarcu, jej broń dystansowa ma właściwości Brutal ({icon:grievous}) i Ensnare ({icon:cleave})."
+      }
+    },
+    {
+      "name": {
+        "en": "Masterful Stroke",
+        "pl": "Mistrzowskie Cięcie"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Ailenn's blade can glide through an enemy's defences with ease.",
+        "pl": "Ostrze Ailenn prześlizguje się przez obronę wroga z niezwykłą łatwością."
+      },
+      "rulesText": {
+        "en": "While a friendly Ailenn has an aetherquartz token, when they Attack with a melee weapon, the target is Flanked.",
+        "pl": "Dopóki przyjazna Ailenn posiada żeton eterycznego kwarcu, gdy atakuje bronią do walki wręcz, cel jest Flanked."
+      }
+    }
+  ]
+}

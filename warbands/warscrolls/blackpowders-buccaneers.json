@@ -1,0 +1,73 @@
+{
+  "id": "blackpowders-buccaneers",
+  "name": "Blackpowder's Buccaneers",
+  "version": "1.3",
+  "grandAlliance": "Destruction",
+  "inspire": {
+    "en": "After you remove your third or subsequent swag token, Inspire each friendly fighter.",
+    "pl": "Po usunięciu trzeciego lub kolejnego żetonu łupu, Inspire każdego przyjaznego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Loot and Plunder",
+        "pl": "Łup i Grabież"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Ownership means little to these pilfering pirates.",
+        "pl": "Własność niewiele znaczy dla tych złodziejskich piratów."
+      },
+      "rulesText": {
+        "en": "You start the game with 1 swag token.\n\nIf a friendly fighter's weapon has the {icon:skull} runemark, you have access to the following Weapon ability:\n\nSwashbuckle {icon:skull}:\nIf the Attack was successful, gain 1 swag token. If you are the underdog ({icon:destined}) or the target was equipped with any Upgrades, gain 2 swag tokens instead.",
+        "pl": "Rozpoczynasz grę z 1 żetonem łupu.\n\nJeśli broń przyjaznego wojownika posiada runiczną pieczęć {icon:skull}, masz dostęp do następującej zdolności Broni:\n\nSwashbuckle {icon:skull}:\nJeśli Atak zakończył się sukcesem, zdobądź 1 żeton łupu. Jeśli jesteś underdogiem ({icon:destined}) lub cel był wyposażony w jakiekolwiek Ulepszenia, zdobądź zamiast tego 2 żetony łupu."
+      }
+    },
+    {
+      "name": {
+        "en": "Swag Shrapnel",
+        "pl": "Odłamki z Łupu"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Stolen gold, silver spoons, rusty nails: it all comes out of Gorlok's grunderbuss in a blast of flesh-shearing shrapnel.",
+        "pl": "Skradzione złoto, srebrne łyżki, zardzewiałe gwoździe — wszystko to wylatuje z grunderbusa Gorloka w rozrywającym ciało wybuchu odłamków."
+      },
+      "rulesText": {
+        "en": "You can use 1 of the following abilities immediately after you pick a ranged weapon as part of your leader's ({icon:leader}) Attack. When you pick the ability, you can remove up to 2 of your swag tokens. You can only use each ability once per game.\n\nAfter that Attack, you can pick up to 2 other enemy fighters within 2 hexes of the target. Then, roll a number of Attack dice equal to the number of swag tokens you removed. If the roll contained any {icon:fury} or {icon:crit}, inflict 1 damage on each of those fighters and give the target and each of those fighters a Stagger token.",
+        "pl": "Możesz użyć 1 z następujących zdolności bezpośrednio po wybraniu broni dystansowej w ramach Ataku twojego lidera ({icon:leader}). Wybierając zdolność, możesz usunąć do 2 swoich żetonów łupu. Każdą zdolność możesz użyć tylko raz na grę.\n\nPo tym Ataku możesz wybrać do 2 innych wrogich wojowników w odległości 2 heksów od celu. Następnie rzuć liczbą kości Ataku równą liczbie usuniętych żetonów łupu. Jeśli rzut zawierał jakiekolwiek {icon:fury} lub {icon:crit}, zadaj 1 obrażenie każdemu z tych wojowników i daj celowi oraz każdemu z tych wojowników żeton Stagger."
+      }
+    },
+    {
+      "name": {
+        "en": "Swag Blast",
+        "pl": "Wybuch z Łupu"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "By crushing a handful of swag in his fist, Blackpowder creates a crumpled but effective cannonball for his grunderbuss.",
+        "pl": "Ściskając garść łupu w pięści, Blackpowder tworzy pomięte, lecz skuteczne kule armatnie do swojego grunderbusa."
+      },
+      "rulesText": {
+        "en": "That weapon has +1 Damage and Cleave ({icon:cleave}) for that Attack. If the target is driven back, give the target a Stagger token. After this attack, you can push up to X other friendly fighters 1 hex and can give them each a Charge token, where X is the number of swag tokens you removed.",
+        "pl": "Ta broń ma +1 Obrażeń i Cleave ({icon:cleave}) podczas tego Ataku. Jeśli cel zostanie odrzucony, daj celowi żeton Stagger. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
+      }
+    },
+    {
+      "name": {
+        "en": "Swag Mortar",
+        "pl": "Moździerz z Łupu"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "By aiming his grunderbuss high, nowhere is safe from Gorlok's rain of red-hot loot.",
+        "pl": "Celując grunderbusem wysoko w górę, Gorlok sprawia, że żadne miejsce nie jest bezpieczne przed deszczem rozżarzonego łupu."
+      },
+      "rulesText": {
+        "en": "That weapon has +1 Damage and +X Range for that Attack, where X is the number of swag tokens you removed. After this attack, you can push up to X other friendly fighters 1 hex and can give them each a Charge token, where X is the number of swag tokens you removed.",
+        "pl": "Ta broń ma +1 Obrażeń i +X Zasięgu podczas tego Ataku, gdzie X to liczba usuniętych żetonów łupu. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
+      }
+    }
+  ]
+}

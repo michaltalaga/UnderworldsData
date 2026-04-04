@@ -1,0 +1,93 @@
+{
+  "id": "gnarlspirit-pack",
+  "name": "The Gnarlspirit Pack",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "Immediately after removing a spirit token from a friendly fighter, Inspire that fighter.",
+    "pl": "Bezpośrednio po usunięciu żetonu ducha od przyjaznego wojownika, Inspire tego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Uninspire",
+        "pl": "Uninspire"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after giving an Inspired friendly fighter a spirit token, Uninspire that fighter.",
+        "pl": "Bezpośrednio po przyznaniu Inspired przyjaznego wojownika żetonem ducha, Uninspire tego wojownika."
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Immediately after giving an Inspired friendly fighter a spirit token, Uninspire that fighter.",
+        "pl": "Bezpośrednio po przyznaniu Inspired przyjaznego wojownika żetonem ducha, Uninspire tego wojownika."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Spirit Tokens",
+        "pl": "Żetony Ducha"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Immediately after picking a friendly fighter to use a Core ability, you can remove that fighter's spirit tokens. Immediately after resolving a Core ability for a friendly fighter, you can give them a spirit token. Friendly fighters with any spirit tokens cannot be Inspired or hold treasure tokens.\n\nSarrakkar Unleashed: This fighter has +2 Move while they have any spirit tokens.\n\nGorl Unleashed: This fighter has +1 Save while they have any spirit tokens.\n\nKheira Unleashed: This fighter's melee weapons (excluding Upgrades) have +1 Attack dice while they have any spirit tokens.\n\nLupan Unleashed: Rolls of {icon:fury} count as successes in Attack rolls made for a friendly Lupan while they have any spirit tokens.",
+        "pl": "Bezpośrednio po wybraniu przyjaznego wojownika do użycia zdolności Core, możesz usunąć żetony ducha tego wojownika. Bezpośrednio po rozpatrzeniu zdolności Core dla przyjaznego wojownika, możesz dać mu żeton ducha. Przyjaźni wojownicy posiadający jakiekolwiek żetony ducha nie mogą być Inspired ani posiadać żetonów skarbów.\n\nSarrakkar Unleashed: Ten wojownik ma +2 Move, dopóki posiada jakiekolwiek żetony ducha.\n\nGorl Unleashed: Ten wojownik ma +1 Save, dopóki posiada jakiekolwiek żetony ducha.\n\nKheira Unleashed: Broń biała tego wojownika (z wyłączeniem Upgrades) ma +1 kość ataku, dopóki posiada jakiekolwiek żetony ducha.\n\nLupan Unleashed: Wyniki {icon:fury} liczą się jako sukcesy w rzutach na atak wykonywanych dla przyjaznego Lupana, dopóki posiada jakiekolwiek żetony ducha."
+      }
+    },
+    {
+      "name": {
+        "en": "In Control",
+        "pl": "Pod Kontrolą"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. If there are any friendly Inspired fighters on the battlefield, push each friendly Uninspired fighter up to 1 hex. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Jeśli na polu bitwy znajdują się jacykolwiek przyjaźni Inspired wojownicy, przesuń każdego przyjaznego Uninspired wojownika o maksymalnie 1 heks. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Self-command",
+        "pl": "Samowładztwo"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Pick a friendly Uninspired fighter. Remove that fighter's spirit tokens and then give them a Guard token. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego Uninspired wojownika. Usuń żetony ducha tego wojownika, a następnie daj mu Guard token. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Surfaced Instincts",
+        "pl": "Wybudzone Instynkty"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Pick a friendly fighter. Save rolls for that fighter cannot be affected by Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) in the next turn. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Rzuty na Save tego wojownika nie mogą być modyfikowane przez Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

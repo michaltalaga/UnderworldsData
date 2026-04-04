@@ -1,0 +1,88 @@
+{
+  "id": "the-exiled-dead",
+  "name": "The Exiled Dead",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": {
+    "en": "Friendly minions ({icon:minion}) begin the game Inspired.\nAfter an enemy fighter is slain by a friendly minion ({icon:minion}), Inspire Deintalos and Marcov.",
+    "pl": "Przyjazne sługi ({icon:minion}) rozpoczynają grę jako Inspired.\nGdy wrogi wojownik zostanie pokonany przez przyjazną sługę ({icon:minion}), Inspire Deintalosa i Marcova."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Dynamic Enhancer",
+        "pl": "Dynamiczne Wzmocnienie"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Friendly conductive ({icon:minion}) fighters have +X Move, where X is the number of slain friendly conductive ({icon:minion}) fighters.",
+        "pl": "Przyjazni przewodzący ({icon:minion}) wojownicy mają +X do ruchu, gdzie X to liczba pokonanych przyjaznych przewodzących ({icon:minion}) wojowników."
+      }
+    },
+    {
+      "name": {
+        "en": "Overload",
+        "pl": "Przeciążenie"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Friendly conductive ({icon:minion}) fighters cannot hold treasure tokens or Delve. Friendly conductive ({icon:minion}) fighters' melee weapons (excluding Upgrades) have Grievous ({icon:grievous}) if the target has any Stagger tokens.",
+        "pl": "Przyjazni przewodzący ({icon:minion}) wojownicy nie mogą posiadać żetonów skarbu ani Delve. Bronie wręcz przyjaznych przewodzących ({icon:minion}) wojowników (z wyłączeniem Ulepszeń) mają cechę Grievous ({icon:grievous}), jeśli cel posiada jakiekolwiek żetony Stagger."
+      }
+    },
+    {
+      "name": {
+        "en": "Dynamic Surge",
+        "pl": "Dynamiczny Przypływ Mocy"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "You can re-roll 1 Attack dice in an Attack roll for a friendly conductive ({icon:minion}) fighter while any other friendly conductive ({icon:minion}) fighters are adjacent to the attacker.",
+        "pl": "Możesz przerzucić 1 kość Ataku w rzucie na Atak przyjaznego przewodzącego ({icon:minion}) wojownika, jeśli jakikolwiek inny przyjazny przewodzący ({icon:minion}) wojownik jest sąsiadujący z atakującym."
+      }
+    },
+    {
+      "name": {
+        "en": "Puppeteer",
+        "pl": "Lalekarz"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Prentice Marcov is not yet the equal of his master's necromantic power, but he is certainly working to develop his dark skills.",
+        "pl": "Prentice Marcov nie dorównuje jeszcze nekromantycznej mocy swojego mistrza, lecz z pewnością pilnie pracuje nad rozwinięciem swych mrocznych umiejętności."
+      },
+      "rulesText": {
+        "en": "Pick a friendly Marcov to use this ability if they have no Move or Charge tokens. Pick 1 of the following:\n\n• That fighter and a friendly Regulus can each use a Core ability that they are eligible to use.\n\n• If a friendly Regulus is slain, Raise them and place them in an empty hex adjacent to that fighter.\n\nThis ability can only be used once per battle round.",
+        "pl": "Wybierz przyjaznego Marcova, aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz 1 z poniższych:\n\n• Ten wojownik i przyjazny Regulus mogą każde użyć zdolności Core, do której użycia są uprawnieni.\n\n• Jeśli przyjazny Regulus zostaje pokonany, wykonaj Raise na nim i umieść go w pustym polu sąsiadującym z tym wojownikiem.\n\nTa zdolność może być użyta tylko raz na rundę bitewną."
+      }
+    },
+    {
+      "name": {
+        "en": "Danse Dynamic",
+        "pl": "Dynamiczny Taniec"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Deintalos is a master of the Force Dynamic, sending its crackling power through unliving limbs with ease.",
+        "pl": "Deintalos jest mistrzem Dynamiki Mocy, z łatwością przepuszczając jej trzaskającą energię przez martwe kończyny."
+      },
+      "rulesText": {
+        "en": "Pick your leader ({icon:leader}) to use this ability if they have no Move or Charge tokens. Pick either the Move ability or the Attack ability. Each friendly conductive ({icon:minion}) fighter can use that ability.\n\nThen, you can pick a slain friendly conductive ({icon:minion}) fighter. Raise that conductive ({icon:minion}) fighter, place them in an empty hex adjacent to your leader ({icon:leader}) and then inflict 1 damage on them.",
+        "pl": "Wybierz swojego lidera ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz zdolność Move albo zdolność Attack. Każdy przyjazny przewodzący ({icon:minion}) wojownik może użyć tej zdolności.\n\nNastępnie możesz wybrać pokonanego przyjaznego przewodzącego ({icon:minion}) wojownika. Wykonaj Raise na tym przewodzącym ({icon:minion}) wojowniku, umieść go w pustym polu sąsiadującym z twoim liderem ({icon:leader}), a następnie zadaj mu 1 obrażenie."
+      }
+    }
+  ]
+}

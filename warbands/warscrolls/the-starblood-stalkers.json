@@ -1,0 +1,93 @@
+{
+  "id": "the-starblood-stalkers",
+  "name": "The Starblood Stalkers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "After your opponent's Power step, if your warband holds 3 or more treasure tokens, Inspire each friendly fighter.",
+    "pl": "Po Power stepie przeciwnika, jeśli twoja drużyna posiada 3 lub więcej żetonów skarbów, Inspire każdego przyjaznego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Skink Agility",
+        "pl": "Zwinność Skinka"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after you make a Save roll as part of a melee Attack for a friendly Skink ({icon:minion}) with no Charge tokens in friendly territory",
+        "pl": "Natychmiast po wykonaniu rzutu obronnego jako część wręcz Attack dla przyjaznego Skinka ({icon:minion}) bez żetonów Charge na przyjaznym terytorium"
+      },
+      "flavorText": {
+        "en": "Dexterous and nimble, the skinks of the Starblood Stalkers are capable of slipping away from danger with remarkable speed.",
+        "pl": "Zręczne i gibkie, skinki z Tropicieli Gwiezdnej Krwi potrafią wymknąć się z opresji z zadziwiającą szybkością."
+      },
+      "rulesText": {
+        "en": "you can re-roll 1 Save dice in that Save roll.",
+        "pl": "możesz przerzucić 1 kość obronną w tym rzucie obronnym."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "The Diviner",
+        "pl": "Wróżbita"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Kixi-Taka's cosmic powers allow him to foresee potential reward – or call down heavenly doom.",
+        "pl": "Kosmiczne moce Kixi-Taki pozwalają mu przewidzieć nadchodzącą nagrodę – lub sprowadzić niebiańską zagładę."
+      },
+      "rulesText": {
+        "en": "Pick a feature token within 3 hexes of your leader ({icon:leader}). Either flip that feature token or inflict 1 damage on an enemy fighter on or adjacent to that feature token. This ability can only be used once per battle round.",
+        "pl": "Wybierz żeton terenu w odległości 3 heksów od twojego przywódcy ({icon:leader}). Możesz albo odwrócić ten żeton terenu, albo zadać 1 obrażenie wrogiemu wojownikowi znajdującemu się na tym żetonie lub przylegającemu do niego. Tej zdolności można użyć tylko raz na rundę bitewną."
+      }
+    },
+    {
+      "name": {
+        "en": "The Bulwark Celestial",
+        "pl": "Niebiański Bastion"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "These most resolute of cosmic conjunctions infuse the Seraphon with a similarly firm endurance.",
+        "pl": "Te najpotężniejsze kosmiczne koniunkcje wypełniają Seraphon podobnie niezachwianą wytrwałością."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Friendly fighters cannot be driven back until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy nie mogą być odpychani do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "The Great Drake",
+        "pl": "Wielki Smok"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Ascendant constellations of almighty Dracothion grant the Starblood Stalkers' weapons a cosmic power.",
+        "pl": "Wznoszące się konstelacje wszechmocnego Dracothiona obdarzają broń Tropicieli Gwiezdnej Krwi kosmiczną potęgą."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Friendly fighters' melee weapons have +1 Attack dice until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power stepie. Broń do walki wręcz przyjaznych wojowników ma +1 kość Attack do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "The Hunter's Steed",
+        "pl": "Wierzchowiec Łowcy"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "As the stars of the steed rise to dominate the heavens, predatory speed infuses the Stalkers.",
+        "pl": "Gdy gwiazdy wierzchowca wznoszą się, by zawładnąć niebiosami, drapieżna szybkość przenika Tropicieli."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Friendly fighters have +1 Move until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy mają +1 Move do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      }
+    }
+  ]
+}

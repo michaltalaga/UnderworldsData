@@ -1,0 +1,60 @@
+{
+  "id": "the-grymwatch",
+  "name": "The Grymwatch",
+  "version": "1.1",
+  "grandAlliance": "Death",
+  "inspire": {
+    "en": "After the last Action step in a battle round, pick up to X friendly fighters, where X is the combined Bounty characteristics of slain enemy fighters and enemy fighters in enemy and neutral territory. Inspire those friendly fighters."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "In the Name of the King!"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "Once per battle round, in your Power step, if your leader ({icon:leader}) is on the battlefield, you can use 1 of the following abilities:\n• Pick a friendly fighter. Inspire that fighter.\n• Pick a slain friendly fighter. Raise them and place them in an empty edge hex.\nIf you are the underdog ({icon:skull}), you can use both abilities instead."
+      }
+    },
+    {
+      "name": {
+        "en": "Defenders of the Realm"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "It is the duty of every righteous warrior to serve as protector of the peasantry, and a shield against evil. No foe shall break the cordon!"
+      },
+      "rulesText": {
+        "en": "Each time you make a Save roll for a friendly fighter in friendly territory, you can re-roll 1 dice in that roll."
+      }
+    },
+    {
+      "name": {
+        "en": "The Royal Hunt"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Hark! The horns are sounded, and proclamations made – the kingdom must be scoured of beasts and ne'er-do-wells. None can escape royal justice!"
+      },
+      "rulesText": {
+        "en": "Friendly fighters' melee weapons have +1 Attack dice if the target of the Attack is damaged."
+      }
+    },
+    {
+      "name": {
+        "en": "To the Walls!"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "It is in the moments of direst peril, when all that is chivalrous and pure stands threatens, that true heroes are made. And the victory feast will surely be spectacular..."
+      },
+      "rulesText": {
+        "en": "You can use the 'In the Name of the King!' ability twice this battle round instead of once."
+      }
+    }
+  ]
+}

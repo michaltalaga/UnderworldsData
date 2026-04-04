@@ -1,0 +1,97 @@
+{
+  "id": "borgits-beastgrabbaz",
+  "name": "Borgit's Beastgrabbaz",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": {
+    "en": "After a friendly fighter Delves, Inspire that fighter.",
+    "pl": "Po tym, jak przyjazny wojownik wykonuje Delves, Inspire tego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Trophy Huntaz",
+        "pl": "Łowcy Trofeów"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "At the start of your first Action step in the first battle round, pick an enemy fighter with a Health characteristic of 3 or more to be da trophy.",
+        "pl": "Na początku twojego pierwszego Action step w pierwszej rundzie bitwy, wybierz wrogiego wojownika z cechą Zdrowia równą 3 lub więcej, który zostaje da trophy."
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Melee Attacks that target da trophy have +1 Attack dice.",
+        "pl": "Ataki wręcz wymierzone w da trophy mają +1 kość Ataku."
+      }
+    },
+    {
+      "name": {
+        "en": "Da Bait",
+        "pl": "Da Przynęta"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after a friendly minion ({icon:minion}) is slain,",
+        "pl": "Natychmiast po tym, jak przyjazny minion ({icon:minion}) zostaje pokonany,"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "push your leader ({icon:leader}) a number of hexes equal to the Health characteristic of the slain minion ({icon:minion}). That push must end adjacent to an enemy fighter.",
+        "pl": "przesuń swojego lidera ({icon:leader}) o liczbę hexów równą cesze Zdrowia pokonanego miniona ({icon:minion}). To przesunięcie musi zakończyć się w sąsiedztwie wrogiego wojownika."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Gittish Taktikz",
+        "pl": "Gittish Taktikz"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Borgit and his mates see no reason to engage in a fair fight.",
+        "pl": "Borgit i jego kumpanie nie widzą żadnego powodu, by wdawać się w uczciwą walkę."
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly Uglug or friendly Borgit's successful Attack. Until the end of the battle round, the target of that Attack is da mugginz. Friendly minions' ({icon:minion}) melee weapons have {icon:grievous} Grievous ({icon:skull}) when targeting da mugginz. You can only use the 'Gittish Taktikz' ability once per game.",
+        "pl": "Użyj tego natychmiast po udanym Ataku przyjaznego Ugluga lub przyjaznego Borgita. Do końca rundy bitwy, cel tego Ataku staje się da mugginz. Broń do walki wręcz przyjaznych minionów ({icon:minion}) posiada {icon:grievous} Grievous ({icon:skull}) gdy atakują da mugginz. Możesz użyć zdolności 'Gittish Taktikz' tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Reassuring Presence",
+        "pl": "Kojąca Obecność"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Uglug's brawn backing them up inspires a grottish confidence in the Beastgrabbaz.",
+        "pl": "Krzepka muskulatura Ugluga dodająca im otuchy wzbudza w Beastgrabbaz grottisową pewność siebie."
+      },
+      "rulesText": {
+        "en": "Use this immediately after your Action step if a friendly Uglug used any Core abilities in that step. You can push each friendly minion up to 3 hexes. Each fighter pushed in this way must end that push adjacent to a friendly Uglug. You can only use this ability once per game.",
+        "pl": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny Uglug użył jakichkolwiek Core abilities w tym kroku. Możesz przesunąć każdego przyjaznego miniona o maksymalnie 3 hexy. Każdy wojownik przesunięty w ten sposób musi zakończyć to przesunięcie w sąsiedztwie przyjaznego Ugluga. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Stab 'Em Good",
+        "pl": "Daj Im W Kość"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "The Beastgrabbaz aren't great warriors, but they do know how to mob a foe.",
+        "pl": "Beastgrabbaz nie są wielkimi wojownikami, ale doskonale wiedzą, jak napaść na wroga całą zgrają."
+      },
+      "rulesText": {
+        "en": "Use this immediately after your Action step if a friendly minion ({icon:minion}) used any Core abilities in that step. Until the end of the next Action step, the first time after an enemy fighter is pushed, placed or enters any hex adjacent to a friendly minion ({icon:minion}), inflict 1 damage on that fighter. You can only use this ability once per game.",
+        "pl": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny minion ({icon:minion}) użył jakichkolwiek Core abilities w tym kroku. Do końca następnego Action step, za pierwszym razem gdy wrogi wojownik zostaje przesunięty, umieszczony lub wchodzi na dowolny hex sąsiadujący z przyjaznym minionem ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

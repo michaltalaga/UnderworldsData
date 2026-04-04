@@ -1,0 +1,50 @@
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  .app {
+    max-width: none;
+    padding: 0;
+  }
+
+  .header,
+  .selector,
+  .print-btn,
+  .lang-toggle,
+  .header-controls {
+    display: none !important;
+  }
+
+  .warscroll {
+    box-shadow: none;
+    border: 2px solid #333;
+    page-break-inside: avoid;
+  }
+
+  .warscroll-header {
+    background: #333 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .warscroll-left {
+    background: #f0ece0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .ability-card,
+  .inspire-box,
+  .reaction-box {
+    page-break-inside: avoid;
+  }
+
+  .icon-token {
+    background: #555 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

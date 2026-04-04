@@ -1,0 +1,93 @@
+{
+  "id": "daggoks-stab-ladz",
+  "name": "Daggok's Stab-ladz",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": {
+    "en": "Immediately after inflicting damage on an enemy fighter using the Krule Stab ability, Inspire the friendly fighter.",
+    "pl": "Natychmiast po zadaniu obrażeń wrogemu wojownikowi za pomocą zdolności Krule Stab, Inspire przyjaznego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Krule Stab",
+        "pl": "Krule Stab"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "A friendly fighter with no Charge tokens can use this immediately after your Action step.",
+        "pl": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie."
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "A friendly fighter with no Charge tokens can use this immediately after your Action step. Pick an enemy fighter that is not vulnerable that is adjacent to that friendly fighter and roll an Attack dice. On a {icon:fury} or {icon:crit}, inflict 1 damage on that enemy fighter. The same fighter cannot use this ability more than once per turn.",
+        "pl": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie. Wybierz wrogiego wojownika, który nie jest podatny na ataki i który jest sąsiadujący z tym przyjaznym wojownikiem, a następnie rzuć kością ataku. Na wynik {icon:fury} lub {icon:crit} zadaj 1 obrażenie temu wrogemu wojownikowi. Ten sam wojownik nie może użyć tej zdolności więcej niż raz na turę."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "'Two against one, ya git!'",
+        "pl": "'Dwóch na jednego, ty głuptasie!'"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Daggok and his ladz have heard about fair fights before. They can't say the concept impressed them.",
+        "pl": "Daggok i jego ladzi słyszeli już wcześniej o czymś takim jak uczciwa walka. Nie można powiedzieć, żeby ten pomysł zrobił na nich wrażenie."
+      },
+      "rulesText": {
+        "en": "Use this immediately after your Action step. You can push a friendly fighter 1 hex. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności natychmiast po twoim Action stepie. Możesz odepchnąć przyjaznego wojownika o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Thief of Kunnin'",
+        "pl": "Złodziej Kunnin'"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The more heads Daggok looks liable to take, the finkier he gets.",
+        "pl": "Im więcej głów Daggok zdaje się być gotów zabrać, tym bardziej przebiegły się staje."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Draw a number of Power cards equal to the number of damaged enemy fighters. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w Power stepie. Dobierz liczbę kart Power równą liczbie rannych wrogich wojowników. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Nasty Poisons",
+        "pl": "Paskudne Trucizny"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Kruleboyz are well known for smearing all manner of wicked swamp toxins on their weapons.",
+        "pl": "Kruleboyz są dobrze znani z nacierania swoich broni wszelkiego rodzaju złowrogimi bagiennymi toksynami."
+      },
+      "rulesText": {
+        "en": "Use this immediately after an Action step. Roll a dice for each damaged enemy fighter. On a roll of {icon:crit}, inflict 1 damage on that fighter. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności natychmiast po Action stepie. Rzuć kością za każdego rannego wrogiego wojownika. Na wynik {icon:crit} zadaj 1 obrażenie temu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Schemin' Gitz",
+        "pl": "Knujące Gity"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Instead of playing a Ploy in your opponent's Power step, you can discard Ploys to use the abilities below. The number of Ploys you discard determines which abilities apply in the next turn. The effects are cumulative and the effect of each ability lasts until the end of your next turn.\n\nDiscard 1: Friendly fighters have +1 Move.\nDiscard 2: Enemy fighters are Flanked.\nDiscard 3: Friendly fighters' weapons have +1 Attack dice.",
+        "pl": "Zamiast zagrywać Ploy w Power stepie przeciwnika, możesz odrzucić Ploys, aby użyć poniższych zdolności. Liczba odrzuconych Ploys określa, które zdolności obowiązują w następnej turze. Efekty są kumulatywne, a efekt każdej zdolności trwa do końca twojej następnej tury.\n\nOdrzuć 1: Przyjazni wojownicy mają +1 Move.\nOdrzuć 2: Wrodzy wojownicy są Flanked.\nOdrzuć 3: Broń przyjaznych wojowników ma +1 kość ataku."
+      }
+    }
+  ]
+}

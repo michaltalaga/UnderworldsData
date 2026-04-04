@@ -1,0 +1,139 @@
+{
+  "id": "elathains-soulraid",
+  "name": "Elathain's Soulraid",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "Inspire each friendly fighter at the start of the second battle round. Uninspire each friendly fighter at the start of the third battle round.",
+    "pl": "Inspire każdego przyjaznego wojownika na początku drugiej rundy bitwy. Uninspire każdego przyjaznego wojownika na początku trzeciej rundy bitwy."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Flood Tide",
+        "pl": "Przypływ"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "In the first battle round, immediately after an enemy fighter's melee Attack,",
+        "pl": "W pierwszej rundzie bitwy, natychmiast po wręcznym Ataku wojownika wroga,"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "give the attacker a Stagger token.",
+        "pl": "daj atakującemu żeton Stagger."
+      }
+    },
+    {
+      "name": {
+        "en": "Riptide Harpoon",
+        "pl": "Harpun Rwącego Nurtu"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after picking Tammael to Charge.",
+        "pl": "Użyj tej reakcji natychmiast po wybraniu Tammaela do wykonania Szarży."
+      },
+      "flavorText": {
+        "en": "Even a lowly Thrall such as Tammael is trained to fight with the fury of a surging wave.",
+        "pl": "Nawet podrzędny Thrall taki jak Tammael jest szkolony do walki z furią wzburzonej fali."
+      },
+      "rulesText": {
+        "en": "That fighter's melee weapons (excluding Upgrades) have +1 Attack dice for that Charge.",
+        "pl": "Bronie wręczne tego wojownika (z wyłączeniem Ulepszeń) mają +1 kość Ataku podczas tej Szarży."
+      }
+    },
+    {
+      "name": {
+        "en": "Soul Harvest",
+        "pl": "Żniwo Dusz"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after an enemy fighter is slain by your leader ({icon:leader}) with a non-Upgrade weapon if a friendly Tammael is slain.",
+        "pl": "Użyj tej reakcji natychmiast po tym, jak twój przywódca ({icon:leader}) zabił wrogie go wojownika bronią niebędącą Ulepszeniem, jeśli przyjazny Tammael jest poległy."
+      },
+      "flavorText": {
+        "en": "It is through stolen souls that the Idoneth sustain their cursed civilisation.",
+        "pl": "To dzięki skradzionym duszom Idoneth podtrzymują swą przeklętą cywilizację."
+      },
+      "rulesText": {
+        "en": "Raise that friendly Tammael and place them in a starting hex in friendly territory.",
+        "pl": "Podnieś tego przyjaznego Tammaela i umieść go na polu startowym na przyjaznym terytorium."
+      }
+    },
+    {
+      "name": {
+        "en": "Ethersea Predators",
+        "pl": "Drapieżniki Eteru"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after a friendly Idoneth ({icon:destined}) uses a Core ability.",
+        "pl": "Użyj tej reakcji natychmiast po tym, jak przyjazny Idoneth ({icon:destined}) użyje zdolności podstawowej."
+      },
+      "flavorText": {
+        "en": "It's always the one you don't see that gets you.",
+        "pl": "Zawsze dosięga cię ten, którego nie widzisz."
+      },
+      "rulesText": {
+        "en": "Push each friendly minion ({icon:minion}) 1 hex closer to that fighter.",
+        "pl": "Przesuń każdego przyjaznego sługę ({icon:minion}) o 1 pole bliżej tego wojownika."
+      }
+    },
+    {
+      "name": {
+        "en": "Phantasmal Forms",
+        "pl": "Widmowe Kształty"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after the Determine Success step of a successful Attack that targets a friendly Fuirann,",
+        "pl": "Natychmiast po kroku Określenia Wyniku udanego Ataku wymierzonego w przyjazną Fuirann,"
+      },
+      "flavorText": {
+        "en": "Even Akhelian nobles such as Fuirann will use illusion and trickery to avoid the brute enemy.",
+        "pl": "Nawet akheliańska szlachta, taka jak Fuirann, posługuje się iluzją i podstępem, by uniknąć brutalnego wroga."
+      },
+      "rulesText": {
+        "en": "that friendly Fuirann can use Stand Fast. You can only use this ability once per battle round.",
+        "pl": "ta przyjazna Fuirann może użyć Stand Fast. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "High Tide",
+        "pl": "Wysoka Fala"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "In the second battle round, friendly fighters have +1 Move.",
+        "pl": "W drugiej rundzie bitwy przyjazni wojownicy mają +1 Ruch."
+      }
+    },
+    {
+      "name": {
+        "en": "Ebb Tide",
+        "pl": "Odpływ"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "In the third battle round, friendly fighters' melee weapons (excluding Upgrades) have Grapple ({icon:fury}).",
+        "pl": "W trzeciej rundzie bitwy bronie wręczne przyjaznych wojowników (z wyłączeniem Ulepszeń) mają Grapple ({icon:fury})."
+      }
+    }
+  ]
+}

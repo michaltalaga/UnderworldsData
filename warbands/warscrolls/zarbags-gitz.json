@@ -1,0 +1,103 @@
+{
+  "id": "zarbags-gitz",
+  "name": "Zarbag's Gitz",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": {
+    "en": "Each time you gain a sixth or subsequent Glory point, Inspire a friendly fighter."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Slippery Gitz"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after you pick a friendly fighter to Move."
+      },
+      "flavorText": {
+        "en": "Grots are hard to pin down at the best of times – and Zarbag's Gitz especially so."
+      },
+      "rulesText": {
+        "en": "Pick a friendly Grot ({icon:minion}) with no Move or Charge tokens adjacent to them. After the first fighter Moves, that friendly Grot ({icon:minion}) can Move. You can only use this ability once per turn."
+      }
+    },
+    {
+      "name": {
+        "en": "Fungal Burst"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after a friendly Grot ({icon:minion}) is slain by an attacker adjacent to them."
+      },
+      "flavorText": {
+        "en": "Grots often carry bunches of mushrooms that, when struck, release clouds of poisonous spores."
+      },
+      "rulesText": {
+        "en": "Give the attacker a Stagger token. You can only use this ability once per game."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Squig Herder"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "After you deploy a friendly Drizgit, you must immediately place each friendly Squig ({icon:minion}) in an empty hex adjacent to them that is not a starting hex and that does not contain a feature token."
+      }
+    },
+    {
+      "name": {
+        "en": "Spinnin'"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "Snirk cannot be given Guard tokens.\nEach time a fighter is placed in, is pushed into or enters a hex adjacent to a friendly Snirk, inflict 1 damage on that fighter."
+      }
+    },
+    {
+      "name": {
+        "en": "Volley"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "If a friendly fighter's weapon has the {icon:volley} runemark, you have access to the following Weapon ability:\n\nVolley ({icon:volley}): Immediately after the Attack, if it was successful, you can pick another friendly fighter whose weapon has Volley ({icon:volley}). That fighter Attacks with that weapon. You can only use this ability once per turn."
+      }
+    },
+    {
+      "name": {
+        "en": "Gang Up"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Zarbag's Gitz have heard about fighting fair. They just choose not to."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. In the next turn, friendly fighters' melee weapons have +1 Attack dice for each other friendly Grot ({icon:minion}) adjacent to the target. You can only use this ability once per game."
+      }
+    },
+    {
+      "name": {
+        "en": "Make Some Noise!"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "There are few better ways to rile up a squig than making a racket."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Push each friendly Squig ({icon:minion}) up to 2 hexes. For the rest of the battle round, those Squigs ({icon:minion}) cannot hold treasure tokens or Delve. You can only use this ability once per game."
+      }
+    }
+  ]
+}

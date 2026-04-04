@@ -1,0 +1,78 @@
+{
+  "id": "grashraks-despoilers",
+  "name": "Grand Alliance Chaos: Corrupters",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "Immediately after your opponent's Action step, if there are more friendly fighters than enemy fighters in neutral territory, Inspire each friendly fighter in that territory.",
+    "pl": "Natychmiast po fazie Akcji przeciwnika, jeśli na neutralnym terenie znajduje się więcej przyjaznych wojowników niż wrogich, Inspire każdego przyjaznego wojownika na tym terenie."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Roots of Chaos",
+        "pl": "Korzenie Chaosu"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after a friendly fighter Delves a feature token",
+        "pl": "Natychmiast po tym, jak przyjazny wojownik wykona Delves na żetonie terenu"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "give each enemy fighter within 2 hexes of that feature token/within 2 hexes of them a Stagger token.",
+        "pl": "nadaj każdemu wrogemu wojownikowi w odległości 2 pól od tego żetonu terenu/w odległości 2 pól od nich żeton Stagger."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Aura of Ruin",
+        "pl": "Aura Zagłady"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Such is this entity's corrupting aura that merely being in proximity to it causes the flesh to writhe and soul to scream.",
+        "pl": "Aura zepsucia tej istoty jest tak potężna, że samo przebywanie w jej pobliżu sprawia, iż ciało wije się w konwulsjach, a dusza wyje z bólu."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Pick an enemy fighter with a Stagger token that is adjacent to a friendly fighter and not vulnerable. Inflict 1 damage on that enemy fighter. This ability can only be used once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Wybierz wrogiego wojownika z żetonem Stagger, który sąsiaduje z przyjaznym wojownikiem i nie jest podatny na ataki. Zadaj temu wrogemu wojownikowi 1 obrażenie. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Purge the Weak",
+        "pl": "Wyeliminuj Słabych"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Servants of the Dark Gods are swift to spot the enemy's most vulnerable warriors and dispose of them bloodily.",
+        "pl": "Słudzy Mrocznych Bogów błyskawicznie wyczuwają najbardziej bezbronnych spośród wrogich wojowników i krwawo ich likwidują."
+      },
+      "rulesText": {
+        "en": "Pick an enemy fighter with a Stagger token. Friendly fighters' melee weapons have +1 Attack dice for Attacks that target that enemy fighter in the next turn. This ability can only be used once per game.",
+        "pl": "Wybierz wrogiego wojownika z żetonem Stagger. Bronie do walki wręcz przyjaznych wojowników mają +1 kość Ataku w Atakach skierowanych przeciwko temu wrogemu wojownikowi w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Unholy Desecration",
+        "pl": "Nieświęte Sprofanowanie"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The Dark Gods shower their blessings upon those who pervert and corrupt the icons of lesser deities.",
+        "pl": "Mroczne Bóstwa obsypują swymi błogosławieństwami tych, którzy wypaczają i kalają symbole pomniejszych bóstw."
+      },
+      "rulesText": {
+        "en": "Pick a friendly fighter on a feature token. Enemy fighters' melee weapons have -1 Attack dice for Attacks that target that friendly fighter in the next turn. This ability can only be used once per game.",
+        "pl": "Wybierz przyjaznego wojownika stojącego na żetonie terenu. Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku w Atakach skierowanych przeciwko temu przyjaznemu wojownikowi w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    }
+  ]
+}

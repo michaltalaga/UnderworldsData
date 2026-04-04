@@ -1,0 +1,73 @@
+{
+  "id": "the-thricefold-discord",
+  "name": "The Thricefold Discord",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "After a friendly fighter's Attack roll or Save roll that contains no successes, or after a friendly fighter is slain, Inspire another friendly fighter.",
+    "pl": "Po tym, jak rzut na Atak lub rzut na Obronę przyjaznego wojownika nie zawiera żadnych sukcesów, lub po tym, jak przyjazny wojownik zostanie pokonany, Inspire innego przyjaznego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Irresistible Feast",
+        "pl": "Nieodparta Uczta"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Well, why not partake?",
+        "pl": "No cóż, czemu nie skorzystać?"
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Discard 1 temptation dice, then inflict 1 damage on an enemy fighter that is not vulnerable. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie zadaj 1 obrażenie wrogiemu wojownikowi, który nie jest podatny. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Sublime Senses",
+        "pl": "Wzniosłe Zmysły"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Little surprises such epicureans.",
+        "pl": "Niewiele jest w stanie zaskoczyć takich epikurejczyków."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Discard 1 temptation dice, then give a friendly fighter a Guard token. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie przyznaj przyjznemu wojownikowi Guard token. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Pavane of Slaanesh",
+        "pl": "Pawana Slaanesha"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Dance the dance of doom.",
+        "pl": "Tańcz taniec zagłady."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Discard 1 temptation dice, then pick a friendly fighter. Save rolls for that fighter cannot be affected by Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) in the next turn. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie wybierz przyjaznego wojownika. Rzuty na Obronę tego wojownika nie mogą być modyfikowane przez Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Temptations of Slaanesh",
+        "pl": "Pokusy Slaanesha"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Like all the Dark Prince's daemons, the Thricefold Discord delight in picking apart mortal morality.",
+        "pl": "Podobnie jak wszystkie demony Mrocznego Księcia, Thricefold Discord czerpią rozkosz z rozkładania śmiertelniczej moralności na części pierwsze."
+      },
+      "rulesText": {
+        "en": "At the start of the first Action step in each battle round, you gain a pool of 6 temptation dice.\n\nAt the end of the battle round, any temptation dice that have not been offered are lost.\n\n{icon:reaction} Tempt…: Once per turn, immediately after your opponent rolls an unsuccessful dice in an Attack roll, you can offer them a temptation dice.\n\nAccept: If your opponent accepts your offer, they must replace 1 unsuccessful result in their attack roll with a successful result ({icon:fury} or {icon:crit} only). Attack dice replaced in this way cannot be re-rolled or modified. Then, immediately after that Attack has been resolved, inflict 1 damage on the attacker.\n\nReject: If your opponent rejects your offer, immediately after that attack has been resolved, you can pick a friendly fighter that was not the target and push that fighter 1 hex.",
+        "pl": "Na początku pierwszego Action step w każdej rundzie bitwy otrzymujesz pulę 6 kostek pokusy.\n\nNa końcu rundy bitwy wszelkie kostki pokusy, które nie zostały zaoferowane, są tracone.\n\n{icon:reaction} Kusz…: Raz na turę, bezpośrednio po tym, jak przeciwnik wyrzuci nieudaną kostkę w rzucie na Atak, możesz zaoferować mu kostkę pokusy.\n\nAkceptacja: Jeśli przeciwnik przyjmie twoją ofertę, musi zastąpić 1 nieudany wynik w swoim rzucie na Atak udanym wynikiem (tylko {icon:fury} lub {icon:crit}). Kostki Ataku zastąpione w ten sposób nie mogą być przerzucane ani modyfikowane. Następnie bezpośrednio po rozstrzygnięciu tego Ataku zadaj 1 obrażenie atakującemu.\n\nOdrzucenie: Jeśli przeciwnik odrzuci twoją ofertę, bezpośrednio po rozstrzygnięciu tego ataku możesz wybrać przyjaznego wojownika, który nie był celem ataku, i pchnąć go o 1 pole."
+      }
+    }
+  ]
+}

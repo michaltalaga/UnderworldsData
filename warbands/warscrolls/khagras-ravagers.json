@@ -1,0 +1,97 @@
+{
+  "id": "khagras-ravagers",
+  "name": "Khagra's Ravagers",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "After the last Action step in a battle round, if there are 2 or more desecrated treasure tokens, Inspire each friendly fighter.",
+    "pl": "Po ostatnim kroku Akcji w rundzie bitewnej, jeśli istnieją 2 lub więcej zbezczeszczonych żetonów skarbów, Inspire każdego przyjaznego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Razed Realm",
+        "pl": "Spustoszone Królestwo"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "You can use this ability once per Power step.",
+        "pl": "Możesz użyć tej zdolności raz na Power step."
+      },
+      "flavorText": {
+        "en": "The Ravagers leave naught but ruin in their wake.",
+        "pl": "Niszczyciele pozostawiają po sobie jedynie ruinę."
+      },
+      "rulesText": {
+        "en": "You can use this ability once per Power step. Pick a treasure token held by a friendly fighter. That treasure token is desecrated until it is flipped.",
+        "pl": "Możesz użyć tej zdolności raz na Power step. Wybierz żeton skarbu trzymany przez przyjaznego wojownika. Ten żeton skarbu jest zbezczeszczony, dopóki nie zostanie odwrócony."
+      }
+    },
+    {
+      "name": {
+        "en": "Ritual Desecration",
+        "pl": "Rytualne Zbezczeszczenie"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after an enemy fighter is slain, if the attacker or target was holding a treasure token.",
+        "pl": "Natychmiast po tym, jak wróg zostaje pokonany, jeśli atakujący lub cel trzymał żeton skarbu."
+      },
+      "flavorText": {
+        "en": "Through slaughter and blood are the realms desecrated.",
+        "pl": "Przez rzeź i krew królestwa są zbezczeszczane."
+      },
+      "rulesText": {
+        "en": "Immediately after an enemy fighter is slain, if the attacker or target was holding a treasure token, you can pick that treasure token. That treasure token is desecrated until it is flipped.",
+        "pl": "Natychmiast po tym, jak wrogi wojownik zostaje pokonany, jeśli atakujący lub cel trzymał żeton skarbu, możesz wybrać ten żeton skarbu. Ten żeton skarbu jest zbezczeszczony, dopóki nie zostanie odwrócony."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Dark Approval",
+        "pl": "Mroczna Aprobata"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "To catch the attention of the Dark Gods is to be lavishly rewarded.",
+        "pl": "Zwrócić na siebie uwagę Mrocznych Bogów to zostać hojnie wynagrodzonym."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Draw 1 Power card for each desecrated treasure token. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w Power step. Dobierz 1 kartę Power za każdy zbezczeszczony żeton skarbu. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "The Eye of the Gods",
+        "pl": "Oko Bogów"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "To court the gaze of the Dark Gods is perilous – but those who prove worthy are made mighty indeed.",
+        "pl": "Zabieganie o wzrok Mrocznych Bogów jest niebezpieczne – lecz ci, którzy okażą się godni, stają się prawdziwie potężni."
+      },
+      "rulesText": {
+        "en": "Pick 1 of the following:\n• Use this immediately after a friendly fighter holding a treasure token is picked to be the target of an Attack. The target has +1 Save for that Attack.\n• Use this immediately after you pick an enemy fighter holding a treasure token to be the target of an Attack. The weapon you picked for that Attack has +1 Attack dice for that Attack.\nYou can only use this ability once per game.",
+        "pl": "Wybierz 1 z poniższych:\n• Użyj tej zdolności natychmiast po tym, jak przyjazny wojownik trzymający żeton skarbu zostaje wybrany jako cel Ataku. Cel ma +1 Save w tym Ataku.\n• Użyj tej zdolności natychmiast po tym, jak wybierzesz wrogiego wojownika trzymającego żeton skarbu jako cel Ataku. Broń wybrana do tego Ataku ma +1 Attack dice w tym Ataku.\nMożesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Ravaging Advance",
+        "pl": "Niszczycielski Marsz"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Chaos Warriors never falter in their zealous campaign to desecrate all before them.",
+        "pl": "Wojownicy Chaosu nigdy nie wahają się w swej żarliwej krucjacie zbezczeszczania wszystkiego na swej drodze."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Pick a friendly fighter. Push that fighter a number of hexes up to the number of desecrated treasure tokens. That push must end on a treasure token and/or adjacent to an enemy fighter. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności w Power step. Wybierz przyjaznego wojownika. Przesuń tego wojownika o liczbę heksów równą co najwyżej liczbie zbezczeszczonych żetonów skarbów. To przesunięcie musi zakończyć się na żetonie skarbu i/lub w sąsiedztwie wrogiego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

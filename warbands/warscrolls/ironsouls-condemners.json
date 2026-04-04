@@ -1,0 +1,86 @@
+{
+  "id": "ironsouls-condemners",
+  "name": "Ironsoul's Condemnors",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "Immediately after making an Attack roll or Save roll for a friendly fighter, if that roll included any {icon:crit}, Inspire that fighter.",
+    "pl": "Natychmiast po wykonaniu rzutu na Atak lub rzutu na Obronę za przyjaznego wojownika, jeśli ten rzut zawierał jakikolwiek {icon:crit}, Inspire tego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Punishing Blow",
+        "pl": "Karzący Cios"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after you a pick weapon as part of an Attack by a friendly Brodus.",
+        "pl": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjaznego Brodusa."
+      },
+      "flavorText": {
+        "en": "Brodus's Greatmace charges up with celestial energy.",
+        "pl": "Wielki maczuga Brodusa ładuje się niebiańską energią."
+      },
+      "rulesText": {
+        "en": "That weapon has +X Attack dice, where X is equal to the battle round. You can only use this ability once per game.",
+        "pl": "Ta broń otrzymuje +X kości Ataku, gdzie X jest równe numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Aetherically Charged Shield",
+        "pl": "Eterycznie Naładowana Tarcza"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after your opponent picks a weapon as part of an Attack that targets a friendly shield aetheric ({icon:shield}).",
+        "pl": "Użyj tego natychmiast po tym, jak przeciwnik wybierze broń w ramach Ataku wymierzonego w przyjazną tarczę eteryczną ({icon:shield})."
+      },
+      "flavorText": {
+        "en": "With potent celestial magic, the Sequitors' shields light ablaze with cerulean power.",
+        "pl": "Dzięki potężnej niebiańskiej magii tarcze Sekwitorów rozżarzają się błękitną mocą."
+      },
+      "rulesText": {
+        "en": "Weapon abilities cannot be used for that Attack. You can only use this ability once per game.",
+        "pl": "Zdolności broni nie mogą być używane podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Aetherically Charged Maul",
+        "pl": "Eterycznie Naładowany Młot"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after you pick a weapon as part of an Attack by a friendly shield aetheric ({icon:shield}).",
+        "pl": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjazną tarczę eteryczną ({icon:shield})."
+      },
+      "flavorText": {
+        "en": "Weapons crackling with power, the Sequitors blast the enemy to smoking ruin.",
+        "pl": "Broń trzeszcząca od mocy, Sekwitorzy unicestwiają wroga, obracając go w dymiące gruzy."
+      },
+      "rulesText": {
+        "en": "That weapon has + 1 Range for that Attack. You can only use this ability once per game.",
+        "pl": "Ta broń otrzymuje +1 do Zasięgu podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Bulwark against the Dark",
+        "pl": "Bastion przeciw Ciemności"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "The Condemnors stand firm against the horrors of the realms.",
+        "pl": "Potępiający stoją nieugięcie wobec okropności krain."
+      },
+      "rulesText": {
+        "en": "Friendly fighters with no Move and/or Charge tokens cannot be driven back.",
+        "pl": "Przyjaznych wojowników bez żetonów Ruchu i/lub Szarży nie można odpychać."
+      }
+    }
+  ]
+}

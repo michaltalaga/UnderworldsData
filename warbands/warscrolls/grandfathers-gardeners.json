@@ -1,0 +1,69 @@
+{
+  "id": "grandfathers-gardeners",
+  "name": "Grandfather's Gardeners",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "After an Action step, if a friendly fighter is vulnerable, Inspire that fighter.",
+    "pl": "Po kroku Akcji, jeśli przyjazny wojownik jest bezbronny, Inspire tego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Blooming Plague",
+        "pl": "Kwitnąca Plaga"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "Where a friendly fighter has the Gardener ({icon:gardener}) runemark instead of a characteristic, {icon:gardener} is equal to the current space on your tracker.",
+        "pl": "Gdy przyjazny wojownik posiada runiczny znak Ogrodnika ({icon:gardener}) zamiast cechy, {icon:gardener} jest równe wartości aktualnego pola na twoim torze śledzenia."
+      }
+    },
+    {
+      "name": {
+        "en": "Imperturbable",
+        "pl": "Niezachwiany"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "No more than 2 damage can be inflicted on Uninspired friendly fighters in the same turn.",
+        "pl": "Na Uninspired przyjaznych wojowników można zadać nie więcej niż 2 obrażenia w tej samej turze."
+      }
+    },
+    {
+      "name": {
+        "en": "Reap a Harvest",
+        "pl": "Zbierz Żniwo"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "Use this immediately after placing your token on this space. Pick a friendly fighter. Heal that fighter.",
+        "pl": "Użyj tego natychmiast po umieszczeniu twojego żetonu na tym polu. Wybierz przyjaznego wojownika. Ulecz tego wojownika."
+      }
+    },
+    {
+      "name": {
+        "en": "Tracker",
+        "pl": "Tor Śledzenia"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null
+      },
+      "rulesText": {
+        "en": "In the Muster Warbands step of 'Setting Up', place a generic token on the 'Start' space of this warscroll's tracker. Advance that token 1 space clockwise immediately:\n\n• after your turn.\n\n• after damage is inflicted on a friendly fighter.\n\n• after your turn if your warband holds more treasure tokens than your opponent.",
+        "pl": "W kroku Muster Warbands podczas 'Ustawiania', umieść zwykły żeton na polu 'Start' toru śledzenia tej karty. Przesuń ten żeton o 1 pole zgodnie z ruchem wskazówek zegara natychmiast:\n\n• po twojej turze.\n\n• po zadaniu obrażeń przyjznemu wojownikowi.\n\n• po twojej turze, jeśli twoja drużyna posiada więcej żetonów skarbów niż twój przeciwnik."
+      }
+    }
+  ]
+}

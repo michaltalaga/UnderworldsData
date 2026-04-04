@@ -1,0 +1,93 @@
+{
+  "id": "the-dread-pageant",
+  "name": "The Dread Pageant",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "After an Action step, if all friendly fighters are damaged, or if there are more damaged fighters than there are undamaged fighters, Inspire each friendly fighter.",
+    "pl": "Po kroku Akcji, jeśli wszyscy przyjazni wojownicy są ranni, lub jeśli rannych wojowników jest więcej niż nierannych, Inspire każdego przyjaznego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Gross Hubris",
+        "pl": "Plugawa Pycha"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after making an Attack roll for a damaged friendly fighter if that roll contains no successes.",
+        "pl": "Użyj tego natychmiast po wykonaniu rzutu Ataku dla rannego przyjaznego wojownika, jeśli ten rzut nie zawiera żadnych sukcesów."
+      },
+      "flavorText": {
+        "en": "Failure is as inconceivable to the Dread Pageant as it is completely unpalatable.",
+        "pl": "Porażka jest dla Dread Pageant równie niepojęta, co całkowicie nie do zaakceptowania."
+      },
+      "rulesText": {
+        "en": "You can re-roll any Attack dice in that roll. You can only use this ability once per game.",
+        "pl": "Możesz przerzucić dowolne kości Ataku w tym rzucie. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Speed of Slaanesh",
+        "pl": "Prędkość Slaanesha"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "The grace of the Dark Prince infuses his warriors, granting them a scintillating swiftness of body and mind.",
+        "pl": "Łaska Mrocznego Księcia przenika jego wojowników, obdarzając ich olśniewającą szybkością ciała i umysłu."
+      },
+      "rulesText": {
+        "en": "Inspired damaged friendly fighters have +1 Move while using Charge abilities.",
+        "pl": "Inspired ranni przyjazni wojownicy mają +1 Move podczas używania zdolności Charge."
+      }
+    },
+    {
+      "name": {
+        "en": "Cruel Pangs",
+        "pl": "Okrutne Ukłucia"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Enemies and allies of Slaanesh soon learn the folly of their avarice.",
+        "pl": "Wrogowie i sojusznicy Slaanesha szybko poznają głupotę swojej chciwości."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Pick a fighter holding a treasure token. Inflict 1 damage on that fighter. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power step. Wybierz wojownika trzymającego żeton skarbu. Zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Swift as Desire",
+        "pl": "Szybki jak Pożądanie"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The Hedonites of Slaanesh are feared throughout the realms for their breathtaking speed and agility.",
+        "pl": "Hedoniści Slaanesha budzą strach we wszystkich krainach ze względu na zapierającą dech w piersiach prędkość i zwinność."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Push each damaged friendly fighter 1 hex. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power step. Przesuń każdego rannego przyjaznego wojownika o 1 hex. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Drown in Pain",
+        "pl": "Utonąć w Bólu"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "To worshippers of the Lord of Excess, pain is just one more thing to experience in the cornucopia of existence.",
+        "pl": "Dla wyznawców Pana Nadmiaru ból jest jedynie kolejnym doznaniem w obfitości istnienia."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Give each damaged friendly fighter a Guard token. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power step. Daj każdemu rannemu przyjznemu wojownikowi żeton Guard. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

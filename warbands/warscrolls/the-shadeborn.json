@@ -1,0 +1,88 @@
+{
+  "id": "the-shadeborn",
+  "name": "The Shadeborn",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "Immediately after a friendly fighter Attacks a damaged enemy fighter, Inspire that friendly fighter.",
+    "pl": "Natychmiast po tym, jak przyjazny wojownik zaatakuje uszkodzonego wrogiego wojownika, Inspire tego przyjaznego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Shademark",
+        "pl": "Piętno Cienia"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "The Shadeborn all bear a brand of Ulguan magic upon their souls, a sinister mark that grants them the ability to briefly become as insubstantial as mist.",
+        "pl": "Wszyscy Shadeborn noszą na swych duszach piętno ulgańskiej magii — złowrogi znak, który daje im zdolność chwilowego stawania się równie nieuchwytnym jak mgła."
+      },
+      "rulesText": {
+        "en": "Each time you make a Save roll for a friendly fighter in enemy territory or on a cover token, you can re-roll 1 Save dice in that Save roll.",
+        "pl": "Za każdym razem, gdy wykonujesz rzut na Save dla przyjaznego wojownika znajdującego się na terytorium wroga lub na cover tokenie, możesz przerzucić 1 kość Save w tym rzucie."
+      }
+    },
+    {
+      "name": {
+        "en": "Gloomweb Hex",
+        "pl": "Klątwa Mrocznej Sieci"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Aelven curses grant the shadows a malicious life.",
+        "pl": "Aelfickie klątwy nadają cieniom złośliwe życie."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Enemy fighters that are adjacent to or on a feature token in the next turn have -1 Save dice. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power stepie. Wrodzy wojownicy, którzy w następnej turze znajdują się na lub sąsiadują z feature tokenem, mają -1 kość Save. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Dark Lamprey",
+        "pl": "Mroczna Minoga"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The hungering shadows lash out at any unwary souls.",
+        "pl": "Głodne cienie uderzają w każdą nieostrożną duszę."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Pick an enemy fighter that is not vulnerable and within 3 hexes of a friendly fighter. Inflict 1 damage on that fighter. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power stepie. Wybierz wrogiego wojownika, który nie jest vulnerable i znajduje się w odległości 3 heksów od przyjaznego wojownika. Zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Impenetrable Darkness",
+        "pl": "Nieprzenikniony Mrok"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The Shadeborn vanish into choking gloom.",
+        "pl": "Shadeborn znikają w duszącym mroku."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. Give each friendly fighter a shadow token. Fighters with any shadow tokens are treated as being on a cover token. Remove all shadow tokens at the end of the battle round. You can only use this ability once per game.",
+        "pl": "Użyj tego w Power stepie. Daj każdemu przyjznemu wojownikowi shadow token. Wojownicy posiadający jakiekolwiek shadow tokeny są traktowani jako stojący na cover tokenie. Usuń wszystkie shadow tokeny na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Shadow Ambush",
+        "pl": "Zasadzka z Cienia"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Wherever darkness falls, the Shadeborn stalk.",
+        "pl": "Gdziekolwiek zapada ciemność, Shadeborn czają się w jej głębi."
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly fighter is picked to Move if that fighter is on a cover token. Remove that fighter from the battlefield and place them in an empty edge hex in enemy territory. Then, give that fighter a Move token. You can only use this ability once per game.",
+        "pl": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany do Ruchu, jeśli ten wojownik znajduje się na cover tokenie. Usuń tego wojownika z pola bitwy i umieść go na pustym heksie przy krawędzi na terytorium wroga. Następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

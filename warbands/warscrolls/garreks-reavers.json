@@ -1,0 +1,78 @@
+{
+  "id": "garreks-reavers",
+  "name": "Grand Alliance Chaos: Corrupters",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "Immediately after your opponent's Action step, if there are more friendly fighters than enemy fighters in neutral territory, Inspire each friendly fighter in that territory.",
+    "pl": "Bezpośrednio po fazie Akcji przeciwnika, jeśli w strefie neutralnej znajduje się więcej przyjaznych wojowników niż wrogich, Inspire każdego przyjaznego wojownika na tym terytorium."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Roots of Chaos",
+        "pl": "Korzenie Chaosu"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after a friendly fighter Delves a feature token",
+        "pl": "Bezpośrednio po tym, jak przyjazny wojownik wykonuje Delves na żetonie terenu"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "give each enemy fighter within 2 hexes of that feature token/within 2 hexes of them a Stagger token.",
+        "pl": "nadaj każdemu wrogiemu wojownikowi w odległości 2 heksów od tego żetonu terenu/w odległości 2 heksów od niego żeton Stagger."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Aura of Ruin",
+        "pl": "Aura Zagłady"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Such is this entity's corrupting aura that merely being in proximity to it causes the flesh to writhe and soul to scream.",
+        "pl": "Aura zepsucia tej istoty jest tak przemożna, że samo jej sąsiedztwo sprawia, iż ciało wije się w konwulsjach, a dusza wydaje krzyk rozpaczy."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Pick an enemy fighter with a Stagger token that is adjacent to a friendly fighter and not vulnerable. Inflict 1 damage on that enemy fighter. This ability can only be used once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step. Wybierz wrogiego wojownika posiadającego żeton Stagger, który sąsiaduje z przyjaznym wojownikiem i nie jest podatny na ataki. Zadaj temu wrogiemu wojownikowi 1 punkt obrażeń. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Purge the Weak",
+        "pl": "Wytępić Słabych"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Servants of the Dark Gods are swift to spot the enemy's most vulnerable warriors and dispose of them bloodily.",
+        "pl": "Słudzy Mrocznych Bogów błyskawicznie wyszukują najbardziej bezbronnych wojowników wroga, by zgładzić ich w morzu krwi."
+      },
+      "rulesText": {
+        "en": "Pick an enemy fighter with a Stagger token. Friendly fighters' melee weapons have +1 Attack dice for Attacks that target that enemy fighter in the next turn. This ability can only be used once per game.",
+        "pl": "Wybierz wrogiego wojownika posiadającego żeton Stagger. Bronie do walki wręcz przyjaznych wojowników otrzymują +1 kość ataku dla Ataków wymierzonych w tego wrogiego wojownika w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Unholy Desecration",
+        "pl": "Nieświęte Zbezczeszczenie"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The Dark Gods shower their blessings upon those who pervert and corrupt the icons of lesser deities.",
+        "pl": "Mroczni Bogowie obsypują swymi łaskami tych, którzy plugawią i deprawują symbole pomniejszych bóstw."
+      },
+      "rulesText": {
+        "en": "Pick a friendly fighter on a feature token. Enemy fighters' melee weapons have -1 Attack dice for Attacks that target that friendly fighter in the next turn. This ability can only be used once per game.",
+        "pl": "Wybierz przyjaznego wojownika stojącego na żetonie terenu. Bronie do walki wręcz wrogich wojowników otrzymują -1 kość ataku dla Ataków wymierzonych w tego przyjaznego wojownika w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "zikkits-tunnelpack",
+  "name": "Zikkit's Tunnelpack",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "After an Action step, if a friendly fighter was dealt damage or slain in that step, pick one other friendly fighter. Inspire that fighter."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "More-more Power!"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately at the start of your Action step if each friendly fighter has a Charge token."
+      },
+      "flavorText": {
+        "en": "The Skaven of Zikkit's Tunnelpack push the limits of their creations with the twisted science of the Clans Skryre."
+      },
+      "rulesText": {
+        "en": "Use this immediately at the start of your Action step if each friendly fighter has a Charge token. Pick a friendly fighter. Remove that fighter's Move and/or Charge tokens. After that Action step, roll an Attack dice. On a {icon:fury} or {icon:crit}, that fighter is slain."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Skitter"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Skaven are infamously twitchy, paranoid, aggressive and rarely around in one spot for too long."
+      },
+      "rulesText": {
+        "en": "Use this immediately after your Action step. Pick a friendly fighter with no Move or Charge tokens. That fighter Moves. This ability can only be used once per game."
+      }
+    },
+    {
+      "name": {
+        "en": "Warp-charged"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "The Clans Skryre craft weapons renowned for lethality and unpredictability in equal measure."
+      },
+      "rulesText": {
+        "en": "Use this ability immediately after you pick a weapon as part of an Attack. Inflict 1 damage on the attacker. That weapon has Cleave ({icon:cleave}), Ensnare ({icon:ensnare}) and Brutal ({icon:grievous}) for that Attack. This ability can only be used once per game."
+      }
+    },
+    {
+      "name": {
+        "en": "Kaboom!"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "A rat with a bomb... simple, yet effective."
+      },
+      "rulesText": {
+        "en": "Pick a friendly minion ({icon:minion}) with no Charge tokens to use this ability. That minion Moves. Then, roll a number of Attack dice equal to the battle round number for each fighter within 2 hexes of that minion. If the roll contains any {icon:fury}, inflict 1 damage on that fighter. If the roll contains any {icon:crit}, inflict 2 damage on that fighter instead. Then, that minion is slain."
+      }
+    }
+  ]
+}

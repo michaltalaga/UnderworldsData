@@ -1,0 +1,97 @@
+{
+  "id": "blood-of-the-bull",
+  "name": "The Blood of the Bull",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "When you use a daemonforge dice in the Attack roll or Save roll for a friendly fighter, after that Attack, Inspire that fighter.\n\nAfter an Attack made by a friendly Chaos Duardin ({icon:chaos-duardin}), if the target was adjacent to a friendly Grisk, Inspire that Grisk.",
+    "pl": "Gdy użyjesz kości daemonforge w rzucie na Atak lub rzucie na Obronę za przyjaznego wojownika, po tym Ataku Inspire tego wojownika.\n\nPo Ataku wykonanym przez przyjaznego Chaos Duardina ({icon:chaos-duardin}), jeśli cel był sąsiadujący z przyjaznym Griskiem, Inspire tego Griska."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Enhance Arsenal",
+        "pl": "Wzmocnij Arsenal"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after you pick a weapon as part of an Attack made by a friendly Chaos Duardin ({icon:chaos-duardin})",
+        "pl": "Bezpośrednio po tym, jak wybierzesz broń w ramach Ataku wykonanego przez przyjaznego Chaos Duardina ({icon:chaos-duardin})"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "you can use 1 daemonforge dice in the Attack roll. If you do so, that weapon has +1 Attack dice for that Attack.",
+        "pl": "możesz użyć 1 kości daemonforge w rzucie na Atak. Jeśli to zrobisz, ta broń ma +1 kość Ataku na czas tego Ataku."
+      }
+    },
+    {
+      "name": {
+        "en": "Reinforce Armoury",
+        "pl": "Wzmocnij Zbrojownię"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Immediately after a friendly Chaos Duardin ({icon:chaos-duardin}) is picked to be the target of an Attack",
+        "pl": "Bezpośrednio po tym, jak przyjazny Chaos Duardin ({icon:chaos-duardin}) zostaje wybrany jako cel Ataku"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "you can use 1 daemonforge dice in the Save roll. If you do so, that fighter has +1 Save for that Attack.",
+        "pl": "możesz użyć 1 kości daemonforge w rzucie na Obronę. Jeśli to zrobisz, ten wojownik ma +1 do Obrony na czas tego Ataku."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Empowered by Spite",
+        "pl": "Wzmocniony Złośliwością"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "As Zuldrakka and her warriors kill, burn and despoil, their daemon-crafted arms and armour grow ever more powerful.",
+        "pl": "Gdy Zuldrakka i jej wojownicy zabijają, palą i łupią, ich wykuta przez demony broń i zbroja stają się coraz potężniejsze."
+      },
+      "rulesText": {
+        "en": "You start the game with 1 daemonforge dice.\n\nIn your Power step, if a friendly fighter with no Stagger tokens Delves a treasure token, gain 1 daemonforge dice. All daemonforge dice are lost at the end of each battle round.",
+        "pl": "Rozpoczynasz grę z 1 kością daemonforge.\n\nW swoim Power step, jeśli przyjazny wojownik bez żetonów Stagger wykonuje Delve żetonu skarbu, zyskaj 1 kość daemonforge. Wszystkie kości daemonforge są tracone na końcu każdej rundy bitewnej."
+      }
+    },
+    {
+      "name": {
+        "en": "Infernal Conflagration",
+        "pl": "Piekielny Pożar"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Tokkor's flamehurler spits sentient fire that sticks to flesh and disintegrates the soul.",
+        "pl": "Miotacz ognia Tokkora pluje świadomym ogniem, który przywiera do ciała i unicestwia duszę."
+      },
+      "rulesText": {
+        "en": "A friendly Tokkor's ranged weapons (excluding Upgrades) have Grievous ({icon:grievous}) if the target is adjacent.",
+        "pl": "Broń dystansowa przyjaznego Tokkora (z wyłączeniem Ulepszeń) posiada cechę Grievous ({icon:grievous}), jeśli cel jest sąsiadujący."
+      }
+    },
+    {
+      "name": {
+        "en": "Hobgrot Cunning",
+        "pl": "Spryт Hobgrota"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Grisk might be a conniving, murderous back-stabber, but he has his uses...",
+        "pl": "Grisk może i jest knującym, morderczym zdrajcą, lecz bywa przydatny..."
+      },
+      "rulesText": {
+        "en": "Rolls of both {icon:fury} and {icon:dodge} are successes in an Attack roll for a friendly Chaos Duardin ({icon:chaos-duardin}) while the target is adjacent to a friendly Grisk.",
+        "pl": "Zarówno wyniki {icon:fury}, jak i {icon:dodge} są sukcesami w rzucie na Atak przyjaznego Chaos Duardina ({icon:chaos-duardin}), gdy cel sąsiaduje z przyjaznym Griskiem."
+      }
+    }
+  ]
+}

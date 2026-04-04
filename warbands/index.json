@@ -1,0 +1,478 @@
+[
+  {
+    "slug": "garreks-reavers",
+    "name": "Garrek's Reavers",
+    "fighters": 5,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "spiteclaws-swarm",
+    "name": "Spiteclaw's Swarm",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "magores-fiends",
+    "name": "Magore's Fiends",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "eyes-of-the-nine",
+    "name": "Eyes of the Nine",
+    "fighters": 6,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "godsworn-hunt",
+    "name": "Godsworn Hunt",
+    "fighters": 6,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "grashraks-despoilers",
+    "name": "Grashrak's Despoilers",
+    "fighters": 6,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "the-wurmspat",
+    "name": "The Wurmspat",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "the-dread-pageant",
+    "name": "The Dread Pageant",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "khagras-ravagers",
+    "name": "Khagra's Ravagers",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "skittershanks-clawpack",
+    "name": "Skittershank's Clawpack",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "gorechosen-of-dromm",
+    "name": "Gorechosen of Dromm",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "gnarlspirit-pack",
+    "name": "Gnarlspirit Pack",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "ephilims-pandaemonium",
+    "name": "Ephilim's Pandaemonium",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "skabbiks-plaguepack",
+    "name": "Skabbik's Plaguepack",
+    "fighters": 6,
+    "opLegal": false,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "the-thricefold-discord",
+    "name": "The Thricefold Discord",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "zikkits-tunnelpack",
+    "name": "Zikkit's Tunnelpack",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "grandfathers-gardeners",
+    "name": "Grandfather's Gardeners",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "kamandoras-blades",
+    "name": "Kamandora's Blades",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "blood-of-the-bull",
+    "name": "Blood of the Bull",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Chaos"
+  },
+  {
+    "slug": "sepulchral-guard",
+    "name": "Sepulchral Guard",
+    "fighters": 7,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "thorns-of-the-briar-queen",
+    "name": "Thorns of the Briar Queen",
+    "fighters": 7,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "lady-harrows-mournflight",
+    "name": "Lady Harrow's Mournflight",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "the-grymwatch",
+    "name": "The Grymwatch",
+    "fighters": 7,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "the-crimson-court",
+    "name": "The Crimson Court",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "kainans-reapers",
+    "name": "Kainan's Reapers",
+    "fighters": 6,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "drepurs-wraithcreepers",
+    "name": "Drepur's Wraithcreepers",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "the-exiled-dead",
+    "name": "The Exiled Dead",
+    "fighters": 7,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "sons-of-velmorn",
+    "name": "Sons of Velmorn",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "the-headsmens-curse",
+    "name": "The Headsmen's Curse",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "zondaras-gravebreakers",
+    "name": "Zondara's Gravebreakers",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "the-skinnerkin",
+    "name": "The Skinnerkin",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "thanateks-tithe",
+    "name": "Thanatek's Tithe",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Death"
+  },
+  {
+    "slug": "ironskulls-boyz",
+    "name": "Ironskull's Boyz",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "zarbags-gitz",
+    "name": "Zarbag's Gitz",
+    "fighters": 9,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "mollogs-mob",
+    "name": "Mollog's Mob",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "rippas-snarlfangs",
+    "name": "Rippa's Snarlfangs",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "hrothgorns-mantrappers",
+    "name": "Hrothgorn's Mantrappers",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "morgoks-krushas",
+    "name": "Morgok's Krushas",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "hedkrakkas-madmob",
+    "name": "Hedkrakka's Madmob",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "da-kunnin-krew",
+    "name": "Da Kunnin' Krew",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "blackpowders-buccaneers",
+    "name": "Blackpowder's Buccaneers",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "grinkraks-looncourt",
+    "name": "Grinkrak's Looncourt",
+    "fighters": 7,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "daggoks-stab-ladz",
+    "name": "Daggok's Stab-ladz",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "borgits-beastgrabbaz",
+    "name": "Borgit's Beastgrabbaz",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Destruction"
+  },
+  {
+    "slug": "steelhearts-champions",
+    "name": "Steelheart's Champions",
+    "fighters": 3,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "the-chosen-axes",
+    "name": "The Chosen Axes",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "the-farstriders",
+    "name": "The Farstriders",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "stormsires-cursebreakers",
+    "name": "Stormsire's Cursebreakers",
+    "fighters": 3,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "thundriks-profiteers",
+    "name": "Thundrik's Profiteers",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "yltharis-guardians",
+    "name": "Ylthari's Guardians",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "ironsouls-condemners",
+    "name": "Ironsoul's Condemners",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "skaeths-wild-hunt",
+    "name": "Skaeth's Wild Hunt",
+    "fighters": 5,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "morgwaeths-blade-coven",
+    "name": "Morgwaeth's Blade-coven",
+    "fighters": 5,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "myaris-purifiers",
+    "name": "Myari's Purifiers",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "the-starblood-stalkers",
+    "name": "The Starblood Stalkers",
+    "fighters": 6,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "elathains-soulraid",
+    "name": "Elathain's Soulraid",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "storm-of-celestus",
+    "name": "Storm of Celestus",
+    "fighters": 4,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "xandires-truthseekers",
+    "name": "Xandire's Truthseekers",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "the-shadeborn",
+    "name": "The Shadeborn",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "hexbanes-hunters",
+    "name": "Hexbane's Hunters",
+    "fighters": 6,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "gryselles-arenai",
+    "name": "Gryselle's Arenai",
+    "fighters": 5,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "domitans-stormcoven",
+    "name": "Domitan's Stormcoven",
+    "fighters": 3,
+    "opLegal": false,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "cyrenis-razors",
+    "name": "Cyreni's Razors",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "brethren-of-the-bolt",
+    "name": "Brethren of the Bolt",
+    "fighters": 5,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "the-emberwatch",
+    "name": "The Emberwatch",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "jaws-of-itzl",
+    "name": "Jaws of Itzl",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "knives-of-the-crone",
+    "name": "Knives of the Crone",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  },
+  {
+    "slug": "kurnoths-heralds",
+    "name": "Kurnoth's Heralds",
+    "fighters": 3,
+    "opLegal": true,
+    "grandAlliance": "Order"
+  }
+]

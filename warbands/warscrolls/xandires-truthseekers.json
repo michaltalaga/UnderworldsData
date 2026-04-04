@@ -1,0 +1,112 @@
+{
+  "id": "xandires-truthseekers",
+  "name": "Xandire's Truthseekers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "After a Power step, if any friendly fighters (excluding Taros) are slain, Inspire each friendly fighter.",
+    "pl": "Po Power stepie, jeśli jacykolwiek przyjazni wojownicy (z wyłączeniem Tarosa) zostali pokonani, Inspire każdego przyjaznego wojownika."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Raptor's Eye",
+        "pl": "Oko Raptora"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "After another friendly fighter Moves",
+        "pl": "Po tym, jak inny przyjazny wojownik wykona ruch"
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "After another friendly fighter Moves, push a friendly Taros up to 3 hexes. After this push, Taros must be within 2 hexes of that fighter.",
+        "pl": "Po tym, jak inny przyjazny wojownik wykona ruch, przesuń przyjaznego Tarosa o maksymalnie 3 heksy. Po tym przesunięciu Taros musi znajdować się w odległości 2 heksów od tego wojownika."
+      }
+    },
+    {
+      "name": {
+        "en": "Seeker's Strike",
+        "pl": "Uderzenie Poszukiwacza"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after a friendly fighter's successful melee Attack if the target was on a feature token.",
+        "pl": "Użyj natychmiast po udanym ataku wręcz przyjaznego wojownika, jeśli cel znajdował się na żetonie cechy terenu."
+      },
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly fighter's successful melee Attack if the target was on a feature token. Flip that feature token. You can only use this ability once per battle round.",
+        "pl": "Użyj natychmiast po udanym ataku wręcz przyjaznego wojownika, jeśli cel znajdował się na żetonie cechy terenu. Odwróć ten żeton cechy terenu na drugą stronę. Możesz użyć tej zdolności tylko raz na rundę bitewną."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Blaze of Light",
+        "pl": "Błysk Światła"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The Lantern Astrala blinds and disorients the impure.",
+        "pl": "Latarnia Astrala oślepia i dezorientuje nieczystych."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step if your leader ({icon:leader}) is on the battlefield. Enemy fighters' weapons have -1 Attack dice in the next turn. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności podczas swojego Power stepu, jeśli twój dowódca ({icon:leader}) znajduje się na polu bitwy. Bronie wrogich wojowników mają -1 kość Ataku w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Blazing Purity",
+        "pl": "Płonąca Czystość"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "In a last burst of holy light, Calthia seeks to aid her fellow warriors.",
+        "pl": "W ostatnim rozbłysku świętego światła Calthia stara się wesprzeć swoich towarzyszy broni."
+      },
+      "rulesText": {
+        "en": "Use this immediately after your leader ({icon:leader}) is slain. Pick up to 2 friendly fighters and heal each fighter, or pick 1 friendly fighter and heal that fighter twice instead. You can only use this ability once per game.",
+        "pl": "Użyj natychmiast po tym, jak twój dowódca ({icon:leader}) zostanie pokonany. Wybierz maksymalnie 2 przyjaznych wojowników i ulecz każdego z nich, lub wybierz 1 przyjaznego wojownika i ulecz go dwukrotnie. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Blazing Force",
+        "pl": "Płonąca Siła"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Even as he falls, Dhoraz exhorts his companions to greater deeds.",
+        "pl": "Nawet padając, Dhoraz zagrzewa swoich towarzyszy do jeszcze większych czynów."
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly Dhoraz is slain. Pick up to 2 friendly fighters and push each fighter 1 hex, or pick 1 friendly fighter and push that fighter up to 2 hexes instead. You can only use this ability once per game.",
+        "pl": "Użyj natychmiast po tym, jak przyjazny Dhoraz zostanie pokonany. Wybierz maksymalnie 2 przyjaznych wojowników i przesuń każdego z nich o 1 heks, lub wybierz 1 przyjaznego wojownika i przesuń go o maksymalnie 2 heksy. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Blazing Reprisal",
+        "pl": "Płonący Odwet"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Though her demeanour is often mistaken as cold and uncaring, Luxa's will to aid her comrades burns hot.",
+        "pl": "Choć jej zachowanie bywa mylnie odczytywane jako chłodne i obojętne, wola Luksy, by wspierać swoich towarzyszy, płonie jasnym ogniem."
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly Luxa is slain, before removing them from the battlefield. That fighter Attacks with a ranged weapon (excluding Upgrades). You can only use this ability once per game.",
+        "pl": "Użyj natychmiast po tym, jak przyjazna Luxa zostanie pokonana, przed jej usunięciem z pola bitwy. Ten wojownik Atakuje bronią dystansową (z wyłączeniem Ulepszeń). Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

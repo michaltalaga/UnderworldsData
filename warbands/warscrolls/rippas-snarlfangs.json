@@ -1,0 +1,73 @@
+{
+  "id": "rippas-snarlfangs",
+  "name": "Rippa's Snarlfangs",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": {
+    "en": "After a Power step, if a friendly fighter is equipped with 2 or more Upgrades, Inspire that fighter.\n\nAfter a friendly fighter Attacks again as a result of the Snarlfang's Jaws Weapon ability, if that Attack is successful, Inspire that fighter.",
+    "pl": "Po Power stepie, jeśli przyjazny wojownik jest wyposażony w 2 lub więcej Ulepszeń, Inspire tego wojownika.\n\nJeśli przyjazny wojownik zaatakuje ponownie w wyniku zdolności broni Snarlfang's Jaws i ten Atak jest skuteczny, Inspire tego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Snarlfang's Jaws",
+        "pl": "Szczęki Snarlfanga"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": null,
+        "pl": null
+      },
+      "rulesText": {
+        "en": "If a friendly fighter's weapon has the {icon:hex} runemark, you have access to the following Weapon ability:\n\nSnarlfang's Jaws {icon:hex}: After a successful or drawn Attack, the attacker can immediately Attack again using the relevant weapon below. These weapons cannot be modified.\n\nIf the attacker is Uninspired, use this weapon:\n{icon:cleave} {icon:fury}1 1 {icon:skull}2\n\nIf the attacker is Inspired, use this weapon:\n{icon:cleave} {icon:fury}1 {icon:crit}2 {icon:skull}2",
+        "pl": "Jeśli broń przyjaznego wojownika posiada runomark {icon:hex}, masz dostęp do następującej zdolności broni:\n\nSnarlfang's Jaws {icon:hex}: Po skutecznym lub remisowym Ataku, atakujący może natychmiast zaatakować ponownie, używając odpowiedniej broni poniżej. Tych broni nie można modyfikować.\n\nJeśli atakujący jest Uninspired, użyj tej broni:\n{icon:cleave} {icon:fury}1 1 {icon:skull}2\n\nJeśli atakujący jest Inspired, użyj tej broni:\n{icon:cleave} {icon:fury}1 {icon:crit}2 {icon:skull}2"
+      }
+    },
+    {
+      "name": {
+        "en": "Pack Tactics",
+        "pl": "Taktyka Stada"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Rippa and his cronies might not get along, but they're no strangers to ganging up on prey.",
+        "pl": "Rippa i jego kompani może i nie przepadają za sobą, ale napadanie na ofiary w grupie to dla nich chleb powszedni."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step. Pick an enemy fighter. Push each friendly fighter 1 hex closer to that fighter. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności podczas twojego Power stepu. Wybierz wrogiego wojownika. Przesuń każdego przyjaznego wojownika o 1 hex bliżej tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Smell Weakness",
+        "pl": "Wyczuć Słabość"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "Both grots and Snarlfangs love picking on the weak; in tandem, they make a vicious combination.",
+        "pl": "Zarówno groty, jak i Snarlfangi uwielbiają pastwić się nad słabszymi; działając razem, tworzą okrutnie skuteczne połączenie."
+      },
+      "rulesText": {
+        "en": "Use this in a Power step. In the next turn, rolls of {icon:dodge} and {icon:shield} do not count as successes in Attack rolls or Save rolls for enemy fighters adjacent to any friendly fighters. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności podczas Power stepu. W następnej turze wyniki {icon:dodge} i {icon:shield} nie są liczone jako sukcesy w rzutach na Atak ani w rzutach na Save dla wrogich wojowników sąsiadujących z jakimkolwiek przyjaznym wojownikiem. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    },
+    {
+      "name": {
+        "en": "Duck and Dive",
+        "pl": "Kucnąć i Umknąć"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Call it luck, call it agility – either way, it's saved Rippa and his crew more than once.",
+        "pl": "Nazwijcie to szczęściem, nazwijcie to zręcznością – tak czy inaczej, nieraz uratowało to Rippę i jego kompanów."
+      },
+      "rulesText": {
+        "en": "Use this immediately after a friendly fighter is picked to be the target of an Attack. Save rolls made for that fighter for that Attack count as having more {icon:skull} than the Attack roll for the purposes of Stand Fast. You can only use this ability once per game.",
+        "pl": "Użyj tej zdolności natychmiast po tym, jak przyjazny wojownik zostanie wybrany jako cel Ataku. Rzuty na Save wykonane dla tego wojownika podczas tego Ataku są traktowane jako mające więcej {icon:skull} niż rzut na Atak dla celów Stand Fast. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ]
+}

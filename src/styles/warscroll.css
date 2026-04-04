@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 2px solid #d4a930;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #d4a930;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  border: 1px solid #d4a930;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.lang-toggle button.active {
+  background: #d4a930;
+  color: #1a1a2e;
+}
+
+/* Print Button */
+.print-btn {
+  padding: 0.35rem 1rem;
+  border: 1px solid #d4a930;
+  border-radius: 4px;
+  background: transparent;
+  color: #d4a930;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.print-btn:hover {
+  background: #d4a930;
+  color: #1a1a2e;
+}
+
+/* Warband Selector */
+.selector {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #16213e;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #d4a930;
+}
+
+.faction-group {
+  margin-bottom: 1rem;
+}
+
+.faction-group h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #333;
+}
+
+.faction-group h3.Chaos { color: #c44569; }
+.faction-group h3.Death { color: #8e44ad; }
+.faction-group h3.Destruction { color: #27ae60; }
+.faction-group h3.Order { color: #2980b9; }
+
+.warband-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.warband-btn {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background: #16213e;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.warband-btn:hover {
+  border-color: #d4a930;
+  color: #e0e0e0;
+}
+
+.warband-btn.active {
+  background: #d4a930;
+  color: #1a1a2e;
+  border-color: #d4a930;
+  font-weight: 600;
+}
+
+.warband-btn.no-data {
+  opacity: 0.45;
+}
+
+/* Warscroll Card */
+.warscroll {
+  background: #f5f0e1;
+  color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.warscroll-header {
+  background: linear-gradient(135deg, #2c1810, #4a2820);
+  color: #f5f0e1;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid #d4a930;
+}
+
+.warscroll-header h2 {
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.warscroll-header .version {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-left: 0.5rem;
+  font-variant: normal;
+  letter-spacing: 0;
+}
+
+.warscroll-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: 300px;
+}
+
+.warscroll-left {
+  background: #e8e0cc;
+  padding: 1rem;
+  border-right: 2px solid #c4b89a;
+}
+
+.warscroll-right {
+  padding: 1rem;
+}
+
+/* Inspire Box */
+.inspire-box {
+  background: #fff;
+  border: 2px solid #8b7355;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.inspire-box h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  color: #8b4513;
+}
+
+.inspire-box p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Reaction Box */
+.reaction-box {
+  background: #fff;
+  border: 2px solid #555;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.reaction-box h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.reaction-box .trigger {
+  font-size: 0.78rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.reaction-box .rules {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Ability Cards */
+.ability-card {
+  background: #fff;
+  border: 1px solid #c4b89a;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ability-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.ability-card .ability-type {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+
+.ability-card .flavor {
+  font-style: italic;
+  font-size: 0.78rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.ability-card .rules {
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+/* Icon tokens */
+.icon-token {
+  display: inline-block;
+  background: #8b7355;
+  color: #fff;
+  padding: 0 0.3rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+
+/* No data state */
+.no-warscroll {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Grand Alliance Badge */
+.ga-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.ga-badge.Chaos { background: #c44569; color: #fff; }
+.ga-badge.Death { background: #8e44ad; color: #fff; }
+.ga-badge.Destruction { background: #27ae60; color: #fff; }
+.ga-badge.Order { background: #2980b9; color: #fff; }

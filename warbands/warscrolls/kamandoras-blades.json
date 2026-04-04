@@ -1,0 +1,73 @@
+{
+  "id": "kamandoras-blades",
+  "name": "Kamandora's Blades",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": {
+    "en": "Immediately after a Power step, Inspire each friendly fighter adjacent to the enemy worthy skull. Immediately after the enemy worthy skull is slain by a friendly fighter, Inspire that fighter.",
+    "pl": "Bezpośrednio po Power step, Inspire każdego przyjaznego wojownika sąsiadującego z wrogą godną czaszką. Bezpośrednio po tym, jak wroga godna czaszka zostanie pokonana przez przyjaznego wojownika, Inspire tego wojownika."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "A Worthy Skull",
+        "pl": "Godna Czaszka"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Kamandora's mind is wracked by visions from Khorne, the Lord of Battles, that guide her to the skulls she must see added to his throne.",
+        "pl": "Umysł Kamandory trawi wizje zsyłane przez Khorne'a, Pana Bitew, które prowadzą ją ku czaszkom przeznaczonym do złożenia u stóp jego tronu."
+      },
+      "rulesText": {
+        "en": "At the start of the first Action step in each battle round, if there are any enemy fighters on the battlefield, you must pick an enemy fighter to be the worthy skull until the end of the battle round.",
+        "pl": "Na początku pierwszego Action step w każdej rundzie bitwy, jeśli na polu bitwy znajdują się jacykolwiek wrodzy wojownicy, musisz wybrać wrogiego wojownika, który będzie godną czaszką do końca rundy bitwy."
+      }
+    },
+    {
+      "name": {
+        "en": "Slaughterous Pilgrimage",
+        "pl": "Masakryczna Pielgrzymka"
+      },
+      "type": "reaction",
+      "flavorText": {
+        "en": "Kamandora's Blades burn with zeal and see the taking of skulls as their holy purpose.",
+        "pl": "Ostrza Kamandory płoną żarliwością, a zdobywanie czaszek uważają za swoje święte powołanie."
+      },
+      "rulesText": {
+        "en": "Immediately after you pick an enemy fighter to be the worthy skull, you must push each friendly fighter 1 hex closer to the enemy worthy skull.",
+        "pl": "Bezpośrednio po tym, jak wybierzesz wrogiego wojownika jako godną czaszkę, musisz popchnąć każdego przyjaznego wojownika o 1 hex bliżej wrogiej godnej czaszki."
+      }
+    },
+    {
+      "name": {
+        "en": "Blood for Khorne!",
+        "pl": "Krew dla Khorne'a!"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "While they lack the sheer bulk of Khorne's favoured warriors, Kamandora and her followers are whipcord-fast and capable of whittling down their foes with vicious bleeding strikes.",
+        "pl": "Choć brakuje im potężnej postury ulubionych wojowników Khorne'a, Kamandora i jej wyznawcy są błyskawicznie szybcy i potrafią wykrwawiać swych wrogów seriami okrutnych, kaleczących ciosów."
+      },
+      "rulesText": {
+        "en": "Slashing ({icon:cleave}): If an Attack made with this Weapon ability was successful, after the Attack has been resolved, give the target a bleed token, then give the target a stagger token.\n\nIf an enemy fighter with any bleed tokens is given a second or subsequent stagger token, inflict 1 damage on that fighter after resolving that ability, and then remove that fighter's bleed tokens. Otherwise, remove all bleed tokens from enemy fighters at the end of the battle round.",
+        "pl": "Cięcie ({icon:cleave}): Jeśli Atak wykonany przy użyciu tej zdolności Broni był udany, po rozliczeniu Ataku daj celowi żeton krwawienia, a następnie daj celowi żeton zatoczenia.\n\nJeśli wrogi wojownik posiadający jakiekolwiek żetony krwawienia otrzyma drugi lub kolejny żeton zatoczenia, zadaj temu wojownikowi 1 obrażenie po rozliczeniu tej zdolności, a następnie usuń żetony krwawienia tego wojownika. W przeciwnym razie usuń wszystkie żetony krwawienia z wrogich wojowników na końcu rundy bitwy."
+      }
+    },
+    {
+      "name": {
+        "en": "Call the Pursuit",
+        "pl": "Wezwanie do Pogoni"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "The slavering hound Kannat heeds Kamandora's every command.",
+        "pl": "Ślinący się pies Kannat słucha każdego rozkazu Kamandory."
+      },
+      "rulesText": {
+        "en": "Use this in your Power step instead of playing a Power card. Pick a friendly minion ({icon:minion}). Push that fighter up to 4 hexes so it is adjacent to a friendly leader ({icon:leader}). This ability can only be used once per game.",
+        "pl": "Użyj tej zdolności w swoim Power step zamiast zagrywania karty Power. Wybierz przyjaznego minionka ({icon:minion}). Popchnij tego wojownika o do 4 hexów tak, aby sąsiadował z przyjaznym przywódcą ({icon:leader}). Ta zdolność może być użyta tylko raz na grę."
+      }
+    }
+  ]
+}

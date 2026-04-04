@@ -1,0 +1,97 @@
+{
+  "id": "hexbanes-hunters",
+  "name": "Hexbane's Hunters",
+  "version": "1.2",
+  "grandAlliance": "Order",
+  "inspire": {
+    "en": "Immediately after a friendly Agent Azyrite ({icon:leader}) is slain, you can pick a friendly Agent Azyrite ({icon:leader}). Inspire that fighter. After a friendly Pock or minion ({icon:minion}) is slain, Inspire each friendly minion ({icon:minion}) and/or Pock on the battlefield.",
+    "pl": "Natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie pokonany, możesz wybrać sojuszniczego Agenta Azyryjskiego ({icon:leader}). Zainspiruj tego wojownika. Po tym, jak sojuszniczy Pock lub minion ({icon:minion}) zostanie pokonany, Zainspiruj każdego sojuszniczego miniona ({icon:minion}) i/lub Pocka na polu bitwy."
+  },
+  "reactions": [
+    {
+      "name": {
+        "en": "Loyal Hounds",
+        "pl": "Wierne Psy"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after a friendly Agent Azyrite ({icon:leader}) Moves.",
+        "pl": "Użyj tego natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) wykona ruch."
+      },
+      "flavorText": {
+        "en": "Ratspike and Grotbiter are as loyal as they come.",
+        "pl": "Ratspike i Grotbiter są wierni jak mało kto."
+      },
+      "rulesText": {
+        "en": "Pick a friendly minion ({icon:minion}) with no Charge tokens. That fighter can Move.",
+        "pl": "Wybierz sojuszniczego miniona ({icon:minion}), który nie posiada żetonów szarży. Ten wojownik może wykonać ruch."
+      }
+    },
+    {
+      "name": {
+        "en": "Ward of Martyr's Blood",
+        "pl": "Ochrona Krwi Męczennika"
+      },
+      "type": "reaction",
+      "trigger": {
+        "en": "Use this immediately after a friendly Agent Azyrite ({icon:leader}) is picked to be the target of an Attack.",
+        "pl": "Użyj tego natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie wybrany jako cel Ataku."
+      },
+      "flavorText": {
+        "en": "The Order of Azyr prepares defences against everything.",
+        "pl": "Zakon Azyru przygotowuje obronę na każdą ewentualność."
+      },
+      "rulesText": {
+        "en": "The attacker cannot use Weapon abilities for that Attack. You can only use this ability once per game.",
+        "pl": "Atakujący nie może używać zdolności Broni podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "name": {
+        "en": "Tools of the Trade",
+        "pl": "Narzędzia Rzemiosła"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "When a hunter falls, knowledge of what felled them is used to better prepare for the next encounter.",
+        "pl": "Gdy łowca polegnie, wiedza o tym, co go zabiło, służy do lepszego przygotowania się na kolejne starcie."
+      },
+      "rulesText": {
+        "en": "Add the total Bounty characteristic of slain friendly Agents Azyrite ({icon:leader}) to your total Glory points to determine how many Upgrades can be equipped by friendly fighters.",
+        "pl": "Dodaj łączną wartość cechy Nagroda pokonanych sojuszniczych Agentów Azyryjskich ({icon:leader}) do swojej łącznej liczby punktów Chwały, aby określić, ile Ulepszeń może zostać wyposażonych przez sojuszniczych wojowników."
+      }
+    },
+    {
+      "name": {
+        "en": "Marked for Vengeance",
+        "pl": "Naznaczony na Zemstę"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "To slay a member of the Order of Azyr is to invite retribution.",
+        "pl": "Zabicie członka Zakonu Azyru to zaproszenie kary."
+      },
+      "rulesText": {
+        "en": "Immediately after a friendly Agent Azyrite ({icon:leader}) is slain by an enemy fighter, that enemy fighter is marked. Other marked enemy fighters are no longer marked. You can re-roll 1 dice in an attack roll if the target is marked and friendly fighters' melee weapons have Grievous if the target is marked. After a marked enemy fighter is slain, you can either remove all Move and/or Charge tokens from a friendly fighter or draw 1 Power card.",
+        "pl": "Natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie pokonany przez wrogiego wojownika, ten wrogi wojownik zostaje naznaczony. Inni naznaczeni wrodzy wojownicy nie są już naznaczeni. Możesz przerzucić 1 kość w rzucie ataku, jeśli cel jest naznaczony, a bronie dystansowe sojuszniczych wojowników mają cechę Grievous, jeśli cel jest naznaczony. Po tym, jak naznaczony wrogi wojownik zostanie pokonany, możesz albo usunąć wszystkie żetony ruchu i/lub szarży od sojuszniczego wojownika, albo dobrać 1 kartę Power."
+      }
+    },
+    {
+      "name": {
+        "en": "Tight-knit Pack",
+        "pl": "Zgrany Sfora"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Only by killing both of Pock's hounds shall enemies of this warband know peace.",
+        "pl": "Jedynie zabijając oba psy Pocka, wrogowie tej drużyny zaznają spokoju."
+      },
+      "rulesText": {
+        "en": "Immediately after the first friendly minion ({icon:minion}) is slain, you must add 1 to the Bounty characteristic of the other friendly minion ({icon:minion}).",
+        "pl": "Natychmiast po tym, jak pierwszy sojuszniczy minion ({icon:minion}) zostanie pokonany, musisz dodać 1 do cechy Nagroda drugiego sojuszniczego miniona ({icon:minion})."
+      }
+    }
+  ]
+}

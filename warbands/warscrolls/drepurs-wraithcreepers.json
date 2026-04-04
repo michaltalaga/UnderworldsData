@@ -1,0 +1,88 @@
+{
+  "id": "drepurs-wraithcreepers",
+  "name": "Grand Alliance Death: Dark Majesty",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": {
+    "en": "If an enemy fighter is slain while a Locus of Shyish ability is persisting, Inspire a number of friendly fighters equal to that enemy fighter's Bounty characteristic.",
+    "pl": "Jeśli wróg zostaje pokonany, gdy zdolność Locus of Shyish jest aktywna, Inspire taką liczbę przyjaznych wojowników, jaka odpowiada charakterystyce Bounty tego wroga."
+  },
+  "reactions": [],
+  "abilities": [
+    {
+      "name": {
+        "en": "Locus of Shyish",
+        "pl": "Locus of Shyish"
+      },
+      "type": "action",
+      "flavorText": {
+        "en": "",
+        "pl": ""
+      },
+      "rulesText": {
+        "en": "Roll 3 Attack dice. If the roll contains 1 of the results on the Locus of Shyish table, immediately use the relevant ability. That ability persists until the end of the battle round. If the roll contains any {icon:crit}, you can replace each {icon:crit} with another symbol of your choice ({icon:fury}, {icon:dodge}, {icon:shield} or {icon:skull}).\n\nThe same fighter cannot be picked to be affected by a Locus of Shyish ability more than once per battle round.",
+        "pl": "Rzuć 3 kośćmi ataku. Jeśli wynik zawiera 1 z rezultatów w tabeli Locus of Shyish, natychmiast użyj odpowiedniej zdolności. Ta zdolność jest aktywna do końca rundy bitewnej. Jeśli wynik zawiera jakiekolwiek {icon:crit}, możesz zastąpić każdy {icon:crit} innym symbolem według własnego wyboru ({icon:fury}, {icon:dodge}, {icon:shield} lub {icon:skull}).\n\nTen sam wojownik nie może być wybrany jako cel zdolności Locus of Shyish więcej niż raz na rundę bitewną."
+      }
+    },
+    {
+      "name": {
+        "en": "Blades of Shyish",
+        "pl": "Ostrza Shyish"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "The weapons of the dead are imbued with a murderous amethyst energy.",
+        "pl": "Broń umarłych przesycona jest morderczą ametystową energią."
+      },
+      "rulesText": {
+        "en": "Pick a friendly fighter. That fighter's melee weapons have Critical Grievous ({icon:crit}{icon:grievous}).",
+        "pl": "Wybierz przyjaznego wojownika. Bronie wręcz tego wojownika mają cechę Critical Grievous ({icon:crit}{icon:grievous})."
+      }
+    },
+    {
+      "name": {
+        "en": "Spirit Gale",
+        "pl": "Zjawiskowy Podmuch"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Howling spectral winds come forth to lend speed to an ally.",
+        "pl": "Wyjące widmowe wiatry nadciągają, by dodać skrzydeł sojusznikowi."
+      },
+      "rulesText": {
+        "en": "Pick a friendly fighter. That fighter has +1 Move.",
+        "pl": "Wybierz przyjaznego wojownika. Ten wojownik otrzymuje +1 Move."
+      }
+    },
+    {
+      "name": {
+        "en": "Prison of Grief",
+        "pl": "Więzienie Żalu"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Waves of sorrow cascade across the field, cursing the foe to endlessly relive their darkest moment.",
+        "pl": "Fale rozpaczy przetaczają się przez pole bitwy, zmuszając wroga do bez końca przeżywania jego najciemniejszej chwili."
+      },
+      "rulesText": {
+        "en": "Pick an enemy fighter. That fighter's weapons have -1 Attack dice.",
+        "pl": "Wybierz wrogiego wojownika. Broń tego wojownika ma -1 kość ataku."
+      }
+    },
+    {
+      "name": {
+        "en": "Spectral Grasp",
+        "pl": "Widmowy Uchwyt"
+      },
+      "type": "passive",
+      "flavorText": {
+        "en": "Grasping spectral hands reach up from the earth to seize hold of enemies.",
+        "pl": "Chwytające widmowe dłonie wyciągają się z ziemi, by pochwycić wrogów."
+      },
+      "rulesText": {
+        "en": "Pick an enemy fighter. That fighter has -1 Move.",
+        "pl": "Wybierz wrogiego wojownika. Ten wojownik otrzymuje -1 Move."
+      }
+    }
+  ]
+}
