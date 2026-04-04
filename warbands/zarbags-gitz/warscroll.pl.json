@@ -4,7 +4,7 @@
     {
       "name": "Śliskie Gity",
       "trigger": "Użyj natychmiast po tym, jak wybierzesz przyjaznego wojownika do Ruchu.",
-      "flavorText": "Groty są trudne do przychwycenia w najlepszych czasach – a Gity Zarbaga szczególnie.",
+      "flavorText": "Groty są trudne do przychwycenia w najlepszych czasach - a Gity Zarbaga szczególnie.",
       "rulesText": "Wybierz przyjaznego Grota ({icon:minion}), który nie ma przy sobie żetonów Ruchu ani Szarży. Po tym jak pierwszy wojownik wykona Ruch, ten przyjazny Grot ({icon:minion}) może się Ruszyć. Możesz użyć tej zdolności tylko raz na turę."
     },
     {

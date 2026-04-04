@@ -9,7 +9,7 @@
       "name": "Slippery Gitz",
       "type": "reaction",
       "trigger": "Use this immediately after you pick a friendly fighter to Move.",
-      "flavorText": "Grots are hard to pin down at the best of times – and Zarbag's Gitz especially so.",
+      "flavorText": "Grots are hard to pin down at the best of times - and Zarbag's Gitz especially so.",
       "rulesText": "Pick a friendly Grot ({icon:minion}) with no Move or Charge tokens adjacent to them. After the first fighter Moves, that friendly Grot ({icon:minion}) can Move. You can only use this ability once per turn."
     },
     {

@@ -17,7 +17,7 @@
     {
       "name": "The Diviner",
       "type": "action",
-      "flavorText": "Kixi-Taka's cosmic powers allow him to foresee potential reward – or call down heavenly doom.",
+      "flavorText": "Kixi-Taka's cosmic powers allow him to foresee potential reward - or call down heavenly doom.",
       "rulesText": "Pick a feature token within 3 hexes of your leader ({icon:leader}). Either flip that feature token or inflict 1 damage on an enemy fighter on or adjacent to that feature token. This ability can only be used once per battle round."
     },
     {

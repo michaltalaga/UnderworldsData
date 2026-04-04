@@ -27,7 +27,7 @@
     {
       "name": "Duck and Dive",
       "type": "reaction",
-      "flavorText": "Call it luck, call it agility – either way, it's saved Rippa and his crew more than once.",
+      "flavorText": "Call it luck, call it agility - either way, it's saved Rippa and his crew more than once.",
       "rulesText": "Use this immediately after a friendly fighter is picked to be the target of an Attack. Save rolls made for that fighter for that Attack count as having more {icon:skull} than the Attack roll for the purposes of Stand Fast. You can only use this ability once per game."
     }
   ]

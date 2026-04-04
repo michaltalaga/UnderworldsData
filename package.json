@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "extract": "tsx scripts/extract.ts",
     "translate": "tsx scripts/translate.ts",
-    "download": "tsx scripts/download.ts"
+    "download": "tsx scripts/download.ts",
+    "status": "tsx scripts/status.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

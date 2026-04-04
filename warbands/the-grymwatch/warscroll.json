@@ -21,7 +21,7 @@
     {
       "name": "The Royal Hunt",
       "type": "passive",
-      "flavorText": "Hark! The horns are sounded, and proclamations made – the kingdom must be scoured of beasts and ne'er-do-wells. None can escape royal justice!",
+      "flavorText": "Hark! The horns are sounded, and proclamations made - the kingdom must be scoured of beasts and ne'er-do-wells. None can escape royal justice!",
       "rulesText": "Friendly fighters' melee weapons have +1 Attack dice if the target of the Attack is damaged."
     },
     {

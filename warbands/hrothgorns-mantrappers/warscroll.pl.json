@@ -4,7 +4,7 @@
     {
       "name": "Zaskakujące Kompetencje",
       "trigger": "Użyj natychmiast po tym, jak przyjazny Gnoblar ({icon:minion}) wykona Ruch, jeśli ten wojownik sąsiaduje z przyjaznym modelem pułapki.",
-      "flavorText": "Zwinnopalcy gnoblarscy pochlebcy Hrothgorna są niezastąpieni przy przestawianiu pułapek w potrzebie. Jeśli przy tym nie urwą sobie własnych rąk – cóż, to już premia.",
+      "flavorText": "Zwinnopalcy gnoblarscy pochlebcy Hrothgorna są niezastąpieni przy przestawianiu pułapek w potrzebie. Jeśli przy tym nie urwą sobie własnych rąk - cóż, to już premia.",
       "rulesText": "Użyj natychmiast po tym, jak przyjazny Gnoblar ({icon:minion}) wykona Ruch, jeśli ten wojownik sąsiaduje z przyjaznym modelem pułapki. Usuń ten model pułapki z pola bitwy i umieść go w innym pustym sześciokącie sąsiadującym z tym Gnoblarem ({icon:minion}). Następnie daj temu Gnoblarowi żeton Guard."
     }
   ],
@@ -16,7 +16,7 @@
     },
     {
       "name": "Głodne Pułapki",
-      "flavorText": "Przydomek Hrothgorna – 'Zastawiacz Pułapek' – jest w pełni zasłużony; on i jego gnoblarska drużyna mają talent do pozostawiania okrutnych, żelaznozębnych pułapek zatrzaskowych w prawdziwie śmiertelnych miejscach. Byle tylko nie zapomnieli, gdzie je postawili…",
+      "flavorText": "Przydomek Hrothgorna - 'Zastawiacz Pułapek' - jest w pełni zasłużony; on i jego gnoblarska drużyna mają talent do pozostawiania okrutnych, żelaznozębnych pułapek zatrzaskowych w prawdziwie śmiertelnych miejscach. Byle tylko nie zapomnieli, gdzie je postawili…",
       "rulesText": "Na początku pierwszego kroku Akcji w pierwszej rundzie bitwy umieść przyjazny model pułapki w pustym sześciokącie na przyjaznym terytorium.\n\nJeśli wojownik zostanie umieszczony w, wepchnięty do lub wejdzie na sześciokąt zawierający przyjazny model pułapki, zadaj temu wojownikowi 2 obrażenia, a następnie usuń model pułapki z pola bitwy."
     },
     {

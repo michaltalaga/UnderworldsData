@@ -11,7 +11,7 @@
   "abilities": [
     {
       "name": "Wróżbita",
-      "flavorText": "Kosmiczne moce Kixi-Taki pozwalają mu przewidzieć nadchodzącą nagrodę – lub sprowadzić niebiańską zagładę.",
+      "flavorText": "Kosmiczne moce Kixi-Taki pozwalają mu przewidzieć nadchodzącą nagrodę - lub sprowadzić niebiańską zagładę.",
       "rulesText": "Wybierz żeton terenu w odległości 3 heksów od twojego przywódcy ({icon:leader}). Możesz albo odwrócić ten żeton terenu, albo zadać 1 obrażenie wrogiemu wojownikowi znajdującemu się na tym żetonie lub przylegającemu do niego. Tej zdolności można użyć tylko raz na rundę bitewną."
     },
     {

@@ -21,7 +21,7 @@
     {
       "name": "Dirty Tricks",
       "type": "reaction",
-      "flavorText": "The Krew love a cheeky gamble – but never a fair one.",
+      "flavorText": "The Krew love a cheeky gamble - but never a fair one.",
       "rulesText": "Use this immediately before you or your opponent makes an Attack roll or Save roll. Your opponent must declare 'Upgrade' or 'Ploy'. Take 3 Power cards from your hand and shuffle them face down. Your opponent must pick 1 of those cards. Then, reveal each of those cards. If the card your opponent picked matches what they declared, draw 1 Power card. Otherwise, that Attack roll or Save roll is not made and you must set the result on each dice instead. You can only use this ability once per game."
     },
     {
