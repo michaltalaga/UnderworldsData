@@ -3,10 +3,14 @@
 }
 
 @media print {
+  html {
+    font-size: 80%;
+  }
+
   body {
     background: white !important;
     color: black !important;
-    font-size: 11pt;
+    font-size: 8.8pt;
   }
 
   .app {
@@ -132,16 +136,25 @@
   }
 
   .rival-card h4 {
-    font-size: 17pt;
+    font-size: 13.6pt;
     line-height: 1.05;
     margin-bottom: 0;
     overflow-wrap: anywhere;
   }
 
   .rival-card-id {
-    font-size: 13pt;
+    font-size: 10.4pt;
     letter-spacing: 0.8px;
-    margin-bottom: 0.6mm;
+    margin-bottom: 0.5mm;
+  }
+
+  .rival-card-type {
+    margin-bottom: 0.8mm;
+    padding: 0.4mm 1mm;
+    border: 0.25mm solid #8b7355;
+    background: #e8e0cc !important;
+    font-size: 8.8pt;
+    letter-spacing: 0.5px;
   }
 
   .rival-card-value {
@@ -149,11 +162,11 @@
     padding: 0.8mm 1.3mm;
     border: 0.3mm solid #8b7355;
     background: #e8e0cc !important;
-    font-size: 16pt;
+    font-size: 12.8pt;
   }
 
   .rival-card .rules {
-    font-size: 14.4pt;
+    font-size: 11.52pt;
     line-height: 1.15;
     margin-top: 0;
     overflow-wrap: anywhere;

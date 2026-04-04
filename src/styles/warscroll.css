@@ -491,6 +491,20 @@ body {
   margin-bottom: 0.15rem;
 }
 
+.rival-card-type {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid #cfbe98;
+  border-radius: 999px;
+  background: #f7f1e1;
+  color: #5f4520;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .rival-card-value {
   min-width: 2.25rem;
   height: fit-content;

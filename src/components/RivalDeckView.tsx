@@ -37,6 +37,11 @@ function labelForCardType(type: string, language: Language) {
   return t(type.toLowerCase(), language);
 }
 
+function labelForSingleCardType(type: string, language: Language) {
+  const key = `${type.toLowerCase()}CardType`;
+  return t(key, language);
+}
+
 export function RivalDeckView({ deck, language }: Props) {
   const groupedCards = groupCards(deck.cards);
 
@@ -80,6 +85,7 @@ export function RivalDeckView({ deck, language }: Props) {
                     <div className="rival-card-top">
                       <div>
                         <div className="rival-card-id">{card.id}</div>
+                        <div className="rival-card-type">{labelForSingleCardType(card.type, language)}</div>
                         <h4>{card.name}</h4>
                       </div>
                       {card.value && (
