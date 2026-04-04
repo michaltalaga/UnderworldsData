@@ -115,6 +115,29 @@ body {
   color: #1a1a2e;
 }
 
+.print-toggle {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #6e5d2a;
+  border-radius: 4px;
+  background: #16213e;
+  color: #b7b7b7;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.print-toggle:hover {
+  border-color: #d4a930;
+  color: #d4a930;
+}
+
+.print-toggle.active {
+  border-color: #d4a930;
+  background: #d4a930;
+  color: #1a1a2e;
+}
+
 /* Warband Selector */
 .selector {
   margin-bottom: 2rem;

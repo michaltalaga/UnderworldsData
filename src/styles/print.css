@@ -83,6 +83,10 @@
     margin-top: 0;
   }
 
+  .app.print-card-spacing .rival-group + .rival-group {
+    margin-top: 3mm;
+  }
+
   .rival-group-header {
     display: none !important;
   }
@@ -90,8 +94,12 @@
   .rival-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 63.5mm);
-    gap: 3mm;
+    gap: 0;
     justify-content: center;
+  }
+
+  .app.print-card-spacing .rival-card-grid {
+    gap: 3mm;
   }
 
   .rival-card {

@@ -83,6 +83,7 @@ function mergeRivalDeck(base: RivalDeck, translation: RivalDeckTranslation | nul
 export function App() {
   const [language, setLanguage] = useState<Language>('en');
   const [view, setView] = useState<AppView>('warscrolls');
+  const [printCardSpacing, setPrintCardSpacing] = useState(false);
   const [selectedWarbandSlug, setSelectedWarbandSlug] = useState<string | null>(null);
   const [selectedRivalSlug, setSelectedRivalSlug] = useState<string | null>(null);
   const [warscrolls] = useState(() => loadMap(enModules));
@@ -131,7 +132,7 @@ export function App() {
   }, [view]);
 
   return (
-    <div className="app">
+    <div className={`app${printCardSpacing ? ' print-card-spacing' : ''}`}>
       <header className="header">
         <div className="header-main">
           <h1>{t('appTitle', language)}</h1>
@@ -139,6 +140,16 @@ export function App() {
         </div>
         <div className="header-controls">
           <LanguageToggle language={language} onChange={setLanguage} />
+          {canPrint && view === 'rivals' && (
+            <button
+              type="button"
+              className={`print-toggle${printCardSpacing ? ' active' : ''}`}
+              onClick={() => setPrintCardSpacing((value) => !value)}
+              aria-pressed={printCardSpacing}
+            >
+              {t('cardGaps', language)}: {t(printCardSpacing ? 'on' : 'off', language)}
+            </button>
+          )}
           {canPrint && (
             <button className="print-btn" onClick={handlePrint}>
               {t('print', language)}
