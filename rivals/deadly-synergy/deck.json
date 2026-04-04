@@ -1,0 +1,300 @@
+{
+  "slug": "deadly-synergy",
+  "code": "DY",
+  "name": "Deadly Synergy Rivals Deck",
+  "faction": "Universal",
+  "plot": "While using this Rivals deck, adjacent friendly fighters are united.\n\nEnemy fighters adjacent to a united friendly fighter are Flanked.\n\nIf each other friendly fighter is slain, the remaining friendly fighter is united.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/deadly-synergy-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,DY1,DY2,DY3,DY4,DY5,DY6,DY7,DY8,DY9,DY10,DY11,DY12,DY13,DY14,DY15,DY16,DY17,DY18,DY19,DY20,DY21,DY22,DY23,DY24,DY25,DY26,DY27,DY28,DY29,DY30,DY31,DY32&format=rivals&deckname=Deadly%20Synergy%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "DY1",
+      "name": "Aggressive Unity",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 or more melee Attacks were made by united friendly fighters this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Aggressive-Unity.png"
+    },
+    {
+      "id": "DY2",
+      "name": "Beatdown",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if the same enemy fighter was picked to be the target of 3 or more different friendly fighters' melee Attacks this battle round.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Beatdown.png"
+    },
+    {
+      "id": "DY3",
+      "name": "Closed Down",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a united friendly fighter is holding a treasure token that was held by an enemy fighter this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Closed-Down.png"
+    },
+    {
+      "id": "DY4",
+      "name": "Got Your Back!",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter's failed Attack if the target was a unite friendly fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Got-Your-Back.png"
+    },
+    {
+      "id": "DY5",
+      "name": "Helping Hand",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a united friendly fighter's successful Attack if the Attack roll contained any {icon:single-support}.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Helping-Hand.png"
+    },
+    {
+      "id": "DY6",
+      "name": "Hemmed In",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if an enemy leader was slain by a united friendly fighter this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Hemmed-In.png"
+    },
+    {
+      "id": "DY7",
+      "name": "Inevitable Outcome",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more united friendly fighter are adjacent to the same enemy fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Inevitable-Outcome.png"
+    },
+    {
+      "id": "DY8",
+      "name": "Infiltrate",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if the target was in neutral or enemy territory and either the attacker was united or the target was Flanked and/or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Infiltrate.png"
+    },
+    {
+      "id": "DY9",
+      "name": "Outmuscle",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if an enemy fighter was driven back as part of a united friendly fighter's successful Attack this battle round. Restricted",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Outmuscle.png"
+    },
+    {
+      "id": "DY10",
+      "name": "Tag Team",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if they have no Move or Charge tokens and either the attacker was united or the target was Flanked and/or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Tag-Team.png"
+    },
+    {
+      "id": "DY11",
+      "name": "Tandem Assault",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter is slain by a friendly fighter's Attack if the attacker was united or the target was Flanked and/or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Tandem-Assault.png"
+    },
+    {
+      "id": "DY12",
+      "name": "United Aid",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you make a Save roll for a united friendly fighter if there were more successes in the Save roll than the Attacker roll and the Save roll contained any {icon:single-support}. If you are the underdog, the Save roll does not have to contain any {icon:single-support}.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/United-Aid.png"
+    },
+    {
+      "id": "DY13",
+      "name": "Another Swing",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a united friendly fighter's failed melee Attack if the attacker is adjacent to 2 united friendly fighters. That fighter Attacks again using a melee weapon, but the Damage characteristic of that weapon is reduced to 1.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Another-Swing.png"
+    },
+    {
+      "id": "DY14",
+      "name": "Army of Two",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. That fighter is united in the next turn.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Army-of-Two.png"
+    },
+    {
+      "id": "DY15",
+      "name": "Brother-in-Arms",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately before you pick a melee weapon as part of a united friendly fighter's Attack. Pick a united friendly fighter adjacent to the attacker. Use 1 of that fighter's melee weapons for that Attack instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Brother-in-Arms.png"
+    },
+    {
+      "id": "DY16",
+      "name": "Defiant Duo",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 adjacent united friendly fighters. If you are the underdog, pick 2 united friendly fighters instead. Give 1 of those fighters a Guard token and then heal the other fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Defiant-Duo.png"
+    },
+    {
+      "id": "DY17",
+      "name": "Out of Nowhere",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you make an Attack roll for a united friendly fighter. Change 1 dice in that Attack roll to {icon:single-support} or {icon:double-support}.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Out-of-Nowhere.png"
+    },
+    {
+      "id": "DY18",
+      "name": "Selfless Parry",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a united friendly fighter is picked to be the target of an Attack. Pick a united friendly fighter adjacent to the target. The target has that fighter's Save characteristic for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Selfless-Parry.png"
+    },
+    {
+      "id": "DY19",
+      "name": "Sidestep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Sidestep.png"
+    },
+    {
+      "id": "DY20",
+      "name": "Take One for the Team",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a united friendly fighter is picked to be the target of an Attack. Pick a united friendly fighter adjacent to the target and within range of the weapon being used for the Attack. That fighter must be the target of that Attack instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Take-One-for-the-Team.png"
+    },
+    {
+      "id": "DY21",
+      "name": "Timed Strike",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a melee weapon as part of an Attack for a friendly fighter that is not united. That weapon has +1 Attack dice for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Timed-Strike.png"
+    },
+    {
+      "id": "DY22",
+      "name": "Unified Front",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "United friendly fighters have +1 Save in the next turn, to a maximum of 3.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Unified-Front.png"
+    },
+    {
+      "id": "DY23",
+      "name": "Battering Ram",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "(Errata update) Attack rolls made for this fighter as part of melee Attacks always count as having more {icon:crit} than the Save roll for the purposes of Stand Fast and Overrun.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Battering-Ram.png"
+    },
+    {
+      "id": "DY24",
+      "name": "Coordinated Deathblow",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 1 {icon:sword} 3 {icon:damage} 2\nThis weapon has Grievous while this fighter is united.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Coordinated-Deathblow.png"
+    },
+    {
+      "id": "DY25",
+      "name": "Duellist",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Footwork: Immediately after this fighter has Attacked, you can push this fighter 1 hex.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Duellist.png"
+    },
+    {
+      "id": "DY26",
+      "name": "Entangling Strike",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 1 {icon:hammer} 3 {icon:damage} 1\nThis weapon has Cleave and Ensnare if the target is Flanked and/or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Entangling-Strike.png"
+    },
+    {
+      "id": "DY27",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Great-Fortitude.png"
+    },
+    {
+      "id": "DY28",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Keen-Eye.png"
+    },
+    {
+      "id": "DY29",
+      "name": "Rush to Aid",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Assist: Immediately after this fighter has Attacked, you can pick a united friendly fighter. Push this fighter up to 2 hexes. That push must end adjacent to that united friendly fighter.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Rush-to-Aid.png"
+    },
+    {
+      "id": "DY30",
+      "name": "Shared Incentive",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This upgrade can only be given to your leader.\nThis fighter has +1 Move.\nUnited friendly fighters have +1 Move if they are adjacent to this fighter when they start that Move.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Shared-Incentive.png"
+    },
+    {
+      "id": "DY31",
+      "name": "Spurred Momentum",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Driven: Immediately after this fighter's successful Attack, if this fighter was united, remove their Move and Stagger tokens and then discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Spurred-Momentum.png"
+    },
+    {
+      "id": "DY32",
+      "name": "Titan of Combat",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter is united.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/deadly%20synergy/Titan-of-Combat.png"
+    }
+  ]
+}

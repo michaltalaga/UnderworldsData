@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, readdirSync, statSync } from 'fs';
+import { readFileSync, existsSync, statSync } from 'fs';
 import { join } from 'path';
 
 interface WarbandMeta {
@@ -8,6 +8,7 @@ interface WarbandMeta {
 }
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
+const RIVALS_DIR = join(import.meta.dirname, '..', 'rivals');
 
 function main() {
   const index: WarbandMeta[] = JSON.parse(
@@ -56,6 +57,26 @@ function main() {
 
   if (missingImage.length === 0 && missingExtract.length === 0 && missingTranslate.length === 0) {
     console.log(`\n  Everything is complete!`);
+  }
+
+  if (existsSync(join(RIVALS_DIR, 'index.json'))) {
+    const rivalIndex: { slug: string; name: string }[] = JSON.parse(
+      readFileSync(join(RIVALS_DIR, 'index.json'), 'utf8'),
+    );
+    const missingRivalDecks = rivalIndex.filter((deck) => {
+      const deckDir = join(RIVALS_DIR, deck.slug);
+      return !(existsSync(deckDir) && statSync(deckDir).isDirectory() && existsSync(join(deckDir, 'deck.json')));
+    });
+
+    console.log(`\n  Rival Deck Status Report`);
+    console.log(`  =======================\n`);
+    console.log(`  Total rival decks: ${rivalIndex.length}`);
+    console.log(`  Synced decks:      ${rivalIndex.length - missingRivalDecks.length}/${rivalIndex.length}`);
+
+    if (missingRivalDecks.length > 0) {
+      console.log(`\n  Missing rival decks (run: npm run rivals:sync):`);
+      missingRivalDecks.forEach((deck) => console.log(`    - ${deck.name}`));
+    }
   }
 
   console.log('');

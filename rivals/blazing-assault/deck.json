@@ -1,0 +1,300 @@
+{
+  "slug": "blazing-assault",
+  "code": "BL",
+  "name": "Blazing Assault Rivals Deck",
+  "faction": "Universal",
+  "plot": null,
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/blazing-assault-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,BL1,BL2,BL3,BL4,BL5,BL6,BL7,BL8,BL9,BL10,BL11,BL12,BL13,BL14,BL15,BL16,BL17,BL18,BL19,BL20,BL21,BL22,BL23,BL24,BL25,BL26,BL27,BL28,BL29,BL30,BL31,BL32&format=rivals&deckname=Blazing%20Assault%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "BL1",
+      "name": "Strike the Head",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter is slain by a friendly fighter if the target was a leader or the target's Health characteristic was equal to or greater than the attacker's.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Strike-the-Head.png"
+    },
+    {
+      "id": "BL2",
+      "name": "Branching Fate",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you make an Attack roll that contained 3 or more dice if each result was a different symbol. If you are the underdog, the Attack roll can contain 2 or more dice instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Branching-Fate.png"
+    },
+    {
+      "id": "BL3",
+      "name": "Perfect Strike",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you make an Attack roll if all of the results were successes.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Perfect-Strike.png"
+    },
+    {
+      "id": "BL4",
+      "name": "Critical Effort",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you make an Attack roll if any of the results was a {icon:crit}.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Critical-Effort.png"
+    },
+    {
+      "id": "BL5",
+      "name": "Get Stuck In",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's Attack if the target was in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Get-Stuck-In.png"
+    },
+    {
+      "id": "BL6",
+      "name": "Strong Start",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter is slain if that fighter was the first fighter slain this combat phase.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Strong-Start.png"
+    },
+    {
+      "id": "BL7",
+      "name": "Keep Choppin'",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband Attacked 3 or more times this combat phase.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Keep-Choppin.png"
+    },
+    {
+      "id": "BL8",
+      "name": "Fields of Blood",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 4 or more fighters are damaged and/or slain.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Fields-of-Blood.png"
+    },
+    {
+      "id": "BL9",
+      "name": "Go All Out",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 5 or more fighters have Move and/or Charge tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Go-All-Out.png"
+    },
+    {
+      "id": "BL10",
+      "name": "On the Edge",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if any enemy fighters are vulnerable.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/On-the-Edge.png"
+    },
+    {
+      "id": "BL11",
+      "name": "Denial",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are no enemy fighters in friendly territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Denial.png"
+    },
+    {
+      "id": "BL12",
+      "name": "Annihilation",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if each enemy fighter is slain.",
+      "value": "5",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Annihilation.png"
+    },
+    {
+      "id": "BL13",
+      "name": "Determined Effort",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a weapon as part of an Attack. That weapon has +1 Attack dice for that Attack. If you are the underdog, that weapon has +2 Attack dice for that Attack instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Determined-Effort.png"
+    },
+    {
+      "id": "BL14",
+      "name": "Twist the Knife",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a melee weapon as part of an Attack. That weapon has Grievous for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Twist-the-Knife.png"
+    },
+    {
+      "id": "BL15",
+      "name": "Lure of Battle",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 1 friendly fighter that is within 2 hexes of another fighter. Push the other fighter 1 hex closer to that friendly fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Lure-of-Battle.png"
+    },
+    {
+      "id": "BL16",
+      "name": "Sidestep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Sidestep.png"
+    },
+    {
+      "id": "BL17",
+      "name": "Commanding Stride",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Push your leader up to 3 hexes. That push must end in a starting hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Commanding-Stride.png"
+    },
+    {
+      "id": "BL18",
+      "name": "Illusory Fighter",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Remove that fighter from the battlefield, and then place that fighter in an empty starting hex in friendly territory. Restricted",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Illusory-Fighter.png"
+    },
+    {
+      "id": "BL19",
+      "name": "Wings of War",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a fighter to Move. That fighter has +2 Move for that Move.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Wings-of-War.png"
+    },
+    {
+      "id": "BL20",
+      "name": "Shields Up!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Give that fighter a Guard token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Shields-Up.png"
+    },
+    {
+      "id": "BL21",
+      "name": "Scream of Anger",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Inflict 2 damage on that fighter and then remove 1 of that fighter's Move or Charge tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Scream-of-Anger.png"
+    },
+    {
+      "id": "BL22",
+      "name": "Healing Potion",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Heal that fighter. If you are the underdog, you can roll a Save dice. On a {icon:block} or {icon:crit}, heal that fighter again.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Healing-Potion.png"
+    },
+    {
+      "id": "BL23",
+      "name": "Brawler",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter cannot be Flanked or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Brawler.png"
+    },
+    {
+      "id": "BL24",
+      "name": "Hidden Aid",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Enemy fighters adjacent to this fighter are Flanked.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Hidden-Aid.png"
+    },
+    {
+      "id": "BL25",
+      "name": "Accurate",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Strike True: After you make an Attack roll for this fighter, you can immediately re-roll 1 Attack dice in that Attack roll.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Accurate.png"
+    },
+    {
+      "id": "BL26",
+      "name": "Great Strength",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Great-Strength.png"
+    },
+    {
+      "id": "BL27",
+      "name": "Deadly Aim",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's weapons have Ensnare.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Deadly-Aim.png"
+    },
+    {
+      "id": "BL28",
+      "name": "Sharpened Points",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's weapons have Cleave.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Sharpened-Points.png"
+    },
+    {
+      "id": "BL29",
+      "name": "Duellist",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Footwork: Immediately after this fighter has Attacked, you can push this fighter 1 hex.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Duellist.png"
+    },
+    {
+      "id": "BL30",
+      "name": "Tough",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "No more than 3 damage can be inflicted on this fighter in the same turn.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Tough.png"
+    },
+    {
+      "id": "BL31",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Great-Fortitude.png"
+    },
+    {
+      "id": "BL32",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/blazing%20assault/Keen-Eye.png"
+    }
+  ]
+}

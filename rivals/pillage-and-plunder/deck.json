@@ -1,0 +1,300 @@
+{
+  "slug": "pillage-and-plunder",
+  "code": "PL",
+  "name": "Pillage and Plunder Rivals Deck",
+  "faction": "Universal",
+  "plot": null,
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/pillage-and-plunder-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,PL1,PL2,PL3,PL4,PL5,PL6,PL7,PL8,PL9,PL10,PL11,PL12,PL13,PL14,PL15,PL16,PL17,PL18,PL19,PL20,PL21,PL22,PL23,PL24,PL25,PL26,PL27,PL28,PL29,PL30,PL31,PL32&format=rivals&deckname=Pillage%20and%20Plunder%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "PL1",
+      "name": "Broken Prospects",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 or more different treasure tokens were Delved by your warband this battle round or if a treasure token held by an enemy fighter at the start of the battle round was Delved by your warband this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Broken-Prospects.png"
+    },
+    {
+      "id": "PL2",
+      "name": "Against the Odds",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if an odd-numbered treasure token was Delved by your warband this battle round.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Against-the-Odds.png"
+    },
+    {
+      "id": "PL3",
+      "name": "Lost in the Depths",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if no friendly fighters are adjacent and any friendly fighters are not slain.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Lost-in-the-Depths.png"
+    },
+    {
+      "id": "PL4",
+      "name": "Desolate Homeland",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are 1 or fewer treasure tokens in friendly territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Desolate-Homeland.png"
+    },
+    {
+      "id": "PL5",
+      "name": "Torn Landscape",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are 2 or fewer treasure tokens on the battlefield.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Torn-Landscape.png"
+    },
+    {
+      "id": "PL6",
+      "name": "Strip the Realm",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are no treasure tokens on the battlefield or if no enemy fighters hold any treasure tokens.",
+      "value": "3",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Strip-the-Realm.png"
+    },
+    {
+      "id": "PL7",
+      "name": "Aggressive Claimant",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if the target was in neutral territory, or the target was holding a treasure token when you picked them to be the target of that Attack and is no longer holding that treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Aggressive-Claimant.png"
+    },
+    {
+      "id": "PL8",
+      "name": "Claim the Prize",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter Delves in enemy territory. If you are the underdog, that Delve can be in friendly territory instead. Restricted",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Claim-the-Prize.png"
+    },
+    {
+      "id": "PL9",
+      "name": "Delving for Wealth",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your warband Delves for the third or subsequent time this combat phase. Restricted",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Delving-for-Wealth.png"
+    },
+    {
+      "id": "PL10",
+      "name": "Share the Load",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter Moves, if that fighter and any other friendly fighters are each on feature tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Share-the-Load.png"
+    },
+    {
+      "id": "PL11",
+      "name": "Hostile Takeover",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after the second or subsequent Attack made by your warband that was not part of a Charge.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Hostile-Takeover.png"
+    },
+    {
+      "id": "PL12",
+      "name": "Careful Survey",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if there is a friendly fighter in each territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Careful-Survey.png"
+    },
+    {
+      "id": "PL13",
+      "name": "Sidestep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Sidestep.png"
+    },
+    {
+      "id": "PL14",
+      "name": "Prideful Duellist",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter's Attack if the attacker is in enemy territory. Heal the attacker.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Prideful-Duellist.png"
+    },
+    {
+      "id": "PL15",
+      "name": "Commanding Stride",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Push your leader up to 3 hexes. That push must end in a starting hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Commanding-Stride.png"
+    },
+    {
+      "id": "PL16",
+      "name": "Crumbling Mine",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a treasure token that is not held. Flip that treasure token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Crumbling-Mine.png"
+    },
+    {
+      "id": "PL17",
+      "name": "Explosive Charges",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: Friendly fighters have +1 Move while using Charge abilities. This effect persists until the end of the battle round or until another Domain card is played.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Explosive-Charges.png"
+    },
+    {
+      "id": "PL18",
+      "name": "Wary Delver",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter with any Charge tokens. Give that fighter a Guard token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Wary-Delver.png"
+    },
+    {
+      "id": "PL19",
+      "name": "Brash Scout",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you make an Attack roll for a fighter in enemy territory. Re-roll 1 dice in that Attack roll. If you are the underdog, you can re-roll each dice in that Attack roll instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Brash-Scout.png"
+    },
+    {
+      "id": "PL20",
+      "name": "Sudden Blast",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an enemy fighter adjacent to a friendly fighter. Give that enemy fighter a Stagger token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Sudden-Blast.png"
+    },
+    {
+      "id": "PL21",
+      "name": "Tunnelling Terror",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter with no Move or Charge tokens. Remove that fighter from the battlefield, and then place that fighter in an empty stagger hex. Then, give that fighter a Charge token. If you are the underdog, you can give that fighter a Move token instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Tunnelling-Terror.png"
+    },
+    {
+      "id": "PL22",
+      "name": "Trapped Cache",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an undamaged enemy fighter within 1 hex of a treasure token. Inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Trapped-Cache.png"
+    },
+    {
+      "id": "PL23",
+      "name": "Great Speed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter have +1 Move.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Great-Speed.png"
+    },
+    {
+      "id": "PL24",
+      "name": "Swift Step",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Quick: Immediately after this fighter has Charged, you can push this fighter 1 hex.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Swift-Step.png"
+    },
+    {
+      "id": "PL25",
+      "name": "Burrowing Strike",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 2 {icon:sword} 2 {icon:damage} 2\nThis weapon has +1 Attack dice while this fighter has any Stagger tokens or is on a feature token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Burrowing-Strike.png"
+    },
+    {
+      "id": "PL26",
+      "name": "Tough Enough",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is in enemy territory, Save rolls for this fighter cannot be affected by Cleave and Ensnare.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Tough-Enough.png"
+    },
+    {
+      "id": "PL27",
+      "name": "Canny Sapper",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Sneaky: Immediately after you play a Ploy in a Power step, you can remove this fighter from the battlefield. Place this fighter in an empty stagger hex or in an empty starting hex in friendly territory, and then discard this card.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Canny-Sapper.png"
+    },
+    {
+      "id": "PL28",
+      "name": "Impossibly Quick",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Save.\nImmediately discard this Upgrade after an enemy fighter's failed Attack if this fighter was the target.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Impossibly-Quick.png"
+    },
+    {
+      "id": "PL29",
+      "name": "Linebreaker",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's weapons have Brutal.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Linebreaker.png"
+    },
+    {
+      "id": "PL30",
+      "name": "Excavating Blast",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ranged Attack action\n{icon:hex} 3 {icon:hammer} 2 {icon:damage} 1\nThis weapon has Stagger while this fighter is in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Excavating-Blast.png"
+    },
+    {
+      "id": "PL31",
+      "name": "Gloryseeker",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous if the target has a Health characteristic of 4 or more.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Gloryseeker.png"
+    },
+    {
+      "id": "PL32",
+      "name": "Frenzy of Greed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is on a treasure token in enemy territory or is in a stagger hex, Save rolls for this fighter are not affected by Cleave and Ensnare and this fighter cannot be given Stagger tokens.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/pillage%20and%20plunder/Frenzy-of-Greed.png"
+    }
+  ]
+}

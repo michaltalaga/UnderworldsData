@@ -1,0 +1,300 @@
+{
+  "slug": "raging-slayers",
+  "code": "RG",
+  "name": "Raging Slayers Rivals Deck",
+  "faction": "Universal",
+  "plot": "(Errata update) While using this Rivals deck, you can use the following abilities:\n\nRaging Charge: Immediately after picking a friendly fighter to Charge or picking a friendly fighter to Attack if they already had a Charge token at the start of the turn, you can give that fighter and/or another friendly fighter in the same territory each a Rage token Fighters with any Rage tokens are enraged.\n\nRaging Strike: After you make an Attack roll as part of a melee Attack for an enraged friendly fighter, you can immediately change one successful result to a Critical Attack ( {icon:crit} ) result.\n\nPoor Footing: You must use this immediately after an enraged friendly fighter was Attacked if that fighter was not driven back or grappled. Push the target 1 hex away from the attacker Your opponent chooses the direction of that push.\n\nRemove all Rage tokens from enraged friendly fighters at the end of the battle round.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/raging-slayers-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RG1,RG2,RG3,RG4,RG5,RG6,RG7,RG8,RG9,RG10,RG11,RG12,RG13,RG14,RG15,RG16,RG17,RG18,RG19,RG20,RG21,RG22,RG23,RG24,RG25,RG26,RG27,RG28,RG29,RG30,RG31,RG32&format=rivals&deckname=Raging%20Slayers%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "RG1",
+      "name": "Aggressive Expansion",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 or more enraged friendly fighters are in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Aggressive-Expansion.png"
+    },
+    {
+      "id": "RG2",
+      "name": "Best Foot Forward",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if that fighter has any Charge tokens and is in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Best-Foot-Forward.png"
+    },
+    {
+      "id": "RG3",
+      "name": "Blinded by Rage",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter is slain by an enraged friendly fighter's melee Attack if that friendly fighter was enraged at the start of the turn.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Blinded-by-Rage.png"
+    },
+    {
+      "id": "RG4",
+      "name": "Coordinated Assault",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if each friendly fighter is enraged and in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Coordinated-Assault.png"
+    },
+    {
+      "id": "RG5",
+      "name": "Into the Fire",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "(Errata update) Score this in an end phase if your leader is in enemy territory and within 2 hexes of 2 or more other fighters.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Into-the-Fire.png"
+    },
+    {
+      "id": "RG6",
+      "name": "No Contest",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if an enemy leader is slain.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/No-Contest.png"
+    },
+    {
+      "id": "RG7",
+      "name": "No Escape",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if each friendly fighter is enraged and in enemy territory, and no enemy fighters are in your territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/No-Escape.png"
+    },
+    {
+      "id": "RG8",
+      "name": "No Respite",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an opponent's Action step if there is an enraged friendly fighter in each territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/No-Respite.png"
+    },
+    {
+      "id": "RG9",
+      "name": "Overwhelming Presence",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if each friendly fighter is enraged and there are no fighters holding treasure tokens.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Overwhelming-Presence.png"
+    },
+    {
+      "id": "RG10",
+      "name": "Sever the Head",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy leader is slain by an enraged friendly fighter's melee Attack.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Sever-the-Head.png"
+    },
+    {
+      "id": "RG11",
+      "name": "Supreme Slayer",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your leader's successful Attack if the target was slain and that was the second or subsequent fighter slain by your leader.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Supreme-Slayer.png"
+    },
+    {
+      "id": "RG12",
+      "name": "Unrelenting Massacre",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if all fighters have Charge tokens.",
+      "value": "3",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Unrelenting-Massacre.png"
+    },
+    {
+      "id": "RG13",
+      "name": "Adrenaline Rush",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick up to 2 enraged friendly fighters. Remove their Stagger tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Adrenaline-Rush.png"
+    },
+    {
+      "id": "RG14",
+      "name": "Honed Reflexes",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: Each time you make a Save roll for an enraged friendly fighter, you can re-roll 1 Save dice in that Save roll. This effect persists until the end of the battle round or until another Domain card is played.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Honed-Reflexes.png"
+    },
+    {
+      "id": "RG15",
+      "name": "Knife to the Heart",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an enemy fighter that is not vulnerable and that is adjacent to an enraged friendly fighter. Inflict 1 damage on that enemy fighter. Then, remove that friendly fighter's Rage tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Knife-to-the-Heart.png"
+    },
+    {
+      "id": "RG16",
+      "name": "Murderlust",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after an enraged friendly fighter's melee Attack fails. Friendly fighters' melee weapons have +1 Attack dice while targeting the target of that failed Attack until the end of the battle round.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Murderlust.png"
+    },
+    {
+      "id": "RG17",
+      "name": "Senseless Haste",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Friendly fighters have +1 Move in the next turn. After any friendly fighters Move in your next turn, give that fighter a Stagger token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Senseless-Haste.png"
+    },
+    {
+      "id": "RG18",
+      "name": "Slayer's Aid",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an enraged friendly fighter. Push that fighter up to 3 hexes. That push must end adjacent to your leader.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Slayers-Aid.png"
+    },
+    {
+      "id": "RG19",
+      "name": "Slayer's Arena",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: After each failed Attack, give the attacker a Stagger token. This effect persists until the end of the battle round or until another Domain card is played.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Slayers-Arena.png"
+    },
+    {
+      "id": "RG20",
+      "name": "Venting Strike",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a melee weapon as part of an Attack made by an enraged friendly fighter. That weapon has +1 Attack dice for that Attack. Immediately after that Attack, remove that fighter's Rage tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Venting-Strike.png"
+    },
+    {
+      "id": "RG21",
+      "name": "What Pain?",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick up to 2 enraged friendly fighters. Heal those fighters. Then, remove their Rage tokens and give them a Stagger token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/What-Pain.png"
+    },
+    {
+      "id": "RG22",
+      "name": "Wrong-footed Stance",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: If a fighter enters or is placed in a stagger hex, give them a Move token in addition to a Stagger token. This effect persists until the end of the battle round or until another Domain card is played.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Wrong-footed-Stance.png"
+    },
+    {
+      "id": "RG23",
+      "name": "Agile",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Deft: After you make a Save roll for this fighter, you can immediately re-roll 1 Save dice in that Save roll.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Agile.png"
+    },
+    {
+      "id": "RG24",
+      "name": "Aggressive Ambusher",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is enraged, their melee weapons have Cleave and Ensnare if the target is Flanked and/or Surrounded.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Aggressive-Ambusher.png"
+    },
+    {
+      "id": "RG25",
+      "name": "Angered Swing",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 1 {icon:sword} 3 {icon:damage} 2\nA fighter can only use this weapon while enraged. When using the Raging Strike ability with this weapon, you must re-roll each Attack dice instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Angered-Swing.png"
+    },
+    {
+      "id": "RG26",
+      "name": "Assured Bloodshed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is enraged, their melee weapons have Grapple and Brutal.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Assured-Bloodshed.png"
+    },
+    {
+      "id": "RG27",
+      "name": "Gifted Vitality",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Heal this fighter at the end of each battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Gifted-Vitality.png"
+    },
+    {
+      "id": "RG28",
+      "name": "Haymaker",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons (excluding Upgrades) have the Lethal Weapon ability. After this fighter make a successful Attack with Lethal, discard this card.\nLethal: That fighter's weapon has +2 Damage for that Attack, to a maximum of 4.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Haymaker.png"
+    },
+    {
+      "id": "RG29",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Keen-Eye.png"
+    },
+    {
+      "id": "RG30",
+      "name": "Murderous Instincts",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's Range 1 melee weapons (excluding Upgrades) have Grievous.\nThis fighter cannot use Core abilities other than the Charge ability.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Murderous-Instincts.png"
+    },
+    {
+      "id": "RG31",
+      "name": "Stubborn to the Bone",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is enraged, this fighter cannot be pushed or given Stagger tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/Stubborn-to-the-Bone.png"
+    },
+    {
+      "id": "RG32",
+      "name": "United in Anger",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Rally Together: Immediately after an enraged friendly fighter is pushed, you can push this fighter up to 1 hex closer to that fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/raging%20slayers/United-in-Anger.png"
+    }
+  ]
+}

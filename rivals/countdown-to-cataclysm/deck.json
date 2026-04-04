@@ -1,0 +1,300 @@
+{
+  "slug": "countdown-to-cataclysm",
+  "code": "CC",
+  "name": "Countdown to Cataclysm Rivals Deck",
+  "faction": "Universal",
+  "plot": "(Errata update) While using this Rivals deck, during the Muster Warbands step of 'Setting Up', place a generic token on the 1st step on the countdown card included in this deck. This token is your Cataclysm tracker.\n\nYou must advance your Cataclysm tracker 1 step the first time a friendly fighter is slain in each combat phase, and you must advance your Cataclysm tracker 1 step after the last power step in each battle round for each feature token that has no enemy fighters on it.\n\nWhile your tracker is:\n\n- on the 1st to 5th step, your Cataclysm value is 1.\n\n- on the 6th to 9th step, your Cataclysm value is 2.\n\n- on the 10th to 13th step, your Cataclysm value is 3.\n\n- on the final step, your Cataclysm value is 4.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/countdown-to-cataclysm-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,CC1,CC2,CC3,CC4,CC5,CC6,CC7,CC8,CC9,CC10,CC11,CC12,CC13,CC14,CC15,CC16,CC17,CC18,CC19,CC20,CC21,CC22,CC23,CC24,CC25,CC26,CC27,CC28,CC29,CC30,CC31,CC32&format=rivals&deckname=Countdown%20to%20Cataclysm%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "CC1",
+      "name": "Spread Havoc",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase. Gain a number of Glory points equal to your Cataclysm value, to a maximum of 2. Restricted",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Spread-Havoc.png"
+    },
+    {
+      "id": "CC2",
+      "name": "Hounds of War",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more enemy fighters are slain and/or damaged and any of those fighters were slain in the preceding combat phase.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Hounds-of-War.png"
+    },
+    {
+      "id": "CC3",
+      "name": "Set Explosives",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband holds 2 or more treasure tokens and holds all of the treasure tokens in any territories.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Set-Explosives.png"
+    },
+    {
+      "id": "CC4",
+      "name": "Wreckers",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if the number of damaged and/or slain enemy fighters is greater than your Cataclysm value.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Wreckers.png"
+    },
+    {
+      "id": "CC5",
+      "name": "Uneven Contest",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband holds each odd-numbered treasure token.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Uneven-Contest.png"
+    },
+    {
+      "id": "CC6",
+      "name": "Loaded for Bear",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if any friendly fighters are each equipped with 3 or more Upgrades.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Loaded-for-Bear.png"
+    },
+    {
+      "id": "CC7",
+      "name": "Collateral Damage",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you advance your Cataclysm tracker 1 step as a result of a friendly fighter being slain. If you are the underdog, score this after you advance your Cataclysm tracker 1 step for any reason instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Collateral-Damage.png"
+    },
+    {
+      "id": "CC8",
+      "name": "Too Close for Comfort",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Power step if each friendly fighter is within 2 hexes of any enemy fighters.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Too-Close-for-Comfort.png"
+    },
+    {
+      "id": "CC9",
+      "name": "Shocking Assault",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Action step if your warband holds all of the treasure tokens in neutral territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Shocking-Assault.png"
+    },
+    {
+      "id": "CC10",
+      "name": "Nowhere to Run",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if all friendly fighters have Move and/or Charge tokens and there is a friendly fighter in each territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Nowhere-to-Run.png"
+    },
+    {
+      "id": "CC11",
+      "name": "The Perfect Cut",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful melee Attack if no result in the target's Save roll was a success.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/The-Perfect-Cut.png"
+    },
+    {
+      "id": "CC12",
+      "name": "Overwhelming Force",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful melee Attack if the Attack roll contained 4 or more dice.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Overwhelming-Force.png"
+    },
+    {
+      "id": "CC13",
+      "name": "Savage Blow",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a weapon as part of an Attack. Rolls of {icon:double-support} count as successes for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Savage-Blow.png"
+    },
+    {
+      "id": "CC14",
+      "name": "The End is Nigh",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: After each Action step, the player whose turn it is rolls a number of Attack dice equal to their Cataclysm value, or 1 Attack dice if they have no such value.\nIf the roll contains any {icon:sword} or {icon:crit}, their opponent must discard a Power card. This effect persists until the end of the battle round, until another Domain card is played, or until you advance your Cataclysm tracker.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/The-End-is-Nigh.png"
+    },
+    {
+      "id": "CC15",
+      "name": "Growing Concerns",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Enemy fighters have -X Move in the next Action step, where X is your Cataclysm value.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Growing-Concerns.png"
+    },
+    {
+      "id": "CC16",
+      "name": "Total Collapse",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Roll a number of Attack dice equal to your Cataclysm value. If the roll contains {icon:sword} or {icon:crit}, pick a fighter.\nInflict 1 damage on that fighter. If you picked a friendly fighter, you can inflict damage on that fighter up to your Cataclysm value instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Total-Collapse.png"
+    },
+    {
+      "id": "CC17",
+      "name": "Violent Blast",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a stagger hex. Push each fighter within 1 hex of that stagger hex 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Violent-Blast.png"
+    },
+    {
+      "id": "CC18",
+      "name": "Sunder the Realm",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Roll a number of Attack dice equal to your Cataclysm value for each fighter within 1 hex of neutral territory.\nIf the roll contains any {icon:hammer} or {icon:crit}, inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Sunder-the-Realm.png"
+    },
+    {
+      "id": "CC19",
+      "name": "Raging Tremors",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a number of enemy fighters up to your Cataclysm value. Give each of those fighters a Stagger token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Raging-Tremors.png"
+    },
+    {
+      "id": "CC20",
+      "name": "Counter-charge",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter is picked to be the target of an Attack. Pick another friendly fighter. Push that fighter up to 3 hexes. That push must end adjacent to the attacker.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Counter-charge.png"
+    },
+    {
+      "id": "CC21",
+      "name": "Do or Die",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Inspire that fighter. This effect persists for X Action steps where X is your Cataclysm value. After that effect ends, do not discard this card. Instead, Uninspire that fighter. That fighter cannot be Inspired again. This effect persists until the end of the game.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Do-or-Die.png"
+    },
+    {
+      "id": "CC22",
+      "name": "Improvised Attack",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. That fighter immediately Attacks with the following weapon, where X is your Cataclysm value.\nRanged Attack action\n{icon:hex} 3 {icon:hammer} X {icon:damage} 1\nThis weapon cannot be modified.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Improvised-Attack.png"
+    },
+    {
+      "id": "CC23",
+      "name": "Bringer of Doom",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Tick Tock: After this card is discarded during a Combat Phase, you can immediately advance your Cataclysm tracker 1 step.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Bringer-of-Doom.png"
+    },
+    {
+      "id": "CC24",
+      "name": "Visions of Ruin",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +X Move, where X is your cataclysm value.\nImmediately after this fighter Moves, give this fighter a Stagger token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Visions-of-Ruin.png"
+    },
+    {
+      "id": "CC25",
+      "name": "Extinction's Edge",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ever Closer: Immediately advance your Cataclysm tracker 1 step after an enemy fighter is slain by this fighter. Then, if your Cataclysm value is 2 or greater, discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Extinctions-Edge.png"
+    },
+    {
+      "id": "CC26",
+      "name": "Driven by Pain",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Insensate: Immediately after this fighter is driven back, you can heal this fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Driven-by-Pain.png"
+    },
+    {
+      "id": "CC27",
+      "name": "Inescapable Grasp",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Ensnare.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Inescapable-Grasp.png"
+    },
+    {
+      "id": "CC28",
+      "name": "Utter Conviction",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's Save characteristic is X, where X is your Cataclysm value, and cannot be modified further.\nThis fighter cannot use Critical Weapon abilities.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Utter-Conviction.png"
+    },
+    {
+      "id": "CC29",
+      "name": "Burnt Out",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Smoulder: Pick a friendly fighter. Give that fighter a Stagger token. Then, draw 2 Power cards. If you are the underdog, draw 3 Power cards instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Burnt-Out.png"
+    },
+    {
+      "id": "CC30",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Great-Fortitude.png"
+    },
+    {
+      "id": "CC31",
+      "name": "Hurled Weapon",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ranged Attack action\n{icon:hex} 3 {icon:hammer} 2 {icon:damage} 1\n{icon:crit} Cleave",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Hurled-Weapon.png"
+    },
+    {
+      "id": "CC32",
+      "name": "Desperate Rage",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 1 {icon:hammer} 2 {icon:damage} 3\nImmediately after this fighter has Attacked with this weapon, inflict 1 damage on this fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/countdown%20to%20cataclysm/Desperate-Rage.png"
+    }
+  ]
+}

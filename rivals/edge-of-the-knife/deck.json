@@ -1,0 +1,300 @@
+{
+  "slug": "edge-of-the-knife",
+  "code": "EK",
+  "name": "Edge of the Knife Rivals Deck",
+  "faction": "Universal",
+  "plot": "While using this Rivals deck, fighters with a Health characteristic of 2 or less and/or 2 or more damage tokens are tempered.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/edge-of-the-knife-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,EK1,EK2,EK3,EK4,EK5,EK6,EK7,EK8,EK9,EK10,EK11,EK12,EK13,EK14,EK15,EK16,EK17,EK18,EK19,EK20,EK21,EK22,EK23,EK24,EK25,EK26,EK27,EK28,EK29,EK30,EK31,EK32&format=rivals&deckname=Edge%20of%20the%20Knife%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "EK1",
+      "name": "Aggressive Defender",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's Attack if the attacker is holding a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Aggressive-Defender.png"
+    },
+    {
+      "id": "EK2",
+      "name": "All In",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are no tempered friendly fighters in friendly territory and any tempered friendly fighters are in neutral and/or enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/All-In.png"
+    },
+    {
+      "id": "EK3",
+      "name": "Behind Enemy Lines",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an opponent's Action step if a tempered friendly fighter holds a feature token in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Behind-Enemy-Lines.png"
+    },
+    {
+      "id": "EK4",
+      "name": "Calm Before the Storm",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are any damaged fighters and those fighters are not adjacent.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Calm-Before-the-Storm.png"
+    },
+    {
+      "id": "EK5",
+      "name": "Double Team",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if the target was Flanked by a friendly fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Double-Team.png"
+    },
+    {
+      "id": "EK6",
+      "name": "Immovable",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an opponent's Action step if a friendly fighter was the target of an Attack in that Action step while they were tempered and the target was not slain.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Immovable.png"
+    },
+    {
+      "id": "EK7",
+      "name": "Power in Numbers",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if 3 or more tempered fighters with no Move tokens are adjacent. If you are the underdog score this if 2 or more tempered fighters with no Move tokens are adjacent instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Power-in-Numbers.png"
+    },
+    {
+      "id": "EK8",
+      "name": "Risky Position",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a tempered friendly fighter is in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Risky-Position.png"
+    },
+    {
+      "id": "EK9",
+      "name": "Sneak Into Position",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an opponent's Action step if 2 or more tempered friendly fighters are adjacent to the same enemy fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Sneak-Into-Position.png"
+    },
+    {
+      "id": "EK10",
+      "name": "Trial of the Tempered",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if each fighter is tempered.",
+      "value": "3",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Trial-of-the-Tempered.png"
+    },
+    {
+      "id": "EK11",
+      "name": "Two-pronged Assault",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more tempered friendly fighters are in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Two-pronged-Assault.png"
+    },
+    {
+      "id": "EK12",
+      "name": "Usurper",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if an enemy leader was slain by a tempered friendly fighter this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Usurper.png"
+    },
+    {
+      "id": "EK13",
+      "name": "Death Throes",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a tempered friendly fighter. In the next Action step, Attacks that target this fighter have -2 Attack dice.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Death-Throes.png"
+    },
+    {
+      "id": "EK14",
+      "name": "Fake Out!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an enemy fighter with a Health characteristic of 3 or more that is adjacent to a tempered friendly fighter, and then roll an Attack dice. If the roll contains any {icon:hammer} or {icon:sword}, inflict 1 damage on that fighter, and then give that fighter a stagger token. If you are the underdog, the roll can also contain {icon:crit}.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Fake-Out.png"
+    },
+    {
+      "id": "EK15",
+      "name": "Final Stand",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "In the next Action step, tempered friendly fighters cannot be pushed.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Final-Stand.png"
+    },
+    {
+      "id": "EK16",
+      "name": "Opportunity Strikes",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a weapon as part of an Attack for a tempered friendly fighter. That weapon had +1 Attack dice for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Opportunity-Strikes.png"
+    },
+    {
+      "id": "EK17",
+      "name": "Power from Death",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter with a bounty of 1 or more is slain by an enemy fighter, if that fighter was tempered before inflicting the damage that would slay them. Draw up to 3 Power cards.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Power-from-Death.png"
+    },
+    {
+      "id": "EK18",
+      "name": "Running Riot",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a tempered friendly fighter's successful Attack. Pick another friendly fighter. That fighter is tempered.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Running-Riot.png"
+    },
+    {
+      "id": "EK19",
+      "name": "Sidestep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Sidestep.png"
+    },
+    {
+      "id": "EK20",
+      "name": "Spiteful Traps",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an enemy fighter with a Health characteristic of 3 or more within 2 hexes of your leader. Give that fighter a Move token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Spiteful-Traps.png"
+    },
+    {
+      "id": "EK21",
+      "name": "Synchronised Effort",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 tempered friendly fighters within 4 hexes of each other. Remove those fighters from the battlefield and then place each in the hex the other was removed from.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Synchronised-Effort.png"
+    },
+    {
+      "id": "EK22",
+      "name": "The Uprising!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "All friendly fighters are tempered in the next Action step.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/The-Uprising.png"
+    },
+    {
+      "id": "EK23",
+      "name": "Dark Horse",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter is tempered.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Dark-Horse.png"
+    },
+    {
+      "id": "EK24",
+      "name": "Deadly Aim",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's weapons have Ensnare.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Deadly-Aim.png"
+    },
+    {
+      "id": "EK25",
+      "name": "Fuelled by Pain",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Melee Attack action\n{icon:hex} 1 {icon:hammer} X {icon:damage} 2\n{icon:crit} Ensnare\nX is equal to the number of damage tokens this fighter has.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Fuelled-by-Pain.png"
+    },
+    {
+      "id": "EK26",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Great-Fortitude.png"
+    },
+    {
+      "id": "EK27",
+      "name": "Impervious",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is tempered, Save rolls for this fighter cannot be affected by Cleave and Ensnare.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Impervious.png"
+    },
+    {
+      "id": "EK28",
+      "name": "Lash Out",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Thrash: Immediately after this fighter is slain, before removing them from the battlefield, roll a number of Save dice equal to the battle round. For each {icon:block}, give an enemy fighter within 2 hexes of this fighter a Move token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Lash-Out.png"
+    },
+    {
+      "id": "EK29",
+      "name": "Mobbed!",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "When this fighter Attacks, if the target is within 3 hexes of any other friendly fighters, the target is Flanked and Surrounded for that Attack. Restricted",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Mobbed.png"
+    },
+    {
+      "id": "EK30",
+      "name": "Parting Shot",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Pyrrhic Strike: Immediately after this fighter is slain by an enemy fighter, before removing them from the battlefield, pick an enemy fighter within 2 hexes of them. Give that fighter a stagger token. If this fighter was tempered before inflicting the damage that would slay them, inflict 1 damage on that fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Parting-Shot.png"
+    },
+    {
+      "id": "EK31",
+      "name": "Pesky Nuisance",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Enemy fighters adjacent to this fighter must target this fighter with any Attacks.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Pesky-Nuisance.png"
+    },
+    {
+      "id": "EK32",
+      "name": "Sharpened Points",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's weapons have Cleave.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Sharpened-Points.png"
+    }
+  ]
+}

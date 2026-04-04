@@ -10,7 +10,8 @@
     "extract": "tsx scripts/extract.ts",
     "translate": "tsx scripts/translate.ts",
     "download": "tsx scripts/download.ts",
-    "status": "tsx scripts/status.ts"
+    "status": "tsx scripts/status.ts",
+    "rivals:sync": "tsx scripts/sync-rivals.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

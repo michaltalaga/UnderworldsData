@@ -22,9 +22,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   padding: 1rem 0;
   border-bottom: 2px solid #d4a930;
   margin-bottom: 1.5rem;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .header h1 {
@@ -48,6 +56,14 @@ body {
   overflow: hidden;
 }
 
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid #6e5d2a;
+  border-radius: 6px;
+  overflow: hidden;
+  width: fit-content;
+}
+
 .lang-toggle button {
   padding: 0.35rem 0.75rem;
   border: none;
@@ -60,6 +76,23 @@ body {
 }
 
 .lang-toggle button.active {
+  background: #d4a930;
+  color: #1a1a2e;
+}
+
+.view-toggle button {
+  padding: 0.45rem 0.9rem;
+  border: none;
+  background: #16213e;
+  color: #b7b7b7;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: all 0.2s;
+}
+
+.view-toggle button.active {
   background: #d4a930;
   color: #1a1a2e;
 }
@@ -120,6 +153,7 @@ body {
 .faction-group h3.Death { color: #8e44ad; }
 .faction-group h3.Destruction { color: #27ae60; }
 .faction-group h3.Order { color: #2980b9; }
+.faction-group h3.Universal { color: #d4a930; }
 
 .warband-grid {
   display: flex;
@@ -326,3 +360,149 @@ body {
 .ga-badge.Death { background: #8e44ad; color: #fff; }
 .ga-badge.Destruction { background: #27ae60; color: #fff; }
 .ga-badge.Order { background: #2980b9; color: #fff; }
+.ga-badge.Universal { background: #8b7355; color: #fff; }
+
+/* Rival Deck View */
+.rival-deck {
+  background: #f5f0e1;
+  color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.rival-header {
+  text-align: left;
+}
+
+.rival-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  margin-top: 0.75rem;
+}
+
+.rival-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(245, 240, 225, 0.14);
+  border: 1px solid rgba(212, 169, 48, 0.4);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.rival-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 300px;
+}
+
+.rival-sidebar {
+  background: #e8e0cc;
+  padding: 1rem;
+  border-right: 2px solid #c4b89a;
+}
+
+.rival-content {
+  padding: 1rem;
+}
+
+.rival-plot-box,
+.rival-meta-box {
+  margin-bottom: 1rem;
+}
+
+.rival-group + .rival-group {
+  margin-top: 1.5rem;
+}
+
+.rival-group-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #c4b89a;
+}
+
+.rival-group-header h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #5f4520;
+}
+
+.rival-group-header span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.rival-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.rival-card {
+  margin-bottom: 0;
+}
+
+.rival-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.rival-card-id {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8b4513;
+  margin-bottom: 0.15rem;
+}
+
+.rival-card-value {
+  min-width: 2.25rem;
+  height: fit-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: #e8e0cc;
+  color: #5f4520;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .warscroll-body,
+  .rival-body {
+    grid-template-columns: 1fr;
+  }
+
+  .warscroll-left,
+  .rival-sidebar {
+    border-right: none;
+    border-bottom: 2px solid #c4b89a;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    align-items: stretch;
+  }
+
+  .header-controls {
+    justify-content: space-between;
+  }
+
+  .rival-card-grid {
+    grid-template-columns: 1fr;
+  }
+}

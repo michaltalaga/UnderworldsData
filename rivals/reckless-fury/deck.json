@@ -1,0 +1,300 @@
+{
+  "slug": "reckless-fury",
+  "code": "RF",
+  "name": "Reckless Fury Rivals Deck",
+  "faction": "Universal",
+  "plot": null,
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/reckless-fury-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RF1,RF2,RF3,RF4,RF5,RF6,RF7,RF8,RF9,RF10,RF11,RF12,RF13,RF14,RF15,RF16,RF17,RF18,RF19,RF20,RF21,RF22,RF23,RF24,RF25,RF26,RF27,RF28,RF29,RF30,RF31,RF32&format=rivals&deckname=Reckless%20Fury%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "RF1",
+      "name": "Aim for the Top",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if the total Bounty characteristic of slain and/or damaged enemy fighters is 4 or more.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Aim-for-the-Top.png"
+    },
+    {
+      "id": "RF2",
+      "name": "Arena Mortis",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if all fighters in the same territory have Charge tokens and their total Bounty characteristic is 4 or more.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Arena-Mortis.png"
+    },
+    {
+      "id": "RF3",
+      "name": "Best Foot Forward",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful Attack if that fighter has any Charge tokens and is in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Best-Foot-Forward.png"
+    },
+    {
+      "id": "RF4",
+      "name": "Bloodbathed Rampager",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a friendly fighter has 2 or more Charge tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Bloodbathed-Rampager.png"
+    },
+    {
+      "id": "RF5",
+      "name": "Bloody Momentum",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more friendly fighters with a total Bounty characteristic of 4 or more have Charge tokens and are in enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Bloody-Momentum.png"
+    },
+    {
+      "id": "RF6",
+      "name": "Frenzied Rush",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if friendly fighters with a total Bounty characteristic of 3 or more have Charge tokens and are in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Frenzied-Rush.png"
+    },
+    {
+      "id": "RF7",
+      "name": "Living Bludgeon",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if a friendly fighter has a Guard token and a Charge token and is not in friendly territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Living-Bludgeon.png"
+    },
+    {
+      "id": "RF8",
+      "name": "Red Aftermath",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if the total Bounty characteristic of slain enemy fighters is 2 or more.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Red-Aftermath.png"
+    },
+    {
+      "id": "RF9",
+      "name": "Sally Forth",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Action step if a friendly fighter with any Charge tokens holds a treasure token in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Sally-Forth.png"
+    },
+    {
+      "id": "RF10",
+      "name": "Savage Sprinter",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if a friendly fighter in enemy territory has 2 or more Move tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Savage-Sprinter.png"
+    },
+    {
+      "id": "RF11",
+      "name": "Unrelenting Massacre",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if all fighters have Charge tokens.",
+      "value": "3",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Unrelenting-Massacre.png"
+    },
+    {
+      "id": "RF12",
+      "name": "Vicious Brawl",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an Action step if there are 3 or more fighters with Charge tokens adjacent to each other. If you are the underdog, there can be 2 or more fighters instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Vicious-Brawl.png"
+    },
+    {
+      "id": "RF13",
+      "name": "Braced",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Give that fighter a Charge token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Braced.png"
+    },
+    {
+      "id": "RF14",
+      "name": "Catch Weapon",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a fighter's successful Attack. Give that fighter a Charge token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Catch-Weapon.png"
+    },
+    {
+      "id": "RF15",
+      "name": "Diving In",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter up to 2 hexes. That push must end adjacent to any fighters with Charge tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Diving-In.png"
+    },
+    {
+      "id": "RF16",
+      "name": "Get It Done",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 friendly fighters. Remove a Charge token from 1 of those fighters and then give the other fighter a Charge token. Forsaken",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Get-It-Done.png"
+    },
+    {
+      "id": "RF17",
+      "name": "Lost Legacy",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you discard a slain friendly fighter's Upgrades. Pick 1 of those Upgrades, put it in your hand then draw 1 Power card.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Lost-Legacy.png"
+    },
+    {
+      "id": "RF18",
+      "name": "Outburst",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter with any Charge tokens. Roll an Attack dice for each enemy fighter adjacent to them. If you are the underdog, roll a number of dice equal to the battle round number instead. If the roll contains any {icon:hammer}, inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Outburst.png"
+    },
+    {
+      "id": "RF19",
+      "name": "Over to You",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately before removing a slain friendly fighter's tokens if that fighter was slain by an attacker and had any Move, Charge, Guard and/or Stagger tokens. Pick a friendly fighter or the attacker. Give the fighter you picked all of the slain fighter's Move, Charge, Guard and Stagger tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Over-to-You.png"
+    },
+    {
+      "id": "RF20",
+      "name": "Push Through",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter with a Bounty characteristic of 2 or less. Inflict 1 damage on that fighter. In your next Action step, that fighter can use Core abilities as if they did not have any Move or Charge tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Push-Through.png"
+    },
+    {
+      "id": "RF21",
+      "name": "Quick Shift",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter that has any Move tokens. Remove 1 of that fighter's Move tokens and then give that fighter a Charge token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Quick-Shift.png"
+    },
+    {
+      "id": "RF22",
+      "name": "Reckless Attitudes",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Enemy fighters cannot use Core abilities other than the Charge ability in the next Action step.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Reckless-Attitudes.png"
+    },
+    {
+      "id": "RF23",
+      "name": "Bellowing Tyrant",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Bellow: This fighter can use this Core ability if they have any Charge tokens. Push each other friendly fighter with any Charge tokens up to 2 hexes. Then, pick 1 of those fighters. Remove 1 of that fighter's Charge tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Bellowing-Tyrant.png"
+    },
+    {
+      "id": "RF24",
+      "name": "Bladecatcher",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is the target of an Attack, the attacker cannot use Weapon abilities. Restricted",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Bladecatcher.png"
+    },
+    {
+      "id": "RF25",
+      "name": "Blades of Wrath",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "If this fighter is slain, before removing them from the battlefield, roll a number of Attack dice equal to the battle round number for each enemy fighter adjacent to them. If the roll contains any {icon:hammer}, inflict 1 damage on that fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Blades-of-Wrath.png"
+    },
+    {
+      "id": "RF26",
+      "name": "Furious Might",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous while this fighter has any Charge tokens and is not using the Charge ability.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Furious-Might.png"
+    },
+    {
+      "id": "RF27",
+      "name": "Fury of Aqshy",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Fighters adjacent to this fighter cannot use Core abilities other than the Charge ability. Forsaken",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Fury-of-Aqshy.png"
+    },
+    {
+      "id": "RF28",
+      "name": "Headcase",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "If this fighter has no Charge tokens, instead of playing a Power card in a Power step, you can give this fighter a Charge token.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Headcase.png"
+    },
+    {
+      "id": "RF29",
+      "name": "Headlong Charge",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +2 Move while using the Charge ability.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Headlong-Charge.png"
+    },
+    {
+      "id": "RF30",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Keen-Eye.png"
+    },
+    {
+      "id": "RF31",
+      "name": "Still Swinging",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Ensnare while this fighter has any Charge tokens and is not using the Charge ability.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Still-Swinging.png"
+    },
+    {
+      "id": "RF32",
+      "name": "Utter Ignorance",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "If this fighter would be slain, they are not slain. Remove damage tokens from this fighter until they are vulnerable and then discard this card. Forsaken",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/reckless%20fury/Utter-Ignorance.png"
+    }
+  ]
+}

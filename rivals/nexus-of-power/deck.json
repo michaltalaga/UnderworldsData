@@ -1,0 +1,300 @@
+{
+  "slug": "nexus-of-power",
+  "code": "NP",
+  "name": "Nexus of Power Rivals Deck",
+  "faction": "Universal",
+  "plot": "While using this Rivals deck:\n\nFriendly fighters are covetous while they are within 1 hex of a treasure token.\n\nFriendly covetous fighters' Range 1 melee weapons (excluding Upgrades) have +1 Range while they hold a treasure token.\n\nAfter the numbered side of the feature tokens has been revealed in the Place Treasure Tokens sequence, your opponent can flip up to two treasure tokens. If both players have this Plot card, then starting with the player who last placed a treasure token, both players take it in turns to flip a token or pass. A player must pass if they have already flipped 2 treasure tokens. The sequence ends after both players pass in succession.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/nexus-of-power-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,NP1,NP2,NP3,NP4,NP5,NP6,NP7,NP8,NP9,NP10,NP11,NP12,NP13,NP14,NP15,NP16,NP17,NP18,NP19,NP20,NP21,NP22,NP23,NP24,NP25,NP26,NP27,NP28,NP29,NP30,NP31,NP32&format=rivals&deckname=Nexus%20of%20Power%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "NP1",
+      "name": "Seized",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's successful melee Attack if the target was within 1 hex of a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Seized.png"
+    },
+    {
+      "id": "NP2",
+      "name": "Break Out",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately at the end of your opponent's Action step if 2 or more friendly covetous fighters are in neutral and/or enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Break-Out.png"
+    },
+    {
+      "id": "NP3",
+      "name": "Claimed",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately at the end of your opponent's Action step if 3 or more friendly fighters are covetous.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Claimed.png"
+    },
+    {
+      "id": "NP4",
+      "name": "Pound for Pound",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly covetous fighter's successful Attack that targeted an enemy fighter with a Bounty characteristic of 2 or more that was within 1 hex of a treasure token. If you are the underdog, score this if the target had a Bounty characteristic of 1 or more.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Pound-for-Pound.png"
+    },
+    {
+      "id": "NP5",
+      "name": "All Part of the Plan",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your Action step if an enemy fighter that was holding a treasure token when they were picked to be the target of a friendly fighter's attack is no longer holding that treasure token and you hold that treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/All-Part-of-the-Plan.png"
+    },
+    {
+      "id": "NP6",
+      "name": "Calculated Strike",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you make an Attack roll for a friendly covetous fighter if any of the results was an {icon:crit}.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Calculated-Strike.png"
+    },
+    {
+      "id": "NP7",
+      "name": "Audacity",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a friendly covetous fighter made a successful Attack in the preceding combat phase while they were in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Audacity.png"
+    },
+    {
+      "id": "NP8",
+      "name": "Close the Vice",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 different friendly covetous fighters Attacked in the preceding combat phase.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Close-the-Vice.png"
+    },
+    {
+      "id": "NP9",
+      "name": "Slow Advance",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband holds any treasure tokens in both neutral territory and enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Slow-Advance.png"
+    },
+    {
+      "id": "NP10",
+      "name": "Domination",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 or more friendly fighters are within 1 hex of different treasure tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Domination.png"
+    },
+    {
+      "id": "NP11",
+      "name": "Lone Wolves",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more friendly fighters are within 1 hex of the same treasure token and none of those fighters is adjacent to another fighter.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Lone-Wolves.png"
+    },
+    {
+      "id": "NP12",
+      "name": "Skin of Their Teeth",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more friendly fighters are holding treasure tokens and any of those fighters are damaged.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Skin-of-Their-Teeth.png"
+    },
+    {
+      "id": "NP13",
+      "name": "Pilfer",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex. That push must end within 1 hex of a treasure token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Pilfer.png"
+    },
+    {
+      "id": "NP14",
+      "name": "Move at the Opening",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter Moves. Pick a different friendly fighter with no Move or Charge tokens. That fighter Moves and must end that Move within 1 hex of a treasure token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Move-at-the-Opening.png"
+    },
+    {
+      "id": "NP15",
+      "name": "Organised Efforts",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 friendly fighters holding treasure tokens. Remove those fighters from the battlefield and then place each on the treasure token the other was removed from.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Organised-Efforts.png"
+    },
+    {
+      "id": "NP16",
+      "name": "Defiance",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a weapon as part of an Attack for a friendly fighter within 1 hex of a treasure token. That weapon has +1 Attack dice for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Defiance.png"
+    },
+    {
+      "id": "NP17",
+      "name": "Into the Deepwoods",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter within 1 hex of a treasure token that is in neutral or enemy territory. Give that fighter a Guard token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Into-the-Deepwoods.png"
+    },
+    {
+      "id": "NP18",
+      "name": "Unearthed Treasure",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a cover token that does not have a fighter on it. Flip that cover token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Unearthed-Treasure.png"
+    },
+    {
+      "id": "NP19",
+      "name": "Territorial Welcome",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an undamaged enemy fighter within 1 hex of a treasure token. Melee Attacks that target that enemy fighter in the next turn have Cleave.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Territorial-Welcome.png"
+    },
+    {
+      "id": "NP20",
+      "name": "Hold the Line!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Fighters cannot be driven back. This effect persists until the end of the next Action step.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Hold-the-Line.png"
+    },
+    {
+      "id": "NP21",
+      "name": "Dig In",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter within 1 hex of a treasure token is picked as the target of an Attack. You can re-roll 1 Save dice in the Save roll for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Dig-In.png"
+    },
+    {
+      "id": "NP22",
+      "name": "The High Ground",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a weapon as part of an Attack for a friendly fighter within 1 hex of a treasure token. That weapon has Grapple and Brutal for that Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/The-High-Ground.png"
+    },
+    {
+      "id": "NP23",
+      "name": "Wily Prospector",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter is covetous while they are within 1 hex of a cover token.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Wily-Prospector.png"
+    },
+    {
+      "id": "NP24",
+      "name": "Cautious Attitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's Range 1 weapons have +2 Range while they are covetous. While the target of this fighter's Attack is 3 or more hexes from this fighter, this fighter's Range 1 melee weapons have a maximum Damage characteristic of 2. Immediately after this fighter makes a successful Attack if the target was 3 or more hexes from this fighter, discard this card.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Cautious-Attitude.png"
+    },
+    {
+      "id": "NP25",
+      "name": "Mirror Shield",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ranged attacks that target this fighter have -1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Mirror-Shield.png"
+    },
+    {
+      "id": "NP26",
+      "name": "Driven by Pain",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Insensate: Immediately after this fighter is driven back, you can heal this fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Driven-by-Pain.png"
+    },
+    {
+      "id": "NP27",
+      "name": "Inviolate",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter cannot be Flanked or Surrounded while they hold a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Inviolate.png"
+    },
+    {
+      "id": "NP28",
+      "name": "Opportunist",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Unearth: Immediately after an enemy fighter has Charged, if this fighter is within 1 hex of a cover token, flip that cover token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Opportunist.png"
+    },
+    {
+      "id": "NP29",
+      "name": "Overreach",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is within 1 hex of a treasure token, their ranged weapons have +2 Range. Immediately discard this Upgrade after this fighter makes a successful ranged Attack while they are within 1 hex of a treasure token.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Overreach.png"
+    },
+    {
+      "id": "NP30",
+      "name": "Spiteful Defender",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous while they are within 1 hex of a treasure token and have no Charge tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Spiteful-Defender.png"
+    },
+    {
+      "id": "NP31",
+      "name": "I Like Those Odds",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Save (to a maximum of 2) while they hold an odd-numbered treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/I-Like-Those-Odds.png"
+    },
+    {
+      "id": "NP32",
+      "name": "Starmaw",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ranged Attack action\n{icon:hex} 4 {icon:hammer} 2 {icon:damage} 1\nStagger\nThis weapon has +1 Attack dice while the attacker is within 1 hex of a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/spitewood/nexus%20of%20power/Starmaw.png"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Language, Warscroll, Ability, WarscrollTranslation, AbilityTranslation } from '../types/warscroll';
 import { t } from '../i18n/labels';
+import { renderText } from './GameText';
 
 interface Props {
   warscroll: Warscroll;
@@ -9,31 +10,6 @@ interface Props {
 
 function pick(base: string | undefined | null, translated: string | undefined): string {
   return translated ?? base ?? '';
-}
-
-function renderIconTokens(text: string) {
-  const parts = text.split(/(\{icon:[^}]+\})/g);
-  return parts.map((part, i) => {
-    const match = part.match(/^\{icon:(.+)\}$/);
-    if (match) {
-      return (
-        <span key={i} className="icon-token">
-          {match[1]}
-        </span>
-      );
-    }
-    return part;
-  });
-}
-
-function renderText(text: string) {
-  if (!text) return null;
-  return text.split('\n').map((line, i) => (
-    <span key={i}>
-      {i > 0 && <br />}
-      {renderIconTokens(line)}
-    </span>
-  ));
 }
 
 function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: AbilityTranslation; language: Language }) {

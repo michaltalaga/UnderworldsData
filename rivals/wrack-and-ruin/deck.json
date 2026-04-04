@@ -1,0 +1,300 @@
+{
+  "slug": "wrack-and-ruin",
+  "code": "WR",
+  "name": "Wrack and Ruin Rivals Deck",
+  "faction": "Universal",
+  "plot": null,
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/wrack-and-ruin-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,WR1,WR2,WR3,WR4,WR5,WR6,WR7,WR8,WR9,WR10,WR11,WR12,WR13,WR14,WR15,WR16,WR17,WR18,WR19,WR20,WR21,WR22,WR23,WR24,WR25,WR26,WR27,WR28,WR29,WR30,WR31,WR32&format=rivals&deckname=Wrack%20and%20Ruin%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "WR1",
+      "name": "Alone in the Dark",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if no fighters are adjacent.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Alone-in-the-Dark.png"
+    },
+    {
+      "id": "WR2",
+      "name": "Bloody and Bruised",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your warband inflicts damage on an enemy fighter if 3 or more fighters are damaged.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Bloody-and-Bruised.png"
+    },
+    {
+      "id": "WR3",
+      "name": "Careful Advance",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter Moves if 2 or more friendly fighters that have Move tokens are in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Careful-Advance.png"
+    },
+    {
+      "id": "WR4",
+      "name": "Living on the Edge",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a vulnerable friendly fighter is in enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Living-on-the-Edge.png"
+    },
+    {
+      "id": "WR5",
+      "name": "Low on Options",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after you discard a Power card if 5 or more Ploy cards are in your Power discard pile.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Low-on-Options.png"
+    },
+    {
+      "id": "WR6",
+      "name": "Out of the Frying Pan",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 3 or more damaged friendly fighters that have Move and/or Charge tokens are in enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Out-of-the-Frying-Pan.png"
+    },
+    {
+      "id": "WR7",
+      "name": "Ploymaster",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if you played 3 or more Ploys this battle round.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Ploymaster.png"
+    },
+    {
+      "id": "WR8",
+      "name": "Predictable End",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an ability on a friendly Wrack and Ruin card inflicts damage on an enemy fighter holding a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Predictable-End.png"
+    },
+    {
+      "id": "WR9",
+      "name": "Spread Out!",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there is a friendly fighter in each territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Spread-Out.png"
+    },
+    {
+      "id": "WR10",
+      "name": "Stay Close",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if there are no fighters in edge hexes.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Stay-Close.png"
+    },
+    {
+      "id": "WR11",
+      "name": "Strong Start",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter is slain if that fighter was the first fighter slain this combat phase.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Strong-Start.png"
+    },
+    {
+      "id": "WR12",
+      "name": "Unsafe Ground",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your warband inflicts damage on an enemy fighter in an edge hex. If you are the underdog, that enemy fighter can be within 1 hex of an edge hex instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Unsafe-Ground.png"
+    },
+    {
+      "id": "WR13",
+      "name": "Confusion",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 adjacent fighters. Remove those fighters from the battlefield and then place each in the hex the other was removed from.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Confusion.png"
+    },
+    {
+      "id": "WR14",
+      "name": "Damned if you Do",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Your opponent must pick 1 of the following abilities for you to resolve:\nPick an enemy fighter. Push that fighter 1 hex.\nPick an enemy fighter that is not vulnerable. Inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Damned-if-you-Do.png"
+    },
+    {
+      "id": "WR15",
+      "name": "Deadly Traps",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter's drawn Attack if the target is not vulnerable and was driven back. Inflict 1 damage on the target.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Deadly-Traps.png"
+    },
+    {
+      "id": "WR16",
+      "name": "Fault Lines",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick an undamaged enemy fighter. Inflict 1 damage on that fighter. Then, your opponent can pick a fighter. Inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Fault-Lines.png"
+    },
+    {
+      "id": "WR17",
+      "name": "Fireproof",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "The first time damage is inflicted on a friendly fighter in the next turn, reduce that damage to 1.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Fireproof.png"
+    },
+    {
+      "id": "WR18",
+      "name": "Flee!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter in friendly territory. That fighter has +3 Move in your next Action step. If that fighter Moves in that Action step, that Move cannot end in friendly territory.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Flee.png"
+    },
+    {
+      "id": "WR19",
+      "name": "Ominous Rumbling",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Your opponent must pick 1 of the following abilities for you to resolve:\nPick 2 enemy fighters. Give each of those fighters a Stagger token.\nPick an enemy fighter that is not vulnerable. Inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Ominous-Rumbling.png"
+    },
+    {
+      "id": "WR20",
+      "name": "Sidle Up",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter up to 2 hexes. That push must end adjacent to 2 or more fighters.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Sidle-Up.png"
+    },
+    {
+      "id": "WR21",
+      "name": "Vicious Intent",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after you pick a melee weapon as part of an Attack. That weapon has +1 Attack dice for that Attack. If the target is undamaged, that weapon has +2 Attack dice for that Attack instead.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Vicious-Intent.png"
+    },
+    {
+      "id": "WR22",
+      "name": "Volcanic Eruption",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a fighter. Then your opponent can pick an enemy fighter. Starting with the fighter you picked, roll a number of Attack dice for each of those fighters equal to their Bounty characteristic, to a minimum of 1. If the roll contains any {icon:hammer}, inflict 1 damage on that fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Volcanic-Eruption.png"
+    },
+    {
+      "id": "WR23",
+      "name": "Barge",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Barge: This fighter can use this Core ability if they have no Move and/or Charge tokens. This fighter Moves. That Move must end adjacent to an enemy fighter. Give this fighter a Charge token. Then, pick an enemy fighter adjacent to this fighter. Push that fighter 1 hex then give them a Stagger token.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Barge.png"
+    },
+    {
+      "id": "WR24",
+      "name": "Desperate Defence",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is the target of an Attack, the attacker's weapons have -1 Damage. The next time damage is inflicted on this fighter as part on an Attack, discard this card.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Desperate-Defence.png"
+    },
+    {
+      "id": "WR25",
+      "name": "Fiery Temper",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Belligerent: Immediately after this fighter has been picked to be pushed, you can inflict 1 damage on this fighter. If you do so, this fighter is not pushed.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Fiery-Temper.png"
+    },
+    {
+      "id": "WR26",
+      "name": "Great Speed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Move.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Great-Speed.png"
+    },
+    {
+      "id": "WR27",
+      "name": "Henchman",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Disciplined: Immediately after you make an Attack roll for this fighter, you can change 1 result to {icon:single-support}. You cannot re-roll Attack rolls for this fighter.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Henchman.png"
+    },
+    {
+      "id": "WR28",
+      "name": "Misfortune",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Ill-fated: Immediately after this fighter uses a Core ability, you can inflict 1 damage on this fighter. Then, you can remove this Upgrade from this fighter and equip another friendly fighter with this Upgrade.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Misfortune.png"
+    },
+    {
+      "id": "WR29",
+      "name": "Rock-splitting Tread",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Stomp: Immediately after your last Action step in a battle round, pick an adjacent enemy fighter that is not vulnerable. Inflict 1 damage on that fighter. Then, roll an Attack dice. On an {icon:hammer}, discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Rock-splitting-Tread.png"
+    },
+    {
+      "id": "WR30",
+      "name": "Sundering Weapon",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Cleave.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Sundering-Weapon.png"
+    },
+    {
+      "id": "WR31",
+      "name": "Unstoppable",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "While this fighter is vulnerable, each time 1 damage is inflicted on this fighter, reduce that damage to 0.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Unstoppable.png"
+    },
+    {
+      "id": "WR32",
+      "name": "Wary Tread",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "You can use this ability after the last Power step in a battle round. Push this fighter 1 hex. That push cannot end adjacent to any fighters.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/wrack%20and%20ruin/Wary-Tread.png"
+    }
+  ]
+}

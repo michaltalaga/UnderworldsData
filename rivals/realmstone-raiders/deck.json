@@ -1,0 +1,300 @@
+{
+  "slug": "realmstone-raiders",
+  "code": "RS",
+  "name": "Realmstone Raiders Rivals Deck",
+  "faction": "Universal",
+  "plot": "(Errata update) While using this Rivals deck, immediately after the first successful friendly melee Attack in an Action step, you can either: raid once or a number of times equal to the Bounty characteristic of the target.\n\nRaid: Reveal the top card of your Power deck. That card is raided. If that card is an Emberstone card, you can put that card back on top or on the bottom of your Power deck.\n\nEmberstone cards have the following additional rules:\n\nEmberstone Ploy: You can play this Ploy immediately after it is raided.\n\nEmberstone Upgrade: You can equip this Upgrade immediately after it is raided if you have the required Glory points.\n\nIf a raided card is not an Emberstone card, put that card on the bottom of your Power deck.\n\nStore: In place of a Raid, you may instead reveal an Emberstone card from your hand, then put that card at the bottom of your Power deck. This card has not been raided.",
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/realmstone-raiders-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RS1,RS2,RS3,RS4,RS5,RS6,RS7,RS8,RS9,RS10,RS11,RS12,RS13,RS14,RS15,RS16,RS17,RS18,RS19,RS20,RS21,RS22,RS23,RS24,RS25,RS26,RS27,RS28,RS29,RS30,RS31,RS32&format=rivals&deckname=Realmstone%20Raiders%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "RS1",
+      "name": "A Sure Bet",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after raiding an Emberstone card after a melee Attack if the Attack roll contained 3 or more Attack dice.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/A-Sure-Bet.png"
+    },
+    {
+      "id": "RS2",
+      "name": "Certain Aggression",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if you raided 2 or more times this battle round and there are no enemy fighters in friendly territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Certain-Aggression.png"
+    },
+    {
+      "id": "RS3",
+      "name": "Critical Risk",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after raiding an Emberstone card if the preceding Attack was successful and the Attack roll included any {icon:crit}.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Critical-Risk.png"
+    },
+    {
+      "id": "RS4",
+      "name": "Emberstone Stash",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if you raided 4 or more different Emberstone cards this battle round.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Emberstone-Stash.png"
+    },
+    {
+      "id": "RS5",
+      "name": "Hoarder's Hovel",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if any friendly fighters are holding a treasure token that has a value equal to that fighter's Bounty characteristic.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Hoarders-Hovel.png"
+    },
+    {
+      "id": "RS6",
+      "name": "Invade",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if you raided any Emberstone cards this battle round after a melee Attack if the target was holding a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Invade.png"
+    },
+    {
+      "id": "RS7",
+      "name": "Looted Realmstone",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after raiding 2 or more different Emberstone cards from the same melee attack.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Looted-Realmstone.png"
+    },
+    {
+      "id": "RS8",
+      "name": "Pillage",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after raiding 2 or more different Emberstone cards after a melee Attack if the target was in neutral or enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Pillage.png"
+    },
+    {
+      "id": "RS9",
+      "name": "Ragerock Strike",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after resolving the Emberstone Ploy ability or the Emberstone Upgrade ability (see Plot card).",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Ragerock-Strike.png"
+    },
+    {
+      "id": "RS10",
+      "name": "Realmstone Raid",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if you raided 3 or more times after different friendly fighters Attacked this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Realmstone-Raid.png"
+    },
+    {
+      "id": "RS11",
+      "name": "Reckless Gambit",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after raiding an Emberstone card for the second or subsequent time this battle round and each Emberstone card raided was a different card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Reckless-Gambit.png"
+    },
+    {
+      "id": "RS12",
+      "name": "Roused Violence",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if the number of treasure tokens on the battlefield is equal to or less than the number of Emberstone cards you raided this battle round.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Roused-Violence.png"
+    },
+    {
+      "id": "RS13",
+      "name": "Ambush",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after picking a ranged weapon as part of an Attack. You can raid after a successful friendly ranged Attack instead of a melee Attack this turn.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Ambush.png"
+    },
+    {
+      "id": "RS14",
+      "name": "Angered Focus",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick a friendly fighter holding a treasure token in friendly territory that does not have any Move, Charge or Stagger tokens. Raid a number of cards equal to that fighter's Bounty characteristic. Cards raided this way do not count as having been raided as a result of a successful Attack.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Angered-Focus.png"
+    },
+    {
+      "id": "RS15",
+      "name": "A Step Ahead",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick a friendly fighter in neutral or enemy territory. Push that fighter 1 hex. That push must end closer to an enemy fighter.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/A-Step-Ahead.png"
+    },
+    {
+      "id": "RS16",
+      "name": "Fortune Faded",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter adjacent to an enemy fighter that is not vulnerable. Inflict 1 damage on both fighters.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Fortune-Faded.png"
+    },
+    {
+      "id": "RS17",
+      "name": "Hidden Knowledge",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick an enemy fighter adjacent to a friendly fighter. Give that fighter a Move token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Hidden-Knowledge.png"
+    },
+    {
+      "id": "RS18",
+      "name": "Intoxicated with Rage",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick a friendly fighter that has no Move and/or Charge tokens. Give that fighter a Guard token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Intoxicated-with-Rage.png"
+    },
+    {
+      "id": "RS19",
+      "name": "Manipulated Fate",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter is picked as the target of an Attack. Save rolls made for that Attack count as having more {icon:crit} than the Attack roll for the purposes of the Stand Fast ability.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Manipulated-Fate.png"
+    },
+    {
+      "id": "RS20",
+      "name": "Misstep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick an enemy fighter. Give that fighter a Stagger token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Misstep.png"
+    },
+    {
+      "id": "RS21",
+      "name": "Raider's Rapture",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Domain: When you raid, you can reveal 1 additional card. This effect persists until the end of the round or until another Domain card is played.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Raiders-Rapture.png"
+    },
+    {
+      "id": "RS22",
+      "name": "Raider's Premonition",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Emberstone Ploy\nPick an Objective card from your hand and put it on the bottom of your Objective deck. Then draw 1 Objective card.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Raiders-Premonition.png"
+    },
+    {
+      "id": "RS23",
+      "name": "Armour Piercer",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nBreached: Immediately after a drawn Attack made by this fighter, if the Damage characteristic of the attacker's weapon is greater than the target's Save characteristic, inflict 1 damage on the target. Then discard this card.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Armour-Piercer.png"
+    },
+    {
+      "id": "RS24",
+      "name": "Brightstone Vigour",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nSoothed by Slaughter: Immediately after a successful Attack made by this fighter, if the Damage characteristic of the weapon used is greater than the Save characteristic of the target, you can heal the attacker. Then discard this card.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Brightstone-Vigour.png"
+    },
+    {
+      "id": "RS25",
+      "name": "Call to Power",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nHeed the Call: Immediately after a successful Attack made by this fighter, you can draw 1 Power card. Then discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Call-to-Power.png"
+    },
+    {
+      "id": "RS26",
+      "name": "Emberstone Edge",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nMelee Attack action\n{icon:hex} 1 {icon:hammer} 2 {icon:damage} 1\nThis weapon has +1 Attack dice if you raided in the same phase.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Emberstone-Edge.png"
+    },
+    {
+      "id": "RS27",
+      "name": "Forgotten Fortune",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nLingering Power: Immediately after a successful Attack made by this fighter, you can pick 1 Emberstone Ploy from your Power discard pile. Add it to your hand. Then discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Forgotten-Fortune.png"
+    },
+    {
+      "id": "RS28",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Great-Fortitude.png"
+    },
+    {
+      "id": "RS29",
+      "name": "Great Speed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Move.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Great-Speed.png"
+    },
+    {
+      "id": "RS30",
+      "name": "Great Strength",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Great-Strength.png"
+    },
+    {
+      "id": "RS31",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Keen-Eye.png"
+    },
+    {
+      "id": "RS32",
+      "name": "Reforged Aid",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Emberstone Upgrade:\nSalvaged Arms: Immediately after a successful Attack made by this fighter, you can pick 1 Emberstone Upgrade from your Power discard pile. Add it to your hand. Then discard this card.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/realmstone%20raiders/Reforged-Aid.png"
+    }
+  ]
+}

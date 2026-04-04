@@ -1,0 +1,300 @@
+{
+  "slug": "emberstone-sentinels",
+  "code": "ES",
+  "name": "Emberstone Sentinels Rivals Deck",
+  "faction": "Universal",
+  "plot": null,
+  "cardCount": 32,
+  "iconUrl": "https://www.underworldsdb.com/img/emberstone-sentinels-rivals-deck-icon.png",
+  "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,ES1,ES2,ES3,ES4,ES5,ES6,ES7,ES8,ES9,ES10,ES11,ES12,ES13,ES14,ES15,ES16,ES17,ES18,ES19,ES20,ES21,ES22,ES23,ES24,ES25,ES26,ES27,ES28,ES29,ES30,ES31,ES32&format=rivals&deckname=Emberstone%20Sentinels%20Rivals%20Deck",
+  "cards": [
+    {
+      "id": "ES1",
+      "name": "Sally Forth",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Action step if a friendly fighter with any Charge tokens hold a treasure token in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Sally-Forth.png"
+    },
+    {
+      "id": "ES2",
+      "name": "Stand Firm",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Action step if a friendly fighter with any Stagger tokens holds a treasure token in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Stand-Firm.png"
+    },
+    {
+      "id": "ES3",
+      "name": "Step by Step",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after your opponent's Action step if a friendly fighter with any Move tokens holds a treasure token in enemy territory. If you are the underdog, that friendly fighter can have any Charge tokens instead.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Step-by-Step.png"
+    },
+    {
+      "id": "ES4",
+      "name": "Unassailable",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after an enemy fighter's Attack if a friendly fighter holding a treasure token was the target of that Attack.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Unassailable.png"
+    },
+    {
+      "id": "ES5",
+      "name": "Aggressive Defender",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter's Attack if the attacker is holding a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Aggressive-Defender.png"
+    },
+    {
+      "id": "ES6",
+      "name": "Careful Advance",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this immediately after a friendly fighter Moves if 2 or more friendly fighters that have Move tokens are in enemy territory.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Careful-Advance.png"
+    },
+    {
+      "id": "ES7",
+      "name": "Hold Treasure Token 1 or 2",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a friendly fighter holds treasure token 1 or 2.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Hold-Treasure-Token-1-or-2.png"
+    },
+    {
+      "id": "ES8",
+      "name": "Hold Treasure Token 3 or 4",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a friendly fighter holds treasure token 3 or 4.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Hold-Treasure-Token-3-or-4.png"
+    },
+    {
+      "id": "ES9",
+      "name": "Hold Treasure Token 5",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if a friendly fighter holds treasure token 5.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Hold-Treasure-Token-5.png"
+    },
+    {
+      "id": "ES10",
+      "name": "Slow Advance",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband holds any treasure tokens in both neutral territory and enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Slow-Advance.png"
+    },
+    {
+      "id": "ES11",
+      "name": "Iron Grasp",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if your warband holds all of the treasure tokens in a friendly and/or enemy territory.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Iron-Grasp.png"
+    },
+    {
+      "id": "ES12",
+      "name": "Supremacy",
+      "faction": "Universal",
+      "type": "Objective",
+      "text": "Score this in an end phase if 2 or more friendly fighters with a total Bounty characteristic of 3 or more hold treasure tokens. Restricted",
+      "value": "3",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Supremacy.png"
+    },
+    {
+      "id": "ES13",
+      "name": "Switch Things Up",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 treasure tokens. Swap the positions of those treasure tokens.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Switch-Things-Up.png"
+    },
+    {
+      "id": "ES14",
+      "name": "Sidestep",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Push that fighter 1 hex.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Sidestep.png"
+    },
+    {
+      "id": "ES15",
+      "name": "The Extra Mile",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter Moves. Push that fighter 1 hex. That push must end on a feature token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/The-Extra-Mile.png"
+    },
+    {
+      "id": "ES16",
+      "name": "Settle In",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter on a feature token. Give that fighter a Guard token.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Settle-In.png"
+    },
+    {
+      "id": "ES17",
+      "name": "Healing Potion",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter. Heal that fighter. If you are the underdog, you can roll a Save dice. On a {icon:block} or {icon:crit}, heal that fighter again.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Healing-Potion.png"
+    },
+    {
+      "id": "ES18",
+      "name": "Hidden Paths",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick a friendly fighter in an edge hex. Remove that fighter from the battlefield, and then place that fighter in a different empty edge hex. Then, give that fighter a Move token, unless you are the underdog.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Hidden-Paths.png"
+    },
+    {
+      "id": "ES19",
+      "name": "Confusion",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Pick 2 adjacent fighters. Remove those fighters from the battlefield and then place each in the hex the other was removed from.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Confusion.png"
+    },
+    {
+      "id": "ES20",
+      "name": "Hold the Line!",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Fighters cannot be driven back. This effect persists until the end of the next Action step.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Hold-the-Line.png"
+    },
+    {
+      "id": "ES21",
+      "name": "Shoulder Throw",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Play this immediately after a friendly fighter's successful Attack if the target is adjacent. Remove the target from the battlefield, and then place them in a different empty hex adjacent to the attacker.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Shoulder-Throw.png"
+    },
+    {
+      "id": "ES22",
+      "name": "By the Numbers",
+      "faction": "Universal",
+      "type": "Ploy",
+      "text": "Draw a number of Power cards equal to the number of treasure tokens held by your warband.",
+      "value": null,
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/By-the-Numbers.png"
+    },
+    {
+      "id": "ES23",
+      "name": "Stubborn to the End",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "If this fighter is the target of an Attack, the attacker cannot use Overrun.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Stubborn-to-the-End.png"
+    },
+    {
+      "id": "ES24",
+      "name": "Inviolate",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter cannot be Flanked or Surrounded while they hold a treasure token.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Inviolate.png"
+    },
+    {
+      "id": "ES25",
+      "name": "Great Speed",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Move.",
+      "value": "0",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Great-Speed.png"
+    },
+    {
+      "id": "ES26",
+      "name": "Sharp Reflexes",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Save, to a maximum of 2.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Sharp-Reflexes.png"
+    },
+    {
+      "id": "ES27",
+      "name": "Brute Momentum",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter cannot be driven back while they have any Charge tokens.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Brute-Momentum.png"
+    },
+    {
+      "id": "ES28",
+      "name": "Agile",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Deft: After you make a Save roll for this fighter, you can immediately re-roll 1 Save dice in that Save roll.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Agile.png"
+    },
+    {
+      "id": "ES29",
+      "name": "Duellist",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "Footwork: Immediately after this fighter has Attacked, you can push this fighter 1 hex.",
+      "value": "1",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Duellist.png"
+    },
+    {
+      "id": "ES30",
+      "name": "Great Fortitude",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter has +1 Health.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Great-Fortitude.png"
+    },
+    {
+      "id": "ES31",
+      "name": "Keen Eye",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have +1 Attack dice.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Keen-Eye.png"
+    },
+    {
+      "id": "ES32",
+      "name": "Great Strength",
+      "faction": "Universal",
+      "type": "Upgrade",
+      "text": "This fighter's melee weapons have Grievous.",
+      "value": "2",
+      "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/emberstone%20sentinels/Great-Strength.png"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "nexus-of-power",
+    "code": "NP",
+    "name": "Nexus of Power Rivals Deck",
+    "faction": "Universal",
+    "plot": "While using this Rivals deck:\n\nFriendly fighters are covetous while they are within 1 hex of a treasure token.\n\nFriendly covetous fighters' Range 1 melee weapons (excluding Upgrades) have +1 Range while they hold a treasure token.\n\nAfter the numbered side of the feature tokens has been revealed in the Place Treasure Tokens sequence, your opponent can flip up to two treasure tokens. If both players have this Plot card, then starting with the player who last placed a treasure token, both players take it in turns to flip a token or pass. A player must pass if they have already flipped 2 treasure tokens. The sequence ends after both players pass in succession.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/nexus-of-power-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,NP1,NP2,NP3,NP4,NP5,NP6,NP7,NP8,NP9,NP10,NP11,NP12,NP13,NP14,NP15,NP16,NP17,NP18,NP19,NP20,NP21,NP22,NP23,NP24,NP25,NP26,NP27,NP28,NP29,NP30,NP31,NP32&format=rivals&deckname=Nexus%20of%20Power%20Rivals%20Deck"
+  },
+  {
+    "slug": "hunting-grounds",
+    "code": "HG",
+    "name": "Hunting Grounds Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/hunting-grounds-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,HG1,HG2,HG3,HG4,HG5,HG6,HG7,HG8,HG9,HG10,HG11,HG12,HG13,HG14,HG15,HG16,HG17,HG18,HG19,HG20,HG21,HG22,HG23,HG24,HG25,HG26,HG27,HG28,HG29,HG30,HG31,HG32&format=rivals&deckname=Hunting%20Grounds%20Rivals%20Deck"
+  },
+  {
+    "slug": "deadly-synergy",
+    "code": "DY",
+    "name": "Deadly Synergy Rivals Deck",
+    "faction": "Universal",
+    "plot": "While using this Rivals deck, adjacent friendly fighters are united.\n\nEnemy fighters adjacent to a united friendly fighter are Flanked.\n\nIf each other friendly fighter is slain, the remaining friendly fighter is united.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/deadly-synergy-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,DY1,DY2,DY3,DY4,DY5,DY6,DY7,DY8,DY9,DY10,DY11,DY12,DY13,DY14,DY15,DY16,DY17,DY18,DY19,DY20,DY21,DY22,DY23,DY24,DY25,DY26,DY27,DY28,DY29,DY30,DY31,DY32&format=rivals&deckname=Deadly%20Synergy%20Rivals%20Deck"
+  },
+  {
+    "slug": "raging-slayers",
+    "code": "RG",
+    "name": "Raging Slayers Rivals Deck",
+    "faction": "Universal",
+    "plot": "(Errata update) While using this Rivals deck, you can use the following abilities:\n\nRaging Charge: Immediately after picking a friendly fighter to Charge or picking a friendly fighter to Attack if they already had a Charge token at the start of the turn, you can give that fighter and/or another friendly fighter in the same territory each a Rage token Fighters with any Rage tokens are enraged.\n\nRaging Strike: After you make an Attack roll as part of a melee Attack for an enraged friendly fighter, you can immediately change one successful result to a Critical Attack ( {icon:crit} ) result.\n\nPoor Footing: You must use this immediately after an enraged friendly fighter was Attacked if that fighter was not driven back or grappled. Push the target 1 hex away from the attacker Your opponent chooses the direction of that push.\n\nRemove all Rage tokens from enraged friendly fighters at the end of the battle round.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/raging-slayers-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RG1,RG2,RG3,RG4,RG5,RG6,RG7,RG8,RG9,RG10,RG11,RG12,RG13,RG14,RG15,RG16,RG17,RG18,RG19,RG20,RG21,RG22,RG23,RG24,RG25,RG26,RG27,RG28,RG29,RG30,RG31,RG32&format=rivals&deckname=Raging%20Slayers%20Rivals%20Deck"
+  },
+  {
+    "slug": "realmstone-raiders",
+    "code": "RS",
+    "name": "Realmstone Raiders Rivals Deck",
+    "faction": "Universal",
+    "plot": "(Errata update) While using this Rivals deck, immediately after the first successful friendly melee Attack in an Action step, you can either: raid once or a number of times equal to the Bounty characteristic of the target.\n\nRaid: Reveal the top card of your Power deck. That card is raided. If that card is an Emberstone card, you can put that card back on top or on the bottom of your Power deck.\n\nEmberstone cards have the following additional rules:\n\nEmberstone Ploy: You can play this Ploy immediately after it is raided.\n\nEmberstone Upgrade: You can equip this Upgrade immediately after it is raided if you have the required Glory points.\n\nIf a raided card is not an Emberstone card, put that card on the bottom of your Power deck.\n\nStore: In place of a Raid, you may instead reveal an Emberstone card from your hand, then put that card at the bottom of your Power deck. This card has not been raided.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/realmstone-raiders-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RS1,RS2,RS3,RS4,RS5,RS6,RS7,RS8,RS9,RS10,RS11,RS12,RS13,RS14,RS15,RS16,RS17,RS18,RS19,RS20,RS21,RS22,RS23,RS24,RS25,RS26,RS27,RS28,RS29,RS30,RS31,RS32&format=rivals&deckname=Realmstone%20Raiders%20Rivals%20Deck"
+  },
+  {
+    "slug": "edge-of-the-knife",
+    "code": "EK",
+    "name": "Edge of the Knife Rivals Deck",
+    "faction": "Universal",
+    "plot": "While using this Rivals deck, fighters with a Health characteristic of 2 or less and/or 2 or more damage tokens are tempered.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/edge-of-the-knife-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,EK1,EK2,EK3,EK4,EK5,EK6,EK7,EK8,EK9,EK10,EK11,EK12,EK13,EK14,EK15,EK16,EK17,EK18,EK19,EK20,EK21,EK22,EK23,EK24,EK25,EK26,EK27,EK28,EK29,EK30,EK31,EK32&format=rivals&deckname=Edge%20of%20the%20Knife%20Rivals%20Deck"
+  },
+  {
+    "slug": "reckless-fury",
+    "code": "RF",
+    "name": "Reckless Fury Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/reckless-fury-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,RF1,RF2,RF3,RF4,RF5,RF6,RF7,RF8,RF9,RF10,RF11,RF12,RF13,RF14,RF15,RF16,RF17,RF18,RF19,RF20,RF21,RF22,RF23,RF24,RF25,RF26,RF27,RF28,RF29,RF30,RF31,RF32&format=rivals&deckname=Reckless%20Fury%20Rivals%20Deck"
+  },
+  {
+    "slug": "wrack-and-ruin",
+    "code": "WR",
+    "name": "Wrack and Ruin Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/wrack-and-ruin-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,WR1,WR2,WR3,WR4,WR5,WR6,WR7,WR8,WR9,WR10,WR11,WR12,WR13,WR14,WR15,WR16,WR17,WR18,WR19,WR20,WR21,WR22,WR23,WR24,WR25,WR26,WR27,WR28,WR29,WR30,WR31,WR32&format=rivals&deckname=Wrack%20and%20Ruin%20Rivals%20Deck"
+  },
+  {
+    "slug": "blazing-assault",
+    "code": "BL",
+    "name": "Blazing Assault Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/blazing-assault-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,BL1,BL2,BL3,BL4,BL5,BL6,BL7,BL8,BL9,BL10,BL11,BL12,BL13,BL14,BL15,BL16,BL17,BL18,BL19,BL20,BL21,BL22,BL23,BL24,BL25,BL26,BL27,BL28,BL29,BL30,BL31,BL32&format=rivals&deckname=Blazing%20Assault%20Rivals%20Deck"
+  },
+  {
+    "slug": "emberstone-sentinels",
+    "code": "ES",
+    "name": "Emberstone Sentinels Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/emberstone-sentinels-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,ES1,ES2,ES3,ES4,ES5,ES6,ES7,ES8,ES9,ES10,ES11,ES12,ES13,ES14,ES15,ES16,ES17,ES18,ES19,ES20,ES21,ES22,ES23,ES24,ES25,ES26,ES27,ES28,ES29,ES30,ES31,ES32&format=rivals&deckname=Emberstone%20Sentinels%20Rivals%20Deck"
+  },
+  {
+    "slug": "pillage-and-plunder",
+    "code": "PL",
+    "name": "Pillage and Plunder Rivals Deck",
+    "faction": "Universal",
+    "plot": null,
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/pillage-and-plunder-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,PL1,PL2,PL3,PL4,PL5,PL6,PL7,PL8,PL9,PL10,PL11,PL12,PL13,PL14,PL15,PL16,PL17,PL18,PL19,PL20,PL21,PL22,PL23,PL24,PL25,PL26,PL27,PL28,PL29,PL30,PL31,PL32&format=rivals&deckname=Pillage%20and%20Plunder%20Rivals%20Deck"
+  },
+  {
+    "slug": "countdown-to-cataclysm",
+    "code": "CC",
+    "name": "Countdown to Cataclysm Rivals Deck",
+    "faction": "Universal",
+    "plot": "(Errata update) While using this Rivals deck, during the Muster Warbands step of 'Setting Up', place a generic token on the 1st step on the countdown card included in this deck. This token is your Cataclysm tracker.\n\nYou must advance your Cataclysm tracker 1 step the first time a friendly fighter is slain in each combat phase, and you must advance your Cataclysm tracker 1 step after the last power step in each battle round for each feature token that has no enemy fighters on it.\n\nWhile your tracker is:\n\n- on the 1st to 5th step, your Cataclysm value is 1.\n\n- on the 6th to 9th step, your Cataclysm value is 2.\n\n- on the 10th to 13th step, your Cataclysm value is 3.\n\n- on the final step, your Cataclysm value is 4.",
+    "cardCount": 32,
+    "iconUrl": "https://www.underworldsdb.com/img/countdown-to-cataclysm-rivals-deck-icon.png",
+    "sourceUrl": "https://www.underworldsdb.com/shared.php?deck=0,CC1,CC2,CC3,CC4,CC5,CC6,CC7,CC8,CC9,CC10,CC11,CC12,CC13,CC14,CC15,CC16,CC17,CC18,CC19,CC20,CC21,CC22,CC23,CC24,CC25,CC26,CC27,CC28,CC29,CC30,CC31,CC32&format=rivals&deckname=Countdown%20to%20Cataclysm%20Rivals%20Deck"
+  }
+]
