@@ -1,0 +1,18 @@
+{
+  "inspire": "Jeśli Przepowiedziana Mądrość zostanie przepowiedziana po udanym Ataku przyjaznego wojownika w wyniku zdolności Wizje we Krwi, wykonaj Inspire na tym wojowniku.\n\nJeśli Przepowiedziana Mądrość zostanie przepowiedziana w wyniku rzutu przepowiedni na początku pierwszego kroku Akcji w rundzie bitewnej, wykonaj Inspire na przyjaznym wojowniku.",
+  "reactions": [
+    {
+      "name": "Wizje we Krwi",
+      "trigger": "Użyj tej reakcji natychmiast po udanym Ataku przyjaznego wojownika.",
+      "flavorText": null,
+      "rulesText": "Wykonaj rzut przepowiedni (patrz Rytuały Przepowiedni)."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Rytuały Przepowiedni",
+      "flavorText": null,
+      "rulesText": "Na początku pierwszego kroku Akcji w każdej rundzie bitewnej możesz wykonać rzut przepowiedni, rzucając 4 kośćmi Ataku.\n\n- Jeśli rzut zawiera 1 wynik z tabeli przepowiedni, ta przepowiednia zostaje przepowiedziana.\n- Jeśli rzut zawiera 2 różne wyniki z tabeli przepowiedni, obie te przepowiednie zostają przepowiedziane.\n- Jeśli rzut zawiera 3 takie same symbole, możesz wybrać 1 przepowiednię z tabeli przepowiedni. Ta przepowiednia zostaje przepowiedziana.\n- Jeśli rzut zawiera 4 takie same symbole, możesz wybrać 2 różne przepowiednie z tabeli przepowiedni. Obie te przepowiednie zostają przepowiedziane.\n- Jeśli rzut zawiera jakiekolwiek {icon:skull}, możesz zastąpić każdy {icon:skull} innym symbolem według własnego wyboru ({icon:crit}, {icon:fury}, {icon:grievous} lub {icon:hex}).\n\nKiedy przepowiednia zostaje przepowiedziana, natychmiast użyj jej zdolności.\n\nTabela Przepowiedni:\n\nWynik: {icon:crit}{icon:crit} - Przepowiedziana Rzeź: Następnym razem, gdy wybierzesz broń do walki wręcz jako część Ataku w tej rundzie bitewnej, ta broń posiada Cleave ({icon:cleave}) i Ensnare ({icon:ensnare}) dla tego Ataku.\n\nWynik: {icon:fury}{icon:fury} - Przepowiedziana Mądrość: Spójrz na wierzchnią kartę swojej talii Celów. Umieść tę kartę na wierzchu lub na spodzie tej talii.\n\nWynik: {icon:grievous}{icon:grievous} lub {icon:hex}{icon:hex} lub {icon:grievous}{icon:hex} - Przepowiedziana Ochrona: Następnym razem, gdy wykonasz rzut Obrony w tej rundzie bitewnej, możesz natychmiast przerzucić 1 kość Obrony w tym rzucie Obrony."
+    }
+  ]
+}
