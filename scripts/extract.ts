@@ -51,6 +51,8 @@ Important rules:
 - Abilities on the RIGHT side are typically passive or action abilities
 - "type" for abilities: "passive" if always in effect, "action" if you use it during a power step, "reaction" if triggered by an event
 - Keep \\n for paragraph breaks within a field
+- Use only ASCII hyphens (-) never Unicode en-dashes or em-dashes
+- Properly escape special characters in JSON strings
 - Return ONLY valid JSON, no markdown code fences or explanation`;
 
 async function downloadImage(url: string): Promise<Buffer | null> {
@@ -163,7 +165,12 @@ async function main() {
       const raw = await extractWarscroll(client, imageData, meta);
 
       const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-      const data = JSON.parse(jsonStr);
+      // Sanitize Unicode dashes/quotes before parsing
+      const sanitized = jsonStr
+        .replace(/[\u2013\u2014]/g, '-')   // en-dash, em-dash → hyphen
+        .replace(/[\u2018\u2019]/g, "'")   // smart single quotes
+        .replace(/[\u201C\u201D]/g, '"');   // smart double quotes (escaped in JSON context)
+      const data = JSON.parse(sanitized);
 
       data.id = meta.slug;
       data.grandAlliance = meta.grandAlliance;
