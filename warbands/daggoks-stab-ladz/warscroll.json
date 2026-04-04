@@ -1,0 +1,42 @@
+{
+  "id": "daggoks-stab-ladz",
+  "name": "Daggok's Stab-ladz",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "Immediately after inflicting damage on an enemy fighter using the Krule Stab ability, Inspire the friendly fighter.",
+  "reactions": [
+    {
+      "name": "Krule Stab",
+      "type": "reaction",
+      "trigger": "A friendly fighter with no Charge tokens can use this immediately after your Action step.",
+      "flavorText": null,
+      "rulesText": "A friendly fighter with no Charge tokens can use this immediately after your Action step. Pick an enemy fighter that is not vulnerable that is adjacent to that friendly fighter and roll an Attack dice. On a {icon:fury} or {icon:crit}, inflict 1 damage on that enemy fighter. The same fighter cannot use this ability more than once per turn."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "'Two against one, ya git!'",
+      "type": "action",
+      "flavorText": "Daggok and his ladz have heard about fair fights before. They can't say the concept impressed them.",
+      "rulesText": "Use this immediately after your Action step. You can push a friendly fighter 1 hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Thief of Kunnin'",
+      "type": "action",
+      "flavorText": "The more heads Daggok looks liable to take, the finkier he gets.",
+      "rulesText": "Use this in a Power step. Draw a number of Power cards equal to the number of damaged enemy fighters. You can only use this ability once per game."
+    },
+    {
+      "name": "Nasty Poisons",
+      "type": "action",
+      "flavorText": "Kruleboyz are well known for smearing all manner of wicked swamp toxins on their weapons.",
+      "rulesText": "Use this immediately after an Action step. Roll a dice for each damaged enemy fighter. On a roll of {icon:crit}, inflict 1 damage on that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Schemin' Gitz",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Instead of playing a Ploy in your opponent's Power step, you can discard Ploys to use the abilities below. The number of Ploys you discard determines which abilities apply in the next turn. The effects are cumulative and the effect of each ability lasts until the end of your next turn.\n\nDiscard 1: Friendly fighters have +1 Move.\nDiscard 2: Enemy fighters are Flanked.\nDiscard 3: Friendly fighters' weapons have +1 Attack dice."
+    }
+  ]
+}

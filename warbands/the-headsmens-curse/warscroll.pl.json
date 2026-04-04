@@ -1,0 +1,33 @@
+{
+  "inspire": "Po kroku Akcji, jeśli przyjazny wojownik zadał obrażenia jakimkolwiek skazanym wrogim wojownikom swoim Atakiem, Inspire tego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Sąd i Egzekucja",
+      "trigger": "Na początku twojego pierwszego kroku Akcji w każdej rundzie bitwy możesz wybrać wrogiego wojownika znajdującego się w odległości 5 hexów od przyjaznego Scriptora of the Sentence, aby został skazany na tę rundę bitwy. Po tym jak skazany wrogi wojownik zostanie pokonany, możesz dobrać liczbę kart Power równą charakterystyce Bounty tego wojownika.",
+      "flavorText": "The Headsmen's Curse poszukują śmiertelników, by skazać ich na wieczną karę.",
+      "rulesText": "Na początku twojego pierwszego kroku Akcji w każdej rundzie bitwy możesz wybrać wrogiego wojownika znajdującego się w odległości 5 hexów od przyjaznego Scriptora of the Sentence, aby został skazany na tę rundę bitwy. Po tym jak skazany wrogi wojownik zostanie pokonany, możesz dobrać liczbę kart Power równą charakterystyce Bounty tego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Wieczna Powinność",
+      "flavorText": "Dwór nie może zaznać odpoczynku. Ich powinność zmusza ich do nieustającej służby.",
+      "rulesText": "Użyj tej zdolności natychmiast po tym, jak wróg zostanie pokonany przez broń twojego lidera ({icon:leader}). Wybierz pokonanego przyjaznego wojownika. Przywróć tego wojownika do życia i umieść go w pustym hexie przylegającym do twojego lidera ({icon:leader}). Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Naostrzyć Ostrze",
+      "flavorText": "Z upiornym zgrzytaniem starożytny kamień przesuwany jest po widmowej stali.",
+      "rulesText": "Użyj tej zdolności natychmiast po wybraniu broni w ramach Ataku twojego lidera ({icon:leader}), jeśli jest on przyległy do przyjaznego Sharpener of the Blade. Ta broń ma cechę Grievous ({icon:grievous}) dla tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Rozszczepienie",
+      "flavorText": "Na rozkaz Nighthaunt mogą przemykać między krainami żywych i umarłych.",
+      "rulesText": "Wybierz przyjaznego wojownika, który użyje tej podstawowej zdolności. Usuń tego wojownika z pola bitwy, a następnie umieść go w pustym hexie. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Rechoczący Dwór",
+      "flavorText": "Wycie i oskarżenia Nighthaunt potrafią zachwiać nawet najbardziej niezłomnymi duszami.",
+      "rulesText": "Użyj tej zdolności natychmiast po wybraniu wrogiego wojownika jako celu Ataku, jeśli ten wojownik jest Flanked i/lub Surrounded. Wyniki zarówno {icon:fury}, jak i {icon:dodge} są sukcesami w tym rzucie na Atak. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

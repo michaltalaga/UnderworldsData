@@ -1,0 +1,58 @@
+{
+  "id": "the-crimson-court",
+  "name": "The Crimson Court",
+  "version": "1.1",
+  "grandAlliance": "Death",
+  "inspire": "At the end of each battle round, Inspire each friendly fighter that has no hunger tokens.",
+  "reactions": [
+    {
+      "name": "The Hunger",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly fighter's successful Attack,",
+      "flavorText": null,
+      "rulesText": "remove 1 of that fighter's hunger tokens. If the target of that Attack was slain, remove all of that fighter's hunger tokens instead."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "The Curse",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Each friendly fighter starts the game with 2 hunger tokens. At the start of the second and third battle rounds, give each friendly fighter 1 hunger token."
+    },
+    {
+      "name": "Bloodthirst",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "While a friendly fighter has 3 or more hunger tokens, they are bloodthirsty. Bloodthirsty friendly fighters have +1 Move and any Guard tokens they have have no effect."
+    },
+    {
+      "name": "Bestial Transformation",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a friendly fighter to use a Core ability.",
+      "flavorText": "Bones crack and flesh melts as the vampire assumes a dire new form.",
+      "rulesText": "Discard that fighter's Upgrades. Until the end of the battle round, that fighter's melee weapons have +1 Attack dice. If that fighter is bloodthirsty, they also have +1 Move until the end of the battle round. You can only use this ability once per game."
+    },
+    {
+      "name": "Vampiric Might",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a weapon as part of a bloodthirsty fighter's Attack.",
+      "flavorText": "Drawing upon the power of their curse, the vampire strikes with lethal accuracy and strength enough to shatter stone.",
+      "rulesText": "That weapon has Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Tenebrous Form",
+      "type": "reaction",
+      "trigger": "Use this immediately after an Inspired friendly fighter is picked to be the target of an Attack.",
+      "flavorText": "The vampire becomes one with the shadows.",
+      "rulesText": "That fighter's Save characteristic is {icon:shield} 3 for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Dark Transfusion",
+      "type": "action",
+      "trigger": null,
+      "flavorText": "Life force is ripped from the victim as the vampire feeds.",
+      "rulesText": "Pick a friendly fighter to use this Core ability. Pick an enemy fighter within 1 hex of that fighter. You can pick an enemy fighter within 2 hexes instead if that friendly fighter is Inspired. Inflict 1 damage on that enemy fighter and then heal that friendly fighter. You can only use this ability once per game."
+    }
+  ]
+}

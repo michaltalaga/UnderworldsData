@@ -1,0 +1,40 @@
+{
+  "id": "sepulchral-guard",
+  "name": "The Sepulchral Guard",
+  "version": "1.2",
+  "grandAlliance": "Death",
+  "inspire": "Immediately after giving a friendly fighter a Raise token, Inspire that fighter. After giving friendly fighters three or more Raise tokens, Inspire your leader ({icon:leader}).",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Forward!:",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Pick your leader ({icon:leader}) to use this ability if they have no Charge tokens. Pick up to 2 other friendly fighters. Those fighters immediately Move."
+    },
+    {
+      "name": "Arise!:",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Pick your leader ({icon:leader}) to use this ability if they have no Charge tokens. Pick up to 2 slain friendly fighters. Raise those fighters and place them on different empty starting hexes in your territory."
+    },
+    {
+      "name": "Grasping Hands",
+      "type": "reaction",
+      "flavorText": "Though their muscles are long rotted, the grip of the Guard is the grip of death.",
+      "rulesText": "Use this immediately after you pick a target as part of an Attack. That target is Surrounded for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Startling Reformation",
+      "type": "action",
+      "flavorText": "The Sepulchral Warden is never far behind his cursed minions…",
+      "rulesText": "Use this in your Power step. Remove your leader ({icon:leader}) from the battlefield and place them in an empty hex adjacent to 2 friendly fighters. Then, give your leader ({icon:leader}) a Charge token. You can only use this ability once per game."
+    },
+    {
+      "name": "Bone Shrapnel",
+      "type": "reaction",
+      "flavorText": "The decrepit warriors of the Sepulchral Guard shatter in a shower of sharp flinders.",
+      "rulesText": "Use this immediately after a friendly fighter with no Raise tokens is slain by a melee Attack made by an enemy fighter. Inflict 1 damage on that enemy fighter. You can only use this ability once per game."
+    }
+  ]
+}

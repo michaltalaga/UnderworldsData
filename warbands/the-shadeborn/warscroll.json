@@ -1,0 +1,40 @@
+{
+  "id": "the-shadeborn",
+  "name": "The Shadeborn",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Immediately after a friendly fighter Attacks a damaged enemy fighter, Inspire that friendly fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Shademark",
+      "type": "passive",
+      "flavorText": "The Shadeborn all bear a brand of Ulguan magic upon their souls, a sinister mark that grants them the ability to briefly become as insubstantial as mist.",
+      "rulesText": "Each time you make a Save roll for a friendly fighter in enemy territory or on a cover token, you can re-roll 1 Save dice in that Save roll."
+    },
+    {
+      "name": "Gloomweb Hex",
+      "type": "action",
+      "flavorText": "Aelven curses grant the shadows a malicious life.",
+      "rulesText": "Use this in a Power step. Enemy fighters that are adjacent to or on a feature token in the next turn have -1 Save dice. You can only use this ability once per game."
+    },
+    {
+      "name": "Dark Lamprey",
+      "type": "action",
+      "flavorText": "The hungering shadows lash out at any unwary souls.",
+      "rulesText": "Use this in a Power step. Pick an enemy fighter that is not vulnerable and within 3 hexes of a friendly fighter. Inflict 1 damage on that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Impenetrable Darkness",
+      "type": "action",
+      "flavorText": "The Shadeborn vanish into choking gloom.",
+      "rulesText": "Use this in a Power step. Give each friendly fighter a shadow token. Fighters with any shadow tokens are treated as being on a cover token. Remove all shadow tokens at the end of the battle round. You can only use this ability once per game."
+    },
+    {
+      "name": "Shadow Ambush",
+      "type": "reaction",
+      "flavorText": "Wherever darkness falls, the Shadeborn stalk.",
+      "rulesText": "Use this immediately after a friendly fighter is picked to Move if that fighter is on a cover token. Remove that fighter from the battlefield and place them in an empty edge hex in enemy territory. Then, give that fighter a Move token. You can only use this ability once per game."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "the-starblood-stalkers",
+  "name": "The Starblood Stalkers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After your opponent's Power step, if your warband holds 3 or more treasure tokens, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Skink Agility",
+      "type": "reaction",
+      "trigger": "Immediately after you make a Save roll as part of a melee Attack for a friendly Skink ({icon:minion}) with no Charge tokens in friendly territory",
+      "flavorText": "Dexterous and nimble, the skinks of the Starblood Stalkers are capable of slipping away from danger with remarkable speed.",
+      "rulesText": "you can re-roll 1 Save dice in that Save roll."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "The Diviner",
+      "type": "action",
+      "flavorText": "Kixi-Taka's cosmic powers allow him to foresee potential reward – or call down heavenly doom.",
+      "rulesText": "Pick a feature token within 3 hexes of your leader ({icon:leader}). Either flip that feature token or inflict 1 damage on an enemy fighter on or adjacent to that feature token. This ability can only be used once per battle round."
+    },
+    {
+      "name": "The Bulwark Celestial",
+      "type": "action",
+      "flavorText": "These most resolute of cosmic conjunctions infuse the Seraphon with a similarly firm endurance.",
+      "rulesText": "Use this in your Power step. Friendly fighters cannot be driven back until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game."
+    },
+    {
+      "name": "The Great Drake",
+      "type": "action",
+      "flavorText": "Ascendant constellations of almighty Dracothion grant the Starblood Stalkers' weapons a cosmic power.",
+      "rulesText": "Use this in your Power step. Friendly fighters' melee weapons have +1 Attack dice until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game."
+    },
+    {
+      "name": "The Hunter's Steed",
+      "type": "action",
+      "flavorText": "As the stars of the steed rise to dominate the heavens, predatory speed infuses the Stalkers.",
+      "rulesText": "Use this in your Power step. Friendly fighters have +1 Move until the end of the battle round or until any player uses an Asterism ({icon:hex}) ability. You can only use this ability once per game."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ephilims-pandaemonium",
+  "name": "Ephilim's Pandaemonium",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "If there are 2 or more Inspired friendly minions ({icon:minion}), Inspire your leader ({icon:leader}).",
+  "reactions": [
+    {
+      "name": "Glorious Change",
+      "type": "reaction",
+      "trigger": "Immediately after the first Action step of each battle round",
+      "flavorText": "Unpredictable and chaotic are the whims of the Change God.",
+      "rulesText": "Immediately after the first Action step of each battle round, pick a friendly minion ({icon:minion}). Inspire that fighter. Then pick a friendly minion ({icon:minion}). Give that fighter a Stagger token."
+    },
+    {
+      "name": "Power Leech",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly minion ({icon:minion}) within 2 hexes of your leader ({icon:leader}) is slain",
+      "flavorText": "Ephilim won't hesitate to draw power from a viable source.",
+      "rulesText": "Immediately after a friendly minion ({icon:minion}) within 2 hexes of your leader ({icon:leader}) is slain, you can draw 1 Power card."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Summoned Abominations",
+      "type": "action",
+      "flavorText": "With a flick of their fingers, Ephilim summons one of their unholy charges back into reality.",
+      "rulesText": "Use this immediately after your last Action step of each round if your leader ({icon:leader}) is not slain. Pick a slain friendly minion ({icon:minion}). Raise that fighter and place them in a starting hex in friendly territory. Then inflict damage on that fighter until they vulnerable."
+    },
+    {
+      "name": "Fires of Change",
+      "type": "reaction",
+      "flavorText": "The multi-hued fires of Tzeentch cause those caught by them to violently mutate.",
+      "rulesText": "Use this immediately after a friendly fighter's successful ranged Attack. Give each enemy fighter adjacent to the target 1 warping token. After your opponent's first Action step in the next battle round, remove each warping token from each enemy fighter one at a time. After a fighter's tokens are removed in this way, inflict 1 damage on that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Shared Mutations",
+      "type": "action",
+      "flavorText": "The mutability of Tzeentch's daemons is made manifest when the flesh of those nearby begins to mutate wildly.",
+      "rulesText": "Use this immediately after your Action step. Inflict 1 damage on each enemy fighter adjacent to any friendly minions ({icon:minion}). You can only use this ability once per game."
+    }
+  ]
+}

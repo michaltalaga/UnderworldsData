@@ -1,0 +1,34 @@
+{
+  "inspire": "Po tym, jak przyjazny wojownik wykonuje Delves, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Łowcy Trofeów",
+      "trigger": "Na początku twojego pierwszego Action step w pierwszej rundzie bitwy, wybierz wrogiego wojownika z cechą Zdrowia równą 3 lub więcej, który zostaje da trophy.",
+      "flavorText": null,
+      "rulesText": "Ataki wręcz wymierzone w da trophy mają +1 kość Ataku."
+    },
+    {
+      "name": "Da Przynęta",
+      "trigger": "Natychmiast po tym, jak przyjazny minion ({icon:minion}) zostaje pokonany,",
+      "flavorText": null,
+      "rulesText": "przesuń swojego lidera ({icon:leader}) o liczbę hexów równą cesze Zdrowia pokonanego miniona ({icon:minion}). To przesunięcie musi zakończyć się w sąsiedztwie wrogiego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Gittish Taktikz",
+      "flavorText": "Borgit i jego kumpanie nie widzą żadnego powodu, by wdawać się w uczciwą walkę.",
+      "rulesText": "Użyj tego natychmiast po udanym Ataku przyjaznego Ugluga lub przyjaznego Borgita. Do końca rundy bitwy, cel tego Ataku staje się da mugginz. Broń do walki wręcz przyjaznych minionów ({icon:minion}) posiada {icon:grievous} Grievous ({icon:skull}) gdy atakują da mugginz. Możesz użyć zdolności 'Gittish Taktikz' tylko raz na grę."
+    },
+    {
+      "name": "Kojąca Obecność",
+      "flavorText": "Krzepka muskulatura Ugluga dodająca im otuchy wzbudza w Beastgrabbaz grottisową pewność siebie.",
+      "rulesText": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny Uglug użył jakichkolwiek Core abilities w tym kroku. Możesz przesunąć każdego przyjaznego miniona o maksymalnie 3 hexy. Każdy wojownik przesunięty w ten sposób musi zakończyć to przesunięcie w sąsiedztwie przyjaznego Ugluga. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Daj Im W Kość",
+      "flavorText": "Beastgrabbaz nie są wielkimi wojownikami, ale doskonale wiedzą, jak napaść na wroga całą zgrają.",
+      "rulesText": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny minion ({icon:minion}) użył jakichkolwiek Core abilities w tym kroku. Do końca następnego Action step, za pierwszym razem gdy wrogi wojownik zostaje przesunięty, umieszczony lub wchodzi na dowolny hex sąsiadujący z przyjaznym minionem ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

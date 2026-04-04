@@ -1,0 +1,21 @@
+{
+  "inspire": "Po kroku Akcji, jeśli przyjazny wojownik jest bezbronny, Inspire tego wojownika.",
+  "abilities": [
+    {
+      "name": "Kwitnąca Plaga",
+      "rulesText": "Gdy przyjazny wojownik posiada runiczny znak Ogrodnika ({icon:gardener}) zamiast cechy, {icon:gardener} jest równe wartości aktualnego pola na twoim torze śledzenia."
+    },
+    {
+      "name": "Niezachwiany",
+      "rulesText": "Na Uninspired przyjaznych wojowników można zadać nie więcej niż 2 obrażenia w tej samej turze."
+    },
+    {
+      "name": "Zbierz Żniwo",
+      "rulesText": "Użyj tego natychmiast po umieszczeniu twojego żetonu na tym polu. Wybierz przyjaznego wojownika. Ulecz tego wojownika."
+    },
+    {
+      "name": "Tor Śledzenia",
+      "rulesText": "W kroku Muster Warbands podczas 'Ustawiania', umieść zwykły żeton na polu 'Start' toru śledzenia tej karty. Przesuń ten żeton o 1 pole zgodnie z ruchem wskazówek zegara natychmiast:\n\n• po twojej turze.\n\n• po zadaniu obrażeń przyjznemu wojownikowi.\n\n• po twojej turze, jeśli twoja drużyna posiada więcej żetonów skarbów niż twój przeciwnik."
+    }
+  ]
+}

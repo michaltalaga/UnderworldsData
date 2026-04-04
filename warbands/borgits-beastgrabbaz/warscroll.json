@@ -1,0 +1,43 @@
+{
+  "id": "borgits-beastgrabbaz",
+  "name": "Borgit's Beastgrabbaz",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "After a friendly fighter Delves, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Trophy Huntaz",
+      "type": "reaction",
+      "trigger": "At the start of your first Action step in the first battle round, pick an enemy fighter with a Health characteristic of 3 or more to be da trophy.",
+      "flavorText": null,
+      "rulesText": "Melee Attacks that target da trophy have +1 Attack dice."
+    },
+    {
+      "name": "Da Bait",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly minion ({icon:minion}) is slain,",
+      "flavorText": null,
+      "rulesText": "push your leader ({icon:leader}) a number of hexes equal to the Health characteristic of the slain minion ({icon:minion}). That push must end adjacent to an enemy fighter."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Gittish Taktikz",
+      "type": "reaction",
+      "flavorText": "Borgit and his mates see no reason to engage in a fair fight.",
+      "rulesText": "Use this immediately after a friendly Uglug or friendly Borgit's successful Attack. Until the end of the battle round, the target of that Attack is da mugginz. Friendly minions' ({icon:minion}) melee weapons have {icon:grievous} Grievous ({icon:skull}) when targeting da mugginz. You can only use the 'Gittish Taktikz' ability once per game."
+    },
+    {
+      "name": "Reassuring Presence",
+      "type": "reaction",
+      "flavorText": "Uglug's brawn backing them up inspires a grottish confidence in the Beastgrabbaz.",
+      "rulesText": "Use this immediately after your Action step if a friendly Uglug used any Core abilities in that step. You can push each friendly minion up to 3 hexes. Each fighter pushed in this way must end that push adjacent to a friendly Uglug. You can only use this ability once per game."
+    },
+    {
+      "name": "Stab 'Em Good",
+      "type": "reaction",
+      "flavorText": "The Beastgrabbaz aren't great warriors, but they do know how to mob a foe.",
+      "rulesText": "Use this immediately after your Action step if a friendly minion ({icon:minion}) used any Core abilities in that step. Until the end of the next Action step, the first time after an enemy fighter is pushed, placed or enters any hex adjacent to a friendly minion ({icon:minion}), inflict 1 damage on that fighter. You can only use this ability once per game."
+    }
+  ]
+}

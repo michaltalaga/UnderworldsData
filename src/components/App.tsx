@@ -1,24 +1,32 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { Language, WarbandMeta, Warscroll } from '../types/warscroll';
+import type { Language, WarbandMeta, Warscroll, WarscrollTranslation } from '../types/warscroll';
 import { t } from '../i18n/labels';
 import { LanguageToggle } from './LanguageToggle';
 import { WarbandSelector } from './WarbandSelector';
 import { WarscrollView } from './WarscrollView';
 
-// Import warband index - will be bundled
 import warbandIndex from '../../warbands/index.json';
 
-// Dynamically import warscroll JSONs
-const warscrollModules = import.meta.glob<Warscroll>('../../warbands/warscrolls/*.json', {
+const enModules = import.meta.glob<Warscroll>('../../warbands/*/warscroll.json', {
   eager: true,
   import: 'default',
 });
 
-function loadWarscrolls(): Map<string, Warscroll> {
-  const map = new Map<string, Warscroll>();
-  for (const [path, data] of Object.entries(warscrollModules)) {
-    const slug = path.split('/').pop()?.replace('.json', '') ?? '';
-    map.set(slug, data);
+const plModules = import.meta.glob<WarscrollTranslation>('../../warbands/*/warscroll.pl.json', {
+  eager: true,
+  import: 'default',
+});
+
+function extractSlug(path: string): string {
+  // path like "../../warbands/the-thricefold-discord/warscroll.json"
+  const parts = path.split('/');
+  return parts[parts.length - 2];
+}
+
+function loadMap<T>(modules: Record<string, T>): Map<string, T> {
+  const map = new Map<string, T>();
+  for (const [path, data] of Object.entries(modules)) {
+    map.set(extractSlug(path), data);
   }
   return map;
 }
@@ -26,18 +34,19 @@ function loadWarscrolls(): Map<string, Warscroll> {
 export function App() {
   const [language, setLanguage] = useState<Language>('en');
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
-  const [warscrolls] = useState(() => loadWarscrolls());
+  const [warscrolls] = useState(() => loadMap(enModules));
+  const [translations] = useState(() => loadMap(plModules));
 
   const warbands: WarbandMeta[] = warbandIndex as WarbandMeta[];
   const availableSlugs = new Set(warscrolls.keys());
 
   const selectedWarscroll = selectedSlug ? warscrolls.get(selectedSlug) ?? null : null;
+  const selectedTranslation = selectedSlug ? translations.get(selectedSlug) ?? null : null;
 
   const handlePrint = useCallback(() => {
     window.print();
   }, []);
 
-  // Keyboard shortcut: Escape to deselect
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setSelectedSlug(null);
@@ -75,7 +84,11 @@ export function App() {
       )}
 
       {selectedWarscroll && (
-        <WarscrollView warscroll={selectedWarscroll} language={language} />
+        <WarscrollView
+          warscroll={selectedWarscroll}
+          translation={language === 'pl' ? selectedTranslation : null}
+          language={language}
+        />
       )}
     </div>
   );

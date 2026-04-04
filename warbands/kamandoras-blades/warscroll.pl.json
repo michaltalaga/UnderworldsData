@@ -1,0 +1,25 @@
+{
+  "inspire": "Bezpośrednio po Power step, Inspire każdego przyjaznego wojownika sąsiadującego z wrogą godną czaszką. Bezpośrednio po tym, jak wroga godna czaszka zostanie pokonana przez przyjaznego wojownika, Inspire tego wojownika.",
+  "abilities": [
+    {
+      "name": "Godna Czaszka",
+      "flavorText": "Umysł Kamandory trawi wizje zsyłane przez Khorne'a, Pana Bitew, które prowadzą ją ku czaszkom przeznaczonym do złożenia u stóp jego tronu.",
+      "rulesText": "Na początku pierwszego Action step w każdej rundzie bitwy, jeśli na polu bitwy znajdują się jacykolwiek wrodzy wojownicy, musisz wybrać wrogiego wojownika, który będzie godną czaszką do końca rundy bitwy."
+    },
+    {
+      "name": "Masakryczna Pielgrzymka",
+      "flavorText": "Ostrza Kamandory płoną żarliwością, a zdobywanie czaszek uważają za swoje święte powołanie.",
+      "rulesText": "Bezpośrednio po tym, jak wybierzesz wrogiego wojownika jako godną czaszkę, musisz popchnąć każdego przyjaznego wojownika o 1 hex bliżej wrogiej godnej czaszki."
+    },
+    {
+      "name": "Krew dla Khorne'a!",
+      "flavorText": "Choć brakuje im potężnej postury ulubionych wojowników Khorne'a, Kamandora i jej wyznawcy są błyskawicznie szybcy i potrafią wykrwawiać swych wrogów seriami okrutnych, kaleczących ciosów.",
+      "rulesText": "Cięcie ({icon:cleave}): Jeśli Atak wykonany przy użyciu tej zdolności Broni był udany, po rozliczeniu Ataku daj celowi żeton krwawienia, a następnie daj celowi żeton zatoczenia.\n\nJeśli wrogi wojownik posiadający jakiekolwiek żetony krwawienia otrzyma drugi lub kolejny żeton zatoczenia, zadaj temu wojownikowi 1 obrażenie po rozliczeniu tej zdolności, a następnie usuń żetony krwawienia tego wojownika. W przeciwnym razie usuń wszystkie żetony krwawienia z wrogich wojowników na końcu rundy bitwy."
+    },
+    {
+      "name": "Wezwanie do Pogoni",
+      "flavorText": "Ślinący się pies Kannat słucha każdego rozkazu Kamandory.",
+      "rulesText": "Użyj tej zdolności w swoim Power step zamiast zagrywania karty Power. Wybierz przyjaznego minionka ({icon:minion}). Popchnij tego wojownika o do 4 hexów tak, aby sąsiadował z przyjaznym przywódcą ({icon:leader}). Ta zdolność może być użyta tylko raz na grę."
+    }
+  ]
+}

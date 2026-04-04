@@ -1,0 +1,42 @@
+{
+  "id": "the-wurmspat",
+  "name": "The Wurmspat",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "If 3 or more enemy fighters are slain or damaged, Inspire each friendly fighter.\n\nAfter an enemy fighter with any bile tokens is slain by a friendly fighter, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Disgustingly Resilient",
+      "type": "reaction",
+      "trigger": "Immediately before damage is inflicted on a friendly fighter by an Attack without Cleave ({icon:cleave}), if the Save roll contained any {icon:shield}",
+      "flavorText": "Nurgle's chosen are all but inured to pain.",
+      "rulesText": "Immediately before damage is inflicted on a friendly fighter by an Attack without Cleave ({icon:cleave}), if the Save roll contained any {icon:shield}, reduce the damage of that Attack by 1."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Grandfather's Gifts",
+      "type": "passive",
+      "flavorText": "One scratch, and the plagues do their great work…",
+      "rulesText": "Bile Blade {icon:fury}: If the Attack was successful, give the target a bile token after the Attack has been resolved.\n\nEnemy fighters have -1 Move while they have any bile tokens. Remove all bile tokens from enemy fighters at the end of the battle round."
+    },
+    {
+      "name": "Steady Advance",
+      "type": "action",
+      "flavorText": "No need to hurry – there will be boons for all, in due time.",
+      "rulesText": "Use this in your Power step. Pick up to 2 friendly fighters. Push each of those fighters 1 hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Nauseous Revulsion",
+      "type": "action",
+      "flavorText": "Not everyone appreciates the nature of Fecula's gifts. Ingrates…",
+      "rulesText": "Use this in your Power step. Enemy fighters' melee weapons have -1 Attack dice in the next turn. You can only use this ability once per game."
+    },
+    {
+      "name": "Blades of Putrefaction",
+      "type": "action",
+      "flavorText": "Vile slime and liquid agues drip from the edges of the Wurmspat's blades.",
+      "rulesText": "Use this in a Power step. Friendly fighters' melee weapons have Grievous ({icon:grievous}) in addition to any other Weapon abilities in the next turn. You can only use this ability once per game."
+    }
+  ]
+}

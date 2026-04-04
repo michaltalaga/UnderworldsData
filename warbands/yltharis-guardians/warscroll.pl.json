@@ -1,0 +1,29 @@
+{
+  "inspire": "Po tym, jak przyjazny wojownik użyje zdolności Core, możesz położyć 1 kartę Power ze swojej ręki lub wierzchnią kartę ze swojej talii Power zakrytą obok tego zwoju wojennego, maksymalnie 3 karty. Karty te nie są już w twojej ręce ani talii Power i nie mogą zostać odkryte.\n\nNa końcu swojej tury lub po tym, jak wrogi wojownik zostanie pokonany, możesz położyć 1 żeton wzrostu na każdej z tych kart. Po umieszczeniu piątego żetonu wzrostu na tej samej karcie wybierz przyjaznego wojownika. Inspire tego wojownika, usuń te żetony wzrostu, a następnie dodaj tę kartę do swojej ręki.",
+  "abilities": [
+    {
+      "name": "Rozkwit",
+      "trigger": "Użyj tego natychmiast po swoim kroku Akcji.",
+      "flavorText": "Gdy drzewa kwitną, Strażnicy Ylthari parą naprzód z odnowioną siłą.",
+      "rulesText": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o X heksów, gdzie X to liczba pokonanych przyjaznych wojowników. Jeśli nie ma żadnych pokonanych przyjaznych wojowników, przesuń tego wojownika o 1 heks."
+    },
+    {
+      "name": "Żniwa",
+      "trigger": "Użyj tego natychmiast po tym, jak wybierzesz broń białą w ramach Ataku.",
+      "flavorText": "Wraz z nadejściem pełni lata moc Sylvaneth rozkwita w pełni, pełna energii i dzikości.",
+      "rulesText": "Ta broń ma +X kości Ataku dla tego Ataku, gdzie X to liczba pokonanych przyjaznych wojowników. Jeśli nie ma żadnych pokonanych przyjaznych wojowników, ta broń ma +1 kość Ataku dla tego Ataku."
+    },
+    {
+      "name": "Zamieranie",
+      "trigger": "Użyj tego natychmiast po swoim kroku Akcji.",
+      "flavorText": "Gdy dni stają się krótsze, Sylvaneth są równie kapryśni jak opadające liście.",
+      "rulesText": "Wybierz przyjaznego wojownika. Usuń tego wojownika z pola bitwy, a następnie umieść go w pustym heksie sąsiadującym z przyjaznym wojownikiem."
+    },
+    {
+      "name": "Wieczny Zmrok",
+      "trigger": "Użyj tego natychmiast po tym, jak wybierzesz broń białą w ramach Ataku.",
+      "flavorText": "Niedobór życiodajnych energii napełnia Ylthari i jej obrońców goryczą duszy zimną jak szron.",
+      "rulesText": "Ta broń zadaje +X Obrażeń dla tego Ataku, gdzie X to liczba pokonanych przyjaznych wojowników."
+    }
+  ]
+}

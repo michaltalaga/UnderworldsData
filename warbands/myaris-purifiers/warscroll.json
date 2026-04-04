@@ -1,0 +1,40 @@
+{
+  "id": "myaris-purifiers",
+  "name": "Myari's Purifiers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After you make an Attack roll or Save roll for a friendly fighter, if all of the results were successes, Inspire that fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Aetherquartz Reserve",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "After a friendly fighter is deployed, give that fighter an aetherquartz token.\n\nA friendly fighter that has an aetherquartz token can use the Heightened Senses ability:\n\n{icon:fury} Heightened Senses: Use this immediately after you make an Attack roll or Save roll. Discard this fighter's aetherquartz token. Re-roll any dice in that Attack roll or Save roll."
+    },
+    {
+      "name": "Blinding Corona",
+      "type": "passive",
+      "flavorText": "A dazzling halo of pure Hyshian energy crackles around Myari, shielding him from attack.",
+      "rulesText": "If a friendly Myari has an aetherquartz token at the start of a turn, they have +1 Save until the end of that turn."
+    },
+    {
+      "name": "Enduring as Rock",
+      "type": "passive",
+      "flavorText": "During the battle for Beastgrave's soul, Bahannar was the warrior around whom the Purifiers rallied.",
+      "rulesText": "While a friendly Bahannar has an aetherquartz token, they cannot be pushed by enemy abilities."
+    },
+    {
+      "name": "Impeccable Aim",
+      "type": "passive",
+      "flavorText": "Senaela can guide a blazing sunmetal arrow to its target under the most difficult of conditions.",
+      "rulesText": "While a friendly Senaela has an aetherquartz token, their ranged weapons have Brutal ({icon:grievous}) and Ensnare ({icon:cleave})."
+    },
+    {
+      "name": "Masterful Stroke",
+      "type": "passive",
+      "flavorText": "Ailenn's blade can glide through an enemy's defences with ease.",
+      "rulesText": "While a friendly Ailenn has an aetherquartz token, when they Attack with a melee weapon, the target is Flanked."
+    }
+  ]
+}

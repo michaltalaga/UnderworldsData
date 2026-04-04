@@ -1,0 +1,36 @@
+{
+  "id": "magores-fiends",
+  "name": "Grand Alliance Chaos: Corrupters",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "Immediately after your opponent's Action step, if there are more friendly fighters than enemy fighters in neutral territory, Inspire each friendly fighter in that territory.",
+  "reactions": [
+    {
+      "name": "Roots of Chaos",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly fighter Delves a feature token",
+      "flavorText": "",
+      "rulesText": "give each enemy fighter within 2 hexes of that feature token/within 2 hexes of them a Stagger token."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Aura of Ruin",
+      "type": "action",
+      "flavorText": "Such is this entity's corrupting aura that merely being in proximity to it causes the flesh to writhe and soul to scream.",
+      "rulesText": "Use this in your Power step. Pick an enemy fighter with a Stagger token that is adjacent to a friendly fighter and not vulnerable. Inflict 1 damage on that enemy fighter. This ability can only be used once per game."
+    },
+    {
+      "name": "Purge the Weak",
+      "type": "action",
+      "flavorText": "Servants of the Dark Gods are swift to spot the enemy's most vulnerable warriors and dispose of them bloodily.",
+      "rulesText": "Pick an enemy fighter with a Stagger token. Friendly fighters' melee weapons have +1 Attack dice for Attacks that target that enemy fighter in the next turn. This ability can only be used once per game."
+    },
+    {
+      "name": "Unholy Desecration",
+      "type": "action",
+      "flavorText": "The Dark Gods shower their blessings upon those who pervert and corrupt the icons of lesser deities.",
+      "rulesText": "Pick a friendly fighter on a feature token. Enemy fighters' melee weapons have -1 Attack dice for Attacks that target that friendly fighter in the next turn. This ability can only be used once per game."
+    }
+  ]
+}

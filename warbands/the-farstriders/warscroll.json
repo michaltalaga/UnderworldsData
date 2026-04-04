@@ -1,0 +1,36 @@
+{
+  "id": "the-farstriders",
+  "name": "The Farstriders",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Immediately after a friendly fighter's second Attack in the same phase and a different weapon was picked for those Attacks, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Vanguard",
+      "type": "reaction",
+      "trigger": "Use this immediately after an Inspired vulnerable friendly fighter in enemy territory used a Core ability.",
+      "flavorText": null,
+      "rulesText": "Pick one:\n\n• Uninspire and heal that fighter. For the rest of the battle round, this fighter cannot be healed or Inspired.\n\n• Pick an enemy fighter within 3 hexes of this fighter and roll a number of Attack dice equal to the battle round. On a roll of {icon:fury} or {icon:crit}, inflict 1 damage on that fighter."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Ranger Elite",
+      "type": "action",
+      "flavorText": "To deliver the killing blow, first a hunter must find the right position…",
+      "rulesText": "Use this immediately after your Action step. Push each friendly fighter a number of hexes equal to the battle round. Those pushes must end in enemy territory. You can only use this ability once per game."
+    },
+    {
+      "name": "Forward the Vanguard!",
+      "type": "action",
+      "flavorText": "To fight in the Vanguard Chamber demands a courageous and adventurous spirit indeed.",
+      "rulesText": "Use this immediately after your Action step. Pick a friendly fighter that is not in enemy territory and not adjacent to any enemy fighters. That friendly fighter can Move. You can only use this ability once per game."
+    },
+    {
+      "name": "Behind Enemy Lines",
+      "type": "action",
+      "flavorText": "Like all Vanguard warriors, the Farstriders are well used to fighting in hostile conditions and without support.",
+      "rulesText": "Use this immediately after your Action step. Pick a damaged friendly fighter in enemy territory. Give that fighter a Guard token. You can only use this ability once per game."
+    }
+  ]
+}

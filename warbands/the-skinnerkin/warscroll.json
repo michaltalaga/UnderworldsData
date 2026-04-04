@@ -1,0 +1,52 @@
+{
+  "id": "the-skinnerkin",
+  "name": "The Skinnerkin",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "If you have 3 or more haunch tokens, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Grasping Talons",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Carnskyr Moves.",
+      "flavorText": null,
+      "rulesText": "Pick an enemy fighter in a hex that the Carnskyr moved through and roll an Attack dice. On a {icon:dodge} or {icon:fury}, inflict 1 damage on that fighter and gain a haunch token. Otherwise, you can push that fighter up to 1 hex."
+    },
+    {
+      "name": "Taste Test",
+      "type": "reaction",
+      "trigger": "Use this immediately after you resolve a Core ability for a friendly fighter.",
+      "flavorText": "To earn the nod of approval from Gristla Tenderhooke is the dream of all ghoul butchers.",
+      "rulesText": "Discard a haunch token and then Inspire a friendly fighter."
+    },
+    {
+      "name": "This One is Ruined; Fetch Me Another!",
+      "type": "reaction",
+      "trigger": "Use this immediately after making an Attack roll for a friendly fighter.",
+      "flavorText": "Madam Tenderhooke is a discerning culinary artist; she will only accept the very best for her beloved king's tables.",
+      "rulesText": "Discard a haunch token and then re-roll 1 Attack dice in that Attack roll."
+    },
+    {
+      "name": "The King Hungers!",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a melee weapon as part of an Attack.",
+      "flavorText": "Sometimes, fine filleting cuts are required from a chef. And sometimes, a less… subtle approach is needed.",
+      "rulesText": "Discard a haunch token. That weapon has Grievous ({icon:grievous}) for that Attack."
+    },
+    {
+      "name": "Quick Nibble",
+      "type": "reaction",
+      "trigger": "Use this in your opponent's Power step.",
+      "flavorText": "Well, you can hardly serve royalty something you wouldn't eat yourself, can you?",
+      "rulesText": "Discard a haunch token and pick a friendly fighter. Heal that fighter."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Prime Cuts",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Immediately after a Flanked or Surrounded enemy fighter is slain, gain a haunch token.\n\nImmediately after a friendly chef's ({icon:skull}) successful Attack, gain a haunch token.\n\nIf a friendly fighter's weapon has the {icon:cleave} runemark, you have access to the following Weapon ability:\n\nFillet {icon:cleave}: If the Attack was successful, gain a haunch token."
+    }
+  ]
+}

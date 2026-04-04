@@ -1,0 +1,47 @@
+{
+  "inspire": "Inspire każdego przyjaznego wojownika na początku drugiej rundy bitwy. Uninspire każdego przyjaznego wojownika na początku trzeciej rundy bitwy.",
+  "reactions": [
+    {
+      "name": "Przypływ",
+      "trigger": "W pierwszej rundzie bitwy, natychmiast po wręcznym Ataku wojownika wroga,",
+      "flavorText": null,
+      "rulesText": "daj atakującemu żeton Stagger."
+    },
+    {
+      "name": "Harpun Rwącego Nurtu",
+      "trigger": "Użyj tej reakcji natychmiast po wybraniu Tammaela do wykonania Szarży.",
+      "flavorText": "Nawet podrzędny Thrall taki jak Tammael jest szkolony do walki z furią wzburzonej fali.",
+      "rulesText": "Bronie wręczne tego wojownika (z wyłączeniem Ulepszeń) mają +1 kość Ataku podczas tej Szarży."
+    },
+    {
+      "name": "Żniwo Dusz",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak twój przywódca ({icon:leader}) zabił wrogie go wojownika bronią niebędącą Ulepszeniem, jeśli przyjazny Tammael jest poległy.",
+      "flavorText": "To dzięki skradzionym duszom Idoneth podtrzymują swą przeklętą cywilizację.",
+      "rulesText": "Podnieś tego przyjaznego Tammaela i umieść go na polu startowym na przyjaznym terytorium."
+    },
+    {
+      "name": "Drapieżniki Eteru",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny Idoneth ({icon:destined}) użyje zdolności podstawowej.",
+      "flavorText": "Zawsze dosięga cię ten, którego nie widzisz.",
+      "rulesText": "Przesuń każdego przyjaznego sługę ({icon:minion}) o 1 pole bliżej tego wojownika."
+    },
+    {
+      "name": "Widmowe Kształty",
+      "trigger": "Natychmiast po kroku Określenia Wyniku udanego Ataku wymierzonego w przyjazną Fuirann,",
+      "flavorText": "Nawet akheliańska szlachta, taka jak Fuirann, posługuje się iluzją i podstępem, by uniknąć brutalnego wroga.",
+      "rulesText": "ta przyjazna Fuirann może użyć Stand Fast. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Wysoka Fala",
+      "flavorText": null,
+      "rulesText": "W drugiej rundzie bitwy przyjazni wojownicy mają +1 Ruch."
+    },
+    {
+      "name": "Odpływ",
+      "flavorText": null,
+      "rulesText": "W trzeciej rundzie bitwy bronie wręczne przyjaznych wojowników (z wyłączeniem Ulepszeń) mają Grapple ({icon:fury})."
+    }
+  ]
+}

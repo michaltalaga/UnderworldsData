@@ -1,0 +1,28 @@
+{
+  "inspire": "Natychmiast po tym, jak przyjazny wojownik wykonał swój drugi Atak w tej samej fazie i do tych Ataków wybrano różną broń, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Straż Przednia",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak Inspired przyjazny wojownik będący w niebezpieczeństwie i znajdujący się na terytorium wroga użył zdolności podstawowej (Core ability).",
+      "flavorText": null,
+      "rulesText": "Wybierz jedną z opcji:\n\n• Uninspire i ulecz tego wojownika. Do końca rundy bitewnej ten wojownik nie może być leczony ani Inspired.\n\n• Wybierz wrogiego wojownika znajdującego się w odległości do 3 heksów od tego wojownika i rzuć liczbą kości Ataku równą numerowi rundy bitewnej. Wynik {icon:fury} lub {icon:crit} oznacza zadanie 1 obrażenia temu wojownikowi."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Elita Zwiadowców",
+      "flavorText": "By zadać śmiertelny cios, myśliwy musi najpierw znaleźć właściwą pozycję…",
+      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Pchnij każdego przyjaznego wojownika o liczbę heksów równą numerowi rundy bitewnej. Te pchnięcia muszą zakończyć się na terytorium wroga. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Naprzód, Straży Przednia!",
+      "flavorText": "Walka w Komnacie Straży Przedniej wymaga prawdziwie odważnego i pełnego przygód ducha.",
+      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Wybierz przyjaznego wojownika, który nie znajduje się na terytorium wroga i nie sąsiaduje z żadnym wrogim wojownikiem. Ten przyjazny wojownik może wykonać ruch (Move). Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Za Liniami Wroga",
+      "flavorText": "Podobnie jak wszyscy wojownicy Straży Przedniej, Farstriderzy doskonale radzą sobie z walką w nieprzyjaznych warunkach i bez wsparcia.",
+      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Wybierz rannego przyjaznego wojownika znajdującego się na terytorium wroga. Daj temu wojownikowi żeton Guard token. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

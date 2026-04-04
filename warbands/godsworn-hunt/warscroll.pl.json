@@ -1,0 +1,28 @@
+{
+  "inspire": "Natychmiast po fazie akcji przeciwnika, jeśli na neutralnym terytorium znajduje się więcej przyjaznych wojowników niż wrogich, Inspire każdego przyjaznego wojownika na tym terytorium.",
+  "reactions": [
+    {
+      "name": "Korzenie Chaosu",
+      "trigger": "Natychmiast po tym, jak przyjazny wojownik wykona Delve na żetonie terenu, daj każdemu wrogemu wojownikowi w odległości 2 heksów od tego żetonu terenu/w odległości 2 heksów od niego żeton Stagger.",
+      "flavorText": null,
+      "rulesText": "Natychmiast po tym, jak przyjazny wojownik wykona Delve na żetonie terenu, daj każdemu wrogemu wojownikowi w odległości 2 heksów od tego żetonu terenu/w odległości 2 heksów od niego żeton Stagger."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Aura Zagłady",
+      "flavorText": "Aura zepsucia tej istoty jest tak przemożna, że sama jej bliskość sprawia, iż ciało wije się w konwulsjach, a dusza wyrywa się w niemym krzyku.",
+      "rulesText": "Użyj tej zdolności w swojej fazie Power step. Wybierz wrogiego wojownika posiadającego żeton Stagger, który jest sąsiadujący z przyjaznym wojownikiem i nie jest podatny na atak (not vulnerable). Zadaj 1 obrażenie temu wrogemu wojownikowi. Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Wyeliminuj Słabych",
+      "flavorText": "Słudzy Mrocznych Bogów błyskawicznie dostrzegają najbardziej bezbronnych wojowników wroga i pozbywają się ich w krwawy sposób.",
+      "rulesText": "Wybierz wrogiego wojownika posiadającego żeton Stagger. Bronie do walki wręcz przyjaznych wojowników mają +1 kość Ataku dla Ataków skierowanych przeciwko temu wrogemu wojownikowi w następnej turze. Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Nieświęte Zbezczeszczenie",
+      "flavorText": "Mroczni Bogowie obsypują błogosławieństwami tych, którzy deprawują i kalają symbole pomniejszych bóstw.",
+      "rulesText": "Wybierz przyjaznego wojownika stojącego na żetonie terenu. Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku dla Ataków skierowanych przeciwko temu przyjaznemu wojownikowi w następnej turze. Tej zdolności można użyć tylko raz na grę."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "inspire": "Bezpośrednio po Power step, jeśli twoja drużyna posiada 2 lub więcej treasure tokenów na terytorium wroga, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Pionierzy",
+      "trigger": "Bezpośrednio po tym, jak przyjazny wojownik zakończy ruch w odległości 1 heksa od treasure tokenu, możesz popchnąć tego wojownika o 1 hex. Ten ruch musi zakończyć się na treasure tokenie.",
+      "flavorText": null,
+      "rulesText": "Bezpośrednio po tym, jak przyjazny wojownik zakończy ruch w odległości 1 heksa od treasure tokenu, możesz popchnąć tego wojownika o 1 hex. Ten ruch musi zakończyć się na treasure tokenie."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Nieustraszony Obrońca",
+      "flavorText": "Obrońcy cywilizacji oddadzą życie, by chronić skarby śmiertelników przed zniszczeniem i profanacją.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika trzymającego treasure token. Do końca następnej tury, charakterystyka Save tego wojownika wynosi 3 {icon:shield}. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Żarliwa Determinacja",
+      "flavorText": "Ci, którzy wierzą w ideały sprawiedliwości, nie ustąpią ani piędzi ziemi sługom zła.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Do końca następnej tury, przyjazni wojownicy nie mogą być odpychani ani popychani. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Odzyskać Utracone",
+      "flavorText": "Mantra championów Porządku jest prosta: odzyskamy to, co nam odebrano, cokolwiek by to kosztowało.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Do końca następnej tury, rzuty na atak w walce wręcz wykonywane dla tego wojownika w ramach ataków wręcz zawsze liczą się jako posiadające więcej {icon:fury} niż rzut na Save dla celów Drive Back i Overrun. Ta zdolność może być użyta tylko raz na grę."
+    }
+  ]
+}

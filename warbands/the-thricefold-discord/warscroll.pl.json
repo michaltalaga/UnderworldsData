@@ -1,0 +1,25 @@
+{
+  "inspire": "Po tym, jak rzut na Atak lub rzut na Obronę przyjaznego wojownika nie zawiera żadnych sukcesów, lub po tym, jak przyjazny wojownik zostanie pokonany, Inspire innego przyjaznego wojownika.",
+  "abilities": [
+    {
+      "name": "Nieodparta Uczta",
+      "flavorText": "No cóż, czemu nie skorzystać?",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie zadaj 1 obrażenie wrogiemu wojownikowi, który nie jest podatny. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Wzniosłe Zmysły",
+      "flavorText": "Niewiele jest w stanie zaskoczyć takich epikurejczyków.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie przyznaj przyjznemu wojownikowi Guard token. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Pawana Slaanesha",
+      "flavorText": "Tańcz taniec zagłady.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Odrzuć 1 kostkę pokusy, a następnie wybierz przyjaznego wojownika. Rzuty na Obronę tego wojownika nie mogą być modyfikowane przez Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Pokusy Slaanesha",
+      "flavorText": "Podobnie jak wszystkie demony Mrocznego Księcia, Thricefold Discord czerpią rozkosz z rozkładania śmiertelniczej moralności na części pierwsze.",
+      "rulesText": "Na początku pierwszego Action step w każdej rundzie bitwy otrzymujesz pulę 6 kostek pokusy.\n\nNa końcu rundy bitwy wszelkie kostki pokusy, które nie zostały zaoferowane, są tracone.\n\n{icon:reaction} Kusz…: Raz na turę, bezpośrednio po tym, jak przeciwnik wyrzuci nieudaną kostkę w rzucie na Atak, możesz zaoferować mu kostkę pokusy.\n\nAkceptacja: Jeśli przeciwnik przyjmie twoją ofertę, musi zastąpić 1 nieudany wynik w swoim rzucie na Atak udanym wynikiem (tylko {icon:fury} lub {icon:crit}). Kostki Ataku zastąpione w ten sposób nie mogą być przerzucane ani modyfikowane. Następnie bezpośrednio po rozstrzygnięciu tego Ataku zadaj 1 obrażenie atakującemu.\n\nOdrzucenie: Jeśli przeciwnik odrzuci twoją ofertę, bezpośrednio po rozstrzygnięciu tego ataku możesz wybrać przyjaznego wojownika, który nie był celem ataku, i pchnąć go o 1 pole."
+    }
+  ]
+}

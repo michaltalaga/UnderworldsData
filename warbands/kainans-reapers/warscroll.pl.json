@@ -1,0 +1,33 @@
+{
+  "inspire": "Gdy wrogie stronnictwo zostanie pokonane, zdobądź liczbę żetonów bone-tithe równą wartości ich cechy Bounty. Po twoim kroku Akcji możesz wybrać przyjaznego wojownika i usunąć liczbę żetonów bone-tithe równą wartości ich cechy Bounty. Następnie Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Natarcie Morteków",
+      "trigger": "Użyj tego natychmiast po swoim kroku Akcji, jeśli przyjazny Kainan lub Khenta użyli zdolności podstawowej w tym kroku Akcji.",
+      "flavorText": "Na jeden gest Ossiarchowie maszerują naprzód w idealnym szyku.",
+      "rulesText": "Każdy przyjazny minion ({icon:minion}) może się Poruszyć, lecz każdy z nich musi zakończyć ten Ruch w sąsiedztwie 1 lub więcej przyjaznych minionów ({icon:minion})."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Sroga Ultimatum",
+      "flavorText": "Żądanie, któremu nie można odmówić.",
+      "rulesText": "Użyj tego w swoim Power step. Przyjaźni wojownicy nie mogą być wybierani jako cel Ataku w następnym kroku Akcji, chyba że są twoim przywódcą ({icon:leader}). Możesz użyć tej zdolności tylko raz na grę. Tej zdolności nie można użyć, jeśli Mir Kainan został pokonany."
+    },
+    {
+      "name": "Szeregi Nienaruszone Przez Bunt",
+      "flavorText": "Każde nadiritowe ostrze Straży Morteków to jedynie jedna z facet przerażająco sprawnej machiny wojennej.",
+      "rulesText": "Użyj tego natychmiast po wybraniu broni jako części ataku wręcz. Jeśli cel jest Flanked i/lub Surrounded, ta broń posiada cechę Grievous ({icon:grievous}) dla tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Postawa Monolitu",
+      "flavorText": "Straż Morteków przyjmuje postawę obronną, znosząc ciosy wroga z lodowatą pogardą.",
+      "rulesText": "Użyj tego w swoim Power step. Wybierz liczbę przyjaznych minionów ({icon:minion}) równą lub mniejszą od numeru rundy bitewnej. Daj każdemu z tych wojowników żeton Guard. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Nieustępliwy Szturm",
+      "flavorText": "Ossiarch Bonereapers nie spoczywają, dopóki danina nie zostanie zebrana.",
+      "rulesText": "Użyj tego w swoim Power step. Wybierz przyjaznego miniona ({icon:minion}) posiadającego jakiekolwiek żetony Ruchu i/lub Szarży. Usuń żetony Ruchu i/lub Szarży tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

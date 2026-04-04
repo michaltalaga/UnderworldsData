@@ -1,0 +1,28 @@
+{
+  "inspire": "Bezpośrednio po Power step, jeśli twoja drużyna dzierży 2 lub więcej żetonów skarbów na wrogim terytorium, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Pionierzy",
+      "trigger": "Bezpośrednio po tym, jak przyjazny wojownik zakończy Ruch w odległości 1 heksa od żetonu skarbu, możesz popchnąć tego wojownika o 1 heks.",
+      "flavorText": null,
+      "rulesText": "Bezpośrednio po tym, jak przyjazny wojownik zakończy Ruch w odległości 1 heksa od żetonu skarbu, możesz popchnąć tego wojownika o 1 heks. To pchnięcie musi zakończyć się na żetonie skarbu."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Niezłomny Obrońca",
+      "flavorText": "Obrońcy cywilizacji oddadzą życie, by chronić skarby śmiertelników przed zniszczeniem i profanacją.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika dzierżącego żeton skarbu. Do końca następnej tury, cecha Save tego wojownika wynosi 3 {icon:shield}. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Żarliwa Determinacja",
+      "flavorText": "Ci, którzy wierzą w ideały sprawiedliwości, nie oddadzą ani piędzi ziemi sługom zła.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Do końca następnej tury, przyjaźni wojownicy nie mogą być odpychani ani popychani. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Odzyskać Ziemię",
+      "flavorText": "Mantra obrońców Porządku jest prosta: odzyskamy to, co nam zabrano, cokolwiek by to kosztowało.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Do końca następnej tury, rzuty na atak wręcz wykonywane dla tego wojownika w ramach ataków wręcz zawsze uznaje się za posiadające więcej {icon:fury} niż rzut na Save dla celów Drive Back i Overrun. Ta zdolność może być użyta tylko raz na grę."
+    }
+  ]
+}

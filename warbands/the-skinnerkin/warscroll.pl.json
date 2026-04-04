@@ -1,0 +1,42 @@
+{
+  "inspire": "Jeśli posiadasz 3 lub więcej żetonów udźca, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Chwytające Szpony",
+      "trigger": "Użyj tego natychmiast po tym, jak przyjazny Carnskyr wykona ruch (Moves).",
+      "flavorText": null,
+      "rulesText": "Wybierz wrogiego wojownika znajdującego się na polu, przez które przeszedł Carnskyr, i rzuć kością Ataku. Na {icon:dodge} lub {icon:fury} zadaj temu wojownikowi 1 obrażenie i zdobądź żeton udźca. W przeciwnym razie możesz odepchnąć tego wojownika o maksymalnie 1 pole."
+    },
+    {
+      "name": "Próba Smaku",
+      "trigger": "Użyj tego natychmiast po rozpatrzeniu zdolności bazowej (Core ability) dla przyjaznego wojownika.",
+      "flavorText": "Zdobyć skinienie aprobaty od Gristli Tenderhooke to marzenie każdego ghulowego rzeźnika.",
+      "rulesText": "Odrzuć żeton udźca, a następnie Inspire przyjaznego wojownika."
+    },
+    {
+      "name": "Ten Jest Zepsuty; Przynieś Mi Inny!",
+      "trigger": "Użyj tego natychmiast po wykonaniu rzutu Ataku dla przyjaznego wojownika.",
+      "flavorText": "Madame Tenderhooke jest wymagającą artystką kulinarną; zaakceptuje jedynie to, co najlepsze, na stoły swego umiłowanego króla.",
+      "rulesText": "Odrzuć żeton udźca, a następnie przerzuć 1 kość Ataku z tego rzutu Ataku."
+    },
+    {
+      "name": "Król Jest Głodny!",
+      "trigger": "Użyj tego natychmiast po wybraniu broni do walki wręcz w ramach Ataku.",
+      "flavorText": "Niekiedy od szefa kuchni wymaga się precyzyjnych cięć filetujących. A niekiedy potrzebne jest podejście mniej… subtelne.",
+      "rulesText": "Odrzuć żeton udźca. Ta broń posiada cechę Grievous ({icon:grievous}) dla tego Ataku."
+    },
+    {
+      "name": "Szybki Kęs",
+      "trigger": "Użyj tego podczas Power step przeciwnika.",
+      "flavorText": "Cóż, trudno przecież podawać rodzinie królewskiej coś, czego samemu by się nie zjadło, prawda?",
+      "rulesText": "Odrzuć żeton udźca i wybierz przyjaznego wojownika. Ulecz tego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Najlepsze Kawałki",
+      "flavorText": null,
+      "rulesText": "Natychmiast po tym, jak wrogi wojownik z cechą Flanked lub Surrounded zostanie zabity, zdobądź żeton udźca.\n\nNatychmiast po udanym Ataku przyjaznego szefa kuchni ({icon:skull}), zdobądź żeton udźca.\n\nJeśli broń przyjaznego wojownika posiada runiczną cechę {icon:cleave}, masz dostęp do następującej zdolności broni:\n\nFiletowanie {icon:cleave}: Jeśli Atak był udany, zdobądź żeton udźca."
+    }
+  ]
+}

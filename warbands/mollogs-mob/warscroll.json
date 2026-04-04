@@ -1,0 +1,40 @@
+{
+  "id": "mollogs-mob",
+  "name": "Mollog's Mob",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "After your leader ({icon:leader}) is given a damage token, if they have 4 or more damage tokens, Inspire each friendly fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Lurker",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "When you deploy a friendly Stalagsquig, you can place it in an empty hex that does not contain a feature token and that is not a starting hex in enemy territory.\n\nA friendly Stalagsquig cannot Move, be pushed or be removed from the battlefield unless it is slain. It is always treated as having a Charge token."
+    },
+    {
+      "name": "Troggoth Regeneration",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Use this at the end of each battle round after following the end phase sequence. Heal your leader ({icon:leader})."
+    },
+    {
+      "name": "Unnatural Hazards",
+      "type": "passive",
+      "flavorText": "Wherever Mollog roams, the creepy-crawly nature of the deep-earth dankholds seems to come with him.",
+      "rulesText": "At the start of the first Action step in each battle round, pick 1 of the following effects. Each effect can only be picked once per game.\n\n• Until the end of the battle round, enemy fighters adjacent to a friendly minion ({icon:minion}) are Surrounded.\n\n• Until the end of the battle round, each time an enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), give that enemy fighter a Stagger token.\n\n• Until the end of the battle round, the first time each enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), roll an Attack dice. On a {icon:fury} or {icon:crit}, inflict 1 damage on that fighter."
+    },
+    {
+      "name": "Tag Along",
+      "type": "reaction",
+      "flavorText": "Mollog doesn't exactly command his peculiar menagerie of troglodytes, but they can be trusted to follow him anyway.",
+      "rulesText": "Use this immediately after your leader ({icon:leader}) Moves. Pick another friendly fighter. Push that fighter up to 2 hexes. That push must end either adjacent to your leader ({icon:leader}) or adjacent to an enemy fighter that is adjacent to your leader ({icon:leader})."
+    },
+    {
+      "name": "Infestation",
+      "type": "action",
+      "flavorText": "Even if one of Mollog's critters is killed, another pops up to take its place.",
+      "rulesText": "Use this in your Power step. Pick a slain friendly minion ({icon:minion}). Raise that fighter, place them in an empty starting hex and then give them a Charge token. You can only use this ability once per game."
+    }
+  ]
+}

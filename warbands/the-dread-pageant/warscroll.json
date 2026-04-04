@@ -1,0 +1,42 @@
+{
+  "id": "the-dread-pageant",
+  "name": "The Dread Pageant",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "After an Action step, if all friendly fighters are damaged, or if there are more damaged fighters than there are undamaged fighters, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Gross Hubris",
+      "type": "reaction",
+      "trigger": "Use this immediately after making an Attack roll for a damaged friendly fighter if that roll contains no successes.",
+      "flavorText": "Failure is as inconceivable to the Dread Pageant as it is completely unpalatable.",
+      "rulesText": "You can re-roll any Attack dice in that roll. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Speed of Slaanesh",
+      "type": "passive",
+      "flavorText": "The grace of the Dark Prince infuses his warriors, granting them a scintillating swiftness of body and mind.",
+      "rulesText": "Inspired damaged friendly fighters have +1 Move while using Charge abilities."
+    },
+    {
+      "name": "Cruel Pangs",
+      "type": "action",
+      "flavorText": "Enemies and allies of Slaanesh soon learn the folly of their avarice.",
+      "rulesText": "Use this in a Power step. Pick a fighter holding a treasure token. Inflict 1 damage on that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Swift as Desire",
+      "type": "action",
+      "flavorText": "The Hedonites of Slaanesh are feared throughout the realms for their breathtaking speed and agility.",
+      "rulesText": "Use this in a Power step. Push each damaged friendly fighter 1 hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Drown in Pain",
+      "type": "action",
+      "flavorText": "To worshippers of the Lord of Excess, pain is just one more thing to experience in the cornucopia of existence.",
+      "rulesText": "Use this in a Power step. Give each damaged friendly fighter a Guard token. You can only use this ability once per game."
+    }
+  ]
+}

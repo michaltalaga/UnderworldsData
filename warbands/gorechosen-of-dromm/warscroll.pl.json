@@ -1,0 +1,34 @@
+{
+  "inspire": "Po kroku Akcji, jeśli posiadasz 8 lub więcej żetonów krwawej daniny, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Krwawa Danina",
+      "trigger": "Natychmiast po zadaniu obrażeń wojownikowi",
+      "flavorText": "Khorne nie dba o to, skąd płynie krew — liczy się jedynie to, że płynie.",
+      "rulesText": "zyskaj 1 żeton krwawej daniny."
+    },
+    {
+      "name": "Brutalne Porachunki",
+      "trigger": "Natychmiast po tym, jak wróg wojownik zostaje poległy",
+      "flavorText": "Dromm żąda całkowitego i ostatecznego unicestwienia wroga.",
+      "rulesText": "zyskaj liczbę żetonów krwawej daniny równą charakterystyce Bounty tego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Zew Krwi",
+      "flavorText": "W miarę jak gorączka bitwy narasta, wojownicy rzucają się ku sobie, ogarnięci nieodpartą żądzą krwi i przemocy.",
+      "rulesText": "Użyj tego w kroku Power step. Wybierz 2 wojowników bez żetonów ruchu ani szarży. Przesuń każdego wojownika o 1 pole tak, aby byli sąsiadujący. Przed każdym przesunięciem możesz odrzucić 1 ze swoich żetonów krwawej daniny. Jeśli to zrobisz, możesz zamiast tego przesunąć tego wojownika o 2 pola. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Wzbudzenie Wściekłości",
+      "flavorText": "Gdy Khorne raz zapanuje nad miejscem, niewielu ma dość siły, by oprzeć się jego wezwaniu do rzezi.",
+      "rulesText": "Użyj tego w kroku Power step. Odrzuć 8 żetonów krwawej daniny, a następnie wybierz wrogiego wojownika. Twój przeciwnik wykonuje Szarżę tym wojownikiem. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Ostateczne Szaleństwo",
+      "flavorText": "Wojownicy Khorne'a potrafią zlekceważyć nawet najcięższe rany w amoku krwawej rzezi.",
+      "rulesText": "Użyj tego natychmiast po zadaniu obrażeń przyjaznemu wojownikowi, jeśli ten wojownik miałby zostać poległy. Odrzuć dowolną liczbę swoich żetonów krwawej daniny. Rzuć kością ataku za każdy odrzucony w ten sposób żeton. Za każdy wynik {icon:crit} usuń żetony obrażeń z tego wojownika, aż stanie się vulnerable. Ten wojownik zostaje poległy na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

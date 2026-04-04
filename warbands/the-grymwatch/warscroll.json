@@ -1,0 +1,34 @@
+{
+  "id": "the-grymwatch",
+  "name": "The Grymwatch",
+  "version": "1.1",
+  "grandAlliance": "Death",
+  "inspire": "After the last Action step in a battle round, pick up to X friendly fighters, where X is the combined Bounty characteristics of slain enemy fighters and enemy fighters in enemy and neutral territory. Inspire those friendly fighters.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "In the Name of the King!",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Once per battle round, in your Power step, if your leader ({icon:leader}) is on the battlefield, you can use 1 of the following abilities:\n• Pick a friendly fighter. Inspire that fighter.\n• Pick a slain friendly fighter. Raise them and place them in an empty edge hex.\nIf you are the underdog ({icon:skull}), you can use both abilities instead."
+    },
+    {
+      "name": "Defenders of the Realm",
+      "type": "passive",
+      "flavorText": "It is the duty of every righteous warrior to serve as protector of the peasantry, and a shield against evil. No foe shall break the cordon!",
+      "rulesText": "Each time you make a Save roll for a friendly fighter in friendly territory, you can re-roll 1 dice in that roll."
+    },
+    {
+      "name": "The Royal Hunt",
+      "type": "passive",
+      "flavorText": "Hark! The horns are sounded, and proclamations made – the kingdom must be scoured of beasts and ne'er-do-wells. None can escape royal justice!",
+      "rulesText": "Friendly fighters' melee weapons have +1 Attack dice if the target of the Attack is damaged."
+    },
+    {
+      "name": "To the Walls!",
+      "type": "passive",
+      "flavorText": "It is in the moments of direst peril, when all that is chivalrous and pure stands threatens, that true heroes are made. And the victory feast will surely be spectacular...",
+      "rulesText": "You can use the 'In the Name of the King!' ability twice this battle round instead of once."
+    }
+  ]
+}

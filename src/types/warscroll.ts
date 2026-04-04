@@ -1,9 +1,5 @@
 export type Language = 'en' | 'pl';
 
-export type TranslatedText = {
-  [key in Language]?: string;
-};
-
 export interface WarbandMeta {
   slug: string;
   name: string;
@@ -13,19 +9,32 @@ export interface WarbandMeta {
 }
 
 export interface Ability {
-  name: TranslatedText;
+  name: string;
   type?: 'passive' | 'action' | 'reaction';
-  trigger?: TranslatedText;
-  flavorText?: TranslatedText;
-  rulesText: TranslatedText;
+  trigger?: string;
+  flavorText?: string | null;
+  rulesText: string;
 }
 
 export interface Warscroll {
   id: string;
   name: string;
-  version?: string;
+  version?: string | null;
   grandAlliance: string;
-  inspire: TranslatedText;
+  inspire: string;
   reactions: Ability[];
   abilities: Ability[];
+}
+
+export interface AbilityTranslation {
+  name?: string;
+  trigger?: string;
+  flavorText?: string;
+  rulesText?: string;
+}
+
+export interface WarscrollTranslation {
+  inspire?: string;
+  reactions?: AbilityTranslation[];
+  abilities?: AbilityTranslation[];
 }

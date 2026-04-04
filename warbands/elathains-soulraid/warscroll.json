@@ -1,0 +1,58 @@
+{
+  "id": "elathains-soulraid",
+  "name": "Elathain's Soulraid",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Inspire each friendly fighter at the start of the second battle round. Uninspire each friendly fighter at the start of the third battle round.",
+  "reactions": [
+    {
+      "name": "Flood Tide",
+      "type": "reaction",
+      "trigger": "In the first battle round, immediately after an enemy fighter's melee Attack,",
+      "flavorText": null,
+      "rulesText": "give the attacker a Stagger token."
+    },
+    {
+      "name": "Riptide Harpoon",
+      "type": "reaction",
+      "trigger": "Use this immediately after picking Tammael to Charge.",
+      "flavorText": "Even a lowly Thrall such as Tammael is trained to fight with the fury of a surging wave.",
+      "rulesText": "That fighter's melee weapons (excluding Upgrades) have +1 Attack dice for that Charge."
+    },
+    {
+      "name": "Soul Harvest",
+      "type": "reaction",
+      "trigger": "Use this immediately after an enemy fighter is slain by your leader ({icon:leader}) with a non-Upgrade weapon if a friendly Tammael is slain.",
+      "flavorText": "It is through stolen souls that the Idoneth sustain their cursed civilisation.",
+      "rulesText": "Raise that friendly Tammael and place them in a starting hex in friendly territory."
+    },
+    {
+      "name": "Ethersea Predators",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Idoneth ({icon:destined}) uses a Core ability.",
+      "flavorText": "It's always the one you don't see that gets you.",
+      "rulesText": "Push each friendly minion ({icon:minion}) 1 hex closer to that fighter."
+    },
+    {
+      "name": "Phantasmal Forms",
+      "type": "reaction",
+      "trigger": "Immediately after the Determine Success step of a successful Attack that targets a friendly Fuirann,",
+      "flavorText": "Even Akhelian nobles such as Fuirann will use illusion and trickery to avoid the brute enemy.",
+      "rulesText": "that friendly Fuirann can use Stand Fast. You can only use this ability once per battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "High Tide",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "In the second battle round, friendly fighters have +1 Move."
+    },
+    {
+      "name": "Ebb Tide",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "In the third battle round, friendly fighters' melee weapons (excluding Upgrades) have Grapple ({icon:fury})."
+    }
+  ]
+}

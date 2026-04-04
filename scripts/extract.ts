@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 interface WarbandMeta {
@@ -11,37 +11,34 @@ interface WarbandMeta {
 }
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
-const WARSCROLLS_DIR = join(WARBANDS_DIR, 'warscrolls');
-const IMAGES_DIR = join(import.meta.dirname, '..', 'images', 'warscrolls');
 const BASE_URL = 'https://www.underworldsdb.com/cards/fighters';
 
 const EXTRACTION_PROMPT = `You are extracting structured data from a Warhammer Underworlds warscroll card image.
 
-Extract ALL text from this warscroll card and return it as valid JSON matching this exact schema:
+Extract ALL text from this warscroll card and return it as valid JSON matching this exact schema.
+All text fields are plain English strings (no translation wrappers):
 
 {
   "id": "<warband-slug>",
   "name": "<Warband Name as shown on card>",
   "version": "<version number if shown, e.g. '1.2', or null>",
   "grandAlliance": "<Grand Alliance>",
-  "inspire": {
-    "en": "<Full inspire condition text. Use {icon:name} for any game icons you see, e.g. {icon:leader}, {icon:minion}, {icon:destined}, {icon:skull}>"
-  },
+  "inspire": "<Full inspire condition text>",
   "reactions": [
     {
-      "name": { "en": "<reaction name>" },
+      "name": "<reaction name>",
       "type": "reaction",
-      "trigger": { "en": "<trigger text if separate from effect>" },
-      "flavorText": { "en": "<italic flavor text if any>" },
-      "rulesText": { "en": "<rules text>" }
+      "trigger": "<trigger text if separate from effect>",
+      "flavorText": "<italic flavor text if any>",
+      "rulesText": "<rules text>"
     }
   ],
   "abilities": [
     {
-      "name": { "en": "<ability name>" },
+      "name": "<ability name>",
       "type": "<passive|action|reaction>",
-      "flavorText": { "en": "<italic flavor text>" },
-      "rulesText": { "en": "<full rules text>" }
+      "flavorText": "<italic flavor text>",
+      "rulesText": "<full rules text>"
     }
   ]
 }
@@ -114,19 +111,14 @@ async function main() {
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
   );
 
-  mkdirSync(WARSCROLLS_DIR, { recursive: true });
-  mkdirSync(IMAGES_DIR, { recursive: true });
-
   // Find what's already extracted
-  const existing = new Set(
-    readdirSync(WARSCROLLS_DIR)
-      .filter((f) => f.endsWith('.json'))
-      .map((f) => f.replace('.json', '')),
-  );
+  const pending = index.filter((wb) => {
+    const wbDir = join(WARBANDS_DIR, wb.slug);
+    return !existsSync(join(wbDir, 'warscroll.json'));
+  });
 
-  const pending = index.filter((wb) => !existing.has(wb.slug));
-
-  console.log(`Total: ${index.length} | Extracted: ${existing.size} | Remaining: ${pending.length}`);
+  const extracted = index.length - pending.length;
+  console.log(`Total: ${index.length} | Extracted: ${extracted} | Remaining: ${pending.length}`);
 
   if (pending.length === 0) {
     console.log('All warscrolls have been extracted!');
@@ -142,8 +134,11 @@ async function main() {
   for (const meta of batch) {
     process.stdout.write(`  ${meta.name} ... `);
 
-    // Get image: from local cache or download
-    const localImage = join(IMAGES_DIR, `${meta.slug}.png`);
+    const wbDir = join(WARBANDS_DIR, meta.slug);
+    mkdirSync(wbDir, { recursive: true });
+
+    // Get image: from warband folder or download
+    const localImage = join(wbDir, 'warscroll.png');
     let imageData: Buffer | null = null;
 
     if (existsSync(localImage)) {
@@ -167,16 +162,14 @@ async function main() {
     try {
       const raw = await extractWarscroll(client, imageData, meta);
 
-      // Parse JSON - strip markdown fences if present
       const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
       const data = JSON.parse(jsonStr);
 
-      // Ensure id and grandAlliance are set correctly
       data.id = meta.slug;
       data.grandAlliance = meta.grandAlliance;
 
       writeFileSync(
-        join(WARSCROLLS_DIR, `${meta.slug}.json`),
+        join(wbDir, 'warscroll.json'),
         JSON.stringify(data, null, 2),
       );
 

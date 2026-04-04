@@ -1,0 +1,30 @@
+{
+  "inspire": "Natychmiast po wykonaniu rzutu na Atak lub rzutu na Obronę za przyjaznego wojownika, jeśli ten rzut zawierał jakikolwiek {icon:crit}, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Karzący Cios",
+      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjaznego Brodusa.",
+      "flavorText": "Wielki maczuga Brodusa ładuje się niebiańską energią.",
+      "rulesText": "Ta broń otrzymuje +X kości Ataku, gdzie X jest równe numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Eterycznie Naładowana Tarcza",
+      "trigger": "Użyj tego natychmiast po tym, jak przeciwnik wybierze broń w ramach Ataku wymierzonego w przyjazną tarczę eteryczną ({icon:shield}).",
+      "flavorText": "Dzięki potężnej niebiańskiej magii tarcze Sekwitorów rozżarzają się błękitną mocą.",
+      "rulesText": "Zdolności broni nie mogą być używane podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Eterycznie Naładowany Młot",
+      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjazną tarczę eteryczną ({icon:shield}).",
+      "flavorText": "Broń trzeszcząca od mocy, Sekwitorzy unicestwiają wroga, obracając go w dymiące gruzy.",
+      "rulesText": "Ta broń otrzymuje +1 do Zasięgu podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Bastion przeciw Ciemności",
+      "flavorText": "Potępiający stoją nieugięcie wobec okropności krain.",
+      "rulesText": "Przyjaznych wojowników bez żetonów Ruchu i/lub Szarży nie można odpychać."
+    }
+  ]
+}

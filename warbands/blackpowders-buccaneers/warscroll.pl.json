@@ -1,0 +1,25 @@
+{
+  "inspire": "Po usunięciu trzeciego lub kolejnego żetonu łupu, Inspire każdego przyjaznego wojownika.",
+  "abilities": [
+    {
+      "name": "Łup i Grabież",
+      "flavorText": "Własność niewiele znaczy dla tych złodziejskich piratów.",
+      "rulesText": "Rozpoczynasz grę z 1 żetonem łupu.\n\nJeśli broń przyjaznego wojownika posiada runiczną pieczęć {icon:skull}, masz dostęp do następującej zdolności Broni:\n\nSwashbuckle {icon:skull}:\nJeśli Atak zakończył się sukcesem, zdobądź 1 żeton łupu. Jeśli jesteś underdogiem ({icon:destined}) lub cel był wyposażony w jakiekolwiek Ulepszenia, zdobądź zamiast tego 2 żetony łupu."
+    },
+    {
+      "name": "Odłamki z Łupu",
+      "flavorText": "Skradzione złoto, srebrne łyżki, zardzewiałe gwoździe — wszystko to wylatuje z grunderbusa Gorloka w rozrywającym ciało wybuchu odłamków.",
+      "rulesText": "Możesz użyć 1 z następujących zdolności bezpośrednio po wybraniu broni dystansowej w ramach Ataku twojego lidera ({icon:leader}). Wybierając zdolność, możesz usunąć do 2 swoich żetonów łupu. Każdą zdolność możesz użyć tylko raz na grę.\n\nPo tym Ataku możesz wybrać do 2 innych wrogich wojowników w odległości 2 heksów od celu. Następnie rzuć liczbą kości Ataku równą liczbie usuniętych żetonów łupu. Jeśli rzut zawierał jakiekolwiek {icon:fury} lub {icon:crit}, zadaj 1 obrażenie każdemu z tych wojowników i daj celowi oraz każdemu z tych wojowników żeton Stagger."
+    },
+    {
+      "name": "Wybuch z Łupu",
+      "flavorText": "Ściskając garść łupu w pięści, Blackpowder tworzy pomięte, lecz skuteczne kule armatnie do swojego grunderbusa.",
+      "rulesText": "Ta broń ma +1 Obrażeń i Cleave ({icon:cleave}) podczas tego Ataku. Jeśli cel zostanie odrzucony, daj celowi żeton Stagger. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
+    },
+    {
+      "name": "Moździerz z Łupu",
+      "flavorText": "Celując grunderbusem wysoko w górę, Gorlok sprawia, że żadne miejsce nie jest bezpieczne przed deszczem rozżarzonego łupu.",
+      "rulesText": "Ta broń ma +1 Obrażeń i +X Zasięgu podczas tego Ataku, gdzie X to liczba usuniętych żetonów łupu. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
+    }
+  ]
+}

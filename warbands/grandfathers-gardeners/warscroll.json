@@ -1,0 +1,34 @@
+{
+  "id": "grandfathers-gardeners",
+  "name": "Grandfather's Gardeners",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "After an Action step, if a friendly fighter is vulnerable, Inspire that fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Blooming Plague",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Where a friendly fighter has the Gardener ({icon:gardener}) runemark instead of a characteristic, {icon:gardener} is equal to the current space on your tracker."
+    },
+    {
+      "name": "Imperturbable",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "No more than 2 damage can be inflicted on Uninspired friendly fighters in the same turn."
+    },
+    {
+      "name": "Reap a Harvest",
+      "type": "reaction",
+      "flavorText": null,
+      "rulesText": "Use this immediately after placing your token on this space. Pick a friendly fighter. Heal that fighter."
+    },
+    {
+      "name": "Tracker",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "In the Muster Warbands step of 'Setting Up', place a generic token on the 'Start' space of this warscroll's tracker. Advance that token 1 space clockwise immediately:\n\n• after your turn.\n\n• after damage is inflicted on a friendly fighter.\n\n• after your turn if your warband holds more treasure tokens than your opponent."
+    }
+  ]
+}

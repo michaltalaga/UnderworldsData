@@ -1,0 +1,36 @@
+{
+  "id": "the-emberwatch",
+  "name": "The Emberwatch",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After an Action step, if a friendly fighter began that Action step in enemy territory and used a Core ability, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Alone I Stand!",
+      "type": "reaction",
+      "trigger": "You can use this in the last Power step of a battle round.",
+      "flavorText": "The Emberwatch have been in the mines of Embergard so long that the emberstone causes their tempers to fray easily, and so they value a little distance now and then.",
+      "rulesText": "Pick a friendly fighter that is in a different territory to each other friendly fighter. Push that fighter 1 hex. That push cannot end adjacent to another friendly fighter. You can only use this ability once per battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Vanguard Dash",
+      "type": "action",
+      "flavorText": "The Emberwatch effortlessly reposition themselves in battle.",
+      "rulesText": "Use this immediately after your Action step. Pick a friendly fighter. Remove that fighter from the battlefield, and then place that fighter in an empty edge hex. This ability can only be used once per game."
+    },
+    {
+      "name": "Deadly Sentries",
+      "type": "reaction",
+      "flavorText": "Tasked to keep the mines of Embergard free of trespassers, the Emberwatch employ ranged weaponry to ensure transgressors are brought to swift justice.",
+      "rulesText": "Use this immediately after you pick a weapon as part of an Attack. That weapon has +1 Range for that Attack. This ability can only be used once per game."
+    },
+    {
+      "name": "The Raptors of Sigmar",
+      "type": "reaction",
+      "flavorText": "Few indeed escape the wrath of these noble warriors, and those that do are lucky beyond measure.",
+      "rulesText": "Use this immediately after a friendly fighter's successful Attack if the target is vulnerable. Inflict 1 damage on the target. This ability can only be used once per game."
+    }
+  ]
+}

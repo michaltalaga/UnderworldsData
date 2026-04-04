@@ -1,0 +1,39 @@
+{
+  "inspire": "Raz na turę, w swoim Power step, zamiast zagrywać kartę Power, możesz wybrać przyjaznego wojownika i usunąć liczbę swoich cadaver tokenów równą ich charakterystyce Bounty. Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Makabryczni Słudzy",
+      "trigger": "Natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel jest sąsiaduje z jakimkolwiek przyjaznym Retainer {icon:minion}",
+      "flavorText": null,
+      "rulesText": "zyskaj 1 cadaver token."
+    },
+    {
+      "name": "Ulotne Miraże",
+      "trigger": "Natychmiast po udanym Ataku wrogiego wojownika wymierzonym w przyjaznego Mortis Reaper {icon:destined}, jeśli rzut na Save zawierał jakiekolwiek sukcesy",
+      "flavorText": null,
+      "rulesText": "ten przyjazny wojownik może użyć Stand Fast."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Konstrukty Związane Duszą",
+      "flavorText": null,
+      "rulesText": "Charakterystyki broni twojego lidera {icon:leader} nie mogą być modyfikowane. Gdy wybierasz cel w ramach Ataku twojego lidera {icon:leader} z użyciem broni do walki wręcz niebędącej Ulepszeniem, możesz mierzyć zasięg tej broni od przyjaznego Retainer {icon:minion} zamiast od swojego lidera {icon:leader}."
+    },
+    {
+      "name": "Niedobrowolni Ofiarodawcy",
+      "flavorText": "Żywi złożą swe kości w ofierze wielkiemu imperium Ossiarchów — czy tego chcą, czy nie.",
+      "rulesText": "Użyj tego na początku kroku Action przeciwnika, jeśli twój lider {icon:leader} jest na polu bitwy. Wybierz wrogiego wojownika, który będzie posiadaczem do końca twojej następnej tury. Natychmiast po tym, jak posiadacz otrzyma obrażenia w wyniku Ataku przyjaznego wojownika, możesz przesunąć każdego przyjaznego Retainer {icon:minion} o 1 hex bliżej posiadacza."
+    },
+    {
+      "name": "Wieczna Służba",
+      "flavorText": "Nawet zniszczenie ich fizycznej postaci nie zwalnia Bonereapera z wiecznej służby Nagashowi.",
+      "rulesText": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Wybierz poległego przyjaznego Mortis Reaper {icon:destined}, a następnie rzuć kostką Ataku za każdy usunięty cadaver token. Jeśli rzut zawiera jakikolwiek {icon:fury} lub {icon:crit}, Raise tego wojownika i umieść go na startowym polu w przyjaznym terytorium. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+    },
+    {
+      "name": "Nekromantyczny Impuls",
+      "flavorText": "Thanatek kanalizuje śmiertelną energię w druzgocącą falę, odpychając wrogów.",
+      "rulesText": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Dla każdego wrogiego wojownika sąsiadującego z jakimkolwiek przyjaznym Retainer {icon:minion}, rzuć liczbą kostek Ataku równą liczbie usuniętych cadaver tokenów. Jeśli rzut zawiera jakikolwiek {icon:skull} lub {icon:crit}, zadaj 1 obrażenie temu wrogiemu wojownikowi. W przeciwnym razie usuń Guard tokeny tego wrogiego wojownika i daj mu Stagger token. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

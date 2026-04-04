@@ -1,0 +1,32 @@
+{
+  "inspire": "Po udanym Ataku zaprzyjaźnionego wojownika, Inspire atakującego oraz każdego zaprzyjaźnionego wojownika, który był przyległy do celu w momencie wykonywania rzutu na Atak.",
+  "reactions": [
+    {
+      "name": "Śmiertelny Rozkaz",
+      "flavorText": "Przeklęta korona, którą nosi król Velmorn, daje mu wielką władzę nad jego rodzonymi synami.",
+      "rulesText": "Użyj tej reakcji bezpośrednio po tym, jak twój przywódca ({icon:leader}) użyje podstawowej zdolności (Core ability). Daj temu wojownikowi żeton rozkazu (command token).\n\nDopóki twój przywódca ({icon:leader}) posiada jakiekolwiek żetony rozkazu, za każdym razem gdy wykonujesz rzut na Atak dla zaprzyjaźnionego Grave Guard ({icon:minion}), twój przywódca ({icon:leader}) jest traktowany jako przyległy do celu."
+    },
+    {
+      "name": "Podnieść Tarcze!",
+      "flavorText": "Lud Velmorна słynął z musztry i siły swych ścian tarczowych. Niewiele się zmieniło.",
+      "rulesText": "Użyj tej reakcji bezpośrednio po Ataku wrogiego wojownika, jeśli celem był zaprzyjaźniony bulwark ({icon:shield}), a rzut na Obronę zawierał co najmniej jeden {icon:crit}. Daj temu zaprzyjaźnionemu wojownikowi Guard token."
+    },
+    {
+      "name": "Klątwa Velmorна",
+      "flavorText": "Biada tym, którzy targną się na Dom Velmorна, gdyż straszliwa klątwa przylgnęła do ich starożytnych kości…",
+      "rulesText": "Użyj tej reakcji bezpośrednio po tym, jak zaprzyjaźniony wojownik zostanie zabity przez atakującego przylegającego do niego. Zadaj 1 obrażenie atakującemu. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Powstań Na Nowo",
+      "flavorText": "Spadkobiercy Velmorна muszą walczyć wiecznie w jego imię.",
+      "rulesText": "Możesz użyć tej zdolności w swoim Power step, jeśli twój przywódca ({icon:leader}) jest na polu bitwy i nie posiada żetonów szarży (Charge tokens). Usuń 1 żeton rozkazu od przywódcy, następnie wybierz poległego zaprzyjaźnionego Grave Guard ({icon:minion}). Podnieś tego wojownika i umieść go na polu startowym na zaprzyjaźnionym terytorium. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Zaskakująca Zwrotność",
+      "flavorText": "Choć ich ciała to jedynie próchno i kości, moc Korony Tyrana – i ich własna, revenantowa żałoba – pozwala rodowi Velmorна od czasu do czasu poruszać się z zaskakującą prędkością.",
+      "rulesText": "Użyj tej zdolności w Power step. Zaprzyjaźnieni wojownicy mają +2 do Ruchu w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

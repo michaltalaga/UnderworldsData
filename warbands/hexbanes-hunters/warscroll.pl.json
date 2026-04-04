@@ -1,0 +1,34 @@
+{
+  "inspire": "Natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie pokonany, możesz wybrać sojuszniczego Agenta Azyryjskiego ({icon:leader}). Zainspiruj tego wojownika. Po tym, jak sojuszniczy Pock lub minion ({icon:minion}) zostanie pokonany, Zainspiruj każdego sojuszniczego miniona ({icon:minion}) i/lub Pocka na polu bitwy.",
+  "reactions": [
+    {
+      "name": "Wierne Psy",
+      "trigger": "Użyj tego natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) wykona ruch.",
+      "flavorText": "Ratspike i Grotbiter są wierni jak mało kto.",
+      "rulesText": "Wybierz sojuszniczego miniona ({icon:minion}), który nie posiada żetonów szarży. Ten wojownik może wykonać ruch."
+    },
+    {
+      "name": "Ochrona Krwi Męczennika",
+      "trigger": "Użyj tego natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie wybrany jako cel Ataku.",
+      "flavorText": "Zakon Azyru przygotowuje obronę na każdą ewentualność.",
+      "rulesText": "Atakujący nie może używać zdolności Broni podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Narzędzia Rzemiosła",
+      "flavorText": "Gdy łowca polegnie, wiedza o tym, co go zabiło, służy do lepszego przygotowania się na kolejne starcie.",
+      "rulesText": "Dodaj łączną wartość cechy Nagroda pokonanych sojuszniczych Agentów Azyryjskich ({icon:leader}) do swojej łącznej liczby punktów Chwały, aby określić, ile Ulepszeń może zostać wyposażonych przez sojuszniczych wojowników."
+    },
+    {
+      "name": "Naznaczony na Zemstę",
+      "flavorText": "Zabicie członka Zakonu Azyru to zaproszenie kary.",
+      "rulesText": "Natychmiast po tym, jak sojuszniczy Agent Azyryjski ({icon:leader}) zostanie pokonany przez wrogiego wojownika, ten wrogi wojownik zostaje naznaczony. Inni naznaczeni wrodzy wojownicy nie są już naznaczeni. Możesz przerzucić 1 kość w rzucie ataku, jeśli cel jest naznaczony, a bronie dystansowe sojuszniczych wojowników mają cechę Grievous, jeśli cel jest naznaczony. Po tym, jak naznaczony wrogi wojownik zostanie pokonany, możesz albo usunąć wszystkie żetony ruchu i/lub szarży od sojuszniczego wojownika, albo dobrać 1 kartę Power."
+    },
+    {
+      "name": "Zgrany Sfora",
+      "flavorText": "Jedynie zabijając oba psy Pocka, wrogowie tej drużyny zaznają spokoju.",
+      "rulesText": "Natychmiast po tym, jak pierwszy sojuszniczy minion ({icon:minion}) zostanie pokonany, musisz dodać 1 do cechy Nagroda drugiego sojuszniczego miniona ({icon:minion})."
+    }
+  ]
+}

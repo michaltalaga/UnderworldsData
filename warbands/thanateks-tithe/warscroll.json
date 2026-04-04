@@ -1,0 +1,49 @@
+{
+  "id": "thanateks-tithe",
+  "name": "Thanatek's Tithe",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "Once per turn, in your Power step, instead of playing a Power card, you can pick a friendly fighter and remove a number of your cadaver tokens equal to their Bounty characteristic. Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Morbid Retainers",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly fighter's successful Attack, if the target is adjacent to any friendly Retainers {icon:minion}",
+      "flavorText": null,
+      "rulesText": "gain 1 cadaver token."
+    },
+    {
+      "name": "Elusive Mirages",
+      "type": "reaction",
+      "trigger": "Immediately after an enemy fighter's successful Attack that targeted a friendly Mortis Reaper {icon:destined}, if the Save roll contained any successes",
+      "flavorText": null,
+      "rulesText": "that friendly fighter can use Stand Fast."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Soul-linked Constructs",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Your leader's {icon:leader} weapons' characteristics cannot be modified. When you pick a target as part of your leader's {icon:leader} Attack using a non-Upgrade melee weapon, you can measure the range of that weapon from a friendly Retainer {icon:minion} instead of from your leader {icon:leader}."
+    },
+    {
+      "name": "Unwilling Donors",
+      "type": "reaction",
+      "flavorText": "The living will sacrifice their bones unto the great Ossiarch empire, whether willingly or otherwise.",
+      "rulesText": "Use this at the start of your opponent's Action step if your leader {icon:leader} is on the battlefield. Pick an enemy fighter to be the possessor until the end of your next turn. Immediately after damage is inflicted on the possessor as part of a friendly fighter's Attack, you can push each friendly Retainer {icon:minion} 1 hex closer to the possessor."
+    },
+    {
+      "name": "Endless Duty",
+      "type": "action",
+      "flavorText": "Even the destruction of their physical form does not release a Bonereaper from their eternal service to Nagash.",
+      "rulesText": "Use this in your Power step. Remove any of your cadaver tokens. Pick a slain friendly Mortis Reaper {icon:destined}, then roll an Attack dice for each cadaver token you removed. If the roll contains any {icon:fury} or {icon:crit}, Raise that fighter and place them in a starting hex in friendly territory. You can only use this ability once per battle round."
+    },
+    {
+      "name": "Necromantic Pulse",
+      "type": "action",
+      "flavorText": "Thanatek channels deathly energy into a crushing wave to drive his enemies back.",
+      "rulesText": "Use this in your Power step. Remove any of your cadaver tokens. For each enemy fighter adjacent to any friendly Retainers {icon:minion}, roll a number of Attack dice equal to the number of cadaver tokens you removed. If the roll contains any {icon:skull} or {icon:crit}, inflict 1 damage on that enemy fighter. Otherwise, remove that enemy fighter's Guard tokens and give them a Stagger token. You can only use this ability once per game."
+    }
+  ]
+}

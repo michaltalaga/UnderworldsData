@@ -1,0 +1,28 @@
+{
+  "inspire": "Po zadaniu obrażeń wrogiemu wojownikowi podczas Power step lub Action step przeciwnika, wybierz przyjaznego wojownika. Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Drapieżni Wojownicy",
+      "trigger": "Użyj tego natychmiast po nieudanym ataku wręcz wrogiego wojownika, jeśli celem był przyjazny saurus ({icon:leader}), a rzut na Save zawierał jakikolwiek {icon:dodge}.",
+      "flavorText": "Z ostrzami tarcz i szczękami niczym imadła, saurusy są równie śmiertelne w obronie, jak i w ataku.",
+      "rulesText": "Zadaj 1 obrażenie temu wrogiemu wojownikowi."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Instynktowna Kontrola",
+      "flavorText": "Saurusy nie są poskramiaczami bestii, lecz gadziopodobne stworzenia, które się wokół nich roją, odpowiadają na ich agresję, rzucając się na wrogów z błyskiem jadowitych szczęk.",
+      "rulesText": "Użyj tego natychmiast po wybraniu celu jako części ataku wykonanego przez przyjaznego saurusa ({icon:leader}). Wybierz przyjaznego miniona ({icon:minion}), który nie posiada żetonów Move ani Charge. Ten wojownik może wykonać Move."
+    },
+    {
+      "name": "Dzika Masakra",
+      "flavorText": "Gdy zostaną odcięte od wpływu swych panów, saurusy powracają do dzikich instynktów, używając naturalnej broni, by rozszarpywać ofiary w fontannach krwi i wnętrzności.",
+      "rulesText": "Użyj tego podczas Power step. Wybierz wrogiego wojownika sąsiadującego z uszkodzonym przyjaznym saurusem ({icon:leader}), który nie posiada żetonów Charge. Rzuć kością ataku za każdy żeton obrażeń, który posiada ten przyjazny wojownik. Zadaj wrogiemu wojownikowi tyle obrażeń, ile wyrzucono {icon:fury} i {icon:crit}. Możesz użyć tej zdolności tylko raz na grę. Za każdym razem, gdy wrogie wojownik zostanie pokonany przez tę zdolność, możesz użyć jej jeszcze raz w tej grze."
+    },
+    {
+      "name": "Nieugięty",
+      "flavorText": "Saurusy to stworzenia o zimnokrwistej determinacji. Jeśli Wielki Plan wymaga od nich obrony pozycji, wypełnią to zadanie bez drżenia.",
+      "rulesText": "Użyj tego podczas Power step. Wybierz przyjaznego saurusa ({icon:leader}). Ten wojownik nie może zostać odparty do końca rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

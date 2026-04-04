@@ -1,0 +1,40 @@
+{
+  "id": "drepurs-wraithcreepers",
+  "name": "Grand Alliance Death: Dark Majesty",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "If an enemy fighter is slain while a Locus of Shyish ability is persisting, Inspire a number of friendly fighters equal to that enemy fighter's Bounty characteristic.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Locus of Shyish",
+      "type": "action",
+      "flavorText": "",
+      "rulesText": "Roll 3 Attack dice. If the roll contains 1 of the results on the Locus of Shyish table, immediately use the relevant ability. That ability persists until the end of the battle round. If the roll contains any {icon:crit}, you can replace each {icon:crit} with another symbol of your choice ({icon:fury}, {icon:dodge}, {icon:shield} or {icon:skull}).\n\nThe same fighter cannot be picked to be affected by a Locus of Shyish ability more than once per battle round."
+    },
+    {
+      "name": "Blades of Shyish",
+      "type": "passive",
+      "flavorText": "The weapons of the dead are imbued with a murderous amethyst energy.",
+      "rulesText": "Pick a friendly fighter. That fighter's melee weapons have Critical Grievous ({icon:crit}{icon:grievous})."
+    },
+    {
+      "name": "Spirit Gale",
+      "type": "passive",
+      "flavorText": "Howling spectral winds come forth to lend speed to an ally.",
+      "rulesText": "Pick a friendly fighter. That fighter has +1 Move."
+    },
+    {
+      "name": "Prison of Grief",
+      "type": "passive",
+      "flavorText": "Waves of sorrow cascade across the field, cursing the foe to endlessly relive their darkest moment.",
+      "rulesText": "Pick an enemy fighter. That fighter's weapons have -1 Attack dice."
+    },
+    {
+      "name": "Spectral Grasp",
+      "type": "passive",
+      "flavorText": "Grasping spectral hands reach up from the earth to seize hold of enemies.",
+      "rulesText": "Pick an enemy fighter. That fighter has -1 Move."
+    }
+  ]
+}

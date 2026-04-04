@@ -1,0 +1,38 @@
+{
+  "id": "kurnoths-heralds",
+  "name": "Kurnoth's Heralds",
+  "version": "1.1",
+  "grandAlliance": "Order",
+  "inspire": "After an Action step, if a friendly fighter began that Action step in friendly territory and then made a successful Attack, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "The Endless Hunt",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly fighter has Attacked.",
+      "flavorText": "Kurnoth's faithful rarely slow and never stand still, for the hunt never ends.",
+      "rulesText": "Use this immediately after a friendly fighter has Attacked. You can push the attacker up to 2 hexes. You can only use this ability once per game."
+    },
+    {
+      "name": "Precision Volley",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Lenwythe's ranged Attack.",
+      "flavorText": "Some of the greatest archers in the realms reside within Kurnotheal, and Lenwythe can outshoot most of them.",
+      "rulesText": "Use this immediately after a friendly Lenwythe's ranged Attack. That fighter Attacks again using the same weapon. You can only use this ability once per game."
+    },
+    {
+      "name": "Herald's Pride",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a weapon as part of your leader's {icon:leader} Attack.",
+      "flavorText": "Ylarin has the arrogance of a warrior born, but few that have witnessed his martial prowess would deny his glory.",
+      "rulesText": "Use this immediately after you pick a weapon as part of your leader's {icon:leader} Attack. That weapon has Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) for that Attack. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Swift Sentinels",
+      "type": "passive",
+      "flavorText": "Perfectly attuned to the Hunter's Paradise, Kurnoth's Heralds run circles around intruders who dare stray into their territory.",
+      "rulesText": "While they are in friendly territory, friendly fighters have the Flying ({icon:hex}) runemark and cannot be Flanked (they can still be Surrounded)."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ironsouls-condemners",
+  "name": "Ironsoul's Condemnors",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Immediately after making an Attack roll or Save roll for a friendly fighter, if that roll included any {icon:crit}, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Punishing Blow",
+      "type": "reaction",
+      "trigger": "Use this immediately after you a pick weapon as part of an Attack by a friendly Brodus.",
+      "flavorText": "Brodus's Greatmace charges up with celestial energy.",
+      "rulesText": "That weapon has +X Attack dice, where X is equal to the battle round. You can only use this ability once per game."
+    },
+    {
+      "name": "Aetherically Charged Shield",
+      "type": "reaction",
+      "trigger": "Use this immediately after your opponent picks a weapon as part of an Attack that targets a friendly shield aetheric ({icon:shield}).",
+      "flavorText": "With potent celestial magic, the Sequitors' shields light ablaze with cerulean power.",
+      "rulesText": "Weapon abilities cannot be used for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Aetherically Charged Maul",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a weapon as part of an Attack by a friendly shield aetheric ({icon:shield}).",
+      "flavorText": "Weapons crackling with power, the Sequitors blast the enemy to smoking ruin.",
+      "rulesText": "That weapon has + 1 Range for that Attack. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Bulwark against the Dark",
+      "type": "passive",
+      "flavorText": "The Condemnors stand firm against the horrors of the realms.",
+      "rulesText": "Friendly fighters with no Move and/or Charge tokens cannot be driven back."
+    }
+  ]
+}

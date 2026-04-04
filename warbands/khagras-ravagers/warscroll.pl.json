@@ -1,0 +1,34 @@
+{
+  "inspire": "Po ostatnim kroku Akcji w rundzie bitewnej, jeśli istnieją 2 lub więcej zbezczeszczonych żetonów skarbów, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Spustoszone Królestwo",
+      "trigger": "Możesz użyć tej zdolności raz na Power step.",
+      "flavorText": "Niszczyciele pozostawiają po sobie jedynie ruinę.",
+      "rulesText": "Możesz użyć tej zdolności raz na Power step. Wybierz żeton skarbu trzymany przez przyjaznego wojownika. Ten żeton skarbu jest zbezczeszczony, dopóki nie zostanie odwrócony."
+    },
+    {
+      "name": "Rytualne Zbezczeszczenie",
+      "trigger": "Natychmiast po tym, jak wróg zostaje pokonany, jeśli atakujący lub cel trzymał żeton skarbu.",
+      "flavorText": "Przez rzeź i krew królestwa są zbezczeszczane.",
+      "rulesText": "Natychmiast po tym, jak wrogi wojownik zostaje pokonany, jeśli atakujący lub cel trzymał żeton skarbu, możesz wybrać ten żeton skarbu. Ten żeton skarbu jest zbezczeszczony, dopóki nie zostanie odwrócony."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Mroczna Aprobata",
+      "flavorText": "Zwrócić na siebie uwagę Mrocznych Bogów to zostać hojnie wynagrodzonym.",
+      "rulesText": "Użyj tej zdolności w Power step. Dobierz 1 kartę Power za każdy zbezczeszczony żeton skarbu. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Oko Bogów",
+      "flavorText": "Zabieganie o wzrok Mrocznych Bogów jest niebezpieczne – lecz ci, którzy okażą się godni, stają się prawdziwie potężni.",
+      "rulesText": "Wybierz 1 z poniższych:\n• Użyj tej zdolności natychmiast po tym, jak przyjazny wojownik trzymający żeton skarbu zostaje wybrany jako cel Ataku. Cel ma +1 Save w tym Ataku.\n• Użyj tej zdolności natychmiast po tym, jak wybierzesz wrogiego wojownika trzymającego żeton skarbu jako cel Ataku. Broń wybrana do tego Ataku ma +1 Attack dice w tym Ataku.\nMożesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Niszczycielski Marsz",
+      "flavorText": "Wojownicy Chaosu nigdy nie wahają się w swej żarliwej krucjacie zbezczeszczania wszystkiego na swej drodze.",
+      "rulesText": "Użyj tej zdolności w Power step. Wybierz przyjaznego wojownika. Przesuń tego wojownika o liczbę heksów równą co najwyżej liczbie zbezczeszczonych żetonów skarbów. To przesunięcie musi zakończyć się na żetonie skarbu i/lub w sąsiedztwie wrogiego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

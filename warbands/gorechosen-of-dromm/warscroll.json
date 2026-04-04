@@ -1,0 +1,43 @@
+{
+  "id": "gorechosen-of-dromm",
+  "name": "Gorechosen of Dromm",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "After an Action step, if you have 8 or more blood tithe tokens, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "The Blood Tithe",
+      "type": "reaction",
+      "trigger": "Immediately after damage is inflicted on a fighter",
+      "flavorText": "Khorne cares not from whence the blood flows, only that it flows.",
+      "rulesText": "gain 1 blood tithe token."
+    },
+    {
+      "name": "Brutal Reckoning",
+      "type": "reaction",
+      "trigger": "Immediately after an enemy fighter is slain",
+      "flavorText": "Dromm demands the complete and final obliteration of the enemy.",
+      "rulesText": "gain a number of blood tithe tokens equal to that fighter's Bounty characteristic."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Call of Blood",
+      "type": "action",
+      "flavorText": "As the fever of battle grows, warriors rush towards each other, overcome with a need for blood and violence.",
+      "rulesText": "Use this in a Power step. Pick 2 fighters with no Move or Charge tokens. Push each fighter 1 hex so they are adjacent. You can discard 1 of your blood tithe tokens before each push. If you do, you can push that fighter 2 hexes instead. You can only use this ability once per game."
+    },
+    {
+      "name": "Enrage",
+      "type": "action",
+      "flavorText": "Once Khorne has claimed dominion over a place, few have the strength to deny his call to slaughter.",
+      "rulesText": "Use this in a Power step. Discard 8 blood tithe tokens, then pick an enemy fighter. Your opponent resolves a Charge for that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Final Frenzy",
+      "type": "reaction",
+      "flavorText": "Warriors of Khorne can ignore the most grievous of wounds in a frenzy of bloodletting.",
+      "rulesText": "Use this immediately after damage is inflicted on a friendly fighter if that fighter would be slain. Discard any of your blood tithe tokens. Roll an Attack dice for each token discarded in this way. On any {icon:crit}, remove damage tokens from that fighter until they are vulnerable. That fighter is slain at the end of the battle round. You can only use this ability once per game."
+    }
+  ]
+}

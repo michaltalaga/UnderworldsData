@@ -1,0 +1,28 @@
+{
+  "inspire": "Po kroku Akcji, jeśli przyjazny wojownik rozpoczął ten krok Akcji na terytorium wroga i użył podstawowej zdolności (Core ability), Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Sam stoję!",
+      "trigger": "Możesz użyć tej zdolności w ostatnim kroku Power step rundy bitwy.",
+      "flavorText": "Emberwatch przebywają w kopalniach Embergard tak długo, że żarzący się kamień sprawia, iż ich nerwy strzępią się z łatwością — dlatego od czasu do czasu cenią sobie odrobinę przestrzeni.",
+      "rulesText": "Wybierz przyjaznego wojownika, który znajduje się na innym terytorium niż każdy inny przyjazny wojownik. Przesuń tego wojownika o 1 hex. To przesunięcie nie może zakończyć się w polu sąsiadującym z innym przyjaznym wojownikiem. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Zryw straży przedniej",
+      "flavorText": "Emberwatch z łatwością zmieniają swoje pozycje podczas bitwy.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika. Usuń tego wojownika z pola bitwy, a następnie umieść go w pustym hexie na krawędzi planszy. Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Śmiercionośne straże",
+      "flavorText": "Zobowiązani do utrzymania kopalń Embergard wolnych od intruzów, Emberwatch posługują się bronią dystansową, by sprawcy zostali błyskawicznie pociągnięci do odpowiedzialności.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu broni w ramach Ataku. Ta broń ma +1 do Zasięgu (Range) w tym Ataku. Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Raptory Sigmara",
+      "flavorText": "Niewielu zdoła umknąć gniewowi tych szlachetnych wojowników, a ci, którym się to udaje, są szczęściarzami ponad wszelką miarę.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po udanym Ataku przyjaznego wojownika, jeśli cel jest narażony (vulnerable). Zadaj 1 obrażenie celowi. Tej zdolności można użyć tylko raz na grę."
+    }
+  ]
+}

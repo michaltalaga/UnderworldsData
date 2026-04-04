@@ -1,0 +1,34 @@
+{
+  "id": "da-kunnin-krew",
+  "name": "Da Kunnin' Krew",
+  "version": "1.1",
+  "grandAlliance": "Destruction",
+  "inspire": "After a friendly fighter's successful Attack, if the target was slain, Flanked or Surrounded, Inspire the attacker and each friendly fighter adjacent to the target.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Pain in the Knee",
+      "type": "passive",
+      "flavorText": "Whether tripping enemies, snaring cloaks or stabbing ankles, Mannok's grot lackeys know how to make themselves useful during a scrap.",
+      "rulesText": "If a friendly Mannok or Torka is the attacker, friendly minions ({icon:minion}) count as 2 fighters when determining whether a target is Flanked or Surrounded."
+    },
+    {
+      "name": "A Kunnin' Plan",
+      "type": "reaction",
+      "flavorText": "Mannok is an inspiringly kunnin' orruk, and anyone who says otherwise gets chopped.",
+      "rulesText": "Use this immediately after an Action step if your leader ({icon:leader}) is on the battlefield. Push each friendly minion ({icon:minion}) up to a number of hexes equal to the battle round number. You can only use this ability once per game."
+    },
+    {
+      "name": "Dirty Tricks",
+      "type": "reaction",
+      "flavorText": "The Krew love a cheeky gamble – but never a fair one.",
+      "rulesText": "Use this immediately before you or your opponent makes an Attack roll or Save roll. Your opponent must declare 'Upgrade' or 'Ploy'. Take 3 Power cards from your hand and shuffle them face down. Your opponent must pick 1 of those cards. Then, reveal each of those cards. If the card your opponent picked matches what they declared, draw 1 Power card. Otherwise, that Attack roll or Save roll is not made and you must set the result on each dice instead. You can only use this ability once per game."
+    },
+    {
+      "name": "Murk Lurkers",
+      "type": "reaction",
+      "flavorText": "When the Krew don't want to be found, even the best trackers in the realms might struggle to locate them.",
+      "rulesText": "Use this immediately after a friendly fighter is picked to be the target of an Attack. Rolls of {icon:dodge} and {icon:shield} are successes in Save rolls made for that fighter for that Attack. You can only use this ability once per game."
+    }
+  ]
+}

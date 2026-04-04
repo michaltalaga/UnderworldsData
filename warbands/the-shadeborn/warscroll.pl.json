@@ -1,0 +1,30 @@
+{
+  "inspire": "Natychmiast po tym, jak przyjazny wojownik zaatakuje uszkodzonego wrogiego wojownika, Inspire tego przyjaznego wojownika.",
+  "abilities": [
+    {
+      "name": "Piętno Cienia",
+      "flavorText": "Wszyscy Shadeborn noszą na swych duszach piętno ulgańskiej magii — złowrogi znak, który daje im zdolność chwilowego stawania się równie nieuchwytnym jak mgła.",
+      "rulesText": "Za każdym razem, gdy wykonujesz rzut na Save dla przyjaznego wojownika znajdującego się na terytorium wroga lub na cover tokenie, możesz przerzucić 1 kość Save w tym rzucie."
+    },
+    {
+      "name": "Klątwa Mrocznej Sieci",
+      "flavorText": "Aelfickie klątwy nadają cieniom złośliwe życie.",
+      "rulesText": "Użyj tego w Power stepie. Wrodzy wojownicy, którzy w następnej turze znajdują się na lub sąsiadują z feature tokenem, mają -1 kość Save. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Mroczna Minoga",
+      "flavorText": "Głodne cienie uderzają w każdą nieostrożną duszę.",
+      "rulesText": "Użyj tego w Power stepie. Wybierz wrogiego wojownika, który nie jest vulnerable i znajduje się w odległości 3 heksów od przyjaznego wojownika. Zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Nieprzenikniony Mrok",
+      "flavorText": "Shadeborn znikają w duszącym mroku.",
+      "rulesText": "Użyj tego w Power stepie. Daj każdemu przyjznemu wojownikowi shadow token. Wojownicy posiadający jakiekolwiek shadow tokeny są traktowani jako stojący na cover tokenie. Usuń wszystkie shadow tokeny na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Zasadzka z Cienia",
+      "flavorText": "Gdziekolwiek zapada ciemność, Shadeborn czają się w jej głębi.",
+      "rulesText": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany do Ruchu, jeśli ten wojownik znajduje się na cover tokenie. Usuń tego wojownika z pola bitwy i umieść go na pustym heksie przy krawędzi na terytorium wroga. Następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "the-headsmens-curse",
+  "name": "The Headsmen's Curse",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "After an Action step, if damage was inflicted on any condemned enemy fighters by a friendly fighter's Attack, Inspire that friendly fighter.",
+  "reactions": [
+    {
+      "name": "Trial and Execution",
+      "type": "reaction",
+      "trigger": "At the start of your first Action step in each battle round, you can pick an enemy fighter within 5 hexes of a friendly Scriptor of the Sentence to be condemned for that battle round. After a condemned enemy fighter is slain, you can draw a number of Power cards equal to that fighter's Bounty characteristic.",
+      "flavorText": "The Headsmen's Curse seek out mortals to condemn to eternal punishment.",
+      "rulesText": "At the start of your first Action step in each battle round, you can pick an enemy fighter within 5 hexes of a friendly Scriptor of the Sentence to be condemned for that battle round. After a condemned enemy fighter is slain, you can draw a number of Power cards equal to that fighter's Bounty characteristic."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Eternal Duty",
+      "type": "reaction",
+      "flavorText": "There can be no rest for the court. Their duty compels them to endless service.",
+      "rulesText": "Use this immediately after an enemy fighter is slain by your leader's ({icon:leader}) weapon. Pick a slain friendly fighter. Raise that fighter and place them in an empty hex adjacent to your leader ({icon:leader}). You can only use this ability once per game."
+    },
+    {
+      "name": "Whet the Blade",
+      "type": "reaction",
+      "flavorText": "With an eerie scraping sound, ancient stone is drawn across spectral steel.",
+      "rulesText": "Use this immediately after you pick a weapon as part of your leader's ({icon:leader}) Attack if they are adjacent to a friendly Sharpener of the Blade. That weapon has Grievous ({icon:grievous}) for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Discorporate",
+      "type": "action",
+      "flavorText": "If given the order, the Nighthaunt can flicker between the realms of the living and dead.",
+      "rulesText": "Pick a friendly fighter to use this Core ability. Remove that fighter from the battlefield and then place them in an empty hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Cackling Court",
+      "type": "reaction",
+      "flavorText": "The caterwauling and accusations from the Nighthaunt can rattle even the most stalwart souls.",
+      "rulesText": "Use this immediately after you pick an enemy fighter to be the target of an Attack if that fighter is Flanked and/or Surrounded. Rolls of both {icon:fury} and {icon:dodge} are successes in that Attack roll. You can only use this ability once per game."
+    }
+  ]
+}

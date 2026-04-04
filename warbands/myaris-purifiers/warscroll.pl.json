@@ -1,0 +1,30 @@
+{
+  "inspire": "Po wykonaniu rzutu na Atak lub rzutu na Obronę za przyjaznego wojownika, jeśli wszystkie wyniki były sukcesami, Inspire tego wojownika.",
+  "abilities": [
+    {
+      "name": "Rezerwa Eterycznego Kwarcu",
+      "flavorText": null,
+      "rulesText": "Po wystawieniu przyjaznego wojownika, daj temu wojownikowi żeton eterycznego kwarcu.\n\nPrzyjazny wojownik posiadający żeton eterycznego kwarcu może użyć zdolności Wyostrzone Zmysły:\n\n{icon:fury} Wyostrzone Zmysły: Użyj tej zdolności natychmiast po wykonaniu rzutu na Atak lub rzutu na Obronę. Odrzuć żeton eterycznego kwarcu tego wojownika. Przerzuć dowolne kości w tym rzucie na Atak lub rzucie na Obronę."
+    },
+    {
+      "name": "Oślepiająca Korona",
+      "flavorText": "Olśniewająca aureola czystej hyszańskiej energii trzeszczy wokół Myariego, chroniąc go przed atakami.",
+      "rulesText": "Jeśli przyjazny Myari posiada żeton eterycznego kwarcu na początku tury, ma +1 do Obrony do końca tej tury."
+    },
+    {
+      "name": "Trwały jak Skała",
+      "flavorText": "Podczas bitwy o duszę Bestiegrobowca to wokół Bahannara skupiali się Oczyszczyciele.",
+      "rulesText": "Dopóki przyjazny Bahannar posiada żeton eterycznego kwarcu, nie może być odpychany przez wrogie zdolności."
+    },
+    {
+      "name": "Nieskazitelna Celność",
+      "flavorText": "Senaela potrafi naprowadzić płonącą strzałę ze słonecznego metalu na cel nawet w najtrudniejszych warunkach.",
+      "rulesText": "Dopóki przyjazna Senaela posiada żeton eterycznego kwarcu, jej broń dystansowa ma właściwości Brutal ({icon:grievous}) i Ensnare ({icon:cleave})."
+    },
+    {
+      "name": "Mistrzowskie Cięcie",
+      "flavorText": "Ostrze Ailenn prześlizguje się przez obronę wroga z niezwykłą łatwością.",
+      "rulesText": "Dopóki przyjazna Ailenn posiada żeton eterycznego kwarcu, gdy atakuje bronią do walki wręcz, cel jest Flanked."
+    }
+  ]
+}

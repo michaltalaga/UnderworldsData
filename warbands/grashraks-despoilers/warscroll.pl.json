@@ -1,0 +1,28 @@
+{
+  "inspire": "Natychmiast po fazie Akcji przeciwnika, jeśli na neutralnym terenie znajduje się więcej przyjaznych wojowników niż wrogich, Inspire każdego przyjaznego wojownika na tym terenie.",
+  "reactions": [
+    {
+      "name": "Korzenie Chaosu",
+      "trigger": "Natychmiast po tym, jak przyjazny wojownik wykona Delves na żetonie terenu",
+      "flavorText": null,
+      "rulesText": "nadaj każdemu wrogemu wojownikowi w odległości 2 pól od tego żetonu terenu/w odległości 2 pól od nich żeton Stagger."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Aura Zagłady",
+      "flavorText": "Aura zepsucia tej istoty jest tak potężna, że samo przebywanie w jej pobliżu sprawia, iż ciało wije się w konwulsjach, a dusza wyje z bólu.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz wrogiego wojownika z żetonem Stagger, który sąsiaduje z przyjaznym wojownikiem i nie jest podatny na ataki. Zadaj temu wrogemu wojownikowi 1 obrażenie. Ta zdolność może zostać użyta tylko raz na grę."
+    },
+    {
+      "name": "Wyeliminuj Słabych",
+      "flavorText": "Słudzy Mrocznych Bogów błyskawicznie wyczuwają najbardziej bezbronnych spośród wrogich wojowników i krwawo ich likwidują.",
+      "rulesText": "Wybierz wrogiego wojownika z żetonem Stagger. Bronie do walki wręcz przyjaznych wojowników mają +1 kość Ataku w Atakach skierowanych przeciwko temu wrogemu wojownikowi w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+    },
+    {
+      "name": "Nieświęte Sprofanowanie",
+      "flavorText": "Mroczne Bóstwa obsypują swymi błogosławieństwami tych, którzy wypaczają i kalają symbole pomniejszych bóstw.",
+      "rulesText": "Wybierz przyjaznego wojownika stojącego na żetonie terenu. Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku w Atakach skierowanych przeciwko temu przyjaznemu wojownikowi w następnej turze. Ta zdolność może zostać użyta tylko raz na grę."
+    }
+  ]
+}

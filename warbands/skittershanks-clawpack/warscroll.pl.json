@@ -1,0 +1,34 @@
+{
+  "inspire": "Po kroku Akcji, jeśli wróg będący przywódcą ({icon:leader}) zostaje pokonany lub posiada 3 lub więcej żetonów obrażeń, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Naznaczony na Śmierć",
+      "trigger": "Użyj tego natychmiast po wykonaniu rzutu na Atak przyjaznego wojownika, jeśli celem jest wróg będący przywódcą ({icon:leader}).",
+      "flavorText": "Ci, którzy zostali naznaczeni pazurem Klanów Eshin, nie będą długo chodzić po tym świecie.",
+      "rulesText": "Przerzuć 1 kość Ataku w tym rzucie na Atak."
+    },
+    {
+      "name": "Kolczaste Pułapki i Sidła",
+      "trigger": "Natychmiast po udanym ataku wręcz przyjaznego wojownika, daj celowi żeton kolca.\n\nNatychmiast po tym, jak wrogi wojownik posiadający żetony kolca wykona Ruch, zadaj temu wojownikowi 1 obrażenie, a następnie usuń jego żetony kolca. Usuń wszystkie żetony kolca z wrogich wojowników na końcu rundy bitewnej.",
+      "flavorText": "Skittershank i jego poplecznicy znają wszelkie sposoby na to, by wykrwawić i nękać swój cel.",
+      "rulesText": "Natychmiast po udanym ataku wręcz przyjaznego wojownika, daj celowi żeton kolca.\n\nNatychmiast po tym, jak wrogi wojownik posiadający żetony kolca wykona Ruch, zadaj temu wojownikowi 1 obrażenie, a następnie usuń jego żetony kolca. Usuń wszystkie żetony kolca z wrogich wojowników na końcu rundy bitewnej."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Bomby Dymne",
+      "flavorText": "W kłębach migocącego zielonego dymu Clawpack oślepia swoich wrogów.",
+      "rulesText": "Natychmiast po Ataku przyjaznego wojownika, daj każdemu wrogiemu wojownikowi sąsiadującemu z atakującym żeton Stagger. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Szczęki się Zaciskają",
+      "flavorText": "Wabienie celów z miejsca schronienia to standardowa praktyka każdego prawdziwego zabójcy.",
+      "rulesText": "Użyj tego w swoim Power step. Wybierz wrogiego przywódcę ({icon:leader}) znajdującego się na terytorium wroga. Odepchnij tego wojownika o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Migotliwa Plama",
+      "flavorText": "Gdy wabik i oślepienie zawodzą, czysta prędkość może kupić kolejną szansę...",
+      "rulesText": "Użyj tego w swoim Power step. W następnej turze przyjaźni zabójcy ({icon:minion}) nie mogą być wybierani jako cel Ataków ani Ploys. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

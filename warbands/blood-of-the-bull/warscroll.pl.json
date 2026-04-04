@@ -1,0 +1,34 @@
+{
+  "inspire": "Gdy użyjesz kości daemonforge w rzucie na Atak lub rzucie na Obronę za przyjaznego wojownika, po tym Ataku Inspire tego wojownika.\n\nPo Ataku wykonanym przez przyjaznego Chaos Duardina ({icon:chaos-duardin}), jeśli cel był sąsiadujący z przyjaznym Griskiem, Inspire tego Griska.",
+  "reactions": [
+    {
+      "name": "Wzmocnij Arsenal",
+      "trigger": "Bezpośrednio po tym, jak wybierzesz broń w ramach Ataku wykonanego przez przyjaznego Chaos Duardina ({icon:chaos-duardin})",
+      "flavorText": null,
+      "rulesText": "możesz użyć 1 kości daemonforge w rzucie na Atak. Jeśli to zrobisz, ta broń ma +1 kość Ataku na czas tego Ataku."
+    },
+    {
+      "name": "Wzmocnij Zbrojownię",
+      "trigger": "Bezpośrednio po tym, jak przyjazny Chaos Duardin ({icon:chaos-duardin}) zostaje wybrany jako cel Ataku",
+      "flavorText": null,
+      "rulesText": "możesz użyć 1 kości daemonforge w rzucie na Obronę. Jeśli to zrobisz, ten wojownik ma +1 do Obrony na czas tego Ataku."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Wzmocniony Złośliwością",
+      "flavorText": "Gdy Zuldrakka i jej wojownicy zabijają, palą i łupią, ich wykuta przez demony broń i zbroja stają się coraz potężniejsze.",
+      "rulesText": "Rozpoczynasz grę z 1 kością daemonforge.\n\nW swoim Power step, jeśli przyjazny wojownik bez żetonów Stagger wykonuje Delve żetonu skarbu, zyskaj 1 kość daemonforge. Wszystkie kości daemonforge są tracone na końcu każdej rundy bitewnej."
+    },
+    {
+      "name": "Piekielny Pożar",
+      "flavorText": "Miotacz ognia Tokkora pluje świadomym ogniem, który przywiera do ciała i unicestwia duszę.",
+      "rulesText": "Broń dystansowa przyjaznego Tokkora (z wyłączeniem Ulepszeń) posiada cechę Grievous ({icon:grievous}), jeśli cel jest sąsiadujący."
+    },
+    {
+      "name": "Spryт Hobgrota",
+      "flavorText": "Grisk może i jest knującym, morderczym zdrajcą, lecz bywa przydatny...",
+      "rulesText": "Zarówno wyniki {icon:fury}, jak i {icon:dodge} są sukcesami w rzucie na Atak przyjaznego Chaos Duardina ({icon:chaos-duardin}), gdy cel sąsiaduje z przyjaznym Griskiem."
+    }
+  ]
+}

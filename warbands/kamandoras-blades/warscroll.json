@@ -1,0 +1,34 @@
+{
+  "id": "kamandoras-blades",
+  "name": "Kamandora's Blades",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "Immediately after a Power step, Inspire each friendly fighter adjacent to the enemy worthy skull. Immediately after the enemy worthy skull is slain by a friendly fighter, Inspire that fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "A Worthy Skull",
+      "type": "passive",
+      "flavorText": "Kamandora's mind is wracked by visions from Khorne, the Lord of Battles, that guide her to the skulls she must see added to his throne.",
+      "rulesText": "At the start of the first Action step in each battle round, if there are any enemy fighters on the battlefield, you must pick an enemy fighter to be the worthy skull until the end of the battle round."
+    },
+    {
+      "name": "Slaughterous Pilgrimage",
+      "type": "reaction",
+      "flavorText": "Kamandora's Blades burn with zeal and see the taking of skulls as their holy purpose.",
+      "rulesText": "Immediately after you pick an enemy fighter to be the worthy skull, you must push each friendly fighter 1 hex closer to the enemy worthy skull."
+    },
+    {
+      "name": "Blood for Khorne!",
+      "type": "passive",
+      "flavorText": "While they lack the sheer bulk of Khorne's favoured warriors, Kamandora and her followers are whipcord-fast and capable of whittling down their foes with vicious bleeding strikes.",
+      "rulesText": "Slashing ({icon:cleave}): If an Attack made with this Weapon ability was successful, after the Attack has been resolved, give the target a bleed token, then give the target a stagger token.\n\nIf an enemy fighter with any bleed tokens is given a second or subsequent stagger token, inflict 1 damage on that fighter after resolving that ability, and then remove that fighter's bleed tokens. Otherwise, remove all bleed tokens from enemy fighters at the end of the battle round."
+    },
+    {
+      "name": "Call the Pursuit",
+      "type": "action",
+      "flavorText": "The slavering hound Kannat heeds Kamandora's every command.",
+      "rulesText": "Use this in your Power step instead of playing a Power card. Pick a friendly minion ({icon:minion}). Push that fighter up to 4 hexes so it is adjacent to a friendly leader ({icon:leader}). This ability can only be used once per game."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "gnarlspirit-pack",
+  "name": "The Gnarlspirit Pack",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "Immediately after removing a spirit token from a friendly fighter, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Uninspire",
+      "type": "reaction",
+      "trigger": "Immediately after giving an Inspired friendly fighter a spirit token, Uninspire that fighter.",
+      "flavorText": null,
+      "rulesText": "Immediately after giving an Inspired friendly fighter a spirit token, Uninspire that fighter."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Spirit Tokens",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Immediately after picking a friendly fighter to use a Core ability, you can remove that fighter's spirit tokens. Immediately after resolving a Core ability for a friendly fighter, you can give them a spirit token. Friendly fighters with any spirit tokens cannot be Inspired or hold treasure tokens.\n\nSarrakkar Unleashed: This fighter has +2 Move while they have any spirit tokens.\n\nGorl Unleashed: This fighter has +1 Save while they have any spirit tokens.\n\nKheira Unleashed: This fighter's melee weapons (excluding Upgrades) have +1 Attack dice while they have any spirit tokens.\n\nLupan Unleashed: Rolls of {icon:fury} count as successes in Attack rolls made for a friendly Lupan while they have any spirit tokens."
+    },
+    {
+      "name": "In Control",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Use this in your Power step. If there are any friendly Inspired fighters on the battlefield, push each friendly Uninspired fighter up to 1 hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Self-command",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Use this in your Power step. Pick a friendly Uninspired fighter. Remove that fighter's spirit tokens and then give them a Guard token. You can only use this ability once per game."
+    },
+    {
+      "name": "Surfaced Instincts",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "Use this in your Power step. Pick a friendly fighter. Save rolls for that fighter cannot be affected by Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) in the next turn. You can only use this ability once per game."
+    }
+  ]
+}

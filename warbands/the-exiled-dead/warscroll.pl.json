@@ -1,0 +1,30 @@
+{
+  "inspire": "Przyjazne sługi ({icon:minion}) rozpoczynają grę jako Inspired.\nGdy wrogi wojownik zostanie pokonany przez przyjazną sługę ({icon:minion}), Inspire Deintalosa i Marcova.",
+  "abilities": [
+    {
+      "name": "Dynamiczne Wzmocnienie",
+      "flavorText": null,
+      "rulesText": "Przyjazni przewodzący ({icon:minion}) wojownicy mają +X do ruchu, gdzie X to liczba pokonanych przyjaznych przewodzących ({icon:minion}) wojowników."
+    },
+    {
+      "name": "Przeciążenie",
+      "flavorText": null,
+      "rulesText": "Przyjazni przewodzący ({icon:minion}) wojownicy nie mogą posiadać żetonów skarbu ani Delve. Bronie wręcz przyjaznych przewodzących ({icon:minion}) wojowników (z wyłączeniem Ulepszeń) mają cechę Grievous ({icon:grievous}), jeśli cel posiada jakiekolwiek żetony Stagger."
+    },
+    {
+      "name": "Dynamiczny Przypływ Mocy",
+      "flavorText": null,
+      "rulesText": "Możesz przerzucić 1 kość Ataku w rzucie na Atak przyjaznego przewodzącego ({icon:minion}) wojownika, jeśli jakikolwiek inny przyjazny przewodzący ({icon:minion}) wojownik jest sąsiadujący z atakującym."
+    },
+    {
+      "name": "Lalekarz",
+      "flavorText": "Prentice Marcov nie dorównuje jeszcze nekromantycznej mocy swojego mistrza, lecz z pewnością pilnie pracuje nad rozwinięciem swych mrocznych umiejętności.",
+      "rulesText": "Wybierz przyjaznego Marcova, aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz 1 z poniższych:\n\n• Ten wojownik i przyjazny Regulus mogą każde użyć zdolności Core, do której użycia są uprawnieni.\n\n• Jeśli przyjazny Regulus zostaje pokonany, wykonaj Raise na nim i umieść go w pustym polu sąsiadującym z tym wojownikiem.\n\nTa zdolność może być użyta tylko raz na rundę bitewną."
+    },
+    {
+      "name": "Dynamiczny Taniec",
+      "flavorText": "Deintalos jest mistrzem Dynamiki Mocy, z łatwością przepuszczając jej trzaskającą energię przez martwe kończyny.",
+      "rulesText": "Wybierz swojego lidera ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz zdolność Move albo zdolność Attack. Każdy przyjazny przewodzący ({icon:minion}) wojownik może użyć tej zdolności.\n\nNastępnie możesz wybrać pokonanego przyjaznego przewodzącego ({icon:minion}) wojownika. Wykonaj Raise na tym przewodzącym ({icon:minion}) wojowniku, umieść go w pustym polu sąsiadującym z twoim liderem ({icon:leader}), a następnie zadaj mu 1 obrażenie."
+    }
+  ]
+}

@@ -1,39 +1,42 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
-const WARSCROLLS_DIR = join(import.meta.dirname, '..', 'warbands', 'warscrolls');
+const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
 
 const TRANSLATION_PROMPT = `You are translating a Warhammer Underworlds warscroll from English to Polish.
 
-You will receive a warscroll JSON. For every object that has an "en" key but no "pl" key, add a "pl" key with the Polish translation.
+You will receive an English warscroll JSON. Return a Polish translation JSON containing ONLY the translatable text fields (inspire, reactions, abilities with name/trigger/flavorText/rulesText). Do NOT include metadata fields (id, version, grandAlliance, type).
 
 Translation rules:
 - Translate ALL text fields: ability names, flavor text, rules text, inspire conditions, triggers
 - Keep game terms that are proper nouns or keywords in their original form if they are commonly used untranslated in the Polish Warhammer community (e.g., "Inspire", "Power step", "Guard token"). However, translate descriptive text around them.
 - Preserve {icon:name} tokens exactly as-is — do NOT translate the icon names
 - Preserve \\n paragraph breaks
-- Keep the same JSON structure — only add "pl" keys alongside existing "en" keys
 - Translate flavor text with appropriate literary style matching the dark fantasy tone
 - For rules text, prioritize clarity and accuracy over literary style
 
-Return the complete modified JSON with all "pl" translations added. Return ONLY valid JSON, no markdown code fences or explanation.`;
-
-interface TranslatedField {
-  en?: string;
-  pl?: string;
+Example output format:
+{
+  "inspire": "<Polish inspire text>",
+  "reactions": [
+    {
+      "name": "<Polish name>",
+      "trigger": "<Polish trigger>",
+      "flavorText": "<Polish flavor>",
+      "rulesText": "<Polish rules>"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "<Polish name>",
+      "flavorText": "<Polish flavor>",
+      "rulesText": "<Polish rules>"
+    }
+  ]
 }
 
-function needsTranslation(data: Record<string, unknown>): boolean {
-  const check = (obj: unknown): boolean => {
-    if (obj === null || obj === undefined) return false;
-    if (typeof obj !== 'object') return false;
-    const o = obj as Record<string, unknown>;
-    if ('en' in o && !('pl' in o)) return true;
-    return Object.values(o).some(check);
-  };
-  return check(data);
-}
+Return ONLY valid JSON, no markdown code fences or explanation.`;
 
 async function translateWarscroll(
   client: Anthropic,
@@ -45,7 +48,7 @@ async function translateWarscroll(
     messages: [
       {
         role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the warscroll JSON to translate:\n\n${JSON.stringify(data, null, 2)}`,
+        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${JSON.stringify(data, null, 2)}`,
       },
     ],
   });
@@ -65,22 +68,30 @@ async function main() {
 
   const client = new Anthropic();
 
-  const files = readdirSync(WARSCROLLS_DIR).filter((f) => f.endsWith('.json'));
-
-  // Find files that need translation
-  const pending: { file: string; data: Record<string, unknown> }[] = [];
+  // Find warband folders with warscroll.json but no warscroll.pl.json
+  const entries = readdirSync(WARBANDS_DIR);
+  const pending: { slug: string; data: Record<string, unknown> }[] = [];
   let alreadyDone = 0;
 
-  for (const file of files) {
-    const data = JSON.parse(readFileSync(join(WARSCROLLS_DIR, file), 'utf8'));
-    if (needsTranslation(data)) {
-      pending.push({ file, data });
-    } else {
+  for (const entry of entries) {
+    const wbDir = join(WARBANDS_DIR, entry);
+    if (!statSync(wbDir).isDirectory()) continue;
+
+    const enFile = join(wbDir, 'warscroll.json');
+    const plFile = join(wbDir, 'warscroll.pl.json');
+
+    if (!existsSync(enFile)) continue;
+
+    if (existsSync(plFile)) {
       alreadyDone++;
+      continue;
     }
+
+    const data = JSON.parse(readFileSync(enFile, 'utf8'));
+    pending.push({ slug: entry, data });
   }
 
-  console.log(`Total warscrolls: ${files.length} | Already translated: ${alreadyDone} | Need translation: ${pending.length}`);
+  console.log(`Total with EN: ${alreadyDone + pending.length} | Already translated: ${alreadyDone} | Need translation: ${pending.length}`);
 
   if (pending.length === 0) {
     console.log('All warscrolls are fully translated!');
@@ -93,8 +104,8 @@ async function main() {
   let success = 0;
   let failed = 0;
 
-  for (const { file, data } of batch) {
-    const name = (data as { name?: string }).name ?? file;
+  for (const { slug, data } of batch) {
+    const name = (data as { name?: string }).name ?? slug;
     process.stdout.write(`  ${name} ... `);
 
     try {
@@ -102,12 +113,14 @@ async function main() {
       const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
       const translated = JSON.parse(jsonStr);
 
-      // Validate that the structure is preserved
-      if (!translated.id || !translated.abilities) {
+      if (!translated.inspire && !translated.abilities) {
         throw new Error('Invalid structure in response');
       }
 
-      writeFileSync(join(WARSCROLLS_DIR, file), JSON.stringify(translated, null, 2));
+      writeFileSync(
+        join(WARBANDS_DIR, slug, 'warscroll.pl.json'),
+        JSON.stringify(translated, null, 2),
+      );
       console.log('OK');
       success++;
     } catch (err) {

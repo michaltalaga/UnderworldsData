@@ -1,0 +1,34 @@
+{
+  "id": "rippas-snarlfangs",
+  "name": "Rippa's Snarlfangs",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "After a Power step, if a friendly fighter is equipped with 2 or more Upgrades, Inspire that fighter.\n\nAfter a friendly fighter Attacks again as a result of the Snarlfang's Jaws Weapon ability, if that Attack is successful, Inspire that fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Snarlfang's Jaws",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "If a friendly fighter's weapon has the {icon:hex} runemark, you have access to the following Weapon ability:\n\nSnarlfang's Jaws {icon:hex}: After a successful or drawn Attack, the attacker can immediately Attack again using the relevant weapon below. These weapons cannot be modified.\n\nIf the attacker is Uninspired, use this weapon:\n{icon:cleave} {icon:fury}1 1 {icon:skull}2\n\nIf the attacker is Inspired, use this weapon:\n{icon:cleave} {icon:fury}1 {icon:crit}2 {icon:skull}2"
+    },
+    {
+      "name": "Pack Tactics",
+      "type": "action",
+      "flavorText": "Rippa and his cronies might not get along, but they're no strangers to ganging up on prey.",
+      "rulesText": "Use this in your Power step. Pick an enemy fighter. Push each friendly fighter 1 hex closer to that fighter. You can only use this ability once per game."
+    },
+    {
+      "name": "Smell Weakness",
+      "type": "action",
+      "flavorText": "Both grots and Snarlfangs love picking on the weak; in tandem, they make a vicious combination.",
+      "rulesText": "Use this in a Power step. In the next turn, rolls of {icon:dodge} and {icon:shield} do not count as successes in Attack rolls or Save rolls for enemy fighters adjacent to any friendly fighters. You can only use this ability once per game."
+    },
+    {
+      "name": "Duck and Dive",
+      "type": "reaction",
+      "flavorText": "Call it luck, call it agility – either way, it's saved Rippa and his crew more than once.",
+      "rulesText": "Use this immediately after a friendly fighter is picked to be the target of an Attack. Save rolls made for that fighter for that Attack count as having more {icon:skull} than the Attack roll for the purposes of Stand Fast. You can only use this ability once per game."
+    }
+  ]
+}

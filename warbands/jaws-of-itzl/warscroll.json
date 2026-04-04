@@ -1,0 +1,36 @@
+{
+  "id": "jaws-of-itzl",
+  "name": "The Jaws of Itzl",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After inflicting damage on an enemy fighter in your opponent's Power step or Action step, pick a friendly fighter. Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Predatory Fighters",
+      "type": "reaction",
+      "trigger": "Use this immediately after an enemy fighter's failed melee Attack if the target was a friendly saurus ({icon:leader}) and the Save roll contained any {icon:dodge}.",
+      "flavorText": "With bladed shields and vice-like jaws, the saurus are just as deadly on the defence as they are on the attack.",
+      "rulesText": "Inflict 1 damage on that enemy fighter."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Instinctual Control",
+      "type": "reaction",
+      "flavorText": "Saurus are no beastmasters, but the reptilian creatures that swarm around them respond to their aggression, falling on enemies with venomous jaws flashing.",
+      "rulesText": "Use this immediately after you pick a target as part of an Attack made by a friendly saurus ({icon:leader}). Pick a friendly minion ({icon:minion}) with no Move or Charge tokens. That fighter can Move."
+    },
+    {
+      "name": "Savage Mauling",
+      "type": "action",
+      "flavorText": "When severed from the influence of their masters, saurus revert to their feral instincts, using natural weapons to tear apart prey in sprays of blood and viscera.",
+      "rulesText": "Use this in a Power step. Pick an enemy fighter adjacent to a damaged friendly saurus ({icon:leader}) that has no Charge tokens. Roll an Attack dice for each damage token that friendly fighter has. Inflict an amount of damage on that enemy fighter equal to the number of {icon:fury} and {icon:crit} rolled. You can only use this ability once per game. Each time an enemy fighter is slain by this ability, you can use this ability once more this game."
+    },
+    {
+      "name": "Obstinate",
+      "type": "action",
+      "flavorText": "Saurus are creatures of cold-blooded focus. If the Great Plan requires them to defend a point, they will do so without flinching.",
+      "rulesText": "Use this in a Power step. Pick a friendly saurus ({icon:leader}). That fighter cannot be driven back until the end of the battle round. You can only use this ability once per game."
+    }
+  ]
+}

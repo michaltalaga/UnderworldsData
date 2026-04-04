@@ -1,0 +1,29 @@
+{
+  "inspire": "Inspire liczbę przyjaznych wojowników równą numerowi rundy bitewnej na początku każdej fazy walki.\n\nUNINSPIRE\nNa początku rundy, Uninspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Śmiertelna Riposta",
+      "trigger": "Użyj tego natychmiast po nieudanym Ataku wroga skierowanym przeciwko przyjaznemu Thrallowi ({icon:minion}).",
+      "flavorText": "Pozbawieni oczu Namarti walczą z niesamowitą, śmiertelną gracją.",
+      "rulesText": "Broń tego Thralla posiada Cleave ({icon:cleave}) i Ensnare ({icon:ensnare}) podczas następnej tury, w której ten wrogi wojownik jest celem Ataku."
+    },
+    {
+      "name": "Widmowy Atrament",
+      "trigger": "Użyj tego natychmiast po nieudanym Ataku wroga skierowanym przeciwko przyjaznemu Cephanyrowi.",
+      "flavorText": "Cephanyr doskonale zna sztukę ucieczki w obłoku czarnego atramentu.",
+      "rulesText": "Przesuń Cephanyre o liczbę heksów równą numerowi rundy bitewnej."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Młotowy Przypływ",
+      "flavorText": null,
+      "rulesText": "Możesz użyć tej zdolności, jeśli twój leader ({icon:leader}) znajduje się na polu bitwy i nie posiada żetonów Charge. Poprowadź prostą linię z heksu twojego leadera ({icon:leader}), przechodzącą przez środek sąsiedniego heksu, aż do krawędzi pola bitwy. Zadaj 1 obrażenie pierwszemu wrogiemu wojownikowi, przez którego przechodzi ta linia, i nadaj temu wojownikowi żeton Stagger. Linia kończy się, jeśli dotknie zablokowanego heksu."
+    },
+    {
+      "name": "Żniwo Dusz",
+      "flavorText": "Idoneth poszukują silnych dusz, aby podtrzymać swój lud — a przyciągnięcie ich wzroku nigdy nie wróży nic dobrego…",
+      "rulesText": "Użyj tego w Power step. Wybierz Inspired wroga wojownika. Następnie twój przeciwnik musi wybrać jedną z poniższych opcji: Uninspire tego wojownika albo możesz dobrać karty Power w liczbie równej numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

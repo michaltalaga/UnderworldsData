@@ -1,0 +1,30 @@
+{
+  "inspire": "Jeśli nieprzyjacielski wojownik zostanie pokonany, gdy zdolność Locus of Shyish jest aktywna, Inspire liczbę przyjaznych wojowników równą charakterystyce Bounty tego nieprzyjacielskiego wojownika.",
+  "abilities": [
+    {
+      "name": "Locus of Shyish",
+      "flavorText": null,
+      "rulesText": "Rzuć 3 kośćmi ataku. Jeśli wynik zawiera 1 z rezultatów z tabeli Locus of Shyish, natychmiast użyj odpowiedniej zdolności. Ta zdolność jest aktywna do końca rundy bitewnej. Jeśli wynik zawiera jakiekolwiek {icon:crit}, możesz zastąpić każdy {icon:crit} innym symbolem według własnego wyboru ({icon:fury}, {icon:dodge}, {icon:shield} lub {icon:skull}).\n\nTen sam wojownik nie może zostać wybrany jako cel zdolności Locus of Shyish więcej niż raz na rundę bitewną."
+    },
+    {
+      "name": "Ostrza Shyish",
+      "flavorText": "Broń umarłych przesiąknięta jest morderczą ametystową energią.",
+      "rulesText": "Wybierz przyjaznego wojownika. Broń biała tego wojownika posiada Critical Grievous ({icon:crit}{icon:grievous})."
+    },
+    {
+      "name": "Duchowy Wicher",
+      "flavorText": "Wyjące widmowe wiatry przyśpieszają kroki sprzymierzeńca.",
+      "rulesText": "Wybierz przyjaznego wojownika. Ten wojownik otrzymuje +1 Move."
+    },
+    {
+      "name": "Więzienie Żalu",
+      "flavorText": "Fale rozpaczy przetaczają się przez pole bitwy, skazując wroga na nieustanne przeżywanie jego najczarniejszej chwili.",
+      "rulesText": "Wybierz nieprzyjacielskiego wojownika. Broń tego wojownika otrzymuje -1 kość ataku."
+    },
+    {
+      "name": "Widmowy Uścisk",
+      "flavorText": "Chwytające widmowe dłonie wyciągają się z ziemi, by schwytać wrogów.",
+      "rulesText": "Wybierz nieprzyjacielskiego wojownika. Ten wojownik otrzymuje -1 Move."
+    }
+  ]
+}

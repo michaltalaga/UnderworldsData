@@ -1,0 +1,39 @@
+{
+  "inspire": "Po Power stepie, jeśli jacykolwiek przyjazni wojownicy (z wyłączeniem Tarosa) zostali pokonani, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Oko Raptora",
+      "trigger": "Po tym, jak inny przyjazny wojownik wykona ruch",
+      "flavorText": null,
+      "rulesText": "Po tym, jak inny przyjazny wojownik wykona ruch, przesuń przyjaznego Tarosa o maksymalnie 3 heksy. Po tym przesunięciu Taros musi znajdować się w odległości 2 heksów od tego wojownika."
+    },
+    {
+      "name": "Uderzenie Poszukiwacza",
+      "trigger": "Użyj natychmiast po udanym ataku wręcz przyjaznego wojownika, jeśli cel znajdował się na żetonie cechy terenu.",
+      "flavorText": null,
+      "rulesText": "Użyj natychmiast po udanym ataku wręcz przyjaznego wojownika, jeśli cel znajdował się na żetonie cechy terenu. Odwróć ten żeton cechy terenu na drugą stronę. Możesz użyć tej zdolności tylko raz na rundę bitewną."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Błysk Światła",
+      "flavorText": "Latarnia Astrala oślepia i dezorientuje nieczystych.",
+      "rulesText": "Użyj tej zdolności podczas swojego Power stepu, jeśli twój dowódca ({icon:leader}) znajduje się na polu bitwy. Bronie wrogich wojowników mają -1 kość Ataku w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Płonąca Czystość",
+      "flavorText": "W ostatnim rozbłysku świętego światła Calthia stara się wesprzeć swoich towarzyszy broni.",
+      "rulesText": "Użyj natychmiast po tym, jak twój dowódca ({icon:leader}) zostanie pokonany. Wybierz maksymalnie 2 przyjaznych wojowników i ulecz każdego z nich, lub wybierz 1 przyjaznego wojownika i ulecz go dwukrotnie. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Płonąca Siła",
+      "flavorText": "Nawet padając, Dhoraz zagrzewa swoich towarzyszy do jeszcze większych czynów.",
+      "rulesText": "Użyj natychmiast po tym, jak przyjazny Dhoraz zostanie pokonany. Wybierz maksymalnie 2 przyjaznych wojowników i przesuń każdego z nich o 1 heks, lub wybierz 1 przyjaznego wojownika i przesuń go o maksymalnie 2 heksy. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Płonący Odwet",
+      "flavorText": "Choć jej zachowanie bywa mylnie odczytywane jako chłodne i obojętne, wola Luksy, by wspierać swoich towarzyszy, płonie jasnym ogniem.",
+      "rulesText": "Użyj natychmiast po tym, jak przyjazna Luxa zostanie pokonana, przed jej usunięciem z pola bitwy. Ten wojownik Atakuje bronią dystansową (z wyłączeniem Ulepszeń). Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

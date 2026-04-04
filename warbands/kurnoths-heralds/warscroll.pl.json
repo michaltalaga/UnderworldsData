@@ -1,0 +1,30 @@
+{
+  "inspire": "Po kroku Akcji, jeśli przyjazny wojownik rozpoczął ten krok Akcji na przyjaznym terytorium, a następnie wykonał skuteczny Atak, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Niekończące się Łowy",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik wykonał Atak.",
+      "flavorText": "Wierni Kurnotha rzadko zwalniają i nigdy nie stoją w miejscu, albowiem łowy nie mają końca.",
+      "rulesText": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik wykonał Atak. Możesz przepchnąć atakującego o maksymalnie 2 heksy. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Precyzyjna Salwa",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny Lenwythe wykonał atak dystansowy.",
+      "flavorText": "Niektórzy z największych łuczników w krainach zamieszkują Kurnotheal, a Lenwythe potrafi przewyższyć większość z nich.",
+      "rulesText": "Użyj tej reakcji natychmiast po tym, jak przyjazny Lenwythe wykonał atak dystansowy. Ten wojownik wykonuje kolejny Atak tym samym orężem. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Duma Herolda",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak wybierzesz oręż w ramach Ataku {icon:leader} swojego przywódcy.",
+      "flavorText": "Ylarin cechuje się arogancją urodzonego wojownika, lecz niewielu spośród tych, którzy byli świadkami jego wojennego kunsztu, odmówiłoby mu chwały.",
+      "rulesText": "Użyj tej reakcji natychmiast po tym, jak wybierzesz oręż w ramach Ataku {icon:leader} swojego przywódcy. Ten oręż posiada Cleave ({icon:cleave}) oraz Ensnare ({icon:ensnare}) podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Zwinni Strażnicy",
+      "flavorText": "Doskonale zestrojeni z Rajem Łowcy, Heroldzi Kurnotha zataczają kręgi wokół intruzów, którzy ośmielają się zapuszczać na ich terytorium.",
+      "rulesText": "Dopóki przebywają na przyjaznym terytorium, przyjazni wojownicy posiadają runiczną oznakę Flying ({icon:hex}) i nie mogą być Flankowani (nadal mogą być Otoczeni)."
+    }
+  ]
+}

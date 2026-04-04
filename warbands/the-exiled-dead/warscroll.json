@@ -1,0 +1,40 @@
+{
+  "id": "the-exiled-dead",
+  "name": "The Exiled Dead",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "Friendly minions ({icon:minion}) begin the game Inspired.\nAfter an enemy fighter is slain by a friendly minion ({icon:minion}), Inspire Deintalos and Marcov.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Dynamic Enhancer",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Friendly conductive ({icon:minion}) fighters have +X Move, where X is the number of slain friendly conductive ({icon:minion}) fighters."
+    },
+    {
+      "name": "Overload",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Friendly conductive ({icon:minion}) fighters cannot hold treasure tokens or Delve. Friendly conductive ({icon:minion}) fighters' melee weapons (excluding Upgrades) have Grievous ({icon:grievous}) if the target has any Stagger tokens."
+    },
+    {
+      "name": "Dynamic Surge",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "You can re-roll 1 Attack dice in an Attack roll for a friendly conductive ({icon:minion}) fighter while any other friendly conductive ({icon:minion}) fighters are adjacent to the attacker."
+    },
+    {
+      "name": "Puppeteer",
+      "type": "action",
+      "flavorText": "Prentice Marcov is not yet the equal of his master's necromantic power, but he is certainly working to develop his dark skills.",
+      "rulesText": "Pick a friendly Marcov to use this ability if they have no Move or Charge tokens. Pick 1 of the following:\n\n• That fighter and a friendly Regulus can each use a Core ability that they are eligible to use.\n\n• If a friendly Regulus is slain, Raise them and place them in an empty hex adjacent to that fighter.\n\nThis ability can only be used once per battle round."
+    },
+    {
+      "name": "Danse Dynamic",
+      "type": "action",
+      "flavorText": "Deintalos is a master of the Force Dynamic, sending its crackling power through unliving limbs with ease.",
+      "rulesText": "Pick your leader ({icon:leader}) to use this ability if they have no Move or Charge tokens. Pick either the Move ability or the Attack ability. Each friendly conductive ({icon:minion}) fighter can use that ability.\n\nThen, you can pick a slain friendly conductive ({icon:minion}) fighter. Raise that conductive ({icon:minion}) fighter, place them in an empty hex adjacent to your leader ({icon:leader}) and then inflict 1 damage on them."
+    }
+  ]
+}

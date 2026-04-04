@@ -1,0 +1,30 @@
+{
+  "inspire": "Przed użyciem przez przyjaznego wojownika zdolności podstawowej możesz wybrać misję do podjęcia, której jeszcze nie próbowałeś. Po ukończeniu misji natychmiast użyj jej zdolności Nagrody. Nie możesz podejmować kilku misji jednocześnie. Możesz porzucić misję podczas Power step zamiast zagrywać kartę Power.",
+  "abilities": [
+    {
+      "name": "Mianuję Cię...",
+      "flavorText": "Grinkrak zagrzewa swych głuptasów do szczytów przeciętności.",
+      "rulesText": "Możesz użyć tej zdolności raz na rundę bitewną przed użyciem zdolności podstawowej przez przyjaznego Loonknight ({icon:minion}). Ten wojownik jest mianowany do końca gry."
+    },
+    {
+      "name": "Misja: Podbij Królestwo",
+      "flavorText": "",
+      "rulesText": "Ukończysz tę misję po Action step, jeśli twoja drużyna posiada 2 lub więcej żetonów skarbu i posiada więcej żetonów skarbu niż drużyna przeciwnika.\n\nNagroda: Możesz Inspire przyjaznego Loonknight ({icon:minion}). Jeśli mianowany przyjazny wojownik trzyma żeton skarbu w momencie ukończenia tej misji, możesz również Inspire swojego lidera ({icon:leader}), a następnie dobrać do 2 kart Power."
+    },
+    {
+      "name": "Misja: Naprzód i Tłucz",
+      "flavorText": "",
+      "rulesText": "Jeśli wybierzesz tę misję, mianowani przyjaźni wojownicy mają +1 Move do końca gry. Ukończysz tę misję po Action step, jeśli 2 lub więcej przyjaznych wojowników znajduje się na terytorium wroga.\n\nNagroda: Możesz Inspire do 2 przyjaznych Loonknights ({icon:minion}). Jeśli twój lider ({icon:leader}) znajduje się na terytorium wroga w momencie ukończenia tej misji, możesz również Inspire swojego lidera ({icon:leader})."
+    },
+    {
+      "name": "Misja: Wyrżnij Hordę",
+      "flavorText": "",
+      "rulesText": "Jeśli wybierzesz tę misję, bronie do walki wręcz mianowanych przyjaznych wojowników mają +1 kość ataku do końca gry. Ukończysz tę misję po Action step, jeśli zostają pokonani wrogowie o łącznej charakterystyce Bounty wynoszącej 2 lub więcej.\n\nNagroda: Możesz Inspire przyjaznego wojownika. Jeśli któryś z tych wrogich wojowników został pokonany przez atak mianowanego przyjaznego wojownika, możesz zamiast tego Inspire przyjaznego Loonknight ({icon:minion}) i swojego lidera ({icon:leader})."
+    },
+    {
+      "name": "Misja: Zarżnij Straszydło",
+      "flavorText": "",
+      "rulesText": "Jeśli wybierzesz tę misję, do końca gry bronie do walki wręcz mianowanych przyjaznych wojowników mają Grievous ({icon:grievous}), jeśli cel posiada charakterystykę Bounty wynoszącą 2 lub więcej. Ukończysz tę misję po Action step, jeśli zostaje pokonany wrogi wojownik z charakterystyką Bounty wynoszącą 2 lub więcej.\n\nNagroda: Możesz Inspire do 2 przyjaznych Loonknights ({icon:minion}) i swojego lidera ({icon:leader})."
+    }
+  ]
+}

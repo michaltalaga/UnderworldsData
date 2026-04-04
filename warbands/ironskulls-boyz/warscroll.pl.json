@@ -1,0 +1,30 @@
+{
+  "inspire": "Natychmiast po tym, jak przyjazny wojownik zaatakuje wrogi wojownik będący Flanked lub Surrounded, Inspire atakującego oraz wszystkich przyjaznych wojowników przylegających do celu.",
+  "reactions": [
+    {
+      "name": "'Ave This, Ya Git!",
+      "trigger": "Użyj tego natychmiast po tym, jak wrogi wojownik wykonał Charge.",
+      "flavorText": "Mimo swego umiłowania do wojny i przemocy, zwiastuni zniszczenia wpadają w wielką złość, gdy nieprzyjaciele mają czelność szarżować na nich jako pierwsi.",
+      "rulesText": "Użyj tego natychmiast po tym, jak wrogi wojownik wykonał Charge. Wybierz przyjaznego wojownika przylegającego do tego wrogiego wojownika. Ten przyjazny wojownik może wykonać Attack, lecz ten Attack musi być skierowany przeciwko wrogiemu wojownikowi, który wykonał Charge. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "'Ere We Go!",
+      "trigger": "Użyj tego natychmiast po wybraniu uszkodzonego przyjaznego wojownika do wykonania Attack.",
+      "flavorText": "Zranienie kogoś z bandy Gorkamorki zamiast zabicia go od razu to śmiertelny błąd, który stał się udziałem zbyt wielu wojowników.",
+      "rulesText": "Użyj tego natychmiast po wybraniu uszkodzonego przyjaznego wojownika do wykonania Attack. Broń tego wojownika ma +1 kość Attack podczas tego Attack. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Mentalność Bandy",
+      "trigger": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany jako cel ataku wręcz, jeśli inny przyjazny wojownik jest do niego przylegający.",
+      "flavorText": "Niełatwo trafić szalejącego berserkera wymachującego na oślep bronią, a co dopiero dwóch walczących ramię w ramię.",
+      "rulesText": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany jako cel ataku wręcz, jeśli inny przyjazny wojownik jest do niego przylegający. Cel ma wartość Save równą 2 {icon:shield} dla tego Attack. Ta zdolność może być użyta tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Get Da Boss!",
+      "flavorText": "",
+      "rulesText": "Na początku pierwszego Action step w każdej rundzie bitwy możesz przesunąć każdego przyjaznego wojownika o 1 pole. To przesunięcie musi zakończyć się bliżej lub przylegająco do wrogiego przywódcy ({icon:leader})."
+    }
+  ]
+}

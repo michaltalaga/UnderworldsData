@@ -1,0 +1,42 @@
+{
+  "id": "kainans-reapers",
+  "name": "Kainan's Reapers",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "After an enemy fighter is slain, gain a number of bone-tithe tokens equal to their Bounty characteristic. After your Action step, you can pick a friendly fighter and remove a number of bone-tithe tokens equal to their Bounty characteristic. Then, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Mortek Advance",
+      "type": "reaction",
+      "trigger": "Use this immediately after your Action step if a friendly Kainan or Khenta used a Core ability in that Action step.",
+      "flavorText": "At a gesture, the Ossiarchs march forward in lockstep.",
+      "rulesText": "Each friendly minion ({icon:minion}) can Move, but each must end that Move adjacent to 1 or more friendly minions ({icon:minion})."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Dire Ultimatum",
+      "type": "action",
+      "flavorText": "A demand that cannot be denied.",
+      "rulesText": "Use this in your Power step. Friendly fighters cannot be picked to be the target of an Attack in the next Action step unless they are your leader ({icon:leader}). You can only use this ability once per game. This ability cannot be used if Mir Kainan is slain."
+    },
+    {
+      "name": "Ranks Unbroken By Dissent",
+      "type": "reaction",
+      "flavorText": "Each nadirite blade of the Mortek Guard is but one facet of a terrifyingly efficient engine of war.",
+      "rulesText": "Use this immediately after you pick a weapon as part of a melee Attack. If the target is Flanked and/or Surrounded, that weapon has Grievous ({icon:grievous}) for that Attack. You can only use this ability once per game."
+    },
+    {
+      "name": "Monolith Stance",
+      "type": "action",
+      "flavorText": "The Mortek Guard go on the defensive, weathering the blows of the enemy with cold disdain.",
+      "rulesText": "Use this in your Power step. Pick a number of friendly minions ({icon:minion}) equal to or less than the battle round number. Give each of those fighters a Guard token. You can only use this ability once per game."
+    },
+    {
+      "name": "Unrelenting Assault",
+      "type": "action",
+      "flavorText": "The Ossiarch Bonereapers do not rest until the tithe has been harvested.",
+      "rulesText": "Use this in your Power step. Pick a friendly minion ({icon:minion}) with any Move and/or Charge tokens. Remove that fighter's Move and/or Charge tokens. You can only use this ability once per game."
+    }
+  ]
+}

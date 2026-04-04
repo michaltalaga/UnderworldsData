@@ -1,0 +1,43 @@
+{
+  "id": "hexbanes-hunters",
+  "name": "Hexbane's Hunters",
+  "version": "1.2",
+  "grandAlliance": "Order",
+  "inspire": "Immediately after a friendly Agent Azyrite ({icon:leader}) is slain, you can pick a friendly Agent Azyrite ({icon:leader}). Inspire that fighter. After a friendly Pock or minion ({icon:minion}) is slain, Inspire each friendly minion ({icon:minion}) and/or Pock on the battlefield.",
+  "reactions": [
+    {
+      "name": "Loyal Hounds",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Agent Azyrite ({icon:leader}) Moves.",
+      "flavorText": "Ratspike and Grotbiter are as loyal as they come.",
+      "rulesText": "Pick a friendly minion ({icon:minion}) with no Charge tokens. That fighter can Move."
+    },
+    {
+      "name": "Ward of Martyr's Blood",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Agent Azyrite ({icon:leader}) is picked to be the target of an Attack.",
+      "flavorText": "The Order of Azyr prepares defences against everything.",
+      "rulesText": "The attacker cannot use Weapon abilities for that Attack. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Tools of the Trade",
+      "type": "passive",
+      "flavorText": "When a hunter falls, knowledge of what felled them is used to better prepare for the next encounter.",
+      "rulesText": "Add the total Bounty characteristic of slain friendly Agents Azyrite ({icon:leader}) to your total Glory points to determine how many Upgrades can be equipped by friendly fighters."
+    },
+    {
+      "name": "Marked for Vengeance",
+      "type": "passive",
+      "flavorText": "To slay a member of the Order of Azyr is to invite retribution.",
+      "rulesText": "Immediately after a friendly Agent Azyrite ({icon:leader}) is slain by an enemy fighter, that enemy fighter is marked. Other marked enemy fighters are no longer marked. You can re-roll 1 dice in an attack roll if the target is marked and friendly fighters' melee weapons have Grievous if the target is marked. After a marked enemy fighter is slain, you can either remove all Move and/or Charge tokens from a friendly fighter or draw 1 Power card."
+    },
+    {
+      "name": "Tight-knit Pack",
+      "type": "passive",
+      "flavorText": "Only by killing both of Pock's hounds shall enemies of this warband know peace.",
+      "rulesText": "Immediately after the first friendly minion ({icon:minion}) is slain, you must add 1 to the Bounty characteristic of the other friendly minion ({icon:minion})."
+    }
+  ]
+}

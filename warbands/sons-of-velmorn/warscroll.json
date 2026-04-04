@@ -1,0 +1,44 @@
+{
+  "id": "sons-of-velmorn",
+  "name": "The Sons of Velmorn",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "After a friendly fighter's successful Attack, Inspire the attacker and each friendly fighter that was adjacent to the target when the Attack roll was made.",
+  "reactions": [
+    {
+      "name": "Deadly Command",
+      "type": "reaction",
+      "trigger": null,
+      "flavorText": "The cursed crown King Velmorn wears grants him great control over his full-blooded sons.",
+      "rulesText": "Use this immediately after your leader ({icon:leader}) uses a Core ability. Give that fighter a command token.\n\nWhile your leader ({icon:leader}) has any command tokens, each time you make an Attack roll for a friendly Grave Guard ({icon:minion}), your leader ({icon:leader}) is treated as being adjacent to the target."
+    },
+    {
+      "name": "Raise Shields!",
+      "type": "reaction",
+      "trigger": null,
+      "flavorText": "Velmorn's people were famed for their drill and the strength of their shieldwalls. Little has changed.",
+      "rulesText": "Use this immediately after an enemy fighter's Attack if the target was a friendly bulwark ({icon:shield}) and the Save roll contained any {icon:crit}. Give that friendly fighter a Guard token."
+    },
+    {
+      "name": "The Velmorn Curse",
+      "type": "reaction",
+      "trigger": null,
+      "flavorText": "Woe betide those who would harm the House of Velmorn, for a dread curse clings to their ancient bones…",
+      "rulesText": "Use this immediately after a friendly fighter is slain by an attacker adjacent to them. Inflict 1 damage on the attacker. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Rise Again",
+      "type": "action",
+      "flavorText": "Velmorn's heirs must fight eternally in his name.",
+      "rulesText": "You can use this ability in your Power step if your leader ({icon:leader}) is on the battlefield and they have no Charge tokens. Remove 1 command token from them, then pick a slain friendly Grave Guard ({icon:minion}). Raise that fighter and place them in a starting hex in friendly territory. You can only use this ability once per game."
+    },
+    {
+      "name": "Surprise Swiftness",
+      "type": "action",
+      "flavorText": "Though their bodies are but mouldering bones, the power of the Tyrant's Crown – and their own revenant grief – grants Velmorn's line the occasional burst of swiftness.",
+      "rulesText": "Use this in a Power step. Friendly fighters have +2 Move in the next turn. You can only use this ability once per game."
+    }
+  ]
+}

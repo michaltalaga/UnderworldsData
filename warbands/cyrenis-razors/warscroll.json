@@ -1,0 +1,37 @@
+{
+  "id": "cyrenis-razors",
+  "name": "Cyreni's Razors",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Inspire a number of friendly fighters equal to the battle round at the beginning of each combat phase.\n\nUNINSPIRE\nAt the start of the round, Uninspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Deadly Riposte",
+      "type": "reaction",
+      "trigger": "Use this immediately after an enemy fighter's failed Attack that targeted a friendly Thrall ({icon:minion}).",
+      "flavorText": "The eyeless Namarti fight with an eerie, deadly grace.",
+      "rulesText": "That Thrall's weapons have Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) during the next turn while that enemy fighter is the target of an Attack."
+    },
+    {
+      "name": "Phantasmal Ink",
+      "type": "reaction",
+      "trigger": "Use this immediately after an enemy fighter's failed Attack that targeted a friendly Cephanyr.",
+      "flavorText": "Cephanyr is well versed at escaping in a burst of black ink.",
+      "rulesText": "Push Cephanyr a number of hexes equal to the battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Hammertide",
+      "type": "action",
+      "flavorText": null,
+      "rulesText": "You can use this ability if your leader ({icon:leader}) is on the battlefield and has no Charge tokens. Draw a straight line from your leader's ({icon:leader}) hex that passes through the centre of an adjacent hex and goes all the way to the edge of the battlefield. Inflict 1 damage on the first enemy fighter that line crosses and give that fighter a Stagger token. The line ends if it touches a blocked hex."
+    },
+    {
+      "name": "Soul Harvest",
+      "type": "action",
+      "flavorText": "The Idoneth seek out strong souls to sustain their people – and it is never wise to catch their eye…",
+      "rulesText": "Use this in a Power step. Pick an Inspired enemy fighter. Then your opponent must pick one of the following: Uninspire that fighter, or you can draw Power cards equal to the battle round. You can only use this ability once per game."
+    }
+  ]
+}

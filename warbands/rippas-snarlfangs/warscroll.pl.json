@@ -1,0 +1,25 @@
+{
+  "inspire": "Po Power stepie, jeśli przyjazny wojownik jest wyposażony w 2 lub więcej Ulepszeń, Inspire tego wojownika.\n\nJeśli przyjazny wojownik zaatakuje ponownie w wyniku zdolności broni Snarlfang's Jaws i ten Atak jest skuteczny, Inspire tego wojownika.",
+  "abilities": [
+    {
+      "name": "Szczęki Snarlfanga",
+      "flavorText": null,
+      "rulesText": "Jeśli broń przyjaznego wojownika posiada runomark {icon:hex}, masz dostęp do następującej zdolności broni:\n\nSnarlfang's Jaws {icon:hex}: Po skutecznym lub remisowym Ataku, atakujący może natychmiast zaatakować ponownie, używając odpowiedniej broni poniżej. Tych broni nie można modyfikować.\n\nJeśli atakujący jest Uninspired, użyj tej broni:\n{icon:cleave} {icon:fury}1 1 {icon:skull}2\n\nJeśli atakujący jest Inspired, użyj tej broni:\n{icon:cleave} {icon:fury}1 {icon:crit}2 {icon:skull}2"
+    },
+    {
+      "name": "Taktyka Stada",
+      "flavorText": "Rippa i jego kompani może i nie przepadają za sobą, ale napadanie na ofiary w grupie to dla nich chleb powszedni.",
+      "rulesText": "Użyj tej zdolności podczas twojego Power stepu. Wybierz wrogiego wojownika. Przesuń każdego przyjaznego wojownika o 1 hex bliżej tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Wyczuć Słabość",
+      "flavorText": "Zarówno groty, jak i Snarlfangi uwielbiają pastwić się nad słabszymi; działając razem, tworzą okrutnie skuteczne połączenie.",
+      "rulesText": "Użyj tej zdolności podczas Power stepu. W następnej turze wyniki {icon:dodge} i {icon:shield} nie są liczone jako sukcesy w rzutach na Atak ani w rzutach na Save dla wrogich wojowników sąsiadujących z jakimkolwiek przyjaznym wojownikiem. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Kucnąć i Umknąć",
+      "flavorText": "Nazwijcie to szczęściem, nazwijcie to zręcznością – tak czy inaczej, nieraz uratowało to Rippę i jego kompanów.",
+      "rulesText": "Użyj tej zdolności natychmiast po tym, jak przyjazny wojownik zostanie wybrany jako cel Ataku. Rzuty na Save wykonane dla tego wojownika podczas tego Ataku są traktowane jako mające więcej {icon:skull} niż rzut na Atak dla celów Stand Fast. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

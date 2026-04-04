@@ -1,0 +1,30 @@
+{
+  "inspire": "W Power stepie, zamiast zagrywać kartę Power, możesz wybrać przyjaznego wojownika posiadającego 3 lub więcej żetonów Waaagh!. Usuń 3 żetony Waaagh! od tego wojownika, a następnie Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Energia Waaagh!",
+      "trigger": "Użyj tego natychmiast po tym, jak przyjazny wojownik wykonuje Atak lub wrogi wojownik wykonuje Atak, a przyjazny wojownik jest celem tego Ataku.",
+      "flavorText": "Im więcej chłopaki się biją, tym bardziej zadziorni się stają.",
+      "rulesText": "Daj temu przyjaznemu wojownikowi żeton Waaagh!."
+    },
+    {
+      "name": "Ded 'Ard",
+      "trigger": "Użyj tego natychmiast po tym, jak obrażenia zostają zadane przyjaznemu wojownikowi posiadającemu jakiekolwiek żetony Waaagh! w ramach Ataku.",
+      "flavorText": "Uderzenie orrukiego Brutala przypomina uderzenie w ceglany mur — tyle że bardziej niebezpieczne i mniej satysfakcjonujące.",
+      "rulesText": "Usuń do 2 żetonów Waaagh! od tego wojownika. Za każdy usunięty żeton Waaagh! wybierz 1 z poniższych:\n• Daj temu przyjaznemu wojownikowi żeton Guard.\n• Daj atakującemu żeton Stagger.\n\nMożesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Zamknij się, Małolecie!",
+      "trigger": "Użyj tego natychmiast po tym, jak przeciwnik zagrywa Ploy.",
+      "flavorText": "Krushas wiedzą doskonale, jak uciszyć rozgadanego małego głupka — rykiem głośnym na tyle, by pęknęły bębenki!",
+      "rulesText": "Usuń do 2 żetonów Waaagh! od przyjaznego wojownika, a następnie rzuć kością Ataku za każdy usunięty żeton. Jeśli rzut zawierał jakikolwiek {icon:fury} lub {icon:crit}, ten Ploy nie wywiera żadnego efektu. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Ruszajcie się, Głuptasy!",
+      "flavorText": "Pozostałe Krushas doskonale wiedzą, że jeśli nie rzucą się do walki, Morgok sam im pomoże kopniakiem.",
+      "rulesText": "Użyj tego w Power stepie. Daj swojemu liderowi ({icon:leader}) żeton Charge. Następnie przesuń każdego innego przyjaznego wojownika o liczbę heksów równą numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

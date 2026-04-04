@@ -1,0 +1,43 @@
+{
+  "id": "skittershanks-clawpack",
+  "name": "Skittershank's Clawpack",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "After an Action step, if an enemy leader ({icon:leader}) is slain or has 3 or more damage tokens, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Marked for Death",
+      "type": "reaction",
+      "trigger": "Use this immediately after making an Attack roll for a friendly fighter if the target is an enemy leader ({icon:leader}).",
+      "flavorText": "Those claw-marked by the Clans Eshin are not long for the world.",
+      "rulesText": "Re-roll 1 Attack dice in that Attack roll."
+    },
+    {
+      "name": "Spiketraps and Snares",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly fighter's successful melee Attack, give the target a barb token.\n\nImmediately after an enemy fighter with any barb tokens Moves, inflict 1 damage on that fighter, then remove that fighter's barb tokens. Remove all barb tokens from enemy fighters at the end of the battle round.",
+      "flavorText": "Skittershank and his minions know all sorts of ways to bleed and harry their target.",
+      "rulesText": "Immediately after a friendly fighter's successful melee Attack, give the target a barb token.\n\nImmediately after an enemy fighter with any barb tokens Moves, inflict 1 damage on that fighter, then remove that fighter's barb tokens. Remove all barb tokens from enemy fighters at the end of the battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Smoke Bombs",
+      "type": "reaction",
+      "flavorText": "In a burst of glimmering green smoke, the Clawpack blinds their enemies.",
+      "rulesText": "Immediately after a friendly fighter's Attack, give each enemy fighter adjacent to the attacker a Stagger token. You can only use this ability once per game."
+    },
+    {
+      "name": "The Jaws Snap",
+      "type": "action",
+      "flavorText": "Luring targets from their place of safety is standard practice for any true assassin.",
+      "rulesText": "Use this in your Power step. Pick an enemy leader ({icon:leader}) in enemy territory. Push that fighter 1 hex. You can only use this ability once per game."
+    },
+    {
+      "name": "Skittering Blur",
+      "type": "action",
+      "flavorText": "When the lure and the blind fails, pure speed can buy another chance...",
+      "rulesText": "Use this in your Power step. In the next turn, friendly assassins ({icon:minion}) cannot be picked to be the target of Attacks or Ploys. You can only use this ability once per game."
+    }
+  ]
+}

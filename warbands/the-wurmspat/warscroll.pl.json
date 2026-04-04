@@ -1,0 +1,33 @@
+{
+  "inspire": "Jeśli 3 lub więcej wrogich wojowników zostało pokonanych lub rannych, Inspire każdego przyjaznego wojownika.\n\nGdy wrogi wojownik posiadający żetony żółci zostanie pokonany przez przyjaznego wojownika, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Obrzydliwie Wytrzymały",
+      "trigger": "Bezpośrednio przed zadaniem obrażeń przyjaznemu wojownikowi przez Atak bez Cleave ({icon:cleave}), jeśli rzut na Obronę zawierał jakiekolwiek {icon:shield}",
+      "flavorText": "Wybrańcy Nurgle'a są niemal całkowicie uodpornieni na ból.",
+      "rulesText": "Bezpośrednio przed zadaniem obrażeń przyjaznemu wojownikowi przez Atak bez Cleave ({icon:cleave}), jeśli rzut na Obronę zawierał jakiekolwiek {icon:shield}, zmniejsz obrażenia tego Ataku o 1."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Dary Dziadka",
+      "flavorText": "Jedno zadraśnięcie, a zarazy biorą się do swojej wielkiej roboty…",
+      "rulesText": "Ostrze Żółci {icon:fury}: Jeśli Atak zakończył się powodzeniem, daj celowi żeton żółci po rozpatrzeniu Ataku.\n\nWrodzy wojownicy mają -1 Move, dopóki posiadają jakiekolwiek żetony żółci. Usuń wszystkie żetony żółci od wrogich wojowników na końcu rundy bitewnej."
+    },
+    {
+      "name": "Spokojne Natarcie",
+      "flavorText": "Nie ma powodu do pośpiechu – dla wszystkich znajdą się łaski, we właściwym czasie.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz do 2 przyjaznych wojowników. Przesuń każdego z tych wojowników o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Mdląca Odraza",
+      "flavorText": "Nie każdy docenia naturę darów Feculi. Niewdzięcznicy…",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Ostrza Gnicia",
+      "flavorText": "Plugawa maź i ciekłe zarazy skapują z krawędzi ostrzy Wurmspatu.",
+      "rulesText": "Użyj tej zdolności w Power step. Bronie do walki wręcz przyjaznych wojowników mają Grievous ({icon:grievous}) dodatkowo do wszelkich innych zdolności broni w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

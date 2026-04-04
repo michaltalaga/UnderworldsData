@@ -1,0 +1,33 @@
+{
+  "inspire": "Natychmiast po zadaniu obrażeń wrogemu wojownikowi za pomocą zdolności Krule Stab, Inspire przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Krule Stab",
+      "trigger": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie.",
+      "flavorText": null,
+      "rulesText": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie. Wybierz wrogiego wojownika, który nie jest podatny na ataki i który jest sąsiadujący z tym przyjaznym wojownikiem, a następnie rzuć kością ataku. Na wynik {icon:fury} lub {icon:crit} zadaj 1 obrażenie temu wrogemu wojownikowi. Ten sam wojownik nie może użyć tej zdolności więcej niż raz na turę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "'Dwóch na jednego, ty głuptasie!'",
+      "flavorText": "Daggok i jego ladzi słyszeli już wcześniej o czymś takim jak uczciwa walka. Nie można powiedzieć, żeby ten pomysł zrobił na nich wrażenie.",
+      "rulesText": "Użyj tej zdolności natychmiast po twoim Action stepie. Możesz odepchnąć przyjaznego wojownika o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Złodziej Kunnin'",
+      "flavorText": "Im więcej głów Daggok zdaje się być gotów zabrać, tym bardziej przebiegły się staje.",
+      "rulesText": "Użyj tej zdolności w Power stepie. Dobierz liczbę kart Power równą liczbie rannych wrogich wojowników. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Paskudne Trucizny",
+      "flavorText": "Kruleboyz są dobrze znani z nacierania swoich broni wszelkiego rodzaju złowrogimi bagiennymi toksynami.",
+      "rulesText": "Użyj tej zdolności natychmiast po Action stepie. Rzuć kością za każdego rannego wrogiego wojownika. Na wynik {icon:crit} zadaj 1 obrażenie temu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Knujące Gity",
+      "flavorText": null,
+      "rulesText": "Zamiast zagrywać Ploy w Power stepie przeciwnika, możesz odrzucić Ploys, aby użyć poniższych zdolności. Liczba odrzuconych Ploys określa, które zdolności obowiązują w następnej turze. Efekty są kumulatywne, a efekt każdej zdolności trwa do końca twojej następnej tury.\n\nOdrzuć 1: Przyjazni wojownicy mają +1 Move.\nOdrzuć 2: Wrodzy wojownicy są Flanked.\nOdrzuć 3: Broń przyjaznych wojowników ma +1 kość ataku."
+    }
+  ]
+}

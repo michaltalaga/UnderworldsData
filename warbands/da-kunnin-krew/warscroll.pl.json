@@ -1,0 +1,25 @@
+{
+  "inspire": "Po udanym Ataku friendly fightera, jeśli cel został zabity, Flankowany lub Otoczony, Inspire atakującego oraz każdego friendly fightera sąsiadującego z celem.",
+  "abilities": [
+    {
+      "name": "Ból w Kolanie",
+      "flavorText": "Czy to podstawiając nogi, zaczepiając płaszcze, czy wbijając sztylet w kostkę — grot-służki Mannoka doskonale wiedzą, jak być użytecznymi podczas bójki.",
+      "rulesText": "Jeśli atakującym jest friendly Mannok lub Torka, friendly miniony ({icon:minion}) liczą się jako 2 fighterzy przy określaniu, czy cel jest Flankowany lub Otoczony."
+    },
+    {
+      "name": "Przebiegły Plan",
+      "flavorText": "Mannok to orruk o zadziwiającej przebiegłości — a każdy, kto twierdzi inaczej, zostaje posiekany.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po Action stepie, jeśli twój leader ({icon:leader}) jest na polu bitwy. Pchnij każdego friendly miniona ({icon:minion}) o liczbę heksów równą numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Brudne Sztuczki",
+      "flavorText": "Krew uwielbia ryzykowne zagrania — ale nigdy uczciwe.",
+      "rulesText": "Użyj tej zdolności bezpośrednio przed wykonaniem rzutu na Atak lub rzutu na Save przez ciebie lub twojego przeciwnika. Twój przeciwnik musi zadeklarować 'Upgrade' lub 'Ploy'. Weź 3 karty Power z ręki i potasuj je rewersem do góry. Przeciwnik musi wybrać 1 z tych kart. Następnie odkryj każdą z tych kart. Jeśli karta wybrana przez przeciwnika pasuje do jego deklaracji, dobierz 1 kartę Power. W przeciwnym razie ten rzut na Atak lub rzut na Save nie jest wykonywany i zamiast tego musisz samodzielnie ustalić wynik na każdej kości. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Czaici się w Mroku",
+      "flavorText": "Gdy Krew nie chce zostać odnaleziona, nawet najlepsi tropiciele w krainach mogą mieć trudności z jej wytropieniem.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po tym, jak friendly fighter zostanie wybrany jako cel Ataku. Wyniki {icon:dodge} i {icon:shield} są sukcesami w rzutach na Save wykonywanych dla tego fightera w tym Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

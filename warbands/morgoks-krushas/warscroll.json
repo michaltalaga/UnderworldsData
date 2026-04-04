@@ -1,0 +1,38 @@
+{
+  "id": "morgoks-krushas",
+  "name": "Morgok's Krushas",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "In a Power step, instead of playing a Power card, you can pick a friendly fighter with 3 or more Waaagh! tokens. Remove 3 Waaagh! tokens from that fighter, then Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Waaagh! Energy",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly fighter Attacks or an enemy fighter Attacks and a friendly fighter is the target of that Attack.",
+      "flavorText": "The more the ladz scrap, the scrappier the ladz become.",
+      "rulesText": "Give that friendly fighter a Waaagh! token."
+    },
+    {
+      "name": "Ded 'Ard",
+      "type": "reaction",
+      "trigger": "Use this immediately after damage is inflicted on a friendly fighter with any Waaagh! tokens as part of an Attack.",
+      "flavorText": "Hitting an orruk Brute is a lot like hitting a brick wall, only more dangerous and less rewarding.",
+      "rulesText": "Remove up to 2 Waaagh! tokens from that fighter. For each Waaagh! token you removed, pick 1 of the following:\n• Give that friendly fighter a Guard token.\n• Give the attacker a Stagger token.\n\nYou can only use this ability once per game."
+    },
+    {
+      "name": "Shut It, Pipsqueak!",
+      "type": "reaction",
+      "trigger": "Use this immediately after an opponent plays a Ploy.",
+      "flavorText": "The Krushas know just how to shut down a gobby little git: with a bellow loud enough to burst eardrums!",
+      "rulesText": "Remove up to 2 Waaagh! tokens from a friendly fighter and then roll an Attack dice for each token you removed. If the roll contained any {icon:fury} or {icon:crit}, that Ploy has no effect. You can only use this ability once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Get a Move On, Ya Gitz!",
+      "type": "action",
+      "flavorText": "The other Krushas know full well that if they don't get stuck in, Morgok will put the boot in.",
+      "rulesText": "Use this in a Power step. Give your leader ({icon:leader}) a Charge token. Then, push each other friendly fighter up to a number of hexes equal to the battle round number. You can only use this ability once per game."
+    }
+  ]
+}

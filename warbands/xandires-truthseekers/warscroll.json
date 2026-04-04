@@ -1,0 +1,49 @@
+{
+  "id": "xandires-truthseekers",
+  "name": "Xandire's Truthseekers",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After a Power step, if any friendly fighters (excluding Taros) are slain, Inspire each friendly fighter.",
+  "reactions": [
+    {
+      "name": "Raptor's Eye",
+      "type": "reaction",
+      "trigger": "After another friendly fighter Moves",
+      "flavorText": null,
+      "rulesText": "After another friendly fighter Moves, push a friendly Taros up to 3 hexes. After this push, Taros must be within 2 hexes of that fighter."
+    },
+    {
+      "name": "Seeker's Strike",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly fighter's successful melee Attack if the target was on a feature token.",
+      "flavorText": null,
+      "rulesText": "Use this immediately after a friendly fighter's successful melee Attack if the target was on a feature token. Flip that feature token. You can only use this ability once per battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Blaze of Light",
+      "type": "action",
+      "flavorText": "The Lantern Astrala blinds and disorients the impure.",
+      "rulesText": "Use this in your Power step if your leader ({icon:leader}) is on the battlefield. Enemy fighters' weapons have -1 Attack dice in the next turn. You can only use this ability once per game."
+    },
+    {
+      "name": "Blazing Purity",
+      "type": "reaction",
+      "flavorText": "In a last burst of holy light, Calthia seeks to aid her fellow warriors.",
+      "rulesText": "Use this immediately after your leader ({icon:leader}) is slain. Pick up to 2 friendly fighters and heal each fighter, or pick 1 friendly fighter and heal that fighter twice instead. You can only use this ability once per game."
+    },
+    {
+      "name": "Blazing Force",
+      "type": "reaction",
+      "flavorText": "Even as he falls, Dhoraz exhorts his companions to greater deeds.",
+      "rulesText": "Use this immediately after a friendly Dhoraz is slain. Pick up to 2 friendly fighters and push each fighter 1 hex, or pick 1 friendly fighter and push that fighter up to 2 hexes instead. You can only use this ability once per game."
+    },
+    {
+      "name": "Blazing Reprisal",
+      "type": "reaction",
+      "flavorText": "Though her demeanour is often mistaken as cold and uncaring, Luxa's will to aid her comrades burns hot.",
+      "rulesText": "Use this immediately after a friendly Luxa is slain, before removing them from the battlefield. That fighter Attacks with a ranged weapon (excluding Upgrades). You can only use this ability once per game."
+    }
+  ]
+}

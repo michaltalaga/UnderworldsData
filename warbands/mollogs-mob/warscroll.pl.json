@@ -1,0 +1,30 @@
+{
+  "inspire": "Po tym, jak twój przywódca ({icon:leader}) otrzyma żeton obrażeń, jeśli ma 4 lub więcej żetonów obrażeń, Inspire każdego przyjaznego wojownika.",
+  "abilities": [
+    {
+      "name": "Czający się",
+      "flavorText": null,
+      "rulesText": "Kiedy wystawiasz przyjaznego Stalagsquiga, możesz umieścić go w pustym polu, które nie zawiera żetonu terenu i nie jest polem startowym na terytorium wroga.\n\nPrzyjazny Stalagsquig nie może się Poruszać, być odpychany ani usuwany z pola bitwy, chyba że zostanie pokonany. Jest zawsze traktowany jako posiadający żeton Charge."
+    },
+    {
+      "name": "Regeneracja Troggotha",
+      "flavorText": null,
+      "rulesText": "Użyj tego na końcu każdej rundy bitwy, po wykonaniu sekwencji fazy końcowej. Ulecz swojego przywódcę ({icon:leader})."
+    },
+    {
+      "name": "Nadnaturalne Zagrożenia",
+      "flavorText": "Gdziekolwiek wędruje Mollog, mroczna i pełzająca natura głębinowych lochów zdaje się podążać za nim.",
+      "rulesText": "Na początku pierwszego kroku Akcji w każdej rundzie bitwy wybierz 1 z poniższych efektów. Każdy efekt może zostać wybrany tylko raz na grę.\n\n• Do końca rundy bitwy wrogowie sąsiadujący z przyjaznym minionem ({icon:minion}) są Otoczeni.\n\n• Do końca rundy bitwy, za każdym razem gdy wrogi wojownik zostaje umieszczony w, wpchnięty do lub wchodzi w pole sąsiadujące z przyjaznym minionem ({icon:minion}), daj temu wrogemu wojownikowi żeton Stagger.\n\n• Do końca rundy bitwy, za pierwszym razem gdy każdy wrogi wojownik zostaje umieszczony w, wpchnięty do lub wchodzi w pole sąsiadujące z przyjaznym minionem ({icon:minion}), rzuć kością Ataku. Na {icon:fury} lub {icon:crit} zadaj temu wojownikowi 1 obrażenie."
+    },
+    {
+      "name": "Przy nodze",
+      "flavorText": "Mollog nie dowodzi dokładnie swoją osobliwą menażerią troglodytów, lecz można na nich polegać — i tak za nim podążają.",
+      "rulesText": "Użyj tego natychmiast po tym, jak twój przywódca ({icon:leader}) wykona Ruch. Wybierz innego przyjaznego wojownika. Odpchnij tego wojownika do 2 pól. To odepchnięcie musi zakończyć się albo przy twoim przywódcy ({icon:leader}), albo przy wrogim wojowniku sąsiadującym z twoim przywódcą ({icon:leader})."
+    },
+    {
+      "name": "Inwazja robactwa",
+      "flavorText": "Nawet jeśli jedno ze stworków Molloga zostanie zabite, na jego miejsce natychmiast wyskakuje kolejne.",
+      "rulesText": "Użyj tego w swoim Power step. Wybierz pokonanego przyjaznego miniona ({icon:minion}). Wskrześ tego wojownika, umieść go w pustym polu startowym, a następnie daj mu żeton Charge. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

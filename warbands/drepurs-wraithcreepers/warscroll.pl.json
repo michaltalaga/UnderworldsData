@@ -1,0 +1,30 @@
+{
+  "inspire": "Jeśli wróg zostaje pokonany, gdy zdolność Locus of Shyish jest aktywna, Inspire taką liczbę przyjaznych wojowników, jaka odpowiada charakterystyce Bounty tego wroga.",
+  "abilities": [
+    {
+      "name": "Locus of Shyish",
+      "flavorText": "",
+      "rulesText": "Rzuć 3 kośćmi ataku. Jeśli wynik zawiera 1 z rezultatów w tabeli Locus of Shyish, natychmiast użyj odpowiedniej zdolności. Ta zdolność jest aktywna do końca rundy bitewnej. Jeśli wynik zawiera jakiekolwiek {icon:crit}, możesz zastąpić każdy {icon:crit} innym symbolem według własnego wyboru ({icon:fury}, {icon:dodge}, {icon:shield} lub {icon:skull}).\n\nTen sam wojownik nie może być wybrany jako cel zdolności Locus of Shyish więcej niż raz na rundę bitewną."
+    },
+    {
+      "name": "Ostrza Shyish",
+      "flavorText": "Broń umarłych przesycona jest morderczą ametystową energią.",
+      "rulesText": "Wybierz przyjaznego wojownika. Bronie wręcz tego wojownika mają cechę Critical Grievous ({icon:crit}{icon:grievous})."
+    },
+    {
+      "name": "Zjawiskowy Podmuch",
+      "flavorText": "Wyjące widmowe wiatry nadciągają, by dodać skrzydeł sojusznikowi.",
+      "rulesText": "Wybierz przyjaznego wojownika. Ten wojownik otrzymuje +1 Move."
+    },
+    {
+      "name": "Więzienie Żalu",
+      "flavorText": "Fale rozpaczy przetaczają się przez pole bitwy, zmuszając wroga do bez końca przeżywania jego najciemniejszej chwili.",
+      "rulesText": "Wybierz wrogiego wojownika. Broń tego wojownika ma -1 kość ataku."
+    },
+    {
+      "name": "Widmowy Uchwyt",
+      "flavorText": "Chwytające widmowe dłonie wyciągają się z ziemi, by pochwycić wrogów.",
+      "rulesText": "Wybierz wrogiego wojownika. Ten wojownik otrzymuje -1 Move."
+    }
+  ]
+}

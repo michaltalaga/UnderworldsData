@@ -1,0 +1,47 @@
+{
+  "inspire": "Na końcu każdej rundy bitwy, Inspire każdego przyjaznego wojownika, który nie posiada żetonów głodu.",
+  "reactions": [
+    {
+      "name": "Głód",
+      "trigger": "Bezpośrednio po udanym Ataku przyjaznego wojownika,",
+      "flavorText": null,
+      "rulesText": "usuń 1 żeton głodu tego wojownika. Jeśli cel tego Ataku został zabity, usuń zamiast tego wszystkie żetony głodu tego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Klątwa",
+      "flavorText": null,
+      "rulesText": "Każdy przyjazny wojownik rozpoczyna grę z 2 żetonami głodu. Na początku drugiej i trzeciej rundy bitwy przyznaj każdemu przyjaznemu wojownikowi 1 żeton głodu."
+    },
+    {
+      "name": "Żądza Krwi",
+      "flavorText": null,
+      "rulesText": "Dopóki przyjazny wojownik posiada 3 lub więcej żetonów głodu, jest żądny krwi. Żądni krwi przyjazni wojownicy mają +1 Move, a wszelkie posiadane przez nich Guard tokeny nie mają żadnego efektu."
+    },
+    {
+      "name": "Bestialska Przemiana",
+      "trigger": "Użyj tego bezpośrednio po wybraniu przyjaznego wojownika do użycia zdolności Core ability.",
+      "flavorText": "Kości trzeszczą, a ciało rozpływa się, gdy wampir przybiera groźną, nową postać.",
+      "rulesText": "Odrzuć Ulepszenia tego wojownika. Do końca rundy bitwy broń do walki wręcz tego wojownika ma +1 kość Ataku. Jeśli ten wojownik jest żądny krwi, ma również +1 Move do końca rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Wampirza Potęga",
+      "trigger": "Użyj tego bezpośrednio po wybraniu broni jako części Ataku żądnego krwi wojownika.",
+      "flavorText": "Czerpiąc z mocy swojej klątwy, wampir uderza z zabójczą precyzją i siłą zdolną kruszyć kamień.",
+      "rulesText": "Ta broń posiada Cleave ({icon:cleave}) i Ensnare ({icon:ensnare}) podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Mroczna Postać",
+      "trigger": "Użyj tego bezpośrednio po wybraniu Inspired przyjaznego wojownika jako celu Ataku.",
+      "flavorText": "Wampir staje się jednością z cieniem.",
+      "rulesText": "Cecha Save tego wojownika wynosi {icon:shield} 3 podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Mroczna Transfuzja",
+      "trigger": null,
+      "flavorText": "Siła życiowa jest wyrywana z ofiary, gdy wampir się żywi.",
+      "rulesText": "Wybierz przyjaznego wojownika, który użyje tej Core ability. Wybierz wrogiego wojownika w odległości 1 heksa od tego wojownika. Możesz zamiast tego wybrać wrogiego wojownika w odległości 2 heksów, jeśli ten przyjazny wojownik jest Inspired. Zadaj 1 obrażenie temu wrogiemu wojownikowi, a następnie ulecz tego przyjaznego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ]
+}

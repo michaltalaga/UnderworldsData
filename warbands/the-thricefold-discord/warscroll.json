@@ -1,0 +1,34 @@
+{
+  "id": "the-thricefold-discord",
+  "name": "The Thricefold Discord",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "After a friendly fighter's Attack roll or Save roll that contains no successes, or after a friendly fighter is slain, Inspire another friendly fighter.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Irresistible Feast",
+      "type": "action",
+      "flavorText": "Well, why not partake?",
+      "rulesText": "Use this in your Power step. Discard 1 temptation dice, then inflict 1 damage on an enemy fighter that is not vulnerable. You can only use this ability once per game."
+    },
+    {
+      "name": "Sublime Senses",
+      "type": "action",
+      "flavorText": "Little surprises such epicureans.",
+      "rulesText": "Use this in your Power step. Discard 1 temptation dice, then give a friendly fighter a Guard token. You can only use this ability once per game."
+    },
+    {
+      "name": "Pavane of Slaanesh",
+      "type": "action",
+      "flavorText": "Dance the dance of doom.",
+      "rulesText": "Use this in your Power step. Discard 1 temptation dice, then pick a friendly fighter. Save rolls for that fighter cannot be affected by Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) in the next turn. You can only use this ability once per game."
+    },
+    {
+      "name": "Temptations of Slaanesh",
+      "type": "passive",
+      "flavorText": "Like all the Dark Prince's daemons, the Thricefold Discord delight in picking apart mortal morality.",
+      "rulesText": "At the start of the first Action step in each battle round, you gain a pool of 6 temptation dice.\n\nAt the end of the battle round, any temptation dice that have not been offered are lost.\n\n{icon:reaction} Tempt…: Once per turn, immediately after your opponent rolls an unsuccessful dice in an Attack roll, you can offer them a temptation dice.\n\nAccept: If your opponent accepts your offer, they must replace 1 unsuccessful result in their attack roll with a successful result ({icon:fury} or {icon:crit} only). Attack dice replaced in this way cannot be re-rolled or modified. Then, immediately after that Attack has been resolved, inflict 1 damage on the attacker.\n\nReject: If your opponent rejects your offer, immediately after that attack has been resolved, you can pick a friendly fighter that was not the target and push that fighter 1 hex."
+    }
+  ]
+}

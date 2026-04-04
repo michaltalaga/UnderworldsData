@@ -1,0 +1,33 @@
+{
+  "inspire": "Po Power stepie przeciwnika, jeśli twoja drużyna posiada 3 lub więcej żetonów skarbów, Inspire każdego przyjaznego wojownika.",
+  "reactions": [
+    {
+      "name": "Zwinność Skinka",
+      "trigger": "Natychmiast po wykonaniu rzutu obronnego jako część wręcz Attack dla przyjaznego Skinka ({icon:minion}) bez żetonów Charge na przyjaznym terytorium",
+      "flavorText": "Zręczne i gibkie, skinki z Tropicieli Gwiezdnej Krwi potrafią wymknąć się z opresji z zadziwiającą szybkością.",
+      "rulesText": "możesz przerzucić 1 kość obronną w tym rzucie obronnym."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Wróżbita",
+      "flavorText": "Kosmiczne moce Kixi-Taki pozwalają mu przewidzieć nadchodzącą nagrodę – lub sprowadzić niebiańską zagładę.",
+      "rulesText": "Wybierz żeton terenu w odległości 3 heksów od twojego przywódcy ({icon:leader}). Możesz albo odwrócić ten żeton terenu, albo zadać 1 obrażenie wrogiemu wojownikowi znajdującemu się na tym żetonie lub przylegającemu do niego. Tej zdolności można użyć tylko raz na rundę bitewną."
+    },
+    {
+      "name": "Niebiański Bastion",
+      "flavorText": "Te najpotężniejsze kosmiczne koniunkcje wypełniają Seraphon podobnie niezachwianą wytrwałością.",
+      "rulesText": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy nie mogą być odpychani do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Wielki Smok",
+      "flavorText": "Wznoszące się konstelacje wszechmocnego Dracothiona obdarzają broń Tropicieli Gwiezdnej Krwi kosmiczną potęgą.",
+      "rulesText": "Użyj tej zdolności w swoim Power stepie. Broń do walki wręcz przyjaznych wojowników ma +1 kość Attack do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Wierzchowiec Łowcy",
+      "flavorText": "Gdy gwiazdy wierzchowca wznoszą się, by zawładnąć niebiosami, drapieżna szybkość przenika Tropicieli.",
+      "rulesText": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy mają +1 Move do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+    }
+  ]
+}

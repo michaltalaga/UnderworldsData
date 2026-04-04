@@ -10,7 +10,6 @@ interface WarbandMeta {
 }
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
-const IMAGES_DIR = join(import.meta.dirname, '..', 'images', 'warscrolls');
 const BASE_URL = 'https://www.underworldsdb.com/cards/fighters';
 
 async function downloadImage(url: string, dest: string): Promise<boolean> {
@@ -34,17 +33,16 @@ async function main() {
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8')
   );
 
-  mkdirSync(IMAGES_DIR, { recursive: true });
-
   const batchSize = parseInt(process.argv[2] || '10', 10);
   let downloaded = 0;
   let skipped = 0;
   let failed = 0;
 
-  // Collect warbands that need downloading
   const pending: WarbandMeta[] = [];
   for (const wb of index) {
-    const dest = join(IMAGES_DIR, `${wb.slug}.png`);
+    const wbDir = join(WARBANDS_DIR, wb.slug);
+    mkdirSync(wbDir, { recursive: true });
+    const dest = join(wbDir, 'warscroll.png');
     if (existsSync(dest)) {
       skipped++;
       continue;
@@ -63,8 +61,7 @@ async function main() {
   console.log(`Processing batch of ${batch.length}...\n`);
 
   for (const wb of batch) {
-    const dest = join(IMAGES_DIR, `${wb.slug}.png`);
-    // OP-legal warbands have their own -0.png; non-OP-legal use GA cards
+    const dest = join(WARBANDS_DIR, wb.slug, 'warscroll.png');
     const url = wb.opLegal
       ? `${BASE_URL}/${wb.slug}-0.png?v=1.14`
       : `${BASE_URL}/${wb.grandAlliance}-01.png?v=1.14`;
