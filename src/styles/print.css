@@ -172,6 +172,12 @@
     overflow-wrap: anywhere;
   }
 
+  .icon-img {
+    height: 1em;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .icon-token {
     background: #555 !important;
     -webkit-print-color-adjust: exact;

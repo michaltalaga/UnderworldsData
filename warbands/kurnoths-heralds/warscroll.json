@@ -32,7 +32,7 @@
       "name": "Swift Sentinels",
       "type": "passive",
       "flavorText": "Perfectly attuned to the Hunter's Paradise, Kurnoth's Heralds run circles around intruders who dare stray into their territory.",
-      "rulesText": "While they are in friendly territory, friendly fighters have the Flying ({icon:hex}) runemark and cannot be Flanked (they can still be Surrounded)."
+      "rulesText": "While they are in friendly territory, friendly fighters have the Flying ({icon:fly}) runemark and cannot be Flanked (they can still be Surrounded)."
     }
   ]
 }

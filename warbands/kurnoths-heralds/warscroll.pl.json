@@ -24,7 +24,7 @@
     {
       "name": "Zwinni Strażnicy",
       "flavorText": "Doskonale zestrojeni z Rajem Łowcy, Heroldzi Kurnotha zataczają kręgi wokół intruzów, którzy ośmielają się zapuszczać na ich terytorium.",
-      "rulesText": "Dopóki przebywają na przyjaznym terytorium, przyjazni wojownicy posiadają runiczną oznakę Flying ({icon:hex}) i nie mogą być Flankowani (nadal mogą być Otoczeni)."
+      "rulesText": "Dopóki przebywają na przyjaznym terytorium, przyjazni wojownicy posiadają runiczną oznakę Flying ({icon:fly}) i nie mogą być Flankowani (nadal mogą być Otoczeni)."
     }
   ]
 }
