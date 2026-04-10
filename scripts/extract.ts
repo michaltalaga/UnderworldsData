@@ -11,7 +11,9 @@ interface WarbandMeta {
 }
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
+const GA_DIR = join(WARBANDS_DIR, '_ga');
 const BASE_URL = 'https://www.underworldsdb.com/cards/fighters';
+const ALLIANCES = ['Chaos', 'Death', 'Destruction', 'Order'];
 
 const EXTRACTION_PROMPT = `You are extracting structured data from a Warhammer Underworlds warscroll card image.
 
@@ -98,6 +100,86 @@ async function extractWarscroll(
   return textBlock?.text ?? '';
 }
 
+function sanitizeAndParse(raw: string): Record<string, unknown> {
+  const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
+  const sanitized = jsonStr
+    .replace(/[\u2013\u2014]/g, '-')
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201C\u201D]/g, '"');
+  return JSON.parse(sanitized);
+}
+
+async function extractGaWarscrolls(client: Anthropic) {
+  mkdirSync(GA_DIR, { recursive: true });
+
+  const pending: { key: string; alliance: string; variant: number }[] = [];
+  let alreadyDone = 0;
+
+  for (const alliance of ALLIANCES) {
+    for (const variant of [1, 2]) {
+      const key = `${alliance.toLowerCase()}-${variant}`;
+      if (existsSync(join(GA_DIR, `${key}.json`))) {
+        alreadyDone++;
+      } else {
+        pending.push({ key, alliance, variant });
+      }
+    }
+  }
+
+  console.log(`\n  GA Warscroll Extraction`);
+  console.log(`  ======================\n`);
+  console.log(`  Total: 8 | Extracted: ${alreadyDone} | Remaining: ${pending.length}`);
+
+  if (pending.length === 0) {
+    console.log('  All GA warscrolls extracted!');
+    return;
+  }
+
+  let success = 0;
+  let failed = 0;
+
+  for (const { key, alliance, variant } of pending) {
+    process.stdout.write(`  ${key} ... `);
+
+    const localImage = join(GA_DIR, `${key}.png`);
+    let imageData: Buffer | null = null;
+
+    if (existsSync(localImage)) {
+      imageData = readFileSync(localImage);
+    } else {
+      const url = `${BASE_URL}/${alliance}-0${variant}.png?v=1.14`;
+      imageData = await downloadImage(url);
+      if (imageData) {
+        writeFileSync(localImage, imageData);
+      }
+    }
+
+    if (!imageData || imageData.length < 1000) {
+      console.log('SKIP (no image or too small)');
+      failed++;
+      continue;
+    }
+
+    try {
+      const meta: WarbandMeta = { slug: key, name: key, fighters: 0, opLegal: false, grandAlliance: alliance };
+      const raw = await extractWarscroll(client, imageData, meta);
+      const data = sanitizeAndParse(raw);
+
+      data.id = key;
+      data.grandAlliance = alliance;
+
+      writeFileSync(join(GA_DIR, `${key}.json`), JSON.stringify(data, null, 2));
+      console.log('OK');
+      success++;
+    } catch (err) {
+      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
+      failed++;
+    }
+  }
+
+  console.log(`\n  GA done. Success: ${success} | Failed: ${failed}`);
+}
+
 async function main() {
   const batchSize = parseInt(process.argv[2] || '5', 10);
 
@@ -109,26 +191,33 @@ async function main() {
 
   const client = new Anthropic();
 
+  // Extract GA warscrolls first
+  await extractGaWarscrolls(client);
+
   const index: WarbandMeta[] = JSON.parse(
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
   );
 
-  // Find what's already extracted
-  const pending = index.filter((wb) => {
+  // Only OP-legal warbands need per-warband extraction
+  const opWarbands = index.filter((wb) => wb.opLegal);
+
+  const pending = opWarbands.filter((wb) => {
     const wbDir = join(WARBANDS_DIR, wb.slug);
     return !existsSync(join(wbDir, 'warscroll.json'));
   });
 
-  const extracted = index.length - pending.length;
-  console.log(`Total: ${index.length} | Extracted: ${extracted} | Remaining: ${pending.length}`);
+  const extracted = opWarbands.length - pending.length;
+  console.log(`\n  Warband Extraction`);
+  console.log(`  ==================\n`);
+  console.log(`  OP warbands: ${opWarbands.length} | Extracted: ${extracted} | Remaining: ${pending.length}`);
 
   if (pending.length === 0) {
-    console.log('All warscrolls have been extracted!');
+    console.log('  All warscrolls have been extracted!');
     return;
   }
 
   const batch = pending.slice(0, batchSize);
-  console.log(`\nProcessing batch of ${batch.length}...\n`);
+  console.log(`  Processing batch of ${batch.length}...\n`);
 
   let success = 0;
   let failed = 0;
@@ -139,16 +228,13 @@ async function main() {
     const wbDir = join(WARBANDS_DIR, meta.slug);
     mkdirSync(wbDir, { recursive: true });
 
-    // Get image: from warband folder or download
     const localImage = join(wbDir, 'warscroll.png');
     let imageData: Buffer | null = null;
 
     if (existsSync(localImage)) {
       imageData = readFileSync(localImage);
     } else {
-      const url = meta.opLegal
-        ? `${BASE_URL}/${meta.slug}-0.png?v=1.14`
-        : `${BASE_URL}/${meta.grandAlliance}-01.png?v=1.14`;
+      const url = `${BASE_URL}/${meta.slug}-0.png?v=1.14`;
       imageData = await downloadImage(url);
       if (imageData) {
         writeFileSync(localImage, imageData);
@@ -163,14 +249,7 @@ async function main() {
 
     try {
       const raw = await extractWarscroll(client, imageData, meta);
-
-      const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-      // Sanitize Unicode dashes/quotes before parsing
-      const sanitized = jsonStr
-        .replace(/[\u2013\u2014]/g, '-')   // en-dash, em-dash → hyphen
-        .replace(/[\u2018\u2019]/g, "'")   // smart single quotes
-        .replace(/[\u201C\u201D]/g, '"');   // smart double quotes (escaped in JSON context)
-      const data = JSON.parse(sanitized);
+      const data = sanitizeAndParse(raw);
 
       data.id = meta.slug;
       data.grandAlliance = meta.grandAlliance;
@@ -189,9 +268,9 @@ async function main() {
   }
 
   const remaining = pending.length - batch.length;
-  console.log(`\nBatch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
+  console.log(`\n  Batch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
   if (remaining > 0) {
-    console.log('Run this script again to process the next batch.');
+    console.log('  Run this script again to process the next batch.');
   }
 }
 

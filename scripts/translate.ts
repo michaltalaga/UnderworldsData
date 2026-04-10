@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from '
 import { join } from 'path';
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
+const GA_DIR = join(WARBANDS_DIR, '_ga');
 
 const TRANSLATION_PROMPT = `You are translating a Warhammer Underworlds warscroll from English to Polish.
 
@@ -103,6 +104,66 @@ async function translateWarscroll(
   throw new Error(`Invalid JSON after retry. Last parse error at: ${repairText.substring(0, 200)}...`);
 }
 
+async function translateGaWarscrolls(client: Anthropic) {
+  if (!existsSync(GA_DIR)) return;
+
+  const alliances = ['chaos', 'death', 'destruction', 'order'];
+  const pending: { key: string; data: Record<string, unknown> }[] = [];
+  let alreadyDone = 0;
+
+  for (const alliance of alliances) {
+    for (const variant of [1, 2]) {
+      const key = `${alliance}-${variant}`;
+      const enFile = join(GA_DIR, `${key}.json`);
+      const plFile = join(GA_DIR, `${key}.pl.json`);
+
+      if (!existsSync(enFile)) continue;
+
+      if (existsSync(plFile)) {
+        alreadyDone++;
+        continue;
+      }
+
+      const data = JSON.parse(readFileSync(enFile, 'utf8'));
+      pending.push({ key, data });
+    }
+  }
+
+  console.log(`\n  GA Warscroll Translation`);
+  console.log(`  =======================\n`);
+  console.log(`  Total: ${alreadyDone + pending.length} | Translated: ${alreadyDone} | Remaining: ${pending.length}`);
+
+  if (pending.length === 0) {
+    console.log('  All GA warscrolls translated!');
+    return;
+  }
+
+  let success = 0;
+  let failed = 0;
+
+  for (const { key, data } of pending) {
+    const name = (data as { name?: string }).name ?? key;
+    process.stdout.write(`  ${name} ... `);
+
+    try {
+      const translated = await translateWarscroll(client, data);
+
+      if (!translated.inspire && !translated.abilities) {
+        throw new Error('Invalid structure in response');
+      }
+
+      writeFileSync(join(GA_DIR, `${key}.pl.json`), JSON.stringify(translated, null, 2));
+      console.log('OK');
+      success++;
+    } catch (err) {
+      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
+      failed++;
+    }
+  }
+
+  console.log(`\n  GA done. Success: ${success} | Failed: ${failed}`);
+}
+
 async function main() {
   const batchSize = parseInt(process.argv[2] || '5', 10);
 
@@ -114,12 +175,16 @@ async function main() {
 
   const client = new Anthropic();
 
-  // Find warband folders with warscroll.json but no warscroll.pl.json
+  // Translate GA warscrolls first
+  await translateGaWarscrolls(client);
+
+  // Find warband folders with warscroll.json but no warscroll.pl.json (skip _ga)
   const entries = readdirSync(WARBANDS_DIR);
   const pending: { slug: string; data: Record<string, unknown> }[] = [];
   let alreadyDone = 0;
 
   for (const entry of entries) {
+    if (entry === '_ga') continue;
     const wbDir = join(WARBANDS_DIR, entry);
     if (!statSync(wbDir).isDirectory()) continue;
 
@@ -137,15 +202,17 @@ async function main() {
     pending.push({ slug: entry, data });
   }
 
-  console.log(`Total with EN: ${alreadyDone + pending.length} | Already translated: ${alreadyDone} | Need translation: ${pending.length}`);
+  console.log(`\n  Warband Translation`);
+  console.log(`  ===================\n`);
+  console.log(`  Total with EN: ${alreadyDone + pending.length} | Already translated: ${alreadyDone} | Need translation: ${pending.length}`);
 
   if (pending.length === 0) {
-    console.log('All warscrolls are fully translated!');
+    console.log('  All warscrolls are fully translated!');
     return;
   }
 
   const batch = pending.slice(0, batchSize);
-  console.log(`\nProcessing batch of ${batch.length}...\n`);
+  console.log(`  Processing batch of ${batch.length}...\n`);
 
   let success = 0;
   let failed = 0;
@@ -174,9 +241,9 @@ async function main() {
   }
 
   const remaining = pending.length - batch.length;
-  console.log(`\nBatch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
+  console.log(`\n  Batch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
   if (remaining > 0) {
-    console.log('Run this script again to process the next batch.');
+    console.log('  Run this script again to process the next batch.');
   }
 }
 

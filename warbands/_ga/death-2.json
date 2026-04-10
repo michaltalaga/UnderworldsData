@@ -1,0 +1,36 @@
+{
+  "id": "death-2",
+  "name": "Grand Alliance Death: Necromancy",
+  "version": null,
+  "grandAlliance": "Death",
+  "inspire": "After a successful Attack made by your leader ({icon:leader}), pick a friendly fighter or up to 2 friendly minions ({icon:minion}). Inspire those fighters.",
+  "reactions": [
+    {
+      "name": "Rise, Minion!",
+      "type": "reaction",
+      "trigger": "Pick your leader ({icon:leader}) to use this ability",
+      "flavorText": null,
+      "rulesText": "Pick a slain friendly fighter. Raise that fighter and place them in an empty starting hex in friendly territory. If that fighter is not a minion ({icon:minion}) inflict damage on that fighter until they are vulnerable. You can only use this ability once per battle round."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Corpse Explosion",
+      "type": "action",
+      "flavorText": "Charged with waves of necromantic magic, this undead warrior bursts apart in a cloud of flesh-withering fumes.",
+      "rulesText": "Pick a friendly minion ({icon:minion}) or a friendly fighter with a Health characteristic of 3 or less that is adjacent to any enemy fighters. Inflict 1 damage on each of those enemy fighters. Then, inflict damage on that friendly fighter until they are slain. This ability can only be used once per game."
+    },
+    {
+      "name": "Enervating Aura",
+      "type": "action",
+      "flavorText": "These warriors radiates pure entropic energy, causing nearby foes to sag and wilt in their armour.",
+      "rulesText": "Pick a friendly minion ({icon:minion}) or a friendly fighter with a Health characteristic of 3 or less that is adjacent to any enemy fighters. Give each of those enemy fighter a Stagger token. This ability can only be used once per game."
+    },
+    {
+      "name": "The Restless Dead",
+      "type": "action",
+      "flavorText": "The undead know nothing of tiredness and will continue to lurch forwards at the call of their master.",
+      "rulesText": "Use this in your Power step. Pick up to 3 friendly minions ({icon:minion}) or friendly fighters with a Health characteristic of 3 or less. Push each fighter 1 hex. This ability can only be used once per game."
+    }
+  ]
+}

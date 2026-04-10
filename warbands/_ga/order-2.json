@@ -1,0 +1,36 @@
+{
+  "id": "order-2",
+  "name": "Grand Alliance Order: Protectors",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "Immediately after an Action step, if a friendly fighter began that Action step in friendly territory and made a successful Attack, Inspire that fighter.",
+  "reactions": [
+    {
+      "name": "Deny Trespassers",
+      "type": "reaction",
+      "trigger": null,
+      "flavorText": null,
+      "rulesText": "Friendly fighters cannot be Flanked or Surrounded while they are in friendly territory."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Righteous Fury",
+      "type": "reaction",
+      "flavorText": "Mortals seldom fight more ferociously than in defence of what is theirs by right.",
+      "rulesText": "Immediately after making an Attack roll for a melee Attack made by a friendly fighter in friendly territory, you can re-roll 1 Attack dice in that Attack roll. You can only use this ability once per battle round."
+    },
+    {
+      "name": "Active Defence",
+      "type": "action",
+      "flavorText": "It is important that defenders do not revert to static warfare, but instead constantly harry and outmanoeuvre their foes.",
+      "rulesText": "Use this in your Power step. Pick a friendly fighter in friendly territory. Push that fighter up to 2 hexes. That push must end in friendly territory. This ability can only be used once per game."
+    },
+    {
+      "name": "Secret Pathway",
+      "type": "action",
+      "flavorText": "The canny defender has the advantage in a pitched battle, for they know the terrain and its secret pathways.",
+      "rulesText": "Use this in your Power step. Pick a friendly fighter on a feature token in friendly territory. Remove that fighter from the battlefield and place them on another feature token in friendly territory, then give that fighter a Move token. This ability can only be used once per game."
+    }
+  ]
+}

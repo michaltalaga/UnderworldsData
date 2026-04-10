@@ -20,6 +20,7 @@ export const labels: Labels = {
   noWarscroll: { en: 'Warscroll data not yet extracted for this warband.', pl: 'Dane zwoju wojennego nie zostały jeszcze wyodrębnione dla tej drużyny.' },
   noRivalDeck: { en: 'Rival deck data not yet downloaded for this deck.', pl: 'Dane talii Rivals nie zostały jeszcze pobrane dla tej talii.' },
   noRivalsLoaded: { en: 'No rival decks have been downloaded yet. Run npm run rivals:sync to populate this view.', pl: 'Nie pobrano jeszcze żadnych talii Rivals. Uruchom npm run rivals:sync, aby wypełnić ten widok.' },
+  warscroll: { en: 'Warscroll', pl: 'Zwój' },
   passive: { en: 'Passive', pl: 'Pasywna' },
   action: { en: 'Action', pl: 'Akcja' },
   reaction: { en: 'Reaction', pl: 'Reakcja' },

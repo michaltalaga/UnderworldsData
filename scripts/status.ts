@@ -4,22 +4,61 @@ import { join } from 'path';
 interface WarbandMeta {
   slug: string;
   name: string;
+  opLegal: boolean;
   grandAlliance: string;
 }
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
+const GA_DIR = join(WARBANDS_DIR, '_ga');
 const RIVALS_DIR = join(import.meta.dirname, '..', 'rivals');
+const ALLIANCES = ['Chaos', 'Death', 'Destruction', 'Order'];
 
 function main() {
   const index: WarbandMeta[] = JSON.parse(
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
   );
 
+  // GA warscroll status
+  const missingGaImage: string[] = [];
+  const missingGaExtract: string[] = [];
+  const missingGaTranslate: string[] = [];
+
+  for (const alliance of ALLIANCES) {
+    for (const variant of [1, 2]) {
+      const key = `${alliance.toLowerCase()}-${variant}`;
+      if (!existsSync(join(GA_DIR, `${key}.png`))) missingGaImage.push(key);
+      if (!existsSync(join(GA_DIR, `${key}.json`))) missingGaExtract.push(key);
+      if (!existsSync(join(GA_DIR, `${key}.pl.json`))) missingGaTranslate.push(key);
+    }
+  }
+
+  console.log(`\n  GA Warscroll Status`);
+  console.log(`  ===================\n`);
+  console.log(`  Total:           8`);
+  console.log(`  Images:          ${8 - missingGaImage.length}/8`);
+  console.log(`  Extracted (EN):  ${8 - missingGaExtract.length}/8`);
+  console.log(`  Translated (PL): ${8 - missingGaTranslate.length}/8`);
+
+  if (missingGaImage.length > 0) {
+    console.log(`\n  Missing GA images (run: npm run download):`);
+    missingGaImage.forEach((n) => console.log(`    - ${n}`));
+  }
+  if (missingGaExtract.length > 0) {
+    console.log(`\n  Missing GA extraction (run: npm run extract):`);
+    missingGaExtract.forEach((n) => console.log(`    - ${n}`));
+  }
+  if (missingGaTranslate.length > 0) {
+    console.log(`\n  Missing GA translation (run: npm run translate):`);
+    missingGaTranslate.forEach((n) => console.log(`    - ${n}`));
+  }
+
+  // OP warband status
+  const opWarbands = index.filter((wb) => wb.opLegal);
   const missingImage: string[] = [];
   const missingExtract: string[] = [];
   const missingTranslate: string[] = [];
 
-  for (const wb of index) {
+  for (const wb of opWarbands) {
     const wbDir = join(WARBANDS_DIR, wb.slug);
     const hasDir = existsSync(wbDir) && statSync(wbDir).isDirectory();
     const hasImage = hasDir && existsSync(join(wbDir, 'warscroll.png'));
@@ -31,11 +70,12 @@ function main() {
     if (!hasPL) missingTranslate.push(wb.name);
   }
 
-  const total = index.length;
+  const total = opWarbands.length;
 
   console.log(`\n  Warscroll Status Report`);
   console.log(`  ======================\n`);
-  console.log(`  Total warbands:  ${total}`);
+  console.log(`  OP warbands:     ${total}`);
+  console.log(`  Non-OP warbands: ${index.length - total} (use GA warscrolls)`);
   console.log(`  Images:          ${total - missingImage.length}/${total}`);
   console.log(`  Extracted (EN):  ${total - missingExtract.length}/${total}`);
   console.log(`  Translated (PL): ${total - missingTranslate.length}/${total}`);
@@ -55,7 +95,9 @@ function main() {
     missingTranslate.forEach((n) => console.log(`    - ${n}`));
   }
 
-  if (missingImage.length === 0 && missingExtract.length === 0 && missingTranslate.length === 0) {
+  const allComplete = missingImage.length === 0 && missingExtract.length === 0 && missingTranslate.length === 0
+    && missingGaImage.length === 0 && missingGaExtract.length === 0 && missingGaTranslate.length === 0;
+  if (allComplete) {
     console.log(`\n  Everything is complete!`);
   }
 

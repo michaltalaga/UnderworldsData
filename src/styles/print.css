@@ -23,7 +23,9 @@
   .print-btn,
   .lang-toggle,
   .view-toggle,
-  .header-controls {
+  .header-controls,
+  .warscroll-image,
+  .ga-toggle {
     display: none !important;
   }
 

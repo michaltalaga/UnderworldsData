@@ -6,6 +6,10 @@ interface Props {
   warscroll: Warscroll;
   translation: WarscrollTranslation | null;
   language: Language;
+  imageUrl: string | null;
+  isNonOp?: boolean;
+  gaVariant?: 1 | 2;
+  onGaVariantChange?: (v: 1 | 2) => void;
 }
 
 function pick(base: string | undefined | null, translated: string | undefined): string {
@@ -30,9 +34,25 @@ function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: Ability
   );
 }
 
-export function WarscrollView({ warscroll, translation, language }: Props) {
+export function WarscrollView({ warscroll, translation, language, imageUrl, isNonOp, gaVariant, onGaVariantChange }: Props) {
   return (
     <div className="warscroll">
+      {isNonOp && onGaVariantChange && (
+        <div className="ga-toggle">
+          <button
+            className={gaVariant === 1 ? 'active' : ''}
+            onClick={() => onGaVariantChange(1)}
+          >
+            {t('warscroll', language)} 1
+          </button>
+          <button
+            className={gaVariant === 2 ? 'active' : ''}
+            onClick={() => onGaVariantChange(2)}
+          >
+            {t('warscroll', language)} 2
+          </button>
+        </div>
+      )}
       <div className="warscroll-header">
         <h2>
           {warscroll.name}
@@ -68,6 +88,11 @@ export function WarscrollView({ warscroll, translation, language }: Props) {
           ))}
         </div>
       </div>
+      {imageUrl && (
+        <div className="warscroll-image">
+          <img src={imageUrl} alt={warscroll.name} />
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,36 @@
+{
+  "id": "chaos-2",
+  "name": "Grand Alliance Chaos: Slayers",
+  "version": null,
+  "grandAlliance": "Chaos",
+  "inspire": "Immediately after an enemy fighter is slain by a melee Attack made by a friendly fighter, Inspire a number of friendly fighters equal to the Bounty characteristic of the target.",
+  "reactions": [
+    {
+      "name": "Swell of Power",
+      "type": "reaction",
+      "trigger": "Immediately after an Action step, in which an enemy fighter was slain by a friendly fighter's melee Attack",
+      "flavorText": null,
+      "rulesText": "give the attacker a chaotic power token. That fighter's melee weapons have +1 Attack dice for the next Attack they make. Then remove that fighter's chaotic power token."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Reckless Rage",
+      "type": "action",
+      "flavorText": "Some warriors rely upon raw, unchecked fury in lieu of martial grace, not caring for their own wounds as they rip and kill.",
+      "rulesText": "Pick a friendly fighter with any Charge tokens to use this ability. That fighter can immediately Charge. Inflict 2 damage on that fighter after resolving this ability. This ability can only be used once per game."
+    },
+    {
+      "name": "Decapitating Strike",
+      "type": "reaction",
+      "flavorText": "When one's prey is bloodied and weakened, they are in danger of losing their head to a single well-aimed blow.",
+      "rulesText": "Use this immediately after you pick a weapon as part of a melee Attack. If the target is vulnerable, that weapon has Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}). This ability can only be used once per game."
+    },
+    {
+      "name": "Strengthened by Slaughter",
+      "type": "reaction",
+      "flavorText": "The sight of worthy foes being butchered fills hardened Chaos-worshippers with a terrible resolve.",
+      "rulesText": "Use this immediately after an Action step in which an enemy fighter was slain by a melee Attack made by your warband. Pick a number of friendly fighters equal to the Bounty characteristic of the slain fighter and give each of those fighters a Guard token. This ability can only be used once per game."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "inspire": "Natychmiast po kroku Akcji, jeśli przyjazny wojownik rozpoczął ten krok Akcji na przyjaznym terytorium i wykonał udany Atak, Inspire tego wojownika.",
+  "reactions": [
+    {
+      "name": "Odpędź Intruzów",
+      "trigger": null,
+      "flavorText": null,
+      "rulesText": "Przyjazni wojownicy nie mogą być Flankowani ani Otoczeni, gdy znajdują się na przyjaznym terytorium."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Sprawiedliwy Gniew",
+      "flavorText": "Śmiertelnicy rzadko walczą z większą zaciekłością niż w obronie tego, co im słusznie przynależy.",
+      "rulesText": "Natychmiast po wykonaniu rzutu na Atak dla ataku wręcz wykonanego przez przyjaznego wojownika na przyjaznym terytorium, możesz przerzucić 1 kość Ataku w tym rzucie. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+    },
+    {
+      "name": "Aktywna Obrona",
+      "flavorText": "Ważne jest, aby obrońcy nie popadali w statyczną wojnę, lecz nieustannie nękali i wyprzedzali manewrami swoich wrogów.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika na przyjaznym terytorium. Przesuń tego wojownika o maksymalnie 2 heksy. To przesunięcie musi zakończyć się na przyjaznym terytorium. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Tajna Ścieżka",
+      "flavorText": "Przebiegły obrońca ma przewagę w zażartej bitwie, gdyż zna teren i jego tajne ścieżki.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika stojącego na żetonie terenu na przyjaznym terytorium. Usuń tego wojownika z pola bitwy i umieść go na innym żetonie terenu na przyjaznym terytorium, a następnie daj temu wojownikowi żeton Ruchu. Ta zdolność może być użyta tylko raz na grę."
+    }
+  ]
+}

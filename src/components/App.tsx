@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import type { Language, WarbandMeta, Warscroll, WarscrollTranslation } from '../types/warscroll';
 import type { RivalDeck, RivalDeckMeta, RivalDeckTranslation } from '../types/rivals';
 import { t } from '../i18n/labels';
@@ -22,6 +22,27 @@ const plModules = import.meta.glob<WarscrollTranslation>('../../warbands/*/warsc
   import: 'default',
 });
 
+const pngModules = import.meta.glob('../../warbands/*/warscroll.png', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>;
+
+// GA warscroll globs — keyed by e.g. "chaos-1", "order-2"
+const gaEnModules = import.meta.glob<Warscroll>('../../warbands/_ga/*-[12].json', {
+  eager: true,
+  import: 'default',
+});
+
+const gaPlModules = import.meta.glob<WarscrollTranslation>('../../warbands/_ga/*-[12].pl.json', {
+  eager: true,
+  import: 'default',
+});
+
+const gaPngModules = import.meta.glob('../../warbands/_ga/*-[12].png', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>;
+
 const rivalModules = import.meta.glob<RivalDeck>('../../rivals/*/deck.json', {
   eager: true,
   import: 'default',
@@ -38,10 +59,25 @@ function extractSlug(path: string): string {
   return parts[parts.length - 2];
 }
 
+function extractGaKey(path: string): string {
+  // path like "../../warbands/_ga/chaos-1.json" or "chaos-1.pl.json" or "chaos-1.png"
+  const filename = path.split('/').pop()!;
+  const match = filename.match(/^(\w+-[12])/);
+  return match ? match[1] : filename;
+}
+
 function loadMap<T>(modules: Record<string, T>): Map<string, T> {
   const map = new Map<string, T>();
   for (const [path, data] of Object.entries(modules)) {
     map.set(extractSlug(path), data);
+  }
+  return map;
+}
+
+function loadGaMap<T>(modules: Record<string, T>): Map<string, T> {
+  const map = new Map<string, T>();
+  for (const [path, data] of Object.entries(modules)) {
+    map.set(extractGaKey(path), data);
   }
   return map;
 }
@@ -86,18 +122,46 @@ export function App() {
   const [printCardSpacing, setPrintCardSpacing] = useState(false);
   const [selectedWarbandSlug, setSelectedWarbandSlug] = useState<string | null>(null);
   const [selectedRivalSlug, setSelectedRivalSlug] = useState<string | null>(null);
+  const [gaVariant, setGaVariant] = useState<1 | 2>(1);
   const [warscrolls] = useState(() => loadMap(enModules));
+  const [warscrollImages] = useState(() => loadMap(pngModules));
   const [translations] = useState(() => loadMap(plModules));
+  const [gaWarscrolls] = useState(() => loadGaMap(gaEnModules));
+  const [gaTranslations] = useState(() => loadGaMap(gaPlModules));
+  const [gaImages] = useState(() => loadGaMap(gaPngModules));
   const [rivals] = useState(() => loadMap(rivalModules));
   const [rivalTranslations] = useState(() => loadMap(rivalPlModules));
 
   const warbands: WarbandMeta[] = warbandIndex as WarbandMeta[];
   const rivalDecks: RivalDeckMeta[] = rivalIndex as RivalDeckMeta[];
-  const availableWarbandSlugs = new Set(warscrolls.keys());
+
+  // Non-OP warbands are available if GA data exists for their alliance
+  const availableWarbandSlugs = useMemo(() => {
+    const slugs = new Set(warscrolls.keys());
+    for (const wb of warbands) {
+      if (!wb.opLegal) {
+        const gaKey = `${wb.grandAlliance.toLowerCase()}-1`;
+        if (gaWarscrolls.has(gaKey)) slugs.add(wb.slug);
+      }
+    }
+    return slugs;
+  }, [warscrolls, gaWarscrolls, warbands]);
   const availableRivalSlugs = new Set(rivals.keys());
 
-  const selectedWarscroll = selectedWarbandSlug ? warscrolls.get(selectedWarbandSlug) ?? null : null;
-  const selectedTranslation = selectedWarbandSlug ? translations.get(selectedWarbandSlug) ?? null : null;
+  const selectedWarband = selectedWarbandSlug ? warbands.find((w) => w.slug === selectedWarbandSlug) ?? null : null;
+  const isNonOp = selectedWarband ? !selectedWarband.opLegal : false;
+
+  // For non-OP: use GA data; for OP: use per-warband data
+  const gaKey = isNonOp && selectedWarband ? `${selectedWarband.grandAlliance.toLowerCase()}-${gaVariant}` : null;
+  const selectedWarscroll = isNonOp
+    ? (gaKey ? gaWarscrolls.get(gaKey) ?? null : null)
+    : (selectedWarbandSlug ? warscrolls.get(selectedWarbandSlug) ?? null : null);
+  const selectedWarscrollImage = isNonOp
+    ? (gaKey ? gaImages.get(gaKey) ?? null : null)
+    : (selectedWarbandSlug ? warscrollImages.get(selectedWarbandSlug) ?? null : null);
+  const selectedTranslation = isNonOp
+    ? (gaKey ? gaTranslations.get(gaKey) ?? null : null)
+    : (selectedWarbandSlug ? translations.get(selectedWarbandSlug) ?? null : null);
   const selectedRivalDeck = selectedRivalSlug ? rivals.get(selectedRivalSlug) ?? null : null;
   const selectedRivalTranslation = selectedRivalSlug ? rivalTranslations.get(selectedRivalSlug) ?? null : null;
   const displayedRivalDeck = language === 'pl' && selectedRivalDeck
@@ -179,6 +243,10 @@ export function App() {
               warscroll={selectedWarscroll}
               translation={language === 'pl' ? selectedTranslation : null}
               language={language}
+              imageUrl={selectedWarscrollImage}
+              isNonOp={isNonOp}
+              gaVariant={gaVariant}
+              onGaVariantChange={setGaVariant}
             />
           )}
         </>

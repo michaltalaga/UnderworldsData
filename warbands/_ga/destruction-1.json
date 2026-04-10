@@ -1,0 +1,38 @@
+{
+  "id": "destruction-1",
+  "name": "Grand Alliance Destruction: Brutal",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "Immediately after a friendly fighter Attacks an enemy fighter that is Flanked or Surrounded, Inspire the attacker and any friendly fighters adjacent to the target.",
+  "reactions": [
+    {
+      "name": "'Ave This, Ya Git!",
+      "type": "reaction",
+      "trigger": "Use this immediately after an enemy fighter has Charged.",
+      "flavorText": "Despite their love of war and violence, the harbingers of destruction get very annoyed when their enemies have the temerity to charge them first.",
+      "rulesText": "Use this immediately after an enemy fighter has Charged. Pick a friendly fighter adjacent to that enemy fighter. That friendly fighter can Attack, but that Attack must target the enemy fighter that Charged. This ability can only be used once per game."
+    },
+    {
+      "name": "'Ere We Go!",
+      "type": "reaction",
+      "trigger": "Use this immediately after picking a damaged friendly fighter to Attack.",
+      "flavorText": "Wounding one of Gorkamorka's lot rather than killing it outright is a fatal mistake that has befallen all too many warriors.",
+      "rulesText": "Use this immediately after picking a damaged friendly fighter to Attack. That fighter's weapons have +1 Attack dice for that Attack. This ability can only be used once per game."
+    },
+    {
+      "name": "Mob Mentality",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly fighter is picked to be the target of a melee Attack if another friendly fighter is adjacent.",
+      "flavorText": "It's not easy to land a blow on one wildly swinging berserker, let alone two of them fighting side by side.",
+      "rulesText": "Use this immediately after a friendly fighter is picked to be the target of a melee Attack if another friendly fighter is adjacent. The target has a Save characteristic of 2 {icon:shield} for that Attack. This ability can only be used once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Get Da Boss!",
+      "type": "passive",
+      "flavorText": "",
+      "rulesText": "At the start of the first Action step in each battle round, you can push each friendly fighter 1 hex. That push must end closer, or adjacent, to an enemy leader ({icon:leader})."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "inspire": "Po fazie Akcji, Inspire każdego przyjaznego wojownika sąsiadującego z uszkodzonym wrogim wojownikiem.",
+  "reactions": [
+    {
+      "name": "Kunnin'",
+      "trigger": "Na początku pierwszej fazy Akcji w każdej rundzie bitwy, jeśli twój dowódca ({icon:leader}) jest na polu bitwy",
+      "flavorText": null,
+      "rulesText": "możesz odrzucić Ulepszenie wyposażone przez przyjaznego wojownika, a następnie wybrać Zagrywkę z twojego stosu odrzuconych kart Power i dodać ją do ręki. Nie możesz wybrać tej samej Zagrywki więcej niż raz na grę."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Część Planu",
+      "flavorText": "Wierni Morka uważają za całkowicie dopuszczalne, by rzucić się na wroga gromadą i porządnie go skłuć.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu celu Ataku, jeśli cel jest Flanked lub Surrounded. Wyniki {icon:fury} i {icon:dodge} liczą się jako sukcesy dla tego Ataku. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "Paskudne Pułapki",
+      "flavorText": "Kolce, sieci, bomby z gazem i toksyczny szlam: te plugawe narzędzia mogą wytrącić wroga z równowagi. Łatwy cel dla celnego uderzenia.",
+      "rulesText": "Użyj tej zdolności w fazie Power step. Do końca rundy bitwy, heksy sąsiadujące z przyjaznymi wojownikami są traktowane jako stagger hexes, oprócz innych typów heksów. Ta zdolność może być użyta tylko raz na grę."
+    },
+    {
+      "name": "To Mój Teren, Koleś",
+      "flavorText": "Ci, którzy próbują wyprzeć armie Gorkamorki z zajętego przez nie terytorium, najprawdopodobniej spotkają makabryczny los.",
+      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu celu Ataku. Rzuty na Atak wręcz wykonywane przez atakującego w ramach Ataków wręcz zawsze liczą się jako posiadające więcej {icon:fury} niż rzut na Obronę dla celów Drive Back i Overrun, dopóki ten Atak nie zostanie rozstrzygnięty. Ta zdolność może być użyta tylko raz na grę."
+    }
+  ]
+}

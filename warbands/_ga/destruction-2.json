@@ -1,0 +1,36 @@
+{
+  "id": "destruction-2",
+  "name": "Grand Alliance Destruction: Kunnin'",
+  "version": null,
+  "grandAlliance": "Destruction",
+  "inspire": "After your Action step, Inspire each friendly fighter adjacent to a damaged enemy fighter.",
+  "reactions": [
+    {
+      "name": "Kunnin'",
+      "type": "reaction",
+      "trigger": "At the start of the first Action step in each battle round, if your leader ({icon:leader}) is on the battlefield",
+      "flavorText": null,
+      "rulesText": "you can discard an Upgrade equipped by a friendly fighter, then pick a Ploy from your Power discard pile and add it to your hand. You cannot pick the same Ploy more than once per game."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Part of Da Plan",
+      "type": "reaction",
+      "flavorText": "Mork's faithful consider it perfectly acceptable to gang up on a foe and give them a good shanking.",
+      "rulesText": "Use this immediately after picking the target of an Attack if the target is Flanked or Surrounded. Rolls of {icon:fury} and {icon:dodge} count as successes for that Attack. This ability can only be used once per game."
+    },
+    {
+      "name": "Sneaky Traps",
+      "type": "action",
+      "flavorText": "Caltrops, nets, gas bombs and toxic slime: these nasty tools can leave an enemy reeling. An easy target for a well-aimed strike.",
+      "rulesText": "Use this in your Power step. Until the end of the battle round, hexes adjacent to friendly fighters are treated as stagger hexes in addition to other hex types. This ability can only be used once per game."
+    },
+    {
+      "name": "Dis is My Turf, Mate",
+      "type": "reaction",
+      "flavorText": "Those who attempt to drive Gorkamorka's armies from territory they have claimed are likely to meet a grisly fate.",
+      "rulesText": "Use this immediately after picking the target of an Attack. Melee Attack rolls made for the attacker as part of melee Attacks always count as having more {icon:fury} than the Save roll for the purposes of Drive Back and Overrun until that Attack is resolved. This ability can only be used once per game."
+    }
+  ]
+}

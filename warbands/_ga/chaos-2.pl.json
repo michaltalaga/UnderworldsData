@@ -1,0 +1,28 @@
+{
+  "inspire": "Natychmiast po tym, jak nieprzyjacielski wojownik zostanie pokonany przez atak wręcz wykonany przez przyjaznego wojownika, zainspiruj (Inspire) liczbę przyjaznych wojowników równą charakterystyce Bounty celu.",
+  "reactions": [
+    {
+      "name": "Przypływ Mocy",
+      "trigger": "Natychmiast po kroku Akcji, w którym nieprzyjacielski wojownik został pokonany przez atak wręcz przyjaznego wojownika",
+      "flavorText": null,
+      "rulesText": "daj atakującemu żeton chaotycznej mocy (chaotic power token). Bronie wręcz tego wojownika mają +1 kość Ataku do następnego Ataku, który wykona. Następnie usuń żeton chaotycznej mocy tego wojownika."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Szaleńcza Furia",
+      "flavorText": "Niektórzy wojownicy polegają na nieokiełznanej, dzikiej furii zamiast na biegłości bojowej, nie zważając na własne rany, gdy rąbią i zabijają.",
+      "rulesText": "Wybierz przyjaznego wojownika posiadającego żetony Szarży, aby użyć tej zdolności. Ten wojownik może natychmiast wykonać Szarżę (Charge). Po rozpatrzeniu tej zdolności zadaj temu wojownikowi 2 obrażenia. Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Ścięcie Głowy",
+      "flavorText": "Gdy ofiara jest skrwawiona i osłabiona, grozi jej utrata głowy od jednego, celnie wymierzonego ciosu.",
+      "rulesText": "Użyj tej zdolności natychmiast po wybraniu broni w ramach ataku wręcz. Jeśli cel jest podatny na ciosy (vulnerable), ta broń posiada Cleave ({icon:cleave}) oraz Ensnare ({icon:ensnare}). Tej zdolności można użyć tylko raz na grę."
+    },
+    {
+      "name": "Wzmocnieni przez Rzeź",
+      "flavorText": "Widok godnych wrogów ginących w rzezi napełnia zaprawionych wyznawców Chaosu straszliwą determinacją.",
+      "rulesText": "Użyj tej zdolności natychmiast po kroku Akcji, w którym nieprzyjacielski wojownik został pokonany przez atak wręcz wykonany przez twoją drużynę. Wybierz liczbę przyjaznych wojowników równą charakterystyce Bounty pokonanego wojownika i daj każdemu z nich żeton Warty (Guard token). Tej zdolności można użyć tylko raz na grę."
+    }
+  ]
+}

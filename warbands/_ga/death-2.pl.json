@@ -1,0 +1,28 @@
+{
+  "inspire": "Po udanym Ataku wykonanym przez twojego przywódcę ({icon:leader}), wybierz przyjaznego wojownika lub do 2 przyjaznych sług ({icon:minion}). Zainspiruj tych wojowników.",
+  "reactions": [
+    {
+      "name": "Powstań, sługo!",
+      "trigger": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności",
+      "flavorText": null,
+      "rulesText": "Wybierz poległego przyjaznego wojownika. Podnieś tego wojownika i umieść go na pustym polu startowym na przyjaznym terytorium. Jeśli ten wojownik nie jest sługą ({icon:minion}), zadawaj mu obrażenia, dopóki nie stanie się podatny na zranienie. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Eksplozja zwłok",
+      "flavorText": "Naładowany falami nekromantycznej magii, nieumarły wojownik rozpada się w chmurze oparów wysuszających ciało.",
+      "rulesText": "Wybierz przyjaznego sługę ({icon:minion}) lub przyjaznego wojownika z charakterystyką Zdrowia wynoszącą 3 lub mniej, który sąsiaduje z jakimikolwiek wrogimi wojownikami. Zadaj 1 obrażenie każdemu z tych wrogich wojowników. Następnie zadawaj obrażenia temu przyjaznemu wojownikowi, dopóki nie zostanie pokonany. Tej zdolności można użyć tylko raz w grze."
+    },
+    {
+      "name": "Aura wyczerpania",
+      "flavorText": "Ci wojownicy emanują czystą entropiczną energią, powodując, że pobliskich wrogów ogarnia słabość i więdną w swoich zbrojach.",
+      "rulesText": "Wybierz przyjaznego sługę ({icon:minion}) lub przyjaznego wojownika z charakterystyką Zdrowia wynoszącą 3 lub mniej, który sąsiaduje z jakimikolwiek wrogimi wojownikami. Daj każdemu z tych wrogich wojowników żeton Stagger. Tej zdolności można użyć tylko raz w grze."
+    },
+    {
+      "name": "Niespokojni umarli",
+      "flavorText": "Nieumarli nie znają zmęczenia i będą chwiejnym krokiem parli naprzód na wezwanie swego pana.",
+      "rulesText": "Użyj tej zdolności w fazie Power step. Wybierz do 3 przyjaznych sług ({icon:minion}) lub przyjaznych wojowników z charakterystyką Zdrowia wynoszącą 3 lub mniej. Przesuń każdego wojownika o 1 pole. Tej zdolności można użyć tylko raz w grze."
+    }
+  ]
+}

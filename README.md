@@ -26,15 +26,15 @@ Shows completion status of the entire data pipeline. Reports which warbands are 
 
 ### `npm run download`
 
-Downloads warscroll card PNG images from underworldsdb.com into each warband's directory. Skips already-downloaded images. Processes in batches of 10.
+Downloads warscroll card PNG images from underworldsdb.com. Downloads both generic Grand Alliance warscroll variants (8 images into `warbands/_ga/`) and OP-legal warband images into each warband's directory. Skips already-downloaded images. Processes in batches of 10.
 
 ### `npm run extract`
 
-Extracts structured game data from warscroll card PNGs using Claude's vision API (Sonnet 4.6). Reads each card image and outputs a `warscroll.json` with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
+Extracts structured game data from warscroll card PNGs using Claude's vision API (Sonnet 4.6). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
 
 ### `npm run translate`
 
-Translates English `warscroll.json` files to Polish using the Claude API. Preserves game icon tokens (`{icon:name}`) and outputs `warscroll.pl.json`. Skips already-translated warbands.
+Translates English warscroll JSON files to Polish using the Claude API. Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Preserves game icon tokens (`{icon:name}`). Skips already-translated files.
 
 ### `npm run rivals:sync`
 
@@ -49,7 +49,11 @@ Translates rival deck `deck.json` files to Polish using the Claude API. Outputs 
 ```
 warbands/           Warband data (60+ warbands)
   index.json        Master warband metadata
-  <warband>/
+  _ga/              Shared Grand Alliance warscrolls (2 per alliance)
+    chaos-1.json    GA Chaos variant 1
+    chaos-2.json    GA Chaos variant 2
+    ...             (+ .pl.json translations and .png images)
+  <warband>/        OP-legal warband data
     warscroll.png   Card image
     warscroll.json  Extracted English data
     warscroll.pl.json  Polish translation
