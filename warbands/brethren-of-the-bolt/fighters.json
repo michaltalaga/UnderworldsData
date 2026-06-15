@@ -1,0 +1,132 @@
+{
+  "warband": "brethren-of-the-bolt",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Pater Filius",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["brethren-of-the-bolt", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["brethren-of-the-bolt", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Galvic",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Tazat",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Yakob",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Arcus",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["brethren-of-the-bolt"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

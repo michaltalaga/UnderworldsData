@@ -1,0 +1,132 @@
+{
+  "warband": "zikkits-tunnelpack",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Zikkit",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Rittak",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Krittatok",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Nitch",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": [],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Tik Tik",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

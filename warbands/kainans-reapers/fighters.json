@@ -1,0 +1,157 @@
+{
+  "warband": "kainans-reapers",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Kainan",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 6,
+        "bounty": 3,
+        "runemarks": ["kainans-reapers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 6,
+        "bounty": 3,
+        "runemarks": ["kainans-reapers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Khenta",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Senha",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Karu",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Hakor",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Nohem",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["kainans-reapers", "minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

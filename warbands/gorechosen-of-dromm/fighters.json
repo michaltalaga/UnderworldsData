@@ -1,0 +1,172 @@
+{
+  "warband": "gorechosen-of-dromm",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Dromm",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["gorechosen-of-dromm", "leader"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 2,
+            "abilities": []
+          },
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 1,
+            "abilities": []
+          }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["gorechosen-of-dromm", "leader"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [
+              { "name": "grievous", "critical": false }
+            ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "The Gorehulk",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 6,
+        "bounty": 3,
+        "runemarks": ["gorechosen-of-dromm"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 3,
+            "abilities": []
+          },
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 4,
+            "damage": 1,
+            "abilities": [
+              { "name": "grapple", "critical": false }
+            ]
+          }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 6,
+        "bounty": 3,
+        "runemarks": ["gorechosen-of-dromm"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 3,
+            "abilities": []
+          },
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 5,
+            "damage": 1,
+            "abilities": [
+              { "name": "grievous", "critical": false }
+            ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Herax",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["gorechosen-of-dromm"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 2,
+            "abilities": []
+          },
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 1,
+            "abilities": []
+          }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["gorechosen-of-dromm"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [
+              { "name": "stagger", "critical": false }
+            ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

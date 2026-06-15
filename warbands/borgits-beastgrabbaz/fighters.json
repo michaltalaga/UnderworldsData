@@ -1,0 +1,130 @@
+{
+  "warband": "borgits-beastgrabbaz",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Uglug",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false }, { "name": "grievous", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Borgit",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["leader", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["leader", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Snagz",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Rigg and Shamm",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Dregg",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion", "beastgrabbaz"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

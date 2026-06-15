@@ -1,0 +1,181 @@
+{
+  "warband": "the-grymwatch",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Crakmarrow",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["skull", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["skull", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Gristlewel",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Valreek",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "The Royal Butcher",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Master Talon",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Night's Herald",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 7,
+      "name": "The Duke's Harriers",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skull", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

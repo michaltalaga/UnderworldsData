@@ -1,0 +1,140 @@
+{
+  "warband": "thundriks-profiteers",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Thundrik",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["kharadron-overlords", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["kharadron-overlords", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "stagger", "critical": false } ] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Khazgan",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["kharadron-overlords", "aether-khemist"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["kharadron-overlords", "aether-khemist"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Garodd",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Lund",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 4, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 4, "symbol": "hammer", "dice": 4, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Enrik",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["kharadron-overlords"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 4, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

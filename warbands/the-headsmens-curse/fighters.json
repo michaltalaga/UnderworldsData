@@ -1,0 +1,105 @@
+{
+  "warband": "the-headsmens-curse",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Wielder of the Blade",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["headsmens-curse", "leader", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["headsmens-curse", "leader", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 4, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Bearer of the Block",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Scriptor of the Sentence",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Sharpener of the Blade",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["headsmens-curse", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

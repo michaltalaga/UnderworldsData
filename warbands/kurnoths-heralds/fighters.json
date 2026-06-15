@@ -1,0 +1,86 @@
+{
+  "warband": "kurnoths-heralds",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Ylarin",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["kurnoths-heralds", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["kurnoths-heralds", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Cullon",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["kurnoths-heralds"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["kurnoths-heralds"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [ { "name": "stagger", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Lenwythe",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["kurnoths-heralds"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": true } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["kurnoths-heralds"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

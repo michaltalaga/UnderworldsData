@@ -1,0 +1,128 @@
+{
+  "warband": "ironsouls-condemners",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Ironsoul",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["ironsouls-condemners", "leader", "shield-aetheric"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": []
+          }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["ironsouls-condemners", "leader", "shield-aetheric"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [ { "name": "stagger", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Tavian",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["ironsouls-condemners", "shield-aetheric"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": []
+          }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["ironsouls-condemners", "shield-aetheric"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [ { "name": "stagger", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Brodus",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["ironsouls-condemners"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 2,
+            "abilities": [ { "name": "grievous", "critical": false } ]
+          }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["ironsouls-condemners"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [ { "name": "grievous", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

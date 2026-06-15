@@ -1,0 +1,128 @@
+{
+  "warband": "rippas-snarlfangs",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Rippa",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["leader", "destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [ { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["leader", "destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 1,
+            "symbol": "hammer",
+            "dice": 3,
+            "damage": 2,
+            "abilities": [ { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Stabbit",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "hammer",
+            "dice": 2,
+            "damage": 1,
+            "abilities": [ { "name": "grapple", "critical": false }, { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "melee",
+            "range": 2,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 1,
+            "abilities": [ { "name": "grapple", "critical": false }, { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Mean-eye",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "ranged",
+            "range": 3,
+            "symbol": "swords",
+            "dice": 2,
+            "damage": 1,
+            "abilities": [ { "name": "cleave", "critical": false }, { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["destruction"],
+        "weapons": [
+          {
+            "name": null,
+            "reach": "ranged",
+            "range": 3,
+            "symbol": "swords",
+            "dice": 3,
+            "damage": 1,
+            "abilities": [ { "name": "cleave", "critical": false }, { "name": "snarlfangs-jaws", "critical": false } ]
+          }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

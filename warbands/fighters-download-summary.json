@@ -1,0 +1,302 @@
+{
+  "the-wurmspat": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "khagras-ravagers": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "the-dread-pageant": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "spiteclaws-swarm": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "gorechosen-of-dromm": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "gnarlspirit-pack": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "the-thricefold-discord": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "skittershanks-clawpack": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "ephilims-pandaemonium": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "zikkits-tunnelpack": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "grandfathers-gardeners": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "kamandoras-blades": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "blood-of-the-bull": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "sepulchral-guard": {
+    "ok": 14,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 14
+  },
+  "the-crimson-court": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "thorns-of-the-briar-queen": {
+    "ok": 14,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 14
+  },
+  "the-grymwatch": {
+    "ok": 14,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 14
+  },
+  "kainans-reapers": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "the-headsmens-curse": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "sons-of-velmorn": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "the-exiled-dead": {
+    "ok": 14,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 14
+  },
+  "the-skinnerkin": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "thanateks-tithe": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "zondaras-gravebreakers": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "rippas-snarlfangs": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "mollogs-mob": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "zarbags-gitz": {
+    "ok": 18,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 18
+  },
+  "morgoks-krushas": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "hrothgorns-mantrappers": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "da-kunnin-krew": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "blackpowders-buccaneers": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "daggoks-stab-ladz": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "the-farstriders": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "grinkraks-looncourt": {
+    "ok": 14,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 14
+  },
+  "borgits-beastgrabbaz": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "yltharis-guardians": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "ironsouls-condemners": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "thundriks-profiteers": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "myaris-purifiers": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "elathains-soulraid": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "the-starblood-stalkers": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "xandires-truthseekers": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "the-shadeborn": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "the-emberwatch": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "cyrenis-razors": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "brethren-of-the-bolt": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "hexbanes-hunters": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "kurnoths-heralds": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "knives-of-the-crone": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "jaws-of-itzl": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  }
+}

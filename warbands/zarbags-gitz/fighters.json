@@ -1,0 +1,232 @@
+{
+  "warband": "zarbags-gitz",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Zarbag",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 4, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Snirk",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 3 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Drizgit",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Prog",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "ensnare", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Stikkit",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Dibbz",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 7,
+      "name": "Redkap",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 8,
+      "name": "Bonekrakka",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 9,
+      "name": "Gobbaluk",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

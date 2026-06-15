@@ -1,0 +1,180 @@
+{
+  "warband": "grinkraks-looncourt",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Grinkrak",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Grib",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "knight", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "knight", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Skolko & Pronk",
+      "uninspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 4, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 2,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 4, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Snark",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Snorbo",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Burk",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 7,
+      "name": "Nagz",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["looncourt", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

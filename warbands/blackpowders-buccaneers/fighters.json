@@ -1,0 +1,132 @@
+{
+  "warband": "blackpowders-buccaneers",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Gorlok",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 8,
+        "bounty": 3,
+        "runemarks": ["blackpowders-buccaneers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 8,
+        "bounty": 3,
+        "runemarks": ["blackpowders-buccaneers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": "Melee weapon bears the warband Swashbuckle skull runemark ({icon:skull}); the ranged weapon (grunderbuss) does not."
+    },
+    {
+      "index": 2,
+      "name": "Kagey",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers", "fly"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers", "fly"],
+        "weapons": [
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+    },
+    {
+      "index": 3,
+      "name": "Peggz",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+    },
+    {
+      "index": 4,
+      "name": "Shreek",
+      "uninspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": "Uninspired weapon has Critical Grievous (crit starburst + cloven skull). Inspired weapon drops the ability and gains +1 Damage (2). Does NOT bear the warband Swashbuckle skull runemark."
+    },
+    {
+      "index": 5,
+      "name": "Mange",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["blackpowders-buccaneers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+    }
+  ]
+}
