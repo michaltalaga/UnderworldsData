@@ -28,6 +28,7 @@
   .ga-toggle,
   .pairings-panel,
   .pairing-warbands,
+  .fighter-cards,
   .overview {
     display: none !important;
   }

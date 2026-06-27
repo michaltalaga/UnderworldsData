@@ -11,6 +11,7 @@
     "translate": "tsx scripts/translate.ts",
     "download": "tsx scripts/download.ts",
     "download:icons": "tsx scripts/download-icons.ts",
+    "download:fighters": "tsx scripts/download-fighters.ts",
     "status": "tsx scripts/status.ts",
     "rivals:sync": "tsx scripts/sync-rivals.ts",
     "rivals:translate": "tsx scripts/translate-rivals.ts"

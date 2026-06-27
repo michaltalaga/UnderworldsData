@@ -4,6 +4,7 @@ import { t } from '../i18n/labels';
 import { renderText } from './GameText';
 import { StarRating } from './StarRating';
 import { deckRatingsForWarband } from '../data/pairings';
+import { warbandFighters } from '../data/fighters';
 import { deckHref } from '../routing';
 import { warbandIcon, deckIcon } from '../data/icons';
 
@@ -46,6 +47,7 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
   const playstyle = !isNonOp ? pick(warscroll.playstyle, translation?.playstyle) : '';
   const taglineByDeck = new Map((decks ?? []).map((deck) => [deck.slug, deck.strategyTagline]));
   const headerIcon = warbandIcon(warbandSlug);
+  const fighterCards = !isNonOp && warbandSlug ? warbandFighters(warbandSlug) : [];
 
   return (
     <div className="warscroll">
@@ -101,6 +103,33 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
           ))}
         </div>
       </div>
+
+      {fighterCards.length > 0 && (
+        <div className="fighter-cards">
+          <h4 className="fighter-cards-title">{t('fighterCards', language)}</h4>
+          <div className="fighter-card-grid">
+            {fighterCards.map((fighter) => (
+              <div className="fighter-card-pair" key={fighter.index}>
+                {fighter.name && <div className="fighter-card-name">{fighter.name}</div>}
+                <div className="fighter-card-sides">
+                  {fighter.uninspired && (
+                    <figure className="fighter-card">
+                      <img src={fighter.uninspired} alt={`${fighter.name ?? ''} — ${t('uninspired', language)}`} loading="lazy" />
+                      <figcaption>{t('uninspired', language)}</figcaption>
+                    </figure>
+                  )}
+                  {fighter.inspired && (
+                    <figure className="fighter-card">
+                      <img src={fighter.inspired} alt={`${fighter.name ?? ''} — ${t('inspired', language)}`} loading="lazy" />
+                      <figcaption>{t('inspired', language)}</figcaption>
+                    </figure>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {(playstyle || pairingRatings.length > 0) && (
         <div className="pairings-panel">

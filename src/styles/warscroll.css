@@ -762,6 +762,69 @@ body {
   margin-bottom: 0.35rem;
 }
 
+/* ===================== Fighter cards gallery (warscroll, parchment) ===================== */
+.fighter-cards {
+  background: #e8e0cc;
+  border-top: 2px solid #c4b89a;
+  padding: 1rem;
+}
+
+.fighter-cards-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8b4513;
+  margin-bottom: 0.75rem;
+}
+
+.fighter-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.fighter-card-pair {
+  background: #fff;
+  border: 1px solid #c4b89a;
+  border-radius: 6px;
+  padding: 0.6rem;
+}
+
+.fighter-card-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.45rem;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.fighter-card-sides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.fighter-card {
+  margin: 0;
+}
+
+.fighter-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fighter-card figcaption {
+  text-align: center;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
 /* ===================== Overview / Pairings tab (dark) ===================== */
 .overview { color: #e0e0e0; }
 .overview section { margin-bottom: 2rem; }
