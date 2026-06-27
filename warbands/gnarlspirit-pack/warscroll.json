@@ -38,5 +38,6 @@
       "flavorText": null,
       "rulesText": "Use this in your Power step. Pick a friendly fighter. Save rolls for that fighter cannot be affected by Cleave ({icon:cleave}) and Ensnare ({icon:ensnare}) in the next turn. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four aggressive beastmen who buff themselves with spirit tokens, gaining extra Move, Save, or attack dice depending on the fighter. The catch is that fighters carrying spirit tokens cannot be inspired or hold treasure, forcing a constant trade between raw combat power and objective control. The pack plays as a fast, hard-hitting brawler that must time when to shed tokens and inspire."
 }

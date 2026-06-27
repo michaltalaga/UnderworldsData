@@ -1,18 +1,19 @@
 import { useState, useMemo } from 'react';
 import type { Language, WarbandMeta } from '../types/warscroll';
 import { t } from '../i18n/labels';
+import { warbandHref } from '../routing';
+import { warbandIcon, factionIcon } from '../data/icons';
 
 interface Props {
   warbands: WarbandMeta[];
   selected: string | null;
-  onSelect: (slug: string) => void;
   language: Language;
   availableSlugs: Set<string>;
 }
 
 const FACTION_ORDER = ['Chaos', 'Death', 'Destruction', 'Order'] as const;
 
-export function WarbandSelector({ warbands, selected, onSelect, language, availableSlugs }: Props) {
+export function WarbandSelector({ warbands, selected, language, availableSlugs }: Props) {
   const [search, setSearch] = useState('');
 
   const grouped = useMemo(() => {
@@ -40,18 +41,26 @@ export function WarbandSelector({ warbands, selected, onSelect, language, availa
       {FACTION_ORDER.map((faction) =>
         grouped[faction].length > 0 ? (
           <div className="faction-group" key={faction}>
-            <h3 className={faction}>{faction}</h3>
+            <h3 className={faction}>
+              {factionIcon(faction) && <img className="faction-icon" src={factionIcon(faction)!} alt="" />}
+              {faction}
+            </h3>
             <div className="warband-grid">
-              {grouped[faction].map((wb) => (
-                <button
-                  key={wb.slug}
-                  className={`warband-btn ${selected === wb.slug ? 'active' : ''} ${!availableSlugs.has(wb.slug) ? 'no-data' : ''}`}
-                  onClick={() => onSelect(wb.slug)}
-                  title={`${wb.name} (${wb.fighters} ${t('fighters', language)})`}
-                >
-                  {wb.name}
-                </button>
-              ))}
+              {grouped[faction].map((wb) => {
+                const icon = warbandIcon(wb.slug);
+                return (
+                  <a
+                    key={wb.slug}
+                    href={warbandHref(wb.slug)}
+                    className={`warband-btn ${selected === wb.slug ? 'active' : ''} ${!availableSlugs.has(wb.slug) ? 'no-data' : ''}`}
+                    title={`${wb.name} (${wb.fighters} ${t('fighters', language)})`}
+                    aria-current={selected === wb.slug ? 'page' : undefined}
+                  >
+                    {icon && <img className="btn-icon" src={icon} alt="" />}
+                    {wb.name}
+                  </a>
+                );
+              })}
             </div>
           </div>
         ) : null

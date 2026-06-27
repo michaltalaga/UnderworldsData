@@ -38,5 +38,6 @@
       "flavorText": "The Ossiarch Bonereapers do not rest until the tithe has been harvested.",
       "rulesText": "Use this in your Power step. Pick a friendly minion ({icon:minion}) with any Move and/or Charge tokens. Remove that fighter's Move and/or Charge tokens. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Six tanky Ossiarch Bonereaper constructs that fight as a disciplined block, advancing in lockstep so every Mortek ends its move adjacent to a comrade. Guard tokens and a no-target lockout make them hard to dislodge, while flanked or surrounded foes suffer Grievous blows. Slaying enemies feeds bone-tithe tokens that are spent to inspire, rewarding patient, formation-based killing."
 }

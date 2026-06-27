@@ -45,5 +45,6 @@
       "flavorText": "Thanatek channels deathly energy into a crushing wave to drive his enemies back.",
       "rulesText": "Use this in your Power step. Remove any of your cadaver tokens. For each enemy fighter adjacent to any friendly Retainers {icon:minion}, roll a number of Attack dice equal to the number of cadaver tokens you removed. If the roll contains any {icon:skull} or {icon:crit}, inflict 1 damage on that enemy fighter. Otherwise, remove that enemy fighter's Guard tokens and give them a Stagger token. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five tanky Ossiarch Bonereaper constructs arranged so the leader measures attacks from adjacent Retainers, anchoring a retainer-adjacency formation. Kills near Retainers bank cadaver tokens that inspire fighters and power necromantic abilities, including raising slain Mortis Reapers back into friendly territory. Sturdy and methodical, it grinds forward while harvesting tokens to fuel resurrection and board control."
 }

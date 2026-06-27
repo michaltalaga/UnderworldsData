@@ -7,7 +7,9 @@ import { WarbandSelector } from './WarbandSelector';
 import { WarscrollView } from './WarscrollView';
 import { RivalDeckSelector } from './RivalDeckSelector';
 import { RivalDeckView } from './RivalDeckView';
-import { ViewToggle, type AppView } from './ViewToggle';
+import { OverviewView } from './OverviewView';
+import { ViewToggle } from './ViewToggle';
+import { useRoute, viewHref, navigate } from '../routing';
 
 import warbandIndex from '../../warbands/index.json';
 import rivalIndex from '../../rivals/index.json';
@@ -91,6 +93,8 @@ function mergeRivalMeta(base: RivalDeckMeta, translation: RivalDeckTranslation |
     ...base,
     name: translation.name ?? base.name,
     plot: translation.plot === undefined ? base.plot : translation.plot,
+    strategyTagline: translation.strategyTagline ?? base.strategyTagline,
+    strategy: translation.strategy ?? base.strategy,
   };
 }
 
@@ -117,11 +121,13 @@ function mergeRivalDeck(base: RivalDeck, translation: RivalDeckTranslation | nul
 }
 
 export function App() {
+  const route = useRoute();
+  const view = route.view;
+  const selectedWarbandSlug = view === 'warscrolls' ? route.warband : null;
+  const selectedRivalSlug = view === 'rivals' ? route.deck : null;
+
   const [language, setLanguage] = useState<Language>('en');
-  const [view, setView] = useState<AppView>('warscrolls');
   const [printCardSpacing, setPrintCardSpacing] = useState(false);
-  const [selectedWarbandSlug, setSelectedWarbandSlug] = useState<string | null>(null);
-  const [selectedRivalSlug, setSelectedRivalSlug] = useState<string | null>(null);
   const [gaVariant, setGaVariant] = useState<1 | 2>(1);
   const [warscrolls] = useState(() => loadMap(enModules));
   const [warscrollImages] = useState(() => loadMap(pngModules));
@@ -170,8 +176,29 @@ export function App() {
   const displayedRivalDecks = language === 'pl'
     ? rivalDecks.map((deck) => mergeRivalMeta(deck, rivalTranslations.get(deck.slug) ?? null))
     : rivalDecks;
-  const currentTitle = view === 'warscrolls' ? t('warscrollTitle', language) : t('rivalsTitle', language);
-  const canPrint = view === 'warscrolls' ? Boolean(selectedWarscroll) : Boolean(displayedRivalDeck);
+
+  // Full decks (with strategy + cards), language-merged — for the overview and warband panels.
+  const allDecks = useMemo<RivalDeck[]>(() => {
+    return rivalDecks
+      .map((meta) => {
+        const full = rivals.get(meta.slug);
+        if (!full) return null;
+        return language === 'pl' ? mergeRivalDeck(full, rivalTranslations.get(meta.slug) ?? null) : full;
+      })
+      .filter((deck): deck is RivalDeck => deck !== null);
+  }, [rivalDecks, rivals, rivalTranslations, language]);
+  const currentTitle =
+    view === 'warscrolls'
+      ? t('warscrollTitle', language)
+      : view === 'rivals'
+        ? t('rivalsTitle', language)
+        : t('overviewTitle', language);
+  const canPrint =
+    view === 'warscrolls'
+      ? Boolean(selectedWarscroll)
+      : view === 'rivals'
+        ? Boolean(displayedRivalDeck)
+        : false;
 
   const handlePrint = useCallback(() => {
     window.print();
@@ -181,26 +208,34 @@ export function App() {
     document.title = `${t('appTitle', language)} - ${currentTitle}`;
   }, [currentTitle, language]);
 
+  // Reset the GA warscroll variant whenever the selected warband changes,
+  // so variant-2 doesn't carry over to an unrelated warband.
+  useEffect(() => {
+    setGaVariant(1);
+  }, [selectedWarbandSlug]);
+
+  // Scroll to top whenever the route's target changes (new warband/deck/tab).
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [view, selectedWarbandSlug, selectedRivalSlug]);
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key !== 'Escape') return;
 
-      if (view === 'warscrolls') {
-        setSelectedWarbandSlug(null);
-      } else {
-        setSelectedRivalSlug(null);
-      }
+      if (view === 'warscrolls' && selectedWarbandSlug) navigate(viewHref('warscrolls'));
+      else if (view === 'rivals' && selectedRivalSlug) navigate(viewHref('rivals'));
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [view]);
+  }, [view, selectedWarbandSlug, selectedRivalSlug]);
 
   return (
     <div className={`app${printCardSpacing ? ' print-card-spacing' : ''}`}>
       <header className="header">
         <div className="header-main">
           <h1>{t('appTitle', language)}</h1>
-          <ViewToggle view={view} onChange={setView} language={language} />
+          <ViewToggle view={view} language={language} />
         </div>
         <div className="header-controls">
           <LanguageToggle language={language} onChange={setLanguage} />
@@ -222,12 +257,11 @@ export function App() {
         </div>
       </header>
 
-      {view === 'warscrolls' ? (
+      {view === 'warscrolls' && (
         <>
           <WarbandSelector
             warbands={warbands}
             selected={selectedWarbandSlug}
-            onSelect={setSelectedWarbandSlug}
             language={language}
             availableSlugs={availableWarbandSlugs}
           />
@@ -240,6 +274,7 @@ export function App() {
 
           {selectedWarscroll && (
             <WarscrollView
+              key={selectedWarbandSlug}
               warscroll={selectedWarscroll}
               translation={language === 'pl' ? selectedTranslation : null}
               language={language}
@@ -247,16 +282,19 @@ export function App() {
               isNonOp={isNonOp}
               gaVariant={gaVariant}
               onGaVariantChange={setGaVariant}
+              warbandSlug={selectedWarbandSlug}
+              decks={allDecks}
             />
           )}
         </>
-      ) : (
+      )}
+
+      {view === 'rivals' && (
         <>
           {rivalDecks.length > 0 ? (
             <RivalDeckSelector
               decks={displayedRivalDecks}
               selected={selectedRivalSlug}
-              onSelect={setSelectedRivalSlug}
               language={language}
               availableSlugs={availableRivalSlugs}
             />
@@ -274,11 +312,16 @@ export function App() {
 
           {displayedRivalDeck && (
             <RivalDeckView
+              key={displayedRivalDeck.slug}
               deck={displayedRivalDeck}
               language={language}
             />
           )}
         </>
+      )}
+
+      {view === 'overview' && (
+        <OverviewView language={language} decks={allDecks} warbands={warbands} />
       )}
     </div>
   );

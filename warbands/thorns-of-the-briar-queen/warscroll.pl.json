@@ -42,5 +42,6 @@
       "flavorText": "",
       "rulesText": "Natychmiast po tym, jak wrogi wojownik zostanie wybrany do napadnięcia (patrz obok), wybierz przyjaznego wojownika, który nie jest twoim przywódcą ({icon:leader}). Usuń tamtego wojownika z pola bitwy i umieść go w pustym polu sąsiadującym z tamtym wrogim wojownikiem. Następnie możesz dać temu przyjaznemu wojownikowi żeton Szarży."
     }
-  ]
+  ],
+  "playstyle": "Siedem kruchych duchowych zastępów Nighthaunt, które zwyciężają dzięki nieustannemu repozycjonowaniu, a nie surowej wytrzymałości. Reakcje pozwalają wybranemu duchowi teleportować się obok oznaczonego wroga, a wojownicy z żetonami Szarży otaczają cele, by pozbawić ich rzutów na Obronę. Inspirują się (Inspire), kończąc turę obok wrogów, co nagradza agresywny rój teleportujących się duchów, który wbija się w przeciwnika i nie pozwala mu działać bezkarnie."
 }

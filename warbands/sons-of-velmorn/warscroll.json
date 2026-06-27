@@ -40,5 +40,6 @@
       "flavorText": "Though their bodies are but mouldering bones, the power of the Tyrant's Crown - and their own revenant grief - grants Velmorn's line the occasional burst of swiftness.",
       "rulesText": "Use this in a Power step. Friendly fighters have +2 Move in the next turn. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five revenant Grave Guard anchored by King Velmorn in a king-centric shieldwall. Command tokens let the king count as adjacent to extend his sons' attacks, bulwark fighters regain Guard against crits, and a death-curse punishes anyone who slays them. The leader can raise a fallen Grave Guard back into friendly territory, making this a resilient, attrition-and-retaliation warband."
 }

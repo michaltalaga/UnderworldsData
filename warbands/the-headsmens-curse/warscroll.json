@@ -38,5 +38,6 @@
       "flavorText": "The caterwauling and accusations from the Nighthaunt can rattle even the most stalwart souls.",
       "rulesText": "Use this immediately after you pick an enemy fighter to be the target of an Attack if that fighter is Flanked and/or Surrounded. Rolls of both {icon:fury} and {icon:dodge} are successes in that Attack roll. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four spectral Nighthaunt executioners who condemn a chosen enemy each round, then hunt them down. Slaying a condemned target draws Power cards equal to its Bounty, fuelling a card-advantage engine, while Discorporate teleports a fighter and flanking attacks broaden which dice succeed. A leader kill can raise a fallen ally, making this a precise, target-and-execute hunting band."
 }

@@ -80,7 +80,7 @@ body {
   color: #1a1a2e;
 }
 
-.view-toggle button {
+.view-toggle a {
   padding: 0.45rem 0.9rem;
   border: none;
   background: #16213e;
@@ -90,9 +90,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.4px;
   transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.view-toggle button.active {
+.view-toggle a.active {
   background: #d4a930;
   color: #1a1a2e;
 }
@@ -185,6 +187,9 @@ body {
 }
 
 .warband-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   padding: 0.3rem 0.65rem;
   border: 1px solid #333;
   border-radius: 3px;
@@ -194,6 +199,44 @@ body {
   font-size: 0.75rem;
   transition: all 0.15s;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.faction-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+
+.header-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.pairing-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.overview-deck-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .warband-btn:hover {
@@ -562,6 +605,402 @@ body {
   border-radius: 4px;
 }
 
+/* ===================== Star ratings ===================== */
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.star-rating .star.filled { color: #d4a930; }
+.star-rating .star { color: #9a9a9a; }
+.star-rating .star.empty-dot { color: #777; }
+
+/* ===================== Pairings panel (warscroll, parchment) ===================== */
+.pairings-panel {
+  background: #e8e0cc;
+  border-top: 2px solid #c4b89a;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 1rem;
+}
+
+.pairings-playstyle,
+.pairings-decks {
+  background: #fff;
+  border: 1px solid #c4b89a;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.pairings-panel h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8b4513;
+  margin-bottom: 0.5rem;
+}
+
+.pairings-playstyle p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+/* ===================== Pairing lists (parchment contexts) ===================== */
+.pairing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pairing-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.28rem 0;
+  border-bottom: 1px solid #ece4d0;
+  flex-wrap: wrap;
+}
+
+.pairing-row:last-child { border-bottom: none; }
+.pairing-row.stars-1 { opacity: 0.85; }
+.pairing-row.stars-0 { opacity: 0.55; }
+
+.pairing-list .star.filled { color: #9a6b10; }
+.pairing-list .star { color: #cabda0; }
+.pairing-list .star.empty-dot { color: #b3a98c; }
+
+.pairing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.pairing-link:hover .pairing-name {
+  color: #8b4513;
+  text-decoration: underline;
+}
+
+.pairing-code {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: #e8e0cc;
+  color: #5f4520;
+  border: 1px solid #cfbe98;
+  border-radius: 3px;
+  padding: 0.05rem 0.3rem;
+}
+
+.pairing-name {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pairing-fighters {
+  font-size: 0.64rem;
+  color: #7a6a4a;
+  background: #efe7d4;
+  border-radius: 999px;
+  padding: 0 0.35rem;
+}
+
+.pairing-note {
+  color: #6b6151;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.ga-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.ga-dot.Chaos { background: #c44569; }
+.ga-dot.Death { background: #8e44ad; }
+.ga-dot.Destruction { background: #27ae60; }
+.ga-dot.Order { background: #2980b9; }
+
+.pairing-toggle {
+  margin-top: 0.6rem;
+  background: transparent;
+  border: 1px solid #c4b89a;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  color: #5f4520;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.pairing-toggle:hover {
+  border-color: #8b4513;
+  color: #8b4513;
+}
+
+.rival-strategy-box .rival-strategy-identity {
+  font-style: italic;
+  color: #8b4513;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+}
+
+/* ===================== Overview / Pairings tab (dark) ===================== */
+.overview { color: #e0e0e0; }
+.overview section { margin-bottom: 2rem; }
+
+.overview-intro h2 {
+  color: #d4a930;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overview-lead {
+  max-width: 72ch;
+  color: #c7c7d1;
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.overview h3 {
+  color: #d4a930;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.6rem;
+}
+
+.rating-legend {
+  background: #16213e;
+  border: 1px solid #2c2c4a;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+
+.rating-legend ul {
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.rating-legend li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.rating-legend .star-rating { min-width: 3.2em; }
+.rating-legend .star.filled { color: #e7c14e; }
+.rating-legend .star.empty-dot { color: #6a6a86; }
+.legend-label { font-weight: 700; color: #e8e8ef; }
+.legend-desc { color: #9a9aac; }
+
+.overview-deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.overview-deck-card {
+  text-align: left;
+  background: #16213e;
+  border: 1px solid #2c2c4a;
+  border-radius: 8px;
+  padding: 0.85rem;
+  cursor: pointer;
+  color: #e0e0e0;
+  transition: border-color 0.15s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.overview-deck-card:hover {
+  border-color: #d4a930;
+  transform: translateY(-2px);
+}
+
+.overview-deck-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.overview-deck-name {
+  font-weight: 700;
+  color: #f0e6c8;
+  font-size: 1rem;
+}
+
+.overview-deck-identity {
+  color: #d4a930;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.overview-deck-summary {
+  color: #b7b7c4;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.overview-hint {
+  color: #9a9aac;
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+}
+
+.matrix-scroll {
+  overflow-x: auto;
+  border: 1px solid #2c2c4a;
+  border-radius: 8px;
+}
+
+.pairing-matrix {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.8rem;
+  min-width: max-content;
+}
+
+.pairing-matrix th,
+.pairing-matrix td {
+  border-bottom: 1px solid #23233c;
+  border-right: 1px solid #23233c;
+}
+
+.pairing-matrix thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #0f1830;
+}
+
+.matrix-corner {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: #0f1830;
+  text-align: left;
+  color: #8a8a9c;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 0.45rem 0.6rem;
+  min-width: 160px;
+}
+
+/* Corner must outrank the deck-header row (which is `.pairing-matrix thead th`, higher
+   specificity than `.matrix-corner` alone) so it stays above both frozen panes. */
+.pairing-matrix thead th.matrix-corner {
+  z-index: 3;
+  border-right: 2px solid #2c2c4a;
+}
+
+.matrix-deck-col { text-align: center; }
+.matrix-deck-col a {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: #d4a930;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 0.45rem 0.5rem;
+  text-decoration: none;
+}
+.matrix-deck-col a:hover { color: #fff; text-decoration: underline; }
+
+.matrix-faction-row th {
+  text-align: left;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background: #0c1226;
+}
+.matrix-faction-row th.Chaos { color: #e0688a; }
+.matrix-faction-row th.Death { color: #b07cd6; }
+.matrix-faction-row th.Destruction { color: #3fce7a; }
+.matrix-faction-row th.Order { color: #4fa6e0; }
+
+.matrix-warband-row {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #141426;
+}
+/* Higher specificity than `.pairing-matrix th` so the frozen column gets a clear right edge. */
+.pairing-matrix th.matrix-warband-row { border-right: 2px solid #2c2c4a; }
+.matrix-warband-row a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  min-width: 160px;
+  background: transparent;
+  border: none;
+  color: #dcdce6;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  text-align: left;
+  font-family: inherit;
+  text-decoration: none;
+}
+.matrix-warband-row a:hover { color: #d4a930; }
+.matrix-warband-name { white-space: nowrap; }
+.matrix-fighters {
+  font-size: 0.66rem;
+  color: #8a8a9c;
+  background: #222238;
+  border-radius: 999px;
+  padding: 0 0.35rem;
+}
+
+.matrix-cell { text-align: center; padding: 0; }
+.matrix-cell a {
+  display: block;
+  width: 100%;
+  min-width: 2.3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.32rem 0.35rem;
+  text-decoration: none;
+}
+.matrix-cell .star.filled { color: #e7c14e; }
+.matrix-cell.stars-0 .star.empty-dot { color: #6a6a86; }
+.matrix-cell.stars-3 { background: rgba(212, 169, 48, 0.17); }
+.matrix-cell.stars-2 { background: rgba(212, 169, 48, 0.07); }
+.matrix-cell a:hover { background: rgba(255, 255, 255, 0.07); }
+
 @media (max-width: 900px) {
   .warscroll-body,
   .rival-body {
@@ -572,6 +1011,10 @@ body {
   .rival-sidebar {
     border-right: none;
     border-bottom: 2px solid #c4b89a;
+  }
+
+  .pairings-panel {
+    grid-template-columns: 1fr;
   }
 }
 

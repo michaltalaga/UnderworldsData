@@ -25,5 +25,6 @@
       "flavorText": "Idoneth poszukują silnych dusz, aby podtrzymać swój lud — a przyciągnięcie ich wzroku nigdy nie wróży nic dobrego…",
       "rulesText": "Użyj tego w Power step. Wybierz Inspired wroga wojownika. Następnie twój przeciwnik musi wybrać jedną z poniższych opcji: Uninspire tego wojownika albo możesz dobrać karty Power w liczbie równej numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czworo pojedynkujących się wojowników Idoneth Deepkin, którzy nagradzają cierpliwość i karzą agresję. Kontratakujące reakcje wyposażają ich Thralle w dodatkowe słowa kluczowe lub pozwalają liderowi wymknąć się po nieudanych atakach wroga, a liczba wojowników, których uzyskują Inspire w każdej fazie walki, rośnie wraz z numerem rundy bitewnej. Dysponują też techniką anty-inspiracji, odbierając wrogowi stan Inspired lub dobierając w zamian karty."
 }

@@ -29,5 +29,6 @@
       "flavorText": "Ossiarch Bonereapers nie spoczywają, dopóki danina nie zostanie zebrana.",
       "rulesText": "Użyj tego w swoim Power step. Wybierz przyjaznego miniona ({icon:minion}) posiadającego jakiekolwiek żetony Ruchu i/lub Szarży. Usuń żetony Ruchu i/lub Szarży tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Sześć wytrzymałych konstruktów Ossiarch Bonereapers, które walczą jak zdyscyplinowany blok, nacierając w idealnym szyku, tak by każdy Mortek kończył ruch w sąsiedztwie towarzysza. Żetony Guard i blokada uniemożliwiająca obieranie ich za cel sprawiają, że trudno ich wyprzeć, a wrogowie Flanked lub Surrounded cierpią od ciosów Grievous. Zabijanie wrogów zasila żetony bone-tithe, które wydaje się na inspirowanie (Inspire), co nagradza cierpliwe, oparte na szyku zabijanie."
 }

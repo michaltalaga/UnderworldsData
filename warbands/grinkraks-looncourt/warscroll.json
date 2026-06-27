@@ -36,5 +36,6 @@
       "flavorText": "",
       "rulesText": "If you pick this quest, for the rest of the game, dubbed friendly fighters' melee weapons have Grievous ({icon:grievous}) if the target has a Bounty characteristic of 2 or more. You complete this quest after an Action step if an enemy fighter with a Bounty characteristic of 2 or more is slain.\n\nReward: You can Inspire up to 2 friendly Loonknights ({icon:minion}) and your leader ({icon:leader})."
     }
-  ]
+  ],
+  "playstyle": "A seven-strong grot court of self-styled knights, a flexible engine driven by treasure and quests. It picks one quest at a time, chasing objectives like holding treasure or slaying bountiful foes to trigger Inspiring Rewards and lasting buffs. Dubbing Loonknights upgrades the rank-and-file, letting the warband bend its plan to whatever the game demands."
 }

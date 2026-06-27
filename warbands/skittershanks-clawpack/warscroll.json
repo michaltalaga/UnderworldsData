@@ -39,5 +39,6 @@
       "flavorText": "When the lure and the blind fails, pure speed can buy another chance...",
       "rulesText": "Use this in your Power step. In the next turn, friendly assassins ({icon:minion}) cannot be picked to be the target of Attacks or Ploys. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five fragile, hyper-mobile skaven assassins fixated on the enemy leader. They lure that leader from safety, re-roll attacks against it and stack bleeding barb tokens that punish any movement, racing to slay or cripple it for a warband-wide inspire. Lightly armoured and reliant on speed and evasion tricks, they live and die by hunting down a single high-value target."
 }

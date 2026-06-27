@@ -30,5 +30,6 @@
       "flavorText": "By aiming his grunderbuss high, nowhere is safe from Gorlok's rain of red-hot loot.",
       "rulesText": "That weapon has +1 Damage and +X Range for that Attack, where X is the number of swag tokens you removed. After this attack, you can push up to X other friendly fighters 1 hex and can give them each a Charge token, where X is the number of swag tokens you removed."
     }
-  ]
+  ],
+  "playstyle": "Five grot pirates who mix close-quarters scrapping with grunderbuss fire. Their melee attacks bank swag tokens that fuel devastating ranged options, including Swag Shrapnel blasts that splash damage and Stagger onto nearby enemies. Spending the third swag token Inspires the whole crew, so a melee-fed loot economy drives both their firepower and their tempo."
 }

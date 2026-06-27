@@ -24,5 +24,6 @@
       "flavorText": "Saurusy to stworzenia o zimnokrwistej determinacji. Jeśli Wielki Plan wymaga od nich obrony pozycji, wypełnią to zadanie bez drżenia.",
       "rulesText": "Użyj tego podczas Power step. Wybierz przyjaznego saurusa ({icon:leader}). Ten wojownik nie może zostać odparty do końca rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czworo Seraphon dowodzonych przez potężnego, niewzruszonego Saurusa otoczonego sługami-skinkami. Saurus kotwiczy cele i nie da się go odeprzeć, a jego ataki pozwalają sługom rzucać się do natarcia. Jego dzika Dzika Masakra skaluje się z otrzymanymi obrażeniami i może zostać użyta ponownie po każdym zabójstwie, a drużyna uzyskuje Inspire, raniąc przeciwników podczas tury wroga."
 }

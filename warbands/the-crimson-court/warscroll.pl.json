@@ -43,5 +43,6 @@
       "flavorText": "Siła życiowa jest wyrywana z ofiary, gdy wampir się żywi.",
       "rulesText": "Wybierz przyjaznego wojownika, który użyje tej Core ability. Wybierz wrogiego wojownika w odległości 1 heksa od tego wojownika. Możesz zamiast tego wybrać wrogiego wojownika w odległości 2 heksów, jeśli ten przyjazny wojownik jest Inspired. Zadaj 1 obrażenie temu wrogiemu wojownikowi, a następnie ulecz tego przyjaznego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czterech elitarnych wampirów Soulblight grających jak szybki szklany kanon. Klątwa obciąża ich żetonami głodu, które usuwa tylko atakowanie, a przy trzech lub więcej stają się żądni krwi, zyskując dodatkowy Move i ignorując Guard. Muszą nieustannie uderzać, by usuwać głód i inspirować się (Inspire), więc oddział stoi lub upada na agresywnych, błyskawicznych szturmach wspartych przez Cleave i leczące uderzenia."
 }

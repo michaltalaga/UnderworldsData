@@ -38,5 +38,6 @@
       "flavorText": null,
       "rulesText": "Instead of playing a Ploy in your opponent's Power step, you can discard Ploys to use the abilities below. The number of Ploys you discard determines which abilities apply in the next turn. The effects are cumulative and the effect of each ability lasts until the end of your next turn.\n\nDiscard 1: Friendly fighters have +1 Move.\nDiscard 2: Enemy fighters are Flanked.\nDiscard 3: Friendly fighters' weapons have +1 Attack dice."
     }
-  ]
+  ],
+  "playstyle": "Four sneaky Kruleboyz who spread chip damage across the enemy warband. After each Action step, idle fighters make free Krule Stab jabs that Inspire on a hit, while discarded Ploys fuel movement and offence. Wounding many enemies pays off by drawing extra Power cards and letting poisons finish the damaged, rewarding broad, opportunistic aggression."
 }

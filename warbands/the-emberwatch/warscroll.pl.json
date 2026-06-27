@@ -24,5 +24,6 @@
       "flavorText": "Niewielu zdoła umknąć gniewowi tych szlachetnych wojowników, a ci, którym się to udaje, są szczęściarzami ponad wszelką miarę.",
       "rulesText": "Użyj tej zdolności bezpośrednio po udanym Ataku przyjaznego wojownika, jeśli cel jest narażony (vulnerable). Zadaj 1 obrażenie celowi. Tej zdolności można użyć tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Trzej strażnicy Straży Przedniej Stormcastów, którzy walczą w rozproszeniu, a nie w skupieniu. Kilka zdolności nagradza utrzymywanie każdego wojownika w osobnym terytorium; teleportują się, by zmieniać pozycje, a Inspire uzyskują, używając zdolności Core na terytorium wroga. Dzięki ostrzałowi o wydłużonym zasięgu i premiowym obrażeniom przeciw narażonym celom rozbierają planszę na części z dystansu."
 }

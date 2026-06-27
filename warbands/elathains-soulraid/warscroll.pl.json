@@ -43,5 +43,6 @@
       "flavorText": null,
       "rulesText": "W trzeciej rundzie bitwy bronie wręczne przyjaznych wojowników (z wyłączeniem Ulepszeń) mają Grapple ({icon:fury})."
     }
-  ]
+  ],
+  "playstyle": "Pięciu najeźdźców Idoneth Deepkin, których szturm wzbiera w jednej przypływowej fali. Każdy wojownik uzyskuje Inspire na początku drugiej rundy i zyskuje dodatkowy Ruch, po czym w trzeciej rundzie traci Inspire, co wymusza wybuchowe uderzenie w drugiej rundzie. Zdolności Core ściągają ich sługi w zwartą grupę, a poległy Tammael może zostać podniesiony z powrotem na przyjazne terytorium dzięki zabójstwom lidera."
 }

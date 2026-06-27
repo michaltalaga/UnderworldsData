@@ -39,5 +39,6 @@
       "flavorText": "The mutability of Tzeentch's daemons is made manifest when the flesh of those nearby begins to mutate wildly.",
       "rulesText": "Use this immediately after your Action step. Inflict 1 damage on each enemy fighter adjacent to any friendly minions ({icon:minion}). You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five fragile Tzeentch daemons that turn their own losses into resources. The leader raises slain minions each round and draws Power cards whenever a nearby minion dies, while ranged attacks seed warping tokens that detonate for delayed damage. The warband cycles through expendable bodies, leaning on summoning and card advantage rather than durability to outlast and overwhelm opponents."
 }

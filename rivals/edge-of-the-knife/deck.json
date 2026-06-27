@@ -296,5 +296,7 @@
       "value": "1",
       "previewImageUrl": "https://www.underworldsdb.com/cards/embergard/edge%20of%20the%20knife/Sharpened-Points.png"
     }
-  ]
+  ],
+  "strategyTagline": "Low-health swarm floods the line",
+  "strategy": "The Plot makes fighters with Health 2 or less, or two-plus damage, tempered; objectives score Glory for pushing tempered fighters into enemy territory and ganging them onto foes. Cards reward trading fragile bodies, with death-triggered effects that punish attackers. It wants a numerous low-Health swarm that floods enemy ground, and punishes elite high-Health warbands and three-model elites that are never naturally tempered."
 }

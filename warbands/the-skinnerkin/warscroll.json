@@ -48,5 +48,6 @@
       "flavorText": null,
       "rulesText": "Immediately after a Flanked or Surrounded enemy fighter is slain, gain a haunch token.\n\nImmediately after a friendly chef's ({icon:skull}) successful Attack, gain a haunch token.\n\nIf a friendly fighter's weapon has the {icon:cleave} runemark, you have access to the following Weapon ability:\n\nFillet {icon:cleave}: If the Attack was successful, gain a haunch token."
     }
-  ]
+  ],
+  "playstyle": "Five cannibal ghouls and their monstrous Carnskyr beast, a flexible band fuelled by haunch tokens earned from slaying surrounded foes and successful chef attacks. Those tokens are spent on a deep reaction toolkit, granting heals, re-rolls, Grievous strikes, and extra inspiration. With three banked, the whole warband inspires, encouraging a versatile, resource-spending style backed by self-healing sustain."
 }

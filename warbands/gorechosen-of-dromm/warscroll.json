@@ -39,5 +39,6 @@
       "flavorText": "Warriors of Khorne can ignore the most grievous of wounds in a frenzy of bloodletting.",
       "rulesText": "Use this immediately after damage is inflicted on a friendly fighter if that fighter would be slain. Discard any of your blood tithe tokens. Roll an Attack dice for each token discarded in this way. On any {icon:crit}, remove damage tokens from that fighter until they are vulnerable. That fighter is slain at the end of the battle round. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Three Khorne berserkers devoted to extreme, relentless aggression. Any damage inflicted on any fighter feeds blood tithe tokens, which power a battle-wide inspire and let dying fighters cling to life for one last frenzy of slaughter. With few bodies and no subtlety, the warband charges headlong into combat, harvesting bloodshed from both sides to fuel its escalating violence."
 }

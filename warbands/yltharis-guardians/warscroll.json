@@ -34,5 +34,6 @@
       "flavorText": "The dearth of vital energies imbues Ylthari and her protectors with a bitterness of soul as cold as frost.",
       "rulesText": "That weapon has +X Damage for that Attack, where X is the number of slain friendly fighters."
     }
-  ]
+  ],
+  "playstyle": "Four resilient Sylvaneth who grow more dangerous the more of their own fall, channelling the turning seasons. Their melee reactions add Attack dice and Damage equal to the number of slain friendly fighters, so a depleted warband hits hardest. They cluster-teleport allies to safety, stockpile growth tokens on hidden Power cards, and grind out attrition battles."
 }

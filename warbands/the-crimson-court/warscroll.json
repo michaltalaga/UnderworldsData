@@ -54,5 +54,6 @@
       "flavorText": "Life force is ripped from the victim as the vampire feeds.",
       "rulesText": "Pick a friendly fighter to use this Core ability. Pick an enemy fighter within 1 hex of that fighter. You can pick an enemy fighter within 2 hexes instead if that friendly fighter is Inspired. Inflict 1 damage on that enemy fighter and then heal that friendly fighter. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four elite Soulblight vampires playing as a fast glass cannon. The Curse loads them with hunger tokens that only attacking removes, and at three or more they turn bloodthirsty, gaining extra Move while ignoring Guard. They must keep striking to clear hunger and inspire, so the band lives or dies on aggressive, high-speed assaults backed by Cleave and healing strikes."
 }

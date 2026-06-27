@@ -130,5 +130,7 @@
       "name": "Naostrzony Oręż",
       "text": "Broń tego wojownika ma Cleave."
     }
-  ]
+  ],
+  "strategyTagline": "Niskozdrowotny rój zalewa linię",
+  "strategy": "Fabuła czyni zahartowanymi wojowników z Wytrzymałością 2 lub mniej albo z dwoma lub więcej obrażeniami; cele dają Chwałę za wpychanie zahartowanych wojowników na wrogie terytorium i obstawianie nimi wrogów. Karty nagradzają poświęcanie kruchych modeli, z efektami wyzwalanymi przez śmierć, które karzą atakujących. Talia chce licznego, niskozdrowotnego roju zalewającego ziemię wroga, a karze elitarne drużyny o wysokiej Wytrzymałości oraz trzyosobowe elity, które nigdy nie są w naturalny sposób zahartowane."
 }

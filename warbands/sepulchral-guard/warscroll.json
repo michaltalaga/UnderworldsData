@@ -36,5 +36,6 @@
       "flavorText": "The decrepit warriors of the Sepulchral Guard shatter in a shower of sharp flinders.",
       "rulesText": "Use this immediately after a friendly fighter with no Raise tokens is slain by a melee Attack made by an enemy fighter. Inflict 1 damage on that enemy fighter. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "A seven-strong band of fragile, low-health skeletal undead led by a Sepulchral Warden. It overwhelms by raising slain fighters back onto starting hexes turn after turn, flooding the board to surround and isolate enemies. Inspiring its fighters depends on handing out those Raise tokens, so trading bodies and bringing them back is the core engine."
 }

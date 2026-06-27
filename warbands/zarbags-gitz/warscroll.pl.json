@@ -40,5 +40,6 @@
       "flavorText": "Niewiele rzeczy potrafi tak rozkręcić squiga jak porządny harmider.",
       "rulesText": "Użyj w fazie Power step. Przesuń każdego przyjaznego Squiga ({icon:minion}) o do 2 pól. Do końca rundy bitewnej te Squigi ({icon:minion}) nie mogą trzymać żetonów skarbów ani wykonywać akcji Delve. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Dziewięcioosobowa horda grotów, najgęstsza ciżba w grze, zbudowana wokół kruchych ciał o niskim zdrowiu, które przytłaczają wroga samą liczebnością. Zwycięża dzięki atakowaniu w grupie, dokładając dodatkowe kości Ataku za każdego przyjaznego grota tłoczącego się wokół celu i łańcuchowo poruszając się przez całą hordę. Squigi oraz wirujący fanatyk dodają zagrożeń na polu bitwy, lecz każdy model ginie z łatwością."
 }

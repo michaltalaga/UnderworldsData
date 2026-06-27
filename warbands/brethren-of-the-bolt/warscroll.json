@@ -36,5 +36,6 @@
       "flavorText": "The kiss of lightning invigorates the brethren.",
       "rulesText": "Use this immediately after your Action step. Pick a friendly fighter that was conducting during that step. Heal that fighter. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five fanatical cultists who start fully Inspired and fight as a coordinated firing line. Their signature mechanic shortens shooting range for each friendly fighter standing between attacker and target, rewarding careful alignment into a row, while those conducting fighters Inspire. A chosen combat-phase aura grants the whole warband a shared buff each round."
 }

@@ -130,5 +130,7 @@
       "name": "Starmaw",
       "text": "Akcja Ataku dystansowego\n{icon:hex} 4 {icon:hammer} 2 {icon:damage} 1\nStagger\nTa broń ma +1 kość Ataku, gdy atakujący znajduje się w odległości 1 heksu od żetonu skarbu."
     }
-  ]
+  ],
+  "strategyTagline": "Kontrola pola wokół skarbów",
+  "strategy": "Cele dają Chwałę za atakowanie wrogów w pobliżu żetonów skarbu, za utrzymywanie wielu modeli w stanie zachłannym (w odległości 1 heksu od skarbu) oraz za trzymanie żetonów na terytorium neutralnym i wrogim. Fabuła czyni pobliskie modele zachłannymi i wydłuża ich Zasięg w walce wręcz, gdy trzymają skarb. Nagradza wytrzymałą drużynę pięciu lub więcej modeli walczących wręcz, które rozpraszają się i okładają wrogów, jednocześnie okupując cele, a karze trzyosobowe elity i czystych strzelców z tylnej linii."
 }

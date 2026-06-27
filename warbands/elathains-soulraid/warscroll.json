@@ -54,5 +54,6 @@
       "flavorText": null,
       "rulesText": "In the third battle round, friendly fighters' melee weapons (excluding Upgrades) have Grapple ({icon:fury})."
     }
-  ]
+  ],
+  "playstyle": "Five Idoneth Deepkin raiders whose assault crests in a single tidal surge. Every fighter Inspires at the start of the second round and gains extra Move, then Uninspires in the third, forcing an explosive round-two strike. Core abilities pull their minions into a cluster, and a slain Tammael can be raised back into friendly territory off the leader's kills."
 }

@@ -1,6 +1,11 @@
 import type { Language, Warscroll, Ability, WarscrollTranslation, AbilityTranslation } from '../types/warscroll';
+import type { RivalDeckMeta } from '../types/rivals';
 import { t } from '../i18n/labels';
 import { renderText } from './GameText';
+import { StarRating } from './StarRating';
+import { deckRatingsForWarband } from '../data/pairings';
+import { deckHref } from '../routing';
+import { warbandIcon, deckIcon } from '../data/icons';
 
 interface Props {
   warscroll: Warscroll;
@@ -10,6 +15,8 @@ interface Props {
   isNonOp?: boolean;
   gaVariant?: 1 | 2;
   onGaVariantChange?: (v: 1 | 2) => void;
+  warbandSlug?: string | null;
+  decks?: RivalDeckMeta[];
 }
 
 function pick(base: string | undefined | null, translated: string | undefined): string {
@@ -34,7 +41,12 @@ function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: Ability
   );
 }
 
-export function WarscrollView({ warscroll, translation, language, imageUrl, isNonOp, gaVariant, onGaVariantChange }: Props) {
+export function WarscrollView({ warscroll, translation, language, imageUrl, isNonOp, gaVariant, onGaVariantChange, warbandSlug, decks }: Props) {
+  const pairingRatings = !isNonOp && warbandSlug ? deckRatingsForWarband(warbandSlug, language) : [];
+  const playstyle = !isNonOp ? pick(warscroll.playstyle, translation?.playstyle) : '';
+  const taglineByDeck = new Map((decks ?? []).map((deck) => [deck.slug, deck.strategyTagline]));
+  const headerIcon = warbandIcon(warbandSlug);
+
   return (
     <div className="warscroll">
       {isNonOp && onGaVariantChange && (
@@ -55,6 +67,7 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
       )}
       <div className="warscroll-header">
         <h2>
+          {headerIcon && <img className="header-icon" src={headerIcon} alt="" />}
           {warscroll.name}
           {warscroll.version && (
             <span className="version">(v{warscroll.version})</span>
@@ -88,6 +101,41 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
           ))}
         </div>
       </div>
+
+      {(playstyle || pairingRatings.length > 0) && (
+        <div className="pairings-panel">
+          {playstyle && (
+            <div className="pairings-playstyle">
+              <h4>{t('playstyle', language)}</h4>
+              <p>{playstyle}</p>
+            </div>
+          )}
+          {pairingRatings.length > 0 && (
+            <div className="pairings-decks">
+              <h4>{t('recommendedDecks', language)}</h4>
+              <ul className="pairing-list">
+                {pairingRatings.map((rating) => {
+                  const secondary = rating.note ?? taglineByDeck.get(rating.deck) ?? null;
+                  const icon = deckIcon(rating.deck);
+                  return (
+                    <li key={rating.deck} className={`pairing-row stars-${rating.stars}`}>
+                      <StarRating stars={rating.stars} />
+                      <a className="pairing-link" href={deckHref(rating.deck)}>
+                        {icon
+                          ? <img className="pairing-icon" src={icon} alt="" />
+                          : <span className="pairing-code">{rating.deckMeta.code}</span>}
+                        <span className="pairing-name">{rating.deckMeta.name}</span>
+                      </a>
+                      {secondary && <span className="pairing-note">{secondary}</span>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+
       {imageUrl && (
         <div className="warscroll-image">
           <img src={imageUrl} alt={warscroll.name} />

@@ -130,5 +130,7 @@
       "name": "Ostrożny Krok",
       "text": "Możesz użyć tej zdolności po ostatnim kroku Mocy w rundzie bitwy. Odepchnij tę figurkę o 1 heks. To odepchnięcie nie może zakończyć się sąsiadująco z żadnymi figurkami."
     }
-  ]
+  ],
+  "strategyTagline": "Rozproszona wojna na wyniszczenie",
+  "strategy": "Bez Fabuły cele dają Chwałę za obrażenia zadawane poza atakami, spamowanie Intryg oraz rozpraszanie się, by przetrwać, będąc rannym i bez sąsiadów. Wiele kart zadaje przypadkowe obrażenia obu bandom i nagradza figurki, które tolerują samookaleczenie. Talia chce twardych figurek, które przetrwają rozproszone i poobijane, a karze ciasne roje, ponieważ kilka celów wymaga braku sąsiedztwa, jak również kruche buildy nastawione na alpha strike."
 }

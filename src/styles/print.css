@@ -25,7 +25,10 @@
   .view-toggle,
   .header-controls,
   .warscroll-image,
-  .ga-toggle {
+  .ga-toggle,
+  .pairings-panel,
+  .pairing-warbands,
+  .overview {
     display: none !important;
   }
 

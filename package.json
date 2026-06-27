@@ -10,6 +10,7 @@
     "extract": "tsx scripts/extract.ts",
     "translate": "tsx scripts/translate.ts",
     "download": "tsx scripts/download.ts",
+    "download:icons": "tsx scripts/download-icons.ts",
     "status": "tsx scripts/status.ts",
     "rivals:sync": "tsx scripts/sync-rivals.ts",
     "rivals:translate": "tsx scripts/translate-rivals.ts"

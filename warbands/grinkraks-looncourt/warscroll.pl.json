@@ -26,5 +26,6 @@
       "flavorText": "",
       "rulesText": "Jeśli wybierzesz tę misję, do końca gry bronie do walki wręcz mianowanych przyjaznych wojowników mają Grievous ({icon:grievous}), jeśli cel posiada charakterystykę Bounty wynoszącą 2 lub więcej. Ukończysz tę misję po Action step, jeśli zostaje pokonany wrogi wojownik z charakterystyką Bounty wynoszącą 2 lub więcej.\n\nNagroda: Możesz Inspire do 2 przyjaznych Loonknights ({icon:minion}) i swojego lidera ({icon:leader})."
     }
-  ]
+  ],
+  "playstyle": "Siedmioosobowy grotowy dwór samozwańczych rycerzy, elastyczny silnik napędzany skarbami i misjami. Podejmuje jedną misję naraz, realizując cele takie jak utrzymywanie skarbów czy zabijanie cennych wrogów, by wyzwolić inspirujące Nagrody i trwałe wzmocnienia. Mianowanie Loonknightów ulepsza szeregowych wojowników, pozwalając warbandowi naginać swój plan do tego, czego wymaga rozgrywka."
 }

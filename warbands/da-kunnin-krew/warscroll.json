@@ -30,5 +30,6 @@
       "flavorText": "When the Krew don't want to be found, even the best trackers in the realms might struggle to locate them.",
       "rulesText": "Use this immediately after a friendly fighter is picked to be the target of an Attack. Rolls of {icon:dodge} and {icon:shield} are successes in Save rolls made for that fighter for that Attack. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Five orruk and grot raiders with the strongest Flank and Surround payoff in Destruction. Lurking minions count double when encircling a foe, so the leaders score Flanked and Surrounded kills that Inspire the whole cluster around the target. Late-round pushes keep the crew mobile, swarming in to trap and butcher isolated enemies."
 }

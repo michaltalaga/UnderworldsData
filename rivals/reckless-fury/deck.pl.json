@@ -130,5 +130,7 @@
       "name": "Totalna Ignorancja",
       "text": "Jeśli ten wojownik miałby zostać poległy, nie zostaje poległy. Usuń żetony obrażeń od tego wojownika, aż będzie vulnerable, a następnie odrzuć tę kartę. Forsaken"
     }
-  ]
+  ],
+  "strategyTagline": "Nieustanne szarże polują na grube cele",
+  "strategy": "Bez Fabuły cele dają Chwałę za wystawianie wojowników z żetonami Charge na wrogim terytorium oraz za zabijanie lub ranienie wrogów o wysokim Bounty. Ployy i ulepszenia generują dodatkowe żetony Charge i odzyskują żetony poległych wojowników, by utrzymać presję. Nagradza szybkie drużyny zdolne szarżować w każdej rundzie i polować na cele o dużej wartości, a karze biernych wojowników trzymających żetony, strzelców oraz ultrakruche buildy, które nie przeżyją skoku w wir walki."
 }

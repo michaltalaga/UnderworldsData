@@ -32,5 +32,6 @@
       "flavorText": "A rat with a bomb... simple, yet effective.",
       "rulesText": "Pick a friendly minion ({icon:minion}) with no Charge tokens to use this ability. That minion Moves. Then, roll a number of Attack dice equal to the battle round number for each fighter within 2 hexes of that minion. If the roll contains any {icon:fury}, inflict 1 damage on that fighter. If the roll contains any {icon:crit}, inflict 2 damage on that fighter instead. Then, that minion is slain."
     }
-  ]
+  ],
+  "playstyle": "Five hyper-mobile skaven built around suicide bombing. Minions skitter across the board and detonate, rolling escalating dice against everything nearby before dying, while warp-charged weapons add power at the cost of self-inflicted wounds. Fragile and reckless, the warband trades its own fighters for explosive burst damage, relying on speed and detonations to blow apart clustered enemies."
 }

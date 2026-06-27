@@ -30,5 +30,6 @@
       "flavorText": "Wojownicy Khorne'a potrafią zlekceważyć nawet najcięższe rany w amoku krwawej rzezi.",
       "rulesText": "Użyj tego natychmiast po zadaniu obrażeń przyjaznemu wojownikowi, jeśli ten wojownik miałby zostać poległy. Odrzuć dowolną liczbę swoich żetonów krwawej daniny. Rzuć kością ataku za każdy odrzucony w ten sposób żeton. Za każdy wynik {icon:crit} usuń żetony obrażeń z tego wojownika, aż stanie się vulnerable. Ten wojownik zostaje poległy na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Trójka berserkerów Khorne'a oddanych skrajnej, nieustępliwej agresji. Każde obrażenie zadane jakiemukolwiek wojownikowi zasila żetony krwawej daniny, które napędzają Inspire całego warbandu i pozwalają konającym wojownikom uczepić się życia dla jednej ostatniej krwawej rzezi. Mając niewielu wojowników i żadnej subtelności, warband rzuca się na oślep w zwarcie, zbierając krew z obu stron, by podsycać swą eskalującą przemoc."
 }

@@ -7,6 +7,9 @@ export interface RivalDeckMeta {
   cardCount: number;
   iconUrl: string | null;
   sourceUrl: string;
+  /** Pairings feature: short tagline + 2-3 sentence strategy summary (English source). */
+  strategyTagline?: string;
+  strategy?: string;
 }
 
 export interface RivalCard {
@@ -31,5 +34,7 @@ export interface RivalCardTranslation {
 export interface RivalDeckTranslation {
   name?: string;
   plot?: string | null;
+  strategyTagline?: string;
+  strategy?: string;
   cards: RivalCardTranslation[];
 }

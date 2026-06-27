@@ -30,5 +30,6 @@
       "flavorText": "Zmienność demonów Tzeentcha objawia się, gdy ciała pobliskich istot zaczynają gwałtownie mutować.",
       "rulesText": "Użyj tego natychmiast po swoim Action step. Zadaj 1 obrażenie każdemu wrogiemu wojownikowi sąsiadującemu z jakimkolwiek przyjaznym sługusem ({icon:minion}). Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Piątka kruchych demonów Tzeentcha, które zamieniają własne straty w zasoby. Lider wskrzesza poległych minionów w każdej rundzie i dobiera karty Power, ilekroć pobliski minion ginie, a ataki dystansowe zasiewają żetony wypaczenia, które detonują z opóźnionymi obrażeniami. Warband przetacza przez siebie kolejne ciała na poświęcenie, opierając się na przywoływaniu i przewadze kart, a nie na wytrzymałości, by przetrwać i przytłoczyć przeciwników."
 }

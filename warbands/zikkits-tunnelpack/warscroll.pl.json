@@ -24,5 +24,6 @@
       "flavorText": "Szczur z bombą… proste, a jakże skuteczne.",
       "rulesText": "Wybierz sojuszniczego sługusa ({icon:minion}) bez żetonów Szarży, aby użyć tej zdolności. Ten sługus wykonuje Ruch. Następnie rzuć liczbą kości Ataku równą numerowi rundy bitewnej za każdego wojownika w odległości 2 heksów od tego sługusa. Jeśli rzut zawiera jakikolwiek wynik {icon:fury}, zadaj 1 obrażenie temu wojownikowi. Jeśli rzut zawiera jakikolwiek wynik {icon:crit}, zadaj zamiast tego 2 obrażenia temu wojownikowi. Następnie ten sługus zostaje pokonany."
     }
-  ]
+  ],
+  "playstyle": "Piątka hipermobilnych Skavenów zbudowana wokół samobójczych zamachów bombowych. Miniony przemykają przez planszę i detonują, rzucając rosnącą liczbą kości przeciwko wszystkiemu w pobliżu, zanim zginą, a broń naładowana wypaczeniem dokłada mocy kosztem ran zadawanych samemu sobie. Kruchy i lekkomyślny warband poświęca własnych wojowników dla wybuchowych, gwałtownych obrażeń, polegając na prędkości i detonacjach, by rozerwać na strzępy skupionych wrogów."
 }

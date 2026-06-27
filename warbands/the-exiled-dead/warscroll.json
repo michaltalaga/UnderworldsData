@@ -36,5 +36,6 @@
       "flavorText": "Deintalos is a master of the Force Dynamic, sending its crackling power through unliving limbs with ease.",
       "rulesText": "Pick your leader ({icon:leader}) to use this ability if they have no Move or Charge tokens. Pick either the Move ability or the Attack ability. Each friendly conductive ({icon:minion}) fighter can use that ability.\n\nThen, you can pick a slain friendly conductive ({icon:minion}) fighter. Raise that conductive ({icon:minion}) fighter, place them in an empty hex adjacent to your leader ({icon:leader}) and then inflict 1 damage on them."
     }
-  ]
+  ],
+  "playstyle": "Seven undead built around a necromancer puppeteering conductive minion constructs that start the game Inspired. Each slain minion makes the survivors faster, and the leader can mass-Move or mass-Attack the swarm before re-raising a fallen construct. Fragile but mobile, it leans on death-fuelled speed, adjacency re-rolls, and Grievous strikes against staggered foes to keep the dance going."
 }

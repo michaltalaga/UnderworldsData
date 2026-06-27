@@ -29,5 +29,6 @@
       "flavorText": "Plugawa maź i ciekłe zarazy skapują z krawędzi ostrzy Wurmspatu.",
       "rulesText": "Użyj tej zdolności w Power step. Bronie do walki wręcz przyjaznych wojowników mają Grievous ({icon:grievous}) dodatkowo do wszelkich innych zdolności broni w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Trójka twardych elitarnych wojowników Nurgle'a, którzy nacierają powoli i stopniowo wykruszają przeciwnika. Ich pokryte żółcią ostrza zatruwają wrogów, odbierając im Move, tak że nie mogą uciec, a redukcja obrażeń od ataków bez Cleave czyni ich brutalnie trudnymi do zabicia. Ceną jest niska mobilność, więc warband wygrywa, przyjmując ciosy, spowalniając grę do pełzania i rozbierając na części odizolowane cele przez wiele rund."
 }

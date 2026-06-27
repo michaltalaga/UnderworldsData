@@ -26,5 +26,6 @@
       "flavorText": "Deintalos jest mistrzem Dynamiki Mocy, z łatwością przepuszczając jej trzaskającą energię przez martwe kończyny.",
       "rulesText": "Wybierz swojego lidera ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz zdolność Move albo zdolność Attack. Każdy przyjazny przewodzący ({icon:minion}) wojownik może użyć tej zdolności.\n\nNastępnie możesz wybrać pokonanego przyjaznego przewodzącego ({icon:minion}) wojownika. Wykonaj Raise na tym przewodzącym ({icon:minion}) wojowniku, umieść go w pustym polu sąsiadującym z twoim liderem ({icon:leader}), a następnie zadaj mu 1 obrażenie."
     }
-  ]
+  ],
+  "playstyle": "Siedmioosobowy oddział nieumarłych zbudowany wokół nekromanty kierującego niczym marionetkami przewodzącymi konstruktami-sługami ({icon:minion}), które rozpoczynają grę jako Inspired. Każdy poległy sługa przyspiesza ocalałych, a przywódca może masowo wykonać Move lub Attack całym rojem, zanim przywróci (Raise) poległy konstrukt. Kruchy, lecz mobilny oddział opiera się na napędzanej śmiercią szybkości, przerzutach z sąsiedztwa i ciosach Grievous przeciw wrogom z żetonami Stagger, by taniec trwał dalej."
 }

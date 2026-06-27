@@ -26,5 +26,6 @@
       "flavorText": "Doskonale zestrojeni z Rajem Łowcy, Heroldzi Kurnotha zataczają kręgi wokół intruzów, którzy ośmielają się zapuszczać na ich terytorium.",
       "rulesText": "Dopóki przebywają na przyjaznym terytorium, przyjazni wojownicy posiadają runiczną oznakę Flying ({icon:fly}) i nie mogą być Flankowani (nadal mogą być Otoczeni)."
     }
-  ]
+  ],
+  "playstyle": "Trzej mocno uderzający łowcy Sylvaneth, którzy dominują na swojej połowie planszy. Na przyjaznym terytorium zyskują Flying i nie mogą być Flankowani, a Inspire uzyskują, atakując z domu, co zachęca do zrywów uderzeń z osłony. Dzięki powtórnym strzałom swojego łucznika, słowom kluczowym wzmacniającym lidera i pchnięciom repozycjonującym zadają skoncentrowane obrażenia dystansowe i wręcz, po czym wycofują się z powrotem."
 }

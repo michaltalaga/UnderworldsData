@@ -24,6 +24,8 @@ export interface Warscroll {
   inspire: string;
   reactions: Ability[];
   abilities: Ability[];
+  /** Strategic playstyle blurb for the pairings feature (English source). */
+  playstyle?: string;
 }
 
 export interface AbilityTranslation {
@@ -37,4 +39,5 @@ export interface WarscrollTranslation {
   inspire?: string;
   reactions?: AbilityTranslation[];
   abilities?: AbilityTranslation[];
+  playstyle?: string;
 }

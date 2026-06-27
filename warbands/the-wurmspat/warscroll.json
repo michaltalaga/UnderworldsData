@@ -38,5 +38,6 @@
       "flavorText": "Vile slime and liquid agues drip from the edges of the Wurmspat's blades.",
       "rulesText": "Use this in a Power step. Friendly fighters' melee weapons have Grievous ({icon:grievous}) in addition to any other Weapon abilities in the next turn. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Three tough Nurgle elites who advance slowly and grind opponents down. Their bile-coated blades poison enemies, stripping Move so foes cannot escape, while damage-reduction against non-Cleaving attacks makes them brutally hard to kill. Low mobility is the trade-off, so the warband wins by tanking hits, slowing the board to a crawl and dismantling isolated targets over many rounds."
 }

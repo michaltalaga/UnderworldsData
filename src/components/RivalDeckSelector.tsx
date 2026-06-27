@@ -2,11 +2,12 @@ import { useMemo, useState } from 'react';
 import { t } from '../i18n/labels';
 import type { RivalDeckMeta } from '../types/rivals';
 import type { Language } from '../types/warscroll';
+import { deckHref } from '../routing';
+import { deckIcon, factionIcon } from '../data/icons';
 
 interface Props {
   decks: RivalDeckMeta[];
   selected: string | null;
-  onSelect: (slug: string) => void;
   language: Language;
   availableSlugs: Set<string>;
 }
@@ -23,7 +24,7 @@ function compareFactions(a: string, b: string) {
   return (FACTION_PRIORITY[a] ?? 999) - (FACTION_PRIORITY[b] ?? 999) || a.localeCompare(b);
 }
 
-export function RivalDeckSelector({ decks, selected, onSelect, language, availableSlugs }: Props) {
+export function RivalDeckSelector({ decks, selected, language, availableSlugs }: Props) {
   const [search, setSearch] = useState('');
 
   const grouped = useMemo(() => {
@@ -62,18 +63,26 @@ export function RivalDeckSelector({ decks, selected, onSelect, language, availab
 
       {grouped.map((group) => (
         <div className="faction-group" key={group.faction}>
-          <h3 className={group.faction}>{group.faction}</h3>
+          <h3 className={group.faction}>
+            {factionIcon(group.faction) && <img className="faction-icon" src={factionIcon(group.faction)!} alt="" />}
+            {group.faction}
+          </h3>
           <div className="warband-grid">
-            {group.items.map((deck) => (
-              <button
-                key={deck.slug}
-                className={`warband-btn ${selected === deck.slug ? 'active' : ''} ${!availableSlugs.has(deck.slug) ? 'no-data' : ''}`}
-                onClick={() => onSelect(deck.slug)}
-                title={`${deck.code} - ${deck.cardCount} ${t('cards', language).toLowerCase()}`}
-              >
-                {deck.name}
-              </button>
-            ))}
+            {group.items.map((deck) => {
+              const icon = deckIcon(deck.slug);
+              return (
+                <a
+                  key={deck.slug}
+                  href={deckHref(deck.slug)}
+                  className={`warband-btn ${selected === deck.slug ? 'active' : ''} ${!availableSlugs.has(deck.slug) ? 'no-data' : ''}`}
+                  title={`${deck.code} - ${deck.cardCount} ${t('cards', language).toLowerCase()}`}
+                  aria-current={selected === deck.slug ? 'page' : undefined}
+                >
+                  {icon && <img className="btn-icon" src={icon} alt="" />}
+                  {deck.name}
+                </a>
+              );
+            })}
           </div>
         </div>
       ))}

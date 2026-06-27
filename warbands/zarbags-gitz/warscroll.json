@@ -51,5 +51,6 @@
       "flavorText": "There are few better ways to rile up a squig than making a racket.",
       "rulesText": "Use this in a Power step. Push each friendly Squig ({icon:minion}) up to 2 hexes. For the rest of the battle round, those Squigs ({icon:minion}) cannot hold treasure tokens or Delve. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "A nine-strong grot horde, the densest swarm in the game, built around fragile, low-health bodies that overwhelm through sheer numbers. It wins by ganging up, stacking extra Attack dice for every friendly grot crowding a target and chaining moves through the swarm. Squigs and the spinning fanatic add board hazards, but each model dies easily."
 }

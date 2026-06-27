@@ -45,5 +45,6 @@
       "flavorText": "Skritch and his more useful minions are well-versed in getting themselves out of danger, and into the best position.",
       "rulesText": "Use this in your Power step. Pick a friendly fighter and another fighter that is adjacent to them. Remove those fighters from the battlefield and then place each in the hex the other was removed from. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "A five-strong skaven swarm of fragile, expendable bodies. The pack clusters together so flanked and surrounded enemies suffer Grievous strikes, while its leader raises slain minions back onto starting hexes to keep the numbers up. Survival depends on weight of bodies rather than resilience, trading cheap minions to grind opponents down through positioning and attrition."
 }

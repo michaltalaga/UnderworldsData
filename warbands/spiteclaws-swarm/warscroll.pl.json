@@ -35,5 +35,6 @@
       "flavorText": "Skritch i jego bardziej użyteczni słudzy są dobrze wprawieni w wyciąganiu się z opałów i zajmowaniu najlepszych pozycji.",
       "rulesText": "Użyj tej zdolności podczas swojego Power step. Wskaż przyjaznego wojownika i innego wojownika sąsiadującego z nim. Usuń obydwu wojowników z pola bitwy, a następnie umieść każdego z nich na heksie, z którego usunięto drugiego. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Pięcioosobowy rój Skavenów złożony z kruchych, łatwych do poświęcenia ciał. Sfora trzyma się w skupisku, dzięki czemu wrogowie, którzy są Flanked lub Surrounded, obrywają ciosami Grievous, a jej lider wskrzesza poległych minionów z powrotem na pola startowe, by utrzymać liczebność. Przetrwanie zależy od masy ciał, a nie od wytrzymałości — warband poświęca tanich minionów, by stopniowo wykruszać przeciwnika pozycjonowaniem i wojną na wyniszczenie."
 }

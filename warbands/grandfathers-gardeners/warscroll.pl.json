@@ -17,5 +17,6 @@
       "name": "Tor Śledzenia",
       "rulesText": "W kroku Muster Warbands podczas 'Ustawiania', umieść zwykły żeton na polu 'Start' toru śledzenia tej karty. Przesuń ten żeton o 1 pole zgodnie z ruchem wskazówek zegara natychmiast:\n\n• po twojej turze.\n\n• po zadaniu obrażeń przyjznemu wojownikowi.\n\n• po twojej turze, jeśli twoja drużyna posiada więcej żetonów skarbów niż twój przeciwnik."
     }
-  ]
+  ],
+  "playstyle": "Piątka niemal niezniszczalnych wojowników Nurgle'a, których Uninspired ciała ograniczają przyjmowane obrażenia do dwóch na turę. Tor śledzenia przesuwa się zgodnie z ruchem wskazówek zegara w miarę upływu tur, zadawania obrażeń i utrzymywania skarbów, skalując cechy Ogrodnika i lecząc wojowników z każdym tyknięciem. Warband powoli pełznie naprzód, niemal niemożliwy do usunięcia, wygrywając czystą wytrzymałością, podczas gdy napędzany celami mechanizm nieprzerwanie wzmacnia jego wojowników."
 }

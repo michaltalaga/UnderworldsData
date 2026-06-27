@@ -130,5 +130,7 @@
       "name": "Szał Chciwości",
       "text": "Gdy ten wojownik stoi na żetonie skarbu na wrogim terytorium lub znajduje się na polu ogłuszenia, rzuty na Obronę tego wojownika nie są modyfikowane przez Cleave i Ensnare, a ten wojownik nie może otrzymywać żetonów Ogłuszenia."
     }
-  ]
+  ],
+  "strategyTagline": "Wskocz i ogołoć ze skarbu",
+  "strategy": "Zbudowana wokół akcji Przeszukiwania, bez Fabuły; cele dają Chwałę za Przeszukiwanie skarbu, odwracanie lub usuwanie go oraz oczyszczanie pola bitwy z żetonów, często głęboko na terytorium wroga. Ployy i ulepszenia teleportują, szarżują i utwardzają łupieżców na potrzeby skoku w wir walki. Talia chce szybkich, ruchliwych łupieżców, którzy wskakują, by ogołocić ze skarbu, a karze powolne, statyczne drużyny, ciasne skupiska oraz czystych zabójców bez planu na cele."
 }

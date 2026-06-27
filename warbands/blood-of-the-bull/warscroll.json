@@ -39,5 +39,6 @@
       "flavorText": "Grisk might be a conniving, murderous back-stabber, but he has his uses...",
       "rulesText": "Rolls of both {icon:fury} and {icon:dodge} are successes in an Attack roll for a friendly Chaos Duardin ({icon:chaos-duardin}) while the target is adjacent to a friendly Grisk."
     }
-  ]
+  ],
+  "playstyle": "Five Chaos Duardin who forge power from plunder. Delving treasure tokens generates daemonforge dice that boost their attacks and saves, while adjacency synergies let one fighter unlock extra successes and another add Grievous shooting at close range. The warband rewards tight, coordinated positioning, converting objectives into combat dice to grow steadily deadlier as it claims the board's loot."
 }

@@ -28,6 +28,10 @@ Shows completion status of the entire data pipeline. Reports which warbands are 
 
 Downloads warscroll card PNG images from underworldsdb.com. Downloads both generic Grand Alliance warscroll variants (8 images into `warbands/_ga/`) and OP-legal warband images into each warband's directory. Skips already-downloaded images. Processes in batches of 10.
 
+### `npm run download:icons`
+
+Downloads icon PNGs from underworldsdb.com: warband icons into each `warbands/<slug>/icon.png`, rival deck icons into each `rivals/<slug>/icon.png`, and the faction / Grand Alliance icons (`chaos`, `death`, `destruction`, `order`, `universal`) into `warbands/_ga/<faction>-icon.png`. Skips already-downloaded files.
+
 ### `npm run extract`
 
 Extracts structured game data from warscroll card PNGs using Claude's vision API (Sonnet 4.6). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
@@ -53,20 +57,36 @@ warbands/           Warband data (60+ warbands)
     chaos-1.json    GA Chaos variant 1
     chaos-2.json    GA Chaos variant 2
     ...             (+ .pl.json translations and .png images)
+  _ga/              ... (+ `<faction>-icon.png` Grand Alliance / Universal icons)
   <warband>/        OP-legal warband data
     warscroll.png   Card image
-    warscroll.json  Extracted English data
-    warscroll.pl.json  Polish translation
+    icon.png        Warband icon
+    warscroll.json  Extracted English data (incl. `playstyle` pairings blurb)
+    warscroll.pl.json  Polish translation (incl. `playstyle`)
 rivals/             Rival deck data (13 decks)
   index.json        Master rival deck metadata
   <deck>/
-    deck.json       English deck data
-    deck.pl.json    Polish translation
+    deck.json       English deck data (incl. `strategyTagline` + `strategy`)
+    deck.pl.json    Polish translation (incl. `strategyTagline` + `strategy`)
+    icon.png        Rival deck icon
+warband-rivals-pairings.json     Warband × deck rating matrix (stars + per-pairing notes, EN)
+warband-rivals-pairings.pl.json  Polish per-pairing notes
+warband-rivals-pairings.md       Human-readable pairings reference
 scripts/            Data pipeline scripts (TypeScript)
 src/
   components/       React UI components
+  data/             Pairings join layer (pairings.ts)
   types/            TypeScript interfaces
   i18n/             UI label translations
   styles/           CSS
   assets/icons/     Game icon SVGs
 ```
+
+## Warband ↔ Rivals deck pairings
+
+The **Pairings** tab rates every OP-legal warband against all 12 universal Rivals decks. The data is split to match the per-entity convention:
+
+- Each warband's **playstyle** blurb lives in its `warscroll.json` (`playstyle`); each deck's **strategy** summary + tagline live in its `deck.json` (`strategyTagline`, `strategy`) — both translated in the paired `.pl.json` files.
+- The star ratings (0–3) and per-pairing **notes** — an inherently warband×deck relation — live in `warband-rivals-pairings.json`, with Polish notes in `warband-rivals-pairings.pl.json`.
+
+Each warband page lists its decks ranked by fit (with links), each deck page lists its best-matched warbands, and the Pairings tab shows the full matrix — all bilingual.

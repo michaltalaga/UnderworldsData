@@ -30,5 +30,6 @@
       "flavorText": "Wojownicy Chaosu nigdy nie wahają się w swej żarliwej krucjacie zbezczeszczania wszystkiego na swej drodze.",
       "rulesText": "Użyj tej zdolności w Power step. Wybierz przyjaznego wojownika. Przesuń tego wojownika o liczbę heksów równą co najwyżej liczbie zbezczeszczonych żetonów skarbów. To przesunięcie musi zakończyć się na żetonie skarbu i/lub w sąsiedztwie wrogiego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czwórka pancernych Wojowników Chaosu zbudowana wokół mechanizmu bezczeszczenia skarbów. Zdobywają i bezczeszczą żetony skarbów, co napędza dodatkowe dobieranie kart Power i dłuższe pchnięcia podczas natarcia — tym potężniejsze, im więcej zbezczeszczonych żetonów się nazbiera. Wytrzymały i chroniący swoich nosicieli warband wygrywa przez kontrolę planszy i przewagę kart, zamieniając same cele w paliwo napędzające jego agresję."
 }

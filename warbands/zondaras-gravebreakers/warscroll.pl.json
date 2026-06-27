@@ -29,5 +29,6 @@
       "flavorText": "We krwi i kościach zmarłych mogą kryć się sekrety, których poszukuje Zondara.",
       "rulesText": "Dobierz liczbę kart Power równą liczbie zabitych przyjaznych wojowników. Możesz użyć tej umiejętności tylko wtedy, gdy zostanie ona wybrana podczas rozpatrywania umiejętności Gravebreakers."
     }
-  ]
+  ],
+  "playstyle": "Pięcioosobowy oddział nieumarłych zbudowany wokół silnika Delve grabiącego groby oraz nierozłącznej przeznaczonej ({icon:destined}) pary, Zondary i Ferlaina. Gdy sługa wykonuje Delve, może podnieść (Raise) poległego sojusznika lub dobrać karty Power równe liczbie utraconych wojowników, zamieniając straty w zasoby. Obładowana Ulepszeniami para staje się groźniejsza, gdy jedno z nich padnie, co nagradza grę opartą na kopaniu i dobieraniu kart, która czerpie zyski z własnych zmarłych."
 }

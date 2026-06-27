@@ -36,5 +36,6 @@
       "flavorText": "Even if one of Mollog's critters is killed, another pops up to take its place.",
       "rulesText": "Use this in your Power step. Pick a slain friendly minion ({icon:minion}). Raise that fighter, place them in an empty starting hex and then give them a Charge token. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "A four-model troggoth mob led by one enormous, hard-hitting brute backed by three expendable minions. It plays as a durable beatstick, healing the leader every battle round and Inspiring once he soaks four damage, so attrition favours him. Minions seed deep-strike hazards and a slain one can be raised to keep the pressure relentless."
 }

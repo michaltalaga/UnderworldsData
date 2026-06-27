@@ -130,5 +130,7 @@
       "name": "Przekuta Pomoc",
       "text": "Emberstone Upgrade:\nOdzyskane Uzbrojenie: Natychmiast po udanym Ataku wykonanym przez tego wojownika możesz wybrać 1 Emberstone Upgrade ze swojego stosu odrzuconych kart Power. Dodaj go do swojej ręki. Następnie odrzuć tę kartę."
     }
-  ]
+  ],
+  "strategyTagline": "Maszyna kart napędzana atakami",
+  "strategy": "Fabuła pozwala udanemu atakowi wręcz złupić karty Power, skalując się z cechą Bounty celu, oraz natychmiast zagrać lub wyekwipować karty Emberstone. Cele dają Chwałę za wielokrotne łupienie, łupienie wielu różnych kart Emberstone oraz atakowanie kilkoma różnymi wojownikami. Nagradza szeroką drużynę walki wręcz, która zadaje wiele udanych ataków w każdej rundzie, a karze nieliczne elity o małej liczbie aktywacji oraz czystych strzelców, którzy nie potrafią często wyzwalać łupienia."
 }

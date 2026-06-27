@@ -21,5 +21,6 @@
       "flavorText": "Celując grunderbusem wysoko w górę, Gorlok sprawia, że żadne miejsce nie jest bezpieczne przed deszczem rozżarzonego łupu.",
       "rulesText": "Ta broń ma +1 Obrażeń i +X Zasięgu podczas tego Ataku, gdzie X to liczba usuniętych żetonów łupu. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
     }
-  ]
+  ],
+  "playstyle": "Pięciu grotowych piratów, którzy łączą zwarcie w walce wręcz z ogniem z grunderbusa. Ich ataki wręcz gromadzą żetony łupu, które napędzają niszczycielskie opcje dystansowe, w tym wybuchy Odłamków z Łupu rozpryskujące obrażenia i Stagger na pobliskich wrogów. Wydanie trzeciego żetonu łupu inspiruje całą załogę, więc napędzana walką wręcz ekonomia łupu zasila zarówno ich siłę ognia, jak i tempo."
 }

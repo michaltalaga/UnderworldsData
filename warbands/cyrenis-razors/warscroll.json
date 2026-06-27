@@ -33,5 +33,6 @@
       "flavorText": "The Idoneth seek out strong souls to sustain their people - and it is never wise to catch their eye…",
       "rulesText": "Use this in a Power step. Pick an Inspired enemy fighter. Then your opponent must pick one of the following: Uninspire that fighter, or you can draw Power cards equal to the battle round. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four Idoneth Deepkin duellists who reward patience and punish aggression. Counter-attack reactions arm their Thralls with extra keywords or slip their leader away after failed enemy Attacks, and the number of fighters they Inspire each combat phase rises with the battle round. They also carry anti-inspire tech, stripping an enemy's Inspired state or drawing cards instead."
 }

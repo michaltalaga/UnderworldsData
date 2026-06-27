@@ -28,5 +28,6 @@
       "flavorText": "Choć ich ciała to jedynie próchno i kości, moc Korony Tyrana - i ich własna, revenantowa żałoba - pozwala rodowi Velmorна od czasu do czasu poruszać się z zaskakującą prędkością.",
       "rulesText": "Użyj tej zdolności w Power step. Zaprzyjaźnieni wojownicy mają +2 do Ruchu w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Pięciu rewenanckich Grave Guard zakotwiczonych wokół króla Velmorna w ścianie tarcz skupionej na przywódcy. Żetony rozkazu pozwalają królowi liczyć się jako przyległy, by wydłużać ataki jego synów, wojownicy bulwark odzyskują Guard przeciw {icon:crit}, a śmiertelna klątwa karze każdego, kto ich zabije. Przywódca może podnieść (Raise) poległego Grave Guard z powrotem na przyjazne terytorium, co czyni z tego oddziału odporny warband nastawiony na wojnę na wyczerpanie i odwet."
 }

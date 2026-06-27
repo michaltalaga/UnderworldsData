@@ -130,5 +130,7 @@
       "name": "Hartowany w boju",
       "text": "To Ulepszenie może zostać przyznane tylko twojemu przywódcy.\nRzuty {icon:block} i {icon:dodge} liczą się jako sukcesy w rzutach Save dla przyjaznych wojowników sąsiadujących z tym wojownikiem."
     }
-  ]
+  ],
+  "strategyTagline": "Broń swojej ziemi, kontruj najeźdźców",
+  "strategy": "Bez Fabuły cele dają Chwałę za pokonywanie, odpieranie lub otaczanie wrogów wkraczających na przyjazne terytorium, a także za zadania skupione wokół przywódcy walczącego u siebie. Ployy i ulepszenia spowalniają, ogłuszają i odpychają najeźdźców, jednocześnie wzmacniając obrońców. Nagradza wytrzymałą drużynę z silnym przywódcą, która wabi wrogów i kontratakuje, a karze agresywnych najeźdźców, kruche szklane armaty i słabych przywódców."
 }

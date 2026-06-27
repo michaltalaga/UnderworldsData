@@ -35,5 +35,6 @@
       "flavorText": "Thanatek kanalizuje śmiertelną energię w druzgocącą falę, odpychając wrogów.",
       "rulesText": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Dla każdego wrogiego wojownika sąsiadującego z jakimkolwiek przyjaznym Retainer {icon:minion}, rzuć liczbą kostek Ataku równą liczbie usuniętych cadaver tokenów. Jeśli rzut zawiera jakikolwiek {icon:skull} lub {icon:crit}, zadaj 1 obrażenie temu wrogiemu wojownikowi. W przeciwnym razie usuń Guard tokeny tego wrogiego wojownika i daj mu Stagger token. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Pięć wytrzymałych konstruktów Ossiarch Bonereapers ustawionych tak, by przywódca mierzył ataki od przyległych Retainerów ({icon:minion}), kotwicząc formację opartą na sąsiedztwie sług. Zabójstwa w pobliżu Retainerów odkładają żetony cadaver, które inspirują (Inspire) wojowników i zasilają nekromantyczne zdolności, w tym podnoszenie (Raise) poległych Mortis Reaperów z powrotem na przyjazne terytorium. Solidny i metodyczny oddział napiera naprzód, zbierając żetony, by napędzać wskrzeszanie i kontrolę planszy."
 }

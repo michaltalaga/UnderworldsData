@@ -38,5 +38,6 @@
       "flavorText": null,
       "rulesText": "Natychmiast po tym, jak wrogi wojownik z cechą Flanked lub Surrounded zostanie zabity, zdobądź żeton udźca.\n\nNatychmiast po udanym Ataku przyjaznego szefa kuchni ({icon:skull}), zdobądź żeton udźca.\n\nJeśli broń przyjaznego wojownika posiada runiczną cechę {icon:cleave}, masz dostęp do następującej zdolności broni:\n\nFiletowanie {icon:cleave}: Jeśli Atak był udany, zdobądź żeton udźca."
     }
-  ]
+  ],
+  "playstyle": "Pięciu ludożerczych ghuli i ich potworna bestia Carnskyr — elastyczny oddział napędzany żetonami udźca zdobywanymi za zabijanie otoczonych wrogów oraz udane ataki szefów kuchni. Żetony te wydaje się na bogaty zestaw reakcji, dający leczenie, przerzuty, ciosy Grievous i dodatkowe inspirowanie (Inspire). Z trzema odłożonymi żetonami cały warband się inspiruje, co zachęca do wszechstronnego stylu opartego na wydawaniu zasobów i wspartego samoleczeniem."
 }

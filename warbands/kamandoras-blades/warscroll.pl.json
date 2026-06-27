@@ -21,5 +21,6 @@
       "flavorText": "Ślinący się pies Kannat słucha każdego rozkazu Kamandory.",
       "rulesText": "Użyj tej zdolności w swoim Power step zamiast zagrywania karty Power. Wybierz przyjaznego minionka ({icon:minion}). Popchnij tego wojownika o do 4 hexów tak, aby sąsiadował z przyjaznym przywódcą ({icon:leader}). Ta zdolność może być użyta tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Piątka błyskawicznie szybkich łowców Khorne'a, którzy zbiegają się na jednym naznaczonym celu. Każda runda wskazuje wrogą godną czaszkę i za darmo popycha cały warband ku niej, by go osaczyć, podczas gdy broń z cechą Cięcie nakłada żetony krwawienia i zatoczenia, wyzwalające dodatkowe obrażenia. Warband wygrywa, oblegając jednego wroga po drugim, wykorzystując darmowy ruch i kumulujące się rany, by wykruszyć przeciwnika."
 }

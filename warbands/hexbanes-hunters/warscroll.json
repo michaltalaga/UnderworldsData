@@ -39,5 +39,6 @@
       "flavorText": "Only by killing both of Pock's hounds shall enemies of this warband know peace.",
       "rulesText": "Immediately after the first friendly minion ({icon:minion}) is slain, you must add 1 to the Bounty characteristic of the other friendly minion ({icon:minion})."
     }
-  ]
+  ],
+  "playstyle": "Six Order of Azyr witch hunters, a mix of fragile agents, hounds and a doom-laden harbinger. Their deaths fuel the warband: slain leaders mark their killers for re-rolls and Grievous, Inspire the pack, and add Bounty to their Glory for extra Upgrades. Backed by ranged firepower, they trade lives to snowball into a better-equipped force."
 }

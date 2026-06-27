@@ -36,5 +36,6 @@
       "flavorText": "Wherever darkness falls, the Shadeborn stalk.",
       "rulesText": "Use this immediately after a friendly fighter is picked to Move if that fighter is on a cover token. Remove that fighter from the battlefield and place them in an empty edge hex in enemy territory. Then, give that fighter a Move token. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four hyper-mobile aelf assassins from Ulgu who strike from the shadows. One fighter can teleport from cover straight into the enemy's back line, and Shademark re-rolls Saves in enemy territory or on cover, but they are fragile glass cannons. They Inspire the moment they attack an already-damaged foe, so they isolate and finish wounded targets."
 }

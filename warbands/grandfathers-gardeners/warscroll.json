@@ -30,5 +30,6 @@
       "flavorText": null,
       "rulesText": "In the Muster Warbands step of 'Setting Up', place a generic token on the 'Start' space of this warscroll's tracker. Advance that token 1 space clockwise immediately:\n\n• after your turn.\n\n• after damage is inflicted on a friendly fighter.\n\n• after your turn if your warband holds more treasure tokens than your opponent."
     }
-  ]
+  ],
+  "playstyle": "Five near-unkillable Nurgle fighters whose uninspired bodies cap incoming damage at two per turn. A clockwise tracker advances as turns pass, damage lands and treasure is held, scaling Gardener characteristics and healing fighters as it ticks. The warband grinds slowly forward, all but impossible to remove, winning through sheer endurance while its objective-fed engine steadily strengthens its fighters."
 }

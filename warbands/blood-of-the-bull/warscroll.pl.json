@@ -30,5 +30,6 @@
       "flavorText": "Grisk może i jest knującym, morderczym zdrajcą, lecz bywa przydatny...",
       "rulesText": "Zarówno wyniki {icon:fury}, jak i {icon:dodge} są sukcesami w rzucie na Atak przyjaznego Chaos Duardina ({icon:chaos-duardin}), gdy cel sąsiaduje z przyjaznym Griskiem."
     }
-  ]
+  ],
+  "playstyle": "Piątka Chaos Duardinów, którzy kują moc z łupów. Wykonywanie Delve na żetonach skarbów generuje kości daemonforge, które wzmacniają ich ataki i rzuty na Save, a synergie sąsiedztwa pozwalają jednemu wojownikowi odblokować dodatkowe sukcesy, a innemu dorzucić strzelanie z cechą Grievous z bliska. Warband nagradza ciasne, skoordynowane pozycjonowanie, zamieniając cele w kości bojowe, by stawać się coraz groźniejszym w miarę zagarniania łupów planszy."
 }

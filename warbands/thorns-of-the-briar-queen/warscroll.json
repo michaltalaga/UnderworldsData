@@ -53,5 +53,6 @@
       "flavorText": "",
       "rulesText": "Immediately after an enemy fighter is picked to be mugged (see right), pick a friendly fighter that is not your leader ({icon:leader}). Remove that fighter from the battlefield and place them in an empty hex adjacent to that enemy fighter. Then, you can give that friendly fighter a Charge token."
     }
-  ]
+  ],
+  "playstyle": "Seven brittle Nighthaunt spirit hosts that win through relentless repositioning rather than raw toughness. Reactions let a chosen ghost teleport adjacent to a marked enemy, and charged fighters surround targets to strip their saves. They inspire by ending the turn next to enemies, rewarding an aggressive teleport-swarm that crashes into the foe and refuses to let them act unpunished."
 }

@@ -130,5 +130,7 @@
       "name": "Desperacka Furia",
       "text": "Akcja Ataku wręcz\n{icon:hex} 1 {icon:hammer} 2 {icon:damage} 3\nNatychmiast po tym, jak ten wojownik zaatakuje tą bronią, zadaj 1 obrażenie temu wojownikowi."
     }
-  ]
+  ],
+  "strategyTagline": "Narastający grind ku zagładzie",
+  "strategy": "Fabuła przesuwa wskaźnik Katastrofy za każdego poległego przyjaznego wojownika i każdy niezajęty żeton terenu, skalując obrażenia i efekty wielu kart aż do czterech. Cele nagradzają stałe zadawanie obrażeń wrogom, przesuwanie wskaźnika oraz nakładanie ulepszeń na elitarnego wojownika w długiej grze. Talia chce odpornych drużyn nastawionych na długą rozgrywkę, które chętnie poświęcają lub odzyskują wojowników, a karze szybkie szklane armaty szukające szybkiej gry."
 }

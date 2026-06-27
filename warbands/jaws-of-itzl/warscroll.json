@@ -32,5 +32,6 @@
       "flavorText": "Saurus are creatures of cold-blooded focus. If the Great Plan requires them to defend a point, they will do so without flinching.",
       "rulesText": "Use this in a Power step. Pick a friendly saurus ({icon:leader}). That fighter cannot be driven back until the end of the battle round. You can only use this ability once per game."
     }
-  ]
+  ],
+  "playstyle": "Four Seraphon led by a hulking, immovable Saurus surrounded by skink minions. The Saurus anchors objectives and cannot be driven back, while its attacks let minions swarm in. Its feral Savage Mauling nuke scales with the damage it has taken and can be reused after each kill, and the warband Inspires by wounding foes on the opponent's turn."
 }

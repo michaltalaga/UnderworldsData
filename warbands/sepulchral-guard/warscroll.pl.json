@@ -26,5 +26,6 @@
       "flavorText": "Zgrzybiałe wojowniczki Sepulchral Guard rozsypują się w deszczu ostrych odłamków.",
       "rulesText": "Użyj tej zdolności natychmiast po tym, jak zaprzyjaźniony wojownik bez żetonów Raise zostanie zabity przez atak wręcz (melee Attack) wykonany przez wrogiego wojownika. Zadaj 1 obrażenie temu wrogiemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Siedmioosobowy oddział kruchych, niskożywotnych szkieletowych nieumarłych dowodzonych przez Sepulchral Wardena. Przytłacza wroga, podnosząc (Raise) poległych wojowników z powrotem na heksy startowe turę po turze, zalewając planszę, by otaczać i izolować przeciwników. Inspirowanie (Inspire) jego wojowników zależy od rozdawania tych żetonów Raise, więc oddawanie ciał i przywracanie ich do gry stanowi rdzeń całego silnika."
 }

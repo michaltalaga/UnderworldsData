@@ -29,5 +29,6 @@
       "flavorText": "Wycie i oskarżenia Nighthaunt potrafią zachwiać nawet najbardziej niezłomnymi duszami.",
       "rulesText": "Użyj tej zdolności natychmiast po wybraniu wrogiego wojownika jako celu Ataku, jeśli ten wojownik jest Flanked i/lub Surrounded. Wyniki zarówno {icon:fury}, jak i {icon:dodge} są sukcesami w tym rzucie na Atak. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czterech widmowych katów Nighthaunt, którzy co rundę skazują wybranego wroga, a następnie na niego polują. Zabicie skazanego celu pozwala dobrać karty Power równe jego charakterystyce Bounty, napędzając silnik przewagi w kartach, podczas gdy Discorporate teleportuje wojownika, a ataki z flanki poszerzają to, które kości odnoszą sukces. Zabicie przez przywódcę może podnieść (Raise) poległego sojusznika, co czyni z tego precyzyjny, łowiecki oddział oparty na oznaczaniu i egzekucji celów."
 }

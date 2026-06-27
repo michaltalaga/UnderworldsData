@@ -29,5 +29,6 @@
       "flavorText": null,
       "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Rzuty na Save tego wojownika nie mogą być modyfikowane przez Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Czwórka agresywnych beastmenów, którzy wzmacniają się żetonami ducha, zyskując dodatkowy Move, Save lub kości ataku — zależnie od wojownika. Haczyk w tym, że wojownicy noszący żetony ducha nie mogą być Inspired ani trzymać skarbów, co wymusza ciągły wybór między czystą siłą bojową a kontrolą celów. Sfora gra jak szybki, mocno bijący zawadiaka, który musi w odpowiednim momencie zrzucić żetony i wykonać Inspire."
 }

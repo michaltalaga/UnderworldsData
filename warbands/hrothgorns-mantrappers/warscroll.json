@@ -32,5 +32,6 @@
       "flavorText": "'Always more where they came from…'",
       "rulesText": "Use this in your Power step if there are no friendly trap models on the battlefield. Place a friendly trap model in an empty hex adjacent to a friendly Gnoblar ({icon:minion}). Then push that Gnoblar 1 hex."
     }
-  ]
+  ],
+  "playstyle": "Five fighters of one ogor hunter, his ice-beast and quick gnoblar toadies, a control warband governing the board with deadly traps. Gnoblars plant and reposition iron snap-traps that punish enemy movement, while an ambushing beast strikes from enemy territory. The whole mob Inspires the instant the leader lands a melee kill, rewarding patient, attritional hunting."
 }

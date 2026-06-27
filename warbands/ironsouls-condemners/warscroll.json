@@ -34,5 +34,6 @@
       "flavorText": "The Condemnors stand firm against the horrors of the realms.",
       "rulesText": "Friendly fighters with no Move and/or Charge tokens cannot be driven back."
     }
-  ]
+  ],
+  "playstyle": "Three exceptionally tanky Stormcast Sequitors who hold ground rather than chase. Fighters without Move or Charge tokens simply cannot be driven back, and aetheric shields can shut off enemy weapon abilities, making them brutally hard to shift. They Inspire by rolling a critical on any Attack or Save, with their leader's Greatmace scaling its dice by the battle round."
 }

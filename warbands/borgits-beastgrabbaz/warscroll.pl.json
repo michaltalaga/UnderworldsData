@@ -30,5 +30,6 @@
       "flavorText": "Beastgrabbaz nie są wielkimi wojownikami, ale doskonale wiedzą, jak napaść na wroga całą zgrają.",
       "rulesText": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny minion ({icon:minion}) użył jakichkolwiek Core abilities w tym kroku. Do końca następnego Action step, za pierwszym razem gdy wrogi wojownik zostaje przesunięty, umieszczony lub wchodzi na dowolny hex sąsiadujący z przyjaznym minionem ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
     }
-  ]
+  ],
+  "playstyle": "Pięciu grotów plus zwalisty ogor, napadający warband, który tłoczy się wokół swojego wielkiego lidera. Miniony zganiają się z powrotem do ogora i wabią go do walki, gdy giną, podczas gdy oznaczenie celu zadaje paskudne rany, a wybrane trofeum zachęca do dodatkowych ataków. Nurkowanie w lochy, by wykonać Delve, inspiruje wojowników, łącząc kontrolę pola bitwy z zachłanną agresją."
 }

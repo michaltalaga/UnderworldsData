@@ -1,0 +1,669 @@
+{
+  "ratings": [
+    {
+      "warband": "spiteclaws-swarm",
+      "deck": "deadly-synergy",
+      "note": "Pięciu tanich skavenów naturalnie zbija się w grupę, by rojem dopaść jeden cel, a wskrzeszani podwładni uzupełniają zjednoczoną formację"
+    },
+    {
+      "warband": "spiteclaws-swarm",
+      "deck": "realmstone-raiders",
+      "note": "Pięciu poświęcalnych skavenów walczących wręcz roi się i otacza wroga, zaliczając liczne naloty różnych atakujących, które nagradzają RS10 i Nalot na Realmstone"
+    },
+    {
+      "warband": "spiteclaws-swarm",
+      "deck": "edge-of-the-knife",
+      "note": "Pięciu łatwych do poświęcenia skavenów o Wytrzymałości 3 zbija się w grupę, wskrzesza pokonane ciała i wymienia ciosy, które hartują ich w głębi wrogiego terytorium"
+    },
+    {
+      "warband": "the-wurmspat",
+      "deck": "hunting-grounds",
+      "note": "Żółć spowalnia najeźdźców do pełzania na przyjaznym terytorium, trzymając ich sąsiadująco, by można im było odpowiedzieć kontrą, podczas gdy redukcja obrażeń pozwala przetrwać ich Ataki"
+    },
+    {
+      "warband": "the-wurmspat",
+      "deck": "wrack-and-ruin",
+      "note": "Trzej redukujący obrażenia elitarni wojownicy Nurgle przeżywają rozproszeni na wrogim terytorium, podczas gdy zaraza spowalnia ścigających, odblokowując cele związane z uszkodzonymi figurkami"
+    },
+    {
+      "warband": "the-wurmspat",
+      "deck": "countdown-to-cataclysm",
+      "note": "Trójka redukujących obrażenia elit Nurgle przetrwa każdą rundę, zbierając Ulepszenia, podczas gdy wskaźnik Katastrofy stopniowo wykańcza wroga"
+    },
+    {
+      "warband": "the-dread-pageant",
+      "deck": "edge-of-the-knife",
+      "note": "Premie Slaanesha nagradzają pozostawanie rannym, więc zahartowanie wprost napędza ich najeźdźców wdzierających się na wrogie terytorium"
+    },
+    {
+      "warband": "the-dread-pageant",
+      "deck": "reckless-fury",
+      "note": "Czterej szybcy najeźdźcy Slaanesh szarżują co rundę i wyzwalają swoje premie, gdy są ranni, napędzając zadania polowania na cele z cechą Bounty"
+    },
+    {
+      "warband": "the-dread-pageant",
+      "deck": "wrack-and-ruin",
+      "note": "Premie i Inspiracja uruchamiają się, gdy są uszkodzeni, a niewielkie obrażenia odcinające od skarbu zdobywają cele takie jak Przewidywalny Koniec oraz te nagradzające przetrwanie w stanie uszkodzonym"
+    },
+    {
+      "warband": "the-dread-pageant",
+      "deck": "pillage-and-plunder",
+      "note": "Czterej najeźdźcy Slaanesha z Ruchem 4 pędzą, by Przeszukiwać żetony skarbów, a ich premie wyzwalają się, gdy są uszkodzeni głęboko na wrogim terytorium"
+    },
+    {
+      "warband": "khagras-ravagers",
+      "deck": "nexus-of-power",
+      "note": "Czterech wytrzymałych Chaos Warriors z 2 Tarczami tłucze się o żetony skarbu, bezczeszcząc je dla dobierania kart i paliwa do Inspiracji"
+    },
+    {
+      "warband": "khagras-ravagers",
+      "deck": "emberstone-sentinels",
+      "note": "Czterej wytrzymali Chaos Warriors z tarczami bezczeszczą skarby i okupują je, a dobieranie kart napędza niekończące się utrzymywanie celów"
+    },
+    {
+      "warband": "skittershanks-clawpack",
+      "deck": "raging-slayers",
+      "note": "Pięciu szybkich, kruchych zabójców szarżuje w głąb, by ściąć głowę wrogiemu przywódcy, a każdego z nich łatwo wprawić we wściekłość"
+    },
+    {
+      "warband": "skittershanks-clawpack",
+      "deck": "edge-of-the-knife",
+      "note": "Pięciu kruchych, szybkich zabójców łatwo się hartuje i pędzi w głąb, by gromadnie dopaść wrogiego dowódcę"
+    },
+    {
+      "warband": "skittershanks-clawpack",
+      "deck": "reckless-fury",
+      "note": "Pięciu mobilnych zabójców szarżuje w głąb, by polować na wrogiego przywódcę o wysokiej cesze Bounty, dokładnie tak, jak nagradza ten zestaw"
+    },
+    {
+      "warband": "skittershanks-clawpack",
+      "deck": "blazing-assault",
+      "note": "Polujący na przywódców zabójcy ruszają prosto na wrogiego generała, zdobywając premie tej talii za pokonanie przywódcy"
+    },
+    {
+      "warband": "gorechosen-of-dromm",
+      "deck": "raging-slayers",
+      "note": "Trzej berserkerzy Khorne'a stworzeni do szarżowania i atakowania; ta talia to ich warscroll w formie kart"
+    },
+    {
+      "warband": "gorechosen-of-dromm",
+      "deck": "reckless-fury",
+      "note": "Trzej berserkerzy szarżują bez ustanku i zbierają blood tithe z obrażeń, które zdobywają zadania związane z cechą Bounty"
+    },
+    {
+      "warband": "gorechosen-of-dromm",
+      "deck": "blazing-assault",
+      "note": "Krwawa danina za dowolne obrażenia zamienia każdą akcję Ataku i pokonanie wroga bezpośrednio w agresję napędzającą talię"
+    },
+    {
+      "warband": "gnarlspirit-pack",
+      "deck": "raging-slayers",
+      "note": "Czterej agresywni elitarni wojownicy gromadzą bonusy za szarżę i zamieniają wściekłe Krytyczne Ataki w samonapędzające się żetony duchów"
+    },
+    {
+      "warband": "gnarlspirit-pack",
+      "deck": "reckless-fury",
+      "note": "Napędzani żetonami zwierzoludzie ignorują utrzymywanie skarbów i wlewają się na wrogie terytorium z szarżą, idealnie dopasowując się do tego zestawu"
+    },
+    {
+      "warband": "gnarlspirit-pack",
+      "deck": "blazing-assault",
+      "note": "Wzmocnienia z żetonów ducha wyostrzają czterech bestiomężów w celnych zabójców, bo ta talia nigdy nie wymaga utrzymywania skarbów"
+    },
+    {
+      "warband": "ephilims-pandaemonium",
+      "deck": "edge-of-the-knife",
+      "note": "Wątłe ciała Tzeentcha hartują się bez trudu, a ginący podwładni dobierają karty, podczas gdy wskrzeszenia uzupełniają rój"
+    },
+    {
+      "warband": "ephilims-pandaemonium",
+      "deck": "countdown-to-cataclysm",
+      "note": "Łatwo poświęcani podwładni nakręcają wskaźnik napędzany śmiercią przyjaciół i dobierają karty, ginąc, co podsyca długą wojnę na wyniszczenie"
+    },
+    {
+      "warband": "the-thricefold-discord",
+      "deck": "wrack-and-ruin",
+      "note": "Niewielkie obrażenia z pokusy i defensywne tempo wykruszają wrogów, podczas gdy trzy demony przeżywają rozproszone i uszkodzone"
+    },
+    {
+      "warband": "zikkits-tunnelpack",
+      "deck": "edge-of-the-knife",
+      "note": "Samookaleczenie hartuje ich natychmiast, a niezwykła mobilność ciska zahartowane bomby na wrogie terytorium po cele"
+    },
+    {
+      "warband": "zikkits-tunnelpack",
+      "deck": "reckless-fury",
+      "note": "Skrajna mobilność umieszcza skaveny z żetonami Charge na wrogim terytorium, a następnie bombarduje na śmierć cele o wysokiej cesze Bounty"
+    },
+    {
+      "warband": "grandfathers-gardeners",
+      "deck": "nexus-of-power",
+      "note": "Pięć niemal niezniszczalnych ciał Nurgle ogranicza otrzymywane obrażenia, w nieskończoność przesiadując na heksach ze skarbami, które talia chce utrzymać"
+    },
+    {
+      "warband": "grandfathers-gardeners",
+      "deck": "hunting-grounds",
+      "note": "Niemal niezniszczalni obrońcy terenu domowego ograniczają przyjmowane obrażenia i więżą najeźdźców na twoim terytorium na tyle długo, by zmiażdżyć ich pod Gotowi czy nie i Wyczucie krwi"
+    },
+    {
+      "warband": "grandfathers-gardeners",
+      "deck": "wrack-and-ruin",
+      "note": "Niewzruszone ograniczenie obrażeń utrzymuje przy życiu niemal niezniszczalne figurki, gdy są uszkodzone, a licznik skarbu nagradza ranienie samego siebie i grę na niewielkich obrażeniach"
+    },
+    {
+      "warband": "grandfathers-gardeners",
+      "deck": "emberstone-sentinels",
+      "note": "Niemal niezniszczalni trackerzy z limitem otrzymywanych obrażeń oraz silnik skarbów gwarantują, że obrońcy przetrwają każdy cel polegający na obronie żetonu"
+    },
+    {
+      "warband": "grandfathers-gardeners",
+      "deck": "countdown-to-cataclysm",
+      "note": "Niemal niezniszczalne ciała Nurgle z limitem obrażeń gwarantują długą, mozolną grę nagradzaną przez wskaźnik Katastrofy"
+    },
+    {
+      "warband": "kamandoras-blades",
+      "deck": "deadly-synergy",
+      "note": "Darmowe odrzuty ściągają pięciu prześladowców wokół jednej ofiary, na zawołanie tworząc Flankowanych wrogów i grupowe zabójstwa"
+    },
+    {
+      "warband": "kamandoras-blades",
+      "deck": "raging-slayers",
+      "note": "Pięciu ścigających przeciwników Khorne'a z darmowymi odepchnięciami zbiega się wściekle na jednym celu, a ich trafienia zamieniają się w Krytyczne Ataki"
+    },
+    {
+      "warband": "kamandoras-blades",
+      "deck": "reckless-fury",
+      "note": "Darmowe przesunięcia ściągają pięciu prześladowców Khorne, by szarżowali i wspólnie zabili jednego wroga o wysokiej cesze Bounty"
+    },
+    {
+      "warband": "kamandoras-blades",
+      "deck": "blazing-assault",
+      "note": "Darmowe pchnięcia ściągają pięciu ścigających wojowników Khorne'a, by otoczyć i niezawodnie pokonywać pojedyncze cele dla celów opartych na zabijaniu"
+    },
+    {
+      "warband": "blood-of-the-bull",
+      "deck": "nexus-of-power",
+      "note": "Pięciu wytrzymałych Duardinów odkopuje żetony skarbu, by zasilić kości daemonforge, a następnie zachłanny +1 Zasięg poszerza ich walkę w zwarciu"
+    },
+    {
+      "warband": "blood-of-the-bull",
+      "deck": "pillage-and-plunder",
+      "note": "Przeszukiwanie żetonów skarbów dosłownie zasila ich kości daemonforge, więc każde Przeszukanie wymagane przez kartę jednocześnie zbroi drużynę"
+    },
+    {
+      "warband": "sepulchral-guard",
+      "deck": "deadly-synergy",
+      "note": "Siedem wskrzeszalnych ciał utrzymuje otoczenie nienaruszone, zasilając cele oparte na sąsiadowaniu, nawet gdy kruche wojowniki giną w wymianie ciosów"
+    },
+    {
+      "warband": "sepulchral-guard",
+      "deck": "realmstone-raiders",
+      "note": "Siedmiu wskrzeszanych nieumarłych raz po raz atakuje, maksymalizując naloty różnych wojowników i wielokrotne wyzwalacze walki wręcz w każdej rundzie"
+    },
+    {
+      "warband": "sepulchral-guard",
+      "deck": "edge-of-the-knife",
+      "note": "Sześciu z siedmiu nieumarłych ma Wytrzymałość 2, jest zahartowanych od pierwszej tury i wskrzesza się, by dalej otaczać wroga"
+    },
+    {
+      "warband": "sepulchral-guard",
+      "deck": "countdown-to-cataclysm",
+      "note": "Kruche ciała giną i wskrzeszają się bez końca, a każda śmierć przyjaznego wojownika podkręca wskaźnik Katastrofy"
+    },
+    {
+      "warband": "thorns-of-the-briar-queen",
+      "deck": "deadly-synergy",
+      "note": "Teleportujący się rój natychmiast na nowo skupia siedem duchów, by osaczyć cel i Flankować go ze wszystkich stron"
+    },
+    {
+      "warband": "thorns-of-the-briar-queen",
+      "deck": "realmstone-raiders",
+      "note": "Siedem teleportujących się duchów roi się na wrogim terytorium, zadając wiele ataków wręcz na potrzeby Łupienia i powtarzających się nalotów różnych atakujących"
+    },
+    {
+      "warband": "thorns-of-the-briar-queen",
+      "deck": "edge-of-the-knife",
+      "note": "Siedem duchów o Wytrzymałości 2 jest zahartowanych natychmiast i teleportującym się rojem zalewa wrogie terytorium oraz osacza przeciwników"
+    },
+    {
+      "warband": "the-grymwatch",
+      "deck": "hunting-grounds",
+      "note": "Przerzuty Save na przyjaznym terytorium bezpośrednio napędzają wzmocnienia Save z obrony domowej, podczas gdy siedmiu ghuli roi się i pokonuje każdego intruza"
+    },
+    {
+      "warband": "the-grymwatch",
+      "deck": "realmstone-raiders",
+      "note": "Siedem wytrzymałych ghuli, które się wskrzeszają, zapewnia stały wolumen ataków wręcz, napędzając powtarzające się naloty wieloma różnymi atakującymi"
+    },
+    {
+      "warband": "the-grymwatch",
+      "deck": "countdown-to-cataclysm",
+      "note": "Wytrzymałe ghule, które wskrzeszają się z powrotem, zamieniają własne śmierci w postęp wskaźnika podczas długiej gry"
+    },
+    {
+      "warband": "the-crimson-court",
+      "deck": "raging-slayers",
+      "note": "Głód zmusza tych czterech wampirów do nieustannego atakowania, gromadzenia Wściekłości i zamieniania trafień w Krytyczne Ataki"
+    },
+    {
+      "warband": "the-crimson-court",
+      "deck": "reckless-fury",
+      "note": "Głód zmusza wampiry do szarży i atakowania co rundę, naturalnie zdobywając zadania związane z agresją i cechą Bounty"
+    },
+    {
+      "warband": "the-crimson-court",
+      "deck": "blazing-assault",
+      "note": "Głód zmusza do nieustannego atakowania, naturalnie nabijając cele za powtarzane Ataki i pokonania, których wymaga ta talia"
+    },
+    {
+      "warband": "kainans-reapers",
+      "deck": "hunting-grounds",
+      "note": "Zwarta linia sąsiadujących wojowników niewzruszenie zakotwicza się na terenie domowym, otaczając i pokonując najeźdźców, by napędzać tithe zasilane zabójstwami oraz Żadnych intruzów"
+    },
+    {
+      "warband": "kainans-reapers",
+      "deck": "deadly-synergy",
+      "note": "Formacja sąsiadująca w zwartym szyku jest na stałe zjednoczona i wystarczająco wytrzymała, by utrzymać otoczenie pod cele zabójstw"
+    },
+    {
+      "warband": "kainans-reapers",
+      "deck": "emberstone-sentinels",
+      "note": "Sześciu twardych Ossiarchów w zwartym szyku osłania wiele żetonów i przetrzymuje atakujących, nie potrzebując żadnych zabójstw"
+    },
+    {
+      "warband": "kainans-reapers",
+      "deck": "countdown-to-cataclysm",
+      "note": "Wytrzymały szyk Ossiarchów w zwartym kroku grinduje długo, a daniny za zabójstwa nagradzają cele za utrzymywane obrażenia wśród wrogów"
+    },
+    {
+      "warband": "the-exiled-dead",
+      "deck": "deadly-synergy",
+      "note": "Marionetkowi podwładni i ponowne wskrzeszenia utrzymują siedem ciał ściśle obok siebie, podtrzymując Flankowanie w miarę jak wojownicy padają"
+    },
+    {
+      "warband": "the-exiled-dead",
+      "deck": "realmstone-raiders",
+      "note": "Siedmiu wskrzeszanych nieumarłych z mobilnością marionetek łączy ataki wręcz w łańcuchy, idealnie nadając się do kumulowania nalotów różnych wojowników"
+    },
+    {
+      "warband": "the-exiled-dead",
+      "deck": "edge-of-the-knife",
+      "note": "Siedmiu kruchych nieumarłych hartuje się od razu, a napędzana śmiercią mobilność i wskrzeszenia utrzymują rój na wrogim terytorium"
+    },
+    {
+      "warband": "the-exiled-dead",
+      "deck": "countdown-to-cataclysm",
+      "note": "Mobilność napędzana śmiercią oraz wskrzeszenia zamieniają każdą przyjazną stratę w postęp wskaźnika i powracające ciała"
+    },
+    {
+      "warband": "sons-of-velmorn",
+      "deck": "hunting-grounds",
+      "note": "Skupiony na królu mur tarcz napędza cele związane z przywódcą, podczas gdy klątwa śmierci odpłaca atakującym, karząc wrogów, którzy ważą się wejść na przyjazne terytorium"
+    },
+    {
+      "warband": "sons-of-velmorn",
+      "deck": "deadly-synergy",
+      "note": "Shieldwall utrzymuje Grave Guard zjednoczonych wokół króla, a wskrzeszenia zastępują poległych, by podtrzymać okrążenie"
+    },
+    {
+      "warband": "sons-of-velmorn",
+      "deck": "countdown-to-cataclysm",
+      "note": "Mur tarcz wskrzesza Grave Guard, a klątwa śmierci odpłacająca za ataki napędza wskaźnik, gdy ciała wymieniają się bez końca"
+    },
+    {
+      "warband": "the-headsmens-curse",
+      "deck": "raging-slayers",
+      "note": "Czterej widmowi kaci teleportują się wściekli na terytorium wroga, skazując i zabijając, by dobierać karty"
+    },
+    {
+      "warband": "the-headsmens-curse",
+      "deck": "reckless-fury",
+      "note": "Teleportujący się kaci szarżują na wrogie terytorium, by skazywać i zabijać cele o wysokiej cesze Bounty dla dobierania kart"
+    },
+    {
+      "warband": "the-headsmens-curse",
+      "deck": "blazing-assault",
+      "note": "Skazujący i zabijający kaci teleportują się na pozycję i dobierają karty przy każdym pokonaniu, nakręcając lawinę agresji"
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "pillage-and-plunder",
+      "note": "Wbudowany silnik Przeszukiwania i wskrzeszania pełni jednocześnie rolę silnika zdobywania punktów talii, a dobieranie kart przy stratach napędza grabież"
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "countdown-to-cataclysm",
+      "note": "Rekursja Delve-i-wskrzesz oraz dobieranie kart przy stratach świetnie sprawdza się w długiej wojnie na wyniszczenie, jakiej wymaga ta talia"
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "deadly-synergy",
+      "note": "Żetony Haunch wprost nagradzają otaczanie wrogów, a leczenie podtrzymuje grupę przez kolejne wymiany grupowych ataków"
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "blazing-assault",
+      "note": "Żetony udźca ze szturmowania zasilają reakcje i leczenie, podczas gdy sześć figurek otacza wrogów, by ich pokonywać"
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "deadly-synergy",
+      "note": "Formacja sąsiadowania retainerów z założenia pozostaje zjednoczona, a wytrzymałe konstrukty unieruchamiają Flankowane cele pod zabójstwa"
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "emberstone-sentinels",
+      "note": "Wytrzymałe konstrukty w formacji retainerów nieruchomo zakotwiczają się na skarbach i wskrzeszają Reaperów, by zastąpić utraconych obrońców"
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "countdown-to-cataclysm",
+      "note": "Wytrzymałe konstrukty wskrzeszają Reapers i chętnie wymieniają się ciałami, posuwając wskaźnik naprzód przez przeciągniętą walkę"
+    },
+    {
+      "warband": "zarbags-gitz",
+      "deck": "deadly-synergy",
+      "note": "Dziewięć grotów tworzy najgęstszy rój, kumulując kości za atak grupowy, by otoczyć i Flankować samotnego wroga"
+    },
+    {
+      "warband": "zarbags-gitz",
+      "deck": "realmstone-raiders",
+      "note": "Dziewięć grotów to najgęstszy rój, a kości za gang-up zaliczają niekończące się udane ataki wręcz, by najeżdżać w każdej rundzie"
+    },
+    {
+      "warband": "zarbags-gitz",
+      "deck": "edge-of-the-knife",
+      "note": "Sześciu grotesków o Wytrzymałości 2 jest zahartowanych od pierwszej tury, a premie do kości za atak grupą nagradzają właśnie to zalewanie, którego ta talia wymaga"
+    },
+    {
+      "warband": "mollogs-mob",
+      "deck": "hunting-grounds",
+      "note": "Samoleczący się przywódca-troggoth przesiaduje w domu, wabiąc najeźdźców do środka i uderzając mocno pod Przewodź przykładem oraz Żadnych intruzów"
+    },
+    {
+      "warband": "mollogs-mob",
+      "deck": "raging-slayers",
+      "note": "Samoleczący się troggoth-przywódca szarżuje wściekły i zabija, trafiając idealnie w cele związane z zabijaniem przywódcą"
+    },
+    {
+      "warband": "mollogs-mob",
+      "deck": "reckless-fury",
+      "note": "Samoleczący się troggoth szarżuje i uderza wystarczająco mocno, by wielokrotnie zabijać wrogów o najwyższej cesze Bounty"
+    },
+    {
+      "warband": "mollogs-mob",
+      "deck": "blazing-assault",
+      "note": "Samoleczący się Mollog uderza z Brutal i obrażeniami 3, niezniszczalna machina farmiąca cele za pokonania przez całą grę"
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "raging-slayers",
+      "note": "Trzej najszybsi szarżujący atakują podwójnie, gdy są wściekli, podwajając szanse na zamianę trafień w Krytyczne Ataki"
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "reckless-fury",
+      "note": "Szybcy jeźdźcy wilków szarżują z podwójnymi atakami, błyskawicznie wdzierając się na wrogie terytorium i rozrywając cele o wysokiej wartości"
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "blazing-assault",
+      "note": "Wilczy jeźdźcy z podwójnym Atakiem zadają szybkie, mocne ciosy, które niezawodnie wykańczają wrogów dla punktacji za pokonania"
+    },
+    {
+      "warband": "hrothgorns-mantrappers",
+      "deck": "hunting-grounds",
+      "note": "Pułapki i zasadzki dosłownie karzą wrogów wkraczających na twój teren w pobliżu żetonów cechy, a inspiracja za zabicie przywódcy nagradza domową kontrę"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "hunting-grounds",
+      "note": "Trzej wytrzymali Brutusowie wygrywają przeciągniętą domową bijatykę, ścierając najeźdźców pod Gotowi czy nie, Wyczucie krwi i Żadnych intruzów"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "raging-slayers",
+      "note": "Trzej wytrzymali Brute'owie przetrwają na terytorium wroga wściekli, wygrywając przedłużający się bój wręcz dzięki atakom z Krytycznymi Atakami"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "reckless-fury",
+      "note": "Wytrzymali Brute'owie szarżują w przeciągłe starcie wręcz, przetrwając na wrogim terytorium, by zmiażdżyć wrogów o wysokiej cesze Bounty"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "wrack-and-ruin",
+      "note": "Trzej wytrzymali Brutes zbierają żetony Waaagh poprzez przeciągającą się wojnę na wyniszczenie, przeżywając uszkodzeni i rozproszeni dla celów nagradzających przetrwanie w stanie uszkodzonym"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "blazing-assault",
+      "note": "Trzej wytrzymali Brutusowie wygrywają przeciągniętą wojnę na wyczerpanie w zwarciu, wielokrotnie atakując i przetrwając wrogów dla celów zabójstwa"
+    },
+    {
+      "warband": "morgoks-krushas",
+      "deck": "countdown-to-cataclysm",
+      "note": "Trzy wytrzymałe Brute i wyniszczenie napędzane Waaagh pragną przeciągniętej walki wręcz, którą nagradzają cele wskaźnika"
+    },
+    {
+      "warband": "da-kunnin-krew",
+      "deck": "deadly-synergy",
+      "note": "Zbudowani wokół premii za Flankowanie i Otaczanie, ruchliwi orrukowie okrążają i egzekwują dokładnie to, co ta talia nagradza"
+    },
+    {
+      "warband": "grinkraks-looncourt",
+      "deck": "nexus-of-power",
+      "note": "Siedem elastycznych grotów wprost wypełnia zadania związane ze skarbami, rozprowadzając ciała po wszystkich heksach celów, które ta talia punktuje"
+    },
+    {
+      "warband": "grinkraks-looncourt",
+      "deck": "realmstone-raiders",
+      "note": "Siedem elastycznych grotów zalewa wroga atakami wręcz, podczas gdy questy o skarby napędzają naloty skalowane wartością Bounty i Skrytkę Skąpca"
+    },
+    {
+      "warband": "grinkraks-looncourt",
+      "deck": "emberstone-sentinels",
+      "note": "Siedmiu wszechstronnych grotów obstawia każdy żeton i wypełnia questy skarbów, które jednocześnie są celami utrzymywania tej talii"
+    },
+    {
+      "warband": "daggoks-stab-ladz",
+      "deck": "realmstone-raiders",
+      "note": "Darmowe dodatkowe ataki z Krule Stab dokładają kolejne udane trafienia wręcz, zwielokrotniając wyzwalacze nalotów mimo małej liczby modeli"
+    },
+    {
+      "warband": "daggoks-stab-ladz",
+      "deck": "wrack-and-ruin",
+      "note": "Darmowe ataki odcinające Krule Stab rozsiewają obrażenia na 3 lub więcej figurek i napędzają dobieranie kart, a zdolności odrzucające Intrygi zasilają Ploymaster"
+    },
+    {
+      "warband": "daggoks-stab-ladz",
+      "deck": "countdown-to-cataclysm",
+      "note": "Darmowe trafienia Krule Stab i rozprowadzanie obrażeń podtrzymują cele za obrażenia wśród wrogów przez długi grind"
+    },
+    {
+      "warband": "borgits-beastgrabbaz",
+      "deck": "nexus-of-power",
+      "note": "Pięć grotów i ogor zbijają się w grupę i inspirują się przez Delve na skarbie, wciągając wrogów w zasięg grievous, podczas gdy przesiadują na żetonach"
+    },
+    {
+      "warband": "borgits-beastgrabbaz",
+      "deck": "deadly-synergy",
+      "note": "Skupienie wokół przywódcy utrzymuje groty zjednoczone, a oznaczenia Grievous wzmacniają grupowe zabójstwa, których wymagają cele"
+    },
+    {
+      "warband": "borgits-beastgrabbaz",
+      "deck": "pillage-and-plunder",
+      "note": "Przeszukiwanie jako wyzwalacz Natchnienia zamienia odbieranie skarbów w trigger natchnienia, łącząc skupione groty z każdym celem opartym na Przeszukiwaniu"
+    },
+    {
+      "warband": "the-farstriders",
+      "deck": "pillage-and-plunder",
+      "note": "Trzej elitarni Stormcastowie wdzierają się głęboko na wrogie terytorium, by Przeszukiwać i zdejmować skarby z odległych żetonów"
+    },
+    {
+      "warband": "thundriks-profiteers",
+      "deck": "emberstone-sentinels",
+      "note": "Odporni na odpychanie obrońcy inspirują się przez zdobywanie celów, ostrzeliwując atakujących, jednocześnie nie odstępując od żetonów skarbu"
+    },
+    {
+      "warband": "yltharis-guardians",
+      "deck": "wrack-and-ruin",
+      "note": "Rośnie w siłę, gdy giną jej własne figurki, prowadząc wojnę na wyniszczenie, podczas gdy teleportacja grupowa przemieszcza ocalałych rozproszonych i uszkodzonych"
+    },
+    {
+      "warband": "yltharis-guardians",
+      "deck": "countdown-to-cataclysm",
+      "note": "Sylvaneth stają się silniejsze, gdy giną ich własni, zamieniając śmierci przyjaciół w paliwo dla wskaźnika i w moc"
+    },
+    {
+      "warband": "ironsouls-condemners",
+      "deck": "hunting-grounds",
+      "note": "Niemożność odepchnięcia czyni z nich niewzruszoną kotwicę terenu domowego, a inspiracja na {icon:crit} nagradza kontratakowanie najeźdźców uwięzionych na przyjaznym terytorium"
+    },
+    {
+      "warband": "myaris-purifiers",
+      "deck": "blazing-assault",
+      "note": "Przerzuty z aetherquartz gwarantują wysokiej jakości rzuty na Atak, bezpośrednio zdobywając cele tej talii oparte na celności"
+    },
+    {
+      "warband": "the-starblood-stalkers",
+      "deck": "nexus-of-power",
+      "note": "Szybkie skinki inspirują się, trzymając 3 lub więcej żetonów skarbu — dokładnie tę kontrolę nad wieloma celami, którą ta talia nagradza"
+    },
+    {
+      "warband": "the-starblood-stalkers",
+      "deck": "edge-of-the-knife",
+      "note": "Czterej kruchi skinkowie o Wytrzymałości 2 hartują się natychmiast, podczas gdy banda zalewa wrogie terytorium zahartowanymi ciałami"
+    },
+    {
+      "warband": "the-starblood-stalkers",
+      "deck": "emberstone-sentinels",
+      "note": "Inspirowanie się przy trzech trzymanych skarbach idealnie pasuje do talii nagradzającej głęboką kontrolę nad wieloma żetonami dzięki szybkim skinkom"
+    },
+    {
+      "warband": "the-starblood-stalkers",
+      "deck": "pillage-and-plunder",
+      "note": "Sześć szybkich skinków Przeszukuje i trzyma 3 lub więcej żetonów skarbów, by się natchnąć, celując wprost w cele oparte na trzymaniu skarbów"
+    },
+    {
+      "warband": "elathains-soulraid",
+      "deck": "raging-slayers",
+      "note": "Wybuch przypływu w drugiej rundzie wysyła wszystkich pięciu zgrupowanych wojowników wściekle szarżujących razem na terytorium wroga"
+    },
+    {
+      "warband": "elathains-soulraid",
+      "deck": "reckless-fury",
+      "note": "Przypływ w drugiej rundzie posyła zgrupowanych Idoneth do szarży w głąb wrogiego terytorium w pogoni za celami o cesze Bounty"
+    },
+    {
+      "warband": "elathains-soulraid",
+      "deck": "blazing-assault",
+      "note": "Przypływ z drugiej rundy plus ściąganie sług w grupę przygotowują skoncentrowane uderzenia alfa, które pokonują od razu"
+    },
+    {
+      "warband": "xandires-truthseekers",
+      "deck": "wrack-and-ruin",
+      "note": "Czerpie korzyści z własnych śmierci oraz zadaje obrażenia z dystansu i śmiertelne ciosy, doskonale radząc sobie w wojnie na wyniszczenie, którą ta talia nagradza"
+    },
+    {
+      "warband": "xandires-truthseekers",
+      "deck": "countdown-to-cataclysm",
+      "note": "Korzysta z własnych śmierci i odwraca żetony terenu, posuwając wskaźnik naprzód na obu warunkach wyzwalających"
+    },
+    {
+      "warband": "the-shadeborn",
+      "deck": "raging-slayers",
+      "note": "Czterej zabójcy teleportujący się między osłonami uderzają wściekli na terytorium wroga, dobijając rannych przeciwników Krytycznymi Atakami"
+    },
+    {
+      "warband": "the-shadeborn",
+      "deck": "reckless-fury",
+      "note": "Teleportacja z osłony przenosi aelfich zabójców na wrogie terytorium, by dobijali rannych przeciwników o wysokiej cesze Bounty"
+    },
+    {
+      "warband": "the-shadeborn",
+      "deck": "blazing-assault",
+      "note": "Zabójcy teleportujący się przez osłonę wykańczają rannych wrogów, idealnie realizując cele tej talii za pokonania i powtarzane uderzenia"
+    },
+    {
+      "warband": "the-shadeborn",
+      "deck": "pillage-and-plunder",
+      "note": "Skradający się przez osłony zabójcy teleportują się na odległe żetony skarbów, by Przeszukiwać, blokować dostęp i szybko opróżniać pole bitwy"
+    },
+    {
+      "warband": "hexbanes-hunters",
+      "deck": "edge-of-the-knife",
+      "note": "Sześciu łowców o niskiej Wytrzymałości łatwo się hartuje i obraca własne śmierci w inspirację oraz wartość Ulepszeń"
+    },
+    {
+      "warband": "hexbanes-hunters",
+      "deck": "countdown-to-cataclysm",
+      "note": "Inspiracja wyzwalana śmiercią i wartość Ulepszeń przy stratach zamieniają przyjazne ofiary w postęp wskaźnika i tempo"
+    },
+    {
+      "warband": "cyrenis-razors",
+      "deck": "countdown-to-cataclysm",
+      "note": "Reakcje kontrataku skalujące się z rundą bitwy nagradzają długą grę, którą wydłuża wskaźnik Katastrofy"
+    },
+    {
+      "warband": "the-emberwatch",
+      "deck": "wrack-and-ruin",
+      "note": "Teleportacja rozpraszająca skupienia oraz Inspiracja na wrogim terytorium trafiają wprost w cele takie jak Rozejść się!, Sam na Ciemności oraz te nagradzające przetrwanie na wrogim terytorium"
+    },
+    {
+      "warband": "the-emberwatch",
+      "deck": "pillage-and-plunder",
+      "note": "Teleportujący się lotnicy rozpraszają się, by natchnąć się na wrogim terytorium, jednocześnie Przeszukując i usuwając porozrzucane skarby"
+    },
+    {
+      "warband": "jaws-of-itzl",
+      "deck": "hunting-grounds",
+      "note": "Niewzruszony przywódca Obstinate Saurus utrzymuje teren domowy, podczas gdy jego narastający niczym kula śnieżna pocisk karze najeźdźców, zdobywając cele skupione na przywódcy"
+    },
+    {
+      "warband": "jaws-of-itzl",
+      "deck": "blazing-assault",
+      "note": "Nakręcająca się nuka przywódcy Saurusa skupia sługi, by przy każdej aktywacji zadać przytłaczające, mocne pokonania"
+    },
+    {
+      "warband": "jaws-of-itzl",
+      "deck": "emberstone-sentinels",
+      "note": "Nieruchomy lider Saurus oraz zgrupowanie podwładnych blokuje głęboko położone żetony i broni obrońców, których ta talia nagradza"
+    },
+    {
+      "warband": "knives-of-the-crone",
+      "deck": "raging-slayers",
+      "note": "Każdy wściekły atak napędza silnik przepowiedni, więc im więcej szarż, tym więcej wzmocnień i Krytycznych Ataków"
+    },
+    {
+      "warband": "knives-of-the-crone",
+      "deck": "edge-of-the-knife",
+      "note": "Khainici ze szkła hartują się w chwili wymiany ciosów, a kontrola nad talią celów prowadzi prosto do tych premii"
+    },
+    {
+      "warband": "knives-of-the-crone",
+      "deck": "reckless-fury",
+      "note": "Kości przepowiedni nagradzają atakowanie, więc Khainici nieustannie szarżują na wrogie terytorium w pogoni za celami o cesze Bounty"
+    },
+    {
+      "warband": "knives-of-the-crone",
+      "deck": "blazing-assault",
+      "note": "Kości proroctwa napędzane atakowaniem nagradzają dokładnie tę agresywną ofensywę, którą ta talia chce spamować"
+    },
+    {
+      "warband": "kurnoths-heralds",
+      "deck": "hunting-grounds",
+      "note": "Lot oraz odporność na Flank na przyjaznym terytorium w połączeniu z inspiracją za uderzenie z domu pozwalają im zaskoczyć i błyskawicznie rozprawić się z każdym wrogiem, który wkroczy na teren"
+    },
+    {
+      "warband": "kurnoths-heralds",
+      "deck": "raging-slayers",
+      "note": "Trzej mocno uderzający wojownicy Sylvaneth nadlatują wściekli, szarżując z impetem na terytorium wroga i zabijając atakami z Krytycznymi Atakami"
+    },
+    {
+      "warband": "kurnoths-heralds",
+      "deck": "blazing-assault",
+      "note": "Mocno uderzający, wybuchowi Sylvaneth nadlatują, by zadać celne pokonania uderzeniem alfa dla celów za pokonania"
+    }
+  ]
+}

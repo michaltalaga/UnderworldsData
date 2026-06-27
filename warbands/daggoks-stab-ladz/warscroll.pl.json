@@ -29,5 +29,6 @@
       "flavorText": null,
       "rulesText": "Zamiast zagrywać Ploy w Power stepie przeciwnika, możesz odrzucić Ploys, aby użyć poniższych zdolności. Liczba odrzuconych Ploys określa, które zdolności obowiązują w następnej turze. Efekty są kumulatywne, a efekt każdej zdolności trwa do końca twojej następnej tury.\n\nOdrzuć 1: Przyjazni wojownicy mają +1 Move.\nOdrzuć 2: Wrodzy wojownicy są Flanked.\nOdrzuć 3: Broń przyjaznych wojowników ma +1 kość ataku."
     }
-  ]
+  ],
+  "playstyle": "Czterej podstępni Kruleboyz, którzy rozsiewają drobne obrażenia po całym wrogim warbandzie. Po każdym Action stepie bezczynni wojownicy wykonują darmowe pchnięcia Krule Stab, które inspirują przy trafieniu, podczas gdy odrzucane Ploye napędzają ruch i ofensywę. Ranienie wielu wrogów się opłaca — pozwala dobierać dodatkowe karty Power i dobijać truciznami rannych, nagradzając szeroką, oportunistyczną agresję."
 }
