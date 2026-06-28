@@ -4,7 +4,7 @@ import type { RivalDeck } from '../types/rivals';
 import { t } from '../i18n/labels';
 import { ratingStars, ratingNote } from '../data/pairings';
 import { warbandHref, deckHref } from '../routing';
-import { deckIcon, factionIcon } from '../data/icons';
+import { deckIcon, factionIcon, warbandIcon } from '../data/icons';
 import { StarRating } from './StarRating';
 
 interface Props {
@@ -32,6 +32,21 @@ export function OverviewView({ language, decks, warbands }: Props) {
     }
     return groups;
   }, [opWarbands]);
+
+  // Deck column headers (icon + 2-letter code), reused for the top header and
+  // the repeated header band shown over each grand alliance.
+  const renderDeckHeaders = () =>
+    decks.map((deck) => {
+      const icon = deckIcon(deck.slug);
+      return (
+        <th key={deck.slug} className="matrix-deck-col" scope="col">
+          <a href={deckHref(deck.slug)} title={deck.name}>
+            {icon && <img className="matrix-deck-icon" src={icon} alt="" />}
+            <span className="matrix-deck-code">{deck.code}</span>
+          </a>
+        </th>
+      );
+    });
 
   return (
     <div className="overview">
@@ -85,29 +100,30 @@ export function OverviewView({ language, decks, warbands }: Props) {
                 <th className="matrix-corner" scope="col">
                   {t('selectWarband', language)}
                 </th>
-                {decks.map((deck) => (
-                  <th key={deck.slug} className="matrix-deck-col" scope="col">
-                    <a href={deckHref(deck.slug)} title={deck.name}>
-                      {deck.code}
-                    </a>
-                  </th>
-                ))}
+                {renderDeckHeaders()}
               </tr>
             </thead>
             <tbody>
               {FACTION_ORDER.map((faction) => (
                 <Fragment key={faction}>
+                  {/* Faction band doubles as a repeated deck-header row for this alliance. */}
                   <tr className="matrix-faction-row">
-                    <th colSpan={decks.length + 1} className={faction} scope="colgroup">
+                    <th className={`matrix-faction-label ${faction}`} scope="row">
                       {factionIcon(faction) && <img className="faction-icon" src={factionIcon(faction)!} alt="" />}
                       {faction}
                     </th>
+                    {renderDeckHeaders()}
                   </tr>
-                  {warbandsByFaction[faction].map((warband) => (
+                  {warbandsByFaction[faction].map((warband) => {
+                    const wbIcon = warbandIcon(warband.slug);
+                    return (
                     <tr key={warband.slug}>
                       <th className="matrix-warband-row" scope="row">
                         <a href={warbandHref(warband.slug)} title={warband.name}>
-                          <span className="matrix-warband-name">{warband.name}</span>
+                          <span className="matrix-warband-label">
+                            {wbIcon && <img className="matrix-warband-icon" src={wbIcon} alt="" />}
+                            <span className="matrix-warband-name">{warband.name}</span>
+                          </span>
                           <span className="matrix-fighters">{warband.fighters}</span>
                         </a>
                       </th>
@@ -128,7 +144,8 @@ export function OverviewView({ language, decks, warbands }: Props) {
                         );
                       })}
                     </tr>
-                  ))}
+                    );
+                  })}
                 </Fragment>
               ))}
             </tbody>

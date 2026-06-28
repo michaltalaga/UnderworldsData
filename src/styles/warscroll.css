@@ -1007,7 +1007,10 @@ body {
 
 .matrix-deck-col { text-align: center; }
 .matrix-deck-col a {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
   background: transparent;
   border: none;
   color: #d4a930;
@@ -1015,13 +1018,25 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.5px;
   cursor: pointer;
-  padding: 0.45rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   text-decoration: none;
 }
-.matrix-deck-col a:hover { color: #fff; text-decoration: underline; }
+.matrix-deck-col a:hover { color: #fff; }
+.matrix-deck-col a:hover .matrix-deck-code { text-decoration: underline; }
+.matrix-deck-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+}
 
-.matrix-faction-row th {
+/* Each faction band repeats the deck headers; the frozen-left cell labels the alliance. */
+.matrix-faction-row .matrix-deck-col { background: #0c1226; }
+.matrix-faction-label {
+  position: sticky;
+  left: 0;
+  z-index: 1;
   text-align: left;
+  white-space: nowrap;
   padding: 0.35rem 0.6rem;
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -1029,10 +1044,11 @@ body {
   font-weight: 700;
   background: #0c1226;
 }
-.matrix-faction-row th.Chaos { color: #e0688a; }
-.matrix-faction-row th.Death { color: #b07cd6; }
-.matrix-faction-row th.Destruction { color: #3fce7a; }
-.matrix-faction-row th.Order { color: #4fa6e0; }
+.pairing-matrix th.matrix-faction-label { border-right: 2px solid #2c2c4a; }
+.matrix-faction-label.Chaos { color: #e0688a; }
+.matrix-faction-label.Death { color: #b07cd6; }
+.matrix-faction-label.Destruction { color: #3fce7a; }
+.matrix-faction-label.Order { color: #4fa6e0; }
 
 .matrix-warband-row {
   position: sticky;
@@ -1060,6 +1076,18 @@ body {
   text-decoration: none;
 }
 .matrix-warband-row a:hover { color: #d4a930; }
+.matrix-warband-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.matrix-warband-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
 .matrix-warband-name { white-space: nowrap; }
 .matrix-fighters {
   font-size: 0.66rem;
