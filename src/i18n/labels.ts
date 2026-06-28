@@ -6,7 +6,7 @@ type Labels = {
 
 export const labels: Labels = {
   appTitle: { en: 'Underworlds Reference', pl: 'Kompendium Underworlds' },
-  warscrollTitle: { en: 'Warscrolls', pl: 'Zwoje Wojenne' },
+  warscrollTitle: { en: 'Warbands', pl: 'Drużyny' },
   rivalsTitle: { en: 'Rival Decks', pl: 'Talie Rivals' },
   selectWarband: { en: 'Select a Warband', pl: 'Wybierz drużynę' },
   inspire: { en: 'Inspire', pl: 'Inspiracja' },
@@ -35,7 +35,7 @@ export const labels: Labels = {
   upgrade: { en: 'Upgrades', pl: 'Ulepszenia' },
   upgradeCardType: { en: 'Upgrade', pl: 'Ulepszenie' },
   noPlot: { en: 'No plot text listed for this deck.', pl: 'Brak opisu plotu dla tej talii.' },
-  viewWarscrolls: { en: 'Warscrolls', pl: 'Zwoje' },
+  viewWarscrolls: { en: 'Warbands', pl: 'Drużyny' },
   viewRivals: { en: 'Rival Decks', pl: 'Rivals' },
   viewOverview: { en: 'Pairings', pl: 'Dopasowania' },
   overviewTitle: { en: 'Warband ↔ Rival Deck Pairings', pl: 'Dopasowania drużyn i talii' },
