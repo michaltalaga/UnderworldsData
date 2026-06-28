@@ -14,6 +14,11 @@ import { useRoute, viewHref, navigate } from '../routing';
 import warbandIndex from '../../warbands/index.json';
 import rivalIndex from '../../rivals/index.json';
 
+const DATA_SOURCE_URL = 'https://www.underworldsdb.com/';
+const AUTHOR_URL = 'https://cyberdynesystems.cc/';
+const APP_BUILD_LABEL = __APP_BUILD_LABEL__;
+const APP_BUILD_URL = __APP_BUILD_URL__;
+
 const enModules = import.meta.glob<Warscroll>('../../warbands/*/warscroll.json', {
   eager: true,
   import: 'default',
@@ -323,6 +328,33 @@ export function App() {
       {view === 'overview' && (
         <OverviewView language={language} decks={allDecks} warbands={warbands} />
       )}
+
+      <footer className="app-credits">
+        {APP_BUILD_LABEL && (
+          <span>
+            {t('creditsBuild', language)}:{' '}
+            {APP_BUILD_URL ? (
+              <a href={APP_BUILD_URL} target="_blank" rel="noreferrer">
+                {APP_BUILD_LABEL}
+              </a>
+            ) : (
+              APP_BUILD_LABEL
+            )}
+          </span>
+        )}
+        <span>
+          {t('creditsAuthor', language)}:{' '}
+          <a href={AUTHOR_URL} target="_blank" rel="noreferrer">
+            Cyberdyne Systems
+          </a>
+        </span>
+        <span>
+          {t('creditsData', language)}:{' '}
+          <a href={DATA_SOURCE_URL} target="_blank" rel="noreferrer">
+            underworldsdb.com
+          </a>
+        </span>
+      </footer>
     </div>
   );
 }

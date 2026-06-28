@@ -29,7 +29,8 @@
   .pairings-panel,
   .pairing-warbands,
   .fighter-cards,
-  .overview {
+  .overview,
+  .app-credits {
     display: none !important;
   }
 

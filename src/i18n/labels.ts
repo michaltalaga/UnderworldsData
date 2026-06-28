@@ -69,6 +69,9 @@ export const labels: Labels = {
   weakFitDesc: { en: 'The deck pulls against what the warband wants to do.', pl: 'Talia działa wbrew temu, co drużyna chce robić.' },
   showMore: { en: 'Show all', pl: 'Pokaż wszystkie' },
   showLess: { en: 'Show fewer', pl: 'Pokaż mniej' },
+  creditsBuild: { en: 'Build', pl: 'Wersja' },
+  creditsAuthor: { en: 'Author', pl: 'Autor' },
+  creditsData: { en: 'Warscroll & rival deck data', pl: 'Dane zwojów i talii Rivals' },
 };
 
 export function t(key: string, lang: Language): string {

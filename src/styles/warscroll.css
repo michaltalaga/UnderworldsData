@@ -17,6 +17,27 @@ body {
   padding: 1rem;
 }
 
+/* Footer / credits */
+.app-credits {
+  margin-top: 2rem;
+  border-top: 1px solid #6e5d2a;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  font-size: 0.78rem;
+  color: #8a8a8a;
+}
+
+.app-credits a {
+  color: #d4a930;
+  text-decoration: underline;
+}
+
+.app-credits a:hover {
+  color: #f0c64a;
+}
+
 /* Header */
 .header {
   display: flex;
