@@ -69,7 +69,7 @@ export class AiClient {
   private switchFrom(index: number, reason: string): Promise<boolean> {
     if (this.switching) return this.switching;
     if (this.index !== index) return Promise.resolve(this.index < this.providers.length);
-    console.log(`\n  ! ${reason}`);
+    console.log(`  ! ${reason}`);
     this.switching = this.advance().finally(() => {
       this.switching = null;
     });

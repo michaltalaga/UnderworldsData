@@ -47,14 +47,28 @@ function scriptFile(script: FixScript): string {
 function runStep(step: Step, provider: string | undefined, jobs: number): boolean {
   const aiArgs = step.ai ? [...(provider ? ['--provider', provider] : []), '--jobs', String(jobs)] : [];
   const args = [...(step.args ?? []), ...aiArgs];
-  console.log(`\n>>> npm run ${step.script}${args.length ? ` -- ${args.join(' ')}` : ''}   (${step.why})`);
+  console.log(`\n>>> [${clock()}] npm run ${step.script}${args.length ? ` -- ${args.join(' ')}` : ''}   (${step.why})`);
+  const started = Date.now();
   const result = spawnSync(process.execPath, ['--import', 'tsx', scriptFile(step.script), ...args], {
     cwd: ROOT,
     stdio: 'inherit',
   });
+  const took = duration(Date.now() - started);
   if (result.error) console.log(`<<< ${step.script} could not start: ${result.error.message}`);
-  else if (result.status !== 0) console.log(`<<< ${step.script} finished with exit code ${result.status}`);
+  else if (result.status !== 0) console.log(`<<< ${step.script} finished with exit code ${result.status} after ${took}`);
+  else console.log(`<<< ${step.script} done in ${took}`);
   return !result.error && result.status === 0;
+}
+
+const clock = () => new Date().toLocaleTimeString('en-GB');
+
+function duration(ms: number): string {
+  const seconds = Math.round(ms / 1000);
+  if (seconds < 60) return `${seconds}s`;
+  const minutes = Math.floor(seconds / 60);
+  return minutes < 60
+    ? `${minutes}m ${String(seconds % 60).padStart(2, '0')}s`
+    : `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, '0')}m`;
 }
 
 function main() {
@@ -74,13 +88,17 @@ function main() {
     return;
   }
 
+  const syncStarted = Date.now();
   const failedSteps: string[] = [];
   for (const step of STEPS) {
-    if (!step.always && !scriptsWithGaps(collectStatus()).has(step.script)) continue;
+    if (!step.always && !scriptsWithGaps(collectStatus()).has(step.script)) {
+      console.log(`\n--- npm run ${step.script}: nothing to do`);
+      continue;
+    }
     if (!runStep(step, provider, jobs)) failedSteps.push(step.script);
   }
 
-  console.log('\n>>> Final status');
+  console.log(`\n>>> Final status (sync took ${duration(Date.now() - syncStarted)})`);
   const sections = collectStatus();
   printStatus(sections);
   if (failedSteps.length) console.log(`  Steps that reported failures: ${failedSteps.join(', ')}\n`);

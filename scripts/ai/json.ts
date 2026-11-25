@@ -1,4 +1,5 @@
 import type { AiClient, ChatMessage } from './index';
+import { jobNote } from './jobs';
 
 export function stripCodeFences(raw: string): string {
   return raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
@@ -29,7 +30,7 @@ export async function completeJson<T>(
   const parsed = parseJsonSafe<T>(rawText);
   if (parsed !== null) return parsed;
 
-  console.log('(retrying with repair) ... ');
+  jobNote('reply was not valid JSON, asking for a repaired one');
   const repairText = await ai.complete({
     messages: [request, { role: 'assistant', content: rawText }, { role: 'user', content: repairInstruction }],
     maxTokens: options.maxTokens,
