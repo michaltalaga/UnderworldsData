@@ -5,7 +5,7 @@ A React web app for viewing and translating Warhammer Underworlds warscroll card
 ## Prerequisites
 
 - Node.js
-- `ANTHROPIC_API_KEY` environment variable (required for `extract`, `translate`, `rivals:translate`)
+- For `extract`, `translate` and `rivals:translate`, one usable [AI provider](#ai-providers): an `ANTHROPIC_API_KEY`, or the Claude CLI (`claude`) logged in with `claude auth login`
 
 ## Development
 
@@ -19,6 +19,17 @@ npm run preview   # Preview the production build locally
 ## Data Pipeline Scripts
 
 These scripts handle downloading, extracting, translating, and syncing game data. Run them with `npm run <script>`.
+
+### AI providers
+
+`extract`, `translate` and `rivals:translate` call Claude (Sonnet 4.6) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
+
+1. **Anthropic API** (`api`): the Anthropic SDK with `ANTHROPIC_API_KEY`. Usable when the key is set and a free models-list call accepts it. API usage is billed to the key's Console account.
+2. **Claude CLI** (`cli`): runs `claude -p` with no tools, no CLAUDE.md or plugins, and no saved session; images are sent inline, so the CLI never opens files. Usable when `claude` is on PATH and `claude auth status` reports a login. It runs without `ANTHROPIC_API_KEY`, so it uses the CLI's own login (for example a Claude subscription).
+
+If the provider in use stops working during a run (key rejected, credit balance too low, rate limited, service down, CLI logged out or at its usage limit), the card being processed is retried on the next provider, which handles the rest of the run. If no provider is left, the script stops with an error.
+
+To skip detection and use one provider only, pass `--provider api|cli` or set `AI_PROVIDER`, for example `npm run extract -- --provider cli 10`. `CLAUDE_CLI_PATH` overrides the `claude` command, and `CLAUDE_CLI_TIMEOUT_MS` the per-call timeout (default 10 minutes).
 
 ### `npm run status`
 
@@ -34,11 +45,11 @@ Downloads icon PNGs from underworldsdb.com: warband icons into each `warbands/<s
 
 ### `npm run extract`
 
-Extracts structured game data from warscroll card PNGs using Claude's vision API (Sonnet 4.6). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
+Extracts structured game data from warscroll card PNGs using Claude's vision (Sonnet 4.6) through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
 
 ### `npm run translate`
 
-Translates English warscroll JSON files to Polish using the Claude API. Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Preserves game icon tokens (`{icon:name}`). Skips already-translated files.
+Translates English warscroll JSON files to Polish using Claude through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Preserves game icon tokens (`{icon:name}`). Skips already-translated files.
 
 ### `npm run rivals:sync`
 
@@ -46,7 +57,7 @@ Scrapes rival deck data from underworldsdb.com. Parses deck metadata (name, fact
 
 ### `npm run rivals:translate`
 
-Translates rival deck `deck.json` files to Polish using the Claude API. Outputs `deck.pl.json` for each deck. Supports filtering by deck slug/name via CLI argument.
+Translates rival deck `deck.json` files to Polish using Claude through the first usable [AI provider](#ai-providers). Outputs `deck.pl.json` for each deck. Supports filtering by deck slug/name via CLI argument.
 
 ## Project Structure
 
@@ -73,6 +84,7 @@ warband-rivals-pairings.json     Warband × deck rating matrix (stars + per-pair
 warband-rivals-pairings.pl.json  Polish per-pairing notes
 warband-rivals-pairings.md       Human-readable pairings reference
 scripts/            Data pipeline scripts (TypeScript)
+  ai/               AI provider layer (Anthropic API, Claude CLI, fallback client)
 src/
   components/       React UI components
   data/             Pairings join layer (pairings.ts)

@@ -1,6 +1,6 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
 
 interface WarbandMeta {
   slug: string;
@@ -68,25 +68,17 @@ async function downloadImage(url: string): Promise<Buffer | null> {
 }
 
 async function extractWarscroll(
-  client: Anthropic,
+  ai: AiClient,
   imageData: Buffer,
   meta: WarbandMeta,
 ): Promise<string> {
-  const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 4096,
+  return ai.complete({
+    maxTokens: 4096,
     messages: [
       {
         role: 'user',
         content: [
-          {
-            type: 'image',
-            source: {
-              type: 'base64',
-              media_type: 'image/png',
-              data: imageData.toString('base64'),
-            },
-          },
+          { type: 'image', mediaType: 'image/png', data: imageData },
           {
             type: 'text',
             text: `${EXTRACTION_PROMPT}\n\nWarband metadata:\n- slug: "${meta.slug}"\n- grandAlliance: "${meta.grandAlliance}"`,
@@ -95,9 +87,6 @@ async function extractWarscroll(
       },
     ],
   });
-
-  const textBlock = response.content.find((b) => b.type === 'text');
-  return textBlock?.text ?? '';
 }
 
 function sanitizeAndParse(raw: string): Record<string, unknown> {
@@ -109,7 +98,7 @@ function sanitizeAndParse(raw: string): Record<string, unknown> {
   return JSON.parse(sanitized);
 }
 
-async function extractGaWarscrolls(client: Anthropic) {
+async function extractGaWarscrolls(ai: AiClient) {
   mkdirSync(GA_DIR, { recursive: true });
 
   const pending: { key: string; alliance: string; variant: number }[] = [];
@@ -162,7 +151,7 @@ async function extractGaWarscrolls(client: Anthropic) {
 
     try {
       const meta: WarbandMeta = { slug: key, name: key, fighters: 0, opLegal: false, grandAlliance: alliance };
-      const raw = await extractWarscroll(client, imageData, meta);
+      const raw = await extractWarscroll(ai, imageData, meta);
       const data = sanitizeAndParse(raw);
 
       data.id = key;
@@ -172,6 +161,7 @@ async function extractGaWarscrolls(client: Anthropic) {
       console.log('OK');
       success++;
     } catch (err) {
+      if (err instanceof NoProviderLeftError) throw err;
       console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
       failed++;
     }
@@ -181,18 +171,13 @@ async function extractGaWarscrolls(client: Anthropic) {
 }
 
 async function main() {
-  const batchSize = parseInt(process.argv[2] || '5', 10);
+  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const batchSize = parseInt(args[0] || '5', 10);
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('Error: ANTHROPIC_API_KEY environment variable is required.');
-    console.error('Usage: ANTHROPIC_API_KEY=sk-... npx tsx scripts/extract.ts [batchSize]');
-    process.exit(1);
-  }
-
-  const client = new Anthropic();
+  const ai = await AiClient.create({ provider });
 
   // Extract GA warscrolls first
-  await extractGaWarscrolls(client);
+  await extractGaWarscrolls(ai);
 
   const index: WarbandMeta[] = JSON.parse(
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
@@ -248,7 +233,7 @@ async function main() {
     }
 
     try {
-      const raw = await extractWarscroll(client, imageData, meta);
+      const raw = await extractWarscroll(ai, imageData, meta);
       const data = sanitizeAndParse(raw);
 
       data.id = meta.slug;
@@ -262,6 +247,7 @@ async function main() {
       console.log('OK');
       success++;
     } catch (err) {
+      if (err instanceof NoProviderLeftError) throw err;
       console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
       failed++;
     }
@@ -274,4 +260,7 @@ async function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error(`Error: ${err instanceof Error ? err.message : err}`);
+  process.exit(1);
+});

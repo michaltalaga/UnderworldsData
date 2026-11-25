@@ -1,6 +1,7 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
+import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { completeJson } from './ai/json';
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
 const GA_DIR = join(WARBANDS_DIR, '_ga');
@@ -41,70 +42,21 @@ CRITICAL: Return ONLY valid JSON, no markdown code fences or explanation.
 Properly escape special characters in JSON strings: use \\" for double quotes, \\\\ for backslashes.
 If an English field contains single quotes like 'This is Mine', keep them as-is in the JSON string (single quotes don't need escaping in JSON).`;
 
-function cleanJson(raw: string): string {
-  return raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-}
-
-function parseJsonSafe(raw: string): Record<string, unknown> | null {
-  const cleaned = cleanJson(raw);
-  try {
-    return JSON.parse(cleaned);
-  } catch {
-    return null;
-  }
-}
-
 async function translateWarscroll(
-  client: Anthropic,
+  ai: AiClient,
   data: Record<string, unknown>,
 ): Promise<Record<string, unknown>> {
   const input = JSON.stringify(data, null, 2);
 
-  // Attempt 1: normal translation
-  const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 8192,
-    messages: [
-      {
-        role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${input}`,
-      },
-    ],
+  return completeJson<Record<string, unknown>>(ai, {
+    prompt: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${input}`,
+    maxTokens: 8192,
+    repairInstruction:
+      'Your JSON output was invalid and failed to parse. Please return the same translation but as valid JSON. Make sure all quotes and special characters inside strings are properly escaped. Return ONLY the fixed JSON.',
   });
-
-  const rawText = response.content.find((b) => b.type === 'text')?.text ?? '';
-  const parsed = parseJsonSafe(rawText);
-  if (parsed) return parsed;
-
-  // Attempt 2: ask the API to fix its own broken JSON
-  console.log('(retrying with repair) ... ');
-  const repairResponse = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 8192,
-    messages: [
-      {
-        role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the English warscroll JSON to translate:\n\n${input}`,
-      },
-      {
-        role: 'assistant',
-        content: rawText,
-      },
-      {
-        role: 'user',
-        content: 'Your JSON output was invalid and failed to parse. Please return the same translation but as valid JSON. Make sure all quotes and special characters inside strings are properly escaped. Return ONLY the fixed JSON.',
-      },
-    ],
-  });
-
-  const repairText = repairResponse.content.find((b) => b.type === 'text')?.text ?? '';
-  const repaired = parseJsonSafe(repairText);
-  if (repaired) return repaired;
-
-  throw new Error(`Invalid JSON after retry. Last parse error at: ${repairText.substring(0, 200)}...`);
 }
 
-async function translateGaWarscrolls(client: Anthropic) {
+async function translateGaWarscrolls(ai: AiClient) {
   if (!existsSync(GA_DIR)) return;
 
   const alliances = ['chaos', 'death', 'destruction', 'order'];
@@ -146,7 +98,7 @@ async function translateGaWarscrolls(client: Anthropic) {
     process.stdout.write(`  ${name} ... `);
 
     try {
-      const translated = await translateWarscroll(client, data);
+      const translated = await translateWarscroll(ai, data);
 
       if (!translated.inspire && !translated.abilities) {
         throw new Error('Invalid structure in response');
@@ -156,6 +108,7 @@ async function translateGaWarscrolls(client: Anthropic) {
       console.log('OK');
       success++;
     } catch (err) {
+      if (err instanceof NoProviderLeftError) throw err;
       console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
       failed++;
     }
@@ -165,18 +118,13 @@ async function translateGaWarscrolls(client: Anthropic) {
 }
 
 async function main() {
-  const batchSize = parseInt(process.argv[2] || '5', 10);
+  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const batchSize = parseInt(args[0] || '5', 10);
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('Error: ANTHROPIC_API_KEY environment variable is required.');
-    console.error('Usage: ANTHROPIC_API_KEY=sk-... npx tsx scripts/translate.ts [batchSize]');
-    process.exit(1);
-  }
-
-  const client = new Anthropic();
+  const ai = await AiClient.create({ provider });
 
   // Translate GA warscrolls first
-  await translateGaWarscrolls(client);
+  await translateGaWarscrolls(ai);
 
   // Find warband folders with warscroll.json but no warscroll.pl.json (skip _ga)
   const entries = readdirSync(WARBANDS_DIR);
@@ -222,7 +170,7 @@ async function main() {
     process.stdout.write(`  ${name} ... `);
 
     try {
-      const translated = await translateWarscroll(client, data);
+      const translated = await translateWarscroll(ai, data);
 
       if (!translated.inspire && !translated.abilities) {
         throw new Error('Invalid structure in response');
@@ -235,6 +183,7 @@ async function main() {
       console.log('OK');
       success++;
     } catch (err) {
+      if (err instanceof NoProviderLeftError) throw err;
       console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
       failed++;
     }
@@ -247,4 +196,7 @@ async function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error(`Error: ${err instanceof Error ? err.message : err}`);
+  process.exit(1);
+});

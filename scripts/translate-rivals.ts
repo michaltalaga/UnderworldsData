@@ -1,6 +1,7 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { completeJson } from './ai/json';
 
 interface RivalCard {
   id: string;
@@ -65,19 +66,6 @@ Translation rules:
 CRITICAL: Return ONLY valid JSON, no markdown code fences or explanation.
 Properly escape special characters in JSON strings: use \\" for double quotes and \\\\ for backslashes.`;
 
-function cleanJson(raw: string): string {
-  return raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-}
-
-function parseJsonSafe(raw: string): RivalDeckTranslation | null {
-  const cleaned = cleanJson(raw);
-  try {
-    return JSON.parse(cleaned) as RivalDeckTranslation;
-  } catch {
-    return null;
-  }
-}
-
 function selectDecks(decks: RivalDeck[], filter: string | null): RivalDeck[] {
   if (!filter) return decks;
 
@@ -90,51 +78,17 @@ function selectDecks(decks: RivalDeck[], filter: string | null): RivalDeck[] {
 }
 
 async function translateDeck(
-  client: Anthropic,
+  ai: AiClient,
   data: RivalDeck,
 ): Promise<RivalDeckTranslation> {
   const input = JSON.stringify(data, null, 2);
 
-  const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 8192,
-    messages: [
-      {
-        role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the English rival deck JSON to translate:\n\n${input}`,
-      },
-    ],
+  return completeJson<RivalDeckTranslation>(ai, {
+    prompt: `${TRANSLATION_PROMPT}\n\nHere is the English rival deck JSON to translate:\n\n${input}`,
+    maxTokens: 8192,
+    repairInstruction:
+      'Your JSON output was invalid and failed to parse. Please return the same translation as valid JSON. Preserve the exact schema and return ONLY the fixed JSON.',
   });
-
-  const rawText = response.content.find((block) => block.type === 'text')?.text ?? '';
-  const parsed = parseJsonSafe(rawText);
-  if (parsed) return parsed;
-
-  console.log('(retrying with repair) ... ');
-  const repairResponse = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 8192,
-    messages: [
-      {
-        role: 'user',
-        content: `${TRANSLATION_PROMPT}\n\nHere is the English rival deck JSON to translate:\n\n${input}`,
-      },
-      {
-        role: 'assistant',
-        content: rawText,
-      },
-      {
-        role: 'user',
-        content: 'Your JSON output was invalid and failed to parse. Please return the same translation as valid JSON. Preserve the exact schema and return ONLY the fixed JSON.',
-      },
-    ],
-  });
-
-  const repairText = repairResponse.content.find((block) => block.type === 'text')?.text ?? '';
-  const repaired = parseJsonSafe(repairText);
-  if (repaired) return repaired;
-
-  throw new Error(`Invalid JSON after retry. Last response starts with: ${repairText.substring(0, 200)}...`);
 }
 
 function validateTranslation(deck: RivalDeck, translated: RivalDeckTranslation) {
@@ -152,15 +106,8 @@ function validateTranslation(deck: RivalDeck, translated: RivalDeckTranslation) 
 }
 
 async function main() {
-  const filter = process.argv[2] ?? null;
-
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('Error: ANTHROPIC_API_KEY environment variable is required.');
-    console.error('Usage: ANTHROPIC_API_KEY=sk-... npx tsx scripts/translate-rivals.ts [deckSlug|deckCode|deckName]');
-    process.exit(1);
-  }
-
-  const client = new Anthropic();
+  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const filter = args[0] ?? null;
 
   const pending: RivalDeck[] = [];
   let alreadyDone = 0;
@@ -196,6 +143,8 @@ async function main() {
     return;
   }
 
+  const ai = await AiClient.create({ provider });
+
   let success = 0;
   let failed = 0;
 
@@ -203,7 +152,7 @@ async function main() {
     process.stdout.write(`  ${deck.name} ... `);
 
     try {
-      const translated = await translateDeck(client, deck);
+      const translated = await translateDeck(ai, deck);
       validateTranslation(deck, translated);
 
       writeFileSync(
@@ -214,6 +163,7 @@ async function main() {
       console.log('OK');
       success++;
     } catch (error) {
+      if (error instanceof NoProviderLeftError) throw error;
       console.log(`FAILED: ${error instanceof Error ? error.message : error}`);
       failed++;
     }
