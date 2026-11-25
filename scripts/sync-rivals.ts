@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 interface RivalDeckIndexEntry {
@@ -255,7 +255,18 @@ function writeJson(relativePath: string, data: unknown) {
   const filePath = join(RIVALS_DIR, relativePath);
   const directory = join(filePath, '..');
   mkdirSync(directory, { recursive: true });
-  writeFileSync(filePath, JSON.stringify(data, null, 2));
+  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
+}
+
+/**
+ * Fields in the existing deck.json that the scraper does not produce (such as the
+ * hand-written strategyTagline and strategy), so a resync keeps them.
+ */
+function fieldsNotScraped(slug: string, scraped: object): Record<string, unknown> {
+  const filePath = join(RIVALS_DIR, slug, 'deck.json');
+  if (!existsSync(filePath)) return {};
+  const existing = JSON.parse(readFileSync(filePath, 'utf8')) as Record<string, unknown>;
+  return Object.fromEntries(Object.entries(existing).filter(([key]) => !(key in scraped)));
 }
 
 function selectDecks(index: RivalDeckIndexEntry[], filter: string | null): RivalDeckIndexEntry[] {
@@ -293,7 +304,7 @@ async function main() {
     try {
       const sharedHtml = await fetchHtml(deck.sourceUrl);
       const fullDeck = parseSharedDeck(sharedHtml, deck);
-      writeJson(join(deck.slug, 'deck.json'), fullDeck);
+      writeJson(join(deck.slug, 'deck.json'), { ...fullDeck, ...fieldsNotScraped(deck.slug, fullDeck) });
       console.log(`OK (${fullDeck.cards.length} cards)`);
       success++;
     } catch (error) {

@@ -20,9 +20,13 @@ npm run preview   # Preview the production build locally
 
 These scripts handle downloading, extracting, translating, and syncing game data. Run them with `npm run <script>`.
 
+### `npm run sync`
+
+Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` is passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them.
+
 ### AI providers
 
-`extract`, `translate` and `rivals:translate` call Claude (Sonnet 4.6) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
+`extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` call Claude (Sonnet 4.6) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
 
 1. **Anthropic API** (`api`): the Anthropic SDK with `ANTHROPIC_API_KEY`. Usable when the key is set and a free models-list call accepts it. API usage is billed to the key's Console account.
 2. **Claude CLI** (`cli`): runs `claude -p` with no tools, no CLAUDE.md or plugins, and no saved session; images are sent inline, so the CLI never opens files. Usable when `claude` is on PATH and `claude auth status` reports a login. It runs without `ANTHROPIC_API_KEY`, so it uses the CLI's own login (for example a Claude subscription).
@@ -33,7 +37,14 @@ To skip detection and use one provider only, pass `--provider api|cli` or set `A
 
 ### `npm run status`
 
-Shows completion status of the entire data pipeline. Reports which warbands are missing images, extracted data, or translations, and which rival decks are missing data or translations. No API key required.
+Shows completion status of the entire data pipeline, with the script that fills each gap:
+
+- **Grand Alliance warscrolls:** images, extracted JSON, Polish translations, faction icons.
+- **Warbands:** warscroll images, icons (all warbands), fighter card images, fighter stats (`fighters.json`), extracted warscroll, Polish translation, playstyle (EN and PL). Everything except icons is checked for OP-legal warbands only.
+- **Rival decks:** synced `deck.json`, icons, Polish translation, strategy tagline and summary (EN and PL).
+- **Pairings:** every OP-legal warband rated against every universal deck, a note on every 3-star rating, and a Polish version of every note.
+
+Needs no AI provider.
 
 ### `npm run download`
 
@@ -47,17 +58,32 @@ Downloads icon PNGs from underworldsdb.com: warband icons into each `warbands/<s
 
 Extracts structured game data from warscroll card PNGs using Claude's vision (Sonnet 4.6) through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
 
+### `npm run extract:fighters`
+
+Extracts fighter stats into `warbands/<slug>/fighters.json` for OP-legal warbands whose fighter card images are downloaded but that have no `fighters.json` yet. Sends both sides of each fighter card to Claude (one call per fighter) and checks the reply against the schema of the existing files: Move, Save, Health, Bounty, runemarks and weapons (with abilities) per side. A warband's file is written only when every fighter extracted cleanly. An optional argument limits it to one warband (slug or name).
+
 ### `npm run translate`
 
 Translates English warscroll JSON files to Polish using Claude through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Preserves game icon tokens (`{icon:name}`). Skips already-translated files.
 
 ### `npm run rivals:sync`
 
-Scrapes rival deck data from underworldsdb.com. Parses deck metadata (name, faction, plot, cards) from HTML and writes `rivals/index.json` plus individual `deck.json` files per rival deck. Supports filtering by deck slug/name via CLI argument.
+Scrapes rival deck data from underworldsdb.com. Parses deck metadata (name, faction, plot, cards) from HTML and writes `rivals/index.json` plus individual `deck.json` files per rival deck. Fields in an existing `deck.json` that the scraper does not produce (`strategyTagline`, `strategy`) are kept. Supports filtering by deck slug/name via CLI argument.
 
 ### `npm run rivals:translate`
 
 Translates rival deck `deck.json` files to Polish using Claude through the first usable [AI provider](#ai-providers). Outputs `deck.pl.json` for each deck. Supports filtering by deck slug/name via CLI argument.
+
+### `npm run pairings`
+
+Fills every gap in the warband × Rivals deck pairings, in this order, using the existing hand-written entries as style and calibration examples:
+
+1. Deck `strategyTagline` and `strategy` in `deck.json` for decks that lack them.
+2. Warband `playstyle` in `warscroll.json` for OP-legal warbands that lack one (from the warscroll and `fighters.json`).
+3. Star ratings in `warband-rivals-pairings.json` for every OP-legal warband not yet rated against every universal deck, with a note on each 3-star rating. New decks are appended to `meta.deckOrder`, and the counts in `meta.description` are updated.
+4. Polish versions of all three: deck strategy in `deck.pl.json`, playstyle in `warscroll.pl.json`, and notes in `warband-rivals-pairings.pl.json` (only where the Polish file already exists; `translate` / `rivals:translate` create those).
+
+`warband-rivals-pairings.md` is a hand-written reference and is not updated.
 
 ## Project Structure
 
@@ -85,6 +111,7 @@ warband-rivals-pairings.pl.json  Polish per-pairing notes
 warband-rivals-pairings.md       Human-readable pairings reference
 scripts/            Data pipeline scripts (TypeScript)
   ai/               AI provider layer (Anthropic API, Claude CLI, fallback client)
+  lib/              Shared data paths/loaders and the status checks used by status and sync
 src/
   components/       React UI components
   data/             Pairings join layer (pairings.ts)

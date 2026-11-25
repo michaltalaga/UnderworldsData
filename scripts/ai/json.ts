@@ -13,14 +13,17 @@ function parseJsonSafe<T>(raw: string): T | null {
 }
 
 /**
- * Sends a text prompt that asks for JSON and parses the reply. If the reply is not
- * valid JSON, asks once more with `repairInstruction` and the broken reply attached.
+ * Sends a prompt that asks for JSON and parses the reply. If the reply is not valid
+ * JSON, asks once more with `repairInstruction` and the broken reply attached.
  */
 export async function completeJson<T>(
   ai: AiClient,
-  options: { prompt: string; maxTokens: number; repairInstruction: string },
+  options: { prompt: ChatMessage['content']; maxTokens: number; repairInstruction?: string },
 ): Promise<T> {
   const request: ChatMessage = { role: 'user', content: options.prompt };
+  const repairInstruction =
+    options.repairInstruction ??
+    'Your JSON output was invalid and failed to parse. Return the same content as valid JSON, with all quotes and special characters inside strings properly escaped. Return ONLY the fixed JSON.';
 
   const rawText = await ai.complete({ messages: [request], maxTokens: options.maxTokens });
   const parsed = parseJsonSafe<T>(rawText);
@@ -28,11 +31,7 @@ export async function completeJson<T>(
 
   console.log('(retrying with repair) ... ');
   const repairText = await ai.complete({
-    messages: [
-      request,
-      { role: 'assistant', content: rawText },
-      { role: 'user', content: options.repairInstruction },
-    ],
+    messages: [request, { role: 'assistant', content: rawText }, { role: 'user', content: repairInstruction }],
     maxTokens: options.maxTokens,
   });
   const repaired = parseJsonSafe<T>(repairText);

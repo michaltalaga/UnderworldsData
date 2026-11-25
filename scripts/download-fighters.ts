@@ -1,5 +1,5 @@
 import { readFileSync, existsSync, mkdirSync, writeFileSync, statSync } from 'fs';
-import { join } from 'path';
+import { join, relative } from 'path';
 
 interface WarbandMeta {
   slug: string;
@@ -16,14 +16,27 @@ interface DownloadEntry {
   bytes?: number;
 }
 
-const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
+const ROOT = join(import.meta.dirname, '..');
+const WARBANDS_DIR = join(ROOT, 'warbands');
+const SUMMARY_FILE = join(WARBANDS_DIR, 'fighters-download-summary.json');
 const BASE_URL = 'https://www.underworldsdb.com/cards/fighters';
 const PNG_MAGIC = Buffer.from([0x89, 0x50, 0x4e, 0x47]);
 const MIN_BYTES = 50_000;
 const CONCURRENCY = 4;
 
+const hasCard = (file: string) => existsSync(file) && statSync(file).size >= MIN_BYTES;
+
+function cardFiles(wb: WarbandMeta): string[] {
+  const files: string[] = [];
+  for (let n = 1; n <= wb.fighters; n++) {
+    for (const suffix of ['', '-inspired']) files.push(join(WARBANDS_DIR, wb.slug, 'fighters', `${n}${suffix}.png`));
+  }
+  return files;
+}
+
 async function downloadFighterImage(url: string, dest: string): Promise<DownloadEntry> {
-  const entry: DownloadEntry = { url, file: dest, status: 'error' };
+  // Repo-relative path, so the report is the same whichever checkout ran the download.
+  const entry: DownloadEntry = { url, file: relative(ROOT, dest).replaceAll('\\', '/'), status: 'error' };
   try {
     // Missing images answer with a redirect, not a 404 — never follow it.
     const res = await fetch(url, { redirect: 'manual' });
@@ -59,8 +72,8 @@ async function downloadWarband(wb: WarbandMeta): Promise<DownloadEntry[]> {
     for (const suffix of ['', '-inspired']) {
       const file = join(fightersDir, `${n}${suffix}.png`);
       const url = `${BASE_URL}/${wb.slug}-${n}${suffix}.png?v=1.14`;
-      if (existsSync(file) && statSync(file).size >= MIN_BYTES) {
-        entries.push({ url, file, status: 'ok', bytes: statSync(file).size });
+      if (hasCard(file)) {
+        entries.push({ url, file: relative(ROOT, file).replaceAll('\\', '/'), status: 'ok', bytes: statSync(file).size });
         continue;
       }
       entries.push(await downloadFighterImage(url, file));
@@ -73,23 +86,34 @@ async function downloadWarband(wb: WarbandMeta): Promise<DownloadEntry[]> {
 async function main() {
   const index: WarbandMeta[] = JSON.parse(readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'));
   const opWarbands = index.filter((wb) => wb.opLegal);
-  console.log(`Downloading fighter cards for ${opWarbands.length} OP-legal warbands (concurrency ${CONCURRENCY})\n`);
+  // Warbands with every card already downloaded are left alone, report files included.
+  const pending = opWarbands.filter((wb) => !cardFiles(wb).every(hasCard));
+  console.log(
+    `${opWarbands.length} OP-legal warbands, ${opWarbands.length - pending.length} complete. ` +
+      `Downloading fighter cards for ${pending.length} (concurrency ${CONCURRENCY})\n`,
+  );
+  if (pending.length === 0) return;
 
-  const summary: Record<string, { ok: number; missing: number; suspect: number; expected: number }> = {};
-  const queue = [...opWarbands];
+  type SummaryEntry = { ok: number; missing: number; suspect: number; expected: number };
+  const previous: Record<string, SummaryEntry> = existsSync(SUMMARY_FILE) ? JSON.parse(readFileSync(SUMMARY_FILE, 'utf8')) : {};
+  const updates: Record<string, SummaryEntry> = {};
+  const queue = [...pending];
   const workers = Array.from({ length: CONCURRENCY }, async () => {
     for (let wb = queue.shift(); wb; wb = queue.shift()) {
       const entries = await downloadWarband(wb);
       const ok = entries.filter((e) => e.status === 'ok').length;
       const missing = entries.filter((e) => e.status === 'missing' || e.status === 'error').length;
       const suspect = entries.filter((e) => e.status === 'suspect-small').length;
-      summary[wb.slug] = { ok, missing, suspect, expected: wb.fighters * 2 };
+      updates[wb.slug] = { ok, missing, suspect, expected: wb.fighters * 2 };
       console.log(`  ${wb.slug}: ${ok}/${wb.fighters * 2} ok${missing ? ` | ${missing} missing` : ''}${suspect ? ` | ${suspect} suspect` : ''}`);
     }
   });
   await Promise.all(workers);
 
-  writeFileSync(join(WARBANDS_DIR, 'fighters-download-summary.json'), JSON.stringify(summary, null, 2));
+  // Existing entries keep their place; new warbands are added at the end in index order.
+  const ordered = Object.fromEntries(pending.filter((wb) => updates[wb.slug]).map((wb) => [wb.slug, updates[wb.slug]]));
+  const summary = { ...previous, ...ordered };
+  writeFileSync(SUMMARY_FILE, JSON.stringify(summary, null, 2));
   const totalOk = Object.values(summary).reduce((s, v) => s + v.ok, 0);
   const totalExpected = Object.values(summary).reduce((s, v) => s + v.expected, 0);
   const incomplete = Object.entries(summary).filter(([, v]) => v.ok < v.expected);
