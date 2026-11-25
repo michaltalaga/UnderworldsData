@@ -1,6 +1,6 @@
 import { spawnSync } from 'child_process';
 import { join } from 'path';
-import { takeProviderOption } from './ai';
+import { takeAiOptions } from './ai';
 import { ROOT, readJson } from './lib/data';
 import { collectStatus, printStatus, scriptsWithGaps, type FixScript } from './lib/status';
 
@@ -9,6 +9,7 @@ import { collectStatus, printStatus, scriptsWithGaps, type FixScript } from './l
  *
  *   npm run sync                      fill every gap
  *   npm run sync -- --provider cli    force an AI provider for the AI steps
+ *   npm run sync -- --jobs 4          run up to 4 AI requests at once in each AI step (default 1)
  *   npm run sync -- --dry-run         show the gaps and the steps that would run
  *
  * The two discovery steps always run, because only they can find new warbands or
@@ -43,8 +44,9 @@ function scriptFile(script: FixScript): string {
   return join(ROOT, match[1]);
 }
 
-function runStep(step: Step, provider: string | undefined): boolean {
-  const args = [...(step.args ?? []), ...(step.ai && provider ? ['--provider', provider] : [])];
+function runStep(step: Step, provider: string | undefined, jobs: number): boolean {
+  const aiArgs = step.ai ? [...(provider ? ['--provider', provider] : []), '--jobs', String(jobs)] : [];
+  const args = [...(step.args ?? []), ...aiArgs];
   console.log(`\n>>> npm run ${step.script}${args.length ? ` -- ${args.join(' ')}` : ''}   (${step.why})`);
   const result = spawnSync(process.execPath, ['--import', 'tsx', scriptFile(step.script), ...args], {
     cwd: ROOT,
@@ -56,7 +58,7 @@ function runStep(step: Step, provider: string | undefined): boolean {
 }
 
 function main() {
-  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   // In PowerShell, npm.ps1 drops the `--` of `npm run sync -- --dry-run`, so npm takes
   // --dry-run as its own flag (and still runs the script): it arrives as npm_config_dry_run.
   const dryRun = args.includes('--dry-run') || process.env.npm_config_dry_run === 'true';
@@ -64,7 +66,7 @@ function main() {
   if (dryRun) {
     const gaps = scriptsWithGaps(collectStatus());
     printStatus(collectStatus());
-    console.log('  Steps that would run:');
+    console.log(`  Steps that would run (AI steps with ${jobs} job${jobs === 1 ? '' : 's'} in parallel):`);
     for (const step of STEPS) {
       if (step.always || gaps.has(step.script)) console.log(`    npm run ${step.script}   (${step.why})`);
     }
@@ -75,7 +77,7 @@ function main() {
   const failedSteps: string[] = [];
   for (const step of STEPS) {
     if (!step.always && !scriptsWithGaps(collectStatus()).has(step.script)) continue;
-    if (!runStep(step, provider)) failedSteps.push(step.script);
+    if (!runStep(step, provider, jobs)) failedSteps.push(step.script);
   }
 
   console.log('\n>>> Final status');

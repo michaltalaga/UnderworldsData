@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { AiClient, runJobs, takeAiOptions } from './ai';
 import { completeJson } from './ai/json';
 import { fighterCardFiles, isFile, loadWarbands, readJson, warbandFile, type WarbandMeta } from './lib/data';
 
@@ -167,7 +167,7 @@ function formatFighters(value: unknown, indent = 0, key?: string): string {
 }
 
 async function main() {
-  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   const filter = args[0]?.toLowerCase() ?? null;
 
   // Every warband, vaulted ones included: their fighter cards use the same layout.
@@ -189,31 +189,30 @@ async function main() {
 
   const example = readJson<{ fighters: Fighter[] }>(warbandFile(EXAMPLE_WARBAND, 'fighters.json')).fighters[0];
   const ai = await AiClient.create({ provider });
-  let success = 0;
-  let failed = 0;
 
-  for (const wb of ready) {
-    console.log(`\n  ${wb.name} (${wb.fighters} fighters)`);
-    const fighters: Fighter[] = [];
-    for (let index = 1; index <= wb.fighters; index++) {
-      process.stdout.write(`    fighter ${index} ... `);
-      try {
-        const fighter = await extractFighter(ai, wb, index, example);
-        fighters.push(fighter);
-        console.log(`OK (${fighter.name})`);
-      } catch (err) {
-        if (err instanceof NoProviderLeftError) throw err;
-        console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-      }
-    }
+  // One job per fighter, so a warband's fighters can run in parallel (--jobs). A warband's
+  // file is written as soon as its last fighter is in, and only if all of them succeeded.
+  const extracted = new Map<string, Fighter[]>(ready.map((wb) => [wb.slug, []]));
+  const tasks = ready.flatMap((wb) => Array.from({ length: wb.fighters }, (_, i) => ({ wb, index: i + 1 })));
+  console.log('');
+  await runJobs(tasks, jobs, ({ wb, index }) => `${wb.name}, fighter ${index}`, async ({ wb, index }) => {
+    const fighter = await extractFighter(ai, wb, index, example);
+    const fighters = extracted.get(wb.slug)!;
+    fighters.push(fighter);
     if (fighters.length === wb.fighters) {
+      fighters.sort((a, b) => a.index - b.index);
       writeFileSync(warbandFile(wb.slug, 'fighters.json'), `${formatFighters({ warband: wb.slug, fighters })}\n`);
-      success++;
-    } else {
-      console.log(`    Not written: ${wb.fighters - fighters.length} fighter(s) failed. Run again to retry.`);
-      failed++;
+      return `${fighter.name}; ${wb.name} complete, fighters.json written`;
     }
+    return fighter.name;
+  });
+
+  const incomplete = ready.filter((wb) => extracted.get(wb.slug)!.length < wb.fighters);
+  for (const wb of incomplete) {
+    console.log(`  ${wb.name}: not written, ${wb.fighters - extracted.get(wb.slug)!.length} fighter(s) failed. Run again to retry.`);
   }
+  const success = ready.length - incomplete.length;
+  const failed = incomplete.length;
 
   console.log(`\n  Done. Warbands written: ${success} | Failed: ${failed}`);
   if (failed > 0) process.exitCode = 1;

@@ -1,4 +1,4 @@
-import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { AiClient, runJobs, takeAiOptions } from './ai';
 import { completeJson } from './ai/json';
 import {
   PAIRINGS_FILE,
@@ -61,18 +61,14 @@ const shortDeckName = (deck: { name: string }) => deck.name.replace(/ Rivals Dec
 
 let ok = 0;
 let failed = 0;
+/** How many AI requests run at once (--jobs). */
+let jobs = 1;
 
-async function step(label: string, run: () => Promise<void>): Promise<void> {
-  process.stdout.write(`  ${label} ... `);
-  try {
-    await run();
-    console.log('OK');
-    ok++;
-  } catch (err) {
-    if (err instanceof NoProviderLeftError) throw err;
-    console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-    failed++;
-  }
+/** Runs one phase's items, up to `jobs` at a time, and adds up the results. */
+async function runPhase<T>(items: T[], label: (item: T) => string, run: (item: T) => Promise<void>): Promise<void> {
+  const result = await runJobs(items, jobs, label, run);
+  ok += result.ok;
+  failed += result.failed;
 }
 
 function requireText(value: unknown, field: string): string {
@@ -281,7 +277,9 @@ Return ONLY valid JSON, no markdown code fences or explanation.`;
 // ---------- main ----------
 
 async function main() {
-  const { provider } = takeProviderOption(process.argv.slice(2));
+  const options = takeAiOptions(process.argv.slice(2));
+  const { provider } = options;
+  jobs = options.jobs;
 
   const warbands = loadWarbands();
   const warbandsBySlug = new Map(warbands.map((wb) => [wb.slug, wb]));
@@ -292,20 +290,19 @@ async function main() {
   const pairings = readJson<PairingsFile>(PAIRINGS_FILE);
   const pairingsPl = readJson<PairingsPlFile>(PAIRINGS_PL_FILE);
 
-  let ai: AiClient | null = null;
-  const getAi = async () => (ai ??= await AiClient.create({ provider }));
+  // Created on first use (nothing may need AI), once even when parallel jobs ask at the same time.
+  let aiClient: Promise<AiClient> | null = null;
+  const getAi = () => (aiClient ??= AiClient.create({ provider }));
 
   // 1. Deck strategies
   console.log('\n  Deck strategies (EN)');
   const strategyExamples = allDecks.map(loadDeck).filter((d): d is RivalDeck => Boolean(d?.strategyTagline && d.strategy)).slice(0, 3);
   const decksNeedingStrategy = allDecks.map(loadDeck).filter((d): d is RivalDeck => Boolean(d && !(d.strategyTagline && d.strategy)));
   if (decksNeedingStrategy.length === 0) console.log('  none missing');
-  for (const deck of decksNeedingStrategy) {
-    await step(shortDeckName(deck), async () => {
-      const strategy = await generateDeckStrategy(await getAi(), deck, strategyExamples);
-      writeJson(deckFile(deck.slug, 'deck.json'), { ...deck, ...strategy });
-    });
-  }
+  await runPhase(decksNeedingStrategy, shortDeckName, async (deck) => {
+    const strategy = await generateDeckStrategy(await getAi(), deck, strategyExamples);
+    writeJson(deckFile(deck.slug, 'deck.json'), { ...deck, ...strategy });
+  });
 
   // 2. Warband playstyles (vaulted warbands also need their fighter stats: that is most of what they have)
   console.log('\n  Warband playstyles (EN)');
@@ -317,6 +314,7 @@ async function main() {
   // An OP-legal warband's playstyle goes into its warscroll.json, so that has to be extracted first.
   const needPlaystyle = warbands.filter((wb) => !readPlaystyle(wb, 'en') && (!wb.opLegal || isFile(playstyleFile(wb, 'en'))));
   if (needPlaystyle.length === 0) console.log('  none missing');
+  const playstyleJobs: { wb: WarbandMeta; rules: string }[] = [];
   for (const wb of needPlaystyle) {
     const rules = rulesFor(wb);
     const missing = !rules ? 'Grand Alliance warscrolls not extracted (run npm run extract)'
@@ -325,18 +323,20 @@ async function main() {
     if (missing) {
       console.log(`  ${wb.name} ... SKIP (${missing})`);
       failed++;
-      continue;
+    } else {
+      playstyleJobs.push({ wb, rules: rules! });
     }
-    await step(wb.name, async () => {
-      writePlaystyle(wb, 'en', await generatePlaystyle(await getAi(), wb, rules!, playstyleExamples));
-    });
   }
+  await runPhase(playstyleJobs, ({ wb }) => wb.name, async ({ wb, rules }) => {
+    writePlaystyle(wb, 'en', await generatePlaystyle(await getAi(), wb, rules, playstyleExamples));
+  });
 
   // 3. Ratings
   console.log('\n  Ratings');
   const decks = allDecks.filter((d) => pairableSlugs.has(d.slug)).map(loadDeck).filter((d): d is RivalDeck => Boolean(d?.strategy));
   const deckOrder = [...pairings.meta.deckOrder, ...decks.map((d) => d.slug).filter((slug) => !pairings.meta.deckOrder.includes(slug))];
   let ratingsChanged = deckOrder.length !== pairings.meta.deckOrder.length;
+  const ratingJobs: { wb: WarbandMeta; playstyle: string; rules: string; unrated: RivalDeck[]; needNote: RivalDeck[] }[] = [];
   let anyRatingWork = false;
   for (const wb of warbands) {
     const playstyle = readPlaystyle(wb, 'en');
@@ -351,18 +351,30 @@ async function main() {
       failed++;
       continue;
     }
-    await step(`${wb.name} (${unrated.length} decks to rate${needNote.length ? `, ${needNote.length} notes` : ''})`, async () => {
-      const results = await generateRatings(await getAi(), wb, playstyle, rules, pairings, decks, unrated, needNote, warbandsBySlug);
-      for (const result of results) {
-        const existing = pairings.ratings.find((r) => r.warband === result.warband && r.deck === result.deck);
-        if (existing) existing.note = result.note;
-        else pairings.ratings.push(result);
-      }
-      ratingsChanged = true;
-    });
+    ratingJobs.push({ wb, playstyle, rules, unrated, needNote });
   }
   if (!anyRatingWork) console.log('  none missing');
-  if (ratingsChanged) {
+  try {
+    // Parallel jobs calibrate against the ratings that existed when the phase started.
+    await runPhase(
+      ratingJobs,
+      ({ wb, unrated, needNote }) => `${wb.name} (${unrated.length} decks to rate${needNote.length ? `, ${needNote.length} notes` : ''})`,
+      async ({ wb, playstyle, rules, unrated, needNote }) => {
+        const results = await generateRatings(await getAi(), wb, playstyle, rules, pairings, decks, unrated, needNote, warbandsBySlug);
+        for (const result of results) {
+          const existing = pairings.ratings.find((r) => r.warband === result.warband && r.deck === result.deck);
+          if (existing) existing.note = result.note;
+          else pairings.ratings.push(result);
+        }
+        ratingsChanged = true;
+      },
+    );
+  } finally {
+    // Saved even when the run stops on a provider failure, so finished ratings are kept.
+    if (ratingsChanged) saveRatings();
+  }
+
+  function saveRatings() {
     pairings.meta.deckOrder = deckOrder;
     pairings.ratings = sortRatings(pairings.ratings, warbands, deckOrder);
     const rated = [...new Set(pairings.ratings.map((r) => r.warband))].map((slug) => warbandsBySlug.get(slug));
@@ -390,21 +402,20 @@ async function main() {
     if (deck) examples.push({ en: deck.strategyTagline!, pl: readJson<RivalDeck>(deckFile(deck.slug, 'deck.pl.json')).strategyTagline! });
     return examples;
   })();
-  let anyPolishWork = false;
-
+  const deckJobs: { meta: RivalDeckMeta; en: RivalDeck; pl: Record<string, unknown> }[] = [];
   for (const meta of allDecks) {
     const en = loadDeck(meta);
-    const plPath = deckFile(meta.slug, 'deck.pl.json');
-    const pl = readJsonIfExists<Record<string, unknown>>(plPath);
+    const pl = readJsonIfExists<Record<string, unknown>>(deckFile(meta.slug, 'deck.pl.json'));
     if (!en?.strategyTagline || !en.strategy || !pl || (pl.strategyTagline && pl.strategy)) continue;
-    anyPolishWork = true;
-    await step(`${shortDeckName(meta)} strategy`, async () => {
-      const translated = await translateFields(await getAi(), { strategyTagline: en.strategyTagline!, strategy: en.strategy! }, plExamples);
-      writeJson(plPath, { ...pl, ...translated });
-    });
+    deckJobs.push({ meta, en, pl });
   }
+  await runPhase(deckJobs, ({ meta }) => `${shortDeckName(meta)} strategy`, async ({ meta, en, pl }) => {
+    const translated = await translateFields(await getAi(), { strategyTagline: en.strategyTagline!, strategy: en.strategy! }, plExamples);
+    writeJson(deckFile(meta.slug, 'deck.pl.json'), { ...pl, ...translated });
+  });
 
   const plNoteKeys = new Set(pairingsPl.ratings.map((r) => `${r.warband}|${r.deck}`));
+  const warbandJobs: { wb: WarbandMeta; fields: Record<string, string> }[] = [];
   for (const wb of warbands) {
     const enPlaystyle = readPlaystyle(wb, 'en');
     // An OP-legal warband's Polish playstyle goes into warscroll.pl.json, which `translate` creates;
@@ -415,23 +426,23 @@ async function main() {
     for (const r of pairings.ratings.filter((r) => r.warband === wb.slug && r.note && !plNoteKeys.has(`${r.warband}|${r.deck}`))) {
       fields[`note:${r.deck}`] = r.note!;
     }
-    if (Object.keys(fields).length === 0) continue;
-    anyPolishWork = true;
-    await step(`${wb.name} (${Object.keys(fields).join(', ')})`, async () => {
-      const translated = await translateFields(await getAi(), fields, plExamples);
-      if (translated.playstyle) writePlaystyle(wb, 'pl', translated.playstyle);
-      const notes = Object.entries(translated).filter(([key]) => key.startsWith('note:'));
-      if (notes.length) {
-        for (const [key, note] of notes) pairingsPl.ratings.push({ warband: wb.slug, deck: key.slice('note:'.length), note });
-        const enOrder = new Map(pairings.ratings.map((r, i) => [`${r.warband}|${r.deck}`, i]));
-        pairingsPl.ratings.sort(
-          (a, b) => (enOrder.get(`${a.warband}|${a.deck}`) ?? Infinity) - (enOrder.get(`${b.warband}|${b.deck}`) ?? Infinity),
-        );
-        writeJson(PAIRINGS_PL_FILE, pairingsPl);
-      }
-    });
+    if (Object.keys(fields).length > 0) warbandJobs.push({ wb, fields });
   }
-  if (!anyPolishWork) console.log('  none missing');
+  if (deckJobs.length + warbandJobs.length === 0) console.log('  none missing');
+  // The whole Polish notes file is rewritten after each warband, so it is always complete on disk.
+  await runPhase(warbandJobs, ({ wb, fields }) => `${wb.name} (${Object.keys(fields).join(', ')})`, async ({ wb, fields }) => {
+    const translated = await translateFields(await getAi(), fields, plExamples);
+    if (translated.playstyle) writePlaystyle(wb, 'pl', translated.playstyle);
+    const notes = Object.entries(translated).filter(([key]) => key.startsWith('note:'));
+    if (notes.length) {
+      for (const [key, note] of notes) pairingsPl.ratings.push({ warband: wb.slug, deck: key.slice('note:'.length), note });
+      const enOrder = new Map(pairings.ratings.map((r, i) => [`${r.warband}|${r.deck}`, i]));
+      pairingsPl.ratings.sort(
+        (a, b) => (enOrder.get(`${a.warband}|${a.deck}`) ?? Infinity) - (enOrder.get(`${b.warband}|${b.deck}`) ?? Infinity),
+      );
+      writeJson(PAIRINGS_PL_FILE, pairingsPl);
+    }
+  });
 
   console.log(`\n  Done. Success: ${ok} | Failed: ${failed}`);
   if (failed > 0) process.exitCode = 1;

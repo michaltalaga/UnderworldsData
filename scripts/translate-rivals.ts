@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { AiClient, runJobs, takeAiOptions } from './ai';
 import { completeJson } from './ai/json';
 
 interface RivalCard {
@@ -106,7 +106,7 @@ function validateTranslation(deck: RivalDeck, translated: RivalDeckTranslation) 
 }
 
 async function main() {
-  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   const filter = args[0] ?? null;
 
   const pending: RivalDeck[] = [];
@@ -145,31 +145,17 @@ async function main() {
 
   const ai = await AiClient.create({ provider });
 
-  let success = 0;
-  let failed = 0;
+  const { ok, failed } = await runJobs(selected, jobs, (deck) => deck.name, async (deck) => {
+    const translated = await translateDeck(ai, deck);
+    validateTranslation(deck, translated);
 
-  for (const deck of selected) {
-    process.stdout.write(`  ${deck.name} ... `);
+    writeFileSync(
+      join(RIVALS_DIR, deck.slug, 'deck.pl.json'),
+      JSON.stringify(translated, null, 2),
+    );
+  });
 
-    try {
-      const translated = await translateDeck(ai, deck);
-      validateTranslation(deck, translated);
-
-      writeFileSync(
-        join(RIVALS_DIR, deck.slug, 'deck.pl.json'),
-        JSON.stringify(translated, null, 2),
-      );
-
-      console.log('OK');
-      success++;
-    } catch (error) {
-      if (error instanceof NoProviderLeftError) throw error;
-      console.log(`FAILED: ${error instanceof Error ? error.message : error}`);
-      failed++;
-    }
-  }
-
-  console.log(`\nDone. Success: ${success} | Failed: ${failed}`);
+  console.log(`\nDone. Success: ${ok} | Failed: ${failed}`);
 }
 
 main().catch((error) => {

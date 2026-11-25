@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { AiClient, runJobs, takeAiOptions } from './ai';
 
 interface WarbandMeta {
   slug: string;
@@ -98,7 +98,7 @@ function sanitizeAndParse(raw: string): Record<string, unknown> {
   return JSON.parse(sanitized);
 }
 
-async function extractGaWarscrolls(ai: AiClient) {
+async function extractGaWarscrolls(ai: AiClient, jobs: number) {
   mkdirSync(GA_DIR, { recursive: true });
 
   const pending: { key: string; alliance: string; variant: number }[] = [];
@@ -124,12 +124,7 @@ async function extractGaWarscrolls(ai: AiClient) {
     return;
   }
 
-  let success = 0;
-  let failed = 0;
-
-  for (const { key, alliance, variant } of pending) {
-    process.stdout.write(`  ${key} ... `);
-
+  const { ok, failed } = await runJobs(pending, jobs, (p) => p.key, async ({ key, alliance, variant }) => {
     const localImage = join(GA_DIR, `${key}.png`);
     let imageData: Buffer | null = null;
 
@@ -143,41 +138,29 @@ async function extractGaWarscrolls(ai: AiClient) {
       }
     }
 
-    if (!imageData || imageData.length < 1000) {
-      console.log('SKIP (no image or too small)');
-      failed++;
-      continue;
-    }
+    if (!imageData || imageData.length < 1000) throw new Error('no image or too small');
 
-    try {
-      const meta: WarbandMeta = { slug: key, name: key, fighters: 0, opLegal: false, grandAlliance: alliance };
-      const raw = await extractWarscroll(ai, imageData, meta);
-      const data = sanitizeAndParse(raw);
+    const meta: WarbandMeta = { slug: key, name: key, fighters: 0, opLegal: false, grandAlliance: alliance };
+    const raw = await extractWarscroll(ai, imageData, meta);
+    const data = sanitizeAndParse(raw);
 
-      data.id = key;
-      data.grandAlliance = alliance;
+    data.id = key;
+    data.grandAlliance = alliance;
 
-      writeFileSync(join(GA_DIR, `${key}.json`), JSON.stringify(data, null, 2));
-      console.log('OK');
-      success++;
-    } catch (err) {
-      if (err instanceof NoProviderLeftError) throw err;
-      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-      failed++;
-    }
-  }
+    writeFileSync(join(GA_DIR, `${key}.json`), JSON.stringify(data, null, 2));
+  });
 
-  console.log(`\n  GA done. Success: ${success} | Failed: ${failed}`);
+  console.log(`\n  GA done. Success: ${ok} | Failed: ${failed}`);
 }
 
 async function main() {
-  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   const batchSize = parseInt(args[0] || '5', 10);
 
   const ai = await AiClient.create({ provider });
 
   // Extract GA warscrolls first
-  await extractGaWarscrolls(ai);
+  await extractGaWarscrolls(ai, jobs);
 
   const index: WarbandMeta[] = JSON.parse(
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
@@ -204,12 +187,7 @@ async function main() {
   const batch = pending.slice(0, batchSize);
   console.log(`  Processing batch of ${batch.length}...\n`);
 
-  let success = 0;
-  let failed = 0;
-
-  for (const meta of batch) {
-    process.stdout.write(`  ${meta.name} ... `);
-
+  const { ok, failed } = await runJobs(batch, jobs, (meta) => meta.name, async (meta) => {
     const wbDir = join(WARBANDS_DIR, meta.slug);
     mkdirSync(wbDir, { recursive: true });
 
@@ -226,35 +204,22 @@ async function main() {
       }
     }
 
-    if (!imageData || imageData.length < 1000) {
-      console.log('SKIP (no image or too small)');
-      failed++;
-      continue;
-    }
+    if (!imageData || imageData.length < 1000) throw new Error('no image or too small');
 
-    try {
-      const raw = await extractWarscroll(ai, imageData, meta);
-      const data = sanitizeAndParse(raw);
+    const raw = await extractWarscroll(ai, imageData, meta);
+    const data = sanitizeAndParse(raw);
 
-      data.id = meta.slug;
-      data.grandAlliance = meta.grandAlliance;
+    data.id = meta.slug;
+    data.grandAlliance = meta.grandAlliance;
 
-      writeFileSync(
-        join(wbDir, 'warscroll.json'),
-        JSON.stringify(data, null, 2),
-      );
-
-      console.log('OK');
-      success++;
-    } catch (err) {
-      if (err instanceof NoProviderLeftError) throw err;
-      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-      failed++;
-    }
-  }
+    writeFileSync(
+      join(wbDir, 'warscroll.json'),
+      JSON.stringify(data, null, 2),
+    );
+  });
 
   const remaining = pending.length - batch.length;
-  console.log(`\n  Batch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
+  console.log(`\n  Batch done. Success: ${ok} | Failed: ${failed} | Still remaining: ${remaining}`);
   if (remaining > 0) {
     console.log('  Run this script again to process the next batch.');
   }

@@ -50,6 +50,14 @@ export class ProviderFailure extends Error {
   }
 }
 
+/** Every provider has failed, so the rest of the run cannot succeed either. Scripts stop on it. */
+export class NoProviderLeftError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'NoProviderLeftError';
+  }
+}
+
 export function toContentParts(content: ChatMessage['content']): ContentPart[] {
   return typeof content === 'string' ? [{ type: 'text', text: content }] : content;
 }

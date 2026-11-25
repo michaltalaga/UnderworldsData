@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
-import { AiClient, NoProviderLeftError, takeProviderOption } from './ai';
+import { AiClient, runJobs, takeAiOptions } from './ai';
 import { completeJson } from './ai/json';
 
 const WARBANDS_DIR = join(import.meta.dirname, '..', 'warbands');
@@ -56,7 +56,7 @@ async function translateWarscroll(
   });
 }
 
-async function translateGaWarscrolls(ai: AiClient) {
+async function translateGaWarscrolls(ai: AiClient, jobs: number) {
   if (!existsSync(GA_DIR)) return;
 
   const alliances = ['chaos', 'death', 'destruction', 'order'];
@@ -90,41 +90,28 @@ async function translateGaWarscrolls(ai: AiClient) {
     return;
   }
 
-  let success = 0;
-  let failed = 0;
+  const label = ({ key, data }: (typeof pending)[number]) => (data as { name?: string }).name ?? key;
+  const { ok, failed } = await runJobs(pending, jobs, label, async ({ key, data }) => {
+    const translated = await translateWarscroll(ai, data);
 
-  for (const { key, data } of pending) {
-    const name = (data as { name?: string }).name ?? key;
-    process.stdout.write(`  ${name} ... `);
-
-    try {
-      const translated = await translateWarscroll(ai, data);
-
-      if (!translated.inspire && !translated.abilities) {
-        throw new Error('Invalid structure in response');
-      }
-
-      writeFileSync(join(GA_DIR, `${key}.pl.json`), JSON.stringify(translated, null, 2));
-      console.log('OK');
-      success++;
-    } catch (err) {
-      if (err instanceof NoProviderLeftError) throw err;
-      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-      failed++;
+    if (!translated.inspire && !translated.abilities) {
+      throw new Error('Invalid structure in response');
     }
-  }
 
-  console.log(`\n  GA done. Success: ${success} | Failed: ${failed}`);
+    writeFileSync(join(GA_DIR, `${key}.pl.json`), JSON.stringify(translated, null, 2));
+  });
+
+  console.log(`\n  GA done. Success: ${ok} | Failed: ${failed}`);
 }
 
 async function main() {
-  const { provider, args } = takeProviderOption(process.argv.slice(2));
+  const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   const batchSize = parseInt(args[0] || '5', 10);
 
   const ai = await AiClient.create({ provider });
 
   // Translate GA warscrolls first
-  await translateGaWarscrolls(ai);
+  await translateGaWarscrolls(ai, jobs);
 
   // Find warband folders with warscroll.json but no warscroll.pl.json (skip _ga)
   const entries = readdirSync(WARBANDS_DIR);
@@ -162,35 +149,22 @@ async function main() {
   const batch = pending.slice(0, batchSize);
   console.log(`  Processing batch of ${batch.length}...\n`);
 
-  let success = 0;
-  let failed = 0;
+  const label = ({ slug, data }: (typeof batch)[number]) => (data as { name?: string }).name ?? slug;
+  const { ok, failed } = await runJobs(batch, jobs, label, async ({ slug, data }) => {
+    const translated = await translateWarscroll(ai, data);
 
-  for (const { slug, data } of batch) {
-    const name = (data as { name?: string }).name ?? slug;
-    process.stdout.write(`  ${name} ... `);
-
-    try {
-      const translated = await translateWarscroll(ai, data);
-
-      if (!translated.inspire && !translated.abilities) {
-        throw new Error('Invalid structure in response');
-      }
-
-      writeFileSync(
-        join(WARBANDS_DIR, slug, 'warscroll.pl.json'),
-        JSON.stringify(translated, null, 2),
-      );
-      console.log('OK');
-      success++;
-    } catch (err) {
-      if (err instanceof NoProviderLeftError) throw err;
-      console.log(`FAILED: ${err instanceof Error ? err.message : err}`);
-      failed++;
+    if (!translated.inspire && !translated.abilities) {
+      throw new Error('Invalid structure in response');
     }
-  }
+
+    writeFileSync(
+      join(WARBANDS_DIR, slug, 'warscroll.pl.json'),
+      JSON.stringify(translated, null, 2),
+    );
+  });
 
   const remaining = pending.length - batch.length;
-  console.log(`\n  Batch done. Success: ${success} | Failed: ${failed} | Still remaining: ${remaining}`);
+  console.log(`\n  Batch done. Success: ${ok} | Failed: ${failed} | Still remaining: ${remaining}`);
   if (remaining > 0) {
     console.log('  Run this script again to process the next batch.');
   }

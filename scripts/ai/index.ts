@@ -1,16 +1,17 @@
 import { AnthropicApiProvider } from './anthropic-api';
 import { ClaudeCliProvider } from './claude-cli';
-import { PROVIDER_IDS, ProviderFailure, type AiProvider, type CompletionRequest, type ProviderId } from './types';
+import { takeJobsOption } from './jobs';
+import {
+  NoProviderLeftError,
+  PROVIDER_IDS,
+  ProviderFailure,
+  type AiProvider,
+  type CompletionRequest,
+  type ProviderId,
+} from './types';
 
 export * from './types';
-
-/** Every provider has failed, so the rest of the run cannot succeed either. Scripts stop on it. */
-export class NoProviderLeftError extends Error {
-  constructor(message: string) {
-    super(message);
-    this.name = 'NoProviderLeftError';
-  }
-}
+export { runJobs } from './jobs';
 
 /** Providers in fallback order: the first usable one wins. */
 function createProviders(): AiProvider[] {
@@ -24,6 +25,8 @@ function createProviders(): AiProvider[] {
  */
 export class AiClient {
   private index = -1;
+  /** The switch to the next provider in progress, shared by every request that saw the old one fail. */
+  private switching: Promise<boolean> | null = null;
 
   private constructor(private readonly providers: AiProvider[]) {}
 
@@ -43,17 +46,34 @@ export class AiClient {
 
   async complete(request: CompletionRequest): Promise<string> {
     for (;;) {
-      const provider = this.providers[this.index];
+      if (this.switching) await this.switching;
+      const index = this.index;
+      const provider = this.providers[index];
+      if (!provider) throw new NoProviderLeftError('no AI provider left to fall back to');
       try {
         return await provider.complete(request);
       } catch (err) {
         if (!(err instanceof ProviderFailure)) throw err;
-        console.log(`\n  ! ${provider.label} failed: ${err.message}`);
-        if (!(await this.advance())) {
+        if (!(await this.switchFrom(index, `${provider.label} failed: ${err.message}`))) {
           throw new NoProviderLeftError(`no AI provider left to fall back to (${provider.label}: ${err.message})`);
         }
       }
     }
+  }
+
+  /**
+   * Moves past the provider at `index` after it failed. With parallel requests several can
+   * see the same provider fail; only the first one switches, and the rest wait for that
+   * switch (or find it already done) and retry on whichever provider it settled on.
+   */
+  private switchFrom(index: number, reason: string): Promise<boolean> {
+    if (this.switching) return this.switching;
+    if (this.index !== index) return Promise.resolve(this.index < this.providers.length);
+    console.log(`\n  ! ${reason}`);
+    this.switching = this.advance().finally(() => {
+      this.switching = null;
+    });
+    return this.switching;
   }
 
   /** Moves to the next usable provider. Returns false when none is left. */
@@ -69,6 +89,16 @@ export class AiClient {
     }
     return false;
   }
+}
+
+/**
+ * Pulls the options every AI script takes out of its arguments: `--provider <api|cli>` (see
+ * takeProviderOption) and `--jobs <n>`, how many AI requests may run at once (default 1).
+ */
+export function takeAiOptions(argv: string[]): { provider?: ProviderId; jobs: number; args: string[] } {
+  const { provider, args: rest } = takeProviderOption(argv);
+  const { jobs, args } = takeJobsOption(rest);
+  return { provider, jobs, args };
 }
 
 /**
@@ -100,11 +130,12 @@ export function takeProviderOption(argv: string[]): { provider?: ProviderId; arg
  * In PowerShell, npm.ps1 drops the `--` of `npm run x -- --provider cli`, so npm takes the
  * flag as its own config instead of passing it on: `--provider=cli` arrives as
  * npm_config_provider=cli, and `--provider cli` as npm_config_provider=true with "cli"
- * left as the first argument (taken out of `args` here).
+ * left among the plain arguments (taken out of `args` here).
  */
 function providerFromNpmConfig(args: string[]): string | undefined {
   const npmValue = process.env.npm_config_provider;
   if (!npmValue) return undefined;
   if (npmValue !== 'true') return npmValue;
-  return PROVIDER_IDS.includes(args[0] as ProviderId) ? args.shift() : undefined;
+  const at = args.findIndex((arg) => PROVIDER_IDS.includes(arg as ProviderId));
+  return at >= 0 ? args.splice(at, 1)[0] : undefined;
 }

@@ -22,9 +22,9 @@ These scripts handle downloading, extracting, translating, and syncing game data
 
 ### `npm run sync`
 
-Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` is passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them.
+Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` and `--jobs N` are passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them. For example, `npm run sync -- --jobs 4` runs up to 4 AI requests at once in each AI step (default 1). The steps themselves still run one after another, since each builds on the one before.
 
-In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm reads the flag as its own option. The scripts read `--dry-run` and `--provider` back from npm's config in that case, so the same commands work in PowerShell, cmd and bash.
+In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm reads the flag as its own option. The scripts read `--dry-run`, `--provider` and `--jobs` back from npm's config in that case, so the same commands work in PowerShell, cmd and bash.
 
 ### AI providers
 
@@ -35,7 +35,9 @@ In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm r
 
 If the provider in use stops working during a run (key rejected, credit balance too low, rate limited, service down, CLI logged out or at its usage limit), the card being processed is retried on the next provider, which handles the rest of the run. If no provider is left, the script stops with an error.
 
-To skip detection and use one provider only, pass `--provider api|cli` or set `AI_PROVIDER`, for example `npm run extract -- --provider cli 10`. `CLAUDE_CLI_PATH` overrides the `claude` command, and `CLAUDE_CLI_TIMEOUT_MS` the per-call timeout (default 10 minutes).
+To skip detection and use one provider only, pass `--provider api|cli` or set `AI_PROVIDER`, for example `npm run extract -- --provider cli 10`.
+
+Every AI script also takes `--jobs N` (or `AI_JOBS`): how many AI requests it runs at once, default 1. With more than one job, each result line is printed when its item finishes, and the order of items varies. When the provider in use fails, all running requests move to the next provider together. On the API, more jobs means more requests per minute; the client retries rate-limited (429) requests with backoff before counting them as a provider failure. In PowerShell, for a script with its own number argument (`extract`, `translate`), put `--jobs N` before that number (`npm run extract -- --jobs 4 10`) or write `--jobs=4`. `CLAUDE_CLI_PATH` overrides the `claude` command, and `CLAUDE_CLI_TIMEOUT_MS` the per-call timeout (default 10 minutes).
 
 ### `npm run status`
 

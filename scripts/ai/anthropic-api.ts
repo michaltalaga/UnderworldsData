@@ -45,7 +45,9 @@ export class AnthropicApiProvider implements AiProvider {
   }
 
   private getClient(): Anthropic {
-    this.client ??= new Anthropic();
+    // More retries than the SDK's default 2, so a short burst of 429s from parallel jobs
+    // (--jobs) is waited out instead of counting as the provider failing.
+    this.client ??= new Anthropic({ maxRetries: 5 });
     return this.client;
   }
 }
