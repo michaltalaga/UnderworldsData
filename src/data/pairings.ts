@@ -68,11 +68,11 @@ export function deckRatingsForWarband(slug: string, language: Language): DeckRat
   return out;
 }
 
-/** All OP-legal warband ratings for a deck (slug), strongest first. */
+/** All warband ratings for a deck (slug), vaulted warbands included, strongest first. */
 export function warbandRatingsForDeck(slug: string, language: Language): WarbandRatingForDeck[] {
   const out: WarbandRatingForDeck[] = [];
   for (const warband of warbands) {
-    if (!warband.opLegal || !starsByKey.has(`${warband.slug}|${slug}`)) continue;
+    if (!starsByKey.has(`${warband.slug}|${slug}`)) continue;
     out.push({
       warband: warband.slug,
       stars: ratingStars(warband.slug, slug),
@@ -87,7 +87,7 @@ export function warbandRatingsForDeck(slug: string, language: Language): Warband
   return out;
 }
 
-/** True if the warband slug has pairing ratings (i.e. is OP-legal and present). */
+/** True if the warband slug has pairing ratings. */
 export function hasPairingsForWarband(slug: string): boolean {
-  return starsByKey.has(`${slug}|${deckOrder[0]}`);
+  return deckOrder.some((deck) => starsByKey.has(`${slug}|${deck}`));
 }

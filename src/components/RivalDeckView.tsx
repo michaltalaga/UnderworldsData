@@ -115,6 +115,9 @@ export function RivalDeckView({ deck, language }: Props) {
                           : <span className={`ga-dot ${rating.warbandMeta.grandAlliance}`} aria-hidden="true" />}
                         <span className="pairing-name">{rating.warbandMeta.name}</span>
                         <span className="pairing-fighters">{rating.warbandMeta.fighters}</span>
+                        {!rating.warbandMeta.opLegal && (
+                          <span className="vaulted-tag" title={t('vaultedHint', language)}>{t('vaulted', language)}</span>
+                        )}
                       </a>
                       {rating.note && <span className="pairing-note">{rating.note}</span>}
                     </li>

@@ -4,13 +4,18 @@ import {
   PAIRINGS_FILE,
   PAIRINGS_PL_FILE,
   deckFile,
+  gaWarscrollFiles,
+  isFile,
   loadDeckIndex,
   loadPairableDecks,
   loadWarbands,
+  playstyleFile,
   readJson,
   readJsonIfExists,
+  readPlaystyle,
   warbandFile,
   writeJson,
+  writePlaystyle,
   type PairingsFile,
   type PairingsPlFile,
   type Rating,
@@ -22,10 +27,12 @@ import {
 /**
  * Fills every gap in the pairings feature:
  *   1. deck strategy (strategyTagline + strategy) in rivals/<deck>/deck.json
- *   2. warband playstyle in warbands/<slug>/warscroll.json
+ *   2. warband playstyle in warbands/<slug>/warscroll.json (OP-legal) or playstyle.json (vaulted)
  *   3. star ratings (+ notes for 3-star fits) in warband-rivals-pairings.json
- *   4. Polish versions of all three, where the Polish file already exists
- * Generated text is calibrated against the existing hand-written entries.
+ *   4. Polish versions of all three
+ * Every warband is covered, vaulted ones included: they are judged on their fighters and
+ * their Grand Alliance's two warscrolls. Generated text is calibrated against the existing
+ * hand-written entries.
  */
 
 interface Warscroll {
@@ -117,7 +124,25 @@ function warscrollRules(warscroll: Warscroll): string {
   return JSON.stringify({ inspire, reactions, abilities });
 }
 
-async function generatePlaystyle(ai: AiClient, wb: WarbandMeta, warscroll: Warscroll, examples: { wb: WarbandMeta; playstyle: string }[]) {
+/**
+ * The warscroll rules a warband plays with, for the prompts: its own warscroll, or for a
+ * vaulted warband both of its Grand Alliance's warscrolls. Null when they are not extracted yet.
+ */
+function rulesFor(wb: WarbandMeta): string | null {
+  if (wb.opLegal) {
+    const warscroll = readJsonIfExists<Warscroll>(warbandFile(wb.slug, 'warscroll.json'));
+    return warscroll ? warscrollRules(warscroll) : null;
+  }
+  const variants = gaWarscrollFiles(wb).map((path) => readJsonIfExists<Warscroll>(path));
+  if (variants.some((v) => !v)) return null;
+  return (
+    `This is a vaulted (not OP-legal) warband with no warscroll of its own: it plays with one of the two generic ` +
+    `${wb.grandAlliance} Grand Alliance warscrolls, chosen when the warband is picked, so judge it mainly on its fighters. ` +
+    variants.map((v, i) => `Variant ${i + 1}: ${warscrollRules(v!)}`).join(' ')
+  );
+}
+
+async function generatePlaystyle(ai: AiClient, wb: WarbandMeta, rules: string, examples: { wb: WarbandMeta; playstyle: string }[]) {
   const prompt = `You are writing a playstyle summary of a Warhammer Underworlds (Embergard) warband for a warband-to-Rivals-deck compatibility guide.
 
 Existing summaries, for style and length:
@@ -129,7 +154,7 @@ Grand Alliance: ${wb.grandAlliance}
 Fighters: ${wb.fighters}
 Fighter stats (uninspired side):
 ${describeFighters(wb.slug)}
-Warscroll rules: ${warscrollRules(warscroll)}
+Warscroll rules: ${rules}
 
 Write 3-4 sentences (60-90 words) covering model count, durability and mobility, the signature mechanics, and how the warband wins games. Do not mention specific Rivals decks or ratings.
 Return JSON: {"playstyle": "<text>"}
@@ -143,7 +168,8 @@ Return ONLY valid JSON, no markdown code fences or explanation.`;
 async function generateRatings(
   ai: AiClient,
   wb: WarbandMeta,
-  warscroll: Warscroll,
+  playstyle: string,
+  rules: string,
   pairings: PairingsFile,
   decks: RivalDeck[],
   unrated: RivalDeck[],
@@ -159,11 +185,12 @@ async function generateRatings(
   const calibration = [...new Set(pairings.ratings.map((r) => r.warband))]
     .map((slug) => {
       const other = warbandsBySlug.get(slug);
-      const playstyle = readJsonIfExists<Warscroll>(warbandFile(slug, 'warscroll.json'))?.playstyle ?? '';
+      const otherPlaystyle = (other && readPlaystyle(other, 'en')) ?? '';
       const own = pairings.ratings.filter((r) => r.warband === slug);
       const stars = own.map((r) => `${codeBySlug.get(r.deck) ?? r.deck}:${r.stars}`).join(' ');
       const notes = own.filter((r) => r.note).map((r) => `${codeBySlug.get(r.deck) ?? r.deck}: ${r.note}`).join(' | ');
-      return `${other?.name ?? slug} (${other?.fighters ?? '?'} fighters): ${playstyle}\n  ratings: ${stars}\n  3-star notes: ${notes || 'none'}`;
+      const vaulted = other && !other.opLegal ? ', vaulted' : '';
+      return `${other?.name ?? slug} (${other?.fighters ?? '?'} fighters${vaulted}): ${otherPlaystyle}\n  ratings: ${stars}\n  3-star notes: ${notes || 'none'}`;
     })
     .join('\n');
 
@@ -184,10 +211,10 @@ Warband to rate:
 Name: ${wb.name}
 Grand Alliance: ${wb.grandAlliance}
 Fighters: ${wb.fighters}
-Playstyle: ${warscroll.playstyle}
+Playstyle: ${playstyle}
 Fighter stats (uninspired side):
 ${describeFighters(wb.slug)}
-Warscroll rules: ${warscrollRules(warscroll)}
+Warscroll rules: ${rules}
 
 Rate the warband for these decks: ${unrated.map((d) => d.slug).join(', ') || 'none'}.
 ${needNote.length ? `The warband is already rated 3 stars for these decks; return them with "stars": 3 and a note: ${needNote.map((d) => d.slug).join(', ')}.\n` : ''}
@@ -280,24 +307,28 @@ async function main() {
     });
   }
 
-  // 2. Warband playstyles
+  // 2. Warband playstyles (vaulted warbands also need their fighter stats: that is most of what they have)
   console.log('\n  Warband playstyles (EN)');
   const playstyleExamples = op
-    .map((wb) => ({ wb, playstyle: readJsonIfExists<Warscroll>(warbandFile(wb.slug, 'warscroll.json'))?.playstyle }))
+    .map((wb) => ({ wb, playstyle: readPlaystyle(wb, 'en') }))
     .filter((e): e is { wb: WarbandMeta; playstyle: string } => Boolean(e.playstyle))
     .filter((e, i, all) => all.findIndex((x) => x.wb.fighters === e.wb.fighters) === i)
     .slice(0, 4);
-  const needPlaystyle = op.filter((wb) => {
-    const ws = readJsonIfExists<Warscroll>(warbandFile(wb.slug, 'warscroll.json'));
-    return ws && !ws.playstyle;
-  });
+  // An OP-legal warband's playstyle goes into its warscroll.json, so that has to be extracted first.
+  const needPlaystyle = warbands.filter((wb) => !readPlaystyle(wb, 'en') && (!wb.opLegal || isFile(playstyleFile(wb, 'en'))));
   if (needPlaystyle.length === 0) console.log('  none missing');
   for (const wb of needPlaystyle) {
+    const rules = rulesFor(wb);
+    const missing = !rules ? 'Grand Alliance warscrolls not extracted (run npm run extract)'
+      : !wb.opLegal && !isFile(warbandFile(wb.slug, 'fighters.json')) ? 'no fighter stats (run npm run extract:fighters)'
+      : null;
+    if (missing) {
+      console.log(`  ${wb.name} ... SKIP (${missing})`);
+      failed++;
+      continue;
+    }
     await step(wb.name, async () => {
-      const path = warbandFile(wb.slug, 'warscroll.json');
-      const warscroll = readJson<Warscroll>(path);
-      warscroll.playstyle = await generatePlaystyle(await getAi(), wb, warscroll, playstyleExamples);
-      writeJson(path, warscroll);
+      writePlaystyle(wb, 'en', await generatePlaystyle(await getAi(), wb, rules!, playstyleExamples));
     });
   }
 
@@ -307,20 +338,21 @@ async function main() {
   const deckOrder = [...pairings.meta.deckOrder, ...decks.map((d) => d.slug).filter((slug) => !pairings.meta.deckOrder.includes(slug))];
   let ratingsChanged = deckOrder.length !== pairings.meta.deckOrder.length;
   let anyRatingWork = false;
-  for (const wb of op) {
-    const warscroll = readJsonIfExists<Warscroll>(warbandFile(wb.slug, 'warscroll.json'));
+  for (const wb of warbands) {
+    const playstyle = readPlaystyle(wb, 'en');
+    const rules = rulesFor(wb);
     const own = pairings.ratings.filter((r) => r.warband === wb.slug);
     const unrated = decks.filter((d) => !own.some((r) => r.deck === d.slug));
     const needNote = decks.filter((d) => own.some((r) => r.deck === d.slug && r.stars === 3 && !r.note));
     if (unrated.length === 0 && needNote.length === 0) continue;
     anyRatingWork = true;
-    if (!warscroll?.playstyle) {
+    if (!playstyle || !rules) {
       console.log(`  ${wb.name} ... SKIP (no playstyle yet)`);
       failed++;
       continue;
     }
     await step(`${wb.name} (${unrated.length} decks to rate${needNote.length ? `, ${needNote.length} notes` : ''})`, async () => {
-      const results = await generateRatings(await getAi(), wb, warscroll, pairings, decks, unrated, needNote, warbandsBySlug);
+      const results = await generateRatings(await getAi(), wb, playstyle, rules, pairings, decks, unrated, needNote, warbandsBySlug);
       for (const result of results) {
         const existing = pairings.ratings.find((r) => r.warband === result.warband && r.deck === result.deck);
         if (existing) existing.note = result.note;
@@ -333,9 +365,14 @@ async function main() {
   if (ratingsChanged) {
     pairings.meta.deckOrder = deckOrder;
     pairings.ratings = sortRatings(pairings.ratings, warbands, deckOrder);
-    const ratedWarbands = new Set(pairings.ratings.map((r) => r.warband)).size;
+    const rated = [...new Set(pairings.ratings.map((r) => r.warband))].map((slug) => warbandsBySlug.get(slug));
+    const ratedOp = rated.filter((wb) => wb?.opLegal !== false).length;
+    const ratedVaulted = rated.length - ratedOp;
     pairings.meta.description = pairings.meta.description
-      .replace(/all \d+ OP-legal warbands/, `all ${ratedWarbands} OP-legal warbands`)
+      .replace(
+        /all \d+ OP-legal warbands( and \d+ vaulted warbands)?/,
+        `all ${ratedOp} OP-legal warbands${ratedVaulted ? ` and ${ratedVaulted} vaulted warbands` : ''}`,
+      )
       .replace(/all \d+ universal Rivals decks/, `all ${deckOrder.length} universal Rivals decks`);
     writeJson(PAIRINGS_FILE, pairings);
   }
@@ -344,13 +381,8 @@ async function main() {
   console.log('\n  Polish translations');
   const plExamples = (() => {
     const examples: { en: string; pl: string }[] = [];
-    const wb = op.find((w) => readJsonIfExists<Warscroll>(warbandFile(w.slug, 'warscroll.pl.json'))?.playstyle);
-    if (wb) {
-      examples.push({
-        en: readJson<Warscroll>(warbandFile(wb.slug, 'warscroll.json')).playstyle!,
-        pl: readJson<Warscroll>(warbandFile(wb.slug, 'warscroll.pl.json')).playstyle!,
-      });
-    }
+    const wb = op.find((w) => readPlaystyle(w, 'en') && readPlaystyle(w, 'pl'));
+    if (wb) examples.push({ en: readPlaystyle(wb, 'en')!, pl: readPlaystyle(wb, 'pl')! });
     const plNote = pairingsPl.ratings[0];
     const enNote = plNote && pairings.ratings.find((r) => r.warband === plNote.warband && r.deck === plNote.deck)?.note;
     if (enNote) examples.push({ en: enNote, pl: plNote.note });
@@ -373,12 +405,13 @@ async function main() {
   }
 
   const plNoteKeys = new Set(pairingsPl.ratings.map((r) => `${r.warband}|${r.deck}`));
-  for (const wb of op) {
-    const en = readJsonIfExists<Warscroll>(warbandFile(wb.slug, 'warscroll.json'));
-    const plPath = warbandFile(wb.slug, 'warscroll.pl.json');
-    const pl = readJsonIfExists<Warscroll>(plPath);
+  for (const wb of warbands) {
+    const enPlaystyle = readPlaystyle(wb, 'en');
+    // An OP-legal warband's Polish playstyle goes into warscroll.pl.json, which `translate` creates;
+    // a vaulted warband's playstyle.pl.json is created here.
+    const plFileReady = !wb.opLegal || isFile(playstyleFile(wb, 'pl'));
     const fields: Record<string, string> = {};
-    if (en?.playstyle && pl && !pl.playstyle) fields.playstyle = en.playstyle;
+    if (enPlaystyle && plFileReady && !readPlaystyle(wb, 'pl')) fields.playstyle = enPlaystyle;
     for (const r of pairings.ratings.filter((r) => r.warband === wb.slug && r.note && !plNoteKeys.has(`${r.warband}|${r.deck}`))) {
       fields[`note:${r.deck}`] = r.note!;
     }
@@ -386,7 +419,7 @@ async function main() {
     anyPolishWork = true;
     await step(`${wb.name} (${Object.keys(fields).join(', ')})`, async () => {
       const translated = await translateFields(await getAi(), fields, plExamples);
-      if (translated.playstyle && pl) writeJson(plPath, { ...pl, playstyle: translated.playstyle });
+      if (translated.playstyle) writePlaystyle(wb, 'pl', translated.playstyle);
       const notes = Object.entries(translated).filter(([key]) => key.startsWith('note:'));
       if (notes.length) {
         for (const [key, note] of notes) pairingsPl.ratings.push({ warband: wb.slug, deck: key.slice('note:'.length), note });

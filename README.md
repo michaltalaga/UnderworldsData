@@ -42,9 +42,9 @@ To skip detection and use one provider only, pass `--provider api|cli` or set `A
 Shows completion status of the entire data pipeline, with the script that fills each gap:
 
 - **Grand Alliance warscrolls:** images, extracted JSON, Polish translations, faction icons.
-- **Warbands:** icons, fighter card images and fighter stats (`fighters.json`) for every warband, vaulted ones included. Warscroll image, extracted warscroll, Polish translation and playstyle (EN and PL) for OP-legal warbands only, since vaulted warbands use their Grand Alliance's warscrolls and are not in the pairings.
+- **Warbands:** icons, fighter card images, fighter stats (`fighters.json`) and playstyle (EN and PL) for every warband, vaulted ones included. Warscroll image, extracted warscroll and its Polish translation for OP-legal warbands only, since vaulted warbands use their Grand Alliance's warscrolls.
 - **Rival decks:** synced `deck.json`, icons, Polish translation, strategy tagline and summary (EN and PL).
-- **Pairings:** every OP-legal warband rated against every universal deck, a note on every 3-star rating, and a Polish version of every note.
+- **Pairings:** every warband (OP-legal and vaulted) rated against every universal deck, a note on every 3-star rating, and a Polish version of every note.
 
 Needs no AI provider.
 
@@ -85,9 +85,9 @@ Translates rival deck `deck.json` files to Polish using Claude through the first
 Fills every gap in the warband × Rivals deck pairings, in this order, using the existing hand-written entries as style and calibration examples:
 
 1. Deck `strategyTagline` and `strategy` in `deck.json` for decks that lack them.
-2. Warband `playstyle` in `warscroll.json` for OP-legal warbands that lack one (from the warscroll and `fighters.json`).
-3. Star ratings in `warband-rivals-pairings.json` for every OP-legal warband not yet rated against every universal deck, with a note on each 3-star rating. New decks are appended to `meta.deckOrder`, and the counts in `meta.description` are updated.
-4. Polish versions of all three: deck strategy in `deck.pl.json`, playstyle in `warscroll.pl.json`, and notes in `warband-rivals-pairings.pl.json` (only where the Polish file already exists; `translate` / `rivals:translate` create those).
+2. Warband `playstyle` for warbands that lack one, from the warscroll and `fighters.json`. OP-legal warbands keep it in `warscroll.json`. Vaulted warbands have no warscroll of their own, so theirs is written from their fighter stats and their Grand Alliance's two warscrolls into `playstyle.json`.
+3. Star ratings in `warband-rivals-pairings.json` for every warband (OP-legal and vaulted) not yet rated against every universal deck, with a note on each 3-star rating. New decks are appended to `meta.deckOrder`, and the counts in `meta.description` are updated.
+4. Polish versions of all three: deck strategy in `deck.pl.json`, playstyle in `warscroll.pl.json` (OP-legal) or `playstyle.pl.json` (vaulted), and notes in `warband-rivals-pairings.pl.json`. `deck.pl.json` and `warscroll.pl.json` are only filled in once they exist; `rivals:translate` / `translate` create those.
 
 `warband-rivals-pairings.md` is a hand-written reference and is not updated.
 
@@ -108,6 +108,7 @@ warbands/           Warband data (60+ warbands)
     fighters.json   Extracted fighter stats
     warscroll.json  Extracted English data (incl. `playstyle` pairings blurb)
     warscroll.pl.json  Polish translation (incl. `playstyle`)
+    playstyle.json  Vaulted warbands only: `playstyle` pairings blurb (+ playstyle.pl.json)
 rivals/             Rival deck data (13 decks)
   index.json        Master rival deck metadata
   <deck>/
@@ -131,9 +132,9 @@ src/
 
 ## Warband ↔ Rivals deck pairings
 
-The **Pairings** tab rates every OP-legal warband against all 12 universal Rivals decks. The data is split to match the per-entity convention:
+The **Pairings** tab rates every warband against all 12 universal Rivals decks. Vaulted (not OP-legal) warbands are included and marked "Vaulted" in the matrix and on deck pages. The data is split to match the per-entity convention:
 
-- Each warband's **playstyle** blurb lives in its `warscroll.json` (`playstyle`); each deck's **strategy** summary + tagline live in its `deck.json` (`strategyTagline`, `strategy`) — both translated in the paired `.pl.json` files.
+- Each warband's **playstyle** blurb lives in its `warscroll.json` (`playstyle`), or in `playstyle.json` for vaulted warbands, which have no warscroll of their own; each deck's **strategy** summary + tagline live in its `deck.json` (`strategyTagline`, `strategy`) — both translated in the paired `.pl.json` files.
 - The star ratings (0–3) and per-pairing **notes** — an inherently warband×deck relation — live in `warband-rivals-pairings.json`, with Polish notes in `warband-rivals-pairings.pl.json`.
 
 Each warband page lists its decks ranked by fit (with links), each deck page lists its best-matched warbands, and the Pairings tab shows the full matrix — all bilingual.

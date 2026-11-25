@@ -5,6 +5,7 @@ import { renderText } from './GameText';
 import { StarRating } from './StarRating';
 import { deckRatingsForWarband } from '../data/pairings';
 import { warbandFighters } from '../data/fighters';
+import { vaultedPlaystyle } from '../data/playstyles';
 import { deckHref } from '../routing';
 import { warbandIcon, deckIcon } from '../data/icons';
 
@@ -43,8 +44,11 @@ function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: Ability
 }
 
 export function WarscrollView({ warscroll, translation, language, imageUrl, isNonOp, gaVariant, onGaVariantChange, warbandSlug, decks }: Props) {
-  const pairingRatings = !isNonOp && warbandSlug ? deckRatingsForWarband(warbandSlug, language) : [];
-  const playstyle = !isNonOp ? pick(warscroll.playstyle, translation?.playstyle) : '';
+  const pairingRatings = warbandSlug ? deckRatingsForWarband(warbandSlug, language) : [];
+  // A vaulted warband shows its Grand Alliance's warscroll, so its own playstyle comes from playstyle.json.
+  const playstyle = isNonOp
+    ? (warbandSlug ? vaultedPlaystyle(warbandSlug, language) : '')
+    : pick(warscroll.playstyle, translation?.playstyle);
   const taglineByDeck = new Map((decks ?? []).map((deck) => [deck.slug, deck.strategyTagline]));
   const headerIcon = warbandIcon(warbandSlug);
   // Vaulted warbands share their Grand Alliance's warscroll but have fighter cards of their own.

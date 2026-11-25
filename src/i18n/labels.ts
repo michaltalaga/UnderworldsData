@@ -40,8 +40,13 @@ export const labels: Labels = {
   viewOverview: { en: 'Pairings', pl: 'Dopasowania' },
   overviewTitle: { en: 'Warband ↔ Rival Deck Pairings', pl: 'Dopasowania drużyn i talii' },
   overviewLead: {
-    en: 'Which warband plays best with which Rivals deck? Every OP-legal warband is rated against all 12 universal decks. Click any warband, deck, or cell to jump to its full breakdown.',
-    pl: 'Która drużyna gra najlepiej z którą talią Rivals? Każda drużyna legalna w OP została oceniona względem wszystkich 12 uniwersalnych talii. Kliknij drużynę, talię lub komórkę, aby zobaczyć szczegóły.',
+    en: 'Which warband plays best with which Rivals deck? Every warband is rated against all 12 universal decks, vaulted ones (not OP-legal) included. Click any warband, deck, or cell to jump to its full breakdown.',
+    pl: 'Która drużyna gra najlepiej z którą talią Rivals? Każda drużyna została oceniona względem wszystkich 12 uniwersalnych talii, łącznie z wycofanymi (nielegalnymi w OP). Kliknij drużynę, talię lub komórkę, aby zobaczyć szczegóły.',
+  },
+  vaulted: { en: 'Vaulted', pl: 'Wycofana' },
+  vaultedHint: {
+    en: 'Vaulted: not OP-legal, plays with its Grand Alliance warscrolls',
+    pl: 'Wycofana: nielegalna w OP, gra zwojami swojego Wielkiego Sojuszu',
   },
   ratingScale: { en: 'Rating scale', pl: 'Skala ocen' },
   theDecks: { en: 'The 12 Rival Decks', pl: '12 talii Rivals' },

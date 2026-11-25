@@ -12,6 +12,7 @@ import {
   loadPairableDecks,
   loadWarbands,
   readJsonIfExists,
+  readPlaystyle,
   warbandFile,
   type PairingsFile,
   type PairingsPlFile,
@@ -68,15 +69,15 @@ export function collectStatus(): Section[] {
     ],
   };
 
-  const en = new Map(op.map((wb) => [wb.slug, readJsonIfExists<{ playstyle?: string }>(warbandFile(wb.slug, 'warscroll.json'))]));
-  const pl = new Map(op.map((wb) => [wb.slug, readJsonIfExists<{ playstyle?: string }>(warbandFile(wb.slug, 'warscroll.pl.json'))]));
+  const en = new Map(op.map((wb) => [wb.slug, readJsonIfExists<object>(warbandFile(wb.slug, 'warscroll.json'))]));
+  const pl = new Map(op.map((wb) => [wb.slug, readJsonIfExists<object>(warbandFile(wb.slug, 'warscroll.pl.json'))]));
   const fighterCardCount = (wb: WarbandMeta) => fighterCardFiles(wb).filter(isFile).length;
 
   const warbandSection: Section = {
     title: 'Warbands',
     notes: [
       `OP-legal: ${op.length}`,
-      `Vaulted:  ${warbands.length - op.length} (use Grand Alliance warscrolls; no playstyle or pairings)`,
+      `Vaulted:  ${warbands.length - op.length} (use Grand Alliance warscrolls; playstyle in playstyle.json)`,
     ],
     checks: [
       check('Warscroll images', 'download', op.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'warscroll.png')) }))),
@@ -99,8 +100,8 @@ export function collectStatus(): Section[] {
       ),
       check('Extracted (EN)', 'extract', op.map((wb) => ({ name: wb.name, done: en.get(wb.slug) !== null }))),
       check('Translated (PL)', 'translate', op.map((wb) => ({ name: wb.name, done: pl.get(wb.slug) !== null }))),
-      check('Playstyle (EN)', 'pairings', op.map((wb) => ({ name: wb.name, done: Boolean(en.get(wb.slug)?.playstyle) }))),
-      check('Playstyle (PL)', 'pairings', op.map((wb) => ({ name: wb.name, done: Boolean(pl.get(wb.slug)?.playstyle) }))),
+      check('Playstyle (EN, all warbands)', 'pairings', warbands.map((wb) => ({ name: wb.name, done: Boolean(readPlaystyle(wb, 'en')) }))),
+      check('Playstyle (PL, all warbands)', 'pairings', warbands.map((wb) => ({ name: wb.name, done: Boolean(readPlaystyle(wb, 'pl')) }))),
     ],
   };
 
@@ -144,12 +145,12 @@ export function collectStatus(): Section[] {
 
   const pairingsSection: Section = {
     title: 'Pairings (warband x Rivals deck)',
-    notes: [`Matrix: ${op.length} OP-legal warbands x ${pairableDecks.length} universal decks`],
+    notes: [`Matrix: ${warbands.length} warbands (${op.length} OP-legal, ${warbands.length - op.length} vaulted) x ${pairableDecks.length} universal decks`],
     checks: [
       check(
         'Rated warbands',
         'pairings',
-        op.map((wb) => {
+        warbands.map((wb) => {
           const unrated = pairableDecks.filter((d) => !rated.has(`${wb.slug}|${d.slug}`)).length;
           return { name: `${wb.name} (${unrated} of ${pairableDecks.length} decks unrated)`, done: unrated === 0 };
         }),

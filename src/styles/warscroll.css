@@ -739,6 +739,19 @@ body {
   padding: 0 0.35rem;
 }
 
+/* Marks vaulted (not OP-legal) warbands in the deck ranking and the matrix; inherits the row's text color. */
+.vaulted-tag {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0 0.35rem;
+  opacity: 0.65;
+}
+
 .pairing-note {
   color: #6b6151;
   font-size: 0.76rem;

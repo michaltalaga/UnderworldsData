@@ -2,7 +2,7 @@ import { Fragment, useMemo } from 'react';
 import type { Language, WarbandMeta } from '../types/warscroll';
 import type { RivalDeck } from '../types/rivals';
 import { t } from '../i18n/labels';
-import { ratingStars, ratingNote } from '../data/pairings';
+import { hasPairingsForWarband, ratingStars, ratingNote } from '../data/pairings';
 import { warbandHref, deckHref } from '../routing';
 import { deckIcon, factionIcon, warbandIcon } from '../data/icons';
 import { StarRating } from './StarRating';
@@ -23,15 +23,19 @@ const LEGEND: { stars: number; labelKey: string; descKey: string }[] = [
 ];
 
 export function OverviewView({ language, decks, warbands }: Props) {
-  const opWarbands = useMemo(() => warbands.filter((w) => w.opLegal), [warbands]);
+  // OP-legal warbands first, then the vaulted ones that have been rated (an unrated one would read as all zeros).
+  const matrixWarbands = useMemo(
+    () => [...warbands.filter((w) => w.opLegal), ...warbands.filter((w) => !w.opLegal && hasPairingsForWarband(w.slug))],
+    [warbands],
+  );
 
   const warbandsByFaction = useMemo(() => {
     const groups: Record<string, WarbandMeta[]> = {};
     for (const faction of FACTION_ORDER) {
-      groups[faction] = opWarbands.filter((w) => w.grandAlliance === faction);
+      groups[faction] = matrixWarbands.filter((w) => w.grandAlliance === faction);
     }
     return groups;
-  }, [opWarbands]);
+  }, [matrixWarbands]);
 
   // Deck column headers (icon + 2-letter code), reused for the top header and
   // the repeated header band shown over each grand alliance.
@@ -123,6 +127,9 @@ export function OverviewView({ language, decks, warbands }: Props) {
                           <span className="matrix-warband-label">
                             {wbIcon && <img className="matrix-warband-icon" src={wbIcon} alt="" />}
                             <span className="matrix-warband-name">{warband.name}</span>
+                            {!warband.opLegal && (
+                              <span className="vaulted-tag" title={t('vaultedHint', language)}>{t('vaulted', language)}</span>
+                            )}
                           </span>
                           <span className="matrix-fighters">{warband.fighters}</span>
                         </a>

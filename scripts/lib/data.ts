@@ -93,6 +93,31 @@ export function loadPairableDecks(): RivalDeckMeta[] {
 export const warbandFile = (slug: string, file: string) => join(WARBANDS_DIR, slug, file);
 export const deckFile = (slug: string, file: string) => join(RIVALS_DIR, slug, file);
 
+/**
+ * Where a warband's pairings playstyle lives: in its warscroll.json / warscroll.pl.json for
+ * OP-legal warbands, and in playstyle.json / playstyle.pl.json for vaulted ones, which have
+ * no warscroll of their own (they play with their Grand Alliance's warscrolls).
+ */
+export function playstyleFile(wb: WarbandMeta, language: 'en' | 'pl'): string {
+  const base = wb.opLegal ? 'warscroll' : 'playstyle';
+  return warbandFile(wb.slug, language === 'en' ? `${base}.json` : `${base}.pl.json`);
+}
+
+export function readPlaystyle(wb: WarbandMeta, language: 'en' | 'pl'): string | undefined {
+  return readJsonIfExists<{ playstyle?: string }>(playstyleFile(wb, language))?.playstyle || undefined;
+}
+
+/** Sets the playstyle, keeping the rest of the file (a vaulted warband's file is created if needed). */
+export function writePlaystyle(wb: WarbandMeta, language: 'en' | 'pl', playstyle: string): void {
+  const path = playstyleFile(wb, language);
+  writeJson(path, { ...(readJsonIfExists<object>(path) ?? { warband: wb.slug }), playstyle });
+}
+
+/** Grand Alliance warscroll files (variants 1 and 2) that a vaulted warband plays with. */
+export function gaWarscrollFiles(wb: WarbandMeta): string[] {
+  return [1, 2].map((variant) => join(GA_DIR, `${wb.grandAlliance.toLowerCase()}-${variant}.json`));
+}
+
 export function fighterCardFiles(wb: WarbandMeta): string[] {
   return Array.from({ length: wb.fighters }, (_, i) => i + 1).flatMap((n) => [
     warbandFile(wb.slug, `fighters/${n}.png`),
