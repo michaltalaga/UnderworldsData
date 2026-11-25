@@ -1,0 +1,105 @@
+{
+  "warband": "lady-harrows-mournflight",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Lady Harrow",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["destined", "leader", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["destined", "leader", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "The Anguished One",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["destined", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["destined", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "The Screaming Maiden",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["lady-harrows-mournflight", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["lady-harrows-mournflight", "fly"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Caitha",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["fly", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["fly", "lady-harrows-mournflight"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

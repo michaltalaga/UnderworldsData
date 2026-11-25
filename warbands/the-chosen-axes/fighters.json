@@ -1,0 +1,107 @@
+{
+  "warband": "the-chosen-axes",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Fjul-Grimnir",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["the-chosen-axes", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["the-chosen-axes", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [{ "name": "grievous", "critical": true }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Tefk",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["the-chosen-axes"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["the-chosen-axes"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Maegrim",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["destined", "the-chosen-axes"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["destined", "the-chosen-axes"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Vol",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["the-chosen-axes", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["the-chosen-axes", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "move", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

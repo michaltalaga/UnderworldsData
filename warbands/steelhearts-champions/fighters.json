@@ -1,0 +1,80 @@
+{
+  "warband": "steelhearts-champions",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Severin",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["steelhearts-champions", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [{ "name": "cleave", "critical": true }] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["steelhearts-champions", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [{ "name": "cleave", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Angharad",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["steelhearts-champions"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["steelhearts-champions"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Obryn",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["steelhearts-champions"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["steelhearts-champions"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "cleave", "critical": true }] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "warband": "storm-of-celestus",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Drakan",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["storm-of-celestus", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["storm-of-celestus", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Aphus",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "guard", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "guard", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Mellisan",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "guard", "critical": true }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["leader", "storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "guard", "critical": true }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Sleek",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["destined", "storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["destined", "storm-of-celestus"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

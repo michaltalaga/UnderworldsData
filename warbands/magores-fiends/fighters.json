@@ -1,0 +1,105 @@
+{
+  "warband": "magores-fiends",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Magore",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["magores-fiends", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 3,
+        "runemarks": ["magores-fiends", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [{ "name": "stagger", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Riptooth",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Zharkus",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Ghartok",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["leader", "magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["leader", "magores-fiends"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

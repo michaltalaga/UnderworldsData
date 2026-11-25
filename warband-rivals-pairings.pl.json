@@ -1,6 +1,11 @@
 {
   "ratings": [
     {
+      "warband": "garreks-reavers",
+      "deck": "reckless-fury",
+      "note": "Pięciu agresywnych szarżujących, których mechanika Inspire skaluje się z Bounty wrogów, bezpośrednio nagradzając polowania na cele o wysokim Bounty, co RF wysoko punktuje"
+    },
+    {
       "warband": "spiteclaws-swarm",
       "deck": "deadly-synergy",
       "note": "Pięciu tanich skavenów naturalnie zbija się w grupę, by rojem dopaść jeden cel, a wskrzeszani podwładni uzupełniają zjednoczoną formację"
@@ -14,6 +19,16 @@
       "warband": "spiteclaws-swarm",
       "deck": "edge-of-the-knife",
       "note": "Pięciu łatwych do poświęcenia skavenów o Wytrzymałości 3 zbija się w grupę, wskrzesza pokonane ciała i wymienia ciosy, które hartują ich w głębi wrogiego terytorium"
+    },
+    {
+      "warband": "godsworn-hunt",
+      "deck": "reckless-fury",
+      "note": "Kill-inspired przez Bounty i wzmocnienie przez Slaughter bezpośrednio nagradzają polowanie na cele o wysokim Bounty, a sześciu łowców z Move 4 nieustannie Charge'uje na terytorium wroga"
+    },
+    {
+      "warband": "grashraks-despoilers",
+      "deck": "edge-of-the-knife",
+      "note": "Czterech minionów z 2 punktami zdrowia temper'uje od pierwszej tury, podczas gdy wszyscy sześciu wojownicy z Move 4 zalewają terytorium wroga zahartowanymi ciałami na potrzeby celów gang-up"
     },
     {
       "warband": "the-wurmspat",
@@ -119,6 +134,16 @@
       "warband": "ephilims-pandaemonium",
       "deck": "countdown-to-cataclysm",
       "note": "Łatwo poświęcani podwładni nakręcają wskaźnik napędzany śmiercią przyjaciół i dobierają karty, ginąc, co podsyca długą wojnę na wyniszczenie"
+    },
+    {
+      "warband": "skabbiks-plaguepack",
+      "deck": "realmstone-raiders",
+      "note": "Sześciu poświęcalnych skavenów walczących w zwarciu atakuje każdą rundę, maksymalizując cele dotyczące rajdów różnych wojowników i wielokrotnych atakujących, które nagradza RS"
+    },
+    {
+      "warband": "skabbiks-plaguepack",
+      "deck": "reckless-fury",
+      "note": "Wariant 2 Inspire skaluje się z Bounty poległego wroga, więc sześciu agresywnych skavenów wlewa się na terytorium przeciwnika, polując na cele z wysokim Bounty, które nagradza RF"
     },
     {
       "warband": "the-thricefold-discord",
@@ -361,6 +386,11 @@
       "note": "Wytrzymałe konstrukty wskrzeszają Reapers i chętnie wymieniają się ciałami, posuwając wskaźnik naprzód przez przeciągniętą walkę"
     },
     {
+      "warband": "ironskulls-boyz",
+      "deck": "deadly-synergy",
+      "note": "Czterech orruków z Żywotnością 4 naturalnie zbija się w grupę, a automatyczny Flank Plot'u na sąsiednich wrogach wyzwala ich warunek Inspire, jednocześnie realizując cele zabójstw DY"
+    },
+    {
       "warband": "zarbags-gitz",
       "deck": "deadly-synergy",
       "note": "Dziewięć grotów tworzy najgęstszy rój, kumulując kości za atak grupowy, by otoczyć i Flankować samotnego wroga"
@@ -446,6 +476,11 @@
       "note": "Trzy wytrzymałe Brute i wyniszczenie napędzane Waaagh pragną przeciągniętej walki wręcz, którą nagradzają cele wskaźnika"
     },
     {
+      "warband": "hedkrakkas-madmob",
+      "deck": "deadly-synergy",
+      "note": "Oba warianty Inspire działają na wrogach Flanked lub Surrounded, a darmowe pchnięcia zbieżności utrzymują czterech wytrzymałych orruków w zwartym skupisku wymaganym przez DY"
+    },
+    {
       "warband": "da-kunnin-krew",
       "deck": "deadly-synergy",
       "note": "Zbudowani wokół premii za Flankowanie i Otaczanie, ruchliwi orrukowie okrążają i egzekwują dokładnie to, co ta talia nagradza"
@@ -496,9 +531,29 @@
       "note": "Przeszukiwanie jako wyzwalacz Natchnienia zamienia odbieranie skarbów w trigger natchnienia, łącząc skupione groty z każdym celem opartym na Przeszukiwaniu"
     },
     {
+      "warband": "steelhearts-champions",
+      "deck": "hunting-grounds",
+      "note": "Odporność na flanking i przerzuty ataków na własnym terytorium w Wariancie 2 czynią z trojga elitarnych fighterów z 5 ranami każdy nienaruszalny kontratak przy własnych celach w HG"
+    },
+    {
+      "warband": "the-chosen-axes",
+      "deck": "nexus-of-power",
+      "note": "Wariant 1: Inspire przy 2+ skarbach na terytorium wroga i pchnięcie Pioneer bezpośrednio na żetony napędzają chciwą kontrolę wielu żetonów planszy NP"
+    },
+    {
+      "warband": "the-chosen-axes",
+      "deck": "emberstone-sentinels",
+      "note": "Wariant 1: Inspire przy 2+ trzymanych skarbach na terytorium wroga plus obrona z 3 tarczami dzięki Staunch Defender sprawiają, że czterech duardinów z 4 punktami zdrowia jest niemal niemożliwych do usunięcia z pozycji"
+    },
+    {
       "warband": "the-farstriders",
       "deck": "pillage-and-plunder",
       "note": "Trzej elitarni Stormcastowie wdzierają się głęboko na wrogie terytorium, by Przeszukiwać i zdejmować skarby z odległych żetonów"
+    },
+    {
+      "warband": "stormsires-cursebreakers",
+      "deck": "hunting-grounds",
+      "note": "Wariant 2 eliminuje efekty wrogich Flanks i Surrounds na własnym terytorium, podczas gdy przerzuty ataków i Inspire za ataki we własnym terytorium napędzają cele oparte na kontruderzeniach"
     },
     {
       "warband": "thundriks-profiteers",
@@ -561,6 +616,11 @@
       "note": "Przypływ z drugiej rundy plus ściąganie sług w grupę przygotowują skoncentrowane uderzenia alfa, które pokonują od razu"
     },
     {
+      "warband": "storm-of-celestus",
+      "deck": "hunting-grounds",
+      "note": "Wariant 2 eliminuje Flanked i Surrounded na przyjaznym terytorium, podczas gdy przerolowania ataków w domu i Inspire na czterech wojownikach z 4 ranami napędzają każdy kontrpunchowy cel"
+    },
+    {
       "warband": "xandires-truthseekers",
       "deck": "wrack-and-ruin",
       "note": "Czerpie korzyści z własnych śmierci oraz zadaje obrażenia z dystansu i śmiertelne ciosy, doskonale radząc sobie w wojnie na wyniszczenie, którą ta talia nagradza"
@@ -599,6 +659,11 @@
       "warband": "hexbanes-hunters",
       "deck": "countdown-to-cataclysm",
       "note": "Inspiracja wyzwalana śmiercią i wartość Ulepszeń przy stratach zamieniają przyjazne ofiary w postęp wskaźnika i tempo"
+    },
+    {
+      "warband": "domitans-stormcoven",
+      "deck": "hunting-grounds",
+      "note": "Wariant 2 usuwa Flanks na przyjaznym terytorium, a rzuty ponowne i Inspire z ataków z własnej strefy czynią z trzech elitów z 5 punktami zdrowia karzący kontratak we własnej połowie"
     },
     {
       "warband": "cyrenis-razors",

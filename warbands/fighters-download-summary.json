@@ -304,5 +304,113 @@
     "missing": 0,
     "suspect": 0,
     "expected": 8
+  },
+  "garreks-reavers": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "magores-fiends": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "eyes-of-the-nine": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "godsworn-hunt": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "grashraks-despoilers": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "skabbiks-plaguepack": {
+    "ok": 12,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 12
+  },
+  "lady-harrows-mournflight": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "drepurs-wraithcreepers": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "ironskulls-boyz": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "hedkrakkas-madmob": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "steelhearts-champions": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "the-chosen-axes": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "stormsires-cursebreakers": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
+  },
+  "skaeths-wild-hunt": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "morgwaeths-blade-coven": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "storm-of-celestus": {
+    "ok": 8,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 8
+  },
+  "gryselles-arenai": {
+    "ok": 10,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 10
+  },
+  "domitans-stormcoven": {
+    "ok": 6,
+    "missing": 0,
+    "suspect": 0,
+    "expected": 6
   }
 }

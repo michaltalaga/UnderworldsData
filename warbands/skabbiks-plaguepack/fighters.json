@@ -1,0 +1,157 @@
+{
+  "warband": "skabbiks-plaguepack",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Skabbik",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["skabbiks-plaguepack", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["skabbiks-plaguepack", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Rabidius",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["minion", "skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 3,
+        "bounty": 2,
+        "runemarks": ["minion", "skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Ichitt",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 3,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Poxlix",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack", "minion"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Rikkit",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack", "chaos"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }, { "name": "stagger", "critical": false }] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["skabbiks-plaguepack", "chaos"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Skritter",
+      "uninspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 1 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["minion", "skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 5,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 0,
+        "runemarks": ["minion", "skabbiks-plaguepack"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

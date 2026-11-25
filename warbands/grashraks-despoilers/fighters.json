@@ -1,0 +1,159 @@
+{
+  "warband": "grashraks-despoilers",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Grashrak",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["grashraks-despoilers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 2,
+        "runemarks": ["grashraks-despoilers", "leader"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Draknar",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 4,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [{ "name": "grievous", "critical": true }] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Murghoth",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 4,
+      "name": "Ushkor",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 5,
+      "name": "Gnarl",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers", "destined"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 6,
+      "name": "Korsh",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "dodge", "dice": 2 },
+        "health": 2,
+        "bounty": 1,
+        "runemarks": ["grashraks-despoilers"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "warband": "domitans-stormcoven",
+  "fighters": [
+    {
+      "index": 1,
+      "name": "Domitan",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["leader", "tome", "domitans-stormcoven"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 3,
+        "runemarks": ["leader", "tome", "domitans-stormcoven"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "push", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 2,
+      "name": "Leona",
+      "uninspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["domitans-stormcoven", "stormcast-eternals"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 4,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["domitans-stormcoven", "stormcast-eternals"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    },
+    {
+      "index": 3,
+      "name": "Sarpon",
+      "uninspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["domitans-stormcoven"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "inspired": {
+        "move": 3,
+        "save": { "symbol": "shield", "dice": 1 },
+        "health": 5,
+        "bounty": 2,
+        "runemarks": ["domitans-stormcoven"],
+        "weapons": [
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+        ]
+      },
+      "cardRulesText": null
+    }
+  ]
+}
