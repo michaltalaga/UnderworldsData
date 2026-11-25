@@ -195,14 +195,17 @@ async function main() {
   const extracted = new Map<string, Fighter[]>(ready.map((wb) => [wb.slug, []]));
   const tasks = ready.flatMap((wb) => Array.from({ length: wb.fighters }, (_, i) => ({ wb, index: i + 1 })));
   console.log('');
-  await runJobs(tasks, jobs, ({ wb, index }) => `${wb.name}, fighter ${index}`, async ({ wb, index }) => {
+  // A fighter's name is printed on the card only (underworldsdb.com numbers the card images),
+  // so it is known once the card has been read and is shown on the finished line.
+  const label = ({ wb, index }: (typeof tasks)[number]) => `${wb.name}, fighter ${index}/${wb.fighters}`;
+  await runJobs(tasks, jobs, label, async ({ wb, index }) => {
     const fighter = await extractFighter(ai, wb, index, example);
     const fighters = extracted.get(wb.slug)!;
     fighters.push(fighter);
     if (fighters.length === wb.fighters) {
       fighters.sort((a, b) => a.index - b.index);
       writeFileSync(warbandFile(wb.slug, 'fighters.json'), `${formatFighters({ warband: wb.slug, fighters })}\n`);
-      return `${fighter.name}; ${wb.name} complete, fighters.json written`;
+      return `${fighter.name} (all ${wb.fighters} fighters read, fighters.json written)`;
     }
     return fighter.name;
   });

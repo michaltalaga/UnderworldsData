@@ -1,5 +1,5 @@
 import { AsyncLocalStorage } from 'async_hooks';
-import { clearLine, cursorTo } from 'readline';
+import { clearScreenDown, cursorTo, moveCursor } from 'readline';
 import { NoProviderLeftError } from './types';
 
 /**
@@ -53,16 +53,17 @@ function elapsed(job: ActiveJob): string {
 }
 
 /**
- * Shows what runJobs is working on. In a terminal, a status line at the bottom lists the
- * running items with their elapsed time and refreshes every second; finished items print
- * above it. Anything else printed meanwhile (provider switches, warnings) also goes above
- * it. When output is not a terminal (a log file or pipe), each item prints a line when it
- * starts instead, since a status line cannot be redrawn there.
+ * Shows what runJobs is working on. In a terminal, a status block at the bottom has a summary
+ * line and one line per running item with its elapsed time, refreshed every second; finished
+ * items print above it. Anything else printed meanwhile (provider switches, warnings) also
+ * goes above it. When output is not a terminal (a log file or pipe), each item prints a line
+ * when it starts instead, since a status block cannot be redrawn there.
  */
 class ProgressDisplay {
   private readonly active = new Set<ActiveJob>();
   private done = 0;
-  private drawn = false;
+  /** Terminal rows the status block takes up now (0 when it is not drawn). */
+  private drawnRows = 0;
   private timer: ReturnType<typeof setInterval> | undefined;
   private restoreConsole: (() => void) | undefined;
   private readonly live = Boolean(process.stdout.isTTY);
@@ -113,22 +114,31 @@ class ProgressDisplay {
 
   private draw(): void {
     if (!this.live) return;
-    const working = [...this.active].map((job) => `${job.name} (${elapsed(job)}${job.note ? `, ${job.note}` : ''})`);
-    let line = `  [${this.done}/${this.total}] working on: ${working.join(' | ') || '-'}`;
-    // One terminal row only: a wrapped status line could not be cleared.
+    const running = [...this.active];
+    const waiting = this.total - this.done - running.length;
+    const lines = [`  [${this.done}/${this.total} done | ${running.length} running | ${waiting} waiting]`];
+    // Keep the block on screen: a block taller than the terminal could not be cleared.
+    const room = Math.max(1, (process.stdout.rows || 24) - 3);
+    const shown = running.length > room ? running.slice(0, room - 1) : running;
+    for (const job of shown) {
+      lines.push(`  ${elapsed(job).padStart(7)}  ${job.name}${job.note ? `  - ${job.note}` : ''}`);
+    }
+    if (shown.length < running.length) lines.push(`           ... and ${running.length - shown.length} more`);
+
+    // Each line fits in one row, so the block takes exactly lines.length rows to clear later.
     const width = (process.stdout.columns || 80) - 1;
-    if (line.length > width) line = `${line.slice(0, width - 3)}...`;
-    clearLine(process.stdout, 0);
-    cursorTo(process.stdout, 0);
-    process.stdout.write(line);
-    this.drawn = true;
+    const fitted = lines.map((line) => (line.length > width ? `${line.slice(0, width - 3)}...` : line));
+    this.clear();
+    process.stdout.write(fitted.join('\n'));
+    this.drawnRows = fitted.length;
   }
 
   private clear(): void {
-    if (!this.drawn) return;
-    clearLine(process.stdout, 0);
+    if (this.drawnRows === 0) return;
     cursorTo(process.stdout, 0);
-    this.drawn = false;
+    if (this.drawnRows > 1) moveCursor(process.stdout, 0, -(this.drawnRows - 1));
+    clearScreenDown(process.stdout);
+    this.drawnRows = 0;
   }
 }
 
@@ -152,7 +162,7 @@ export function jobNote(note: string): void {
 /**
  * Runs `run` for every item, at most `jobs` at a time, showing what is being worked on (see
  * ProgressDisplay) and printing one result line per finished item: "[done/total] label ...
- * OK", "... OK (detail)" when `run` returns a detail, or "... FAILED: why" when it throws,
+ * OK", "... OK - detail" when `run` returns a detail, or "... FAILED: why" when it throws,
  * with the time it took. A NoProviderLeftError stops new items from starting and is rethrown
  * once the running ones end.
  */
@@ -176,7 +186,7 @@ export async function runJobs<T>(
       let outcome: string;
       try {
         const detail = await currentJob.run(job, () => run(item));
-        outcome = detail ? `OK (${detail})` : 'OK';
+        outcome = detail ? `OK - ${detail}` : 'OK';
         result.ok++;
       } catch (err) {
         if (err instanceof NoProviderLeftError) stop ??= err;
