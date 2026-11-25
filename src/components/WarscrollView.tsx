@@ -47,7 +47,8 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
   const playstyle = !isNonOp ? pick(warscroll.playstyle, translation?.playstyle) : '';
   const taglineByDeck = new Map((decks ?? []).map((deck) => [deck.slug, deck.strategyTagline]));
   const headerIcon = warbandIcon(warbandSlug);
-  const fighterCards = !isNonOp && warbandSlug ? warbandFighters(warbandSlug) : [];
+  // Vaulted warbands share their Grand Alliance's warscroll but have fighter cards of their own.
+  const fighterCards = warbandSlug ? warbandFighters(warbandSlug) : [];
 
   return (
     <div className="warscroll">

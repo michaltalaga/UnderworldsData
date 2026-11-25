@@ -57,7 +57,9 @@ function runStep(step: Step, provider: string | undefined): boolean {
 
 function main() {
   const { provider, args } = takeProviderOption(process.argv.slice(2));
-  const dryRun = args.includes('--dry-run');
+  // In PowerShell, npm.ps1 drops the `--` of `npm run sync -- --dry-run`, so npm takes
+  // --dry-run as its own flag (and still runs the script): it arrives as npm_config_dry_run.
+  const dryRun = args.includes('--dry-run') || process.env.npm_config_dry_run === 'true';
 
   if (dryRun) {
     const gaps = scriptsWithGaps(collectStatus());

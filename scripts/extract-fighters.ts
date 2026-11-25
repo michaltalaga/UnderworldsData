@@ -33,7 +33,7 @@ interface Fighter {
 const EXAMPLE_WARBAND = 'spiteclaws-swarm';
 
 function extractionPrompt(wb: WarbandMeta, example: Fighter): string {
-  return `You are extracting one Warhammer Underworlds (Embergard) fighter card from the "${wb.name}" warband.
+  return `You are extracting one Warhammer Underworlds fighter card (2024 Embergard card layout) from the "${wb.name}" warband.
 The first image is the fighter's uninspired side, the second image is the inspired side.
 
 Return JSON with this exact shape:
@@ -170,15 +170,16 @@ async function main() {
   const { provider, args } = takeProviderOption(process.argv.slice(2));
   const filter = args[0]?.toLowerCase() ?? null;
 
-  const op = loadWarbands().filter((wb) => wb.opLegal);
-  const pending = op.filter((wb) => !isFile(warbandFile(wb.slug, 'fighters.json')));
+  // Every warband, vaulted ones included: their fighter cards use the same layout.
+  const warbands = loadWarbands();
+  const pending = warbands.filter((wb) => !isFile(warbandFile(wb.slug, 'fighters.json')));
   const selected = pending.filter((wb) => !filter || wb.slug === filter || wb.name.toLowerCase() === filter);
   const ready = selected.filter((wb) => fighterCardFiles(wb).every(isFile));
   const noCards = selected.filter((wb) => !ready.includes(wb));
 
   console.log(`\n  Fighter Stats Extraction`);
   console.log(`  ========================\n`);
-  console.log(`  OP warbands: ${op.length} | Extracted: ${op.length - pending.length} | Remaining: ${pending.length}`);
+  console.log(`  Warbands: ${warbands.length} | Extracted: ${warbands.length - pending.length} | Remaining: ${pending.length}`);
   noCards.forEach((wb) => console.log(`  ${wb.name}: SKIP (fighter cards not downloaded; run npm run download:fighters)`));
 
   if (ready.length === 0) {

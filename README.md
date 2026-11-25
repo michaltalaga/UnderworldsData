@@ -24,6 +24,8 @@ These scripts handle downloading, extracting, translating, and syncing game data
 
 Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` is passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them.
 
+In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm reads the flag as its own option. The scripts read `--dry-run` and `--provider` back from npm's config in that case, so the same commands work in PowerShell, cmd and bash.
+
 ### AI providers
 
 `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` call Claude (Sonnet 4.6) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
@@ -40,7 +42,7 @@ To skip detection and use one provider only, pass `--provider api|cli` or set `A
 Shows completion status of the entire data pipeline, with the script that fills each gap:
 
 - **Grand Alliance warscrolls:** images, extracted JSON, Polish translations, faction icons.
-- **Warbands:** warscroll images, icons (all warbands), fighter card images, fighter stats (`fighters.json`), extracted warscroll, Polish translation, playstyle (EN and PL). Everything except icons is checked for OP-legal warbands only.
+- **Warbands:** icons, fighter card images and fighter stats (`fighters.json`) for every warband, vaulted ones included. Warscroll image, extracted warscroll, Polish translation and playstyle (EN and PL) for OP-legal warbands only, since vaulted warbands use their Grand Alliance's warscrolls and are not in the pairings.
 - **Rival decks:** synced `deck.json`, icons, Polish translation, strategy tagline and summary (EN and PL).
 - **Pairings:** every OP-legal warband rated against every universal deck, a note on every 3-star rating, and a Polish version of every note.
 
@@ -54,13 +56,17 @@ Downloads warscroll card PNG images from underworldsdb.com. First syncs `warband
 
 Downloads icon PNGs from underworldsdb.com: warband icons into each `warbands/<slug>/icon.png`, rival deck icons into each `rivals/<slug>/icon.png`, and the faction / Grand Alliance icons (`chaos`, `death`, `destruction`, `order`, `universal`) into `warbands/_ga/<faction>-icon.png`. Skips already-downloaded files.
 
+### `npm run download:fighters`
+
+Downloads both sides of every fighter card (`<n>.png` and `<n>-inspired.png`) into `warbands/<slug>/fighters/` for every warband in the index, vaulted ones included (underworldsdb.com has 2024-layout fighter cards for all of them). Warbands whose cards are all present are skipped. Writes a `download-report.json` per warband and updates `warbands/fighters-download-summary.json`.
+
 ### `npm run extract`
 
 Extracts structured game data from warscroll card PNGs using Claude's vision (Sonnet 4.6) through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
 
 ### `npm run extract:fighters`
 
-Extracts fighter stats into `warbands/<slug>/fighters.json` for OP-legal warbands whose fighter card images are downloaded but that have no `fighters.json` yet. Sends both sides of each fighter card to Claude (one call per fighter) and checks the reply against the schema of the existing files: Move, Save, Health, Bounty, runemarks and weapons (with abilities) per side. A warband's file is written only when every fighter extracted cleanly. An optional argument limits it to one warband (slug or name).
+Extracts fighter stats into `warbands/<slug>/fighters.json` for every warband (vaulted ones included) whose fighter card images are downloaded but that have no `fighters.json` yet. Sends both sides of each fighter card to Claude (one call per fighter) and checks the reply against the schema of the existing files: Move, Save, Health, Bounty, runemarks and weapons (with abilities) per side. A warband's file is written only when every fighter extracted cleanly. An optional argument limits it to one warband (slug or name).
 
 ### `npm run translate`
 
@@ -95,9 +101,11 @@ warbands/           Warband data (60+ warbands)
     chaos-2.json    GA Chaos variant 2
     ...             (+ .pl.json translations and .png images)
   _ga/              ... (+ `<faction>-icon.png` Grand Alliance / Universal icons)
-  <warband>/        OP-legal warband data
-    warscroll.png   Card image
+  <warband>/        Warband data (vaulted warbands: icon and fighters only)
+    warscroll.png   Card image (OP-legal only)
     icon.png        Warband icon
+    fighters/       Fighter card images (<n>.png, <n>-inspired.png)
+    fighters.json   Extracted fighter stats
     warscroll.json  Extracted English data (incl. `playstyle` pairings blurb)
     warscroll.pl.json  Polish translation (incl. `playstyle`)
 rivals/             Rival deck data (13 decks)

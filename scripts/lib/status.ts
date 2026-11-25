@@ -16,6 +16,7 @@ import {
   type PairingsFile,
   type PairingsPlFile,
   type RivalDeck,
+  type WarbandMeta,
 } from './data';
 
 /** npm scripts that fill a gap. */
@@ -69,29 +70,29 @@ export function collectStatus(): Section[] {
 
   const en = new Map(op.map((wb) => [wb.slug, readJsonIfExists<{ playstyle?: string }>(warbandFile(wb.slug, 'warscroll.json'))]));
   const pl = new Map(op.map((wb) => [wb.slug, readJsonIfExists<{ playstyle?: string }>(warbandFile(wb.slug, 'warscroll.pl.json'))]));
-  const fighterCardCount = (slug: string) => {
-    const wb = op.find((w) => w.slug === slug)!;
-    return fighterCardFiles(wb).filter(isFile).length;
-  };
+  const fighterCardCount = (wb: WarbandMeta) => fighterCardFiles(wb).filter(isFile).length;
 
   const warbandSection: Section = {
     title: 'Warbands',
-    notes: [`OP-legal: ${op.length}`, `Vaulted:  ${warbands.length - op.length} (use Grand Alliance warscrolls)`],
+    notes: [
+      `OP-legal: ${op.length}`,
+      `Vaulted:  ${warbands.length - op.length} (use Grand Alliance warscrolls; no playstyle or pairings)`,
+    ],
     checks: [
       check('Warscroll images', 'download', op.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'warscroll.png')) }))),
       check('Icons (all warbands)', 'download:icons', warbands.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'icon.png')) }))),
       check(
-        'Fighter cards',
+        'Fighter cards (all warbands)',
         'download:fighters',
-        op.map((wb) => ({
-          name: `${wb.name} (${fighterCardCount(wb.slug)}/${wb.fighters * 2} cards)`,
-          done: fighterCardCount(wb.slug) === wb.fighters * 2,
+        warbands.map((wb) => ({
+          name: `${wb.name} (${fighterCardCount(wb)}/${wb.fighters * 2} cards)`,
+          done: fighterCardCount(wb) === wb.fighters * 2,
         })),
       ),
       check(
-        'Fighter stats',
+        'Fighter stats (all warbands)',
         'extract:fighters',
-        op.map((wb) => {
+        warbands.map((wb) => {
           const data = readJsonIfExists<{ fighters?: unknown[] }>(warbandFile(wb.slug, 'fighters.json'));
           return { name: wb.name, done: data?.fighters?.length === wb.fighters };
         }),

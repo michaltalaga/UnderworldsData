@@ -77,7 +77,7 @@ export class AiClient {
  */
 export function takeProviderOption(argv: string[]): { provider?: ProviderId; args: string[] } {
   const args: string[] = [];
-  let value = process.env.AI_PROVIDER || undefined;
+  let value: string | undefined;
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--provider') {
@@ -88,9 +88,23 @@ export function takeProviderOption(argv: string[]): { provider?: ProviderId; arg
       args.push(arg);
     }
   }
+  value ??= providerFromNpmConfig(args) ?? (process.env.AI_PROVIDER || undefined);
   if (value === undefined) return { args };
   if (!PROVIDER_IDS.includes(value as ProviderId)) {
     throw new Error(`Unknown AI provider "${value}". Use one of: ${PROVIDER_IDS.join(', ')}.`);
   }
   return { provider: value as ProviderId, args };
+}
+
+/**
+ * In PowerShell, npm.ps1 drops the `--` of `npm run x -- --provider cli`, so npm takes the
+ * flag as its own config instead of passing it on: `--provider=cli` arrives as
+ * npm_config_provider=cli, and `--provider cli` as npm_config_provider=true with "cli"
+ * left as the first argument (taken out of `args` here).
+ */
+function providerFromNpmConfig(args: string[]): string | undefined {
+  const npmValue = process.env.npm_config_provider;
+  if (!npmValue) return undefined;
+  if (npmValue !== 'true') return npmValue;
+  return PROVIDER_IDS.includes(args[0] as ProviderId) ? args.shift() : undefined;
 }

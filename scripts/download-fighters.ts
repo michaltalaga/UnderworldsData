@@ -84,12 +84,13 @@ async function downloadWarband(wb: WarbandMeta): Promise<DownloadEntry[]> {
 }
 
 async function main() {
+  // Every warband, vaulted ones included: underworldsdb.com has fighter cards for all of them.
   const index: WarbandMeta[] = JSON.parse(readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'));
-  const opWarbands = index.filter((wb) => wb.opLegal);
+  const vaulted = index.filter((wb) => !wb.opLegal).length;
   // Warbands with every card already downloaded are left alone, report files included.
-  const pending = opWarbands.filter((wb) => !cardFiles(wb).every(hasCard));
+  const pending = index.filter((wb) => !cardFiles(wb).every(hasCard));
   console.log(
-    `${opWarbands.length} OP-legal warbands, ${opWarbands.length - pending.length} complete. ` +
+    `${index.length} warbands (${index.length - vaulted} OP-legal, ${vaulted} vaulted), ${index.length - pending.length} complete. ` +
       `Downloading fighter cards for ${pending.length} (concurrency ${CONCURRENCY})\n`,
   );
   if (pending.length === 0) return;
