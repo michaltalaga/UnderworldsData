@@ -2,7 +2,7 @@
   "meta": {
     "title": "Warband × Rivals Deck Pairings",
     "game": "Warhammer Underworlds: Embergard",
-    "description": "A many-to-many compatibility guide matching all 50 OP-legal warbands to all 12 universal Rivals decks. Ratings reflect how well a warband's playstyle, model count, durability and signature mechanics line up with what each deck's objectives reward.",
+    "description": "A many-to-many compatibility guide matching all 51 OP-legal warbands to all 12 universal Rivals decks. Ratings reflect how well a warband's playstyle, model count, durability and signature mechanics line up with what each deck's objectives reward.",
     "note": "Ratings + per-pairing notes only. Warband playstyles live in warbands/<slug>/warscroll.json (playstyle); deck summaries in rivals/<slug>/deck.json (strategyTagline/strategy). Polish note translations in warband-rivals-pairings.pl.json.",
     "deckOrder": [
       "nexus-of-power",
@@ -3173,6 +3173,66 @@
     },
     {
       "warband": "kurnoths-heralds",
+      "deck": "countdown-to-cataclysm",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "nexus-of-power",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "deadly-synergy",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "raging-slayers",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "realmstone-raiders",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "edge-of-the-knife",
+      "stars": 0
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "reckless-fury",
+      "stars": 2
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "blazing-assault",
+      "stars": 2
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "emberstone-sentinels",
+      "stars": 1
+    },
+    {
+      "warband": "thyrielles-zephyrites",
+      "deck": "pillage-and-plunder",
+      "stars": 2
+    },
+    {
+      "warband": "thyrielles-zephyrites",
       "deck": "countdown-to-cataclysm",
       "stars": 1
     }

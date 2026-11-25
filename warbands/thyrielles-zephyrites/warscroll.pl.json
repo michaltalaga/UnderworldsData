@@ -1,0 +1,37 @@
+{
+  "inspire": "Po udanym Ataku przyjaznego wojownika owianego wiatrem, Inspire atakującego.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "Żywy Podmuch",
+      "flavorText": null,
+      "rulesText": "Na początku pierwszego kroku Akcji w pierwszej rundzie bitwy, umieść przyjazny model Tzula w pustym polu, które nie zawiera żetonu terenu. Na początku pierwszego kroku Akcji w każdej kolejnej rundzie bitwy, musisz usunąć ten model z pola bitwy, a następnie umieścić go w innym pustym polu, które nie zawiera żetonu terenu. Pole zawierające przyjazny model Tzula jest polem zajętym.\n\nJeśli można poprowadzić prostą linię od środka pola przyjaznego modelu Tzula, przez środek sąsiedniego pola i aż do środka pola krawędziowego bez dotykania żadnych zablokowanych pól, wszyscy wojownicy w polach, przez które ta linia przechodzi, są owiani wiatrem."
+    },
+    {
+      "name": "Taniec Zefiru",
+      "flavorText": "Adepci Hurakana poruszają się z tak oszałamiającą prędkością, że wrogowie ledwo są w stanie ich dosięgnąć.",
+      "rulesText": "Przyjazni wojownicy owiani wiatrem, posiadający jakiekolwiek żetony Ruchu i/lub Szarży, mają +1 kość Obrony."
+    },
+    {
+      "name": "Skok Zefiru",
+      "flavorText": "Niesieni przez wiatr, Zefiryci wykonują nieważące skoki wprost nad głowami swych wrogów.",
+      "rulesText": "Przyjazni wojownicy mają znak runy latania ({icon:flying}) i +1 do Ruchu, jeśli są owiani wiatrem w momencie rozpoczynania tego Ruchu."
+    },
+    {
+      "name": "Pomoc Huraganu",
+      "flavorText": "Ryczący huragan owiewa wrogów Lumineth, oddając Zefiryci nieocenione wsparcie.",
+      "rulesText": "Wrodzy wojownicy owiani wiatrem są Flankowani."
+    },
+    {
+      "name": "Jedno z Wiatrem",
+      "flavorText": "Tzul może stać się podmuchem wiatru, by umknąć wrogom.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Jeśli twój dowódca ({icon:leader}) i przyjazny model Tzula znajdują się na polu bitwy, możesz usunąć ten model Tzula z pola bitwy i umieścić go w innym pustym polu, które nie zawiera żetonu terenu. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Przyciąganie Cyklonu",
+      "flavorText": "Tzul przywołuje nagły wir powietrzny, przyciągając ku sobie odległego sojusznika.",
+      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika owianego wiatrem. Przesuń tego wojownika o dowolną liczbę pól w prostej linii w kierunku przyjaznego modelu Tzula. Możesz użyć tej zdolności tylko raz na grę."
+    }
+  ],
+  "playstyle": "Czterech zwinnych wojowników Lumineth, których siła opiera się na Tzulu — duchu wiatru repozycjonowanym na początku każdej rundy. Wojownicy stojący na linii wiatru Tzula Inspire po każdym udanym ataku, zyskują lot i dodatkowy Move dla większego zasięgu oraz dodatkową kość Save w trakcie aktywacji – natomiast wrogowie na tej samej linii są automatycznie Flanked. Warband wygrywa, umieszczając Tzula co turę tak, by jednocześnie karać skupionych przeciwników i wzmacniać własnych wojowników o umiarkowanej wytrzymałości, zamieniając precyzyjne, turowe repozycjonowanie w lawinę bonusów ofensywnych i defensywnych."
+}
