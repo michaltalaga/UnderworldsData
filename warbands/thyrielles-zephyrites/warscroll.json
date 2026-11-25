@@ -1,0 +1,46 @@
+{
+  "id": "thyrielles-zephyrites",
+  "name": "Thyrielle's Zephyrites",
+  "version": null,
+  "grandAlliance": "Order",
+  "inspire": "After a friendly windblown fighter's successful Attack, Inspire the attacker.",
+  "reactions": [],
+  "abilities": [
+    {
+      "name": "The Living Gale",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "At the start of the first Action step in the first battle round, place a friendly Tzul model in an empty hex that does not contain a feature token. At the start of the first Action step in each other battle round, you must remove that model from the battlefield and then place it in a different empty hex that does not contain a feature token. A hex that contains a friendly Tzul model is an occupied hex.\n\nWhile a straight line can be drawn from the centre of a friendly Tzul model's hex, through the centre of an adjacent hex and all the way to the centre of an edge hex without touching any blocked hexes, any fighters in hexes that line crosses are windblown."
+    },
+    {
+      "name": "Zephyr Dance",
+      "type": "passive",
+      "flavorText": "Hurakan acolytes move with such dizzying speed that their foes can barely land a blow against them.",
+      "rulesText": "Friendly windblown fighters with any Move and/or Charge tokens have +1 Save dice."
+    },
+    {
+      "name": "Zephyr Leap",
+      "type": "passive",
+      "flavorText": "Carried by the wind, the Zephyrites perform gravity-defying leaps right over the heads of their enemies.",
+      "rulesText": "Friendly fighters have the flying ({icon:flying}) runemark and +1 Move if they are windblown when they start that Move."
+    },
+    {
+      "name": "Hurricane Aid",
+      "type": "passive",
+      "flavorText": "A roaring gale whips around the Lumineth's enemies, lending the Zephyrites vital support.",
+      "rulesText": "Enemy windblown fighters are Flanked."
+    },
+    {
+      "name": "One with the Wind",
+      "type": "action",
+      "flavorText": "Tzul can become a gust of wind to evade foes.",
+      "rulesText": "Use this in your Power step. If your leader ({icon:leader}) and a friendly Tzul model are on the battlefield, you can remove that Tzul model from the battlefield and place it in a different empty hex that does not contain a feature token. You can only use this ability once per game."
+    },
+    {
+      "name": "Cyclonic Pull",
+      "type": "action",
+      "flavorText": "Tzul summons a sudden whirlwind, pulling a distant ally towards him.",
+      "rulesText": "Use this in your Power step. Pick a friendly windblown fighter. Push that fighter any number of hexes in a straight line towards a friendly Tzul model. You can only use this ability once per game."
+    }
+  ]
+}
