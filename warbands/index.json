@@ -474,5 +474,12 @@
     "fighters": 3,
     "opLegal": true,
     "grandAlliance": "Order"
+  },
+  {
+    "slug": "thyrielles-zephyrites",
+    "name": "Thyrielle's Zephyrites",
+    "fighters": 4,
+    "opLegal": true,
+    "grandAlliance": "Order"
   }
 ]
