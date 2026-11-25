@@ -40,13 +40,13 @@ function isPng(path: string): boolean {
 
 async function downloadImage(url: string, dest: string): Promise<boolean> {
   try {
-    // Missing images may answer with a redirect to an HTML page — never follow it.
-    const res = await fetch(url, { redirect: 'manual' });
+    const res = await fetch(url);
     if (res.status !== 200) {
       console.error(`  HTTP ${res.status} for ${url}`);
       return false;
     }
     const buffer = Buffer.from(await res.arrayBuffer());
+    // Missing images can come back as an HTML page, so only accept real PNGs.
     if (!buffer.subarray(0, 4).equals(PNG_MAGIC)) {
       console.error(`  Not a PNG: ${url}`);
       return false;
@@ -149,7 +149,7 @@ async function downloadGaWarscrolls(): Promise<number> {
         skipped++;
         continue;
       }
-      const url = `${BASE_URL}/${alliance}-0${variant}.png?v=1.14`;
+      const url = `${BASE_URL}/${alliance.toLowerCase()}-0${variant}.png?v=1.14`;
       process.stdout.write(`  ${key} ... `);
       const ok = await downloadImage(url, dest);
       if (ok) {
@@ -171,15 +171,20 @@ async function main() {
 
   const gaFailed = await downloadGaWarscrolls();
 
-  // Only OP-legal warbands have their own warscroll; the rest use the GA ones above.
+  // Only OP-legal warbands have a warscroll card of their own on underworldsdb.com.
+  // Vaulted warbands have none: the site and the app show their Grand Alliance's two cards instead.
   const opWarbands = index.filter((wb) => wb.opLegal);
-  const pending = opWarbands.filter((wb) => !isPng(join(WARBANDS_DIR, wb.slug, 'warscroll.png')));
+  const vaulted = index.filter((wb) => !wb.opLegal);
+  const ownWarscroll = (wb: WarbandMeta) => join(WARBANDS_DIR, wb.slug, 'warscroll.png');
+  const gaWarscrolls = (wb: WarbandMeta) =>
+    [1, 2].map((variant) => join(GA_DIR, `${wb.grandAlliance.toLowerCase()}-${variant}.png`));
+  const pending = opWarbands.filter((wb) => !isPng(ownWarscroll(wb)));
 
-  console.log(`\n  Warband Downloads`);
-  console.log(`  =================\n`);
-  console.log(
-    `  OP warbands: ${opWarbands.length} | Already downloaded: ${opWarbands.length - pending.length} | To download: ${pending.length}`,
-  );
+  console.log(`\n  Warband Warscrolls`);
+  console.log(`  ==================\n`);
+  console.log(`  Warbands: ${index.length}`);
+  console.log(`    OP-legal, own warscroll card:   ${opWarbands.length} (to download: ${pending.length})`);
+  console.log(`    Vaulted, Grand Alliance cards:  ${vaulted.length} (no own card on underworldsdb.com)`);
 
   let downloaded = 0;
   let failed = 0;
@@ -190,7 +195,7 @@ async function main() {
     const url = `${BASE_URL}/${wb.slug}-0.png?v=1.14`;
 
     process.stdout.write(`  ${wb.name} ... `);
-    const ok = await downloadImage(url, join(wbDir, 'warscroll.png'));
+    const ok = await downloadImage(url, ownWarscroll(wb));
     if (ok) {
       console.log('OK');
       downloaded++;
@@ -199,14 +204,21 @@ async function main() {
       failed++;
     }
   }
+  if (pending.length > 0) console.log(`\n  Downloaded: ${downloaded} | Failed: ${failed}`);
 
-  if (pending.length === 0) {
-    console.log('  All warscroll images already downloaded.');
+  const missing = [
+    ...opWarbands.filter((wb) => !isPng(ownWarscroll(wb))),
+    ...vaulted.filter((wb) => !gaWarscrolls(wb).every(isPng)),
+  ];
+  if (missing.length === 0) {
+    console.log(
+      `\n  All ${index.length} warbands have their warscroll (${opWarbands.length} own + ${vaulted.length} Grand Alliance).`,
+    );
   } else {
-    console.log(`\n  Done. Downloaded: ${downloaded} | Failed: ${failed}`);
+    console.log(`\n  Missing warscroll for ${missing.length} warband(s): ${missing.map((wb) => wb.name).join(', ')}`);
   }
 
-  if (gaFailed + failed > 0) process.exitCode = 1;
+  if (gaFailed + failed + missing.length > 0) process.exitCode = 1;
 }
 
 main().catch((err) => {

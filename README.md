@@ -26,7 +26,7 @@ Shows completion status of the entire data pipeline. Reports which warbands are 
 
 ### `npm run download`
 
-Downloads warscroll card PNG images from underworldsdb.com. First syncs `warbands/index.json` with the site's [warband list](https://www.underworldsdb.com/warbands.php): new warbands are added, and changed names, fighter counts, Grand Alliances or OP-legal flags are updated. Warbands the site no longer lists stay in the index. Then downloads both generic Grand Alliance warscroll variants (8 images into `warbands/_ga/`) and every missing OP-legal warband image into that warband's directory. Non-OP-legal warbands get no image of their own; they use the Grand Alliance warscrolls. Images that already exist as valid PNGs are skipped. Exits with an error if any download fails.
+Downloads warscroll card PNG images from underworldsdb.com. First syncs `warbands/index.json` with the site's [warband list](https://www.underworldsdb.com/warbands.php): new warbands are added, and changed names, fighter counts, Grand Alliances or OP-legal flags are updated. Warbands the site no longer lists stay in the index. Then downloads both generic Grand Alliance warscroll variants (8 images into `warbands/_ga/`) and every missing OP-legal warband image into that warband's directory. Vaulted (non-OP-legal) warbands have no warscroll card of their own on underworldsdb.com; the site and the app show their Grand Alliance's two cards instead. Images that already exist as valid PNGs are skipped. Finishes by checking that every warband in the index has its warscroll, and exits with an error if any download fails or any warband is still missing one.
 
 ### `npm run download:icons`
 
