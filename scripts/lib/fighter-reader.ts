@@ -101,11 +101,15 @@ function cardImages(side: SideImages, region: CardRegion, input: InputKind): { p
 
 const JSON_ONLY = 'Return ONLY valid JSON, no markdown code fences or explanation.';
 
+/** Small capitals show case only by letter height, so every wording says how to read them. */
+const SMALL_CAPS =
+  'The banner is printed in small capitals: a full-height capital letter is a capital, a smaller capital-shaped letter is lowercase. This also holds after a hyphen ("Fjul-Grimnir" has a full-height G, "Mean-eye" a small e).';
+
 function namePrompt(intro: string, wording: number): string {
   const ask = [
-    `What is the fighter's name in the banner at the top? The card prints it in small capitals: write it with ordinary capitalisation, each word capitalised as in a title (for example "The Inevitable Petitioner" or "Fjul-Grimnir"). Keep hyphens and apostrophes exactly as printed. Leave out any symbol printed before the name, and ignore the names in other languages printed below the banner.`,
-    `Read the English name printed in the top banner, letter by letter, and write it in Title Case with exactly the printed punctuation. Do not include the small star-like Inspired symbol some cards print before the name, and do not use the Chinese, Japanese or other translated names.`,
-    `Transcribe the fighter's name from the dark banner across the top. Spell it exactly as printed, in Title Case, with any hyphens and apostrophes. Translations of the name in other languages and any emblem before the name are not part of it.`,
+    `What is the fighter's name in the banner at the top? ${SMALL_CAPS} Keep hyphens and apostrophes exactly as printed. Leave out any symbol printed before the name, and ignore the names in other languages printed below the banner.`,
+    `Read the English name printed in the top banner, letter by letter, with exactly the printed punctuation. ${SMALL_CAPS} Do not include the small star-like Inspired symbol some cards print before the name, and do not use the Chinese, Japanese or other translated names.`,
+    `Transcribe the fighter's name from the dark banner across the top, spelled exactly as printed, with any hyphens and apostrophes. ${SMALL_CAPS} Translations of the name in other languages and any emblem before the name are not part of it.`,
   ][wording];
   return `${intro}\n${ask}\nReturn JSON: {"name": "<name>"}\n${JSON_ONLY}`;
 }
