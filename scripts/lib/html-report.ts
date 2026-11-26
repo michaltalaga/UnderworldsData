@@ -323,6 +323,7 @@ export function renderHtmlReport(runDir: string): string {
   const decisionCount = decisions.length + warscrollDecisions.length;
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Rebuild review ${esc(summary?.runId ?? '')}</title><style>${CSS}</style></head><body><main>
 <h1>Fighter cards and warscrolls: review</h1>
+${existsSync(join(runDir, 'decisions.md')) ? '<p class="lead"><b>Your review decisions are applied</b> (decisions.md in this folder); the items below are what is left.</p>' : ''}
 <p class="lead">Every value was read several times and voted on. ${unanimous.toLocaleString('en')} of ${values.toLocaleString('en')} fighter values were unanimous. Nothing in <code>warbands/</code> has changed yet; applying this run replaces the files of every warband below.</p>
 <div class="tiles">
   <div class="tile"><b>${decisionCount}</b><span>need your decision</span></div>
