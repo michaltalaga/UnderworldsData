@@ -1,5 +1,6 @@
 // Eagerly-loaded icon URL lookups (warband, rival deck, and faction/Grand Alliance icons).
-const warbandIconModules = import.meta.glob('../../warbands/*/icon.png', {
+// Warband and Grand Alliance runemarks are SVGs (disc, rim and glyph) made by npm run icons from the icon.png next to them.
+const warbandIconModules = import.meta.glob('../../warbands/*/icon.svg', {
   eager: true,
   import: 'default',
 }) as Record<string, string>;
@@ -9,7 +10,7 @@ const deckIconModules = import.meta.glob('../../rivals/*/icon.png', {
   import: 'default',
 }) as Record<string, string>;
 
-const factionIconModules = import.meta.glob('../../warbands/_ga/*-icon.png', {
+const factionIconModules = import.meta.glob('../../warbands/_ga/*-icon.svg', {
   eager: true,
   import: 'default',
 }) as Record<string, string>;
@@ -18,7 +19,7 @@ function bySlug(modules: Record<string, string>): Map<string, string> {
   const map = new Map<string, string>();
   for (const [path, url] of Object.entries(modules)) {
     const parts = path.split('/');
-    map.set(parts[parts.length - 2], url); // .../<slug>/icon.png
+    map.set(parts[parts.length - 2], url); // .../<slug>/icon.svg
   }
   return map;
 }
@@ -27,7 +28,7 @@ function byFaction(modules: Record<string, string>): Map<string, string> {
   const map = new Map<string, string>();
   for (const [path, url] of Object.entries(modules)) {
     const file = path.split('/').pop() ?? '';
-    map.set(file.replace('-icon.png', '').toLowerCase(), url); // chaos-icon.png -> chaos
+    map.set(file.replace('-icon.svg', '').toLowerCase(), url); // chaos-icon.svg -> chaos
   }
   return map;
 }

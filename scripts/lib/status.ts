@@ -24,6 +24,7 @@ import {
 export type FixScript =
   | 'download'
   | 'download:icons'
+  | 'icons'
   | 'download:fighters'
   | 'rivals:sync'
   | 'extract'
@@ -66,6 +67,7 @@ export function collectStatus(): Section[] {
       check('Extracted (EN)', 'extract', GA_KEYS.map((k) => ({ name: k, done: isFile(join(GA_DIR, `${k}.json`)) }))),
       check('Translated (PL)', 'translate', GA_KEYS.map((k) => ({ name: k, done: isFile(join(GA_DIR, `${k}.pl.json`)) }))),
       check('Faction icons', 'download:icons', FACTION_ICONS.map((f) => ({ name: f, done: isFile(join(GA_DIR, `${f}-icon.png`)) }))),
+      check('Faction icon SVGs', 'icons', FACTION_ICONS.map((f) => ({ name: f, done: isFile(join(GA_DIR, `${f}-icon.svg`)) }))),
     ],
   };
 
@@ -82,6 +84,7 @@ export function collectStatus(): Section[] {
     checks: [
       check('Warscroll images', 'download', op.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'warscroll.png')) }))),
       check('Icons (all warbands)', 'download:icons', warbands.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'icon.png')) }))),
+      check('Icon SVGs (all warbands)', 'icons', warbands.map((wb) => ({ name: wb.name, done: isFile(warbandFile(wb.slug, 'icon.svg')) }))),
       check(
         'Fighter cards (all warbands)',
         'download:fighters',

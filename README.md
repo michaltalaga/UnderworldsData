@@ -22,7 +22,7 @@ These scripts handle downloading, extracting, translating, and syncing game data
 
 ### `npm run sync`
 
-Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` and `--jobs N` are passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them. For example, `npm run sync -- --jobs 4` runs up to 4 AI requests at once in each AI step (default 1). The steps themselves still run one after another, since each builds on the one before. Each step prints its start time and how long it took, steps with nothing to do are listed as skipped, and the final status shows the total time.
+Brings all data up to date in one go. It always runs `download` and `rivals:sync` first, since only they can find new warbands or decks on underworldsdb.com. After that it runs each of `download:icons`, `icons`, `download:fighters`, `extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` only when `status` reports a gap that script fills, re-checking before every step. It ends with the full status report and exits with an error if any step failed or a gap remains. `--provider api|cli` and `--jobs N` are passed on to the AI steps, and `--dry-run` shows the gaps and the steps that would run without running them. For example, `npm run sync -- --jobs 4` runs up to 4 AI requests at once in each AI step (default 1). The steps themselves still run one after another, since each builds on the one before. Each step prints its start time and how long it took, steps with nothing to do are listed as skipped, and the final status shows the total time.
 
 In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm reads the flag as its own option. The scripts read `--dry-run`, `--provider` and `--jobs` back from npm's config in that case, so the same commands work in PowerShell, cmd and bash.
 
@@ -61,6 +61,16 @@ Downloads icon PNGs from underworldsdb.com: warband icons into each `warbands/<s
 ### `npm run download:fighters`
 
 Downloads both sides of every fighter card (`<n>.png` and `<n>-inspired.png`) into `warbands/<slug>/fighters/` for every warband in the index, vaulted ones included (underworldsdb.com has 2024-layout fighter cards for all of them). Warbands whose cards are all present are skipped. Writes a `download-report.json` per warband and updates `warbands/fighters-download-summary.json`.
+
+### `npm run icons`
+
+Writes every game icon and runemark as an SVG, from the official PDFs where they draw it and traced with Potrace where they don't. The PDFs are downloaded to `extraction/icons/` (not committed): the core rules, the Grand Alliance warband rules (Surge), the February 2026 rules update (which reprints many warband abilities with their keyword runemarks), and the digital warband rules of Cyreni's Razors (Thrall) and Ironsoul's Condemnors (Shield Aetheric). Those two are the Spanish and Chinese editions, since runemarks are the same in every language.
+
+- **Core icons:** `public/assets/<name>.svg`. Icons the core rules draw as paths are copied path for path. The Move, Charge and Guard tokens and the Ploy and Upgrade card symbols are printed only as small pictures, so they are traced.
+- **Warband keyword runemarks** (Grot, Volley, Thrall...): `warbands/<slug>/runemarks/icons/<id>.svg`, next to the pictures `npm run extract` cut out of the warscroll. 18 are vectors from the PDFs. The rest are traced from the fighter cards where they are printed (a runemark circle, or a weapon ability hexagon), aligned and averaged over every card that shows them, or else from the warscroll cut-out (Asterism, Gardener). Underdog is the core icon. A new keyword runemark has to be added to the lists at the top of `scripts/icons.ts`; the script lists the cut-out pictures that have no SVG.
+- **Faction runemarks:** `warbands/<slug>/icon.svg` and `warbands/_ga/<faction>-icon.svg`, traced from the `icon.png` next to them. They keep the coloured disc and dark rim in the picture's colours (the paper texture becomes a radial gradient), with the disc filling the viewBox and the glyph where the picture has it.
+
+The one-colour SVGs have a `0 0 100 100` viewBox with the glyph fitted to 92x92 and centred, filled with `currentColor`. The app paints them as a mask over the text colour, so they follow light and dark text; faction runemarks are shown as they are. The script renders each SVG back and prints its overlap with the source (the PDF render, or the picture it was traced from), plus how far a faction runemark's colours are off. It writes contact sheets to `extraction/icons/contact-sheet.png` and `extraction/icons/factions.png`.
 
 ### `npm run extract`
 
@@ -103,11 +113,11 @@ Each warband is read from start to finish (catalog, warscroll, fighters) and sav
 
 The list of runemarks a warband's cards and warscroll can show, each with a picture, so the model picks from a fixed list instead of guessing names:
 
-- **Core:** Leader, Minion and Fly; the weapon runemarks Cleave, Ensnare, Brutal, Grievous, Stagger and Grapple, and the Critical marker; and the dice and other symbols used in warscroll text. The pictures are in `public/assets/`, drawn from the core rules PDF.
-- **The warband's own runemark:** `warbands/<slug>/icon.png`, the same art as on the cards. In the data its id is the warband slug; the sheet labels it `warband`, because models misspell long slugs (an early test read Ylthari's leaf right but wrote `ylthari-guardians`).
+- **Core:** Leader, Minion and Fly; the weapon runemarks Cleave, Ensnare, Brutal, Grievous, Stagger and Grapple, and the Critical marker; and the dice and other symbols used in warscroll text. The pictures are the SVGs in `public/assets/` made by [`npm run icons`](#npm-run-icons).
+- **The warband's own runemark:** `warbands/<slug>/icon.png`, the same art as on the cards (the app shows the `icon.svg` drawn from it). In the data its id is the warband slug; the sheet labels it `warband`, because models misspell long slugs (an early test read Ylthari's leaf right but wrote `ylthari-guardians`).
 - **Warscroll keywords:** on the sheet, a keyword whose icon could be cut out on its own is drawn like the cards print runemarks (pale on a dark circle or hexagon), so it is compared with the card on the same terms as the core runemarks; with the warscroll's small dark print instead, Blackpowder's Swashbuckle skull was often read as the core Grievous skull. These are the words the warscroll prints with their own icon, such as Grot, Squig or Volley, read from `warscroll.png` 3 times (up to 7) and voted on. Every place a read pointed at is kept, because the icon can be printed more than once, sometimes without the keyword in front of it ("has the ◯ runemark"). For each place in turn, the model points again and boxes the icon alone in an enlarged cut-out, until both pictures pass. The sheet gets the keyword with its icon; the app gets the icon alone. A last call checks both pictures: a sheet picture that fails falls back to a wider cut-out, and an app icon that fails is left out, so the app shows the keyword as text. `--pictures <run>` cuts the keyword pictures of a finished run again without reading the catalog again (ids and texts stay the same): the model lists every place each icon is printed, and the same steps run for each place.
 
-Vaulted warbands have no warscroll, so their catalog has only the first two, and other circles on their cards come out as `unknown` for a person to name. The catalog is saved as `runemarks/runemarks.json`, with the warband's own icons in `runemarks/icons/<id>.png` (the app shows these for `{icon:<id>}` tokens) and the reference sheets.
+Vaulted warbands have no warscroll, so their catalog has only the first two, and other circles on their cards come out as `unknown` for a person to name. The catalog is saved as `runemarks/runemarks.json`, with the warband's own icons in `runemarks/icons/<id>.png` and the reference sheets. For `{icon:<id>}` tokens the app shows the SVGs [`npm run icons`](#npm-run-icons) draws next to them.
 
 ### `npm run translate`
 
@@ -150,18 +160,20 @@ warbands/           Warband data (60+ warbands)
     chaos-1.json    GA Chaos variant 1
     chaos-2.json    GA Chaos variant 2
     ...             (+ .pl.json translations and .png images)
-  _ga/              ... (+ `<faction>-icon.png` Grand Alliance / Universal icons)
+  _ga/              ... (+ `<faction>-icon.png` Grand Alliance / Universal icons, and `<faction>-icon.svg` drawn from them)
   <warband>/        Warband data (vaulted warbands: icon and fighters only)
     warscroll.png   Card image (OP-legal only)
-    icon.png        Warband icon
+    icon.png        Warband icon (faction runemark)
+    icon.svg        The same, as an SVG (npm run icons); the app shows this
     fighters/       Fighter card images (<n>.png, <n>-inspired.png)
     fighters.json   Extracted fighter stats
-    runemarks/      Runemark catalog: runemarks.json, the warband's own icons (icons/<id>.png), reference sheets
+    runemarks/      Runemark catalog: runemarks.json, the warband's own icons (icons/<id>.png, and the app's icons/<id>.svg), reference sheets
     warscroll.json  Extracted English data (incl. `playstyle` pairings blurb)
     warscroll.pl.json  Polish translation (incl. `playstyle`)
     playstyle.json  Vaulted warbands only: `playstyle` pairings blurb (+ playstyle.pl.json)
-extraction/         Runs of extract:fighters --rebuild (report.md, results, votes, crops); not committed
+extraction/         Runs of extract:fighters --rebuild (report.md, results, votes, crops) and the PDFs and contact sheets of npm run icons; not committed
   pairings/         Runs of pairings --rebuild (report.html, results per warband)
+public/assets/      Game icon SVGs (npm run icons)
 rivals/             Rival deck data (13 decks)
   index.json        Master rival deck metadata
   <deck>/
@@ -180,7 +192,6 @@ src/
   types/            TypeScript interfaces
   i18n/             UI label translations
   styles/           CSS
-  assets/icons/     Game icon SVGs
 ```
 
 ## Warband ↔ Rivals deck pairings

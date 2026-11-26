@@ -1,46 +1,55 @@
 import { warbandIcon } from '../data/icons';
 
-const ICON_MAP: Record<string, string> = {
+// The core icons: public/assets/<file>.svg, drawn from the rules PDFs by npm run icons.
+const CORE_ICONS: Record<string, string> = {
   // dice faces
-  crit: '/assets/crit.png',
-  fury: '/assets/swords.png',
-  sword: '/assets/swords.png',
-  swords: '/assets/swords.png',
-  hammer: '/assets/hammer.png',
-  // weapon types (a weapon profile printed in warscroll text)
-  melee: '/assets/melee.png',
-  ranged: '/assets/ranged.png',
-  shield: '/assets/shield.png',
-  block: '/assets/shield.png',
-  dodge: '/assets/dodge.png',
-  flanked: '/assets/flanked.png',
-  'single-support': '/assets/flanked.png',
-  surrounded: '/assets/surrounded.png',
-  'double-support': '/assets/surrounded.png',
+  crit: 'crit',
+  fury: 'swords',
+  sword: 'swords',
+  swords: 'swords',
+  hammer: 'hammer',
+  shield: 'shield',
+  block: 'shield',
+  dodge: 'dodge',
+  flanked: 'flanked',
+  'single-support': 'flanked',
+  surrounded: 'surrounded',
+  'double-support': 'surrounded',
   // weapon keywords
-  cleave: '/assets/cleave.png',
-  ensnare: '/assets/ensnare.png',
-  brutal: '/assets/brutal.png',
-  grapple: '/assets/grapple.png',
-  grievous: '/assets/grevious.png',
-  stagger: '/assets/stagger.png',
-  damage: '/assets/damage.png',
+  cleave: 'cleave',
+  ensnare: 'ensnare',
+  brutal: 'brutal',
+  grapple: 'grapple',
+  grievous: 'grievous',
+  stagger: 'stagger',
+  damage: 'damage',
   // weapon stats
-  hex: '/assets/range.png',
-  // roles
-  leader: '/assets/leader.png',
-  minion: '/assets/minion.png',
-  // movement
-  fly: '/assets/fly.png',
+  hex: 'range',
+  range: 'range',
+  melee: 'melee',
+  ranged: 'ranged',
+  // fighter runemarks
+  leader: 'leader',
+  minion: 'minion',
+  fly: 'fly',
+  flying: 'fly',
+  underdog: 'underdog',
   // ability kinds
-  surge: '/assets/surge.png',
-  'core-ability': '/assets/core-ability.png',
-  inspired: '/assets/inspired.png',
+  surge: 'surge',
+  'core-ability': 'core-ability',
+  inspired: 'inspired',
+  // tokens, card types, board
+  move: 'move',
+  charge: 'charge',
+  guard: 'guard',
+  ploy: 'ploy',
+  upgrade: 'upgrade',
+  'starting-hex': 'starting-hex',
 };
 
-// A warband's own runemarks (Grot, Squig, Volley...), cut from its warscroll by
-// npm run extract:fighters into warbands/<slug>/runemarks/icons/<id>.png.
-const warbandRunemarkModules = import.meta.glob('../../warbands/*/runemarks/icons/*.png', {
+// A warband's own keyword runemarks (Grot, Squig, Volley...): one-colour SVGs made by npm run icons
+// in warbands/<slug>/runemarks/icons/<id>.svg, next to the pictures npm run extract cut out.
+const warbandRunemarkModules = import.meta.glob('../../warbands/*/runemarks/icons/*.svg', {
   eager: true,
   import: 'default',
 }) as Record<string, string>;
@@ -48,17 +57,25 @@ const warbandRunemarkModules = import.meta.glob('../../warbands/*/runemarks/icon
 const warbandRunemarks = new Map<string, string>();
 for (const [path, url] of Object.entries(warbandRunemarkModules)) {
   const parts = path.split('/');
-  const slug = parts[parts.length - 4]; // .../warbands/<slug>/runemarks/icons/<id>.png
-  warbandRunemarks.set(`${slug}/${parts[parts.length - 1].replace(/.png$/, '')}`, url);
+  const slug = parts[parts.length - 4]; // .../warbands/<slug>/runemarks/icons/<id>.svg
+  warbandRunemarks.set(`${slug}/${parts[parts.length - 1].replace(/\.svg$/, '')}`, url);
 }
 
-/** The picture for {icon:name}: the warband's own runemark first, then the core icons. */
-function iconSource(name: string, warband: string | undefined): string | undefined {
+/**
+ * The picture for {icon:name}: the warband's own runemark (its faction runemark, in colour, or a
+ * keyword runemark) first, then the core icons. `mask` marks the one-colour ones.
+ */
+function iconSource(name: string, warband: string | undefined): { src: string; mask: boolean } | undefined {
   if (warband) {
-    const own = name === warband ? warbandIcon(warband) : warbandRunemarks.get(`${warband}/${name}`);
-    if (own) return own;
+    if (name === warband) {
+      const faction = warbandIcon(warband);
+      if (faction) return { src: faction, mask: false };
+    }
+    const own = warbandRunemarks.get(`${warband}/${name}`);
+    if (own) return { src: own, mask: true };
   }
-  return ICON_MAP[name];
+  const core = CORE_ICONS[name];
+  return core ? { src: `/assets/${core}.svg`, mask: true } : undefined;
 }
 
 function renderIconTokens(text: string, warband: string | undefined) {
@@ -67,10 +84,18 @@ function renderIconTokens(text: string, warband: string | undefined) {
     const match = part.match(/^\{icon:(.+)\}$/);
     if (match) {
       const name = match[1];
-      const src = iconSource(name, warband);
-      if (src) {
+      const icon = iconSource(name, warband);
+      if (icon?.mask) {
+        // One-colour SVG used as a mask over the text colour, so it follows light and dark text.
+        // Quoted: Vite inlines small SVGs as data: URLs.
+        const mask = `url("${icon.src}")`;
         return (
-          <img key={index} className="icon-img" src={src} alt={name} />
+          <span key={index} className="icon-img icon-svg" role="img" aria-label={name} style={{ maskImage: mask, WebkitMaskImage: mask }} />
+        );
+      }
+      if (icon) {
+        return (
+          <img key={index} className="icon-img" src={icon.src} alt={name} />
         );
       }
       return (

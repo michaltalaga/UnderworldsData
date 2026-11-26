@@ -29,6 +29,7 @@ const STEPS: Step[] = [
   { script: 'download', always: true, why: 'sync warband index, download missing warscroll images' },
   { script: 'rivals:sync', always: true, why: 'sync Rivals deck index and deck data' },
   { script: 'download:icons', why: 'download missing icons' },
+  { script: 'icons', why: 'draw the icon SVGs again (missing faction runemarks)' },
   { script: 'download:fighters', why: 'download missing fighter cards' },
   { script: 'extract', ai: true, args: ['1000'], why: 'extract missing warscrolls' },
   { script: 'extract:fighters', ai: true, why: 'extract missing fighter stats' },

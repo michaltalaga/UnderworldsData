@@ -10,7 +10,7 @@ import { DEFAULT_VOTE_SETTINGS, RegionVote, voteRegion, type FieldOutcome, type 
  * The runemarks a warband's cards and warscroll can show, each with an image, so the model
  * labels what it sees from a fixed list instead of guessing a name. Built from three sources:
  *
- * - core: the runemarks and symbols of the core rules (public/assets, drawn from the rules PDF)
+ * - core: the runemarks and symbols of the core rules (public/assets/*.svg, from the rules PDFs by npm run icons)
  * - warband: the warband's own runemark (warbands/<slug>/icon.png, the same art as on the cards)
  * - warscroll: keywords the warscroll prints with an inline icon, like "Grot" or "Volley",
  *   read from warscroll.png and cut out of it with the keyword next to the icon
@@ -29,7 +29,7 @@ export interface RunemarkEntry {
   label: string;
   kind: RunemarkKind;
   source: 'core' | 'warband' | 'warscroll';
-  /** The image shown on the reference sheet. */
+  /** The image shown on the reference sheet: an SVG for core entries, a PNG for the others. */
   image: Buffer;
   /** For warscroll entries: the keyword printed next to the icon. */
   keyword?: string;
@@ -68,52 +68,52 @@ interface CoreIcon {
 
 /** Fighter runemarks of the core rules (index of runemarks, core rules page 18; Minion on page 5). */
 const CORE_FIGHTER: CoreIcon[] = [
-  { id: 'leader', label: 'Leader (crown)', kind: 'fighter', file: 'leader.png' },
-  { id: 'minion', label: 'Minion', kind: 'fighter', file: 'minion.png' },
-  { id: 'fly', label: 'Fly', kind: 'fighter', file: 'fly.png' },
+  { id: 'leader', label: 'Leader (crown)', kind: 'fighter', file: 'leader.svg' },
+  { id: 'minion', label: 'Minion', kind: 'fighter', file: 'minion.svg' },
+  { id: 'fly', label: 'Fly', kind: 'fighter', file: 'fly.svg' },
 ];
 
 /** Weapon ability runemarks of the core rules (page 11), and the Critical marker that can precede one. */
 const CORE_WEAPON: CoreIcon[] = [
-  { id: 'crit', label: 'Critical marker (makes the next runemark critical)', kind: 'weapon', file: 'crit.png' },
-  { id: 'cleave', label: 'Cleave', kind: 'weapon', file: 'cleave.png' },
-  { id: 'ensnare', label: 'Ensnare', kind: 'weapon', file: 'ensnare.png' },
-  { id: 'brutal', label: 'Brutal', kind: 'weapon', file: 'brutal.png' },
-  { id: 'grievous', label: 'Grievous', kind: 'weapon', file: 'grevious.png' },
-  { id: 'stagger', label: 'Stagger', kind: 'weapon', file: 'stagger.png' },
-  { id: 'grapple', label: 'Grapple', kind: 'weapon', file: 'grapple.png' },
+  { id: 'crit', label: 'Critical marker (makes the next runemark critical)', kind: 'weapon', file: 'crit.svg' },
+  { id: 'cleave', label: 'Cleave', kind: 'weapon', file: 'cleave.svg' },
+  { id: 'ensnare', label: 'Ensnare', kind: 'weapon', file: 'ensnare.svg' },
+  { id: 'brutal', label: 'Brutal', kind: 'weapon', file: 'brutal.svg' },
+  { id: 'grievous', label: 'Grievous', kind: 'weapon', file: 'grievous.svg' },
+  { id: 'stagger', label: 'Stagger', kind: 'weapon', file: 'stagger.svg' },
+  { id: 'grapple', label: 'Grapple', kind: 'weapon', file: 'grapple.svg' },
 ];
 
 /** Dice and other symbols that warscroll text prints inline. */
 const CORE_SYMBOLS: CoreIcon[] = [
   // A weapon profile printed in warscroll text starts with one of these (Rippa's Snarlfang's Jaws).
-  { id: 'melee', label: 'Melee weapon (crossed axe and sword)', kind: 'symbol', file: 'melee.png' },
-  { id: 'ranged', label: 'Ranged weapon (bow and arrow)', kind: 'symbol', file: 'ranged.png' },
-  { id: 'hammer', label: 'Hammer (attack dice symbol)', kind: 'symbol', file: 'hammer.png' },
-  { id: 'swords', label: 'Swords (attack dice symbol)', kind: 'symbol', file: 'swords.png' },
-  { id: 'shield', label: 'Shield (save dice symbol)', kind: 'symbol', file: 'shield.png' },
-  { id: 'dodge', label: 'Dodge (save dice symbol)', kind: 'symbol', file: 'dodge.png' },
-  { id: 'crit', label: 'Critical (dice symbol)', kind: 'symbol', file: 'crit.png' },
-  { id: 'flanked', label: 'Flanked', kind: 'symbol', file: 'flanked.png' },
-  { id: 'surrounded', label: 'Surrounded', kind: 'symbol', file: 'surrounded.png' },
-  { id: 'hex', label: 'Range (hexagon)', kind: 'symbol', file: 'range.png' },
-  { id: 'damage', label: 'Damage (star)', kind: 'symbol', file: 'damage.png' },
-  { id: 'surge', label: 'Surge', kind: 'symbol', file: 'surge.png' },
-  { id: 'core-ability', label: 'Core ability', kind: 'symbol', file: 'core-ability.png' },
-  { id: 'inspired', label: 'Inspired (skull in a spiked ring)', kind: 'symbol', file: 'inspired.png' },
+  { id: 'melee', label: 'Melee weapon (crossed axe and sword)', kind: 'symbol', file: 'melee.svg' },
+  { id: 'ranged', label: 'Ranged weapon (bow and arrow)', kind: 'symbol', file: 'ranged.svg' },
+  { id: 'hammer', label: 'Hammer (attack dice symbol)', kind: 'symbol', file: 'hammer.svg' },
+  { id: 'swords', label: 'Swords (attack dice symbol)', kind: 'symbol', file: 'swords.svg' },
+  { id: 'shield', label: 'Shield (save dice symbol)', kind: 'symbol', file: 'shield.svg' },
+  { id: 'dodge', label: 'Dodge (save dice symbol)', kind: 'symbol', file: 'dodge.svg' },
+  { id: 'crit', label: 'Critical (dice symbol)', kind: 'symbol', file: 'crit.svg' },
+  { id: 'flanked', label: 'Flanked', kind: 'symbol', file: 'flanked.svg' },
+  { id: 'surrounded', label: 'Surrounded', kind: 'symbol', file: 'surrounded.svg' },
+  { id: 'hex', label: 'Range (hexagon)', kind: 'symbol', file: 'range.svg' },
+  { id: 'damage', label: 'Damage (star)', kind: 'symbol', file: 'damage.svg' },
+  { id: 'surge', label: 'Surge', kind: 'symbol', file: 'surge.svg' },
+  { id: 'core-ability', label: 'Core ability', kind: 'symbol', file: 'core-ability.svg' },
+  { id: 'inspired', label: 'Inspired (skull in a spiked ring)', kind: 'symbol', file: 'inspired.svg' },
 ];
 
 /** Card legends that are not runemarks: the save badge symbols and the weapon bar icons. */
 export const CARD_LEGEND = {
   save: [
-    { id: 'shield', label: 'Shield', file: 'shield.png' },
-    { id: 'dodge', label: 'Dodge', file: 'dodge.png' },
+    { id: 'shield', label: 'Shield', file: 'shield.svg' },
+    { id: 'dodge', label: 'Dodge', file: 'dodge.svg' },
   ],
   weapon: [
-    { id: 'melee', label: 'Melee weapon (left of the bar)', file: 'melee.png' },
-    { id: 'ranged', label: 'Ranged weapon (left of the bar)', file: 'ranged.png' },
-    { id: 'hammer', label: 'Hammer (attack dice symbol)', file: 'hammer.png' },
-    { id: 'swords', label: 'Swords (attack dice symbol)', file: 'swords.png' },
+    { id: 'melee', label: 'Melee weapon (left of the bar)', file: 'melee.svg' },
+    { id: 'ranged', label: 'Ranged weapon (left of the bar)', file: 'ranged.svg' },
+    { id: 'hammer', label: 'Hammer (attack dice symbol)', file: 'hammer.svg' },
+    { id: 'swords', label: 'Swords (attack dice symbol)', file: 'swords.svg' },
   ],
 };
 
@@ -135,7 +135,9 @@ const CORE_KEYWORDS: Record<string, string> = {
   minions: 'minion',
 };
 
+/** A core icon's SVG (black, 100x100 viewBox); cardStyle rasterizes it at CORE_PX. */
 const asset = (file: string) => readFileSync(join(ASSETS, file));
+const CORE_PX = 512;
 
 function coreEntry(icon: CoreIcon): RunemarkEntry {
   return { id: icon.id, label: icon.label, kind: icon.kind, source: 'core', image: asset(icon.file) };
@@ -152,9 +154,13 @@ function escapeXml(value: string): string {
   return value.replace(/[<>&"']/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' })[c]!);
 }
 
-/** Black glyph on transparent (the core assets) as a light glyph on a dark circle or hexagon, like on the cards. */
-async function cardStyle(glyph: Buffer, shape: 'circle' | 'hex' | 'plain'): Promise<Buffer> {
+/**
+ * A black glyph (a core icon's SVG, or a PNG from glyphFromPrint) as a light glyph on a dark circle
+ * or hexagon, like on the cards (or black, plain). An SVG is rasterized at CORE_PX first.
+ */
+async function cardStyle(picture: Buffer, shape: 'circle' | 'hex' | 'plain'): Promise<Buffer> {
   const size = ICON_BOX;
+  const glyph = await sharp(picture, { density: (72 * CORE_PX) / 100 }).png().toBuffer();
   if (shape === 'plain') {
     return sharp(glyph).resize(size - 40, size - 40, { fit: 'contain', background: '#0000' }).extend({ top: 20, bottom: 20, left: 20, right: 20, background: '#0000' }).png().toBuffer();
   }

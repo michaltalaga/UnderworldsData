@@ -185,6 +185,10 @@
     print-color-adjust: exact;
   }
 
+  .icon-svg {
+    width: 1em;
+  }
+
   .icon-token {
     background: #555 !important;
     -webkit-print-color-adjust: exact;
