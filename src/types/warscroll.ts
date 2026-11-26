@@ -22,6 +22,8 @@ export interface Warscroll {
   version?: string | null;
   grandAlliance: string;
   inspire: string;
+  /** A rule printed outside any entry, such as "You can use 1 of the following abilities once per battle round." */
+  generalRules?: string;
   reactions: Ability[];
   abilities: Ability[];
   /** Strategic playstyle blurb for the pairings feature (English source). */
@@ -37,6 +39,7 @@ export interface AbilityTranslation {
 
 export interface WarscrollTranslation {
   inspire?: string;
+  generalRules?: string;
   reactions?: AbilityTranslation[];
   abilities?: AbilityTranslation[];
   playstyle?: string;

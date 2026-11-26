@@ -2,6 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import {
   DEFAULT_MODEL,
   ProviderFailure,
+  emptyUsage,
   toContentParts,
   type AiProvider,
   type Availability,
@@ -9,10 +10,20 @@ import {
   type CompletionRequest,
 } from './types';
 
+/** USD per million tokens (input, output), for the cost total. Cache reads cost a twentieth of input. */
+const PRICES: Record<string, { input: number; output: number }> = {
+  'claude-opus-5-5': { input: 4, output: 20 },
+  'claude-sonnet-4-6': { input: 3, output: 15 },
+};
+
+/** Tokens added to every request's max_tokens for the model's thinking. */
+const THINKING_HEADROOM = 16_000;
+
 /** Provider 1: the Anthropic Messages API, authenticated with ANTHROPIC_API_KEY. */
 export class AnthropicApiProvider implements AiProvider {
   readonly id = 'api' as const;
   readonly label = 'Anthropic API (ANTHROPIC_API_KEY)';
+  readonly usage = emptyUsage();
   private client: Anthropic | null = null;
 
   async checkAvailability(): Promise<Availability> {
@@ -30,11 +41,18 @@ export class AnthropicApiProvider implements AiProvider {
 
   async complete(request: CompletionRequest): Promise<string> {
     try {
-      const response = await this.getClient().messages.create({
-        model: request.model ?? DEFAULT_MODEL,
-        max_tokens: request.maxTokens,
-        messages: request.messages.map(toApiMessage),
-      });
+      // Current models always think before they answer, and the thinking counts toward
+      // max_tokens, so the reply gets that much room on top of its own limit. Streaming keeps
+      // a long thinking turn from hitting the HTTP timeout of a single non-streamed request.
+      const response = await this.getClient()
+        .messages.stream({
+          model: request.model ?? DEFAULT_MODEL,
+          max_tokens: request.maxTokens + THINKING_HEADROOM,
+          messages: request.messages.map(toApiMessage),
+        })
+        .finalMessage();
+      this.addUsage(response);
+      if (response.stop_reason === 'max_tokens') throw new Error('reply was cut off at max_tokens');
       return response.content.find((b) => b.type === 'text')?.text ?? '';
     } catch (err) {
       if (isProviderLevelError(err)) {
@@ -42,6 +60,17 @@ export class AnthropicApiProvider implements AiProvider {
       }
       throw err;
     }
+  }
+
+  private addUsage(response: Anthropic.Message): void {
+    const u = response.usage;
+    const cacheRead = u.cache_read_input_tokens ?? 0;
+    const cacheWrite = u.cache_creation_input_tokens ?? 0;
+    this.usage.inputTokens += u.input_tokens + cacheRead + cacheWrite;
+    this.usage.outputTokens += u.output_tokens;
+    const price = PRICES[response.model] ?? PRICES[DEFAULT_MODEL];
+    this.usage.costUsd +=
+      ((u.input_tokens + cacheWrite * 1.25 + cacheRead * 0.05) * price.input + u.output_tokens * price.output) / 1e6;
   }
 
   private getClient(): Anthropic {

@@ -28,9 +28,9 @@ In PowerShell, `npm.ps1` drops the `--` in `npm run sync -- --dry-run`, so npm r
 
 ### AI providers
 
-`extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` call Claude (Sonnet 4.6) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
+`extract`, `extract:fighters`, `translate`, `rivals:translate` and `pairings` call Claude (Opus 5.5, `claude-opus-5-5`) through a provider layer in `scripts/ai/`. Providers are tried in this order, and the first usable one is used:
 
-1. **Anthropic API** (`api`): the Anthropic SDK with `ANTHROPIC_API_KEY`. Usable when the key is set and a free models-list call accepts it. API usage is billed to the key's Console account.
+1. **Anthropic API** (`api`): the Anthropic SDK with `ANTHROPIC_API_KEY`. Usable when the key is set and a free models-list call accepts it. API usage is billed to the key's Console account. Opus 5.5 always thinks before it answers, and the thinking counts toward the reply's token limit, so every request gets 16,000 extra tokens for it and is streamed.
 2. **Claude CLI** (`cli`): runs `claude -p` with no tools, no CLAUDE.md or plugins, and no saved session; images are sent inline, so the CLI never opens files. Usable when `claude` is on PATH and `claude auth status` reports a login. It runs without `ANTHROPIC_API_KEY`, so it uses the CLI's own login (for example a Claude subscription).
 
 If the provider in use stops working during a run (key rejected, credit balance too low, rate limited, service down, CLI logged out or at its usage limit), the card being processed is retried on the next provider, which handles the rest of the run. If no provider is left, the script stops with an error.
@@ -64,11 +64,43 @@ Downloads both sides of every fighter card (`<n>.png` and `<n>-inspired.png`) in
 
 ### `npm run extract`
 
-Extracts structured game data from warscroll card PNGs using Claude's vision (Sonnet 4.6) through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with fields like name, grand alliance, abilities, reactions, and inspire conditions. Processes in batches (default 5, configurable via CLI argument).
+Extracts warscroll cards that have no `warscroll.json` yet, using Claude's vision through the first usable [AI provider](#ai-providers). Processes GA warscrolls in `_ga/` first, then OP-legal warbands. Outputs JSON with name, grand alliance, inspire condition, reactions and abilities. Each warscroll first gets a [runemark catalog](#runemark-catalog) (saved to `warbands/<slug>/runemarks/`). Its text is then read 3 times (up to 7 when the reads disagree) and voted on field by field, the same way as [fighter cards](#npm-run-extractfighters). Inline icons become `{icon:<id>}` tokens with ids from the catalog, so a Grot is `{icon:grot}` and not the nearest core runemark. Fields the reads could not agree on are printed. Processes in batches (default 5, configurable via CLI argument). To read existing warscrolls again, use `npm run extract:fighters -- --rebuild`.
 
 ### `npm run extract:fighters`
 
-Extracts fighter stats into `warbands/<slug>/fighters.json` for every warband (vaulted ones included) whose fighter card images are downloaded but that have no `fighters.json` yet. Sends both sides of each fighter card to Claude (one call per fighter) and checks the reply against the schema of the existing files: Move, Save, Health, Bounty, runemarks and weapons (with abilities) per side. A warband's file is written only when every fighter extracted cleanly. An optional argument limits it to one warband (slug or name).
+Reads the fighter cards into `warbands/<slug>/fighters.json`: Move, Save, Health, Bounty, runemarks and weapons (with their runemarks) for both sides, plus any rules text on the card. Every value is decided by voting over repeated reads, so a single misread does not end up in the data.
+
+```
+npm run extract:fighters                                            # warbands with no fighters.json yet (used by sync)
+npm run extract:fighters -- --rebuild zarbags-gitz the-emberwatch   # read again into a new folder
+npm run extract:fighters -- --rebuild --all                         # every warband and the 8 GA warscrolls
+npm run extract:fighters -- --apply 2026-11-26-15-20-00             # copy a reviewed run into warbands/
+```
+
+How a card is read:
+
+1. **Regions.** Each side is cut into four regions with wide margins: the name banner, the characteristics on the left, the runemark circles on the right and the weapon bars at the bottom. Each is enlarged 3x, only so the model gets bigger pixels. Nothing is ever identified by comparing pixels.
+2. **Voting.** Each region of each side is read 5 times, varying the input (the enlarged crop, the whole card enlarged to 900 px, or both) and the wording. Each value (Move, Save dice, a weapon's Damage, the list of runemarks, and so on) is voted on separately. A value is accepted when all reads agree. Otherwise the region is read again, up to 15 times, and the most common answer is accepted only with at least 80% of those 15 (12 votes). Below that it is marked for review. Rules text is read from both sides together, 3 times (up to 7).
+3. **Runemarks.** The model first counts the circles, then labels each one from the warband's [runemark catalog](#runemark-catalog), shown as a labelled reference sheet, with the warscroll image as a second reference. A circle that matches nothing is `unknown`, with a description. Weapon runemarks work the same way, and the Critical marker makes the runemark after it critical.
+4. **Checker.** A separate call gets both sides, the crops and the final values written out as numbered statements, and answers yes or no to each one. A "no" sends that region back for 5 more reads, and the value is marked for review either way.
+5. **Cross-checks** (marked, never fixed): the name is the same on both sides; inspired characteristics and weapons are never lower than uninspired; runemarks differ between the sides; exactly one leader per warband; every fighter has the warband's own runemark; every runemark the warscroll names is on at least one fighter or weapon; the number of cards matches the warband's fighter count.
+
+Without `--rebuild`, it handles warbands that have fighter cards but no `fighters.json`, and writes the file once every fighter is read. With `--rebuild <slug>...` (or `--all`), it also reads warbands that already have one, and their warscrolls (skip those with `--no-warscroll`, or the fighters with `--no-fighters`; `--ga` adds the GA warscrolls). Everything goes into `extraction/<run>/`, and `warbands/` is not touched:
+
+- `report.md`: per warband, the catalog and its sheets, every value that was not unanimous with its vote counts and links to the crop images, the checker's answers, the cross-checks, and the changes against the current `fighters.json` and `warscroll.json` (long texts as word diffs). At the top: the number of AI calls, the tokens, the cost and the time taken.
+- `<slug>/fighters.json`, `warscroll.json`, `warscroll.pl.json` (the current Polish file with its icon tokens changed to match; fields whose English text changed are listed in the report for `npm run translate`), `runemarks/`, the votes (`fighter-votes.json` and `warscroll-votes.json`, with which read gave which answer) and `crops/`.
+
+`--apply <run> [slug...]` copies a run's files into `warbands/`: every warband in the run, or only the ones named. Other options: `--reads N` and `--max-reads N` change the 5 and the 15, `--fighters 1,8` reads only those cards (for testing), and `--provider` and `--jobs` work as for every AI script. A fighter sends many reads at once, so `--jobs N` runs about N/4 fighters side by side with at most N requests in flight. One fighter takes about 55 calls, more when reads disagree.
+
+#### Runemark catalog
+
+The list of runemarks a warband's cards and warscroll can show, each with a picture, so the model picks from a fixed list instead of guessing names:
+
+- **Core:** Leader, Minion and Fly; the weapon runemarks Cleave, Ensnare, Brutal, Grievous, Stagger and Grapple, and the Critical marker; and the dice and other symbols used in warscroll text. The pictures are in `public/assets/`, drawn from the core rules PDF.
+- **The warband's own runemark:** `warbands/<slug>/icon.png`, the same art as on the cards. In the data its id is the warband slug; the sheet labels it `warband`, because models misspell long slugs (an early test read Ylthari's leaf right but wrote `ylthari-guardians`).
+- **Warscroll keywords:** the words the warscroll prints with their own icon, such as Grot, Squig or Volley, read from `warscroll.png` 3 times (up to 7) and voted on. Each one's picture is cut out of the warscroll with the keyword next to it. The model points at the icon, points again in an enlarged cut-out, and a last call confirms the picture shows the keyword and its whole icon.
+
+Vaulted warbands have no warscroll, so their catalog has only the first two, and other circles on their cards come out as `unknown` for a person to name. The catalog is saved as `runemarks/runemarks.json`, with the warband's own icons in `runemarks/icons/<id>.png` (the app shows these for `{icon:<id>}` tokens) and the reference sheets.
 
 ### `npm run translate`
 
@@ -108,9 +140,11 @@ warbands/           Warband data (60+ warbands)
     icon.png        Warband icon
     fighters/       Fighter card images (<n>.png, <n>-inspired.png)
     fighters.json   Extracted fighter stats
+    runemarks/      Runemark catalog: runemarks.json, the warband's own icons (icons/<id>.png), reference sheets
     warscroll.json  Extracted English data (incl. `playstyle` pairings blurb)
     warscroll.pl.json  Polish translation (incl. `playstyle`)
     playstyle.json  Vaulted warbands only: `playstyle` pairings blurb (+ playstyle.pl.json)
+extraction/         Runs of extract:fighters --rebuild (report.md, results, votes, crops); not committed
 rivals/             Rival deck data (13 decks)
   index.json        Master rival deck metadata
   <deck>/

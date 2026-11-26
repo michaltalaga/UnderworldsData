@@ -1,6 +1,12 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { AiClient, runJobs, takeAiOptions } from './ai';
+import { jobNote } from './ai/jobs';
+import type { ReadContext } from './lib/ai-read';
+import { buildCatalog, renderCatalogSheets, saveCatalog } from './lib/catalog';
+import { Limiter } from './lib/limit';
+import type { VoteSettings } from './lib/votes';
+import { readWarscroll } from './lib/warscroll-reader';
 
 interface WarbandMeta {
   slug: string;
@@ -15,47 +21,9 @@ const GA_DIR = join(WARBANDS_DIR, '_ga');
 const BASE_URL = 'https://www.underworldsdb.com/cards/fighters';
 const ALLIANCES = ['Chaos', 'Death', 'Destruction', 'Order'];
 
-const EXTRACTION_PROMPT = `You are extracting structured data from a Warhammer Underworlds warscroll card image.
-
-Extract ALL text from this warscroll card and return it as valid JSON matching this exact schema.
-All text fields are plain English strings (no translation wrappers):
-
-{
-  "id": "<warband-slug>",
-  "name": "<Warband Name as shown on card>",
-  "version": "<version number if shown, e.g. '1.2', or null>",
-  "grandAlliance": "<Grand Alliance>",
-  "inspire": "<Full inspire condition text>",
-  "reactions": [
-    {
-      "name": "<reaction name>",
-      "type": "reaction",
-      "trigger": "<trigger text if separate from effect>",
-      "flavorText": "<italic flavor text if any>",
-      "rulesText": "<rules text>"
-    }
-  ],
-  "abilities": [
-    {
-      "name": "<ability name>",
-      "type": "<passive|action|reaction>",
-      "flavorText": "<italic flavor text>",
-      "rulesText": "<full rules text>"
-    }
-  ]
-}
-
-Important rules:
-- Preserve ALL original wording exactly as written on the card
-- Use {icon:name} tokens for game icons (e.g. {icon:leader}, {icon:minion}, {icon:destined}, {icon:dodge}, {icon:shield}, {icon:fury}, {icon:crit}, {icon:cleave}, {icon:ensnare}, {icon:grievous}, {icon:skull}, {icon:hex})
-- Separate reactions (used in response to triggers) from passive/action abilities
-- If an ability box on the LEFT side of the card contains a named ability with a trigger condition, classify it as a reaction
-- Abilities on the RIGHT side are typically passive or action abilities
-- "type" for abilities: "passive" if always in effect, "action" if you use it during a power step, "reaction" if triggered by an event
-- Keep \\n for paragraph breaks within a field
-- Use only ASCII hyphens (-) never Unicode en-dashes or em-dashes
-- Properly escape special characters in JSON strings
-- Return ONLY valid JSON, no markdown code fences or explanation`;
+// Warscrolls are read by voting, with icons taken from the warband's runemark catalog (see
+// scripts/lib/warscroll-reader.ts): 3 reads, up to 7 when they disagree.
+const SETTINGS: VoteSettings = { initialReads: 3, maxReads: 7, threshold: 0.8 };
 
 async function downloadImage(url: string): Promise<Buffer | null> {
   try {
@@ -67,38 +35,29 @@ async function downloadImage(url: string): Promise<Buffer | null> {
   }
 }
 
-async function extractWarscroll(
-  ai: AiClient,
-  imageData: Buffer,
-  meta: WarbandMeta,
-): Promise<string> {
-  return ai.complete({
-    maxTokens: 4096,
-    messages: [
-      {
-        role: 'user',
-        content: [
-          { type: 'image', mediaType: 'image/png', data: imageData },
-          {
-            type: 'text',
-            text: `${EXTRACTION_PROMPT}\n\nWarband metadata:\n- slug: "${meta.slug}"\n- grandAlliance: "${meta.grandAlliance}"`,
-          },
-        ],
-      },
-    ],
-  });
+/**
+ * Builds the runemark catalog for a warscroll (saved to catalogDir when given) and reads the
+ * warscroll with it. Values the reads could not agree on are printed for checking.
+ */
+async function readWithCatalog(
+  ctx: ReadContext,
+  meta: { slug: string; name: string; grandAlliance: string },
+  image: Buffer,
+  icon: Buffer | null,
+  catalogDir: string | null,
+): Promise<Record<string, unknown>> {
+  jobNote('reading the icons');
+  const catalog = await buildCatalog(ctx, meta, { icon, warscroll: image }, SETTINGS);
+  const sheets = await renderCatalogSheets(catalog, meta.name);
+  if (catalogDir) saveCatalog(catalogDir, catalog, sheets);
+  const reading = await readWarscroll(ctx, { id: meta.slug, name: meta.name, grandAlliance: meta.grandAlliance }, image, catalog, sheets.all, null, SETTINGS, (n) => jobNote(`text: ${n}`));
+  for (const flag of [...catalog.flags, ...reading.flags.filter((f) => f.level === 'review').map((f) => `${f.field}: ${f.message}`)]) {
+    console.log(`  ! ${meta.name}: ${flag}`);
+  }
+  return reading.warscroll;
 }
 
-function sanitizeAndParse(raw: string): Record<string, unknown> {
-  const jsonStr = raw.replace(/^```json?\n?/, '').replace(/\n?```$/, '').trim();
-  const sanitized = jsonStr
-    .replace(/[\u2013\u2014]/g, '-')
-    .replace(/[\u2018\u2019]/g, "'")
-    .replace(/[\u201C\u201D]/g, '"');
-  return JSON.parse(sanitized);
-}
-
-async function extractGaWarscrolls(ai: AiClient, jobs: number) {
+async function extractGaWarscrolls(ctx: ReadContext, jobs: number) {
   mkdirSync(GA_DIR, { recursive: true });
 
   const pending: { key: string; alliance: string; variant: number }[] = [];
@@ -140,14 +99,10 @@ async function extractGaWarscrolls(ai: AiClient, jobs: number) {
 
     if (!imageData || imageData.length < 1000) throw new Error('no image or too small');
 
-    const meta: WarbandMeta = { slug: key, name: key, fighters: 0, opLegal: false, grandAlliance: alliance };
-    const raw = await extractWarscroll(ai, imageData, meta);
-    const data = sanitizeAndParse(raw);
-
-    data.id = key;
-    data.grandAlliance = alliance;
-
-    writeFileSync(join(GA_DIR, `${key}.json`), JSON.stringify(data, null, 2));
+    const meta = { slug: key, name: `Grand Alliance ${alliance} (${variant})`, grandAlliance: alliance };
+    const data = await readWithCatalog(ctx, meta, imageData, null, null);
+    writeFileSync(join(GA_DIR, `${key}.json`), `${JSON.stringify(data, null, 2)}
+`);
   });
 
   console.log(`\n  GA done. Success: ${ok} | Failed: ${failed}`);
@@ -158,9 +113,10 @@ async function main() {
   const batchSize = parseInt(args[0] || '5', 10);
 
   const ai = await AiClient.create({ provider });
+  const ctx: ReadContext = { ai, limiter: new Limiter(jobs) };
 
   // Extract GA warscrolls first
-  await extractGaWarscrolls(ai, jobs);
+  await extractGaWarscrolls(ctx, jobs);
 
   const index: WarbandMeta[] = JSON.parse(
     readFileSync(join(WARBANDS_DIR, 'index.json'), 'utf8'),
@@ -206,16 +162,11 @@ async function main() {
 
     if (!imageData || imageData.length < 1000) throw new Error('no image or too small');
 
-    const raw = await extractWarscroll(ai, imageData, meta);
-    const data = sanitizeAndParse(raw);
-
-    data.id = meta.slug;
-    data.grandAlliance = meta.grandAlliance;
-
-    writeFileSync(
-      join(wbDir, 'warscroll.json'),
-      JSON.stringify(data, null, 2),
-    );
+    const iconPath = join(wbDir, 'icon.png');
+    const icon = existsSync(iconPath) ? readFileSync(iconPath) : null;
+    const data = await readWithCatalog(ctx, meta, imageData, icon, join(wbDir, 'runemarks'));
+    writeFileSync(join(wbDir, 'warscroll.json'), `${JSON.stringify(data, null, 2)}
+`);
   });
 
   const remaining = pending.length - batch.length;

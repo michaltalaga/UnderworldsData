@@ -25,7 +25,7 @@ function pick(base: string | undefined | null, translated: string | undefined): 
   return translated ?? base ?? '';
 }
 
-function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: AbilityTranslation; language: Language }) {
+function AbilityCard({ ability, tr, language, iconSet }: { ability: Ability; tr?: AbilityTranslation; language: Language; iconSet: string }) {
   return (
     <div className="ability-card">
       <h4>{pick(ability.name, tr?.name)}</h4>
@@ -33,12 +33,12 @@ function AbilityCard({ ability, tr, language }: { ability: Ability; tr?: Ability
         <div className="ability-type">{t(ability.type, language)}</div>
       )}
       {(ability.flavorText || tr?.flavorText) && (
-        <p className="flavor">{renderText(pick(ability.flavorText, tr?.flavorText))}</p>
+        <p className="flavor">{renderText(pick(ability.flavorText, tr?.flavorText), iconSet)}</p>
       )}
       {(ability.trigger || tr?.trigger) && (
-        <p className="trigger">{renderText(pick(ability.trigger, tr?.trigger))}</p>
+        <p className="trigger">{renderText(pick(ability.trigger, tr?.trigger), iconSet)}</p>
       )}
-      <p className="rules">{renderText(pick(ability.rulesText, tr?.rulesText))}</p>
+      <p className="rules">{renderText(pick(ability.rulesText, tr?.rulesText), iconSet)}</p>
     </div>
   );
 }
@@ -85,25 +85,29 @@ export function WarscrollView({ warscroll, translation, language, imageUrl, isNo
         <div className="warscroll-left">
           <div className="inspire-box">
             <h4>{t('inspire', language)}</h4>
-            <p>{renderText(pick(warscroll.inspire, translation?.inspire))}</p>
+            <p>{renderText(pick(warscroll.inspire, translation?.inspire), warscroll.id)}</p>
           </div>
           {warscroll.reactions.length > 0 && warscroll.reactions.map((r, i) => (
             <div className="reaction-box" key={i}>
               <h4>{pick(r.name, translation?.reactions?.[i]?.name)}</h4>
               {(r.trigger || translation?.reactions?.[i]?.trigger) && (
-                <p className="trigger">{renderText(pick(r.trigger, translation?.reactions?.[i]?.trigger))}</p>
+                <p className="trigger">{renderText(pick(r.trigger, translation?.reactions?.[i]?.trigger), warscroll.id)}</p>
               )}
-              <p className="rules">{renderText(pick(r.rulesText, translation?.reactions?.[i]?.rulesText))}</p>
+              <p className="rules">{renderText(pick(r.rulesText, translation?.reactions?.[i]?.rulesText), warscroll.id)}</p>
             </div>
           ))}
         </div>
         <div className="warscroll-right">
+          {warscroll.generalRules && (
+            <p className="general-rules">{renderText(pick(warscroll.generalRules, translation?.generalRules), warscroll.id)}</p>
+          )}
           {warscroll.abilities.map((ability, i) => (
             <AbilityCard
               key={i}
               ability={ability}
               tr={translation?.abilities?.[i]}
               language={language}
+              iconSet={warscroll.id}
             />
           ))}
         </div>

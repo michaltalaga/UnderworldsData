@@ -348,6 +348,12 @@ body {
 }
 
 /* Reaction Box */
+.general-rules {
+  margin: 0 0 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
 .reaction-box {
   background: #fff;
   border: 2px solid #555;

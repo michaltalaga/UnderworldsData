@@ -5,9 +5,11 @@ import {
   NoProviderLeftError,
   PROVIDER_IDS,
   ProviderFailure,
+  emptyUsage,
   type AiProvider,
   type CompletionRequest,
   type ProviderId,
+  type Usage,
 } from './types';
 
 export * from './types';
@@ -44,15 +46,36 @@ export class AiClient {
     return client;
   }
 
+  /** Requests sent so far (each attempt counts, retries after a provider switch included) and how many of them failed. */
+  readonly stats = { calls: 0, failed: 0 };
+
+  /** Tokens and cost used so far, over every provider this client has used. */
+  usage(): Usage {
+    const total = emptyUsage();
+    for (const p of this.providers) {
+      total.inputTokens += p.usage.inputTokens;
+      total.outputTokens += p.usage.outputTokens;
+      total.costUsd += p.usage.costUsd;
+    }
+    return total;
+  }
+
+  /** Label of the provider serving requests now. */
+  get providerLabel(): string {
+    return this.providers[this.index]?.label ?? 'none';
+  }
+
   async complete(request: CompletionRequest): Promise<string> {
     for (;;) {
       if (this.switching) await this.switching;
       const index = this.index;
       const provider = this.providers[index];
       if (!provider) throw new NoProviderLeftError('no AI provider left to fall back to');
+      this.stats.calls++;
       try {
         return await provider.complete(request);
       } catch (err) {
+        this.stats.failed++;
         if (!(err instanceof ProviderFailure)) throw err;
         if (!(await this.switchFrom(index, `${provider.label} failed: ${err.message}`))) {
           throw new NoProviderLeftError(`no AI provider left to fall back to (${provider.label}: ${err.message})`);

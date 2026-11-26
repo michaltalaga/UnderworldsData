@@ -3,6 +3,7 @@ import { tmpdir } from 'os';
 import {
   DEFAULT_MODEL,
   ProviderFailure,
+  emptyUsage,
   toContentParts,
   type AiProvider,
   type Availability,
@@ -34,6 +35,7 @@ const PROVIDER_LEVEL_ERRORS = new Set(['authentication_failed', 'billing_error',
 export class ClaudeCliProvider implements AiProvider {
   readonly id = 'cli' as const;
   readonly label = 'Claude CLI (claude -p)';
+  readonly usage = emptyUsage();
 
   async checkAvailability(): Promise<Availability> {
     let result: RunResult;
@@ -77,6 +79,11 @@ export class ClaudeCliProvider implements AiProvider {
     }
 
     const outcome = parseStreamOutput(result.stdout);
+    if (outcome?.usage) {
+      this.usage.inputTokens += outcome.usage.inputTokens;
+      this.usage.outputTokens += outcome.usage.outputTokens;
+      this.usage.costUsd += outcome.usage.costUsd;
+    }
     if (!outcome) {
       const detail = result.stderr.trim().split('\n').slice(-3).join(' ') || 'no output';
       throw new ProviderFailure(this.id, `claude CLI exited with code ${result.code}: ${detail}`);
@@ -121,6 +128,15 @@ interface StreamOutcome {
   text: string;
   isError: boolean;
   errorType?: string;
+  /** What the CLI reports for the call (with a subscription the cost is what it would have cost on the API). */
+  usage?: { inputTokens: number; outputTokens: number; costUsd: number };
+}
+
+interface ResultUsage {
+  input_tokens?: number;
+  output_tokens?: number;
+  cache_read_input_tokens?: number;
+  cache_creation_input_tokens?: number;
 }
 
 /** Reads the final `result` event (and any assistant `error` tag) from stream-json output. */
@@ -129,7 +145,14 @@ export function parseStreamOutput(stdout: string): StreamOutcome | null {
   let outcome: StreamOutcome | null = null;
   for (const line of stdout.split('\n')) {
     if (!line.trim().startsWith('{')) continue;
-    let event: { type?: string; error?: string; is_error?: boolean; result?: string };
+    let event: {
+      type?: string;
+      error?: string;
+      is_error?: boolean;
+      result?: string;
+      usage?: ResultUsage;
+      total_cost_usd?: number;
+    };
     try {
       event = JSON.parse(line);
     } catch {
@@ -138,6 +161,14 @@ export function parseStreamOutput(stdout: string): StreamOutcome | null {
     if (event.type === 'assistant' && event.error) errorType = event.error;
     if (event.type === 'result') {
       outcome = { text: event.result ?? '', isError: Boolean(event.is_error) };
+      const u = event.usage;
+      if (u || event.total_cost_usd) {
+        outcome.usage = {
+          inputTokens: (u?.input_tokens ?? 0) + (u?.cache_read_input_tokens ?? 0) + (u?.cache_creation_input_tokens ?? 0),
+          outputTokens: u?.output_tokens ?? 0,
+          costUsd: event.total_cost_usd ?? 0,
+        };
+      }
     }
   }
   if (outcome && errorType) outcome.errorType = errorType;
