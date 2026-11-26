@@ -25,7 +25,7 @@
     {
       "name": "Snarlfang's Jaws",
       "flavorText": null,
-      "rulesText": "Jeśli broń przyjaznego wojownika ma runemark {icon:snarlfangs-jaws}, masz dostęp do następującej zdolności broni:\n\nSnarlfang's Jaws {icon:snarlfangs-jaws}: Po skutecznym lub zremisowanym Ataku atakujący może natychmiast zaatakować ponownie, używając odpowiedniej broni poniżej. Tych broni nie można modyfikować.\n\nJeśli atakujący jest Uninspired, użyj tej broni:\n\n{icon:unknown} {icon:hex} 1 {icon:hammer} 1 {icon:damage} 2\n\nJeśli atakujący jest Inspired, użyj tej broni:\n\n{icon:unknown} {icon:hex} 1 {icon:swords} 2 {icon:damage} 2"
+      "rulesText": "Jeśli broń przyjaznego wojownika ma runemark {icon:snarlfangs-jaws}, masz dostęp do następującej zdolności broni:\n\nSnarlfang's Jaws {icon:snarlfangs-jaws}: Po skutecznym lub zremisowanym Ataku atakujący może natychmiast zaatakować ponownie, używając odpowiedniej broni poniżej. Tych broni nie można modyfikować.\n\nJeśli atakujący jest Uninspired, użyj tej broni:\n\n{icon:melee} {icon:hex} 1 {icon:hammer} 1 {icon:damage} 2\n\nJeśli atakujący jest Inspired, użyj tej broni:\n\n{icon:melee} {icon:hex} 1 {icon:swords} 2 {icon:damage} 2"
     }
   ]
 }

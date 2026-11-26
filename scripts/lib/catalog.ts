@@ -86,6 +86,9 @@ const CORE_WEAPON: CoreIcon[] = [
 
 /** Dice and other symbols that warscroll text prints inline. */
 const CORE_SYMBOLS: CoreIcon[] = [
+  // A weapon profile printed in warscroll text starts with one of these (Rippa's Snarlfang's Jaws).
+  { id: 'melee', label: 'Melee weapon (crossed axe and sword)', kind: 'symbol', file: 'melee.png' },
+  { id: 'ranged', label: 'Ranged weapon (bow and arrow)', kind: 'symbol', file: 'ranged.png' },
   { id: 'hammer', label: 'Hammer (attack dice symbol)', kind: 'symbol', file: 'hammer.png' },
   { id: 'swords', label: 'Swords (attack dice symbol)', kind: 'symbol', file: 'swords.png' },
   { id: 'shield', label: 'Shield (save dice symbol)', kind: 'symbol', file: 'shield.png' },

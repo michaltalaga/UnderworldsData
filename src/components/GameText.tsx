@@ -7,6 +7,9 @@ const ICON_MAP: Record<string, string> = {
   sword: '/assets/swords.png',
   swords: '/assets/swords.png',
   hammer: '/assets/hammer.png',
+  // weapon types (a weapon profile printed in warscroll text)
+  melee: '/assets/melee.png',
+  ranged: '/assets/ranged.png',
   shield: '/assets/shield.png',
   block: '/assets/shield.png',
   dodge: '/assets/dodge.png',
