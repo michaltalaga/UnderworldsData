@@ -41,5 +41,5 @@
       "rulesText": "Pick a friendly fighter that was conducting during that step. Heal that fighter. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Five fanatical cultists who start fully Inspired and fight as a coordinated firing line. Their signature mechanic shortens shooting range for each friendly fighter standing between attacker and target, rewarding careful alignment into a row, while those conducting fighters Inspire. A chosen combat-phase aura grants the whole warband a shared buff each round."
+  "playstyle": "Five fragile Sigmarite zealots with modest Move and low Health, the Brethren start Inspired but lose it after each successful Attack. Holy Capacitors lets friendly fighters standing between an attacker and its target shorten the distance, and those conducting fighters become Inspired again, so the band forms chains to strike from surprising range. A chosen hymn prevents Flanking, grants Stagger or lets fighters take damage instead of Charge tokens. The warband wins by holding tight formations, cycling Inspiration and overwhelming foes with coordinated reach."
 }

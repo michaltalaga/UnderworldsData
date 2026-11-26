@@ -28,5 +28,5 @@
       "rulesText": "Daj swojemu liderowi ({icon:leader}) żeton Charge. Następnie przepchnij każdego innego przyjaznego wojownika o liczbę heksów nie większą niż numer rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Trzej twardzi orruccy Brutale, elitarny warband wyniszczenia, który przemiela wroga w przeciągłej walce wręcz. Walka napędza ekonomię żetonów Waaagh!, gromadząc żetony, które hartują Brutali przeciw obrażeniom, blokują wrogie Ploye i przekształcają się w inspirowanie zamiast karty Power. Z nielicznymi, lecz odpornymi ciałami zwycięża w przewlekłych bijatykach, w których orruki po prostu przetrwają swoich wrogów."
+  "playstyle": "Trzech potężnych orrukowych Brutes z 5 Health każdy, powolnych przy Move 3, ale stworzonych do bijatyki. Każdy Attack, który wykonają lub otrzymają, daje żeton Waaagh!, a trzy żetony robią Inspire wojownika, zmieniając go w mocniej bijącą, Grievous, Brutal i lepiej opancerzoną formę. Żetony można też wydać na jednorazowe sztuczki: Guard lub Stagger po otrzymaniu obrażeń, anulowanie wrogiego Ploy albo Charge lidera, która pcha całą bandę naprzód. Warband wygrywa, wchodząc w zwarcie, wymieniając ciosy, by budować impet, i rozbijając wszystko, co znajdzie się w zasięgu."
 }

@@ -32,5 +32,5 @@
       "rulesText": "Wybierz przyjaznego wojownika. Przesuń tego wojownika o liczbę heksów nie większą niż liczba zbezczeszczonych żetonów skarbów. To przesunięcie musi zakończyć się na żetonie skarbu i/lub w sąsiedztwie wrogiego wojownika.\nMożesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czwórka pancernych Wojowników Chaosu zbudowana wokół mechanizmu bezczeszczenia skarbów. Zdobywają i bezczeszczą żetony skarbów, co napędza dodatkowe dobieranie kart Power i dłuższe pchnięcia podczas natarcia — tym potężniejsze, im więcej zbezczeszczonych żetonów się nazbiera. Wytrzymały i chroniący swoich nosicieli warband wygrywa przez kontrolę planszy i przewagę kart, zamieniając same cele w paliwo napędzające jego agresję."
+  "playstyle": "Czterech opancerzonych Chaos Warriors o solidnym Health, ale z ociężałym Move 3, stworzonych do utrzymywania terenu, a nie do prześcigania wrogów. Ich silnikiem jest bezczeszczenie skarbów: przejmuj żetony i plugaw je w krokach Power albo zabijając wrogów, gdy trzymasz skarb. Gdy dwa zostaną zbezczeszczone, cały warband dostaje Inspire, zyskując Save, ataki Grievous i Cleave oraz większy zasięg. Zbezczeszczone żetony napędzają też jednorazowe dobieranie kart Power i pchnięcia na cele, więc Ravagers wygrywają, wcześnie przejmując skarby i wykruszając przeciwników z ich pól."
 }

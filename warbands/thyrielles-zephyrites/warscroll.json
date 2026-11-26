@@ -46,5 +46,5 @@
       "rulesText": "Pick a friendly windblown fighter. Push that fighter any number of hexes in a straight line towards a friendly Tzul model. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Four agile Lumineth fighters whose power hinges on Tzul, a wind spirit repositioned at the start of every round. Fighters on Tzul's windblown line inspire after any successful attack, gain flying and a bonus Move for greater reach, and earn an extra Save die while activated – while enemies in the same line are automatically Flanked. The warband wins by placing Tzul each turn to simultaneously punish clustered opponents and amplify its own moderate-health fighters, converting precise turn-by-turn repositioning into a cascade of offensive and defensive bonuses."
+  "playstyle": "Four agile Lumineth aelves with low Health and dodge saves, guided by the spirit Tzul, who relocates each round and casts a wind-line across the board. Fighters standing in that gale are windblown: allies gain flying and extra Move, and dodge more easily after moving, while enemies caught in it count as Flanked. Inspiring requires successful attacks by windblown fighters, so the warband wins by positioning around Tzul's lines, using ranged pressure and leaping strikes to pick off foes while evading retaliation."
 }

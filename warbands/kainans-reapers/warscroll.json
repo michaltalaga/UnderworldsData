@@ -43,5 +43,5 @@
       "rulesText": "Pick a friendly minion ({icon:minion}) with any Move and/or Charge tokens. Remove that fighter's Move and/or Charge tokens. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Six tanky Ossiarch Bonereaper constructs that fight as a disciplined block, advancing in lockstep so every Mortek ends its move adjacent to a comrade. Guard tokens and a no-target lockout make them hard to dislodge, while flanked or surrounded foes suffer Grievous blows. Slaying enemies feeds bone-tithe tokens that are spent to inspire, rewarding patient, formation-based killing."
+  "playstyle": "Six Ossiarch Bonereapers built around a sturdy six-health Kainan leading five fragile two-health Mortek, all slow at Move 2. Inspiring is an economy: slaying enemies earns bone-tithe tokens equal to their Bounty, which are spent to Inspire chosen fighters. When Kainan or Khenta acts, Mortek Advance moves the minions in lockstep, keeping them in tight blocks that flank and surround foes. The warband wins by grinding forward as a disciplined phalanx, using once-per-game shields of Guard and protection to trade efficiently."
 }

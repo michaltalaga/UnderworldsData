@@ -12,7 +12,7 @@
       "rulesText": "Wybierz swojego lidera ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Move ani Charge. Wybierz zdolność Move albo zdolność Attack. Każdy przyjazny przewodzący ({icon:conductive}) wojownik może użyć tej zdolności.\n\nNastępnie możesz wybrać pokonanego przyjaznego przewodzącego ({icon:conductive}) wojownika. Wykonaj Raise na tym przewodzącym ({icon:conductive}) wojowniku, umieść go w pustym polu sąsiadującym z twoim liderem ({icon:leader}), a następnie zadaj mu 1 obrażenie."
     }
   ],
-  "playstyle": "Siedmioosobowy oddział nieumarłych zbudowany wokół nekromanty kierującego niczym marionetkami przewodzącymi konstruktami-sługami ({icon:minion}), które rozpoczynają grę jako Inspired. Każdy poległy sługa przyspiesza ocalałych, a przywódca może masowo wykonać Move lub Attack całym rojem, zanim przywróci (Raise) poległy konstrukt. Kruchy, lecz mobilny oddział opiera się na napędzanej śmiercią szybkości, przerzutach z sąsiedztwa i ciosach Grievous przeciw wrogom z żetonami Stagger, by taniec trwał dalej.",
+  "playstyle": "Siedmioosobowy warband Death złożony z kruchych, dwuranowych minionów-zombie, którymi niczym marionetkami kierują nekromanta Deintalos i jego uczeń Marcov. Przewodzące miniony zaczynają jako Inspired, przerzucają ataki, gdy trzymają się w skupisku, i zyskują Grievous przeciwko wrogom, którzy są Staggered, a Deintalos porusza się lub atakuje wszystkimi naraz i wskrzesza poległych obok siebie. Początkowo powolna horda przyspiesza w miarę, jak jej ciała padają — wygrywa, wymieniając łatwych do poświęcenia minionów na zabójstwa, które dają Inspire jej liderom, i stopniowo wykruszając przeciwnika.",
   "reactions": [
     {
       "name": "Dynamiczne Wzmocnienie",

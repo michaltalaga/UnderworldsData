@@ -35,5 +35,5 @@
       "rulesText": "Save rolls made for that fighter for that Attack count as having more {icon:crit} than the Attack roll for the purposes of Stand Fast. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Three fast grot wolf-riders, a glass-cannon trio that hunts with speed and a built-in second bite. Each successful attack lets the wolf strike again, and Inspiring keys off loading fighters with two or more upgrades or landing those follow-up jaws. It picks off the weak and prizes wounded prey, but its small, exposed crew punishes mistakes."
+  "playstyle": "Three grot riders on Snarlfangs with moderate health, a single shield save and average Move that rises to 5 with dodge saves once Inspired. Every weapon carries Snarlfang's Jaws, so a successful or drawn Attack triggers a bonus 2-damage bite, and landing that follow-up Inspires the fighter. Once-per-game tricks push the whole pack towards a chosen victim and stop enemies counting flanked or surrounded results. The warband wins through coordinated pile-ons, chaining double attacks to delete isolated targets quickly."
 }

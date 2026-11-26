@@ -27,5 +27,5 @@
     }
   ],
   "abilities": [],
-  "playstyle": "Five near-unkillable Nurgle fighters whose uninspired bodies cap incoming damage at two per turn. A clockwise tracker advances as turns pass, damage lands and treasure is held, scaling Gardener characteristics and healing fighters as it ticks. The warband grinds slowly forward, all but impossible to remove, winning through sheer endurance while its objective-fed engine steadily strengthens its fighters."
+  "playstyle": "Five slow Nurgle gardeners: four sturdy Move 3 bodies and a fragile flying Squort. Most of their damage is set by a tracker that advances after each turn, whenever a friendly fighter is hurt and when they hold more treasure, so attacks grow harder-hitting as the game goes on, and one tracker space heals a fighter. Imperturbable caps damage on Uninspired fighters at 2 per turn, and fighters Inspire once vulnerable. The warband wins by sitting on treasure, absorbing punishment and outlasting opponents in a late-game grind."
 }

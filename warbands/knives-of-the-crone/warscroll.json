@@ -39,5 +39,5 @@
       "rulesText": "The next time you make a Save roll this battle round, you can immediately re-roll 1 Save dice in that Save roll."
     }
   ],
-  "playstyle": "Four Khainite assassins whose game revolves around prophecy dice. Successful Attacks and a round-start roll let them foretell prophecies, granting Cleave and Ensnare, Save re-rolls, and Objective-deck manipulation, with wisdom prophecies triggering Inspire. They are a fast glass cannon that leverages this deck control and scaling lethality to dictate the flow of the game."
+  "playstyle": "Four fragile Order aelves with average Move, low Health and dodge saves, two of whom gain Fly once Inspired. Their engine is the prophecy roll, made at the start of each round and again after every successful Attack, which can foretell Cleave and Ensnare on the next melee strike, a Save re-roll, or a look at the top Objective card. Foretold Wisdom is their only way to Inspire, so the warband wins by attacking relentlessly, chaining prophecies to empower its strikes while sculpting its Objective draws."
 }

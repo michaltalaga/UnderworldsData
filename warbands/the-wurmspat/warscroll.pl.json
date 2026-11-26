@@ -32,5 +32,5 @@
       "rulesText": "Bronie do walki wręcz przyjaznych wojowników mają Grievous ({icon:grievous}) oprócz wszelkich innych zdolności broni w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Trójka twardych elitarnych wojowników Nurgle'a, którzy nacierają powoli i stopniowo wykruszają przeciwnika. Ich pokryte żółcią ostrza zatruwają wrogów, odbierając im Move, tak że nie mogą uciec, a redukcja obrażeń od ataków bez Cleave czyni ich brutalnie trudnymi do zabicia. Ceną jest niska mobilność, więc warband wygrywa, przyjmując ciosy, spowalniając grę do pełzania i rozbierając na części odizolowane cele przez wiele rund."
+  "playstyle": "Trzech powolnych, lecz wytrzymałych Rotbringerów Nurgle'a, którzy mozolnie prą naprzód zamiast się ścigać. Disgustingly Resilient zmniejsza obrażenia od każdego ataku bez Cleave, gdy na rzucie Save wypadnie tarcza, a ich bile-blade'y rozdają żetony żółci, które spowalniają wrogów i dają Inspire temu, kto dobije skażonego przeciwnika. Jednorazowe sztuczki dodają pchnięcie dwóch wojowników, osłabienie ataków wręcz wroga oraz ostrza Grievous. Warband wygrywa, wlokąc się na znaczniki celów, przetrzymując atakujących i wykruszając spowolnionych, schorowanych wrogów w przeciągającej się wojnie na wyniszczenie."
 }

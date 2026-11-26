@@ -20,7 +20,7 @@
       "rulesText": "Zadaj 1 obrażenie temu wrogiemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Siedmioosobowy oddział kruchych, niskożywotnych szkieletowych nieumarłych dowodzonych przez Sepulchral Wardena. Przytłacza wroga, podnosząc (Raise) poległych wojowników z powrotem na heksy startowe turę po turze, zalewając planszę, by otaczać i izolować przeciwników. Inspirowanie (Inspire) jego wojowników zależy od rozdawania tych żetonów Raise, więc oddawanie ciał i przywracanie ich do gry stanowi rdzeń całego silnika.",
+  "playstyle": "Siedem powolnych, kruchych szkieletów Deathrattle, które nigdy nie pozostają martwe. Większość wojowników ma zaledwie 2 Health i Move 2, ale Warden może przesunąć dwóch minionów naprzód darmowym Move lub wskrzesić dwóch poległych wojowników z powrotem na pola startowe, a każdy powstały szkielet wraca jako Inspired, z szybszymi nogami i lepszą bronią. Bone Shrapnel karze zabójców, Grasping Hands otacza kluczowy cel, a Warden potrafi teleportować się obok swoich minionów. Warband wygrywa niekończącą się wojną na wyniszczenie, zalewając znaczniki celów odzyskanymi ciałami, których przeciwnik nigdy nie zdoła w pełni oczyścić.",
   "reactions": [
     {
       "name": "Naprzód!",

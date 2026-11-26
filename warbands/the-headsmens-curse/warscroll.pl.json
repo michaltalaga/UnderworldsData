@@ -32,5 +32,5 @@
       "rulesText": "Wyniki zarówno {icon:swords}, jak i {icon:hammer} są sukcesami w tym rzucie Ataku. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czterech widmowych katów Nighthaunt, którzy co rundę skazują wybranego wroga, a następnie na niego polują. Zabicie skazanego celu pozwala dobrać karty Power równe jego charakterystyce Bounty, napędzając silnik przewagi w kartach, podczas gdy Discorporate teleportuje wojownika, a ataki z flanki poszerzają to, które kości odnoszą sukces. Zabicie przez przywódcę może podnieść (Raise) poległego sojusznika, co czyni z tego precyzyjny, łowiecki oddział oparty na oznaczaniu i egzekucji celów."
+  "playstyle": "Czterech latających katów Nighthaunt o umiarkowanej wytrzymałości i obronie opartej na unikach, polegających na Fly oraz jednorazowym w grze teleporcie Discorporate, by dosięgnąć celów na planszy. W każdej rundzie Scriptor skazuje pobliskiego wroga, a zadanie obrażeń tej ofierze daje atakującemu Inspire, natomiast jej zabicie pozwala dobrać karty Power w liczbie równej jej Bounty. Mocno uderzający lider, wspierany przez ostrze Grievous od Sharpenera oraz Cackling Court przeciwko wrogom, którzy są Flanked, egzekwuje kluczowe cele i może wskrzesić poległego dworzanina. Warband wygrywa, eliminując skazanych wrogów, co napędza nieustanny strumień kart i Glory."
 }

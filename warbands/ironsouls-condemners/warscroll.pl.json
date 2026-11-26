@@ -27,5 +27,5 @@
       "rulesText": "Ta broń otrzymuje +1 do Zasięgu podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Trzej wyjątkowo wytrzymali Sekwitorzy Stormcastów, którzy utrzymują pozycje, zamiast gonić wroga. Wojowników bez żetonów Ruchu lub Szarży po prostu nie da się odepchnąć, a tarcze eteryczne mogą wyłączać zdolności broni wroga, czyniąc ich niezwykle trudnymi do ruszenia z miejsca. Inspire uzyskują, wyrzucając krytyka w dowolnym rzucie na Atak lub Obronę, a Wielki Maczuga ich lidera skaluje liczbę kości wraz z numerem rundy bitewnej."
+  "playstyle": "Trzech wytrzymałych elitarnych Stormcastów, każdy z 5 Health i stałym, choć powolnym Move 3, którzy otrzymują Inspire, gdy ich rzuty Attack lub Save zawierają krytyczny sukces. Po Inspire tarczownicy zyskują mocniejsze Save oraz Cleave lub Stagger, a Brodus zyskuje szybkość i dodatkowe kości do swojego buzdyganu z Grievous, a raz na grę może dodać tyle kości, ile wynosi numer rundy bitwy. Stojących wojowników nie da się odepchnąć, a jednorazowe sztuczki z tarczą i młotem negują zdolności broni lub zwiększają zasięg. Warband wygrywa, utrzymując znaczniki celów i wykruszając każdego, kto się zbliży."
 }

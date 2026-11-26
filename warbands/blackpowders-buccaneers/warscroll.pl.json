@@ -17,7 +17,7 @@
       "rulesText": "Ta broń ma +1 Obrażeń i +X Zasięgu podczas tego Ataku, gdzie X to liczba usuniętych żetonów łupu. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
     }
   ],
-  "playstyle": "Pięciu grotowych piratów, którzy łączą zwarcie w walce wręcz z ogniem z grunderbusa. Ich ataki wręcz gromadzą żetony łupu, które napędzają niszczycielskie opcje dystansowe, w tym wybuchy Odłamków z Łupu rozpryskujące obrażenia i Stagger na pobliskich wrogów. Wydanie trzeciego żetonu łupu inspiruje całą załogę, więc napędzana walką wręcz ekonomia łupu zasila zarówno ich siłę ognia, jak i tempo.",
+  "playstyle": "Pięciu piratów Destruction: twardy, powolny Gorlok Blackpowder wspierany przez cztery kruche grotów z dwoma ranami, z których dwa potrafią latać, a jeden jest bardzo szybki. Ataki Swashbuckle zdobywają żetony swag przy trafieniu, z dodatkowym swagiem dla underdogów lub przeciwko celom z ulepszeniami. Usunięcie trzeciego żetonu swag Inspiruje całą załogę. Gorlok wydaje swag na jednorazowe wystrzały z grunderbussa, które trafiają z Cleave, nakładają Stagger na pobliskich wrogów i pchają jego załogę do przodu dzięki żetonom Charge. Warband wygrywa, kradnąc swag, a następnie wyprowadzając dobrze wymierzone salwy, by przełamać linie wroga.",
   "reactions": [
     {
       "name": "Łup i Grabież",

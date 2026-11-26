@@ -20,7 +20,7 @@
       "rulesText": "Wyniki {icon:flanked} i {icon:surrounded} są sukcesami w Save rolls wykonywanych dla tego fightera podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięciu orruckich i grotowych rabusiów z najsilniejszą nagrodą za Flankowanie i Otaczanie w całej Destrukcji. Czające się miniony liczą się podwójnie przy okrążaniu wroga, więc liderzy zdobywają zabójstwa Flankowanych i Otoczonych celów, które inspirują całe skupisko wokół ofiary. Pchnięcia pod koniec rundy utrzymują załogę w ruchu, gdy zlatuje się, by usidlić i zarżnąć osamotnionych wrogów.",
+  "playstyle": "Pięcioosobowa krew orruków i grotów zbudowana wokół dwóch wytrzymałych orruckich osiłków, Mannoka i Torki, wspieranych przez trzech kruchych grotów-minionów, a wszyscy poruszają się o przeciętne 3 pola. Gdy atakują orruki, groty liczą się jako dwóch wojowników przy Flanked i Surrounded, więc sfora oblega cele, by przygotować trafienia dające Inspire i zamachy młotem o zasięgu 2. Jednorazowe sztuczki, takie jak masowe przesunięcie minionów, hazardowe anulowanie obrony i podejrzane obrony, dodają element zaskoczenia, pozwalając krew rzucać się zbiorowo na odizolowanych wrogów i wygrywać skoordynowanym tłumem.",
   "reactions": [
     {
       "name": "Ból w Kolanie",

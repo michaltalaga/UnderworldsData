@@ -37,5 +37,5 @@
       "rulesText": "Wskaż przyjaznego wojownika i innego wojownika, który z nim sąsiaduje. Usuń tych wojowników z pola bitwy, a następnie umieść każdego z nich na hexie, z którego usunięto drugiego. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięcioosobowy rój Skavenów złożony z kruchych, łatwych do poświęcenia ciał. Sfora trzyma się w skupisku, dzięki czemu wrogowie, którzy są Flanked lub Surrounded, obrywają ciosami Grievous, a jej lider wskrzesza poległych minionów z powrotem na pola startowe, by utrzymać liczebność. Przetrwanie zależy od masy ciał, a nie od wytrzymałości — warband poświęca tanich minionów, by stopniowo wykruszać przeciwnika pozycjonowaniem i wojną na wyniszczenie."
+  "playstyle": "Pięciu kruchych Skavenów pod wodzą Skritcha Spiteclawa, którzy uderzają mocno, działając razem. Ich miniony to tanie ciała o niskiej wytrzymałości, które lider może wskrzeszać z powrotem na pola startowe, a Krrk przejmuje dowodzenie, jeśli Skritch padnie. Schemerzy zyskują Grievous przeciwko celom, które są Flanked lub Surrounded, a wojownicy stają się Inspired za każdym razem, gdy wybierze ich Ploy. Jednorazowe sztuczki do pchania, Guard i zamiany pozycji pomagają im uciec przed zagrożeniem, więc warband wygrywa, zalewając planszę i osaczając odizolowanych wrogów."
 }

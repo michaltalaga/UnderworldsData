@@ -32,5 +32,5 @@
       "rulesText": "Do końca następnego Action step, za pierwszym razem, gdy wrogi wojownik zostanie pushed, placed lub wejdzie na dowolny heks przylegający do przyjaznego miniona ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięciu grotów plus zwalisty ogor, napadający warband, który tłoczy się wokół swojego wielkiego lidera. Miniony zganiają się z powrotem do ogora i wabią go do walki, gdy giną, podczas gdy oznaczenie celu zadaje paskudne rany, a wybrane trofeum zachęca do dodatkowych ataków. Nurkowanie w lochy, by wykonać Delve, inspiruje wojowników, łącząc kontrolę pola bitwy z zachłanną agresją."
+  "playstyle": "Pięcioosobowa grupa łowiecka grotów zbudowana wokół jednego wytrzymałego osiłka, Ugluga, wspieranego przez kruchego lidera i trzech łatwych do poświęcenia minionów o umiarkowanej szybkości. Wojownicy zyskują Inspire poprzez Delve, głównie otrzymując dodatkowe kości ruchu i ataku, a ataki wręcz przeciwko wybranemu wrogowi-trofeum rzucają dodatkową kością. Polegli minioni służą jako przynęta, popychając Borgita do walki, a jednorazowe sztuczki dają minionom ciosy Grievous, przegrupowują ich wokół Ugluga lub karzą wrogów wchodzących w zasięg. Warband wygrywa, poświęcając tanie groty, by przygotować decydujące ataki grupowe na kluczowe cele."
 }

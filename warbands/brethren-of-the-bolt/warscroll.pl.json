@@ -32,5 +32,5 @@
       "rulesText": "Wybierz przyjaznego wojownika, który był przewodzącym podczas tego kroku. Wylecz tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięciu fanatycznych kultystów, którzy rozpoczynają grę w pełni Inspired i walczą jako zgrana linia ostrzału. Ich sygnaturowa mechanika skraca zasięg ostrzału za każdego przyjaznego wojownika stojącego między atakującym a celem, nagradzając staranne ustawienie w szereg, a ci przewodzący wojownicy uzyskują Inspire. Wybrana aura fazy walki daje całej drużynie wspólną premię w każdej rundzie."
+  "playstyle": "Pięciu kruchych zelotów Sigmara o umiarkowanym Move i niskim Health — Brethren zaczynają jako Inspired, ale tracą ten stan po każdym udanym Attack. Holy Capacitors pozwala sojuszniczym wojownikom stojącym między atakującym a jego celem skrócić dystans, a ci przewodzący wojownicy ponownie stają się Inspired, więc oddział tworzy łańcuchy, by uderzać z zaskakującego zasięgu. Wybrany hymn zapobiega Flanking, zapewnia Stagger lub pozwala wojownikom otrzymywać obrażenia zamiast żetonów Charge. Warband wygrywa, utrzymując ciasne formacje, odnawiając Inspiration i przytłaczając wrogów skoordynowanym zasięgiem."
 }

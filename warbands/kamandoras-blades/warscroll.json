@@ -33,5 +33,5 @@
       "rulesText": "Pick a friendly minion ({icon:minion}). Push that fighter up to 4 hexes so it is adjacent to a friendly leader ({icon:leader}). This ability can only be used once per game."
     }
   ],
-  "playstyle": "Five whipcord-fast Khorne pursuers who converge on a single marked target. Each round names an enemy worthy skull and pushes the whole warband toward it for free, ganging up while Slashing weapons stack bleed and stagger tokens that trigger extra damage. The warband wins by swarming one foe at a time, using free movement and accumulating wounds to whittle down the enemy."
+  "playstyle": "Five fragile Khorne cultists with dodge saves and modest health who rely on numbers and speed rather than toughness. Each round they must name an enemy as the worthy skull and are dragged a hex closer to it, Inspiring when adjacent to it in a Power step or when they slay it. Their slashing strikes stack bleed and stagger tokens for extra damage, while Kamandora can call Kannat the hound to her side. The warband wins by relentlessly converging on a chosen victim and bleeding it out."
 }

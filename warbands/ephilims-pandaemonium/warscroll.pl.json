@@ -32,5 +32,5 @@
       "rulesText": "Zadaj 1 obrażenie każdemu wrogiemu wojownikowi sąsiadującemu z jakimkolwiek przyjaznym sługusem ({icon:minion}). Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Piątka kruchych demonów Tzeentcha, które zamieniają własne straty w zasoby. Lider wskrzesza poległych minionów w każdej rundzie i dobiera karty Power, ilekroć pobliski minion ginie, a ataki dystansowe zasiewają żetony wypaczenia, które detonują z opóźnionymi obrażeniami. Warband przetacza przez siebie kolejne ciała na poświęcenie, opierając się na przywoływaniu i przewadze kart, a nie na wytrzymałości, by przetrwać i przytłoczyć przeciwników."
+  "playstyle": "Pięć kruchych demonów Tzeentcha z niską wytrzymałością i obroną opartą na unikach, w większości z Move 3, do tego latający Apo'trax i szybszy Spawnmaw. Glorious Change co rundę daje Inspire jednemu minionowi, ale nakłada Stagger na innego, a Ephilim zyskuje Inspire, gdy dwa miniony są Inspired. Polegli minioni wracają dzięki Summoned Abominations, ale pojawiają się osłabieni, a Power Leech pozwala dobierać karty Power, gdy miniony giną w pobliżu lidera. Warband wygrywa podgryzaniem przeciwnika obrażeniami dystansowymi, jednorazowymi wybuchami trafiającymi stłoczonych wrogów oraz odzyskiwaniem ciał — wymienia minionów na karty, utrzymując Ephilima przy życiu."
 }

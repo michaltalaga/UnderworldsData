@@ -27,6 +27,6 @@
       "rulesText": "Wybierz przyjaznego wojownika. Na rzuty obronne tego wojownika nie mogą wpływać Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czwórka agresywnych beastmenów, którzy wzmacniają się żetonami ducha, zyskując dodatkowy Move, Save lub kości ataku — zależnie od wojownika. Haczyk w tym, że wojownicy noszący żetony ducha nie mogą być Inspired ani trzymać skarbów, co wymusza ciągły wybór między czystą siłą bojową a kontrolą celów. Sfora gra jak szybki, mocno bijący zawadiaka, który musi w odpowiednim momencie zrzucić żetony i wykonać Inspire.",
+  "playstyle": "Czterech bestialskich wojowników Darkoath o solidnych ciałach z 4 Health, ale skromnych obronach, prowadzonych przez mobilnego Sarrakkara, który zyskuje Fly, gdy jest Inspired. Ich charakterystyczną mechaniką są żetony duchów: po dowolnej zdolności Core wojownik może zdziczeć i zyskać premię Unleashed, taką jak dodatkowe kości Move, Save lub Attack, ale gdy jest zdziczały, nie może trzymać skarbu. Pozbycie się tych żetonów sprawia, że wojownik staje się Inspired, więc sfora stale przełącza się między dzikimi zrywami a ostrzejszymi profilami Inspired. Partie wygrywa się wyczuciem tych zmian — uwolnieniem bestii dla brutalnych ataków, a potem powrotem do Inspire i zajmowaniem celów.",
   "generalRules": "Uninspire: Bezpośrednio po daniu żetonu ducha przyjaznemu wojownikowi, który jest Inspired, Uninspire tego wojownika."
 }

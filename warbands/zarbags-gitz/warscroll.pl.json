@@ -43,5 +43,5 @@
       "rulesText": "Wepchnij każdego przyjaznego Squiga ({icon:squig}) o maksymalnie 2 pola. Do końca rundy bitwy te Squigi ({icon:squig}) nie mogą trzymać żetonów skarbu ani Kopać. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Dziewięcioosobowa horda grotów, najgęstsza ciżba w grze, zbudowana wokół kruchych ciał o niskim zdrowiu, które przytłaczają wroga samą liczebnością. Zwycięża dzięki atakowaniu w grupie, dokładając dodatkowe kości Ataku za każdego przyjaznego grota tłoczącego się wokół celu i łańcuchowo poruszając się przez całą hordę. Squigi oraz wirujący fanatyk dodają zagrożeń na polu bitwy, lecz każdy model ginie z łatwością."
+  "playstyle": "Dziewięcioosobowa horda kruchych grotów i squigów, z których większość ma zaledwie 2 Health i jedną kość obrony, więc ciała są tanie i łatwo je stracić. Slippery Gitz daje darmowe dodatkowe ruchy, a Make Some Noise! wyrzuca squigi do przodu, podczas gdy trójka łuczników łańcuchowo oddaje strzały Volley, a wirujące ostrza Snirka ranią każdego, kto podejdzie zbyt blisko. Warband wygrywa, zalewając planszę, przejmując znaczniki celów samą liczebnością i osaczając odizolowanych wrogów drobnymi obrażeniami oraz przewagą liczebną w walce wręcz."
 }

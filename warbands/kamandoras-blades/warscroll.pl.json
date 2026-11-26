@@ -18,7 +18,7 @@
       "rulesText": "Wybierz przyjaznego sługę ({icon:minion}). Popchnij tego wojownika o maksymalnie 4 hexy, tak aby sąsiadował z przyjaznym przywódcą ({icon:leader}). Tej zdolności można użyć tylko raz na grę."
     }
   ],
-  "playstyle": "Piątka błyskawicznie szybkich łowców Khorne'a, którzy zbiegają się na jednym naznaczonym celu. Każda runda wskazuje wrogą godną czaszkę i za darmo popycha cały warband ku niej, by go osaczyć, podczas gdy broń z cechą Cięcie nakłada żetony krwawienia i zatoczenia, wyzwalające dodatkowe obrażenia. Warband wygrywa, oblegając jednego wroga po drugim, wykorzystując darmowy ruch i kumulujące się rany, by wykruszyć przeciwnika.",
+  "playstyle": "Pięciu kruchych kultystów Khorne'a z obroną Dodge i skromnym zdrowiem, którzy polegają na liczebności i szybkości, a nie na wytrzymałości. W każdej rundzie muszą wskazać wroga jako worthy skull i są przyciągani o jedno pole bliżej niego, zyskując Inspire, gdy są obok niego w Power step lub gdy go zabiją. Ich tnące ataki kumulują żetony bleed i stagger, zadając dodatkowe obrażenia, a Kamandora może przywołać do swojego boku ogara Kannata. Warband wygrywa, nieustępliwie zbiegając się na wybraną ofiarę i wykrwawiając ją na śmierć.",
   "reactions": [
     {
       "name": "Godna Czaszka",

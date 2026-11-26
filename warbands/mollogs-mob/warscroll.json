@@ -41,5 +41,5 @@
       "rulesText": "Pick a slain friendly minion ({icon:minion}). Raise that fighter, place them in an empty starting hex and then give them a Charge token. You can only use this ability once per game."
     }
   ],
-  "playstyle": "A four-model troggoth mob led by one enormous, hard-hitting brute backed by three expendable minions. It plays as a durable beatstick, healing the leader every battle round and Inspiring once he soaks four damage, so attrition favours him. Minions seed deep-strike hazards and a slain one can be raised to keep the pressure relentless."
+  "playstyle": "A four-fighter band built around Mollog, a lumbering 7-Health troggoth who heals every round and Inspires the whole warband once he has soaked 4 or more damage. His fragile squig and spiteshroom minions follow him via free pushes, while the immobile Stalagsquig lurks anywhere on the board as a trap. Once per game, Unnatural Hazards makes the hexes around minions dangerous with Surrounded, Stagger or damage effects. The warband wins by letting Mollog absorb punishment, controlling space and crushing enemies with brutal hammer blows."
 }

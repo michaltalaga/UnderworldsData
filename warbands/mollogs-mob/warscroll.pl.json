@@ -19,7 +19,7 @@
       "rulesText": "Wybierz pokonanego przyjaznego miniona ({icon:minion}). Wskrześ tego wojownika, umieść go w pustym polu startowym, a następnie daj mu żeton Charge. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czteromodelowa zgraja troggothów dowodzona przez jednego ogromnego, mocno bijącego brutala, wspieranego przez trzech łatwych do poświęcenia minionów. Gra jako wytrzymały zawadiaka, lecząc lidera w każdej rundzie bitwy i inspirując go, gdy wchłonie cztery obrażenia, więc wojna na wyczerpanie działa na jego korzyść. Miniony rozsiewają zagrożenia z głębokiego desantu, a pokonanego można wskrzesić, by utrzymać nieubłaganą presję.",
+  "playstyle": "Czteroosobowa banda zbudowana wokół Mollog, ociężałego trolla z 7 punktami Health, który leczy się co rundę i robi Inspire całemu warbandowi, gdy przyjmie na siebie 4 lub więcej obrażeń. Jego krusi słudzy — squig i spiteshroom — podążają za nim dzięki darmowym pushom, a nieruchomy Stalagsquig czai się w dowolnym miejscu planszy jako pułapka. Raz na grę Unnatural Hazards sprawia, że pola wokół minionów stają się niebezpieczne, nakładając efekty Surrounded, Stagger lub obrażenia. Warband wygrywa, pozwalając Mollogowi przyjmować ciosy, kontrolując przestrzeń i miażdżąc wrogów brutalnymi uderzeniami młota.",
   "reactions": [
     {
       "name": "Czający się",

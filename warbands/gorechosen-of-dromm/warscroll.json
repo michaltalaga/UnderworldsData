@@ -41,5 +41,5 @@
       "rulesText": "Discard any of your blood tithe tokens. Roll an Attack dice for each token discarded in this way. On any {icon:crit}, remove damage tokens from that fighter until they are vulnerable. That fighter is slain at the end of the battle round. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Three Khorne berserkers devoted to extreme, relentless aggression. Any damage inflicted on any fighter feeds blood tithe tokens, which power a battle-wide inspire and let dying fighters cling to life for one last frenzy of slaughter. With few bodies and no subtlety, the warband charges headlong into combat, harvesting bloodshed from both sides to fuel its escalating violence."
+  "playstyle": "Three hulking Khorne elites with solid Health but only 1-shield saves and Move 3, so they trade blows rather than outmanoeuvre. Every wound inflicted on any fighter, friend or foe, feeds the Blood Tithe, and kills add the victim's Bounty, inspiring the whole warband at 8 tokens with Grievous and Stagger upgrades. Tokens can also drag fighters together, force an enemy Charge or fuel a last-gasp Final Frenzy. The warband wins by forcing bloody brawls, racing to Inspire and smashing foes apart."
 }

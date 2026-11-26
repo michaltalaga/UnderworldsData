@@ -39,5 +39,5 @@
       "rulesText": "Ten wojownik wykonuje Atak bronią dystansową (z wyłączeniem Upgrade'ów). Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czterej wojownicy Sacrosanct Stormcastów, którzy zamieniają własne męczeństwo w impet. Gdy przyjazny wojownik zostaje pokonany, cała ich drużyna uzyskuje Inspire, a każda śmierć nazwanego bohatera wyzwala pożegnalny dar — w tym Luxa, która padając, oddaje jeszcze jeden śmiertelny strzał dystansowy. Odwracają żetony terenu trafieniami wręcz i repozycjonują swojego strzelca Tarosa, by utrzymać go w zasięgu."
+  "playstyle": "Czterech wojowników w stylu Stormcast: trzech wytrzymałych, wolno poruszających się wojowników z 5 punktami zdrowia oraz Taros — szybki, latający, ale kruchy minion. Raptor's Eye ciągnie Tarosa za ruchami (Move) sojuszników, a Seeker's Strike odwraca żetony terenu (feature tokens), gdy trafią w zwarciu wrogów na nich stojących. Warband wykonuje Inspire dopiero wtedy, gdy padnie wojownik inny niż Taros, a śmierć każdego weterana wyzwala pożegnalne leczenie, pchnięcie lub strzał. Wygrywa dzięki wytrwałej, odpornej walce wręcz i kontroli celów, stając się silniejszy wraz z rosnącymi stratami."
 }

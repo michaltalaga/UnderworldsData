@@ -43,5 +43,5 @@
       "rulesText": "The number of Ploys you discard determines which abilities apply in the next turn. The effects are cumulative and the effect of each ability lasts until the end of your next turn.\n\nDiscard 1: Friendly fighters have +1 Move.\nDiscard 2: Enemy fighters are Flanked.\nDiscard 3: Friendly fighters' weapons have +1 Attack dice."
     }
   ],
-  "playstyle": "Four sneaky Kruleboyz who spread chip damage across the enemy warband. After each Action step, idle fighters make free Krule Stab jabs that Inspire on a hit, while discarded Ploys fuel movement and offence. Wounding many enemies pays off by drawing extra Power cards and letting poisons finish the damaged, rewarding broad, opportunistic aggression."
+  "playstyle": "Four cunning Kruleboyz with modest saves and Move 3, so they are neither especially tough nor fast. Their signature Krule Stab lets any fighter without a Charge token jab an adjacent, non-vulnerable enemy after the Action step, chipping damage and Inspiring the stabber. Nasty Poisons and Thief of Kunnin' reward spreading wounds across many enemies, while Schemin' Gitz trades Ploys for Move, Flanking and extra Attack dice. The warband wins by staying engaged, whittling foes down with free stabs and timing scheming surges."
 }

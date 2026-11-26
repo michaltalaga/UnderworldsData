@@ -26,7 +26,7 @@
       "rulesText": "Ta broń zadaje +X Obrażeń dla tego Ataku, gdzie X to liczba pokonanych przyjaznych wojowników."
     }
   ],
-  "playstyle": "Czworo wytrzymałych Sylvaneth, którzy stają się tym groźniejsi, im więcej ich własnych pada, czerpiąc moc z przemijających pór roku. Ich reakcje do walki wręcz dodają kości Ataku i Obrażeń równe liczbie pokonanych przyjaznych wojowników, więc uszczuplona drużyna uderza najmocniej. Teleportują sojuszników w bezpieczne miejsce w zwartej grupie, gromadzą żetony wzrostu na ukrytych kartach Power i wygrywają wojny na wyniszczenie.",
+  "playstyle": "Czterech strażników Sylvaneth o umiarkowanym Health, słabych obronach i Move 4, których sezonowe sztuczki czynią nieuchwytnymi. Użycie zdolności Core zasiewa karty Power, które co turę lub za każde zabójstwo zbierają żetony wzrostu, aż rozkwitną, inspirując fightera i wracając na rękę. Raz na rundę mogą wykonać push, przenieść fightera obok sojusznika lub dodać kości ataku i obrażenia skalujące się z poległymi sojusznikami, więc warband staje się tym groźniejszy, im bardziej topnieje. Poświęca wczesne straty, by najmocniej uderzyć w końcówce.",
   "reactions": [],
   "generalRules": "Możesz użyć 1 z poniższych zdolności raz na rundę bitwy."
 }

@@ -46,22 +46,23 @@
     {
       "warband": "garreks-reavers",
       "deck": "nexus-of-power",
-      "stars": 1
-    },
-    {
-      "warband": "garreks-reavers",
-      "deck": "hunting-grounds",
-      "stars": 1
-    },
-    {
-      "warband": "garreks-reavers",
-      "deck": "deadly-synergy",
       "stars": 2
     },
     {
       "warband": "garreks-reavers",
-      "deck": "raging-slayers",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "garreks-reavers",
+      "deck": "deadly-synergy",
       "stars": 2
+    },
+    {
+      "warband": "garreks-reavers",
+      "deck": "raging-slayers",
+      "stars": 3,
+      "note": "Five all-melee Move-4 marauders charge enraged into enemy territory, crit-flipped kills inspiring them into faster, harder-hitting weapons"
     },
     {
       "warband": "garreks-reavers",
@@ -71,28 +72,28 @@
     {
       "warband": "garreks-reavers",
       "deck": "edge-of-the-knife",
-      "stars": 1
-    },
-    {
-      "warband": "garreks-reavers",
-      "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Five aggressive chargers whose inspire engine scales with enemy Bounty, directly rewarding the high-Bounty hunts RF scores"
-    },
-    {
-      "warband": "garreks-reavers",
-      "deck": "wrack-and-ruin",
-      "stars": 1
-    },
-    {
-      "warband": "garreks-reavers",
-      "deck": "blazing-assault",
       "stars": 2
     },
     {
       "warband": "garreks-reavers",
+      "deck": "reckless-fury",
+      "stars": 3,
+      "note": "Variant 2 inspires by slain Bounty and Strengthened by Slaughter rewards hunting high-Bounty targets as five Move-4 marauders charge every round"
+    },
+    {
+      "warband": "garreks-reavers",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "garreks-reavers",
+      "deck": "blazing-assault",
+      "stars": 2
+    },
+    {
+      "warband": "garreks-reavers",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "garreks-reavers",
@@ -107,7 +108,7 @@
     {
       "warband": "spiteclaws-swarm",
       "deck": "nexus-of-power",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "spiteclaws-swarm",
@@ -118,7 +119,7 @@
       "warband": "spiteclaws-swarm",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Five cheap skaven naturally cluster to swarm one target, and raised minions refill the united formation"
+      "note": "The Plot's auto-Flank switches on Scheming Pack Grievous, while leader raises refill minions to keep the five-skaven cluster united"
     },
     {
       "warband": "spiteclaws-swarm",
@@ -128,14 +129,12 @@
     {
       "warband": "spiteclaws-swarm",
       "deck": "realmstone-raiders",
-      "stars": 3,
-      "note": "Five expendable melee skaven swarm and surround, landing the many different-attacker raids RS10 and Realmstone Raid reward"
+      "stars": 2
     },
     {
       "warband": "spiteclaws-swarm",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Five expendable Health-3 skaven cluster, raise slain bodies, and trade hits that temper them deep in enemy ground"
+      "stars": 2
     },
     {
       "warband": "spiteclaws-swarm",
@@ -160,7 +159,7 @@
     {
       "warband": "spiteclaws-swarm",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "spiteclaws-swarm",
@@ -170,40 +169,41 @@
     {
       "warband": "magores-fiends",
       "deck": "nexus-of-power",
-      "stars": 2
-    },
-    {
-      "warband": "magores-fiends",
-      "deck": "hunting-grounds",
       "stars": 1
     },
     {
       "warband": "magores-fiends",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "magores-fiends",
       "deck": "deadly-synergy",
       "stars": 2
     },
     {
       "warband": "magores-fiends",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 3,
+      "note": "Four all-melee Khorne brawlers led by Magore's Cleaving hammer charge enraged, crit-flipping hits to land the leader-slay objectives"
     },
     {
       "warband": "magores-fiends",
       "deck": "realmstone-raiders",
-      "stars": 1
-    },
-    {
-      "warband": "magores-fiends",
-      "deck": "edge-of-the-knife",
-      "stars": 0
-    },
-    {
-      "warband": "magores-fiends",
-      "deck": "reckless-fury",
       "stars": 2
     },
     {
       "warband": "magores-fiends",
+      "deck": "edge-of-the-knife",
+      "stars": 1
+    },
+    {
+      "warband": "magores-fiends",
+      "deck": "reckless-fury",
+      "stars": 2
+    },
+    {
+      "warband": "magores-fiends",
       "deck": "wrack-and-ruin",
       "stars": 1
     },
@@ -215,15 +215,15 @@
     {
       "warband": "magores-fiends",
       "deck": "emberstone-sentinels",
-      "stars": 2
-    },
-    {
-      "warband": "magores-fiends",
-      "deck": "pillage-and-plunder",
       "stars": 1
     },
     {
       "warband": "magores-fiends",
+      "deck": "pillage-and-plunder",
+      "stars": 1
+    },
+    {
+      "warband": "magores-fiends",
       "deck": "countdown-to-cataclysm",
       "stars": 1
     },
@@ -245,17 +245,17 @@
     {
       "warband": "eyes-of-the-nine",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "eyes-of-the-nine",
       "deck": "realmstone-raiders",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "eyes-of-the-nine",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "eyes-of-the-nine",
@@ -280,17 +280,17 @@
     {
       "warband": "eyes-of-the-nine",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "eyes-of-the-nine",
       "deck": "countdown-to-cataclysm",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "godsworn-hunt",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "godsworn-hunt",
@@ -305,7 +305,7 @@
     {
       "warband": "godsworn-hunt",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "godsworn-hunt",
@@ -315,13 +315,13 @@
     {
       "warband": "godsworn-hunt",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 3,
+      "note": "Three Health-2 raiders temper from turn one and Health-3 fighters soon follow, while six Move-4 bodies flood enemy ground to gang up"
     },
     {
       "warband": "godsworn-hunt",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Kill-inspired by Bounty and Strengthened by Slaughter directly reward hunting high-Bounty targets, with six Move-4 hunters charging constantly into enemy territory"
+      "stars": 2
     },
     {
       "warband": "godsworn-hunt",
@@ -341,7 +341,7 @@
     {
       "warband": "godsworn-hunt",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "godsworn-hunt",
@@ -361,7 +361,7 @@
     {
       "warband": "grashraks-despoilers",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "grashraks-despoilers",
@@ -377,12 +377,13 @@
       "warband": "grashraks-despoilers",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Four Health-2 minions temper from turn one while all six Move-4 fighters flood enemy territory with tempered bodies for gang-up objectives"
+      "note": "Four Health-2 gors are tempered from turn one, and six Move-4 bodies flood enemy ground to gang up on foes"
     },
     {
       "warband": "grashraks-despoilers",
       "deck": "reckless-fury",
-      "stars": 1
+      "stars": 3,
+      "note": "Variant 2 inspire scales with slain enemy Bounty, so six Move-4 beastmen charge into enemy territory hunting high-Bounty targets"
     },
     {
       "warband": "grashraks-despoilers",
@@ -397,7 +398,7 @@
     {
       "warband": "grashraks-despoilers",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "grashraks-despoilers",
@@ -412,13 +413,13 @@
     {
       "warband": "the-wurmspat",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-wurmspat",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Bile slows invaders to a crawl in friendly territory, holding them adjacent to be counter-punched while damage-reduction outlasts their attacks"
+      "note": "Disgustingly Resilient makes three Health-5 Rotbringers a home anchor, while bile tokens slow invaders so they cannot escape the counter-punch"
     },
     {
       "warband": "the-wurmspat",
@@ -428,7 +429,7 @@
     {
       "warband": "the-wurmspat",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-wurmspat",
@@ -449,7 +450,7 @@
       "warband": "the-wurmspat",
       "deck": "wrack-and-ruin",
       "stars": 3,
-      "note": "Three damage-reducing Nurgle elites survive dispersed in enemy territory while bile slows pursuers, unlocking damaged-fighter objectives"
+      "note": "Disgustingly Resilient keeps three Health-5 Rotbringers alive while damaged and dispersed, grinding out the survive-hurt attrition objectives"
     },
     {
       "warband": "the-wurmspat",
@@ -470,12 +471,12 @@
       "warband": "the-wurmspat",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Three damage-reducing Nurgle elites outlast every round, stacking upgrades while the tracker grinds the enemy down"
+      "note": "Damage-reducing Rotbringers outlast attackers in a prolonged war of attrition, while bile-slowed foes suffer the sustained damage the tracker rewards"
     },
     {
       "warband": "the-dread-pageant",
       "deck": "nexus-of-power",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-dread-pageant",
@@ -490,7 +491,8 @@
     {
       "warband": "the-dread-pageant",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 3,
+      "note": "Four fast Slaanesh duellists charge recklessly into enemy ground, gaining charge Move while damaged and flipping enraged hits to crits"
     },
     {
       "warband": "the-dread-pageant",
@@ -500,20 +502,18 @@
     {
       "warband": "the-dread-pageant",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Slaanesh payoffs reward staying damaged, so being tempered actively powers their raiders shoving into enemy territory"
+      "stars": 2
     },
     {
       "warband": "the-dread-pageant",
       "deck": "reckless-fury",
       "stars": 3,
-      "note": "Four fast Slaanesh raiders charge every round and trigger payoffs while damaged, feeding bounty-hunt objectives"
+      "note": "Damage-fuelled inspire and Speed of Slaanesh charge Move send four duellists charging deep every round to hunt high-Bounty foes"
     },
     {
       "warband": "the-dread-pageant",
       "deck": "wrack-and-ruin",
-      "stars": 3,
-      "note": "Payoffs and inspire trigger while damaged, and treasure-denial chip damage scores Predictable End and survive-hurt objectives"
+      "stars": 2
     },
     {
       "warband": "the-dread-pageant",
@@ -523,24 +523,23 @@
     {
       "warband": "the-dread-pageant",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "the-dread-pageant",
       "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Four move-4 Slaanesh raiders sprint to Delve treasure, with payoffs firing while damaged deep in enemy lines"
+      "stars": 1
     },
     {
       "warband": "the-dread-pageant",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "khagras-ravagers",
       "deck": "nexus-of-power",
       "stars": 3,
-      "note": "Four tanky 2-shield Chaos Warriors brawl on treasure while desecrating it for card-draw and inspiration fuel"
+      "note": "Armoured Chaos Warriors squat on treasure to desecrate it, and inspired reach stacks with covetous +1 Range for brawling on objectives"
     },
     {
       "warband": "khagras-ravagers",
@@ -575,7 +574,7 @@
     {
       "warband": "khagras-ravagers",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "khagras-ravagers",
@@ -586,12 +585,12 @@
       "warband": "khagras-ravagers",
       "deck": "emberstone-sentinels",
       "stars": 3,
-      "note": "Four tanky shield Chaos Warriors desecrate and squat treasure while card draw fuels endless objective holding"
+      "note": "Desecration inspires only while treasure is held, so four armoured Ravagers seize tokens early and grind attackers off them"
     },
     {
       "warband": "khagras-ravagers",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "khagras-ravagers",
@@ -616,8 +615,7 @@
     {
       "warband": "skittershanks-clawpack",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Five fast fragile assassins charge deep to behead the enemy leader, every one easily enraged"
+      "stars": 2
     },
     {
       "warband": "skittershanks-clawpack",
@@ -627,35 +625,33 @@
     {
       "warband": "skittershanks-clawpack",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Five fragile fast assassins are easily tempered and sprint deep to gang up on the enemy leader"
+      "stars": 2
     },
     {
       "warband": "skittershanks-clawpack",
       "deck": "reckless-fury",
       "stars": 3,
-      "note": "Five mobile assassins charge deep to hunt the high-Bounty enemy leader exactly as the deck rewards"
+      "note": "Leader-hunting re-rolls and inspire on wounding or slaying the enemy leader drive five skaven to charge in and damage high-Bounty targets"
     },
     {
       "warband": "skittershanks-clawpack",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "skittershanks-clawpack",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Leader-hunting assassins go straight for the enemy general, scoring the deck's slay-the-leader payoffs"
+      "stars": 2
     },
     {
       "warband": "skittershanks-clawpack",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "skittershanks-clawpack",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "skittershanks-clawpack",
@@ -670,7 +666,7 @@
     {
       "warband": "gorechosen-of-dromm",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "gorechosen-of-dromm",
@@ -681,7 +677,7 @@
       "warband": "gorechosen-of-dromm",
       "deck": "raging-slayers",
       "stars": 3,
-      "note": "Three Khorne berserkers built to charge and attack; the deck is their warscroll as cards"
+      "note": "Three all-melee Khorne elites brawl enraged behind a killer leader, crit flips accelerating the Blood Tithe toward a warband-wide Inspire"
     },
     {
       "warband": "gorechosen-of-dromm",
@@ -696,24 +692,24 @@
     {
       "warband": "gorechosen-of-dromm",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Three berserkers charge relentlessly and bank blood tithe off the damage that scores bounty objectives"
+      "stars": 2
     },
     {
       "warband": "gorechosen-of-dromm",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 3,
+      "note": "Blood Tithe banks a token whenever any fighter takes damage, so the deck's incidental chip and self-harm race them to Inspire"
     },
     {
       "warband": "gorechosen-of-dromm",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Blood tithe off any damage converts every Attack action and slay directly into deck-fuelling aggression"
+      "note": "Hard-hitting Khorne elites farm slay objectives while every kill adds Bounty tithe, snowballing into Grievous and Stagger strikes"
     },
     {
       "warband": "gorechosen-of-dromm",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "gorechosen-of-dromm",
@@ -723,12 +719,12 @@
     {
       "warband": "gorechosen-of-dromm",
       "deck": "countdown-to-cataclysm",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "gnarlspirit-pack",
       "deck": "nexus-of-power",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "gnarlspirit-pack",
@@ -738,13 +734,13 @@
     {
       "warband": "gnarlspirit-pack",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "gnarlspirit-pack",
       "deck": "raging-slayers",
       "stars": 3,
-      "note": "Four aggressive elites bank charge buffs and turn enraged crits into self-fuelling spirit tokens"
+      "note": "Charges turn fighters feral for Unleashed Move and Attack dice, so four mobile beast-warriors dive enraged and flip hits to crits"
     },
     {
       "warband": "gnarlspirit-pack",
@@ -754,34 +750,32 @@
     {
       "warband": "gnarlspirit-pack",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "gnarlspirit-pack",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Token-fuelled beastmen ignore treasure-holding and pour into enemy territory charging, matching the deck perfectly"
-    },
-    {
-      "warband": "gnarlspirit-pack",
-      "deck": "wrack-and-ruin",
       "stars": 2
     },
     {
       "warband": "gnarlspirit-pack",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "gnarlspirit-pack",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Spirit-token self-buffs sharpen four beastmen into accurate killers since the deck never needs treasure-holding"
+      "stars": 2
     },
     {
       "warband": "gnarlspirit-pack",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "gnarlspirit-pack",
       "deck": "pillage-and-plunder",
-      "stars": 0
+      "stars": 2
     },
     {
       "warband": "gnarlspirit-pack",
@@ -801,12 +795,12 @@
     {
       "warband": "ephilims-pandaemonium",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "ephilims-pandaemonium",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "ephilims-pandaemonium",
@@ -816,8 +810,7 @@
     {
       "warband": "ephilims-pandaemonium",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Fragile Tzeentch bodies temper readily, and dying minions draw cards while raises refill the swarm"
+      "stars": 2
     },
     {
       "warband": "ephilims-pandaemonium",
@@ -848,12 +841,12 @@
       "warband": "ephilims-pandaemonium",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Expendable minions feed the friendly-death tracker and draw cards as they die, fuelling the long grind"
+      "note": "Minions die near Ephilim for Power Leech cards and re-raise every round, each friendly casualty cranking the Cataclysm tracker upward"
     },
     {
       "warband": "skabbiks-plaguepack",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "skabbiks-plaguepack",
@@ -863,7 +856,8 @@
     {
       "warband": "skabbiks-plaguepack",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 3,
+      "note": "Six skaven pack tightly while range 2 weapons strike from behind friends, keeping the united swarm Flanking one isolated target"
     },
     {
       "warband": "skabbiks-plaguepack",
@@ -873,19 +867,18 @@
     {
       "warband": "skabbiks-plaguepack",
       "deck": "realmstone-raiders",
-      "stars": 3,
-      "note": "Six expendable melee skaven all attack each round, maximizing the different-fighter raids and repeated-attacker objectives RS rewards"
-    },
-    {
-      "warband": "skabbiks-plaguepack",
-      "deck": "edge-of-the-knife",
       "stars": 2
     },
     {
       "warband": "skabbiks-plaguepack",
-      "deck": "reckless-fury",
+      "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Variant 2 inspire scales with slain enemy Bounty, so six aggressive skaven pour into enemy territory hunting the high-Bounty targets RF rewards"
+      "note": "Three Health-2 minions temper from turn one while six Move-4 skaven flood enemy ground and gang up with reach weapons"
+    },
+    {
+      "warband": "skabbiks-plaguepack",
+      "deck": "reckless-fury",
+      "stars": 2
     },
     {
       "warband": "skabbiks-plaguepack",
@@ -910,12 +903,12 @@
     {
       "warband": "skabbiks-plaguepack",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-thricefold-discord",
       "deck": "nexus-of-power",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "the-thricefold-discord",
@@ -940,7 +933,7 @@
     {
       "warband": "the-thricefold-discord",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "the-thricefold-discord",
@@ -951,7 +944,7 @@
       "warband": "the-thricefold-discord",
       "deck": "wrack-and-ruin",
       "stars": 3,
-      "note": "Temptation chip damage and defensive tempo grind enemies down while three daemons survive spread out and damaged"
+      "note": "Temptation dice inflict non-attack chip damage on attackers, refusals push daemons apart, and Inspire fires off failed rolls and losses"
     },
     {
       "warband": "the-thricefold-discord",
@@ -966,7 +959,7 @@
     {
       "warband": "the-thricefold-discord",
       "deck": "pillage-and-plunder",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "the-thricefold-discord",
@@ -981,12 +974,12 @@
     {
       "warband": "zikkits-tunnelpack",
       "deck": "hunting-grounds",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "zikkits-tunnelpack",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "zikkits-tunnelpack",
@@ -1002,18 +995,18 @@
       "warband": "zikkits-tunnelpack",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Self-damage tempers them instantly and extreme mobility hurls tempered bombs into enemy territory for objectives"
+      "note": "Warp-charged self-damage and Health-2 Tik Tik temper the pack quickly, while each wound or death inspires survivors flooding enemy ground"
     },
     {
       "warband": "zikkits-tunnelpack",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Extreme mobility lands charge-token skaven in enemy territory then bombs high-Bounty targets to death"
+      "stars": 2
     },
     {
       "warband": "zikkits-tunnelpack",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 3,
+      "note": "Kaboom delivers non-attack chip damage and every self-inflicted wound inspires another skaven, turning the deck's incidental self-harm into fuel"
     },
     {
       "warband": "zikkits-tunnelpack",
@@ -1023,12 +1016,12 @@
     {
       "warband": "zikkits-tunnelpack",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "zikkits-tunnelpack",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "zikkits-tunnelpack",
@@ -1039,28 +1032,27 @@
       "warband": "grandfathers-gardeners",
       "deck": "nexus-of-power",
       "stars": 3,
-      "note": "Five near-unkillable Nurgle bodies cap incoming damage, squatting indefinitely on treasure hexes the deck wants held"
+      "note": "Holding more treasure advances their damage tracker, so five sturdy gardeners squatting covetous on tokens hit harder each round"
     },
     {
       "warband": "grandfathers-gardeners",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "Near-unkillable home holders cap incoming damage and trap invaders in your territory long enough to grind them for Ready or Not and Bloodscent"
+      "stars": 2
     },
     {
       "warband": "grandfathers-gardeners",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "grandfathers-gardeners",
       "deck": "raging-slayers",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "grandfathers-gardeners",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "grandfathers-gardeners",
@@ -1070,13 +1062,13 @@
     {
       "warband": "grandfathers-gardeners",
       "deck": "reckless-fury",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "grandfathers-gardeners",
       "deck": "wrack-and-ruin",
       "stars": 3,
-      "note": "Imperturbable damage-cap keeps near-unkillable fighters alive while damaged, and the treasure tracker rewards self-harm and chip play"
+      "note": "Every incidental wound on a friendly fighter advances the tracker while Imperturbable caps damage, so self-harm chip fuels their survive-hurt plan"
     },
     {
       "warband": "grandfathers-gardeners",
@@ -1087,7 +1079,7 @@
       "warband": "grandfathers-gardeners",
       "deck": "emberstone-sentinels",
       "stars": 3,
-      "note": "Near-unkillable damage-capped trackers plus a treasure engine guarantee holders survive every defend-the-token objective"
+      "note": "Out-holding the opponent's treasure advances the tracker, while Imperturbable and Reap a Harvest heals keep durable holders glued to tokens"
     },
     {
       "warband": "grandfathers-gardeners",
@@ -1098,12 +1090,12 @@
       "warband": "grandfathers-gardeners",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Near-unkillable damage-capped Nurgle bodies guarantee the long grindy game the tracker rewards"
+      "note": "Escalating tracker damage, Reap a Harvest heals and Imperturbable soak make the gardeners strongest exactly in the long grind this deck drags out"
     },
     {
       "warband": "kamandoras-blades",
       "deck": "nexus-of-power",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "kamandoras-blades",
@@ -1114,13 +1106,12 @@
       "warband": "kamandoras-blades",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Free pushes converge five pursuers around one victim, manufacturing Flanked enemies and gang-kills on demand"
+      "note": "Slaughterous Pilgrimage drags all five cultists onto one worthy skull, inspiring the united pack adjacent to it for gang-kills"
     },
     {
       "warband": "kamandoras-blades",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Five Khorne pursuers with free pushes converge enraged on one target, hits flipping to crits"
+      "stars": 2
     },
     {
       "warband": "kamandoras-blades",
@@ -1130,13 +1121,14 @@
     {
       "warband": "kamandoras-blades",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 3,
+      "note": "Five fragile low-health cultists temper quickly while forced pushes flood enemy ground and gang onto the worthy skull"
     },
     {
       "warband": "kamandoras-blades",
       "deck": "reckless-fury",
       "stars": 3,
-      "note": "Free pushes converge five Khorne pursuers to charge and gang-kill one high-Bounty enemy"
+      "note": "Five Move-4 cultists charge relentlessly at a chosen worthy skull, naming high-Bounty victims to bleed out for bounty objectives"
     },
     {
       "warband": "kamandoras-blades",
@@ -1146,8 +1138,7 @@
     {
       "warband": "kamandoras-blades",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Free pushes converge five Khorne pursuers to gang and reliably slay single targets for kill objectives"
+      "stars": 2
     },
     {
       "warband": "kamandoras-blades",
@@ -1168,7 +1159,7 @@
       "warband": "blood-of-the-bull",
       "deck": "nexus-of-power",
       "stars": 3,
-      "note": "Five durable Duardin Delve treasure for daemonforge dice, then covetous +1 Range extends their adjacency brawling"
+      "note": "Five shield-armoured duardin squat on treasure, Delving for daemonforge dice while reach and Grisk-assisted brawling punish anyone contesting the tokens"
     },
     {
       "warband": "blood-of-the-bull",
@@ -1178,7 +1169,8 @@
     {
       "warband": "blood-of-the-bull",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 3,
+      "note": "Hobgrot Cunning rewards duardin ganging a target beside Grisk, turning every united swarm attack into near-guaranteed successes and Grisk inspires"
     },
     {
       "warband": "blood-of-the-bull",
@@ -1188,12 +1180,12 @@
     {
       "warband": "blood-of-the-bull",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "blood-of-the-bull",
       "deck": "edge-of-the-knife",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "blood-of-the-bull",
@@ -1218,8 +1210,7 @@
     {
       "warband": "blood-of-the-bull",
       "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Delving treasure literally powers their daemonforge dice, so every objective Delve also arms the warband"
+      "stars": 2
     },
     {
       "warband": "blood-of-the-bull",
@@ -1234,13 +1225,13 @@
     {
       "warband": "sepulchral-guard",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "sepulchral-guard",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Seven raisable bodies keep the surround intact, feeding adjacency objectives even as fragile fighters trade away"
+      "note": "Forward pushes keep seven skeletons packed and united, Grasping Hands Surrounds a key target, and raised bodies refill the cluster"
     },
     {
       "warband": "sepulchral-guard",
@@ -1251,13 +1242,13 @@
       "warband": "sepulchral-guard",
       "deck": "realmstone-raiders",
       "stars": 3,
-      "note": "Seven raised undead bodies keep attacking and re-attacking, maximizing different-fighter raids and repeated melee triggers each round"
+      "note": "Seven melee skeletons that keep rising Inspired with better weapons supply the steady different-attacker hits that repeated raids demand"
     },
     {
       "warband": "sepulchral-guard",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Six of seven undead are Health-2, tempered from turn one, and raise back to keep surrounding"
+      "note": "Six Health-2 skeletons are tempered from turn one, while Forward pushes and Inspired raises keep the swarm flooding enemy ground"
     },
     {
       "warband": "sepulchral-guard",
@@ -1277,7 +1268,7 @@
     {
       "warband": "sepulchral-guard",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "sepulchral-guard",
@@ -1288,7 +1279,7 @@
       "warband": "sepulchral-guard",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Fragile bodies die and re-raise endlessly, each friendly death cranking the Cataclysm tracker upward"
+      "note": "Expendable skeletons feed the friendly-death tracker, and Arise! returns them Inspired, turning every casualty into recurring bodies and tracker progress"
     },
     {
       "warband": "thorns-of-the-briar-queen",
@@ -1304,24 +1295,24 @@
       "warband": "thorns-of-the-briar-queen",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Teleport-swarm instantly re-clusters seven spirits to envelop a target and Flank it from every side"
+      "note": "Seven flying spirits swarm one target while Wave of Terror and Charge tokens Surround foes, feeding united gang-attack objectives"
     },
     {
       "warband": "thorns-of-the-briar-queen",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "thorns-of-the-briar-queen",
       "deck": "realmstone-raiders",
       "stars": 3,
-      "note": "Seven teleporting spirits swarm enemy territory, landing many melee attacks for Pillage and repeated different-attacker raids"
+      "note": "Seven flying melee spirits mug and swarm targets, landing the many different-attacker raids and repeated melee triggers RS rewards"
     },
     {
       "warband": "thorns-of-the-briar-queen",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Seven Health-2 spirits are tempered immediately and teleport-swarm to flood enemy ground and gang up"
+      "note": "Five Health-2 spirits temper from turn one, flying and teleporting beside enemies to flood enemy territory and gang up"
     },
     {
       "warband": "thorns-of-the-briar-queen",
@@ -1336,7 +1327,7 @@
     {
       "warband": "thorns-of-the-briar-queen",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "thorns-of-the-briar-queen",
@@ -1371,22 +1362,22 @@
     {
       "warband": "lady-harrows-mournflight",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "lady-harrows-mournflight",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "lady-harrows-mournflight",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "lady-harrows-mournflight",
       "deck": "reckless-fury",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "lady-harrows-mournflight",
@@ -1396,7 +1387,7 @@
     {
       "warband": "lady-harrows-mournflight",
       "deck": "blazing-assault",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "lady-harrows-mournflight",
@@ -1406,12 +1397,12 @@
     {
       "warband": "lady-harrows-mournflight",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "lady-harrows-mournflight",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
@@ -1421,39 +1412,40 @@
     {
       "warband": "the-grymwatch",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "Save re-rolls in friendly territory directly fuel the home-defense save buffs while seven ghouls swarm and slay any trespasser"
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 3,
+      "note": "Seven ghouls swarm one target while Royal Hunt dice pile onto the wounded, and leader raises refill the united cluster"
     },
     {
       "warband": "the-grymwatch",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
       "deck": "realmstone-raiders",
       "stars": 3,
-      "note": "Seven durable ghouls that raise back deliver sustained melee volume, fueling repeated raids across many different attackers"
+      "note": "Seven melee ghouls attack every round with bonus dice against damaged foes, stacking different-fighter raids while raises recycle attackers"
     },
     {
       "warband": "the-grymwatch",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 3,
+      "note": "Six Health-2 ghouls are tempered from turn one, and edge-hex raises keep the swarm flooding enemy ground to gang up"
     },
     {
       "warband": "the-grymwatch",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
@@ -1463,18 +1455,18 @@
     {
       "warband": "the-grymwatch",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-grymwatch",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-grymwatch",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Durable ghouls that re-raise convert their own deaths into tracker advancement over a long game"
+      "note": "Fragile ghouls die and are raised every Power step, turning each friendly death into tracker progress across a long attritional game"
     },
     {
       "warband": "the-crimson-court",
@@ -1489,13 +1481,13 @@
     {
       "warband": "the-crimson-court",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-crimson-court",
       "deck": "raging-slayers",
       "stars": 3,
-      "note": "Hunger forces these four vampires to attack constantly, banking Rage and flipping hits to crits"
+      "note": "Four melee vampires charge in bloodthirsty and fast, every enraged hit or kill shedding hunger toward round-end Inspire"
     },
     {
       "warband": "the-crimson-court",
@@ -1505,13 +1497,12 @@
     {
       "warband": "the-crimson-court",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "the-crimson-court",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Hunger forces vampires to charge and attack every round, naturally scoring aggression and bounty objectives"
+      "stars": 2
     },
     {
       "warband": "the-crimson-court",
@@ -1522,17 +1513,17 @@
       "warband": "the-crimson-court",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Hunger forces constant attacking, naturally racking up the repeated-Attack and slay objectives this deck demands"
+      "note": "Hunger sheds only through successful Attacks and kills, so the warband's whole Inspire engine runs on the slaying this deck scores"
     },
     {
       "warband": "the-crimson-court",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "the-crimson-court",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-crimson-court",
@@ -1547,14 +1538,13 @@
     {
       "warband": "kainans-reapers",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "Lockstep adjacency line anchors immovably on home ground, surrounding and slaying invaders to feed kill-fuelled tithe and No Trespassers"
+      "stars": 2
     },
     {
       "warband": "kainans-reapers",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Lockstep adjacency formation is permanently united and tanky enough to hold the surround for kill objectives"
+      "note": "Mortek Advance marches five minions in lockstep adjacency, keeping the phalanx united to Flank targets while Ranks Unbroken adds Grievous"
     },
     {
       "warband": "kainans-reapers",
@@ -1569,7 +1559,8 @@
     {
       "warband": "kainans-reapers",
       "deck": "edge-of-the-knife",
-      "stars": 0
+      "stars": 3,
+      "note": "Five Health-2 Mortek are tempered from turn one, and Mortek Advance marches them as a block into enemy ground to gang up"
     },
     {
       "warband": "kainans-reapers",
@@ -1579,18 +1570,17 @@
     {
       "warband": "kainans-reapers",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "kainans-reapers",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "kainans-reapers",
       "deck": "emberstone-sentinels",
-      "stars": 3,
-      "note": "Six tough Ossiarchs in lockstep blanket multiple tokens and out-endure attackers with no kills needed"
+      "stars": 1
     },
     {
       "warband": "kainans-reapers",
@@ -1600,13 +1590,12 @@
     {
       "warband": "kainans-reapers",
       "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Tanky Ossiarch lockstep formation grinds long while kill-tithe rewards the sustained enemy damage objectives"
+      "stars": 2
     },
     {
       "warband": "drepurs-wraithcreepers",
       "deck": "nexus-of-power",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "drepurs-wraithcreepers",
@@ -1621,7 +1610,7 @@
     {
       "warband": "drepurs-wraithcreepers",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "drepurs-wraithcreepers",
@@ -1631,7 +1620,7 @@
     {
       "warband": "drepurs-wraithcreepers",
       "deck": "edge-of-the-knife",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "drepurs-wraithcreepers",
@@ -1641,7 +1630,7 @@
     {
       "warband": "drepurs-wraithcreepers",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "drepurs-wraithcreepers",
@@ -1651,7 +1640,7 @@
     {
       "warband": "drepurs-wraithcreepers",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "drepurs-wraithcreepers",
@@ -1677,34 +1666,34 @@
       "warband": "the-exiled-dead",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Puppet minions and re-raises keep seven bodies packed adjacent, sustaining the Flank as fighters fall"
+      "note": "Conductive zombies re-roll attacks while adjacent, so the packed united horde Flanks one target and Danse Dynamic gangs it together"
     },
     {
       "warband": "the-exiled-dead",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-exiled-dead",
       "deck": "realmstone-raiders",
       "stars": 3,
-      "note": "Seven re-raising undead with puppet mobility chain melee attacks, perfect for stacking different-fighter raid objectives"
+      "note": "Danse Dynamic attacks with every conductive minion at once, flooding melee hits for many different-attacker raids each round"
     },
     {
       "warband": "the-exiled-dead",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Seven fragile undead temper at once, with death-fuelled mobility and re-raises sustaining the swarm in enemy ground"
+      "note": "Five Health-2 minions are tempered from turn one, and Deintalos raises them damaged to keep flooding forward"
     },
     {
       "warband": "the-exiled-dead",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-exiled-dead",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "the-exiled-dead",
@@ -1719,30 +1708,29 @@
     {
       "warband": "the-exiled-dead",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "the-exiled-dead",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Death-fuelled mobility and re-raises turn every friendly casualty into tracker progress and recurring bodies"
+      "note": "Expendable zombies die and re-raise every round, each friendly death cranking the tracker while Dynamic Enhancer speeds the horde"
     },
     {
       "warband": "sons-of-velmorn",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "sons-of-velmorn",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "King-centric shieldwall powers leader objectives while the death-curse retaliates against attackers, punishing enemies who dare enter friendly territory"
+      "stars": 2
     },
     {
       "warband": "sons-of-velmorn",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Shieldwall keeps Grave Guard united around the king, and raises replace bodies to maintain the encirclement"
+      "note": "Gang-up inspire upgrades every fighter adjacent to the target, so the united shieldwall Flanks and kills exactly as the deck demands"
     },
     {
       "warband": "sons-of-velmorn",
@@ -1757,7 +1745,7 @@
     {
       "warband": "sons-of-velmorn",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "sons-of-velmorn",
@@ -1767,7 +1755,7 @@
     {
       "warband": "sons-of-velmorn",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "sons-of-velmorn",
@@ -1787,8 +1775,7 @@
     {
       "warband": "sons-of-velmorn",
       "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Shieldwall raises Grave Guard and death-curse retaliation feeds the tracker while trading bodies endlessly"
+      "stars": 2
     },
     {
       "warband": "the-headsmens-curse",
@@ -1803,18 +1790,17 @@
     {
       "warband": "the-headsmens-curse",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-headsmens-curse",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Four spectral executioners teleport into enemy ground enraged, condemning and slaying for card draw"
+      "stars": 2
     },
     {
       "warband": "the-headsmens-curse",
       "deck": "realmstone-raiders",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-headsmens-curse",
@@ -1825,7 +1811,7 @@
       "warband": "the-headsmens-curse",
       "deck": "reckless-fury",
       "stars": 3,
-      "note": "Teleporting executioners charge into enemy territory to condemn and kill high-Bounty targets for card draw"
+      "note": "Four flying executioners condemn and hunt high-Bounty targets, with each condemned slay drawing Power cards equal to the victim's Bounty"
     },
     {
       "warband": "the-headsmens-curse",
@@ -1835,241 +1821,238 @@
     {
       "warband": "the-headsmens-curse",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Condemn-and-kill executioners teleport into position and draw cards on every slay, snowballing the aggression"
+      "stars": 2
     },
     {
       "warband": "the-headsmens-curse",
       "deck": "emberstone-sentinels",
+      "stars": 1
+    },
+    {
+      "warband": "the-headsmens-curse",
+      "deck": "pillage-and-plunder",
+      "stars": 2
+    },
+    {
+      "warband": "the-headsmens-curse",
+      "deck": "countdown-to-cataclysm",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "nexus-of-power",
+      "stars": 2
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "deadly-synergy",
+      "stars": 2
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "raging-slayers",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "realmstone-raiders",
+      "stars": 2
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "edge-of-the-knife",
+      "stars": 2
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "reckless-fury",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "blazing-assault",
+      "stars": 1
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "emberstone-sentinels",
+      "stars": 2
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "pillage-and-plunder",
+      "stars": 3,
+      "note": "Minions Delve treasure to Unearth Power cards or Exhume fallen allies, so every Delve objective also fuels the warband's engine"
+    },
+    {
+      "warband": "zondaras-gravebreakers",
+      "deck": "countdown-to-cataclysm",
+      "stars": 3,
+      "note": "Unearth draws per slain friendly while Exhume recycles minions, turning every friendly death into tracker progress and card advantage"
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "nexus-of-power",
+      "stars": 1
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "deadly-synergy",
+      "stars": 3,
+      "note": "The Plot auto-Flanks enemies beside united ghouls, so every gang-kill feeds Prime Cuts haunch tokens toward a warband-wide Inspire"
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "raging-slayers",
+      "stars": 2
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "realmstone-raiders",
+      "stars": 2
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "edge-of-the-knife",
+      "stars": 2
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "reckless-fury",
+      "stars": 2
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "blazing-assault",
+      "stars": 2
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "emberstone-sentinels",
+      "stars": 1
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "pillage-and-plunder",
+      "stars": 1
+    },
+    {
+      "warband": "the-skinnerkin",
+      "deck": "countdown-to-cataclysm",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "nexus-of-power",
+      "stars": 2
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "hunting-grounds",
+      "stars": 2
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "deadly-synergy",
+      "stars": 3,
+      "note": "Cadaver tokens only flow when targets stand adjacent to Retainers, so the united cluster pinning Flanked enemies powers every gang-attack objective"
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "raging-slayers",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "realmstone-raiders",
+      "stars": 2
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "edge-of-the-knife",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "reckless-fury",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "blazing-assault",
+      "stars": 2
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "emberstone-sentinels",
+      "stars": 2
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "pillage-and-plunder",
+      "stars": 1
+    },
+    {
+      "warband": "thanateks-tithe",
+      "deck": "countdown-to-cataclysm",
+      "stars": 3,
+      "note": "Expendable Mortis Reapers die and raise off cadaver tokens, feeding the friendly-death tracker while 2-shield Retainers grind out the long game"
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "nexus-of-power",
+      "stars": 1
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "deadly-synergy",
+      "stars": 3,
+      "note": "Variant 1 inspires all fighters adjacent to Flanked targets, so four sturdy orruks cluster and gang up exactly as DY rewards"
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "raging-slayers",
+      "stars": 2
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "realmstone-raiders",
+      "stars": 2
+    },
+    {
+      "warband": "ironskulls-boyz",
+      "deck": "edge-of-the-knife",
       "stars": 0
-    },
-    {
-      "warband": "the-headsmens-curse",
-      "deck": "pillage-and-plunder",
-      "stars": 2
-    },
-    {
-      "warband": "the-headsmens-curse",
-      "deck": "countdown-to-cataclysm",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "nexus-of-power",
-      "stars": 2
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "hunting-grounds",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "deadly-synergy",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "raging-slayers",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "realmstone-raiders",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "edge-of-the-knife",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "reckless-fury",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "wrack-and-ruin",
-      "stars": 2
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "blazing-assault",
-      "stars": 1
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "emberstone-sentinels",
-      "stars": 2
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Built-in Delve-and-raise engine doubles as the deck's score engine while loss-draw fuels the raid"
-    },
-    {
-      "warband": "zondaras-gravebreakers",
-      "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Delve-and-raise recursion plus card draw on losses thrives in the long attrition the deck demands"
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "nexus-of-power",
-      "stars": 1
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "hunting-grounds",
-      "stars": 2
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "deadly-synergy",
-      "stars": 3,
-      "note": "Haunch tokens directly reward surrounding enemies, with heals sustaining the cluster through gang-attack exchanges"
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "raging-slayers",
-      "stars": 2
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "realmstone-raiders",
-      "stars": 2
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "edge-of-the-knife",
-      "stars": 1
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "reckless-fury",
-      "stars": 2
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "wrack-and-ruin",
-      "stars": 2
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Haunch tokens from surrounding fuel reactions and heals while six bodies gang foes for kills"
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "emberstone-sentinels",
-      "stars": 1
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "pillage-and-plunder",
-      "stars": 1
-    },
-    {
-      "warband": "the-skinnerkin",
-      "deck": "countdown-to-cataclysm",
-      "stars": 2
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "nexus-of-power",
-      "stars": 2
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "hunting-grounds",
-      "stars": 2
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "deadly-synergy",
-      "stars": 3,
-      "note": "Retainer-adjacency formation stays united by design, tanky constructs locking down Flanked targets for kills"
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "raging-slayers",
-      "stars": 1
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "realmstone-raiders",
-      "stars": 1
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "edge-of-the-knife",
-      "stars": 0
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "reckless-fury",
-      "stars": 1
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "wrack-and-ruin",
-      "stars": 2
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "blazing-assault",
-      "stars": 1
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "emberstone-sentinels",
-      "stars": 3,
-      "note": "Tanky constructs in retainer formation immovably anchor treasure and raise Reapers to replace lost holders"
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "pillage-and-plunder",
-      "stars": 1
-    },
-    {
-      "warband": "thanateks-tithe",
-      "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Tanky constructs raise Reapers and trade willingly, advancing the tracker through a prolonged grind"
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "nexus-of-power",
-      "stars": 2
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "hunting-grounds",
-      "stars": 1
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "deadly-synergy",
-      "stars": 3,
-      "note": "Four Health-4 orruks cluster naturally, and the Plot's auto-Flank on adjacent enemies triggers their inspire condition while delivering DY's kill objectives"
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "raging-slayers",
-      "stars": 2
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "realmstone-raiders",
-      "stars": 2
-    },
-    {
-      "warband": "ironskulls-boyz",
-      "deck": "edge-of-the-knife",
-      "stars": 1
     },
     {
       "warband": "ironskulls-boyz",
@@ -2089,7 +2072,7 @@
     {
       "warband": "ironskulls-boyz",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "ironskulls-boyz",
@@ -2099,7 +2082,7 @@
     {
       "warband": "ironskulls-boyz",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "zarbags-gitz",
@@ -2114,25 +2097,23 @@
     {
       "warband": "zarbags-gitz",
       "deck": "deadly-synergy",
-      "stars": 3,
-      "note": "Nine grots form the densest swarm, stacking gang-up dice to surround and Flank a lone enemy"
+      "stars": 2
     },
     {
       "warband": "zarbags-gitz",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "zarbags-gitz",
       "deck": "realmstone-raiders",
-      "stars": 3,
-      "note": "Nine grots are the densest swarm, gang-up dice landing endless successful melee attacks to raid every round"
+      "stars": 1
     },
     {
       "warband": "zarbags-gitz",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Six Health-2 grots are tempered from turn one and gang-up dice bonuses reward the very flooding this deck demands"
+      "note": "Six Health-2 gitz temper from turn one while Slippery Gitz and Make Some Noise! fling the swarm into enemy territory to gang up"
     },
     {
       "warband": "zarbags-gitz",
@@ -2147,17 +2128,17 @@
     {
       "warband": "zarbags-gitz",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "zarbags-gitz",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "zarbags-gitz",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "zarbags-gitz",
@@ -2173,18 +2154,17 @@
       "warband": "mollogs-mob",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Self-healing troggoth leader squats at home, luring invaders in and hitting hard for Lead by Example and No Trespassers"
+      "note": "Self-healing 7-Health leader anchors home ground while Unnatural Hazards stagger and damage invaders stepping beside lurking minions"
     },
     {
       "warband": "mollogs-mob",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "mollogs-mob",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Self-healing troggoth leader charges enraged and slays, nailing the kill-with-your-leader objectives"
+      "stars": 1
     },
     {
       "warband": "mollogs-mob",
@@ -2199,19 +2179,18 @@
     {
       "warband": "mollogs-mob",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Self-healing troggoth charges and hits hard enough to kill the biggest-Bounty enemies repeatedly"
+      "stars": 1
     },
     {
       "warband": "mollogs-mob",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 3,
+      "note": "Mollog inspires the warband by soaking damage and regenerates every round, so self-harm and survive-hurt objectives feed his engine"
     },
     {
       "warband": "mollogs-mob",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Self-healing Mollog hits with Brutal damage-3, an unkillable engine that farms slay objectives all game"
+      "stars": 2
     },
     {
       "warband": "mollogs-mob",
@@ -2226,44 +2205,44 @@
     {
       "warband": "mollogs-mob",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 3,
+      "note": "Regenerating troggoth leader outlasts the long grind stacking upgrades, while Infestation recycles minion deaths into tracker progress"
     },
     {
       "warband": "rippas-snarlfangs",
       "deck": "nexus-of-power",
+      "stars": 1
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "deadly-synergy",
+      "stars": 1
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "raging-slayers",
+      "stars": 3,
+      "note": "Three Health-5 riders charge in enraged, and every hit chains a Snarlfang bite, doubling the attacks Raging Strike can flip to crits"
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "realmstone-raiders",
+      "stars": 1
+    },
+    {
+      "warband": "rippas-snarlfangs",
+      "deck": "edge-of-the-knife",
       "stars": 0
     },
     {
       "warband": "rippas-snarlfangs",
-      "deck": "hunting-grounds",
-      "stars": 1
-    },
-    {
-      "warband": "rippas-snarlfangs",
-      "deck": "deadly-synergy",
-      "stars": 1
-    },
-    {
-      "warband": "rippas-snarlfangs",
-      "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Three fastest chargers double-attack while enraged, doubling chances to flip hits into crits"
-    },
-    {
-      "warband": "rippas-snarlfangs",
-      "deck": "realmstone-raiders",
-      "stars": 2
-    },
-    {
-      "warband": "rippas-snarlfangs",
-      "deck": "edge-of-the-knife",
-      "stars": 1
-    },
-    {
-      "warband": "rippas-snarlfangs",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Fast wolf-riders charge with double-attacks, blitzing enemy territory and bursting high-value targets down"
+      "stars": 2
     },
     {
       "warband": "rippas-snarlfangs",
@@ -2274,22 +2253,22 @@
       "warband": "rippas-snarlfangs",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Double-attack wolf-riders deliver fast high-damage strikes that reliably finish foes for kill scoring"
+      "note": "Snarlfang's Jaws turns every successful or drawn Attack into a second strike, stacking repeated-attack and slay objectives each activation"
     },
     {
       "warband": "rippas-snarlfangs",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "rippas-snarlfangs",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "rippas-snarlfangs",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "hrothgorns-mantrappers",
@@ -2300,7 +2279,7 @@
       "warband": "hrothgorns-mantrappers",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Traps and ambush literally punish enemies entering your turf near feature tokens, and leader-kill inspire rewards the home counter-punch"
+      "note": "Snap-traps in friendly territory wound invaders while Hrothgorn's ranged grapple drags them home for leader hammer kills that inspire everyone"
     },
     {
       "warband": "hrothgorns-mantrappers",
@@ -2340,15 +2319,15 @@
     {
       "warband": "hrothgorns-mantrappers",
       "deck": "emberstone-sentinels",
-      "stars": 2
-    },
-    {
-      "warband": "hrothgorns-mantrappers",
-      "deck": "pillage-and-plunder",
       "stars": 1
     },
     {
       "warband": "hrothgorns-mantrappers",
+      "deck": "pillage-and-plunder",
+      "stars": 1
+    },
+    {
+      "warband": "hrothgorns-mantrappers",
       "deck": "countdown-to-cataclysm",
       "stars": 2
     },
@@ -2360,8 +2339,7 @@
     {
       "warband": "morgoks-krushas",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "Three tough Brutes win the drawn-out home brawl, grinding invaders down for Ready or Not, Bloodscent and No Trespassers"
+      "stars": 2
     },
     {
       "warband": "morgoks-krushas",
@@ -2371,8 +2349,7 @@
     {
       "warband": "morgoks-krushas",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Three durable Brutes survive enemy territory enraged, winning the prolonged melee with crit-flipped attacks"
+      "stars": 2
     },
     {
       "warband": "morgoks-krushas",
@@ -2387,25 +2364,23 @@
     {
       "warband": "morgoks-krushas",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Tough Brutes charge into prolonged melee, surviving in enemy territory to grind down high-Bounty foes"
+      "stars": 2
     },
     {
       "warband": "morgoks-krushas",
       "deck": "wrack-and-ruin",
-      "stars": 3,
-      "note": "Three tough Brutes farm Waaagh tokens through prolonged attrition, surviving damaged and dispersed for the survive-hurt objectives"
+      "stars": 2
     },
     {
       "warband": "morgoks-krushas",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Three tough Brutes win prolonged melee attrition, repeatedly attacking and outlasting foes for slay objectives"
+      "note": "Every Attack made or received banks Waaagh! tokens, inspiring three brawlers into Grievous and Brutal killers that reliably finish fights"
     },
     {
       "warband": "morgoks-krushas",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "morgoks-krushas",
@@ -2415,13 +2390,12 @@
     {
       "warband": "morgoks-krushas",
       "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Three tough Brutes and Waaagh attrition want the prolonged melee the tracker objectives reward"
+      "stars": 2
     },
     {
       "warband": "hedkrakkas-madmob",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "hedkrakkas-madmob",
@@ -2432,12 +2406,12 @@
       "warband": "hedkrakkas-madmob",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Both inspire variants fire on Flanked or Surrounded enemies, while free convergence pushes keep four sturdy orruks packed into the united cluster DY demands"
+      "note": "Variant 1 inspires on attacking Flanked targets, so the Plot's auto-Flank around four united orruks fuels inspire and gang-kill objectives"
     },
     {
       "warband": "hedkrakkas-madmob",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "hedkrakkas-madmob",
@@ -2447,7 +2421,7 @@
     {
       "warband": "hedkrakkas-madmob",
       "deck": "edge-of-the-knife",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "hedkrakkas-madmob",
@@ -2457,7 +2431,7 @@
     {
       "warband": "hedkrakkas-madmob",
       "deck": "wrack-and-ruin",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "hedkrakkas-madmob",
@@ -2487,13 +2461,13 @@
     {
       "warband": "da-kunnin-krew",
       "deck": "hunting-grounds",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "da-kunnin-krew",
       "deck": "deadly-synergy",
       "stars": 3,
-      "note": "Built around Flank and Surround payoff, mobile orruks encircle and execute exactly what this deck rewards"
+      "note": "Grots count double toward Flanked and Surrounded, so the united krew mobs one enemy and turns every gang-hit into a mass Inspire"
     },
     {
       "warband": "da-kunnin-krew",
@@ -2508,17 +2482,17 @@
     {
       "warband": "da-kunnin-krew",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "da-kunnin-krew",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "da-kunnin-krew",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "da-kunnin-krew",
@@ -2533,17 +2507,17 @@
     {
       "warband": "da-kunnin-krew",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "da-kunnin-krew",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "blackpowders-buccaneers",
@@ -2553,32 +2527,33 @@
     {
       "warband": "blackpowders-buccaneers",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "raging-slayers",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 3,
+      "note": "Four Health-2 grots are tempered from turn one, while Swag Blast and Mortar pushes shove the crew into enemy territory"
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "reckless-fury",
-      "stars": 0
+      "stars": 2
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "blackpowders-buccaneers",
@@ -2588,12 +2563,12 @@
     {
       "warband": "blackpowders-buccaneers",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "blackpowders-buccaneers",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "blackpowders-buccaneers",
@@ -2603,13 +2578,12 @@
     {
       "warband": "grinkraks-looncourt",
       "deck": "nexus-of-power",
-      "stars": 3,
-      "note": "Seven flexible grots complete treasure quests directly, spreading bodies across every objective hex this deck scores"
+      "stars": 2
     },
     {
       "warband": "grinkraks-looncourt",
       "deck": "hunting-grounds",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "grinkraks-looncourt",
@@ -2624,13 +2598,13 @@
     {
       "warband": "grinkraks-looncourt",
       "deck": "realmstone-raiders",
-      "stars": 3,
-      "note": "Seven flexible grots flood melee attacks while treasure quests feed Bounty-scaled raids and Hoarder's Hovel"
+      "stars": 2
     },
     {
       "warband": "grinkraks-looncourt",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 3,
+      "note": "Four Health-2 grots temper from turn one while Go Forth and Wallop's extra Move floods enemy territory with expendable tempered bodies"
     },
     {
       "warband": "grinkraks-looncourt",
@@ -2640,18 +2614,17 @@
     {
       "warband": "grinkraks-looncourt",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "grinkraks-looncourt",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "grinkraks-looncourt",
       "deck": "emberstone-sentinels",
-      "stars": 3,
-      "note": "Seven flexible grots cover every token and complete treasure quests that double as the deck's holding objectives"
+      "stars": 2
     },
     {
       "warband": "grinkraks-looncourt",
@@ -2666,12 +2639,12 @@
     {
       "warband": "daggoks-stab-ladz",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "daggoks-stab-ladz",
@@ -2686,34 +2659,33 @@
     {
       "warband": "daggoks-stab-ladz",
       "deck": "realmstone-raiders",
-      "stars": 3,
-      "note": "Free Krule Stab bonus attacks add extra successful melee hits, multiplying raid triggers despite the low model count"
+      "stars": 1
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "wrack-and-ruin",
       "stars": 3,
-      "note": "Free Krule Stab chip attacks spread damage to 3+ fighters and feed card draw, ploy-discard abilities fuel Ploymaster"
+      "note": "Krule Stab and Nasty Poisons deal free non-attack chip damage every turn, directly scoring the deck's incidental-damage objectives while Kruleboyz inspire"
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "daggoks-stab-ladz",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 2
     },
     {
       "warband": "daggoks-stab-ladz",
@@ -2723,25 +2695,22 @@
     {
       "warband": "daggoks-stab-ladz",
       "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Free Krule Stab chip and damage-spread sustain the enemy-damage objectives across a long grind"
+      "stars": 2
     },
     {
       "warband": "borgits-beastgrabbaz",
       "deck": "nexus-of-power",
-      "stars": 3,
-      "note": "Five grots plus ogor cluster and Delve-inspire on treasure, grappling enemies into grievous range while squatting"
-    },
-    {
-      "warband": "borgits-beastgrabbaz",
-      "deck": "hunting-grounds",
       "stars": 2
     },
     {
       "warband": "borgits-beastgrabbaz",
+      "deck": "hunting-grounds",
+      "stars": 1
+    },
+    {
+      "warband": "borgits-beastgrabbaz",
       "deck": "deadly-synergy",
-      "stars": 3,
-      "note": "Cluster on the leader keeps grots united, with grievous marks amplifying the gang-kills objectives demand"
+      "stars": 2
     },
     {
       "warband": "borgits-beastgrabbaz",
@@ -2756,7 +2725,7 @@
     {
       "warband": "borgits-beastgrabbaz",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "borgits-beastgrabbaz",
@@ -2776,13 +2745,13 @@
     {
       "warband": "borgits-beastgrabbaz",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "borgits-beastgrabbaz",
       "deck": "pillage-and-plunder",
       "stars": 3,
-      "note": "Delve-to-inspire turns treasure-stripping into the inspire trigger, marrying clustered grots to every Delve objective"
+      "note": "Every Delve Inspires the delving grot, gaining Move and Attack dice, so stripping treasure for objectives also powers up the warband"
     },
     {
       "warband": "borgits-beastgrabbaz",
@@ -2798,7 +2767,7 @@
       "warband": "steelhearts-champions",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Variant 2's flanking immunity and attack re-rolls in friendly territory make three 5-health elites an immovable home counter-punch for HG's objectives"
+      "note": "Variant 2 strips Flanks at home while re-rolls and home-attack inspire turn three 5-health hammer elites into a brutal counter-punch"
     },
     {
       "warband": "steelhearts-champions",
@@ -2808,7 +2777,7 @@
     {
       "warband": "steelhearts-champions",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "steelhearts-champions",
@@ -2843,7 +2812,7 @@
     {
       "warband": "steelhearts-champions",
       "deck": "pillage-and-plunder",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "steelhearts-champions",
@@ -2853,23 +2822,23 @@
     {
       "warband": "the-chosen-axes",
       "deck": "nexus-of-power",
-      "stars": 3,
-      "note": "Variant 1 inspire on 2+ enemy-territory treasure and Pioneer push onto tokens directly power NP's covetous multi-token board control"
-    },
-    {
-      "warband": "the-chosen-axes",
-      "deck": "hunting-grounds",
       "stars": 2
     },
     {
       "warband": "the-chosen-axes",
+      "deck": "hunting-grounds",
+      "stars": 3,
+      "note": "Variant 2 strips Flanks in friendly territory while re-rolls and home-attack inspire turn four 4-health Fyreslayers into a brutal home counter-punch"
+    },
+    {
+      "warband": "the-chosen-axes",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-chosen-axes",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-chosen-axes",
@@ -2899,8 +2868,7 @@
     {
       "warband": "the-chosen-axes",
       "deck": "emberstone-sentinels",
-      "stars": 3,
-      "note": "Variant 1 inspire on 2+ held enemy-territory treasure plus Staunch Defender's 3-shield save makes four Health-4 duardin near-impossible to dislodge"
+      "stars": 2
     },
     {
       "warband": "the-chosen-axes",
@@ -2950,7 +2918,8 @@
     {
       "warband": "the-farstriders",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 3,
+      "note": "Vanguard's non-attack chip damage and Behind Enemy Lines Guard keep three Health-5 rangers surviving damaged and dispersed deep in enemy territory"
     },
     {
       "warband": "the-farstriders",
@@ -2960,13 +2929,12 @@
     {
       "warband": "the-farstriders",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-farstriders",
       "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Three elite Stormcast push deep into enemy turf to Delve and clear treasure off distant tokens"
+      "stars": 2
     },
     {
       "warband": "the-farstriders",
@@ -2982,7 +2950,7 @@
       "warband": "stormsires-cursebreakers",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Variant 2 strips enemy Flanks and Surrounds in home territory while attack re-rolls and home-attack inspire drive counter-punching objectives"
+      "note": "Variant 2 strips Flanks at home while re-rolls and home-attack inspire make three 5-health Sequitors a punishing counter-punch against invaders"
     },
     {
       "warband": "stormsires-cursebreakers",
@@ -2992,30 +2960,30 @@
     {
       "warband": "stormsires-cursebreakers",
       "deck": "raging-slayers",
-      "stars": 0
-    },
-    {
-      "warband": "stormsires-cursebreakers",
-      "deck": "realmstone-raiders",
       "stars": 1
     },
     {
       "warband": "stormsires-cursebreakers",
+      "deck": "realmstone-raiders",
+      "stars": 1
+    },
+    {
+      "warband": "stormsires-cursebreakers",
       "deck": "edge-of-the-knife",
       "stars": 0
     },
     {
       "warband": "stormsires-cursebreakers",
       "deck": "reckless-fury",
-      "stars": 0
-    },
-    {
-      "warband": "stormsires-cursebreakers",
-      "deck": "wrack-and-ruin",
       "stars": 1
     },
     {
       "warband": "stormsires-cursebreakers",
+      "deck": "wrack-and-ruin",
+      "stars": 1
+    },
+    {
+      "warband": "stormsires-cursebreakers",
       "deck": "blazing-assault",
       "stars": 2
     },
@@ -3027,7 +2995,7 @@
     {
       "warband": "stormsires-cursebreakers",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "stormsires-cursebreakers",
@@ -3047,48 +3015,48 @@
     {
       "warband": "thundriks-profiteers",
       "deck": "deadly-synergy",
-      "stars": 0
-    },
-    {
-      "warband": "thundriks-profiteers",
-      "deck": "raging-slayers",
-      "stars": 0
-    },
-    {
-      "warband": "thundriks-profiteers",
-      "deck": "realmstone-raiders",
-      "stars": 0
-    },
-    {
-      "warband": "thundriks-profiteers",
-      "deck": "edge-of-the-knife",
       "stars": 1
     },
     {
       "warband": "thundriks-profiteers",
+      "deck": "raging-slayers",
+      "stars": 0
+    },
+    {
+      "warband": "thundriks-profiteers",
+      "deck": "realmstone-raiders",
+      "stars": 0
+    },
+    {
+      "warband": "thundriks-profiteers",
+      "deck": "edge-of-the-knife",
+      "stars": 0
+    },
+    {
+      "warband": "thundriks-profiteers",
       "deck": "reckless-fury",
       "stars": 0
     },
     {
       "warband": "thundriks-profiteers",
       "deck": "wrack-and-ruin",
-      "stars": 2
-    },
-    {
-      "warband": "thundriks-profiteers",
-      "deck": "blazing-assault",
       "stars": 1
     },
     {
       "warband": "thundriks-profiteers",
+      "deck": "blazing-assault",
+      "stars": 1
+    },
+    {
+      "warband": "thundriks-profiteers",
       "deck": "emberstone-sentinels",
       "stars": 3,
-      "note": "Push-immune holders inspire by scoring, shooting off attackers while glued onto treasure tokens"
+      "note": "Push-immune treasure holders inspire off scored objectives while five gunners shoot down contesters and By the Code drops a fighter onto tokens"
     },
     {
       "warband": "thundriks-profiteers",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "thundriks-profiteers",
@@ -3103,7 +3071,7 @@
     {
       "warband": "yltharis-guardians",
       "deck": "hunting-grounds",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "yltharis-guardians",
@@ -3133,8 +3101,7 @@
     {
       "warband": "yltharis-guardians",
       "deck": "wrack-and-ruin",
-      "stars": 3,
-      "note": "Grows stronger as own fighters die, grinding attrition while cluster teleport repositions survivors spread out and damaged"
+      "stars": 1
     },
     {
       "warband": "yltharis-guardians",
@@ -3149,24 +3116,24 @@
     {
       "warband": "yltharis-guardians",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "yltharis-guardians",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Sylvaneth grow stronger as their own die, turning friendly deaths into tracker fuel and power"
+      "note": "Seasonal abilities scale with slain friends, so every Sylvaneth death advances the tracker and growth tokens bloom over a long grind"
     },
     {
       "warband": "ironsouls-condemners",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "ironsouls-condemners",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Cannot be driven back makes them an immovable home anchor, and crit-inspire rewards counter-attacking invaders trapped in friendly territory"
+      "note": "Three 5-Health elites cannot be driven back while standing, and crit-save inspire hardens them to counter-punch invaders at home"
     },
     {
       "warband": "ironsouls-condemners",
@@ -3176,7 +3143,8 @@
     {
       "warband": "ironsouls-condemners",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 3,
+      "note": "Raging Strike flips a success into a crit, guaranteeing the crit-roll inspire so three durable elites hit harder with every enraged attack"
     },
     {
       "warband": "ironsouls-condemners",
@@ -3191,7 +3159,7 @@
     {
       "warband": "ironsouls-condemners",
       "deck": "reckless-fury",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "ironsouls-condemners",
@@ -3236,17 +3204,17 @@
     {
       "warband": "skaeths-wild-hunt",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "skaeths-wild-hunt",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "skaeths-wild-hunt",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "skaeths-wild-hunt",
@@ -3266,7 +3234,7 @@
     {
       "warband": "skaeths-wild-hunt",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "skaeths-wild-hunt",
@@ -3291,12 +3259,12 @@
     {
       "warband": "morgwaeths-blade-coven",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "morgwaeths-blade-coven",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "morgwaeths-blade-coven",
@@ -3306,12 +3274,12 @@
     {
       "warband": "morgwaeths-blade-coven",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "morgwaeths-blade-coven",
       "deck": "reckless-fury",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "morgwaeths-blade-coven",
@@ -3356,7 +3324,7 @@
     {
       "warband": "myaris-purifiers",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "myaris-purifiers",
@@ -3366,7 +3334,7 @@
     {
       "warband": "myaris-purifiers",
       "deck": "edge-of-the-knife",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "myaris-purifiers",
@@ -3382,7 +3350,7 @@
       "warband": "myaris-purifiers",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Aetherquartz rerolls guarantee high-quality Attack rolls, directly scoring the deck's accuracy-based objectives"
+      "note": "Inspire on all-success rolls and aetherquartz re-rolls chase the deck's all-success and crit Attack objectives while precise strikes finish kills"
     },
     {
       "warband": "myaris-purifiers",
@@ -3402,44 +3370,42 @@
     {
       "warband": "the-starblood-stalkers",
       "deck": "nexus-of-power",
-      "stars": 3,
-      "note": "Fast skinks inspire by holding 3+ treasure, exactly the multi-objective board control this deck rewards"
+      "stars": 2
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "realmstone-raiders",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Four fragile Health-2 skinks temper instantly while the band floods enemy ground with tempered bodies"
-    },
-    {
-      "warband": "the-starblood-stalkers",
-      "deck": "reckless-fury",
       "stars": 2
     },
     {
       "warband": "the-starblood-stalkers",
-      "deck": "wrack-and-ruin",
+      "deck": "reckless-fury",
       "stars": 1
+    },
+    {
+      "warband": "the-starblood-stalkers",
+      "deck": "wrack-and-ruin",
+      "stars": 2
     },
     {
       "warband": "the-starblood-stalkers",
@@ -3450,28 +3416,27 @@
       "warband": "the-starblood-stalkers",
       "deck": "emberstone-sentinels",
       "stars": 3,
-      "note": "Inspiring on three held treasures perfectly matches a deck rewarding deep multi-token control with fast skinks"
+      "note": "Six skinks spread across every token to inspire on three held, while Kixi-Taka flips tokens and Bulwark Celestial stops holders being driven off"
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Six fast skinks Delve and hold 3+ treasure to inspire, directly chasing the held-treasure objectives"
+      "stars": 2
     },
     {
       "warband": "the-starblood-stalkers",
       "deck": "countdown-to-cataclysm",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
@@ -3481,8 +3446,7 @@
     {
       "warband": "elathains-soulraid",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Round-two tide burst sends all five clustered fighters charging enraged into enemy territory together"
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
@@ -3497,8 +3461,7 @@
     {
       "warband": "elathains-soulraid",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Round-two tide burst charges the clustered Idoneth deep into enemy territory hunting bounties"
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
@@ -3508,8 +3471,7 @@
     {
       "warband": "elathains-soulraid",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Round-2 tide burst plus minion-pull clustering sets up concentrated alpha strikes that slay outright"
+      "stars": 2
     },
     {
       "warband": "elathains-soulraid",
@@ -3534,8 +3496,7 @@
     {
       "warband": "storm-of-celestus",
       "deck": "hunting-grounds",
-      "stars": 3,
-      "note": "Variant 2 strips Flanked and Surrounded in friendly territory while home-attack re-rolls and inspire on four 4-health fighters power every counter-punch objective"
+      "stars": 2
     },
     {
       "warband": "storm-of-celestus",
@@ -3570,12 +3531,13 @@
     {
       "warband": "storm-of-celestus",
       "deck": "blazing-assault",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "storm-of-celestus",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 3,
+      "note": "Variant 1 inspires on 2+ held enemy-territory treasure while three Health-4 shooters defend holders at range 3 and Staunch Defender hardens them"
     },
     {
       "warband": "storm-of-celestus",
@@ -3590,12 +3552,12 @@
     {
       "warband": "xandires-truthseekers",
       "deck": "nexus-of-power",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "xandires-truthseekers",
       "deck": "hunting-grounds",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "xandires-truthseekers",
@@ -3615,7 +3577,7 @@
     {
       "warband": "xandires-truthseekers",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 0
     },
     {
       "warband": "xandires-truthseekers",
@@ -3625,8 +3587,7 @@
     {
       "warband": "xandires-truthseekers",
       "deck": "wrack-and-ruin",
-      "stars": 3,
-      "note": "Benefits from its own deaths and lands ranged chip and death-strikes, thriving in the attrition this deck rewards"
+      "stars": 2
     },
     {
       "warband": "xandires-truthseekers",
@@ -3636,7 +3597,7 @@
     {
       "warband": "xandires-truthseekers",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "xandires-truthseekers",
@@ -3647,7 +3608,7 @@
       "warband": "xandires-truthseekers",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Benefits from its own deaths and flips features, advancing the tracker on both trigger conditions"
+      "note": "Sturdy 5-health veterans grind long, and each death inspires the warband with a parting heal, push or shot while advancing the tracker"
     },
     {
       "warband": "the-shadeborn",
@@ -3657,7 +3618,7 @@
     {
       "warband": "the-shadeborn",
       "deck": "hunting-grounds",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "the-shadeborn",
@@ -3667,46 +3628,44 @@
     {
       "warband": "the-shadeborn",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Four cover-teleporting assassins strike enraged into enemy ground, finishing damaged foes with crit flips"
+      "stars": 2
     },
     {
       "warband": "the-shadeborn",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-shadeborn",
       "deck": "edge-of-the-knife",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-shadeborn",
       "deck": "reckless-fury",
       "stars": 3,
-      "note": "Cover-teleport charges aelf assassins into enemy territory to finish damaged high-Bounty targets"
+      "note": "Shademark save re-rolls keep four Move-4 assassins alive in enemy territory while damaged-target inspire rewards finishing high-Bounty foes"
     },
     {
       "warband": "the-shadeborn",
       "deck": "wrack-and-ruin",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-shadeborn",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Cover-teleport assassins finish damaged foes, perfectly executing the deck's slay and repeated-strike objectives"
+      "stars": 2
     },
     {
       "warband": "the-shadeborn",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "the-shadeborn",
       "deck": "pillage-and-plunder",
       "stars": 3,
-      "note": "Cover-teleport assassins blink onto far treasure to Delve, deny and empty the board fast"
+      "note": "Shadow Ambush drops a raider onto an enemy edge hex while Shademark re-rolls keep Move-4 divers alive Delving deep treasure"
     },
     {
       "warband": "the-shadeborn",
@@ -3721,38 +3680,38 @@
     {
       "warband": "hexbanes-hunters",
       "deck": "hunting-grounds",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "deadly-synergy",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "raging-slayers",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "realmstone-raiders",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "edge-of-the-knife",
       "stars": 3,
-      "note": "Six low-health hunters temper easily and turn their own deaths into inspire and upgrade value"
+      "note": "Four Health-2 hunters temper from turn one, and every fallen agent inspires an ally and marks its killer for Grievous retribution"
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "reckless-fury",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "hexbanes-hunters",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "hexbanes-hunters",
@@ -3773,7 +3732,7 @@
       "warband": "hexbanes-hunters",
       "deck": "countdown-to-cataclysm",
       "stars": 3,
-      "note": "Death-triggered inspire and upgrade value on losses turn friendly casualties into tracker progress and tempo"
+      "note": "Every slain hunter inspires an ally, advances the tracker and adds Bounty to the Upgrade budget, so the band grows deadlier as it bleeds"
     },
     {
       "warband": "gryselles-arenai",
@@ -3783,7 +3742,7 @@
     {
       "warband": "gryselles-arenai",
       "deck": "hunting-grounds",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "gryselles-arenai",
@@ -3823,7 +3782,7 @@
     {
       "warband": "gryselles-arenai",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "gryselles-arenai",
@@ -3844,7 +3803,7 @@
       "warband": "domitans-stormcoven",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Variant 2 strips Flanks in friendly territory while re-rolls and home-attack inspire make three 5-health elites a punishing home counter-punch"
+      "note": "Variant 2 denies Flanks at home while range-2 hammers and re-rolls let three 5-health elites counter-punch invaders before they close"
     },
     {
       "warband": "domitans-stormcoven",
@@ -3934,7 +3893,8 @@
     {
       "warband": "cyrenis-razors",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 3,
+      "note": "Hammertide delivers free non-attack chip damage each round while reach-2 Idoneth bait failed attacks and survive spread out"
     },
     {
       "warband": "cyrenis-razors",
@@ -3954,8 +3914,7 @@
     {
       "warband": "cyrenis-razors",
       "deck": "countdown-to-cataclysm",
-      "stars": 3,
-      "note": "Counter-attack reactions scaling by battle round reward the long game the tracker drags out"
+      "stars": 2
     },
     {
       "warband": "brethren-of-the-bolt",
@@ -3965,32 +3924,34 @@
     {
       "warband": "brethren-of-the-bolt",
       "deck": "hunting-grounds",
-      "stars": 2
-    },
-    {
-      "warband": "brethren-of-the-bolt",
-      "deck": "deadly-synergy",
-      "stars": 2
-    },
-    {
-      "warband": "brethren-of-the-bolt",
-      "deck": "raging-slayers",
-      "stars": 0
-    },
-    {
-      "warband": "brethren-of-the-bolt",
-      "deck": "realmstone-raiders",
-      "stars": 0
-    },
-    {
-      "warband": "brethren-of-the-bolt",
-      "deck": "edge-of-the-knife",
       "stars": 1
     },
     {
       "warband": "brethren-of-the-bolt",
+      "deck": "deadly-synergy",
+      "stars": 3,
+      "note": "Holy Capacitors chains keep five zealots packed adjacent, so the united cluster conducts reach and re-Inspires while Flanking one target"
+    },
+    {
+      "warband": "brethren-of-the-bolt",
+      "deck": "raging-slayers",
+      "stars": 1
+    },
+    {
+      "warband": "brethren-of-the-bolt",
+      "deck": "realmstone-raiders",
+      "stars": 2
+    },
+    {
+      "warband": "brethren-of-the-bolt",
+      "deck": "edge-of-the-knife",
+      "stars": 3,
+      "note": "Two Health-2 zealots temper from turn one while Reckless Abandon self-damage tempers the rest, chaining fragile bodies onto ganged foes"
+    },
+    {
+      "warband": "brethren-of-the-bolt",
       "deck": "reckless-fury",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "brethren-of-the-bolt",
@@ -4005,17 +3966,17 @@
     {
       "warband": "brethren-of-the-bolt",
       "deck": "emberstone-sentinels",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "brethren-of-the-bolt",
       "deck": "pillage-and-plunder",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "brethren-of-the-bolt",
       "deck": "countdown-to-cataclysm",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "the-emberwatch",
@@ -4056,7 +4017,7 @@
       "warband": "the-emberwatch",
       "deck": "wrack-and-ruin",
       "stars": 3,
-      "note": "Anti-cluster teleport and enemy-territory inspire directly hit Spread Out, Alone in the Dark, and survive-in-enemy-territory objectives"
+      "note": "Alone I Stand rewards three Health-5 Stormcast for staying spread and unadjacent, while ranged chip lets them survive damaged for dispersed objectives"
     },
     {
       "warband": "the-emberwatch",
@@ -4066,13 +4027,12 @@
     {
       "warband": "the-emberwatch",
       "deck": "emberstone-sentinels",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "the-emberwatch",
       "deck": "pillage-and-plunder",
-      "stars": 3,
-      "note": "Teleporting fighters spread out to inspire in enemy territory while Delving and clearing scattered treasure"
+      "stars": 2
     },
     {
       "warband": "the-emberwatch",
@@ -4088,17 +4048,17 @@
       "warband": "jaws-of-itzl",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Immovable Obstinate Saurus leader holds home ground while his snowballing nuke punishes invaders, scoring leader-centric objectives"
+      "note": "Three 5-Health saurus invite invaders' attacks at home, punishing failed swings with retaliatory damage and inspiring off counter-punches in the opponent's turn"
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "deadly-synergy",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "raging-slayers",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "jaws-of-itzl",
@@ -4113,29 +4073,28 @@
     {
       "warband": "jaws-of-itzl",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "wrack-and-ruin",
-      "stars": 2
+      "stars": 3,
+      "note": "Predatory Fighters deals non-attack chip damage while hardy saurus survive damaged and Savage Mauling converts their own wounds into burst damage"
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Snowballing Saurus leader nuke clusters minions to deliver overwhelming high-damage slays each activation"
+      "stars": 2
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "emberstone-sentinels",
-      "stars": 3,
-      "note": "Immovable Saurus leader plus minion cluster locks deep tokens and defends holders the deck rewards"
+      "stars": 2
     },
     {
       "warband": "jaws-of-itzl",
       "deck": "pillage-and-plunder",
-      "stars": 1
+      "stars": 0
     },
     {
       "warband": "jaws-of-itzl",
@@ -4160,8 +4119,7 @@
     {
       "warband": "knives-of-the-crone",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Every enraged attack feeds the prophecy engine, so more charges mean more buffs and crits"
+      "stars": 2
     },
     {
       "warband": "knives-of-the-crone",
@@ -4171,14 +4129,12 @@
     {
       "warband": "knives-of-the-crone",
       "deck": "edge-of-the-knife",
-      "stars": 3,
-      "note": "Glass-cannon Khainites are tempered the moment they trade, and objective-deck control digs straight to these payoffs"
+      "stars": 1
     },
     {
       "warband": "knives-of-the-crone",
       "deck": "reckless-fury",
-      "stars": 3,
-      "note": "Prophecy dice reward attacking, so Khainites charge constantly into enemy territory hunting bounties"
+      "stars": 2
     },
     {
       "warband": "knives-of-the-crone",
@@ -4189,12 +4145,12 @@
       "warband": "knives-of-the-crone",
       "deck": "blazing-assault",
       "stars": 3,
-      "note": "Prophecy dice fuelled by attacking reward exactly the aggressive striking this deck wants to spam"
+      "note": "Every successful Attack triggers a prophecy roll granting Cleave and Ensnare, chaining repeated strikes for the deck's attack and slay objectives"
     },
     {
       "warband": "knives-of-the-crone",
       "deck": "emberstone-sentinels",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "knives-of-the-crone",
@@ -4215,7 +4171,7 @@
       "warband": "kurnoths-heralds",
       "deck": "hunting-grounds",
       "stars": 3,
-      "note": "Flying and anti-Flank in friendly territory plus strike-from-home inspire let them ambush and burst down any enemy who trespasses"
+      "note": "Swift Sentinels makes them unflankable and Flying on home ground while home-strike inspire lets three 5-health elites counter-punch invaders"
     },
     {
       "warband": "kurnoths-heralds",
@@ -4225,8 +4181,7 @@
     {
       "warband": "kurnoths-heralds",
       "deck": "raging-slayers",
-      "stars": 3,
-      "note": "Three hard-hitting Sylvaneth fly in enraged, burst-charging enemy territory and slaying with crit-flipped strikes"
+      "stars": 1
     },
     {
       "warband": "kurnoths-heralds",
@@ -4241,7 +4196,7 @@
     {
       "warband": "kurnoths-heralds",
       "deck": "reckless-fury",
-      "stars": 2
+      "stars": 1
     },
     {
       "warband": "kurnoths-heralds",
@@ -4251,8 +4206,7 @@
     {
       "warband": "kurnoths-heralds",
       "deck": "blazing-assault",
-      "stars": 3,
-      "note": "Hard-hitting burst Sylvaneth fly in to deliver accurate alpha-strike kills for slay objectives"
+      "stars": 2
     },
     {
       "warband": "kurnoths-heralds",
@@ -4287,7 +4241,7 @@
     {
       "warband": "thyrielles-zephyrites",
       "deck": "raging-slayers",
-      "stars": 1
+      "stars": 2
     },
     {
       "warband": "thyrielles-zephyrites",
@@ -4297,7 +4251,7 @@
     {
       "warband": "thyrielles-zephyrites",
       "deck": "edge-of-the-knife",
-      "stars": 0
+      "stars": 1
     },
     {
       "warband": "thyrielles-zephyrites",
@@ -4322,7 +4276,8 @@
     {
       "warband": "thyrielles-zephyrites",
       "deck": "pillage-and-plunder",
-      "stars": 2
+      "stars": 3,
+      "note": "Windblown flying and +1 Move vault four agile aelves over blockers onto distant treasure, while post-move dodge keeps the deep raiders alive"
     },
     {
       "warband": "thyrielles-zephyrites",

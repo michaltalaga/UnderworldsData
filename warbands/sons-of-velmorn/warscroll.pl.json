@@ -34,5 +34,5 @@
       "rulesText": "Zaprzyjaźnieni wojownicy mają +2 do Ruchu w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięciu rewenanckich Grave Guard zakotwiczonych wokół króla Velmorna w ścianie tarcz skupionej na przywódcy. Żetony rozkazu pozwalają królowi liczyć się jako przyległy, by wydłużać ataki jego synów, wojownicy bulwark odzyskują Guard przeciw {icon:crit}, a śmiertelna klątwa karze każdego, kto ich zabije. Przywódca może podnieść (Raise) poległego Grave Guard z powrotem na przyjazne terytorium, co czyni z tego oddziału odporny warband nastawiony na wojnę na wyczerpanie i odwet."
+  "playstyle": "Pięć szkieletów Deathrattle, które posuwają się powoli z Move 3, prowadzonych przez króla Morlaka i jego wytrzymałego syna Jedrana, wspieranych przez trzech kruchych, dwuranowych Grave Guard. Inspire wynika ze zbiorowego ataku, więc każdy wojownik sąsiadujący z wrogiem, który został skutecznie zaatakowany, ulega ulepszeniu, a Deadly Command pozwala liderowi liczyć się jako sąsiadujący z celami Grave Guard. Wojownicy z tarczami zdobywają żetony Guard za krytyczne obrony, jednorazowe wskrzeszenie przywraca poległego strażnika, a warband wygrywa, utrzymując zwarty mur tarcz i wspólnie wykruszając przeciwników."
 }

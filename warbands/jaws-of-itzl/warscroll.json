@@ -36,5 +36,5 @@
       "rulesText": "Pick a friendly saurus ({icon:saurus}). That fighter cannot be driven back until the end of the battle round. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Four Seraphon led by a hulking, immovable Saurus surrounded by skink minions. The Saurus anchors objectives and cannot be driven back, while its attacks let minions swarm in. Its feral Savage Mauling nuke scales with the damage it has taken and can be reused after each kill, and the warband Inspires by wounding foes on the opponent's turn."
+  "playstyle": "Three hardy 5-Health saurus and a fragile minion swarm make up a slow, durable four-fighter warband. The saurus punish failed attacks against them with retaliatory damage, and dealing damage in the opponent's turn is how they Inspire, so they want to be attacked. Instinctual Control lets the Venomites move whenever a saurus attacks, while Savage Mauling turns a wounded saurus's damage tokens into a burst of damage. The warband wins by holding objectives, absorbing blows and turning every exchange into attrition."
 }

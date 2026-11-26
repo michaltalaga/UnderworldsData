@@ -26,5 +26,5 @@
       "rulesText": "Usuń ten model pułapki z pola bitwy i umieść go w innym pustym sześciokącie przylegającym do tego Gnoblara ({icon:gnoblar}). Następnie daj temu Gnoblarowi Guard token."
     }
   ],
-  "playstyle": "Pięciu wojowników — jeden łowca-ogor, jego lodowa bestia i zwinne gnoblarskie służki — kontrolny warband panujący nad polem bitwy za pomocą śmiercionośnych pułapek. Gnoblary zastawiają i przestawiają żelazne pułapki zatrzaskowe, które karzą ruch wroga, podczas gdy bestia z zasadzki uderza z terytorium wroga. Cała zgraja inspiruje się w chwili, gdy lider zada zabójczy cios wręcz, nagradzając cierpliwe, wyniszczające polowanie."
+  "playstyle": "Pięciu wojowników Destruction pod wodzą Hrothgorna, wytrzymałego lidera z młotem i dystansowym chwytem, wspieranych przez szybką bestię Thrafnira i trzech powolnych, kruchych gnoblarów. Thrafnir może rozstawić się głęboko na terytorium wroga, by urządzić zasadzkę, a gnoblary rozkładają i przestawiają żelaznozębne potrzaski, które zadają 2 obrażenia każdemu wojownikowi, który na nie wejdzie lub zostanie na nie wepchnięty, a przestawiając je, zyskują żetony Guard. Warband zyskuje Inspire tylko wtedy, gdy Hrothgorn zabije wroga w walce wręcz, więc wygrywa, zaganiając przeciwników na pułapki i zmiękczając cele pod ciężkie ciosy jego młota."
 }

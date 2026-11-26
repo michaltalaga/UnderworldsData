@@ -43,5 +43,5 @@
       "rulesText": "Friendly fighters have +2 Move in the next turn. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Five revenant Grave Guard anchored by King Velmorn in a king-centric shieldwall. Command tokens let the king count as adjacent to extend his sons' attacks, bulwark fighters regain Guard against crits, and a death-curse punishes anyone who slays them. The leader can raise a fallen Grave Guard back into friendly territory, making this a resilient, attrition-and-retaliation warband."
+  "playstyle": "Five deathrattle skeletons who advance slowly at Move 3, led by King Morlak and his hardy son Jedran, backed by three fragile two-wound Grave Guard. Inspiring comes from ganging up, so every fighter adjacent to a successfully attacked enemy is upgraded, and Deadly Command lets the leader count as adjacent to Grave Guard targets. Shielded bulwarks earn Guard tokens from critical saves, a one-shot raise returns a fallen guard, and the warband wins by holding a tight shieldwall and grinding foes down together."
 }

@@ -41,5 +41,5 @@
       "rulesText": "In the next turn, friendly assassins ({icon:assassin}) cannot be picked to be the target of Attacks or Ploys. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Five fragile, hyper-mobile skaven assassins fixated on the enemy leader. They lure that leader from safety, re-roll attacks against it and stack bleeding barb tokens that punish any movement, racing to slay or cripple it for a warband-wide inspire. Lightly armoured and reliant on speed and evasion tricks, they live and die by hunting down a single high-value target."
+  "playstyle": "Five fragile Eshin skaven assassins with low Health, dodge saves and average Move, relying on tricks rather than toughness. The whole warband is built to hunt the enemy leader: attacks against leaders gain re-rolls, The Jaws Snap nudges the target out of position, and badly wounding or slaying it Inspires every fighter. Melee hits leave barb tokens that punish victims for moving, while Smoke Bombs and Skittering Blur cover the escape. The pack wins by isolating and assassinating the leader, then picking off a bleeding, hesitant board."
 }

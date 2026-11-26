@@ -26,7 +26,7 @@
       "rulesText": "Usuń tego wojownika z pola bitwy i umieść go na pustym heksie krawędziowym na terytorium wroga. Następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czterej wysoce mobilni aelfowie-zabójcy z Ulgu, którzy uderzają z cienia. Jeden z wojowników potrafi teleportować się z osłony prosto na tyły wroga, a Piętno Cienia pozwala przerzucać Obronę na terytorium wroga lub na żetonie osłony — są jednak kruchymi szklanymi armatami. Inspire uzyskują w chwili, gdy zaatakują już uszkodzonego przeciwnika, dlatego izolują i dobijają rannych przeciwników.",
+  "playstyle": "Czterech kruchych elfich zabójców o skromnym Health i obronie opartej na unikach, którzy polegają na cieniu i skradaniu się zamiast na pancerzu. Przerzucanie kości Save na terytorium wroga lub na polach osłony nagradza agresywne pozycjonowanie, a jednorazowe sztuczki czynią ich bezcielesnymi, teleportują wojownika na krawędziowe pole wroga i smagają przeciwników obrażeniami dystansowymi. Wojownicy uzyskują Inspire, atakując już zranionych wrogów, więc warband najpierw osłabia cele, a potem uderza — wdziera się głęboko w linie przeciwnika i wykańcza rannych wrogów, by następnie wymknąć się z powrotem w ciemność.",
   "reactions": [
     {
       "name": "Piętno Cienia",

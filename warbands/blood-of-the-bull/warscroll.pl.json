@@ -30,5 +30,5 @@
       "rulesText": "Zarówno wyniki {icon:swords}, jak i {icon:hammer} są sukcesami w rzucie na Atak przyjaznego Chaos Duardina ({icon:chaos-duardin}), gdy cel sąsiaduje z przyjaznym Griskiem."
     }
   ],
-  "playstyle": "Piątka Chaos Duardinów, którzy kują moc z łupów. Wykonywanie Delve na żetonach skarbów generuje kości daemonforge, które wzmacniają ich ataki i rzuty na Save, a synergie sąsiedztwa pozwalają jednemu wojownikowi odblokować dodatkowe sukcesy, a innemu dorzucić strzelanie z cechą Grievous z bliska. Warband nagradza ciasne, skoordynowane pozycjonowanie, zamieniając cele w kości bojowe, by stawać się coraz groźniejszym w miarę zagarniania łupów planszy."
+  "playstyle": "Pięciu Chaos Duardinów pod wodzą Zuldrakki: powolny, ale solidny trzon wojowników z Move 3, wspierany przez kruchego hobgrota Griska. Warband napędzają kości daemonforge, które dodają kość Attack lub +1 Save, a wydanie jednej z nich Inspire'uje danego wojownika. Kolejne kości zdobywa się za Delving skarbów wojownikami, którzy nie są Staggered. Grisk jest mnożnikiem siły: sprawia, że młoty i miecze liczą się jako sukcesy przeciwko wrogom, obok których stoi. Warband wygrywa, utrzymując skarby i wykruszając przeciwników atakami nakładającymi Stagger, wspieranymi przez Griska."
 }

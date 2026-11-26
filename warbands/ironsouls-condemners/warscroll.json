@@ -35,5 +35,5 @@
       "rulesText": "That weapon has + 1 Range for that Attack. You can only use this ability once per game."
     }
   ],
-  "playstyle": "Three exceptionally tanky Stormcast Sequitors who hold ground rather than chase. Fighters without Move or Charge tokens simply cannot be driven back, and aetheric shields can shut off enemy weapon abilities, making them brutally hard to shift. They Inspire by rolling a critical on any Attack or Save, with their leader's Greatmace scaling its dice by the battle round."
+  "playstyle": "Three durable Stormcast elites with 5 Health each and steady but slow Move 3, inspiring whenever their Attack or Save rolls include a critical success. Inspired, the shield-bearers gain stronger Saves plus Cleave or Stagger, while Brodus gains speed and dice for his Grievous greatmace, and once per game can add dice equal to the battle round. Standing fighters cannot be driven back, and once-per-game shield and maul tricks negate weapon abilities or extend reach. The warband wins by holding objectives and grinding down anyone who closes in."
 }

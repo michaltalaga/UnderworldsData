@@ -1,7 +1,7 @@
 {
   "inspire": "Po kroku Akcji, jeśli przyjazny wojownik jest bezbronny, Inspire tego wojownika.",
   "abilities": [],
-  "playstyle": "Piątka niemal niezniszczalnych wojowników Nurgle'a, których Uninspired ciała ograniczają przyjmowane obrażenia do dwóch na turę. Tor śledzenia przesuwa się zgodnie z ruchem wskazówek zegara w miarę upływu tur, zadawania obrażeń i utrzymywania skarbów, skalując cechy Ogrodnika i lecząc wojowników z każdym tyknięciem. Warband powoli pełznie naprzód, niemal niemożliwy do usunięcia, wygrywając czystą wytrzymałością, podczas gdy napędzany celami mechanizm nieprzerwanie wzmacnia jego wojowników.",
+  "playstyle": "Pięciu powolnych ogrodników Nurgle'a: czterech wytrzymałych wojowników z Move 3 i kruchy, latający Squort. Większość ich obrażeń wyznacza licznik, który przesuwa się po każdej turze, za każdym razem, gdy przyjazny wojownik zostaje zraniony, oraz gdy kontrolują więcej skarbów, więc ataki stają się coraz mocniejsze w miarę trwania gry, a jedno pole licznika leczy wojownika. Imperturbable ogranicza obrażenia zadawane wojownikom bez Inspire do 2 na turę, a wojownicy dostają Inspire, gdy stają się vulnerable. Warband wygrywa, siedząc na skarbach, przyjmując ciosy i przetrzymując przeciwników w późnej fazie gry na wyniszczenie.",
   "reactions": [
     {
       "name": "Kwitnąca Plaga",
