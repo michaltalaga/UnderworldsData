@@ -74,6 +74,7 @@ Reads the fighter cards into `warbands/<slug>/fighters.json`: Move, Save, Health
 npm run extract:fighters                                            # warbands with no fighters.json yet (used by sync)
 npm run extract:fighters -- --rebuild zarbags-gitz the-emberwatch   # read again into a new folder
 npm run extract:fighters -- --rebuild --all                         # every warband and the 8 GA warscrolls
+npm run extract:fighters -- --resume 2026-11-26-15-20-00            # continue a run that stopped
 npm run extract:fighters -- --apply 2026-11-26-15-20-00             # copy a reviewed run into warbands/
 ```
 
@@ -90,7 +91,9 @@ Without `--rebuild`, it handles warbands that have fighter cards but no `fighter
 - `report.md`: per warband, the catalog and its sheets, every value that was not unanimous with its vote counts and links to the crop images, the checker's answers, the cross-checks, and the changes against the current `fighters.json` and `warscroll.json` (long texts as word diffs). At the top: the number of AI calls, the tokens, the cost and the time taken.
 - `<slug>/fighters.json`, `warscroll.json`, `warscroll.pl.json` (the current Polish file with its icon tokens changed to match; entries whose English text changed or that moved are translated again in one request, using the rest of the file for terminology, and listed in the report), `runemarks/`, the votes (`fighter-votes.json` and `warscroll-votes.json`, with which read gave which answer) and `crops/`.
 
-`--apply <run> [slug...]` copies a run's files into `warbands/`: every warband in the run, or only the ones named. Other options: `--reads N` and `--max-reads N` change the 5 and the 15, `--fighters 1,8` reads only those cards (for testing), and `--provider` and `--jobs` work as for every AI script. A fighter sends many reads at once, so `--jobs N` runs about N/4 fighters side by side with at most N requests in flight. One fighter takes about 55 calls, more when reads disagree.
+Each warband is read from start to finish (catalog, warscroll, fighters) and saved in `extraction/<run>/<slug>/` as soon as it is done, two or more warbands at a time. If a run stops part way, for example because the AI provider hit its usage limit, the report still covers every finished warband, and `npm run extract:fighters -- --resume <run>` continues it: finished warbands are skipped, the rest are read (unfinished ones from the start), and the report and totals cover both sessions.
+
+`--apply <run> [slug...]` copies a run's files into `warbands/`: every warband in the run, or only the ones named. A warband's `runemarks/` folder is replaced as a whole. Other options: `--reads N` and `--max-reads N` change the 5 and the 15, `--fighters 1,8` reads only those cards (for testing), and `--provider` and `--jobs` work as for every AI script. A fighter sends many reads at once, so `--jobs N` runs about N/4 fighters side by side with at most N requests in flight. One fighter takes about 55 calls, more when reads disagree.
 
 #### Runemark catalog
 

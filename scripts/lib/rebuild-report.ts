@@ -1,4 +1,4 @@
-import { fighterRunemarks, weaponRunemarks, type Catalog } from './catalog';
+import { fighterRunemarks, weaponRunemarks, type Catalog, type KeywordIcon } from './catalog';
 import type { Flag, FighterReading } from './fighter-reader';
 import { SIDES, type Fighter, type FightersFile } from './fighters';
 import { canonText, type FieldOutcome } from './votes';
@@ -196,6 +196,7 @@ export function diffWarscroll(oldW: Record<string, unknown> | null, newW: Warscr
 
 // ---------- the report ----------
 
+/** A warband's results while it is being read (live objects). */
 export interface WarbandResult {
   slug: string;
   name: string;
@@ -211,7 +212,67 @@ export interface WarbandResult {
   fighterDiff: string[];
   /** AI reads made for this warband (excludes repair requests). */
   reads: number;
+  /** Fighter cards this warband should have read (all of them, or the ones --fighters named). */
+  expectedFighters: number;
   error?: string;
+}
+
+/**
+ * A finished warband as saved in <run>/<slug>/result.json: everything the report needs, so a
+ * run that stops part way (or is resumed) can still report every warband it finished.
+ */
+export interface WarbandRecord {
+  slug: string;
+  name: string;
+  opLegal: boolean;
+  /** Every expected fighter was read (and the warscroll, when there is one). Resumed runs skip complete warbands. */
+  complete: boolean;
+  error: string | null;
+  reads: number;
+  keywords: KeywordIcon[];
+  catalogFlags: string[];
+  warscroll: { reads: number; flags: WarscrollReading['flags'] } | null;
+  warscrollDiff: string[];
+  polishNotes: string[];
+  fighters: Fighter[];
+  flags: { index: number; name: string; flag: Flag }[];
+  failedFighters: { index: number; error: string }[];
+  crossChecks: string[];
+  fighterDiff: string[];
+  stats: { values: number; unanimous: number; majority: number; flagged: number };
+}
+
+export function regionStats(readings: FighterReading[]): WarbandRecord['stats'] {
+  const all: FieldOutcome[] = readings.flatMap((r) => r.regions.flatMap((g) => g.vote.outcomes()));
+  return {
+    values: all.length,
+    unanimous: all.filter((o) => o.status === 'unanimous').length,
+    majority: all.filter((o) => o.status === 'majority').length,
+    flagged: all.filter((o) => o.status === 'flagged').length,
+  };
+}
+
+export function toRecord(r: WarbandResult, warscrollExpected: boolean): WarbandRecord {
+  const readings = [...r.readings].sort((a, b) => a.fighter.index - b.fighter.index);
+  return {
+    slug: r.slug,
+    name: r.name,
+    opLegal: r.opLegal,
+    complete: !r.error && r.failedFighters.length === 0 && readings.length >= r.expectedFighters && (!warscrollExpected || r.warscroll !== null),
+    error: r.error ?? null,
+    reads: r.reads,
+    keywords: r.catalog?.keywords ?? [],
+    catalogFlags: r.catalogFlags,
+    warscroll: r.warscroll ? { reads: r.warscroll.vote.reads, flags: r.warscroll.flags } : null,
+    warscrollDiff: r.warscrollDiff,
+    polishNotes: r.polishNotes,
+    fighters: readings.map((x) => x.fighter),
+    flags: readings.flatMap((x) => x.flags.map((flag) => ({ index: x.fighter.index, name: x.fighter.name, flag }))),
+    failedFighters: r.failedFighters,
+    crossChecks: r.crossChecks,
+    fighterDiff: r.fighterDiff,
+    stats: regionStats(readings),
+  };
 }
 
 export interface RunSummary {
@@ -225,6 +286,8 @@ export interface RunSummary {
   outputTokens: number;
   costUsd: number;
   seconds: number;
+  /** How many times the run was started (1, plus one per --resume). */
+  sessions?: number;
 }
 
 const md = (s: string) => s.replace(/\|/g, '\\|').replace(/\n/g, ' ');
@@ -240,17 +303,7 @@ function fighterLine(f: Fighter): string {
   return `| ${f.index} | ${md(f.name)} | ${md(side(f.uninspired))} | ${md(side(f.inspired))} | ${f.cardRulesText ? md(f.cardRulesText) : ''} |`;
 }
 
-export function regionStats(readings: FighterReading[]): { values: number; unanimous: number; majority: number; flagged: number } {
-  const all: FieldOutcome[] = readings.flatMap((r) => r.regions.flatMap((g) => g.vote.outcomes()));
-  return {
-    values: all.length,
-    unanimous: all.filter((o) => o.status === 'unanimous').length,
-    majority: all.filter((o) => o.status === 'majority').length,
-    flagged: all.filter((o) => o.status === 'flagged').length,
-  };
-}
-
-export function renderReport(summary: RunSummary, results: WarbandResult[]): string {
+export function renderReport(summary: RunSummary, records: WarbandRecord[], notes: string[] = []): string {
   const minutes = `${Math.floor(summary.seconds / 60)}m ${String(Math.round(summary.seconds % 60)).padStart(2, '0')}s`;
   const lines: string[] = [
     `# Fighter card and warscroll rebuild: ${summary.runId}`,
@@ -258,36 +311,35 @@ export function renderReport(summary: RunSummary, results: WarbandResult[]): str
     `- Model: ${summary.model}, provider: ${summary.provider}`,
     `- Voting: ${summary.settings}`,
     `- AI calls: ${summary.calls} (${summary.failedCalls} failed and retried), ${summary.inputTokens.toLocaleString('en')} input / ${summary.outputTokens.toLocaleString('en')} output tokens, about $${summary.costUsd.toFixed(2)}`,
-    `- Time: ${minutes}`,
+    `- Time: ${minutes}${summary.sessions && summary.sessions > 1 ? ` over ${summary.sessions} sessions (resumed)` : ''}`,
+    ...notes.map((n) => `- **${n}**`),
     '',
     'Nothing in `warbands/` was changed. Every value below was voted on; "majority" values were accepted with at least 80% of the votes, "review" items need a person to look at the card.',
     '',
     '| Warband | Fighters | Values | Unanimous | Majority | Needs review | Cross-check notes | Changes vs current fighters.json | Warscroll changes |',
     '|---|---|---|---|---|---|---|---|---|',
   ];
-  for (const r of results) {
-    const s = regionStats(r.readings);
-    const review = r.readings.flatMap((x) => x.flags).filter((f) => f.level === 'review').length;
-    lines.push(`| [${md(r.name)}](#${r.slug}) | ${r.readings.length} | ${s.values} | ${s.unanimous} | ${s.majority} | ${review} | ${r.crossChecks.length} | ${r.fighterDiff.length} | ${r.warscrollDiff.length} |`);
+  for (const r of records) {
+    const review = r.flags.filter((f) => f.flag.level === 'review').length + (r.warscroll?.flags.filter((f) => f.level === 'review').length ?? 0);
+    const fighters = `${r.fighters.length}${r.complete ? '' : ' (incomplete)'}`;
+    lines.push(`| [${md(r.name)}](#${r.slug}) | ${fighters} | ${r.stats.values} | ${r.stats.unanimous} | ${r.stats.majority} | ${review} | ${r.crossChecks.length} | ${r.fighterDiff.length} | ${r.warscrollDiff.length} |`);
   }
 
-  for (const r of results) {
+  for (const r of records) {
     lines.push('', `<a id="${r.slug}"></a>`, `## ${r.name}`, '');
     if (r.error) lines.push(`**Failed:** ${r.error}`, '');
     lines.push(`AI reads: ${r.reads}`, '');
 
-    if (r.catalog) {
-      lines.push('### Runemark catalog', '', `![fighter runemarks](${r.slug}/runemarks/fighter-runemarks.png)`, '', `![weapon runemarks](${r.slug}/runemarks/weapon-runemarks.png)`, '');
-      if (r.catalog.keywords.length) {
-        lines.push('Keywords the warscroll prints with an icon:', '', '| Keyword | Id | Kind | Votes | Status |', '|---|---|---|---|---|');
-        for (const k of r.catalog.keywords) lines.push(`| ${md(k.keyword)} | ${k.id} | ${k.kind} | ${k.votes} | ${k.status} |`);
-        lines.push('');
-      } else if (!r.opLegal) {
-        lines.push('Vaulted warband: no warscroll, so only the core runemarks and the warband runemark are known.', '');
-      }
-      for (const f of r.catalogFlags) lines.push(`- ${md(f)}`);
-      if (r.catalogFlags.length) lines.push('');
+    lines.push('### Runemark catalog', '', `![fighter runemarks](${r.slug}/runemarks/fighter-runemarks.png)`, '', `![weapon runemarks](${r.slug}/runemarks/weapon-runemarks.png)`, '');
+    if (r.keywords.length) {
+      lines.push('Keywords the warscroll prints with an icon:', '', '| Keyword | Id | Kind | Votes | Status |', '|---|---|---|---|---|');
+      for (const k of r.keywords) lines.push(`| ${md(k.keyword)} | ${k.id} | ${k.kind} | ${k.votes} | ${k.status} |`);
+      lines.push('');
+    } else if (!r.opLegal) {
+      lines.push('Vaulted warband: no warscroll, so only the core runemarks and the warband runemark are known.', '');
     }
+    for (const f of r.catalogFlags) lines.push(`- ${md(f)}`);
+    if (r.catalogFlags.length) lines.push('');
 
     if (r.warscroll) {
       lines.push('### Warscroll', '');
@@ -296,7 +348,7 @@ export function renderReport(summary: RunSummary, results: WarbandResult[]): str
         lines.push('| Level | Field | Votes |', '|---|---|---|');
         for (const f of wf) lines.push(`| ${f.level} | ${f.field} | ${md(f.message)} |`);
         lines.push('');
-      } else lines.push(`Every field unanimous over ${r.warscroll.vote.reads} reads.`, '');
+      } else lines.push(`Every field unanimous over ${r.warscroll.reads} reads.`, '');
       lines.push(`Changes vs current warscroll.json (${r.warscrollDiff.length}):`, '');
       lines.push('```', ...(r.warscrollDiff.length ? r.warscrollDiff : ['(none)']), '```', '');
       if (r.polishNotes.length) {
@@ -306,19 +358,18 @@ export function renderReport(summary: RunSummary, results: WarbandResult[]): str
       }
     }
 
-    if (r.readings.length || r.failedFighters.length) {
+    if (r.fighters.length || r.failedFighters.length) {
       lines.push('### Fighters', '', '| # | Name | Uninspired | Inspired | Card rules text |', '|---|---|---|---|---|');
-      for (const x of [...r.readings].sort((a, b) => a.fighter.index - b.fighter.index)) lines.push(fighterLine(x.fighter));
+      for (const f of r.fighters) lines.push(fighterLine(f));
       lines.push('');
       for (const f of r.failedFighters) lines.push(`- **Fighter ${f.index} failed:** ${md(f.error)}`);
 
-      const flags = r.readings.flatMap((x) => x.flags.map((f) => ({ f, fighter: x.fighter })));
-      lines.push('', `### Values that were not unanimous (${flags.length})`, '');
-      if (flags.length) {
+      lines.push('', `### Values that were not unanimous (${r.flags.length})`, '');
+      if (r.flags.length) {
         lines.push('| Fighter | Side | Region | Field | Level | Votes / note | Images |', '|---|---|---|---|---|---|---|');
         const order = (f: Flag) => (f.level === 'review' ? 0 : 1);
-        for (const { f, fighter } of flags.sort((a, b) => order(a.f) - order(b.f) || a.fighter.index - b.fighter.index)) {
-          lines.push(`| ${fighter.index} ${md(fighter.name)} | ${f.side} | ${f.region} | ${f.field} | ${f.level} | ${md(f.message)} | ${cropLinks(r.slug, fighter.index, f.side, f.region)} |`);
+        for (const { flag: f, index, name } of [...r.flags].sort((a, b) => order(a.flag) - order(b.flag) || a.index - b.index)) {
+          lines.push(`| ${index} ${md(name)} | ${f.side} | ${f.region} | ${f.field} | ${f.level} | ${md(f.message)} | ${cropLinks(r.slug, index, f.side, f.region)} |`);
         }
       } else lines.push('Every value was unanimous and confirmed by the checker.');
 
