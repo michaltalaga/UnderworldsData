@@ -1,5 +1,11 @@
 /** The shape of warbands/<slug>/fighters.json, and its formatting. */
 
+/**
+ * A characteristic: a number, or the id of the runemark printed in its place (for example a
+ * Gardener runemark standing for "the current space on your tracker").
+ */
+export type Characteristic = number | string;
+
 export interface WeaponAbility {
   name: string;
   critical: boolean;
@@ -8,18 +14,18 @@ export interface WeaponAbility {
 export interface Weapon {
   name: string | null;
   reach: 'melee' | 'ranged';
-  range: number;
+  range: Characteristic;
   symbol: 'hammer' | 'swords';
-  dice: number;
-  damage: number;
+  dice: Characteristic;
+  damage: Characteristic;
   abilities: WeaponAbility[];
 }
 
 export interface FighterSide {
-  move: number;
-  save: { symbol: 'shield' | 'dodge'; dice: number };
-  health: number;
-  bounty: number;
+  move: Characteristic;
+  save: { symbol: 'shield' | 'dodge'; dice: Characteristic };
+  health: Characteristic;
+  bounty: Characteristic;
   runemarks: string[];
   weapons: Weapon[];
 }

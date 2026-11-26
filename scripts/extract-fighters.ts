@@ -12,6 +12,7 @@ import {
   renderCatalogSheets,
   refreshPictures,
   renderLegend,
+  renderSheet,
   saveCatalog,
   weaponRunemarks,
 } from './lib/catalog';
@@ -334,6 +335,9 @@ async function main() {
           warscroll: warscrollImage,
           fighterIds: answerIds(fighterRunemarks(catalog), wb),
           weaponIds: answerIds(weaponRunemarks(catalog), wb),
+          keywordSheet: catalog.entries.some((e) => e.source === 'warscroll')
+            ? await renderSheet(`${wb.name}: the warband's own runemarks (a runemark can stand in place of a number)`, catalog.entries.filter((e) => e.source === 'warscroll'))
+            : null,
         };
         const indexes = cardFiles(wb).filter((n) => !onlyFighters || onlyFighters.includes(n));
         result.expectedFighters = indexes.length;

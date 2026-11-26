@@ -1,6 +1,6 @@
 import { fighterRunemarks, weaponRunemarks, type Catalog, type KeywordIcon } from './catalog';
 import type { Flag, FighterReading } from './fighter-reader';
-import { SIDES, type Fighter, type FightersFile } from './fighters';
+import { SIDES, type Characteristic, type Fighter, type FightersFile } from './fighters';
 import { canonText, type FieldOutcome } from './votes';
 import type { Warscroll, WarscrollReading } from './warscroll-reader';
 
@@ -24,7 +24,9 @@ export function crossChecks(
     }
     const u = f.uninspired;
     const i = f.inspired;
-    const lower = (label: string, a: number, b: number) => b < a && out.push(`${who}: inspired ${label} (${b}) is lower than uninspired (${a})`);
+    // Characteristics given as a runemark (a variable value) cannot be compared.
+    const lower = (label: string, a: Characteristic, b: Characteristic) =>
+      typeof a === 'number' && typeof b === 'number' && b < a && out.push(`${who}: inspired ${label} (${b}) is lower than uninspired (${a})`);
     lower('Move', u.move, i.move);
     lower('Save dice', u.save.dice, i.save.dice);
     lower('Health', u.health, i.health);

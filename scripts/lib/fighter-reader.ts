@@ -3,7 +3,7 @@ import type { ContentPart } from '../ai';
 import { askJson, isInt, png, slugify, text, type ReadContext } from './ai-read';
 import { CARD_REGION_NAMES, cropCardRegion, type CardRegion } from './card-image';
 import { WARBAND_ANSWER } from './catalog';
-import { SIDES, type Fighter, type FighterSide, type Side, type Weapon } from './fighters';
+import { SIDES, type Characteristic, type Fighter, type FighterSide, type Side, type Weapon } from './fighters';
 import { DEFAULT_VOTE_SETTINGS, RegionVote, canonText, voteRegion, type FieldOutcome, type FieldVote, type VoteSettings } from './votes';
 
 /**
@@ -38,6 +38,8 @@ export interface References {
   /** Every answer accepted for a fighter runemark (its id, slugified names) and the id it stands for. */
   fighterIds: Map<string, string>;
   weaponIds: Map<string, string>;
+  /** The warband's own keyword runemarks, which can stand in place of a characteristic; null when the warscroll has none. */
+  keywordSheet: Buffer | null;
 }
 
 export interface Flag {
@@ -108,7 +110,14 @@ function namePrompt(intro: string, wording: number): string {
   return `${intro}\n${ask}\nReturn JSON: {"name": "<name>"}\n${JSON_ONLY}`;
 }
 
-function statsPrompt(intro: string, wording: number, legendNo: number): string {
+/** What to do when a runemark is printed where a number should be. */
+function inPlaceOfNumber(sheetNo: number | null): string {
+  return sheetNo
+    ? `If a runemark is printed in place of a number, give that runemark's id from image ${sheetNo} as a string instead of the number.`
+    : 'If a runemark is printed in place of a number, give a short name for it as a string instead of the number.';
+}
+
+function statsPrompt(intro: string, wording: number, legendNo: number, keywordSheetNo: number | null): string {
   const shape = `{"move": <whole number>, "save": {"symbol": "shield" | "dodge", "dice": <whole number>}, "health": <whole number>, "bounty": <whole number>}`;
   const ask = [
     `Down the left edge of the card are four characteristics, top to bottom:
@@ -120,7 +129,7 @@ Read each one.`,
     `Give the four characteristics down the left side of the card, top to bottom: Move (hexagon), Save (green shield-shaped badge), Health (red circle) and Bounty (coin). For Save, give the number of dice and which symbol is on the badge, "shield" or "dodge": compare it with image ${legendNo}.`,
     `Look at each badge on the left edge on its own, from the top: the hexagon is Move, the green shield-shaped badge is Save (a symbol plus the number of Save dice), the red circle is Health and the coin is Bounty. Image ${legendNo} shows the two possible Save symbols, "shield" and "dodge"; say which one the badge shows.`,
   ][wording];
-  return `${intro}\n${ask}\nReturn JSON: ${shape}\n${JSON_ONLY}`;
+  return `${intro}\n${ask}\n${inPlaceOfNumber(keywordSheetNo)}\nReturn JSON: ${shape}\n${JSON_ONLY}`;
 }
 
 function runemarksPrompt(intro: string, wording: number, sheetNo: number, warscrollNo: number | null): string {
@@ -138,7 +147,7 @@ Step 2: for each badge, top to bottom, find the runemark on the reference sheet 
   return `${intro}\n${refs}\n${ask}\nReturn JSON: ${shape}\n${JSON_ONLY}`;
 }
 
-function weaponsPrompt(intro: string, wording: number, legendNo: number, sheetNo: number): string {
+function weaponsPrompt(intro: string, wording: number, legendNo: number, sheetNo: number, keywordSheetNo: number | null): string {
   const shape = `{"weapons": [{"reach": "melee" | "ranged", "range": <whole number>, "symbol": "hammer" | "swords", "dice": <whole number>, "damage": <whole number>, "runemarks": [{"id": "<id or unknown>", "critical": <true or false>, "description": "<what it looks like>"}]}]}`;
   const refs = `Image ${legendNo} shows the weapon bar icons, and image ${sheetNo} the weapon runemarks this warband's weapons can have, each labelled with its id in bold.`;
   const parts = `- "reach": the icon just left of the bar, "melee" or "ranged" (see image ${legendNo})
@@ -152,7 +161,7 @@ function weaponsPrompt(intro: string, wording: number, legendNo: number, sheetNo
     `Read the weapon profile bars at the bottom of the card, top to bottom (the round emblem in the bottom-right corner is not part of them). In each bar:\n${parts}`,
     `How many weapon bars are at the bottom of the card? Read each of them separately, one value at a time:\n${parts}\nThe round emblem in the bottom-right corner of the card is not a weapon runemark.`,
   ][wording];
-  return `${intro}\n${refs}\n${ask}\nReturn JSON: ${shape}\n${JSON_ONLY}`;
+  return `${intro}\n${refs}\n${ask}\n${inPlaceOfNumber(keywordSheetNo)}\nReturn JSON: ${shape}\n${JSON_ONLY}`;
 }
 
 // ---------- reading one region ----------
@@ -165,11 +174,20 @@ function nameFields(reply: { name?: unknown }): FieldVote[] {
   return [{ key: 'name', canon: canonText(name), value: name }];
 }
 
-function statsFields(reply: { move?: unknown; save?: { symbol?: unknown; dice?: unknown }; health?: unknown; bounty?: unknown }): FieldVote[] {
-  const { move, health, bounty } = reply;
+/** A characteristic from a reply: a whole number, or the catalog id of the runemark printed in its place ("unknown" if no id matches). */
+function characteristic(value: unknown, ids: Map<string, string>, field: string): Characteristic {
+  if (isInt(value)) return value;
+  if (typeof value === 'string' && /^\d+$/.test(value.trim())) return Number(value.trim());
+  if (typeof value === 'string' && value.trim()) return resolveId(value.trim(), ids) ?? 'unknown';
+  throw new Error(`${field} is not a whole number or a runemark`);
+}
+
+function statsFields(reply: { move?: unknown; save?: { symbol?: unknown; dice?: unknown }; health?: unknown; bounty?: unknown }, ids: Map<string, string>): FieldVote[] {
+  const move = characteristic(reply.move, ids, 'move');
+  const health = characteristic(reply.health, ids, 'health');
+  const bounty = characteristic(reply.bounty, ids, 'bounty');
+  const dice = characteristic(reply.save?.dice, ids, 'save dice');
   const symbol = reply.save?.symbol;
-  const dice = reply.save?.dice;
-  if (![move, health, bounty, dice].every(isInt)) throw new Error('a characteristic is not a whole number');
   if (symbol !== 'shield' && symbol !== 'dodge') throw new Error('save symbol is not shield or dodge');
   return [
     { key: 'move', canon: String(move), value: move },
@@ -208,7 +226,7 @@ interface ReadAbility {
   description: string;
 }
 
-function weaponFields(reply: { weapons?: unknown }, ids: Map<string, string>): FieldVote[] {
+function weaponFields(reply: { weapons?: unknown }, ids: Map<string, string>, numberIds: Map<string, string>): FieldVote[] {
   if (!Array.isArray(reply.weapons) || reply.weapons.length === 0) throw new Error('weapons is empty');
   const count = String(reply.weapons.length);
   const fields: FieldVote[] = [{ key: 'weapons.count', canon: count, value: reply.weapons.length }];
@@ -217,7 +235,9 @@ function weaponFields(reply: { weapons?: unknown }, ids: Map<string, string>): F
     const when = { key: 'weapons.count', canon: count };
     if (w.reach !== 'melee' && w.reach !== 'ranged') throw new Error(`${at}.reach is invalid`);
     if (w.symbol !== 'hammer' && w.symbol !== 'swords') throw new Error(`${at}.symbol is invalid`);
-    for (const k of ['range', 'dice', 'damage']) if (!isInt(w[k])) throw new Error(`${at}.${k} is not a whole number`);
+    const range = characteristic(w.range, numberIds, `${at}.range`);
+    const dice = characteristic(w.dice, numberIds, `${at}.dice`);
+    const damage = characteristic(w.damage, numberIds, `${at}.damage`);
     if (!Array.isArray(w.runemarks)) throw new Error(`${at}.runemarks is missing`);
     const abilities: ReadAbility[] = [];
     let critNext = false;
@@ -239,15 +259,18 @@ function weaponFields(reply: { weapons?: unknown }, ids: Map<string, string>): F
     const abilityCanon = abilities.map((a) => `${a.critical ? 'critical ' : ''}${a.id}`).join(',') || 'none';
     fields.push(
       { key: `${at}.reach`, canon: w.reach, value: w.reach, when },
-      { key: `${at}.range`, canon: String(w.range), value: w.range, when },
+      { key: `${at}.range`, canon: String(range), value: range, when },
       { key: `${at}.symbol`, canon: w.symbol, value: w.symbol, when },
-      { key: `${at}.dice`, canon: String(w.dice), value: w.dice, when },
-      { key: `${at}.damage`, canon: String(w.damage), value: w.damage, when },
+      { key: `${at}.dice`, canon: String(dice), value: dice, when },
+      { key: `${at}.damage`, canon: String(damage), value: damage, when },
       { key: `${at}.abilities`, canon: abilityCanon, value: abilities, when },
     );
   });
   return fields;
 }
+
+/** Runemark ids a characteristic can be (fighter and weapon runemarks together). */
+const numberIds = (refs: References) => new Map([...refs.weaponIds, ...refs.fighterIds]);
 
 function readRegion(ctx: ReadContext, side: SideImages, region: CardRegion, refs: References) {
   return async (n: number): Promise<{ variant: string; fields: FieldVote[] }> => {
@@ -261,8 +284,10 @@ function readRegion(ctx: ReadContext, side: SideImages, region: CardRegion, refs
         return { variant, fields: nameFields(reply) };
       }
       case 'stats': {
-        const reply = await askJson<Parameters<typeof statsFields>[0]>(ctx, [...parts, png(refs.saveLegend), text(statsPrompt(intro, v.wording, next))]);
-        return { variant, fields: statsFields(reply) };
+        const keyword = refs.keywordSheet ? [png(refs.keywordSheet)] : [];
+        const prompt = statsPrompt(intro, v.wording, next, refs.keywordSheet ? next + 1 : null);
+        const reply = await askJson<Parameters<typeof statsFields>[0]>(ctx, [...parts, png(refs.saveLegend), ...keyword, text(prompt)]);
+        return { variant, fields: statsFields(reply, numberIds(refs)) };
       }
       case 'runemarks': {
         const extra = [png(refs.fighterSheet), ...(refs.warscroll ? [png(refs.warscroll)] : [])];
@@ -271,9 +296,10 @@ function readRegion(ctx: ReadContext, side: SideImages, region: CardRegion, refs
         return { variant, fields: runemarkFields(reply, refs.fighterIds) };
       }
       case 'weapons': {
-        const prompt = weaponsPrompt(intro, v.wording, next, next + 1);
-        const reply = await askJson<{ weapons?: unknown }>(ctx, [...parts, png(refs.weaponLegend), png(refs.weaponSheet), text(prompt)]);
-        return { variant, fields: weaponFields(reply, refs.weaponIds) };
+        const keyword = refs.keywordSheet ? [png(refs.keywordSheet)] : [];
+        const prompt = weaponsPrompt(intro, v.wording, next, next + 1, refs.keywordSheet ? next + 2 : null);
+        const reply = await askJson<{ weapons?: unknown }>(ctx, [...parts, png(refs.weaponLegend), png(refs.weaponSheet), ...keyword, text(prompt)]);
+        return { variant, fields: weaponFields(reply, refs.weaponIds, numberIds(refs)) };
       }
     }
   };
