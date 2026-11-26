@@ -175,7 +175,10 @@ export function diffWarscroll(oldW: Record<string, unknown> | null, newW: Warscr
   const out: string[] = [];
   const show = (v: unknown) => (typeof v === 'string' ? JSON.stringify(v) : JSON.stringify(v ?? null));
   const change = (path: string, x: unknown, y: unknown) => {
-    if ((x ?? null) === (y ?? null) || show(x) === show(y)) return;
+    // An empty text and no text are the same.
+    const a = x === '' ? null : (x ?? null);
+    const b = y === '' ? null : (y ?? null);
+    if (a === b || show(a) === show(b)) return;
     if (typeof x === 'string' && typeof y === 'string' && (x.length > 60 || y.length > 60)) out.push(`${path}: ${wordDiff(x, y)}`);
     else out.push(`${path}: ${show(x)} -> ${show(y)}`);
   };
@@ -194,7 +197,6 @@ export function diffWarscroll(oldW: Record<string, unknown> | null, newW: Warscr
       continue;
     }
     if (x.list !== y.list) out.push(`"${name}": moved from ${x.list} to ${y.list}`);
-    else if (x.index !== y.index) out.push(`"${name}": moved from ${x.list}[${x.index}] to [${y.index}]`);
     change(`"${name}" name`, x.entry.name, y.entry.name);
     change(`"${name}" type`, x.entry.type, y.entry.type);
     change(`"${name}" flavorText`, x.entry.flavorText, y.entry.flavorText);

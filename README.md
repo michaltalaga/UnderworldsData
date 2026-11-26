@@ -76,6 +76,7 @@ npm run extract:fighters -- --rebuild zarbags-gitz the-emberwatch   # read again
 npm run extract:fighters -- --rebuild --all                         # every warband and the 8 GA warscrolls
 npm run extract:fighters -- --resume 2026-11-26-15-20-00            # continue a run that stopped
 npm run extract:fighters -- --pictures 2026-11-26-15-20-00          # cut a run's keyword pictures again
+npm run extract:fighters -- --report 2026-11-26-15-20-00            # write a run's review page again
 npm run extract:fighters -- --apply 2026-11-26-15-20-00             # copy a reviewed run into warbands/
 ```
 
@@ -90,6 +91,7 @@ A characteristic can also be a runemark printed in place of the number, such as 
 
 Without `--rebuild`, it handles warbands that have fighter cards but no `fighters.json`, and writes the file once every fighter is read. With `--rebuild <slug>...` (or `--all`), it also reads warbands that already have one, and their warscrolls (skip those with `--no-warscroll`, or the fighters with `--no-fighters`; `--ga` adds the GA warscrolls). Everything goes into `extraction/<run>/`, and `warbands/` is not touched:
 
+- `report.html`: the page to review a run in a browser: what needs a decision (each with the card crop, every answer the reads gave with its votes, and the current file's value), what changes if the run is applied (per warband, in words), and the cross-checks. `--report <run>` writes it again from the saved files.
 - `report.md`: per warband, the catalog and its sheets, every value that was not unanimous with its vote counts and links to the crop images, the checker's answers, the cross-checks, and the changes against the current `fighters.json` and `warscroll.json` (long texts as word diffs). At the top: the number of AI calls, the tokens, the cost and the time taken.
 - `<slug>/fighters.json`, `warscroll.json`, `warscroll.pl.json` (the current Polish file with its icon tokens changed to match; entries whose English text changed or that moved are translated again in one request, using the rest of the file for terminology, and listed in the report), `runemarks/`, the votes (`fighter-votes.json` and `warscroll-votes.json`, with which read gave which answer) and `crops/`.
 

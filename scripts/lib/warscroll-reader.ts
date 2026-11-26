@@ -110,7 +110,7 @@ function fields(reply: Reply): FieldVote[] {
   const out: FieldVote[] = [];
   const add = (key: string, value: string | null, when?: FieldVote['when']) => out.push({ key, canon: canonText(value), value, when });
   add('name', clean(reply.name));
-  add('version', reply.version === null || reply.version === undefined ? null : clean(String(reply.version)));
+  add('version', reply.version === null || reply.version === undefined ? null : (clean(String(reply.version))?.replace(/^v\s*/i, '') ?? null));
   add('inspire', clean(reply.inspire));
   add('generalRules', clean(reply.generalRules));
   for (const list of ['reactions', 'abilities'] as const) {

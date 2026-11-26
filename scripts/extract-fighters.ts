@@ -21,6 +21,7 @@ import { loadSide, readFighter, type FighterReading, type References } from './l
 import { SIDES, fightersFileText, type FightersFile } from './lib/fighters';
 import { Limiter } from './lib/limit';
 import { crossChecks, diffFighters, diffWarscroll, renderReport, toRecord, type RunSummary, type WarbandRecord, type WarbandResult } from './lib/rebuild-report';
+import { renderHtmlReport } from './lib/html-report';
 import { DEFAULT_VOTE_SETTINGS, type RegionVote, type VoteSettings } from './lib/votes';
 import { readWarscroll, remapPolish, translateMissing, type Warscroll } from './lib/warscroll-reader';
 
@@ -33,6 +34,7 @@ import { readWarscroll, remapPolish, translateMissing, type Warscroll } from './
  *   npm run extract:fighters -- --resume <run>         continue a run that stopped (usage limit, Ctrl+C)
  *   npm run extract:fighters -- --resume <run> --redo a,b   read finished warbands of a run again
  *   npm run extract:fighters -- --pictures <run>       cut a run's warscroll keyword pictures again
+ *   npm run extract:fighters -- --report <run>         write a run's review page (report.html) again
  *   npm run extract:fighters -- --apply extraction/<run> [slug...]
  *                                                     copy a reviewed run into warbands/
  *
@@ -201,6 +203,7 @@ async function refreshRunPictures(runArg: string, provider: ProviderId | undefin
   const records = order.map((slug) => readJsonIfExists<WarbandRecord>(join(runDir, slug, 'result.json'))).filter((r): r is WarbandRecord => r !== null);
   write(join(runDir, 'report.md'), renderReport(updated, records));
   write(join(runDir, 'summary.json'), json(updated));
+  write(join(runDir, 'report.html'), renderHtmlReport(runDir));
   console.log(`\n  Done: ${ai.stats.calls} AI calls, about $${usage.costUsd.toFixed(2)}. Report updated: ${relative(ROOT, join(runDir, 'report.md'))}`);
 }
 
@@ -214,6 +217,13 @@ async function main() {
   if (applyRun) return apply(applyRun, args);
   const picturesRun = takeValue(args, 'pictures');
   if (picturesRun) return refreshRunPictures(picturesRun, provider, jobs);
+  const reportRun = takeValue(args, 'report');
+  if (reportRun) {
+    const runDir = existsSync(reportRun) ? reportRun : join(EXTRACTION_DIR, reportRun);
+    write(join(runDir, 'report.html'), renderHtmlReport(runDir));
+    console.log(`  Review page: ${relative(ROOT, join(runDir, 'report.html'))}`);
+    return;
+  }
 
   const resume = takeValue(args, 'resume');
   // With --resume: warbands (or _ga/<key>) to read again even though they finished.
@@ -479,9 +489,10 @@ async function main() {
     if (unfinished > 0 && !notes.length) notes.push(`${unfinished} warband(s) or GA warscroll(s) are not complete; npm run extract:fighters -- --resume ${runId} reads them again`);
     write(join(runDir, 'report.md'), renderReport(summary, records, notes));
     write(join(runDir, 'summary.json'), json(summary));
+    write(join(runDir, 'report.html'), renderHtmlReport(runDir));
 
     console.log(`\n  ${notes.length ? 'Stopped' : 'Done'} after ${Math.round(summary.seconds)}s in all: ${summary.calls} AI calls, about $${summary.costUsd.toFixed(2)}.`);
-    console.log(`  Report: ${relative(ROOT, join(runDir, 'report.md'))}`);
+    console.log(`  Review page: ${relative(ROOT, join(runDir, 'report.html'))} (everything in full: report.md)`);
     notes.forEach((n) => console.log(`  ${n}`));
     if (!rebuild) console.log(`  fighters.json written for ${records.filter((r) => r.complete && r.fighters.length).length} warband(s).`);
     else if (!notes.length) console.log(`  Nothing in warbands/ was changed. After review: npm run extract:fighters -- --apply ${runId}`);
