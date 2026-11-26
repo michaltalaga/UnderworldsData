@@ -36,6 +36,8 @@ export interface Tally {
   value: unknown;
   /** Which reads gave this answer (1-based), with the variant of each. */
   reads: { read: number; variant: string }[];
+  /** How often each exact form of this answer came back; `value` is the most common one. */
+  forms: Map<string, { value: unknown; count: number }>;
 }
 
 export interface FieldOutcome {
@@ -92,9 +94,15 @@ export class RegionVote {
         winners.set(vote.when.key, condition ?? '');
         if (condition !== vote.when.canon) continue;
       }
-      const t = tallies.get(vote.canon) ?? { canon: vote.canon, count: 0, value: vote.value, reads: [] };
+      const t: Tally = tallies.get(vote.canon) ?? { canon: vote.canon, count: 0, value: vote.value, reads: [], forms: new Map() };
       t.count++;
       t.reads.push({ read: b.read, variant: b.variant });
+      // Reads that agree can still differ in formatting (a line break, brackets): keep the most common form.
+      const form = JSON.stringify(vote.value) ?? 'undefined';
+      const f = t.forms.get(form) ?? { value: vote.value, count: 0 };
+      f.count++;
+      t.forms.set(form, f);
+      if (f.count > (t.forms.get(JSON.stringify(t.value) ?? 'undefined')?.count ?? 0)) t.value = f.value;
       tallies.set(vote.canon, t);
     }
     return [...tallies.values()].sort((a, b) => b.count - a.count);
@@ -189,6 +197,8 @@ export function canonText(text: string | null | undefined): string {
     .replace(/[“”]/g, '"')
     .replace(/[‐-―]/g, '-')
     .replace(/\s+/g, ' ')
+    // "Grot ({icon:grot})" and "Grot {icon:grot}" are the same answer.
+    .replace(/\(\s*(\{icon:[^}]+\})\s*\)/g, '$1')
     .trim()
     .toLowerCase();
 }
