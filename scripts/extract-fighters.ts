@@ -1,4 +1,4 @@
-import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join, relative } from 'path';
 import { AiClient, DEFAULT_MODEL, runJobs, takeAiOptions } from './ai';
 import { jobNote } from './ai/jobs';
@@ -138,13 +138,15 @@ function apply(runArg: string, slugs: string[]): void {
       copy('warscroll.json');
       copy('warscroll.pl.json');
       if (existsSync(join(from, 'runemarks'))) {
+        // Replaced as a whole, so the catalog and its pictures always come from the same run.
+        rmSync(warbandFile(slug, 'runemarks'), { recursive: true, force: true });
         cpSync(join(from, 'runemarks'), warbandFile(slug, 'runemarks'), { recursive: true });
         copied.push('runemarks/');
       }
     }
     console.log(`  ${slug}: ${copied.join(', ') || 'nothing to copy'}`);
   }
-  console.log('\n  Done. Polish notes in the report list warscroll.pl.json fields that need `npm run translate` again.');
+  console.log('\n  Done.');
 }
 
 // ---------- main ----------

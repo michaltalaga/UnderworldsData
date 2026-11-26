@@ -6,26 +6,10 @@
   "inspire": "Each time you gain a sixth or subsequent Glory point, Inspire a friendly fighter.",
   "reactions": [
     {
-      "name": "Slippery Gitz",
-      "type": "reaction",
-      "trigger": "Use this immediately after you pick a friendly fighter to Move.",
-      "flavorText": "Grots are hard to pin down at the best of times - and Zarbag's Gitz especially so.",
-      "rulesText": "Pick a friendly Grot ({icon:minion}) with no Move or Charge tokens adjacent to them. After the first fighter Moves, that friendly Grot ({icon:minion}) can Move. You can only use this ability once per turn."
-    },
-    {
-      "name": "Fungal Burst",
-      "type": "reaction",
-      "trigger": "Use this immediately after a friendly Grot ({icon:minion}) is slain by an attacker adjacent to them.",
-      "flavorText": "Grots often carry bunches of mushrooms that, when struck, release clouds of poisonous spores.",
-      "rulesText": "Give the attacker a Stagger token. You can only use this ability once per game."
-    }
-  ],
-  "abilities": [
-    {
       "name": "Squig Herder",
       "type": "passive",
       "flavorText": null,
-      "rulesText": "After you deploy a friendly Drizgit, you must immediately place each friendly Squig ({icon:minion}) in an empty hex adjacent to them that is not a starting hex and that does not contain a feature token."
+      "rulesText": "After you deploy a friendly Drizgit, you must immediately place each friendly Squig ({icon:squig}) in an empty hex adjacent to them that is not a starting hex and that does not contain a feature token."
     },
     {
       "name": "Spinnin'",
@@ -38,18 +22,36 @@
       "type": "passive",
       "flavorText": null,
       "rulesText": "If a friendly fighter's weapon has the {icon:volley} runemark, you have access to the following Weapon ability:\n\nVolley ({icon:volley}): Immediately after the Attack, if it was successful, you can pick another friendly fighter whose weapon has Volley ({icon:volley}). That fighter Attacks with that weapon. You can only use this ability once per turn."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Slippery Gitz",
+      "type": "reaction",
+      "trigger": "Use this immediately after you pick a friendly fighter to Move.",
+      "flavorText": "Grots are hard to pin down at the best of times - and Zarbag's Gitz especially so.",
+      "rulesText": "Pick a friendly Grot ({icon:grot}) with no Move or Charge tokens adjacent to them. After the first fighter Moves, that friendly Grot ({icon:grot}) can Move. You can only use this ability once per turn."
+    },
+    {
+      "name": "Fungal Burst",
+      "type": "reaction",
+      "trigger": "Use this immediately after a friendly Grot ({icon:grot}) is slain by an attacker adjacent to them.",
+      "flavorText": "Grots often carry bunches of mushrooms that, when struck, release clouds of poisonous spores.",
+      "rulesText": "Give the attacker a Stagger token. You can only use this ability once per game."
     },
     {
       "name": "Gang Up",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "Zarbag's Gitz have heard about fighting fair. They just choose not to.",
-      "rulesText": "Use this in a Power step. In the next turn, friendly fighters' melee weapons have +1 Attack dice for each other friendly Grot ({icon:minion}) adjacent to the target. You can only use this ability once per game."
+      "rulesText": "In the next turn, friendly fighters' melee weapons have +1 Attack dice for each other friendly Grot ({icon:grot}) adjacent to the target. You can only use this ability once per game."
     },
     {
       "name": "Make Some Noise!",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "There are few better ways to rile up a squig than making a racket.",
-      "rulesText": "Use this in a Power step. Push each friendly Squig ({icon:minion}) up to 2 hexes. For the rest of the battle round, those Squigs ({icon:minion}) cannot hold treasure tokens or Delve. You can only use this ability once per game."
+      "rulesText": "Push each friendly Squig ({icon:squig}) up to 2 hexes. For the rest of the battle round, those Squigs ({icon:squig}) cannot hold treasure tokens or Delve. You can only use this ability once per game."
     }
   ],
   "playstyle": "A nine-strong grot horde, the densest swarm in the game, built around fragile, low-health bodies that overwhelm through sheer numbers. It wins by ganging up, stacking extra Attack dice for every friendly grot crowding a target and chaining moves through the swarm. Squigs and the spinning fanatic add board hazards, but each model dies easily."

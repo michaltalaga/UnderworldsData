@@ -43,18 +43,16 @@ const SCHEMA = `{
   "version": "<version number if printed, or null>",
   "inspire": "<the full Inspire condition text>",
   "generalRules": "<a rule printed on its own that is not part of any one entry, such as a line above several entries, or null>",
-  "reactions": [
-    { "name": "<name>", "type": "reaction", "trigger": "<the sentence that says when to use it, usually starting 'Use this immediately after'>", "flavorText": "<italic flavour text, or null>", "rulesText": "<the rest of the rules text>" }
-  ],
-  "abilities": [
-    { "name": "<name>", "type": "passive" | "action" | "reaction", "flavorText": "<italic flavour text, or null>", "rulesText": "<full rules text>" }
-  ]
-}`;
+  "reactions": [ <entry>, ... ],
+  "abilities": [ <entry>, ... ]
+}
+where each <entry> is:
+{ "name": "<name>", "type": "passive" | "action" | "reaction", "trigger": "<the opening sentence that says when to use it, or null>", "flavorText": "<italic flavour text, or null>", "rulesText": "<the rules text after the trigger>" }`;
 
 const RULES = `- Copy all wording exactly as printed, word for word.
-- "reactions" are the entries whose name is preceded by the Surge symbol (a small lightning bolt in a hexagon). Put the sentence that says when to use it in "trigger" and the rest in "rulesText".
-- Every entry without the Surge symbol goes in "abilities", with its whole text in "rulesText". Its "type" is "action" if the text says it is used in a Power step, "reaction" if the text says you can use it after something happens (for example "Use this immediately after ..."), and "passive" otherwise, including rules that apply on their own when something happens.
-- Keep the order in which the warscroll prints them, left column first, top to bottom.
+- The card has a narrow left column (the Inspire box, then usually a few grey boxes) and a wide panel on the right. "reactions" are the boxes in the left column below Inspire, top to bottom; "abilities" are the entries in the right panel, top to bottom. Decide only by where an entry is printed, not by what kind of ability it is.
+- "trigger": when an entry's rules text opens with a sentence that says when to use it (for example "Use this immediately after ...", "Use this in a Power step.", "You can use this in the last Power step of a battle round."), put that sentence in "trigger" and the rest in "rulesText". Otherwise "trigger" is null and all of it is "rulesText".
+- "type": "action" if the text says it is used in a Power step, "reaction" if the text says you can use it after something happens (for example "Use this immediately after ..."), and "passive" otherwise, including rules that apply on their own when something happens.
 - Inside a field, write \\n\\n where the card leaves a blank gap between paragraphs, and \\n where a new line starts without a gap.
 - "generalRules" is for a rule printed on its own outside any entry (for example "You can use 1 of the following abilities once per battle round." above several entries). Do not copy it into the entries. Use null if there is none.
 - Use only ASCII hyphens and straight quotes.`;
@@ -124,8 +122,8 @@ function fields(reply: Reply): FieldVote[] {
       const at = `${list}[${i}]`;
       if (!clean(item.name) || !clean(item.rulesText)) throw new Error(`${at} has no name or rules text`);
       add(`${at}.name`, clean(item.name), when);
-      add(`${at}.type`, list === 'reactions' ? 'reaction' : clean(item.type), when);
-      if (list === 'reactions') add(`${at}.trigger`, clean(item.trigger), when);
+      add(`${at}.type`, clean(item.type), when);
+      add(`${at}.trigger`, clean(item.trigger), when);
       add(`${at}.flavorText`, clean(item.flavorText), when);
       add(`${at}.rulesText`, clean(item.rulesText), when);
     });
@@ -164,11 +162,14 @@ export async function readWarscroll(
     const count = Number(vote.outcome(`${name}.count`).canon) || 0;
     return Array.from({ length: count }, (_, i) => {
       const at = `${name}[${i}]`;
-      const entry: WarscrollEntry = { name: get(`${at}.name`) ?? '', type: get(`${at}.type`) ?? 'passive', flavorText: get(`${at}.flavorText`), rulesText: get(`${at}.rulesText`) ?? '' };
-      if (name === 'reactions') {
-        return { name: entry.name, type: entry.type, trigger: get(`${at}.trigger`), flavorText: entry.flavorText, rulesText: entry.rulesText };
-      }
-      return entry;
+      const trigger = get(`${at}.trigger`);
+      return {
+        name: get(`${at}.name`) ?? '',
+        type: get(`${at}.type`) ?? 'passive',
+        ...(trigger ? { trigger } : {}),
+        flavorText: get(`${at}.flavorText`),
+        rulesText: get(`${at}.rulesText`) ?? '',
+      };
     });
   };
 
@@ -310,7 +311,7 @@ export async function translateMissing(
     en[list].forEach((entry, index) => {
       if (plList[index]) return;
       entries.push({ list, index });
-      wanted[`${list}[${index}]`] = { name: entry.name, ...(list === 'reactions' ? { trigger: entry.trigger } : {}), flavorText: entry.flavorText, rulesText: entry.rulesText };
+      wanted[`${list}[${index}]`] = { name: entry.name, ...(entry.trigger ? { trigger: entry.trigger } : {}), flavorText: entry.flavorText, rulesText: entry.rulesText };
     });
   }
   const keys = Object.keys(wanted);

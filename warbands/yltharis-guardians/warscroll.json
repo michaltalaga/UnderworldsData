@@ -4,6 +4,7 @@
   "version": null,
   "grandAlliance": "Order",
   "inspire": "After a friendly fighter uses a Core ability, you can place 1 Power card from your hand or the top card from your Power deck face down next to this warscroll, to a maximum of 3. These cards are no longer in your hand or Power deck and cannot be revealed.\n\nAt the end of your turn or after an enemy fighter is slain, you can place 1 growth token on each of those cards. After the fifth growth token is placed on the same card, pick a friendly fighter. Inspire that fighter, remove those growth tokens, and then add that card to your hand.",
+  "generalRules": "You can use 1 of the following abilities once per battle round.",
   "reactions": [],
   "abilities": [
     {

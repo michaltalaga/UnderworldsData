@@ -33,6 +33,8 @@ export interface RunemarkEntry {
   image: Buffer;
   /** For warscroll entries: the keyword printed next to the icon. */
   keyword?: string;
+  /** For warscroll entries: the icon alone (no keyword or brackets), for the app; only when a check confirmed it. */
+  appIcon?: Buffer;
 }
 
 export interface KeywordIcon {
@@ -291,17 +293,19 @@ async function readWarscrollIcons(
     if (core.canon !== 'none') continue;
     const point = points.get(kw);
     let image: Buffer;
+    let appIcon: Buffer | undefined;
     if (point) {
       const cropped = await cropKeyword(ctx, warscroll, keyword, point);
       image = cropped.image;
-      if (cropped.flag) flags.push(cropped.flag);
+      appIcon = cropped.icon;
+      flags.push(...cropped.flags);
     } else {
       // Still a valid answer, just without a picture on the sheet.
       flags.push(`warscroll icon "${keyword}": no read gave its position, so the sheet shows its name only`);
       image = await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="230" height="120"><rect width="100%" height="100%" fill="#fff"/><text x="115" y="70" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">${escapeXml(keyword)} (no picture)</text></svg>`)).png().toBuffer();
     }
     const description = descriptions.get(kw)?.[0];
-    entries.push({ id, label: `${keyword} (warscroll)${description ? `: ${description}` : ''}`, kind: kind.canon as RunemarkKind, source: 'warscroll', image, keyword });
+    entries.push({ id, label: `${keyword} (warscroll)${description ? `: ${description}` : ''}`, kind: kind.canon as RunemarkKind, source: 'warscroll', image, keyword, appIcon });
   }
   return { keywords, entries, outcomes, flags, reads: region.reads + region.failures.length };
 }
@@ -315,34 +319,59 @@ function around([x, y]: [number, number], left: number, right: number, up: numbe
   return { left: l, top: t, width: Math.min(1, x + right) - l, height: Math.min(1, y + down) - t };
 }
 
+function parseBox(box: unknown): Box | null {
+  if (!Array.isArray(box) || box.length !== 4 || box.some((v) => typeof v !== 'number' || !Number.isFinite(v))) return null;
+  const [left, top, width, height] = box as number[];
+  if (left < 0 || top < 0 || width <= 0 || height <= 0 || left + width > 1.02 || top + height > 1.02) return null;
+  return { left, top, width, height };
+}
+
 /**
- * Cuts "keyword (icon)" out of the warscroll for the reference sheet. The model's point on the
- * whole warscroll is only roughly right, so a generous area around it is cut and enlarged, and
- * the model points at the icon again inside that. The picture is then a fixed window around
- * that point, wider to the left where the keyword is, so the icon is never cut in half. A
- * last call confirms the picture shows the keyword with its icon; if not, the wider area is
- * kept and flagged.
+ * Cuts "keyword (icon)" out of the warscroll for the reference sheet, and the icon alone for the
+ * app. The model's point on the whole warscroll is only roughly right, so a generous area around
+ * it is cut and enlarged, and the model places the icon again inside that: its centre, and the
+ * box around the icon alone. The sheet picture is a fixed window around the centre, wider to the
+ * left where the keyword is, so the icon is never cut in half. A last call checks both pictures;
+ * a sheet picture that fails falls back to the wider area, and an app icon that fails is dropped
+ * (the app then shows the keyword as text).
  */
-async function cropKeyword(ctx: ReadContext, warscroll: Buffer, keyword: string, point: [number, number]): Promise<{ image: Buffer; flag?: string }> {
+async function cropKeyword(
+  ctx: ReadContext,
+  warscroll: Buffer,
+  keyword: string,
+  point: [number, number],
+): Promise<{ image: Buffer; icon?: Buffer; flags: string[] }> {
   const area = around(point, 0.1, 0.1, 0.07, 0.07);
   const zoomed = await cropFraction(warscroll, area, 4);
-  const wide = (why: string) => ({ image: zoomed, flag: `warscroll icon "${keyword}": ${why}, so the sheet shows a wider part of the warscroll` });
+  const wide = (why: string) => ({ image: zoomed, flags: [`warscroll icon "${keyword}": ${why}, so the sheet shows a wider part of the warscroll and the app shows the keyword as text`] });
   try {
-    const reply = await askJson<{ found?: unknown; at?: unknown }>(ctx, [
+    const reply = await askJson<{ found?: unknown; at?: unknown; box?: unknown }>(ctx, [
       png(zoomed),
-      text(`This is an enlarged part of a Warhammer Underworlds warscroll. Find the small icon printed right after the word "${keyword}" (usually in brackets, like "${keyword} (icon)"). Give the centre of that icon as [x, y] fractions of this image, measured from its top-left corner, or {"found": false} if it is not in this image.
-Return JSON: {"found": true, "at": [0.5, 0.5]}
+      text(`This is an enlarged part of a Warhammer Underworlds warscroll. Find the small icon printed right after the word "${keyword}" (usually in brackets, like "${keyword} (icon)"). Give the centre of that icon as [x, y], and the tight box around the icon alone (not the word, not the brackets) as [left, top, width, height], both as fractions of this image measured from its top-left corner. Return {"found": false} if it is not in this image.
+Return JSON: {"found": true, "at": [0.5, 0.5], "box": [0.45, 0.42, 0.1, 0.16]}
 Return ONLY valid JSON, no markdown code fences or explanation.`),
     ]);
     const inner = reply.found === false ? null : parsePoint(reply.at);
     if (!inner) return wide('the icon could not be found again in a closer look');
     const centre: [number, number] = [area.left + inner[0] * area.width, area.top + inner[1] * area.height];
     const image = await cropFraction(warscroll, around(centre, 0.1, 0.03, 0.028, 0.028), 3);
-    const check = await askJson<{ ok?: unknown }>(ctx, [
+    const box = parseBox(reply.box);
+    const icon = box ? await cropFraction(zoomed, box, 1, 0.012) : null;
+    const check = await askJson<{ phrase?: unknown; icon?: unknown }>(ctx, [
       png(image),
-      text(`Does this image show the word "${keyword}" followed by a small icon, with the whole icon visible (not cut off at any edge)? Return JSON: {"ok": true} or {"ok": false}. Return ONLY valid JSON.`),
+      ...(icon ? [png(icon)] : []),
+      text(`Image 1 should show the word "${keyword}" followed by a small icon, with the whole icon visible (not cut off at any edge).${
+        icon ? ` Image 2 should show that icon alone: the whole icon, not cut off, with no letters and no brackets in it.` : ''
+      } Answer for each image whether it does.
+Return JSON: {"phrase": true, "icon": true}
+Return ONLY valid JSON.`),
     ]);
-    return check.ok === true ? { image } : wide('the tight picture did not pass its check');
+    const flags: string[] = [];
+    if (icon && check.icon !== true) flags.push(`warscroll icon "${keyword}": the icon alone did not pass its check, so the app shows the keyword as text`);
+    if (!icon) flags.push(`warscroll icon "${keyword}": no box for the icon alone, so the app shows the keyword as text`);
+    const appIcon = icon && check.icon === true ? icon : undefined;
+    if (check.phrase === true) return { image, icon: appIcon, flags };
+    return { image: zoomed, icon: appIcon, flags: [...flags, `warscroll icon "${keyword}": the tight picture did not pass its check, so the sheet shows a wider part of the warscroll`] };
   } catch (err) {
     return wide(`placing it failed (${err instanceof Error ? err.message : err})`);
   }
@@ -425,7 +454,15 @@ export function saveCatalog(dir: string, catalog: Catalog, sheets: CatalogSheets
   mkdirSync(join(dir, 'icons'), { recursive: true });
   writeFileSync(join(dir, 'runemarks.json'), `${JSON.stringify(catalogJson(catalog), null, 2)}
 `);
-  for (const e of catalog.entries) if (e.source !== 'core') writeFileSync(join(dir, 'icons', `${e.id}.png`), e.image);
+  // icons/ is what the app shows for {icon:<id>}: the warband's own icon, and keyword icons that were cut out cleanly.
+  // keywords/ keeps the "keyword (icon)" pictures from the sheet, for reference.
+  for (const e of catalog.entries) {
+    if (e.source === 'warband') writeFileSync(join(dir, 'icons', `${e.id}.png`), e.image);
+    if (e.source !== 'warscroll') continue;
+    mkdirSync(join(dir, 'keywords'), { recursive: true });
+    writeFileSync(join(dir, 'keywords', `${e.id}.png`), e.image);
+    if (e.appIcon) writeFileSync(join(dir, 'icons', `${e.id}.png`), e.appIcon);
+  }
   writeFileSync(join(dir, 'fighter-runemarks.png'), sheets.fighter);
   writeFileSync(join(dir, 'weapon-runemarks.png'), sheets.weapon);
   writeFileSync(join(dir, 'all-icons.png'), sheets.all);
@@ -435,7 +472,15 @@ export function saveCatalog(dir: string, catalog: Catalog, sheets: CatalogSheets
 export function catalogJson(c: Catalog) {
   return {
     warband: c.warband,
-    runemarks: c.entries.map((e) => ({ id: e.id, label: e.label, kind: e.kind, source: e.source, keyword: e.keyword ?? null, image: `icons/${e.id}.png` })),
+    runemarks: c.entries.map((e) => ({
+      id: e.id,
+      label: e.label,
+      kind: e.kind,
+      source: e.source,
+      keyword: e.keyword ?? null,
+      sheetPicture: e.source === 'warscroll' ? `keywords/${e.id}.png` : e.source === 'warband' ? `icons/${e.id}.png` : null,
+      appIcon: e.source === 'warband' || e.appIcon ? `icons/${e.id}.png` : null,
+    })),
     keywords: c.keywords,
     flags: c.flags,
   };

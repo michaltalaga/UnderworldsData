@@ -9,7 +9,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion", "leader"],
+        "runemarks": ["zarbags-gitz", "leader", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
@@ -20,7 +20,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion", "leader"],
+        "runemarks": ["zarbags-gitz", "leader", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 4, "damage": 1, "abilities": [] }
@@ -36,7 +36,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
         ]
@@ -46,7 +46,7 @@
         "save": { "symbol": "dodge", "dice": 3 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
         ]
@@ -61,7 +61,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -71,7 +71,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -86,7 +86,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -96,9 +96,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "ensnare", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -111,9 +111,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "inspired": {
@@ -121,9 +121,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -136,9 +136,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "inspired": {
@@ -146,9 +146,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -161,9 +161,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "inspired": {
@@ -171,9 +171,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "grot"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "volley", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "volley", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -186,7 +186,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "fly", "squig"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -196,7 +196,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "fly", "squig"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -211,7 +211,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "fly", "squig"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -221,7 +221,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion"],
+        "runemarks": ["zarbags-gitz", "fly", "squig"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]

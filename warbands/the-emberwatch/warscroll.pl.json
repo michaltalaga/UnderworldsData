@@ -2,27 +2,30 @@
   "inspire": "Po kroku Akcji, jeśli przyjazny wojownik rozpoczął ten krok Akcji na terytorium wroga i użył podstawowej zdolności (Core ability), Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Sam stoję!",
-      "trigger": "Możesz użyć tej zdolności w ostatnim kroku Power step rundy bitwy.",
-      "flavorText": "Emberwatch przebywają w kopalniach Embergard tak długo, że żarzący się kamień sprawia, iż ich nerwy strzępią się z łatwością — dlatego od czasu do czasu cenią sobie odrobinę przestrzeni.",
-      "rulesText": "Wybierz przyjaznego wojownika, który znajduje się na innym terytorium niż każdy inny przyjazny wojownik. Przesuń tego wojownika o 1 hex. To przesunięcie nie może zakończyć się w polu sąsiadującym z innym przyjaznym wojownikiem. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+      "name": "Stoję Sam!",
+      "trigger": "Możesz użyć tego w ostatnim Power step rundy bitwy.",
+      "flavorText": "Straż Żaru (Emberwatch) przebywa w kopalniach Embergardu tak długo, że kamień żaru (emberstone) sprawia, iż łatwo tracą cierpliwość, dlatego od czasu do czasu cenią sobie odrobinę dystansu.",
+      "rulesText": "Wybierz przyjaznego wojownika, który znajduje się na innym terytorium niż każdy inny przyjazny wojownik. Popchnij tego wojownika o 1 heks. To popchnięcie nie może zakończyć się w sąsiedztwie innego przyjaznego wojownika. Tej zdolności można użyć tylko raz na rundę bitwy."
     }
   ],
   "abilities": [
     {
-      "name": "Zryw straży przedniej",
-      "flavorText": "Emberwatch z łatwością zmieniają swoje pozycje podczas bitwy.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika. Usuń tego wojownika z pola bitwy, a następnie umieść go w pustym hexie na krawędzi planszy. Tej zdolności można użyć tylko raz na grę."
+      "name": "Szarża Awangardy",
+      "trigger": "Użyj tego natychmiast po swoim kroku Akcji.",
+      "flavorText": "Straż Żaru (Emberwatch) bez wysiłku zmienia swoje pozycje w trakcie bitwy.",
+      "rulesText": "Wybierz przyjaznego wojownika. Usuń tego wojownika z pola bitwy, a następnie umieść go na pustym heksie krawędziowym (edge hex). Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Śmiercionośne straże",
-      "flavorText": "Zobowiązani do utrzymania kopalń Embergard wolnych od intruzów, Emberwatch posługują się bronią dystansową, by sprawcy zostali błyskawicznie pociągnięci do odpowiedzialności.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu broni w ramach Ataku. Ta broń ma +1 do Zasięgu (Range) w tym Ataku. Tej zdolności można użyć tylko raz na grę."
+      "name": "Zabójczy Wartownicy",
+      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku.",
+      "flavorText": "Mając za zadanie chronić kopalnie Embergardu przed intruzami, Straż Żaru używa broni dystansowej, by zapewnić, że przestępcy szybko poniosą sprawiedliwą karę.",
+      "rulesText": "Ta broń ma +1 do Zasięgu podczas tego Ataku. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Raptory Sigmara",
-      "flavorText": "Niewielu zdoła umknąć gniewowi tych szlachetnych wojowników, a ci, którym się to udaje, są szczęściarzami ponad wszelką miarę.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po udanym Ataku przyjaznego wojownika, jeśli cel jest narażony (vulnerable). Zadaj 1 obrażenie celowi. Tej zdolności można użyć tylko raz na grę."
+      "name": "Drapieżniki Sigmara",
+      "trigger": "Użyj tego natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel jest bezbronny (vulnerable).",
+      "flavorText": "Doprawdy niewielu umyka gniewowi tych szlachetnych wojowników, a ci, którym się to udaje, mają niezmierzone szczęście.",
+      "rulesText": "Zadaj celowi 1 obrażenie. Tej zdolności można użyć tylko raz na grę."
     }
   ],
   "playstyle": "Trzej strażnicy Straży Przedniej Stormcastów, którzy walczą w rozproszeniu, a nie w skupieniu. Kilka zdolności nagradza utrzymywanie każdego wojownika w osobnym terytorium; teleportują się, by zmieniać pozycje, a Inspire uzyskują, używając zdolności Core na terytorium wroga. Dzięki ostrzałowi o wydłużonym zasięgu i premiowym obrażeniom przeciw narażonym celom rozbierają planszę na części z dystansu."
