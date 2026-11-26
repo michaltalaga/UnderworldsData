@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import sharp, { type OverlayOptions } from 'sharp';
 import { askJson, png, slugify, text, type ReadContext } from './ai-read';
@@ -248,8 +248,8 @@ async function readWarscrollIcons(
   settings: VoteSettings,
 ): Promise<{ keywords: KeywordIcon[]; entries: RunemarkEntry[]; outcomes: FieldOutcome[]; flags: string[]; reads: number }> {
   const region = new RegionVote(`${name} warscroll icons`, settings, { canon: 'false', value: false });
-  // Each read may point at a different place the keyword is printed, so the first point is used, not an average.
-  const points = new Map<string, [number, number]>();
+  // Each read may point at a different place the keyword is printed, so the points are kept as separate places to try, not averaged.
+  const points = new Map<string, [number, number][]>();
   const descriptions = new Map<string, string[]>();
   const enlarged = await sharp(warscroll).resize({ width: 1600 }).png().toBuffer();
 
@@ -268,7 +268,11 @@ async function readWarscrollIcons(
       fields.push({ key: `kind:${kw}`, canon: kind, value: kind, when: { key: `has:${kw}`, canon: 'true' } });
       fields.push({ key: `core:${kw}`, canon: core, value: core, when: { key: `has:${kw}`, canon: 'true' } });
       const point = parsePoint(icon.at);
-      if (point && !points.has(kw)) points.set(kw, point);
+      if (point) {
+        const list = points.get(kw) ?? [];
+        addPoint(list, point);
+        points.set(kw, list);
+      }
       if (typeof icon.description === 'string') descriptions.set(kw, [...(descriptions.get(kw) ?? []), icon.description]);
     }
     return { variant: `icons-${n % ICON_PROMPTS.length}`, fields };
@@ -291,11 +295,12 @@ async function readWarscrollIcons(
       flags.push(`warscroll icon "${keyword}": reads disagree (present ${votes}, kind ${describeTallies(kind)}, core ${describeTallies(core)})`);
     }
     if (core.canon !== 'none') continue;
-    const point = points.get(kw);
+    const places = points.get(kw) ?? [];
+    const description = descriptions.get(kw)?.[0];
     let image: Buffer;
     let appIcon: Buffer | undefined;
-    if (point) {
-      const cropped = await cropKeyword(ctx, warscroll, keyword, point);
+    if (places.length) {
+      const cropped = await cropKeyword(ctx, warscroll, keyword, description, places);
       image = cropped.image;
       appIcon = cropped.icon;
       flags.push(...cropped.flags);
@@ -304,7 +309,6 @@ async function readWarscrollIcons(
       flags.push(`warscroll icon "${keyword}": no read gave its position, so the sheet shows its name only`);
       image = await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="230" height="120"><rect width="100%" height="100%" fill="#fff"/><text x="115" y="70" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">${escapeXml(keyword)} (no picture)</text></svg>`)).png().toBuffer();
     }
-    const description = descriptions.get(kw)?.[0];
     entries.push({ id, label: `${keyword} (warscroll)${description ? `: ${description}` : ''}`, kind: kind.canon as RunemarkKind, source: 'warscroll', image, keyword, appIcon });
   }
   return { keywords, entries, outcomes, flags, reads: region.reads + region.failures.length };
@@ -326,55 +330,109 @@ function parseBox(box: unknown): Box | null {
   return { left, top, width, height };
 }
 
+/** Close points (within about 2% of the warscroll) count as the same place. */
+function addPoint(list: [number, number][], point: [number, number]): void {
+  if (!list.some(([x, y]) => Math.abs(x - point[0]) < 0.02 && Math.abs(y - point[1]) < 0.02)) list.push(point);
+}
+
+/** The places the model says an icon is printed, for refreshing pictures without reading the catalog again. */
+export async function locateIcon(ctx: ReadContext, warscroll: Buffer, keyword: string, description: string | undefined): Promise<[number, number][]> {
+  const enlarged = await sharp(warscroll).resize({ width: 1600 }).png().toBuffer();
+  const reply = await askJson<{ at?: unknown }>(ctx, [
+    png(enlarged),
+    text(`This is a Warhammer Underworlds warscroll. Its text prints a small icon that stands for "${keyword}"${description ? ` (${description})` : ''}, usually right after the word, like "${keyword} (icon)", and sometimes on its own inside a sentence, like "has the (icon) runemark". List every place in the text where that icon is printed, as the [x, y] centre of the icon in fractions of the image, measured from its top-left corner. Places where the word is printed right before the icon come first.
+Return JSON: {"at": [[0.42, 0.31], [0.6, 0.72]]}
+Return ONLY valid JSON, no markdown code fences or explanation.`),
+  ]);
+  const points: [number, number][] = [];
+  if (Array.isArray(reply.at)) for (const p of reply.at) {
+    const point = parsePoint(p);
+    if (point) addPoint(points, point);
+  }
+  return points;
+}
+
+interface Attempt {
+  zoomed: Buffer;
+  phrase?: Buffer;
+  icon?: Buffer;
+}
+
+/**
+ * One place: a generous area around the model's rough point is cut and enlarged, and the model
+ * places the icon again inside it (its centre, and the box around the icon alone). The sheet
+ * picture is a fixed window around the centre, wider to the left where the keyword is, so the
+ * icon is never cut in half; the app picture is the icon's box. A last call checks both, and
+ * only pictures that pass are returned.
+ */
+async function cropAt(ctx: ReadContext, warscroll: Buffer, keyword: string, description: string | undefined, point: [number, number]): Promise<Attempt> {
+  const area = around(point, 0.1, 0.1, 0.07, 0.07);
+  const zoomed = await cropFraction(warscroll, area, 4);
+  const reply = await askJson<{ found?: unknown; at?: unknown; box?: unknown }>(ctx, [
+    png(zoomed),
+    text(`This is an enlarged part of a Warhammer Underworlds warscroll. Find the small icon that stands for "${keyword}"${description ? ` (${description})` : ''}. It is usually printed right after the word, like "${keyword} (icon)", but it can also stand on its own inside a sentence, like "has the (icon) runemark". Give the centre of that icon as [x, y], and the tight box around the icon alone (not any word, not the brackets) as [left, top, width, height], both as fractions of this image measured from its top-left corner. Return {"found": false} if it is not in this image.
+Return JSON: {"found": true, "at": [0.5, 0.5], "box": [0.45, 0.42, 0.1, 0.16]}
+Return ONLY valid JSON, no markdown code fences or explanation.`),
+  ]);
+  const inner = reply.found === false ? null : parsePoint(reply.at);
+  if (!inner) return { zoomed };
+  const centre: [number, number] = [area.left + inner[0] * area.width, area.top + inner[1] * area.height];
+  const phrase = await cropFraction(warscroll, around(centre, 0.1, 0.03, 0.028, 0.028), 3);
+  const box = parseBox(reply.box);
+  const icon = box ? await cropFraction(zoomed, box, 1, 0.012) : null;
+  const check = await askJson<{ phrase?: unknown; icon?: unknown }>(ctx, [
+    png(phrase),
+    ...(icon ? [png(icon)] : []),
+    text(`Image 1 should show the word "${keyword}" followed by a small icon, with the whole icon visible (not cut off at any edge).${
+      icon ? ` Image 2 should show that icon alone: the whole icon, not cut off, with no letters and no brackets in it.` : ''
+    } Answer for each image whether it does.
+Return JSON: {"phrase": true, "icon": true}
+Return ONLY valid JSON.`),
+  ]);
+  return { zoomed, phrase: check.phrase === true ? phrase : undefined, icon: icon && check.icon === true ? icon : undefined };
+}
+
 /**
  * Cuts "keyword (icon)" out of the warscroll for the reference sheet, and the icon alone for the
- * app. The model's point on the whole warscroll is only roughly right, so a generous area around
- * it is cut and enlarged, and the model places the icon again inside that: its centre, and the
- * box around the icon alone. The sheet picture is a fixed window around the centre, wider to the
- * left where the keyword is, so the icon is never cut in half. A last call checks both pictures;
- * a sheet picture that fails falls back to the wider area, and an app icon that fails is dropped
- * (the app then shows the keyword as text).
+ * app, trying the places the reads pointed at one by one (at most 4) until both pictures pass
+ * their check. The model's points can land on any place the icon is printed, including one
+ * where the keyword is not next to it ("has the (icon) runemark"), which is why one place is
+ * not enough. Without a sheet picture that passes, the sheet shows a wider part of the
+ * warscroll; without an app picture, the app shows the keyword as text.
  */
 async function cropKeyword(
   ctx: ReadContext,
   warscroll: Buffer,
   keyword: string,
-  point: [number, number],
+  description: string | undefined,
+  points: [number, number][],
 ): Promise<{ image: Buffer; icon?: Buffer; flags: string[] }> {
-  const area = around(point, 0.1, 0.1, 0.07, 0.07);
-  const zoomed = await cropFraction(warscroll, area, 4);
-  const wide = (why: string) => ({ image: zoomed, flags: [`warscroll icon "${keyword}": ${why}, so the sheet shows a wider part of the warscroll and the app shows the keyword as text`] });
-  try {
-    const reply = await askJson<{ found?: unknown; at?: unknown; box?: unknown }>(ctx, [
-      png(zoomed),
-      text(`This is an enlarged part of a Warhammer Underworlds warscroll. Find the small icon printed right after the word "${keyword}" (usually in brackets, like "${keyword} (icon)"). Give the centre of that icon as [x, y], and the tight box around the icon alone (not the word, not the brackets) as [left, top, width, height], both as fractions of this image measured from its top-left corner. Return {"found": false} if it is not in this image.
-Return JSON: {"found": true, "at": [0.5, 0.5], "box": [0.45, 0.42, 0.1, 0.16]}
-Return ONLY valid JSON, no markdown code fences or explanation.`),
-    ]);
-    const inner = reply.found === false ? null : parsePoint(reply.at);
-    if (!inner) return wide('the icon could not be found again in a closer look');
-    const centre: [number, number] = [area.left + inner[0] * area.width, area.top + inner[1] * area.height];
-    const image = await cropFraction(warscroll, around(centre, 0.1, 0.03, 0.028, 0.028), 3);
-    const box = parseBox(reply.box);
-    const icon = box ? await cropFraction(zoomed, box, 1, 0.012) : null;
-    const check = await askJson<{ phrase?: unknown; icon?: unknown }>(ctx, [
-      png(image),
-      ...(icon ? [png(icon)] : []),
-      text(`Image 1 should show the word "${keyword}" followed by a small icon, with the whole icon visible (not cut off at any edge).${
-        icon ? ` Image 2 should show that icon alone: the whole icon, not cut off, with no letters and no brackets in it.` : ''
-      } Answer for each image whether it does.
-Return JSON: {"phrase": true, "icon": true}
-Return ONLY valid JSON.`),
-    ]);
-    const flags: string[] = [];
-    if (icon && check.icon !== true) flags.push(`warscroll icon "${keyword}": the icon alone did not pass its check, so the app shows the keyword as text`);
-    if (!icon) flags.push(`warscroll icon "${keyword}": no box for the icon alone, so the app shows the keyword as text`);
-    const appIcon = icon && check.icon === true ? icon : undefined;
-    if (check.phrase === true) return { image, icon: appIcon, flags };
-    return { image: zoomed, icon: appIcon, flags: [...flags, `warscroll icon "${keyword}": the tight picture did not pass its check, so the sheet shows a wider part of the warscroll`] };
-  } catch (err) {
-    return wide(`placing it failed (${err instanceof Error ? err.message : err})`);
+  let phrase: Buffer | undefined;
+  let icon: Buffer | undefined;
+  // Wider pictures for the sheet when no tight one passes: preferably of a place where the icon was confirmed.
+  let iconArea: Buffer | undefined;
+  let firstArea: Buffer | undefined;
+  let tried = 0;
+  const errors: string[] = [];
+  for (const point of points.slice(0, 4)) {
+    tried++;
+    try {
+      const attempt = await cropAt(ctx, warscroll, keyword, description, point);
+      firstArea ??= attempt.zoomed;
+      if (attempt.icon) iconArea ??= attempt.zoomed;
+      phrase ??= attempt.phrase;
+      icon ??= attempt.icon;
+    } catch (err) {
+      errors.push(err instanceof Error ? err.message : String(err));
+    }
+    if (phrase && icon) break;
   }
+  const where = `${tried} place${tried === 1 ? '' : 's'} tried${errors.length ? `; errors: ${errors.join('; ')}` : ''}`;
+  const flags: string[] = [];
+  if (!icon) flags.push(`warscroll icon "${keyword}": no picture of the icon alone passed its check (${where}), so the app shows the keyword as text`);
+  if (!phrase) flags.push(`warscroll icon "${keyword}": no picture of the keyword with its icon passed its check (${where}), so the sheet shows a wider part of the warscroll`);
+  const image = phrase ?? iconArea ?? firstArea ?? (await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="230" height="120"><rect width="100%" height="100%" fill="#fff"/><text x="115" y="70" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">${escapeXml(keyword)} (no picture)</text></svg>`)).png().toBuffer());
+  return { image, icon, flags };
 }
 
 export function describeTallies(outcome: FieldOutcome): string {
@@ -447,6 +505,38 @@ export async function renderCatalogSheets(c: Catalog, name: string): Promise<Cat
     weapon: await renderSheet(`${name}: weapon runemarks (answer with the id in bold)`, weaponRunemarks(c)),
     all: await renderSheet(`${name}: icons (use the id in bold)`, c.entries),
   };
+}
+
+/**
+ * Cuts the pictures of a saved catalog's warscroll keywords again (dir is a runemarks/ folder),
+ * without reading the catalog again: ids, keywords and votes stay as they are. The model lists
+ * every place each icon is printed, and cropKeyword tries them in turn. Rewrites the folder.
+ */
+export async function refreshPictures(ctx: ReadContext, dir: string, warscroll: Buffer, warband: { slug: string; name: string }): Promise<Catalog> {
+  const saved = JSON.parse(readFileSync(join(dir, 'runemarks.json'), 'utf8')) as ReturnType<typeof catalogJson>;
+  const core = coreEntries();
+  // Picture flags are replaced; flags about the votes are kept.
+  const flags = saved.flags.filter((f) => !/^warscroll icon "[^"]*": .*(picture|app shows|sheet shows|placing it failed)/.test(f));
+  const entries: RunemarkEntry[] = [];
+  for (const r of saved.runemarks) {
+    if (r.source === 'core') {
+      const entry = core.find((e) => e.id === r.id && e.kind === r.kind) ?? core.find((e) => e.id === r.id);
+      if (entry) entries.push(entry);
+    } else if (r.source === 'warband') {
+      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warband', image: readFileSync(join(dir, 'icons', `${r.id}.png`)) });
+    } else {
+      const keyword = r.keyword ?? r.id;
+      const description = r.label.includes(': ') ? r.label.slice(r.label.indexOf(': ') + 2) : undefined;
+      const places = await locateIcon(ctx, warscroll, keyword, description);
+      const cropped = await cropKeyword(ctx, warscroll, keyword, description, places);
+      flags.push(...cropped.flags);
+      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warscroll', image: cropped.image, keyword, appIcon: cropped.icon });
+    }
+  }
+  const catalog: Catalog = { warband: warband.slug, entries, keywords: saved.keywords, iconVotes: [], flags, reads: 0 };
+  rmSync(dir, { recursive: true, force: true });
+  saveCatalog(dir, catalog, await renderCatalogSheets(catalog, warband.name));
+  return catalog;
 }
 
 /** Writes runemarks.json, the warband's own icons (icons/<id>.png) and the reference sheets into dir. */

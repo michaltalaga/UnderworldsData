@@ -75,6 +75,7 @@ npm run extract:fighters                                            # warbands w
 npm run extract:fighters -- --rebuild zarbags-gitz the-emberwatch   # read again into a new folder
 npm run extract:fighters -- --rebuild --all                         # every warband and the 8 GA warscrolls
 npm run extract:fighters -- --resume 2026-11-26-15-20-00            # continue a run that stopped
+npm run extract:fighters -- --pictures 2026-11-26-15-20-00          # cut a run's keyword pictures again
 npm run extract:fighters -- --apply 2026-11-26-15-20-00             # copy a reviewed run into warbands/
 ```
 
@@ -101,7 +102,7 @@ The list of runemarks a warband's cards and warscroll can show, each with a pict
 
 - **Core:** Leader, Minion and Fly; the weapon runemarks Cleave, Ensnare, Brutal, Grievous, Stagger and Grapple, and the Critical marker; and the dice and other symbols used in warscroll text. The pictures are in `public/assets/`, drawn from the core rules PDF.
 - **The warband's own runemark:** `warbands/<slug>/icon.png`, the same art as on the cards. In the data its id is the warband slug; the sheet labels it `warband`, because models misspell long slugs (an early test read Ylthari's leaf right but wrote `ylthari-guardians`).
-- **Warscroll keywords:** the words the warscroll prints with their own icon, such as Grot, Squig or Volley, read from `warscroll.png` 3 times (up to 7) and voted on. The model points at the icon, then points again and boxes the icon alone in an enlarged cut-out. The sheet gets the keyword with its icon; the app gets the icon alone. A last call checks both pictures: a sheet picture that fails falls back to a wider cut-out, and an app icon that fails is left out, so the app shows the keyword as text.
+- **Warscroll keywords:** the words the warscroll prints with their own icon, such as Grot, Squig or Volley, read from `warscroll.png` 3 times (up to 7) and voted on. Every place a read pointed at is kept, because the icon can be printed more than once, sometimes without the keyword in front of it ("has the ◯ runemark"). For each place in turn, the model points again and boxes the icon alone in an enlarged cut-out, until both pictures pass. The sheet gets the keyword with its icon; the app gets the icon alone. A last call checks both pictures: a sheet picture that fails falls back to a wider cut-out, and an app icon that fails is left out, so the app shows the keyword as text. `--pictures <run>` cuts the keyword pictures of a finished run again without reading the catalog again (ids and texts stay the same): the model lists every place each icon is printed, and the same steps run for each place.
 
 Vaulted warbands have no warscroll, so their catalog has only the first two, and other circles on their cards come out as `unknown` for a person to name. The catalog is saved as `runemarks/runemarks.json`, with the warband's own icons in `runemarks/icons/<id>.png` (the app shows these for `{icon:<id>}` tokens) and the reference sheets.
 

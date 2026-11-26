@@ -1,6 +1,6 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { basename, join, relative } from 'path';
-import { AiClient, DEFAULT_MODEL, NoProviderLeftError, runJobs, takeAiOptions } from './ai';
+import { AiClient, DEFAULT_MODEL, NoProviderLeftError, runJobs, takeAiOptions, type ProviderId } from './ai';
 import { jobNote } from './ai/jobs';
 import type { ReadContext } from './lib/ai-read';
 import { CARD_REGION_NAMES } from './lib/card-image';
@@ -10,6 +10,7 @@ import {
   buildCatalog,
   fighterRunemarks,
   renderCatalogSheets,
+  refreshPictures,
   renderLegend,
   saveCatalog,
   weaponRunemarks,
@@ -29,6 +30,7 @@ import { readWarscroll, remapPolish, translateMissing, type Warscroll } from './
  *   npm run extract:fighters -- --rebuild <slug>...   read again into extraction/<run>/, changing nothing
  *   npm run extract:fighters -- --rebuild --all       the same for every warband and the GA warscrolls
  *   npm run extract:fighters -- --resume <run>         continue a run that stopped (usage limit, Ctrl+C)
+ *   npm run extract:fighters -- --pictures <run>       cut a run's warscroll keyword pictures again
  *   npm run extract:fighters -- --apply extraction/<run> [slug...]
  *                                                     copy a reviewed run into warbands/
  *
@@ -148,6 +150,58 @@ function apply(runArg: string, slugs: string[]): void {
   console.log('\n  Done.');
 }
 
+// ---------- pictures ----------
+
+/**
+ * --pictures <run>: cuts the warscroll keyword pictures of a finished run again (see
+ * refreshPictures) and updates its records and report. Ids and texts stay as they are.
+ */
+async function refreshRunPictures(runArg: string, provider: ProviderId | undefined, jobs: number): Promise<void> {
+  const runDir = existsSync(runArg) ? runArg : join(EXTRACTION_DIR, runArg);
+  const summary = readJsonIfExists<RunSummary & { selection?: string[]; ga?: boolean }>(join(runDir, 'summary.json'));
+  if (!summary) throw new Error(`no run with a summary.json at ${runArg}`);
+  const warbands = loadWarbands();
+  // Runs made before the summary listed its warbands: the warband folders in the run.
+  const selection = summary.selection ?? readdirSync(runDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+  const targets = [
+    ...warbands
+      .filter((wb) => selection.includes(wb.slug) && isFile(warbandFile(wb.slug, 'warscroll.png')))
+      .map((wb) => ({ slug: wb.slug, name: wb.name, image: warbandFile(wb.slug, 'warscroll.png') })),
+    ...GA_KEYS.map((k) => ({ slug: `_ga/${k}`, name: `Grand Alliance ${k}`, image: join(GA_DIR, `${k}.png`) })),
+  ].filter((t) => {
+    const saved = readJsonIfExists<{ runemarks: { source: string }[] }>(join(runDir, t.slug, 'runemarks', 'runemarks.json'));
+    return saved?.runemarks.some((r) => r.source === 'warscroll') && isFile(t.image);
+  });
+
+  console.log(`\n  Warscroll keyword pictures for ${relative(ROOT, runDir)}: ${targets.length} catalog(s) with keywords\n`);
+  const started = Date.now();
+  const ai = await AiClient.create({ provider });
+  const ctx: ReadContext = { ai, limiter: new Limiter(jobs) };
+  await runJobs(targets, jobs, (t) => t.name, async (t) => {
+    const catalog = await refreshPictures(ctx, join(runDir, t.slug, 'runemarks'), readFileSync(t.image), { slug: t.slug.replace(/^_ga\//, ''), name: t.name });
+    const record = readJsonIfExists<WarbandRecord>(join(runDir, t.slug, 'result.json'));
+    if (record) write(join(runDir, t.slug, 'result.json'), json({ ...record, catalogFlags: catalog.flags }));
+    const icons = catalog.entries.filter((e) => e.source === 'warscroll');
+    return `app icons: ${icons.filter((e) => e.appIcon).map((e) => e.id).join(', ') || 'none'}${icons.some((e) => !e.appIcon) ? `; as text: ${icons.filter((e) => !e.appIcon).map((e) => e.id).join(', ')}` : ''}`;
+  });
+
+  const usage = ai.usage();
+  const updated = {
+    ...summary,
+    calls: summary.calls + ai.stats.calls,
+    failedCalls: summary.failedCalls + ai.stats.failed,
+    inputTokens: summary.inputTokens + usage.inputTokens,
+    outputTokens: summary.outputTokens + usage.outputTokens,
+    costUsd: summary.costUsd + usage.costUsd,
+    seconds: summary.seconds + (Date.now() - started) / 1000,
+  };
+  const order = [...warbands.map((wb) => wb.slug), ...GA_KEYS.map((k) => `_ga/${k}`)];
+  const records = order.map((slug) => readJsonIfExists<WarbandRecord>(join(runDir, slug, 'result.json'))).filter((r): r is WarbandRecord => r !== null);
+  write(join(runDir, 'report.md'), renderReport(updated, records));
+  write(join(runDir, 'summary.json'), json(updated));
+  console.log(`\n  Done: ${ai.stats.calls} AI calls, about $${usage.costUsd.toFixed(2)}. Report updated: ${relative(ROOT, join(runDir, 'report.md'))}`);
+}
+
 // ---------- main ----------
 
 const errorText = (err: unknown) => (err instanceof Error ? err.message : String(err));
@@ -156,6 +210,8 @@ async function main() {
   const { provider, jobs, args } = takeAiOptions(process.argv.slice(2));
   const applyRun = takeValue(args, 'apply');
   if (applyRun) return apply(applyRun, args);
+  const picturesRun = takeValue(args, 'pictures');
+  if (picturesRun) return refreshRunPictures(picturesRun, provider, jobs);
 
   const resume = takeValue(args, 'resume');
   const rebuild = takeFlag(args, 'rebuild') || Boolean(resume);
