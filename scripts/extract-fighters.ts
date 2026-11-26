@@ -31,6 +31,7 @@ import { readWarscroll, remapPolish, translateMissing, type Warscroll } from './
  *   npm run extract:fighters -- --rebuild <slug>...   read again into extraction/<run>/, changing nothing
  *   npm run extract:fighters -- --rebuild --all       the same for every warband and the GA warscrolls
  *   npm run extract:fighters -- --resume <run>         continue a run that stopped (usage limit, Ctrl+C)
+ *   npm run extract:fighters -- --resume <run> --redo a,b   read finished warbands of a run again
  *   npm run extract:fighters -- --pictures <run>       cut a run's warscroll keyword pictures again
  *   npm run extract:fighters -- --apply extraction/<run> [slug...]
  *                                                     copy a reviewed run into warbands/
@@ -215,6 +216,9 @@ async function main() {
   if (picturesRun) return refreshRunPictures(picturesRun, provider, jobs);
 
   const resume = takeValue(args, 'resume');
+  // With --resume: warbands (or _ga/<key>) to read again even though they finished.
+  const redo = new Set(takeValue(args, 'redo')?.split(',').map((s) => s.trim()).filter(Boolean) ?? []);
+  if (redo.size && !resume) throw new Error('--redo only works with --resume <run>');
   const rebuild = takeFlag(args, 'rebuild') || Boolean(resume);
   const all = takeFlag(args, 'all');
   const noWarscroll = takeFlag(args, 'no-warscroll');
@@ -249,7 +253,7 @@ async function main() {
   const gaKeys = rebuild && gaWanted && !noWarscroll ? GA_KEYS.filter((k) => isFile(join(GA_DIR, `${k}.png`))) : [];
 
   const recordFile = (slug: string) => join(runDir, slug, 'result.json');
-  const isDone = (slug: string) => readJsonIfExists<WarbandRecord>(recordFile(slug))?.complete === true;
+  const isDone = (slug: string) => !redo.has(slug) && readJsonIfExists<WarbandRecord>(recordFile(slug))?.complete === true;
   const todo = ready.filter((wb) => !isDone(wb.slug));
   const gaTodo = gaKeys.filter((k) => !isDone(`_ga/${k}`));
 

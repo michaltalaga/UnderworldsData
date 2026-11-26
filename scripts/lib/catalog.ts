@@ -172,8 +172,27 @@ async function cardStyle(glyph: Buffer, shape: 'circle' | 'hex' | 'plain'): Prom
   return sharp(base).composite([{ input: light, gravity: 'center' }]).png().toBuffer();
 }
 
+/**
+ * A dark icon printed on light paper (cut from a warscroll) as a black glyph on transparent, the
+ * form the core assets have, so cardStyle can draw it like the cards do. Display only: the
+ * model compares the pictures, nothing is matched by pixels.
+ */
+async function glyphFromPrint(image: Buffer): Promise<Buffer> {
+  const { data, info } = await sharp(image).greyscale().raw().toBuffer({ resolveWithObject: true });
+  const rgba = Buffer.alloc(info.width * info.height * 4);
+  for (let i = 0; i < info.width * info.height; i++) {
+    rgba[i * 4 + 3] = Math.max(0, Math.min(255, Math.round(((170 - data[i]) * 255) / 110)));
+  }
+  return sharp(rgba, { raw: { width: info.width, height: info.height, channels: 4 } }).png().toBuffer();
+}
+
 async function tileImage(entry: RunemarkEntry): Promise<Buffer> {
   if (entry.source === 'core') return cardStyle(entry.image, entry.kind === 'fighter' ? 'circle' : entry.kind === 'weapon' ? 'hex' : 'plain');
+  // A warband keyword drawn the way the cards print it (pale on a dark circle or hexagon), so it
+  // is compared with the card on the same terms as the core runemarks; the sheet label names it.
+  if (entry.source === 'warscroll' && entry.appIcon && entry.kind !== 'symbol') {
+    return cardStyle(await glyphFromPrint(entry.appIcon), entry.kind === 'fighter' ? 'circle' : 'hex');
+  }
   return sharp(entry.image)
     .resize(TILE_W - 20, ICON_BOX, { fit: 'contain', background: '#ffffff' })
     .flatten({ background: '#ffffff' })
