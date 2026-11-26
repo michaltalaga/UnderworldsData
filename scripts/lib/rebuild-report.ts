@@ -320,7 +320,7 @@ export function renderReport(summary: RunSummary, records: WarbandRecord[], note
     '|---|---|---|---|---|---|---|---|---|',
   ];
   for (const r of records) {
-    const review = r.flags.filter((f) => f.flag.level === 'review').length + (r.warscroll?.flags.filter((f) => f.level === 'review').length ?? 0);
+    const review = r.flags.filter((f) => f.flag.level === 'review').length + (r.warscroll?.flags.filter((f) => f.level === 'review' && !/reads: $/.test(f.message)).length ?? 0);
     const fighters = `${r.fighters.length}${r.complete ? '' : ' (incomplete)'}`;
     lines.push(`| [${md(r.name)}](#${r.slug}) | ${fighters} | ${r.stats.values} | ${r.stats.unanimous} | ${r.stats.majority} | ${review} | ${r.crossChecks.length} | ${r.fighterDiff.length} | ${r.warscrollDiff.length} |`);
   }
@@ -343,7 +343,7 @@ export function renderReport(summary: RunSummary, records: WarbandRecord[], note
 
     if (r.warscroll) {
       lines.push('### Warscroll', '');
-      const wf = r.warscroll.flags;
+      const wf = r.warscroll.flags.filter((f) => !/reads: $/.test(f.message));
       if (wf.length) {
         lines.push('| Level | Field | Votes |', '|---|---|---|');
         for (const f of wf) lines.push(`| ${f.level} | ${f.field} | ${md(f.message)} |`);

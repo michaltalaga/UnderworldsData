@@ -436,7 +436,8 @@ function describe(o: FieldOutcome): string {
 
 function voteFlags(side: Side | 'card', region: CardRegion | 'rules', vote: RegionVote): Flag[] {
   const flags: Flag[] = [];
-  for (const o of vote.outcomes()) {
+  // Fields with no votes belong to weapons only some reads saw: not part of the result.
+  for (const o of vote.outcomes().filter((x) => x.votes > 0)) {
     if (o.status === 'unanimous') continue;
     flags.push({
       level: o.status === 'flagged' ? 'review' : 'warning',

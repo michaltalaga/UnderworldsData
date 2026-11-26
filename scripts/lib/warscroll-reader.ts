@@ -54,7 +54,8 @@ const RULES = `- Copy all wording exactly as printed, word for word.
 - "trigger": when an entry's rules text opens with a sentence that says when to use it (for example "Use this immediately after ...", "Use this in a Power step.", "You can use this in the last Power step of a battle round."), put that sentence in "trigger" and the rest in "rulesText". Otherwise "trigger" is null and all of it is "rulesText".
 - "type": "action" if the text says it is used in a Power step, "reaction" if the text says you can use it after something happens (for example "Use this immediately after ..."), and "passive" otherwise, including rules that apply on their own when something happens.
 - Inside a field, write \\n\\n where the card leaves a blank gap between paragraphs, and \\n where a new line starts without a gap.
-- "generalRules" is for a rule printed on its own outside any entry (for example "You can use 1 of the following abilities once per battle round." above several entries). Do not copy it into the entries. Use null if there is none.
+- A box can hold several named paragraphs (for example "Sarrakkar Unleashed: ..." under the box's own title): they are part of that box's "rulesText", not entries of their own.
+- "generalRules" is for a rule printed on its own outside any entry: a line above several entries (for example "You can use 1 of the following abilities once per battle round."), or a second coloured box next to Inspire (for example "Uninspire"), written as its title, a colon and its text. Do not copy it into the entries. Use null if there is none.
 - Use only ASCII hyphens and straight quotes.`;
 
 function iconRules(catalog: Catalog, sheetNo: number): string {
@@ -198,7 +199,8 @@ export async function readWarscroll(
   for (const [k, v] of Object.entries(warscroll)) if (!(k in ordered) && k !== 'generalRules') ordered[k] = v;
 
   const flags: WarscrollReading['flags'] = [];
-  for (const o of vote.outcomes()) {
+  // Fields with no votes belong to entries only some reads had (more reactions than the final count): not part of the result.
+  for (const o of vote.outcomes().filter((x) => x.votes > 0)) {
     if (o.status !== 'unanimous') {
       flags.push({ level: o.status === 'flagged' ? 'review' : 'warning', field: o.key, message: `${o.status === 'flagged' ? 'no clear majority' : 'majority'} after ${vote.reads} reads: ${describeTexts(o)}` });
     }
