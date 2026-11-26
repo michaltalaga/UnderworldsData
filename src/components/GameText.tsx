@@ -21,6 +21,7 @@ const ICON_MAP: Record<string, string> = {
   hex: '/assets/range.png',
   // roles
   leader: '/assets/leader.png',
+  minion: '/assets/minion.png',
   // movement
   fly: '/assets/fly.png',
 };
