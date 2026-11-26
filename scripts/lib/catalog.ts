@@ -116,6 +116,22 @@ export const CARD_LEGEND = {
 
 export const CORE_IDS = new Set([...CORE_FIGHTER, ...CORE_WEAPON, ...CORE_SYMBOLS].map((c) => c.id));
 
+/**
+ * Warscroll keywords that name a core rules symbol: they always use the core id, even when the
+ * reads did not match the printed icon to the core one (a Critical symbol is crit, not a new
+ * "critical" runemark).
+ */
+const CORE_KEYWORDS: Record<string, string> = {
+  ...Object.fromEntries([...CORE_IDS].map((id) => [id, id])),
+  critical: 'crit',
+  range: 'hex',
+  inspire: 'inspired',
+  'core-abilities': 'core-ability',
+  flying: 'fly',
+  leaders: 'leader',
+  minions: 'minion',
+};
+
 const asset = (file: string) => readFileSync(join(ASSETS, file));
 
 function coreEntry(icon: CoreIcon): RunemarkEntry {
@@ -288,13 +304,13 @@ async function readWarscrollIcons(
     const core = region.outcome(`core:${kw}`);
     const worst = [has, kind, core].find((o) => o.status === 'flagged') ?? [has, kind, core].find((o) => o.status === 'majority') ?? has;
     const keyword = String(has.tallies[0].value);
-    const id = core.canon !== 'none' ? core.canon : kw;
+    const id = CORE_KEYWORDS[kw] ?? (core.canon !== 'none' ? core.canon : kw);
     const votes = `${has.tallies[0].count}/${has.votes}`;
     keywords.push({ keyword, id, kind: kind.canon as RunemarkKind, status: worst.status, votes });
     if (worst.status === 'flagged') {
       flags.push(`warscroll icon "${keyword}": reads disagree (present ${votes}, kind ${describeTallies(kind)}, core ${describeTallies(core)})`);
     }
-    if (core.canon !== 'none') continue;
+    if (CORE_IDS.has(id)) continue;
     const places = points.get(kw) ?? [];
     const description = descriptions.get(kw)?.[0];
     let image: Buffer;
