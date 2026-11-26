@@ -130,6 +130,15 @@ Fills every gap in the warband × Rivals deck pairings, in this order, using the
 3. Star ratings in `warband-rivals-pairings.json` for every warband (OP-legal and vaulted) not yet rated against every universal deck, with a note on each 3-star rating. New decks are appended to `meta.deckOrder`, and the counts in `meta.description` are updated.
 4. Polish versions of all three: deck strategy in `deck.pl.json`, playstyle in `warscroll.pl.json` (OP-legal) or `playstyle.pl.json` (vaulted), and notes in `warband-rivals-pairings.pl.json`. `deck.pl.json` and `warscroll.pl.json` are only filled in once they exist; `rivals:translate` / `translate` create those.
 
+The prompts describe both sides of every fighter card (a characteristic printed as a runemark, such as Gardener damage, is named as that runemark; the warband's own runemark is left out, and keyword runemarks such as Grot keep the ids the warscroll text uses in `{icon:<id>}`), and the warscroll's Inspire, `generalRules`, left-column boxes (`reactions`) and right-hand abilities, each with its type and trigger.
+
+Filling gaps never changes an existing entry. To write entries again, for example after `fighters.json` or a warscroll was corrected, `npm run pairings -- --rebuild <slug>...` (or `--all`) writes steps 2-4 again for those warbands into `extraction/pairings/<run>/`, and changes nothing else. Each warband gets its playstyle, then its ratings for every universal deck with 3-star notes, voted on, then the Polish versions in one request. The ratings are calibrated on the other warbands' current ratings, never its own, so the current ratings do not anchor the new ones. Ratings are a judgement call, and two identical requests disagree on about one rating in four by a star, so each warband is rated 3 times independently (`--votes N` to change that): each deck gets the median, and a 3-star rating keeps the note of the first vote that gave 3 stars. Deck strategies are not rebuilt, since they come from the deck cards only.
+
+- `report.html`: per warband, the current playstyle next to the new one (Polish under a fold), and every deck's current and new stars with the 3-star notes, changed ratings marked. At the top: how many ratings change, the 3-star fits before and after, and the AI calls and cost. `--report <run>` writes it again.
+- `<slug>/result.json`: the current entries (`old`) and the new ones (`new`), in both languages; `summary.json`: the run's warbands, calls, tokens, cost and time.
+
+A run that stops part way (a usage limit, Ctrl+C) continues with `npm run pairings -- --resume <run>`: finished warbands are skipped. After review, `npm run pairings -- --apply <run> [slug...]` puts the playstyles (both languages; an OP-legal warband's `warscroll.pl.json` must exist) and the warband's ratings and notes in place of the current ones, for every warband of the run or only those named.
+
 `warband-rivals-pairings.md` is a hand-written reference and is not updated.
 
 ## Project Structure
@@ -152,6 +161,7 @@ warbands/           Warband data (60+ warbands)
     warscroll.pl.json  Polish translation (incl. `playstyle`)
     playstyle.json  Vaulted warbands only: `playstyle` pairings blurb (+ playstyle.pl.json)
 extraction/         Runs of extract:fighters --rebuild (report.md, results, votes, crops); not committed
+  pairings/         Runs of pairings --rebuild (report.html, results per warband)
 rivals/             Rival deck data (13 decks)
   index.json        Master rival deck metadata
   <deck>/
