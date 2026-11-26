@@ -38,7 +38,7 @@
         "bounty": 2,
         "runemarks": ["daggoks-stab-ladz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grapple", "critical": false }] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -49,8 +49,8 @@
         "bounty": 2,
         "runemarks": ["daggoks-stab-ladz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] },
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "brutal", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grapple", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -90,7 +90,7 @@
         "bounty": 1,
         "runemarks": ["daggoks-stab-ladz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -100,7 +100,7 @@
         "bounty": 1,
         "runemarks": ["daggoks-stab-ladz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null

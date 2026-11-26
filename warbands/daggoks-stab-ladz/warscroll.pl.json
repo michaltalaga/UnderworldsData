@@ -3,31 +3,35 @@
   "reactions": [
     {
       "name": "Krule Stab",
-      "trigger": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie.",
+      "trigger": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action step.",
       "flavorText": null,
-      "rulesText": "Przyjazny wojownik bez żetonów Charge może użyć tej zdolności natychmiast po twoim Action stepie. Wybierz wrogiego wojownika, który nie jest podatny na ataki i który jest sąsiadujący z tym przyjaznym wojownikiem, a następnie rzuć kością ataku. Na wynik {icon:fury} lub {icon:crit} zadaj 1 obrażenie temu wrogemu wojownikowi. Ten sam wojownik nie może użyć tej zdolności więcej niż raz na turę."
+      "rulesText": "Wybierz wrogiego wojownika, który nie jest Vulnerable i sąsiaduje z tym przyjaznym wojownikiem, a następnie rzuć kością Attack. Przy wyniku {icon:hammer} lub {icon:crit} zadaj temu wrogiemu wojownikowi 1 obrażenie. Ten sam wojownik nie może użyć tej zdolności więcej niż raz na turę."
     }
   ],
   "abilities": [
     {
-      "name": "'Dwóch na jednego, ty głuptasie!'",
-      "flavorText": "Daggok i jego ladzi słyszeli już wcześniej o czymś takim jak uczciwa walka. Nie można powiedzieć, żeby ten pomysł zrobił na nich wrażenie.",
-      "rulesText": "Użyj tej zdolności natychmiast po twoim Action stepie. Możesz odepchnąć przyjaznego wojownika o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "„Dwóch na jednego, ty gicie!”",
+      "trigger": "Użyj tej zdolności natychmiast po twoim Action step.",
+      "flavorText": "Daggok i jego chłopaki słyszeli już kiedyś o uczciwej walce. Nie mogą powiedzieć, żeby ten pomysł zrobił na nich wrażenie.",
+      "rulesText": "Możesz przesunąć (push) przyjaznego wojownika o 1 heks. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Złodziej Kunnin'",
-      "flavorText": "Im więcej głów Daggok zdaje się być gotów zabrać, tym bardziej przebiegły się staje.",
-      "rulesText": "Użyj tej zdolności w Power stepie. Dobierz liczbę kart Power równą liczbie rannych wrogich wojowników. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Złodziej Sprytu",
+      "trigger": "Użyj tej zdolności w Power step.",
+      "flavorText": "Im więcej głów Daggok może zdobyć, tym bardziej zaczyna kombinować.",
+      "rulesText": "Dobierz liczbę kart Power równą liczbie zranionych wrogich wojowników. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Paskudne Trucizny",
-      "flavorText": "Kruleboyz są dobrze znani z nacierania swoich broni wszelkiego rodzaju złowrogimi bagiennymi toksynami.",
-      "rulesText": "Użyj tej zdolności natychmiast po Action stepie. Rzuć kością za każdego rannego wrogiego wojownika. Na wynik {icon:crit} zadaj 1 obrażenie temu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tej zdolności natychmiast po Action step.",
+      "flavorText": "Kruleboyz słyną z tego, że smarują swoją broń wszelkiego rodzaju paskudnymi bagiennymi toksynami.",
+      "rulesText": "Rzuć kością za każdego zranionego wrogiego wojownika. Przy wyniku {icon:crit} zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Knujące Gity",
+      "trigger": "Zamiast zagrywać Ploy w Power step przeciwnika, możesz odrzucić karty Ploy, aby użyć poniższych zdolności.",
       "flavorText": null,
-      "rulesText": "Zamiast zagrywać Ploy w Power stepie przeciwnika, możesz odrzucić Ploys, aby użyć poniższych zdolności. Liczba odrzuconych Ploys określa, które zdolności obowiązują w następnej turze. Efekty są kumulatywne, a efekt każdej zdolności trwa do końca twojej następnej tury.\n\nOdrzuć 1: Przyjazni wojownicy mają +1 Move.\nOdrzuć 2: Wrodzy wojownicy są Flanked.\nOdrzuć 3: Broń przyjaznych wojowników ma +1 kość ataku."
+      "rulesText": "Liczba odrzuconych kart Ploy określa, które zdolności obowiązują w następnej turze. Efekty sumują się, a efekt każdej zdolności trwa do końca twojej następnej tury.\n\nOdrzuć 1: Przyjaźni wojownicy mają +1 do Move.\nOdrzuć 2: Wrodzy wojownicy są Flanked.\nOdrzuć 3: Bronie przyjaznych wojowników mają +1 kość Attack."
     }
   ],
   "playstyle": "Czterej podstępni Kruleboyz, którzy rozsiewają drobne obrażenia po całym wrogim warbandzie. Po każdym Action stepie bezczynni wojownicy wykonują darmowe pchnięcia Krule Stab, które inspirują przy trafieniu, podczas gdy odrzucane Ploye napędzają ruch i ofensywę. Ranienie wielu wrogów się opłaca — pozwala dobierać dodatkowe karty Power i dobijać truciznami rannych, nagradzając szeroką, oportunistyczną agresję."

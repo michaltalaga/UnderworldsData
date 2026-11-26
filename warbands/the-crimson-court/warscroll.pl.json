@@ -2,23 +2,22 @@
   "inspire": "Na końcu każdej rundy bitwy, Inspire każdego przyjaznego wojownika, który nie posiada żetonów głodu.",
   "reactions": [
     {
-      "name": "Głód",
-      "trigger": "Bezpośrednio po udanym Ataku przyjaznego wojownika,",
-      "flavorText": null,
-      "rulesText": "usuń 1 żeton głodu tego wojownika. Jeśli cel tego Ataku został zabity, usuń zamiast tego wszystkie żetony głodu tego wojownika."
-    }
-  ],
-  "abilities": [
-    {
       "name": "Klątwa",
       "flavorText": null,
       "rulesText": "Każdy przyjazny wojownik rozpoczyna grę z 2 żetonami głodu. Na początku drugiej i trzeciej rundy bitwy przyznaj każdemu przyjaznemu wojownikowi 1 żeton głodu."
     },
     {
+      "name": "Głód",
+      "flavorText": null,
+      "rulesText": "Bezpośrednio po udanym Ataku przyjaznego wojownika usuń 1 z jego żetonów głodu. Jeśli cel tego Ataku został zabity, zamiast tego usuń wszystkie żetony głodu tego wojownika."
+    },
+    {
       "name": "Żądza Krwi",
       "flavorText": null,
       "rulesText": "Dopóki przyjazny wojownik posiada 3 lub więcej żetonów głodu, jest żądny krwi. Żądni krwi przyjazni wojownicy mają +1 Move, a wszelkie posiadane przez nich Guard tokeny nie mają żadnego efektu."
-    },
+    }
+  ],
+  "abilities": [
     {
       "name": "Bestialska Przemiana",
       "trigger": "Użyj tego bezpośrednio po wybraniu przyjaznego wojownika do użycia zdolności Core ability.",
@@ -35,7 +34,7 @@
       "name": "Mroczna Postać",
       "trigger": "Użyj tego bezpośrednio po wybraniu Inspired przyjaznego wojownika jako celu Ataku.",
       "flavorText": "Wampir staje się jednością z cieniem.",
-      "rulesText": "Cecha Save tego wojownika wynosi {icon:shield} 3 podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      "rulesText": "Cecha Save tego wojownika wynosi {icon:dodge} 3 podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Mroczna Transfuzja",

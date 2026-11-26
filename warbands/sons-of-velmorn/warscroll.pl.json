@@ -2,31 +2,36 @@
   "inspire": "Po udanym Ataku zaprzyjaźnionego wojownika, Inspire atakującego oraz każdego zaprzyjaźnionego wojownika, który był przyległy do celu w momencie wykonywania rzutu na Atak.",
   "reactions": [
     {
-      "name": "Śmiertelny Rozkaz",
-      "flavorText": "Przeklęta korona, którą nosi król Velmorn, daje mu wielką władzę nad jego rodzonymi synami.",
-      "rulesText": "Użyj tej reakcji bezpośrednio po tym, jak twój przywódca ({icon:leader}) użyje podstawowej zdolności (Core ability). Daj temu wojownikowi żeton rozkazu (command token).\n\nDopóki twój przywódca ({icon:leader}) posiada jakiekolwiek żetony rozkazu, za każdym razem gdy wykonujesz rzut na Atak dla zaprzyjaźnionego Grave Guard ({icon:minion}), twój przywódca ({icon:leader}) jest traktowany jako przyległy do celu."
+      "name": "Zabójczy Rozkaz",
+      "trigger": "Użyj tego natychmiast po tym, jak twój przywódca ({icon:leader}) użyje zdolności Core.",
+      "flavorText": "Przeklęta korona, którą nosi Król Velmorn, daje mu wielką władzę nad jego synami z krwi i kości.",
+      "rulesText": "Daj temu wojownikowi żeton rozkazu.\n\nDopóki twój przywódca ({icon:leader}) ma jakiekolwiek żetony rozkazu, za każdym razem, gdy wykonujesz rzut na Atak dla zaprzyjaźnionego Grave Guard ({icon:grave-guard}), uznaje się, że twój przywódca ({icon:leader}) jest przyległy do celu."
     },
     {
-      "name": "Podnieść Tarcze!",
-      "flavorText": "Lud Velmorна słynął z musztry i siły swych ścian tarczowych. Niewiele się zmieniło.",
-      "rulesText": "Użyj tej reakcji bezpośrednio po Ataku wrogiego wojownika, jeśli celem był zaprzyjaźniony bulwark ({icon:shield}), a rzut na Obronę zawierał co najmniej jeden {icon:crit}. Daj temu zaprzyjaźnionemu wojownikowi Guard token."
-    },
-    {
-      "name": "Klątwa Velmorна",
-      "flavorText": "Biada tym, którzy targną się na Dom Velmorна, gdyż straszliwa klątwa przylgnęła do ich starożytnych kości…",
-      "rulesText": "Użyj tej reakcji bezpośrednio po tym, jak zaprzyjaźniony wojownik zostanie zabity przez atakującego przylegającego do niego. Zadaj 1 obrażenie atakującemu. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Powstań Ponownie",
+      "trigger": "Możesz użyć tej zdolności w swoim Power step, jeśli twój przywódca ({icon:leader}) jest na polu bitwy i nie ma żetonów Charge.",
+      "flavorText": "Dziedzice Velmorna muszą wiecznie walczyć w jego imieniu.",
+      "rulesText": "Usuń z niego 1 żeton rozkazu, a następnie wybierz zabitego zaprzyjaźnionego Grave Guard ({icon:grave-guard}). Wskrześ tego wojownika i umieść go na heksie startowym na zaprzyjaźnionym terytorium. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "abilities": [
     {
-      "name": "Powstań Na Nowo",
-      "flavorText": "Spadkobiercy Velmorна muszą walczyć wiecznie w jego imię.",
-      "rulesText": "Możesz użyć tej zdolności w swoim Power step, jeśli twój przywódca ({icon:leader}) jest na polu bitwy i nie posiada żetonów szarży (Charge tokens). Usuń 1 żeton rozkazu od przywódcy, następnie wybierz poległego zaprzyjaźnionego Grave Guard ({icon:minion}). Podnieś tego wojownika i umieść go na polu startowym na zaprzyjaźnionym terytorium. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Unieść Tarcze!",
+      "trigger": "Użyj tego natychmiast po Ataku wrogiego wojownika, jeśli celem był zaprzyjaźniony bulwark ({icon:bulwark}), a rzut na Obronę zawierał jakiekolwiek {icon:crit}.",
+      "flavorText": "Lud Velmorna słynął z musztry i siły swoich murów tarcz. Niewiele się zmieniło.",
+      "rulesText": "Daj temu zaprzyjaźnionemu wojownikowi Guard token."
     },
     {
-      "name": "Zaskakująca Zwrotność",
-      "flavorText": "Choć ich ciała to jedynie próchno i kości, moc Korony Tyrana - i ich własna, revenantowa żałoba - pozwala rodowi Velmorна od czasu do czasu poruszać się z zaskakującą prędkością.",
-      "rulesText": "Użyj tej zdolności w Power step. Zaprzyjaźnieni wojownicy mają +2 do Ruchu w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Klątwa Velmornów",
+      "trigger": "Użyj tego natychmiast po tym, jak zaprzyjaźniony wojownik zostanie zabity przez atakującego, który jest do niego przyległy.",
+      "flavorText": "Biada tym, którzy chcieliby skrzywdzić Ród Velmornów, gdyż straszliwa klątwa lgnie do ich pradawnych kości...",
+      "rulesText": "Zadaj 1 obrażenie atakującemu. Możesz użyć tej zdolności tylko raz na grę."
+    },
+    {
+      "name": "Niespodziewana Chyżość",
+      "trigger": "Użyj tego w Power step.",
+      "flavorText": "Choć ich ciała są jedynie butwiejącymi kośćmi, moc Korony Tyrana – oraz ich własny upiorny żal – daje rodowi Velmorna od czasu do czasu przypływ chyżości.",
+      "rulesText": "Zaprzyjaźnieni wojownicy mają +2 do Ruchu w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Pięciu rewenanckich Grave Guard zakotwiczonych wokół króla Velmorna w ścianie tarcz skupionej na przywódcy. Żetony rozkazu pozwalają królowi liczyć się jako przyległy, by wydłużać ataki jego synów, wojownicy bulwark odzyskują Guard przeciw {icon:crit}, a śmiertelna klątwa karze każdego, kto ich zabije. Przywódca może podnieść (Raise) poległego Grave Guard z powrotem na przyjazne terytorium, co czyni z tego oddziału odporny warband nastawiony na wojnę na wyczerpanie i odwet."

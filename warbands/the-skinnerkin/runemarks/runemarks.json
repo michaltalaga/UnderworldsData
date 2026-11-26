@@ -1,0 +1,259 @@
+{
+  "warband": "the-skinnerkin",
+  "runemarks": [
+    {
+      "id": "the-skinnerkin",
+      "label": "own runemark of The Skinnerkin",
+      "kind": "fighter",
+      "source": "warband",
+      "keyword": null,
+      "sheetPicture": "icons/the-skinnerkin.png",
+      "appIcon": "icons/the-skinnerkin.png"
+    },
+    {
+      "id": "leader",
+      "label": "Leader (crown)",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "minion",
+      "label": "Minion",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "fly",
+      "label": "Fly",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "crit",
+      "label": "Critical marker (makes the next runemark critical)",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "cleave",
+      "label": "Cleave",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "ensnare",
+      "label": "Ensnare",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "brutal",
+      "label": "Brutal",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "grievous",
+      "label": "Grievous",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "stagger",
+      "label": "Stagger",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "grapple",
+      "label": "Grapple",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "hammer",
+      "label": "Hammer (attack dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "swords",
+      "label": "Swords (attack dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "shield",
+      "label": "Shield (save dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "dodge",
+      "label": "Dodge (save dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "flanked",
+      "label": "Flanked",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "surrounded",
+      "label": "Surrounded",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "hex",
+      "label": "Range (hexagon)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "damage",
+      "label": "Damage (star)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "surge",
+      "label": "Surge",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "core-ability",
+      "label": "Core ability",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "inspired",
+      "label": "Inspired (skull in a spiked ring)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "chef",
+      "label": "Chef (warscroll): small eye-like oval with a swirl inside, like a cut of meat",
+      "kind": "fighter",
+      "source": "warscroll",
+      "keyword": "Chef",
+      "sheetPicture": "keywords/chef.png",
+      "appIcon": "icons/chef.png"
+    },
+    {
+      "id": "fillet",
+      "label": "Fillet (warscroll): two thin crossed blades, like a cleaver and a knife",
+      "kind": "weapon",
+      "source": "warscroll",
+      "keyword": "Fillet",
+      "sheetPicture": "keywords/fillet.png",
+      "appIcon": "icons/fillet.png"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Chef",
+      "id": "chef",
+      "kind": "fighter",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Fillet",
+      "id": "fillet",
+      "kind": "weapon",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Critical",
+      "id": "crit",
+      "kind": "symbol",
+      "status": "majority",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Hammer",
+      "id": "hammer",
+      "kind": "symbol",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Grievous",
+      "id": "grievous",
+      "kind": "weapon",
+      "status": "unanimous",
+      "votes": "7/7"
+    }
+  ],
+  "flags": []
+}

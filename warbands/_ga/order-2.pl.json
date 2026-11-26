@@ -16,13 +16,15 @@
     },
     {
       "name": "Aktywna Obrona",
-      "flavorText": "Ważne jest, aby obrońcy nie popadali w statyczną wojnę, lecz nieustannie nękali i wyprzedzali manewrami swoich wrogów.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika na przyjaznym terytorium. Przesuń tego wojownika o maksymalnie 2 heksy. To przesunięcie musi zakończyć się na przyjaznym terytorium. Ta zdolność może być użyta tylko raz na grę."
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Ważne jest, by obrońcy nie popadali w statyczną wojnę, lecz nieustannie nękali swoich wrogów i wymanewrowywali ich.",
+      "rulesText": "Wybierz przyjaznego wojownika na przyjaznym terytorium. Przesuń tego wojownika o maksymalnie 2 heksy. To przesunięcie musi zakończyć się na przyjaznym terytorium. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Tajna Ścieżka",
-      "flavorText": "Przebiegły obrońca ma przewagę w zażartej bitwie, gdyż zna teren i jego tajne ścieżki.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika stojącego na żetonie terenu na przyjaznym terytorium. Usuń tego wojownika z pola bitwy i umieść go na innym żetonie terenu na przyjaznym terytorium, a następnie daj temu wojownikowi żeton Ruchu. Ta zdolność może być użyta tylko raz na grę."
+      "name": "Sekretna Ścieżka",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Przebiegły obrońca ma przewagę w zaciętej bitwie, gdyż zna teren i jego sekretne ścieżki.",
+      "rulesText": "Wybierz przyjaznego wojownika stojącego na żetonie terenu na przyjaznym terytorium. Usuń tego wojownika z pola bitwy i umieść go na innym żetonie terenu na przyjaznym terytorium, a następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
     }
   ]
 }

@@ -11,7 +11,7 @@
         "bounty": 2,
         "runemarks": ["kamandoras-blades", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "inspired": {
@@ -21,7 +21,7 @@
         "bounty": 2,
         "runemarks": ["kamandoras-blades", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -36,7 +36,7 @@
         "bounty": 2,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "inspired": {
@@ -46,7 +46,7 @@
         "bounty": 2,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -61,7 +61,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "inspired": {
@@ -71,7 +71,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -86,7 +86,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "inspired": {
@@ -96,7 +96,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -111,7 +111,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "inspired": {
@@ -121,7 +121,7 @@
         "bounty": 1,
         "runemarks": ["kamandoras-blades", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "slashing", "critical": false }] }
         ]
       },
       "cardRulesText": null

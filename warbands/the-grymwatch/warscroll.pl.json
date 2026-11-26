@@ -1,12 +1,14 @@
 {
   "inspire": "Po ostatnim kroku Akcji w rundzie bitewnej wybierz do X przyjaznych wojowników, gdzie X jest sumą charakterystyk Bounty zabitych wrogich wojowników oraz wrogich wojowników na wrogim i neutralnym terytorium. Zainspiruj tych przyjaznych wojowników.",
-  "reactions": [],
-  "abilities": [
+  "reactions": [
     {
       "name": "W Imię Króla!",
+      "trigger": "Raz na rundę bitewną, w swoim Power step, jeśli twój lider ({icon:leader}) jest na polu bitwy, możesz użyć 1 z poniższych zdolności:",
       "flavorText": null,
-      "rulesText": "Raz na rundę bitewną, podczas twojego Power stepu, jeśli twój przywódca ({icon:leader}) jest na polu bitwy, możesz użyć 1 z następujących zdolności:\n• Wybierz przyjaznego wojownika. Zainspiruj tego wojownika.\n• Wybierz zabitego przyjaznego wojownika. Wskrześ go i umieść w pustym polu na krawędzi.\nJeśli jesteś underdog ({icon:skull}), możesz zamiast tego użyć obu zdolności."
-    },
+      "rulesText": "- Wybierz przyjaznego wojownika. Zainspiruj tego wojownika.\n- Wybierz zabitego przyjaznego wojownika. Wskrześ go i umieść go na pustym heksie krawędziowym.\nJeśli jesteś underdogiem ({icon:underdog}), możesz zamiast tego użyć obu zdolności."
+    }
+  ],
+  "abilities": [
     {
       "name": "Obrońcy Królestwa",
       "flavorText": "Obowiązkiem każdego prawego wojownika jest służyć jako ochrona ludu i tarcza przeciw złu. Żaden wróg nie przełamie kordonu!",
@@ -23,5 +25,6 @@
       "rulesText": "Możesz użyć zdolności 'W Imię Króla!' dwa razy w tej rundzie bitewnej zamiast raz."
     }
   ],
-  "playstyle": "Siedem obłąkanych ghuli, które uważają się za szlachetnych rycerzy, dość wytrzymałych jak na warband Death. Przerzucają kości Obrony na przyjaznym terytorium i zyskują dodatkowe kości Ataku przeciw rannym wrogom, więc utrzymują pozycje i mielą przeciwnika. Co rundę ich przywódca może zainspirować (Inspire) lub podnieść (Raise) poległego wojownika, a jako underdog robi oba naraz, co daje odporną grę nastawioną na wojnę na wyczerpanie."
+  "playstyle": "Siedem obłąkanych ghuli, które uważają się za szlachetnych rycerzy, dość wytrzymałych jak na warband Death. Przerzucają kości Obrony na przyjaznym terytorium i zyskują dodatkowe kości Ataku przeciw rannym wrogom, więc utrzymują pozycje i mielą przeciwnika. Co rundę ich przywódca może zainspirować (Inspire) lub podnieść (Raise) poległego wojownika, a jako underdog robi oba naraz, co daje odporną grę nastawioną na wojnę na wyczerpanie.",
+  "generalRules": "Na początku każdej rundy bitewnej możesz wybrać 1 z poniższych urojeń, które będzie obowiązywać w tej rundzie bitewnej. Każde urojenie może zostać wybrane tylko raz na grę."
 }

@@ -4,14 +4,15 @@
   "version": null,
   "grandAlliance": "Death",
   "inspire": "If an enemy fighter is slain while a Locus of Shyish ability is persisting, Inspire a number of friendly fighters equal to that enemy fighter's Bounty characteristic.",
-  "reactions": [],
-  "abilities": [
+  "reactions": [
     {
       "name": "Locus of Shyish",
-      "type": "action",
+      "type": "passive",
       "flavorText": null,
-      "rulesText": "Roll 3 Attack dice. If the roll contains 1 of the results on the Locus of Shyish table, immediately use the relevant ability. That ability persists until the end of the battle round. If the roll contains any {icon:crit}, you can replace each {icon:crit} with another symbol of your choice ({icon:fury}, {icon:dodge}, {icon:shield} or {icon:skull}).\n\nThe same fighter cannot be picked to be affected by a Locus of Shyish ability more than once per battle round."
-    },
+      "rulesText": "Roll 3 Attack dice. If the roll contains 1 of the results on the Locus of Shyish table, immediately use the relevant ability. That ability persists until the end of the battle round. If the roll contains any {icon:crit}, you can replace each {icon:crit} with another symbol of your choice ({icon:swords}, {icon:hammer}, {icon:flanked} or {icon:surrounded}).\n\nThe same fighter cannot be picked to be affected by a Locus of Shyish ability more than once per battle round."
+    }
+  ],
+  "abilities": [
     {
       "name": "Blades of Shyish",
       "type": "passive",

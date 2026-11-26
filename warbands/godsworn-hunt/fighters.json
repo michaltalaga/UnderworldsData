@@ -11,7 +11,7 @@
         "bounty": 2,
         "runemarks": ["godsworn-hunt", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -21,7 +21,7 @@
         "bounty": 2,
         "runemarks": ["godsworn-hunt", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -36,7 +36,7 @@
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -46,7 +46,7 @@
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -56,7 +56,7 @@
       "name": "Jagathra",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
@@ -67,7 +67,7 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
@@ -88,7 +88,7 @@
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -98,7 +98,7 @@
         "bounty": 1,
         "runemarks": ["godsworn-hunt"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -125,7 +125,7 @@
         "runemarks": ["godsworn-hunt"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -135,20 +135,20 @@
       "name": "Grawl",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["monster", "godsworn-hunt"],
+        "runemarks": ["godsworn-hunt", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["monster", "godsworn-hunt"],
+        "runemarks": ["godsworn-hunt", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]

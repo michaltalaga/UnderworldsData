@@ -2,30 +2,35 @@
   "inspire": "Natychmiast po przyznaniu zaprzyjaźnionemu wojownikowi żetonu Raise, Inspire tego wojownika. Po przyznaniu zaprzyjaźnionym wojownikom trzech lub więcej żetonów Raise, Inspire swojego przywódcę ({icon:leader}).",
   "abilities": [
     {
-      "name": "Naprzód!:",
-      "flavorText": null,
-      "rulesText": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Charge. Wybierz do 2 innych zaprzyjaźnionych wojowników. Ci wojownicy natychmiast wykonują ruch (Move)."
-    },
-    {
-      "name": "Powstań!:",
-      "flavorText": null,
-      "rulesText": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności, jeśli nie posiada żetonów Charge. Wybierz do 2 poległych zaprzyjaźnionych wojowników. Podnieś (Raise) tych wojowników i umieść ich na różnych pustych heksach startowych na swoim terytorium."
-    },
-    {
       "name": "Chwytające Dłonie",
-      "flavorText": "Choć ich mięśnie dawno zgniły, uchwyt Straży jest uściskiem śmierci.",
-      "rulesText": "Użyj tej zdolności natychmiast po wybraniu celu w ramach Ataku. Ten cel jest Surrounded podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego natychmiast po wybraniu celu w ramach Attack.",
+      "flavorText": "Choć ich mięśnie dawno zgniły, uścisk Straży jest uściskiem śmierci.",
+      "rulesText": "Ten cel jest Surrounded na czas tego Attack. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Zaskakujące Przeformowanie",
-      "flavorText": "Strażnik Grobowca nigdy nie pozostaje daleko za swoimi przeklętymi sługami…",
-      "rulesText": "Użyj tej zdolności podczas swojego Power step. Usuń swojego przywódcę ({icon:leader}) z pola bitwy i umieść go na pustym heksie sąsiadującym z 2 zaprzyjaźnionymi wojownikami. Następnie przyznaj swojemu przywódcy ({icon:leader}) żeton Charge. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Zaskakujące Przegrupowanie",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Grobowy Strażnik nigdy nie jest daleko za swoimi przeklętymi sługami...",
+      "rulesText": "Usuń swojego przywódcę ({icon:leader}) z pola bitwy i umieść go na pustym heksie przylegającym do 2 zaprzyjaźnionych wojowników. Następnie przyznaj swojemu przywódcy ({icon:leader}) żeton Charge. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Odłamki Kości",
-      "flavorText": "Zgrzybiałe wojowniczki Sepulchral Guard rozsypują się w deszczu ostrych odłamków.",
-      "rulesText": "Użyj tej zdolności natychmiast po tym, jak zaprzyjaźniony wojownik bez żetonów Raise zostanie zabity przez atak wręcz (melee Attack) wykonany przez wrogiego wojownika. Zadaj 1 obrażenie temu wrogiemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Kostne Odłamki",
+      "trigger": "Użyj tego natychmiast po tym, jak zaprzyjaźniony wojownik bez żetonów Raise zostanie zabity przez Attack wręcz wykonany przez wrogiego wojownika.",
+      "flavorText": "Zgrzybiali wojownicy Grobowej Straży rozpadają się w deszczu ostrych drzazg.",
+      "rulesText": "Zadaj 1 obrażenie temu wrogiemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Siedmioosobowy oddział kruchych, niskożywotnych szkieletowych nieumarłych dowodzonych przez Sepulchral Wardena. Przytłacza wroga, podnosząc (Raise) poległych wojowników z powrotem na heksy startowe turę po turze, zalewając planszę, by otaczać i izolować przeciwników. Inspirowanie (Inspire) jego wojowników zależy od rozdawania tych żetonów Raise, więc oddawanie ciał i przywracanie ich do gry stanowi rdzeń całego silnika."
+  "playstyle": "Siedmioosobowy oddział kruchych, niskożywotnych szkieletowych nieumarłych dowodzonych przez Sepulchral Wardena. Przytłacza wroga, podnosząc (Raise) poległych wojowników z powrotem na heksy startowe turę po turze, zalewając planszę, by otaczać i izolować przeciwników. Inspirowanie (Inspire) jego wojowników zależy od rozdawania tych żetonów Raise, więc oddawanie ciał i przywracanie ich do gry stanowi rdzeń całego silnika.",
+  "reactions": [
+    {
+      "name": "Naprzód!",
+      "flavorText": null,
+      "rulesText": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności, jeśli nie ma żadnych żetonów Charge. Wybierz do 2 innych zaprzyjaźnionych wojowników. Ci wojownicy natychmiast wykonują Move."
+    },
+    {
+      "name": "Powstańcie!",
+      "flavorText": null,
+      "rulesText": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności, jeśli nie ma żadnych żetonów Charge. Wybierz do 2 zabitych zaprzyjaźnionych wojowników. Raise tych wojowników i umieść ich na różnych pustych heksach startowych na swoim terytorium."
+    }
+  ]
 }

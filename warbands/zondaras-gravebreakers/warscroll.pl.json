@@ -3,9 +3,9 @@
   "reactions": [
     {
       "name": "Gravebreakers",
-      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny pachołek ({icon:minion}) delwuje. Ten wojownik może wykonać akcję Unearth lub przyjazny dowódca ({icon:leader}) może wykonać akcję Exhume.",
+      "trigger": "Użyj tego natychmiast po tym, jak przyjazny pachołek ({icon:minion}) delwuje.",
       "flavorText": null,
-      "rulesText": "Użyj tej reakcji natychmiast po tym, jak przyjazny pachołek ({icon:minion}) delwuje. Ten wojownik może wykonać akcję Unearth lub przyjazny dowódca ({icon:leader}) może wykonać akcję Exhume."
+      "rulesText": "Ten wojownik może Unearth lub przyjazny przywódca ({icon:leader}) może Exhume."
     }
   ],
   "abilities": [
@@ -16,8 +16,9 @@
     },
     {
       "name": "Nieśmiertelna Miłość",
-      "flavorText": "Mimo mroku, który ogarnął ich oboje, Zondara i Ferlain pozostają sobie oddani.",
-      "rulesText": "Użyj tej akcji w Power step. Wybierz 2 przyjaznych przeznaczonych ({icon:destined}) wojowników. Ulecz 1 z tych wojowników i przesuń drugiego wojownika o maksymalnie 3 heksy w kierunku pierwszego. Możesz użyć tej umiejętności tylko raz na rundę bitwy."
+      "trigger": "Użyj tego w Power step.",
+      "flavorText": "Pomimo ciemności, która pochłonęła ich oboje, Zondara i Ferlain pozostają sobie oddani.",
+      "rulesText": "Wybierz 2 przyjaznych przeznaczonych ({icon:destined}) wojowników. Ulecz 1 z tych wojowników i przesuń drugiego wojownika o maksymalnie 3 heksy w kierunku pierwszego wojownika. Możesz użyć tej umiejętności tylko raz na rundę bitwy."
     },
     {
       "name": "Exhume",

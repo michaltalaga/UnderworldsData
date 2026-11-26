@@ -9,7 +9,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["skull", "leader"],
+        "runemarks": ["the-grymwatch", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
@@ -20,7 +20,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["skull", "leader"],
+        "runemarks": ["the-grymwatch", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -35,7 +35,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
         ]
@@ -45,7 +45,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
         ]
@@ -60,7 +60,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -70,7 +70,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -85,7 +85,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -95,9 +95,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -110,7 +110,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -120,7 +120,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -135,7 +135,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -145,7 +145,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull"],
+        "runemarks": ["the-grymwatch"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -160,7 +160,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull", "fly"],
+        "runemarks": ["the-grymwatch", "fly"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -170,9 +170,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["skull", "fly"],
+        "runemarks": ["the-grymwatch", "fly"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null

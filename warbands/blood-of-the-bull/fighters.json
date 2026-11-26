@@ -11,7 +11,7 @@
         "bounty": 2,
         "runemarks": ["blood-of-the-bull", "chaos-duardin", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "stagger", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -21,7 +21,7 @@
         "bounty": 2,
         "runemarks": ["blood-of-the-bull", "chaos-duardin", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -36,7 +36,7 @@
         "bounty": 2,
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "stagger", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -46,7 +46,7 @@
         "bounty": 2,
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -61,7 +61,7 @@
         "bounty": 1,
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "stagger", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -71,7 +71,7 @@
         "bounty": 1,
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -87,7 +87,7 @@
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": true } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -98,7 +98,7 @@
         "runemarks": ["blood-of-the-bull", "chaos-duardin"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -113,7 +113,7 @@
         "bounty": 1,
         "runemarks": ["blood-of-the-bull", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -123,7 +123,7 @@
         "bounty": 1,
         "runemarks": ["blood-of-the-bull", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null

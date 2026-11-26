@@ -2,30 +2,36 @@
   "inspire": "Natychmiast po tym, jak przyjazny wojownik zaatakuje uszkodzonego wrogiego wojownika, Inspire tego przyjaznego wojownika.",
   "abilities": [
     {
-      "name": "Piętno Cienia",
-      "flavorText": "Wszyscy Shadeborn noszą na swych duszach piętno ulgańskiej magii — złowrogi znak, który daje im zdolność chwilowego stawania się równie nieuchwytnym jak mgła.",
-      "rulesText": "Za każdym razem, gdy wykonujesz rzut na Save dla przyjaznego wojownika znajdującego się na terytorium wroga lub na cover tokenie, możesz przerzucić 1 kość Save w tym rzucie."
-    },
-    {
       "name": "Klątwa Mrocznej Sieci",
-      "flavorText": "Aelfickie klątwy nadają cieniom złośliwe życie.",
-      "rulesText": "Użyj tego w Power stepie. Wrodzy wojownicy, którzy w następnej turze znajdują się na lub sąsiadują z feature tokenem, mają -1 kość Save. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego w Power stepie.",
+      "flavorText": "Aelfickie klątwy tchną w cienie złowrogie życie.",
+      "rulesText": "Wrodzy wojownicy, którzy w następnej turze znajdują się obok feature tokena lub na nim, mają -1 kość Save. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Mroczna Minoga",
-      "flavorText": "Głodne cienie uderzają w każdą nieostrożną duszę.",
-      "rulesText": "Użyj tego w Power stepie. Wybierz wrogiego wojownika, który nie jest vulnerable i znajduje się w odległości 3 heksów od przyjaznego wojownika. Zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Mroczny Minóg",
+      "trigger": "Użyj tego w Power stepie.",
+      "flavorText": "Wygłodniałe cienie rzucają się na każdą nieostrożną duszę.",
+      "rulesText": "Wybierz wrogiego wojownika, który nie jest vulnerable i znajduje się w odległości do 3 heksów od przyjaznego wojownika. Zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Nieprzenikniony Mrok",
+      "name": "Nieprzenikniona Ciemność",
+      "trigger": "Użyj tego w Power stepie.",
       "flavorText": "Shadeborn znikają w duszącym mroku.",
-      "rulesText": "Użyj tego w Power stepie. Daj każdemu przyjznemu wojownikowi shadow token. Wojownicy posiadający jakiekolwiek shadow tokeny są traktowani jako stojący na cover tokenie. Usuń wszystkie shadow tokeny na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      "rulesText": "Daj każdemu przyjaznemu wojownikowi shadow token. Wojownicy posiadający jakiekolwiek shadow tokeny są traktowani tak, jakby znajdowali się na cover tokenie. Usuń wszystkie shadow tokeny na końcu rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Zasadzka z Cienia",
-      "flavorText": "Gdziekolwiek zapada ciemność, Shadeborn czają się w jej głębi.",
-      "rulesText": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany do Ruchu, jeśli ten wojownik znajduje się na cover tokenie. Usuń tego wojownika z pola bitwy i umieść go na pustym heksie przy krawędzi na terytorium wroga. Następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego natychmiast po tym, jak przyjazny wojownik zostanie wybrany do Move, jeśli ten wojownik znajduje się na cover tokenie.",
+      "flavorText": "Gdziekolwiek pada ciemność, tam skradają się Shadeborn.",
+      "rulesText": "Usuń tego wojownika z pola bitwy i umieść go na pustym heksie krawędziowym na terytorium wroga. Następnie daj temu wojownikowi Move token. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czterej wysoce mobilni aelfowie-zabójcy z Ulgu, którzy uderzają z cienia. Jeden z wojowników potrafi teleportować się z osłony prosto na tyły wroga, a Piętno Cienia pozwala przerzucać Obronę na terytorium wroga lub na żetonie osłony — są jednak kruchymi szklanymi armatami. Inspire uzyskują w chwili, gdy zaatakują już uszkodzonego przeciwnika, dlatego izolują i dobijają rannych przeciwników."
+  "playstyle": "Czterej wysoce mobilni aelfowie-zabójcy z Ulgu, którzy uderzają z cienia. Jeden z wojowników potrafi teleportować się z osłony prosto na tyły wroga, a Piętno Cienia pozwala przerzucać Obronę na terytorium wroga lub na żetonie osłony — są jednak kruchymi szklanymi armatami. Inspire uzyskują w chwili, gdy zaatakują już uszkodzonego przeciwnika, dlatego izolują i dobijają rannych przeciwników.",
+  "reactions": [
+    {
+      "name": "Piętno Cienia",
+      "flavorText": "Wszyscy Shadeborn noszą na swych duszach piętno ulgańskiej magii — złowrogi znak, który daje im zdolność chwilowego stawania się równie nieuchwytnym jak mgła.",
+      "rulesText": "Za każdym razem, gdy wykonujesz rzut na Save dla przyjaznego wojownika znajdującego się na terytorium wroga lub na cover tokenie, możesz przerzucić 1 kość Save w tym rzucie."
+    }
+  ]
 }

@@ -7,11 +7,24 @@
   "reactions": [
     {
       "name": "Flood Tide",
-      "type": "reaction",
-      "trigger": "In the first battle round, immediately after an enemy fighter's melee Attack,",
+      "type": "passive",
       "flavorText": null,
-      "rulesText": "give the attacker a Stagger token."
+      "rulesText": "In the first battle round, immediately after an enemy fighter's melee Attack, give the attacker a Stagger token."
     },
+    {
+      "name": "High Tide",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "In the second battle round, friendly fighters have +1 Move."
+    },
+    {
+      "name": "Ebb Tide",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "In the third battle round, friendly fighters' melee weapons (excluding Upgrades) have Grapple ({icon:grapple})."
+    }
+  ],
+  "abilities": [
     {
       "name": "Riptide Harpoon",
       "type": "reaction",
@@ -29,30 +42,15 @@
     {
       "name": "Ethersea Predators",
       "type": "reaction",
-      "trigger": "Use this immediately after a friendly Idoneth ({icon:destined}) uses a Core ability.",
+      "trigger": "Use this immediately after a friendly Idoneth ({icon:idoneth}) uses a Core ability.",
       "flavorText": "It's always the one you don't see that gets you.",
       "rulesText": "Push each friendly minion ({icon:minion}) 1 hex closer to that fighter."
     },
     {
       "name": "Phantasmal Forms",
       "type": "reaction",
-      "trigger": "Immediately after the Determine Success step of a successful Attack that targets a friendly Fuirann,",
       "flavorText": "Even Akhelian nobles such as Fuirann will use illusion and trickery to avoid the brute enemy.",
-      "rulesText": "that friendly Fuirann can use Stand Fast. You can only use this ability once per battle round."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "High Tide",
-      "type": "passive",
-      "flavorText": null,
-      "rulesText": "In the second battle round, friendly fighters have +1 Move."
-    },
-    {
-      "name": "Ebb Tide",
-      "type": "passive",
-      "flavorText": null,
-      "rulesText": "In the third battle round, friendly fighters' melee weapons (excluding Upgrades) have Grapple ({icon:fury})."
+      "rulesText": "Immediately after the Determine Success step of a successful Attack that targets a friendly Fuirann, that friendly Fuirann can use Stand Fast. You can only use this ability once per battle round."
     }
   ],
   "playstyle": "Five Idoneth Deepkin raiders whose assault crests in a single tidal surge. Every fighter Inspires at the start of the second round and gains extra Move, then Uninspires in the third, forcing an explosive round-two strike. Core abilities pull their minions into a cluster, and a slain Tammael can be raised back into friendly territory off the leader's kills."

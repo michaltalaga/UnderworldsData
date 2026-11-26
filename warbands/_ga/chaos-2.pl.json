@@ -3,9 +3,8 @@
   "reactions": [
     {
       "name": "Przypływ Mocy",
-      "trigger": "Natychmiast po kroku Akcji, w którym nieprzyjacielski wojownik został pokonany przez atak wręcz przyjaznego wojownika",
       "flavorText": null,
-      "rulesText": "daj atakującemu żeton chaotycznej mocy (chaotic power token). Bronie wręcz tego wojownika mają +1 kość Ataku do następnego Ataku, który wykona. Następnie usuń żeton chaotycznej mocy tego wojownika."
+      "rulesText": "Natychmiast po kroku Akcji (Action step), w którym nieprzyjacielski wojownik został pokonany przez atak wręcz wykonany przez przyjaznego wojownika, daj atakującemu chaotyczny żeton mocy. Bronie wręcz tego wojownika mają +1 kość Ataku przy następnym Ataku, który wykona. Następnie usuń chaotyczny żeton mocy tego wojownika."
     }
   ],
   "abilities": [
@@ -15,14 +14,16 @@
       "rulesText": "Wybierz przyjaznego wojownika posiadającego żetony Szarży, aby użyć tej zdolności. Ten wojownik może natychmiast wykonać Szarżę (Charge). Po rozpatrzeniu tej zdolności zadaj temu wojownikowi 2 obrażenia. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Ścięcie Głowy",
-      "flavorText": "Gdy ofiara jest skrwawiona i osłabiona, grozi jej utrata głowy od jednego, celnie wymierzonego ciosu.",
-      "rulesText": "Użyj tej zdolności natychmiast po wybraniu broni w ramach ataku wręcz. Jeśli cel jest podatny na ciosy (vulnerable), ta broń posiada Cleave ({icon:cleave}) oraz Ensnare ({icon:ensnare}). Tej zdolności można użyć tylko raz na grę."
+      "name": "Cios Dekapitujący",
+      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach ataku wręcz.",
+      "flavorText": "Gdy ofiara jest zakrwawiona i osłabiona, grozi jej utrata głowy od jednego celnie wymierzonego ciosu.",
+      "rulesText": "Jeśli cel jest podatny (vulnerable), ta broń ma Cleave ({icon:cleave}) i Ensnare ({icon:ensnare}). Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Wzmocnieni przez Rzeź",
-      "flavorText": "Widok godnych wrogów ginących w rzezi napełnia zaprawionych wyznawców Chaosu straszliwą determinacją.",
-      "rulesText": "Użyj tej zdolności natychmiast po kroku Akcji, w którym nieprzyjacielski wojownik został pokonany przez atak wręcz wykonany przez twoją drużynę. Wybierz liczbę przyjaznych wojowników równą charakterystyce Bounty pokonanego wojownika i daj każdemu z nich żeton Warty (Guard token). Tej zdolności można użyć tylko raz na grę."
+      "name": "Wzmocnieni Rzezią",
+      "trigger": "Użyj tego natychmiast po kroku Akcji (Action step), w którym nieprzyjacielski wojownik został pokonany przez atak wręcz wykonany przez twoją drużynę.",
+      "flavorText": "Widok wyrzynanych godnych przeciwników napełnia zatwardziałych wyznawców Chaosu straszliwą determinacją.",
+      "rulesText": "Wybierz liczbę przyjaznych wojowników równą charakterystyce Bounty pokonanego wojownika i daj każdemu z nich żeton Guard (Guard token). Tej zdolności można użyć tylko raz na grę."
     }
   ]
 }

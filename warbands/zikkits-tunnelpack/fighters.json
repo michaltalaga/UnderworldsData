@@ -9,7 +9,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 3,
-        "runemarks": ["leader"],
+        "runemarks": ["zikkits-tunnelpack", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
@@ -20,7 +20,7 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 4,
         "bounty": 3,
-        "runemarks": ["leader"],
+        "runemarks": ["zikkits-tunnelpack", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
@@ -36,7 +36,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
         ]
@@ -46,7 +46,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 2,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 3, "abilities": [] }
         ]
@@ -61,9 +61,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -71,7 +71,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -86,7 +86,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -96,7 +96,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": [],
+        "runemarks": ["zikkits-tunnelpack"],
         "weapons": [
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -111,7 +111,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 0,
-        "runemarks": ["minion"],
+        "runemarks": ["zikkits-tunnelpack", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -121,7 +121,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 0,
-        "runemarks": ["minion"],
+        "runemarks": ["zikkits-tunnelpack", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
         ]

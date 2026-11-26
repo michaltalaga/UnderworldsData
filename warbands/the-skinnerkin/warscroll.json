@@ -4,14 +4,23 @@
   "version": null,
   "grandAlliance": "Death",
   "inspire": "If you have 3 or more haunch tokens, Inspire each friendly fighter.",
+  "generalRules": "You can use 1 of the following abilities per turn.",
   "reactions": [
+    {
+      "name": "Prime Cuts",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Immediately after a Flanked or Surrounded enemy fighter is slain, gain a haunch token.\n\nImmediately after a friendly chef's ({icon:chef}) successful Attack, gain a haunch token.\n\nIf a friendly fighter's weapon has the {icon:fillet} runemark, you have access to the following Weapon ability:\n\nFillet {icon:fillet}: If the Attack was successful, gain a haunch token."
+    },
     {
       "name": "Grasping Talons",
       "type": "reaction",
       "trigger": "Use this immediately after a friendly Carnskyr Moves.",
       "flavorText": null,
-      "rulesText": "Pick an enemy fighter in a hex that the Carnskyr moved through and roll an Attack dice. On a {icon:dodge} or {icon:fury}, inflict 1 damage on that fighter and gain a haunch token. Otherwise, you can push that fighter up to 1 hex."
-    },
+      "rulesText": "Pick an enemy fighter in a hex that the Carnskyr moved through and roll an Attack dice. On a {icon:crit} or {icon:hammer}, inflict 1 damage on that fighter and gain a haunch token. Otherwise, you can push that fighter up to 1 hex."
+    }
+  ],
+  "abilities": [
     {
       "name": "Taste Test",
       "type": "reaction",
@@ -30,23 +39,15 @@
       "name": "The King Hungers!",
       "type": "reaction",
       "trigger": "Use this immediately after you pick a melee weapon as part of an Attack.",
-      "flavorText": "Sometimes, fine filleting cuts are required from a chef. And sometimes, a less… subtle approach is needed.",
+      "flavorText": "Sometimes, fine filleting cuts are required from a chef. And sometimes, a less... subtle approach is needed.",
       "rulesText": "Discard a haunch token. That weapon has Grievous ({icon:grievous}) for that Attack."
     },
     {
       "name": "Quick Nibble",
-      "type": "reaction",
+      "type": "action",
       "trigger": "Use this in your opponent's Power step.",
       "flavorText": "Well, you can hardly serve royalty something you wouldn't eat yourself, can you?",
       "rulesText": "Discard a haunch token and pick a friendly fighter. Heal that fighter."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Prime Cuts",
-      "type": "passive",
-      "flavorText": null,
-      "rulesText": "Immediately after a Flanked or Surrounded enemy fighter is slain, gain a haunch token.\n\nImmediately after a friendly chef's ({icon:skull}) successful Attack, gain a haunch token.\n\nIf a friendly fighter's weapon has the {icon:cleave} runemark, you have access to the following Weapon ability:\n\nFillet {icon:cleave}: If the Attack was successful, gain a haunch token."
     }
   ],
   "playstyle": "Five cannibal ghouls and their monstrous Carnskyr beast, a flexible band fuelled by haunch tokens earned from slaying surrounded foes and successful chef attacks. Those tokens are spent on a deep reaction toolkit, granting heals, re-rolls, Grievous strikes, and extra inspiration. With three banked, the whole warband inspires, encouraging a versatile, resource-spending style backed by self-healing sustain."

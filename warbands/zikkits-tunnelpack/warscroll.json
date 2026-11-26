@@ -10,27 +10,29 @@
       "type": "reaction",
       "trigger": "Use this immediately at the start of your Action step if each friendly fighter has a Charge token.",
       "flavorText": "The Skaven of Zikkit's Tunnelpack push the limits of their creations with the twisted science of the Clans Skryre.",
-      "rulesText": "Use this immediately at the start of your Action step if each friendly fighter has a Charge token. Pick a friendly fighter. Remove that fighter's Move and/or Charge tokens. After that Action step, roll an Attack dice. On a {icon:fury} or {icon:crit}, that fighter is slain."
+      "rulesText": "Pick a friendly fighter. Remove that fighter's Move and/or Charge tokens. After that Action step, roll an Attack dice. On a {icon:hammer} or {icon:crit}, that fighter is slain."
     }
   ],
   "abilities": [
     {
       "name": "Skitter",
       "type": "reaction",
+      "trigger": "Use this immediately after your Action step.",
       "flavorText": "Skaven are infamously twitchy, paranoid, aggressive and rarely around in one spot for too long.",
-      "rulesText": "Use this immediately after your Action step. Pick a friendly fighter with no Move or Charge tokens. That fighter Moves. This ability can only be used once per game."
+      "rulesText": "Pick a friendly fighter with no Move or Charge tokens. That fighter Moves. This ability can only be used once per game."
     },
     {
       "name": "Warp-charged",
       "type": "reaction",
+      "trigger": "Use this ability immediately after you pick a weapon as part of an Attack.",
       "flavorText": "The Clans Skryre craft weapons renowned for lethality and unpredictability in equal measure.",
-      "rulesText": "Use this ability immediately after you pick a weapon as part of an Attack. Inflict 1 damage on the attacker. That weapon has Cleave ({icon:cleave}), Ensnare ({icon:ensnare}) and Brutal ({icon:grievous}) for that Attack. This ability can only be used once per game."
+      "rulesText": "Inflict 1 damage on the attacker. That weapon has Cleave ({icon:cleave}), Ensnare ({icon:ensnare}) and Brutal ({icon:brutal}) for that Attack. This ability can only be used once per game."
     },
     {
       "name": "Kaboom!",
-      "type": "action",
+      "type": "passive",
       "flavorText": "A rat with a bomb... simple, yet effective.",
-      "rulesText": "Pick a friendly minion ({icon:minion}) with no Charge tokens to use this ability. That minion Moves. Then, roll a number of Attack dice equal to the battle round number for each fighter within 2 hexes of that minion. If the roll contains any {icon:fury}, inflict 1 damage on that fighter. If the roll contains any {icon:crit}, inflict 2 damage on that fighter instead. Then, that minion is slain."
+      "rulesText": "Pick a friendly minion ({icon:minion}) with no Charge tokens to use this ability. That minion Moves. Then, roll a number of Attack dice equal to the battle round number for each fighter within 2 hexes of that minion. If the roll contains any {icon:hammer}, inflict 1 damage on that fighter. If the roll contains any {icon:crit}, inflict 2 damage on that fighter instead. Then, that minion is slain."
     }
   ],
   "playstyle": "Five hyper-mobile skaven built around suicide bombing. Minions skitter across the board and detonate, rolling escalating dice against everything nearby before dying, while warp-charged weapons add power at the cost of self-inflicted wounds. Fragile and reckless, the warband trades its own fighters for explosive burst damage, relying on speed and detonations to blow apart clustered enemies."

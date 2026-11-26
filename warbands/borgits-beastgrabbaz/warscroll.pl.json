@@ -2,33 +2,34 @@
   "inspire": "Po tym, jak przyjazny wojownik wykonuje Delves, Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Łowcy Trofeów",
-      "trigger": "Na początku twojego pierwszego Action step w pierwszej rundzie bitwy, wybierz wrogiego wojownika z cechą Zdrowia równą 3 lub więcej, który zostaje da trophy.",
+      "name": "Trophy Huntaz",
       "flavorText": null,
-      "rulesText": "Ataki wręcz wymierzone w da trophy mają +1 kość Ataku."
+      "rulesText": "Na początku twojego pierwszego Action step w pierwszej rundzie bitwy wybierz wrogiego wojownika z cechą Health 3 lub więcej, który będzie da trophy. Ataki wręcz, których celem jest da trophy, mają +1 kość ataku."
     },
     {
-      "name": "Da Przynęta",
-      "trigger": "Natychmiast po tym, jak przyjazny minion ({icon:minion}) zostaje pokonany,",
+      "name": "Da Bait",
       "flavorText": null,
-      "rulesText": "przesuń swojego lidera ({icon:leader}) o liczbę hexów równą cesze Zdrowia pokonanego miniona ({icon:minion}). To przesunięcie musi zakończyć się w sąsiedztwie wrogiego wojownika."
+      "rulesText": "Natychmiast po tym, jak przyjazny minion ({icon:minion}) zostanie zabity, push twojego lidera ({icon:leader}) o liczbę heksów równą cesze Health zabitego miniona ({icon:minion}). Ten push musi zakończyć się przylegle do wrogiego wojownika."
     }
   ],
   "abilities": [
     {
       "name": "Gittish Taktikz",
-      "flavorText": "Borgit i jego kumpanie nie widzą żadnego powodu, by wdawać się w uczciwą walkę.",
-      "rulesText": "Użyj tego natychmiast po udanym Ataku przyjaznego Ugluga lub przyjaznego Borgita. Do końca rundy bitwy, cel tego Ataku staje się da mugginz. Broń do walki wręcz przyjaznych minionów ({icon:minion}) posiada {icon:grievous} Grievous ({icon:skull}) gdy atakują da mugginz. Możesz użyć zdolności 'Gittish Taktikz' tylko raz na grę."
+      "trigger": "Użyj tego natychmiast po udanym ataku przyjaznego Ugluga lub przyjaznego Borgita.",
+      "flavorText": "Borgit i jego kumple nie widzą powodu, by walczyć uczciwie.",
+      "rulesText": "Do końca rundy bitwy cel tego ataku jest da mugginz. Bronie białe przyjaznych minionów ({icon:minion}) mają {icon:crit} Grievous ({icon:grievous}), gdy ich celem jest da mugginz. Możesz użyć zdolności 'Gittish Taktikz' tylko raz na grę."
     },
     {
-      "name": "Kojąca Obecność",
-      "flavorText": "Krzepka muskulatura Ugluga dodająca im otuchy wzbudza w Beastgrabbaz grottisową pewność siebie.",
-      "rulesText": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny Uglug użył jakichkolwiek Core abilities w tym kroku. Możesz przesunąć każdego przyjaznego miniona o maksymalnie 3 hexy. Każdy wojownik przesunięty w ten sposób musi zakończyć to przesunięcie w sąsiedztwie przyjaznego Ugluga. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Reassuring Presence",
+      "trigger": "Użyj tego natychmiast po twoim Action step, jeśli przyjazny Uglug użył w tym kroku jakichkolwiek zdolności Core.",
+      "flavorText": "Mięśnie Ugluga za ich plecami napawają Beastgrabbaz iście gobliną pewnością siebie.",
+      "rulesText": "Możesz wykonać push każdego przyjaznego miniona o maksymalnie 3 heksy. Każdy wojownik, na którym wykonano w ten sposób push, musi zakończyć ten push przylegle do przyjaznego Ugluga. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Daj Im W Kość",
-      "flavorText": "Beastgrabbaz nie są wielkimi wojownikami, ale doskonale wiedzą, jak napaść na wroga całą zgrają.",
-      "rulesText": "Użyj tego natychmiast po swoim Action step, jeśli przyjazny minion ({icon:minion}) użył jakichkolwiek Core abilities w tym kroku. Do końca następnego Action step, za pierwszym razem gdy wrogi wojownik zostaje przesunięty, umieszczony lub wchodzi na dowolny hex sąsiadujący z przyjaznym minionem ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Stab 'Em Good",
+      "trigger": "Użyj tego natychmiast po twoim Action step, jeśli przyjazny minion ({icon:minion}) użył w tym kroku jakichkolwiek zdolności Core.",
+      "flavorText": "Beastgrabbaz nie są wielkimi wojownikami, ale wiedzą, jak rzucić się hurmem na wroga.",
+      "rulesText": "Do końca następnego Action step, za pierwszym razem, gdy wrogi wojownik zostanie pushed, placed lub wejdzie na dowolny heks przylegający do przyjaznego miniona ({icon:minion}), zadaj temu wojownikowi 1 obrażenie. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Pięciu grotów plus zwalisty ogor, napadający warband, który tłoczy się wokół swojego wielkiego lidera. Miniony zganiają się z powrotem do ogora i wabią go do walki, gdy giną, podczas gdy oznaczenie celu zadaje paskudne rany, a wybrane trofeum zachęca do dodatkowych ataków. Nurkowanie w lochy, by wykonać Delve, inspiruje wojowników, łącząc kontrolę pola bitwy z zachłanną agresją."

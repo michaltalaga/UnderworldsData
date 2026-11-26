@@ -3,26 +3,28 @@
   "reactions": [
     {
       "name": "Kunnin'",
-      "trigger": "Na początku pierwszej fazy Akcji w każdej rundzie bitwy, jeśli twój dowódca ({icon:leader}) jest na polu bitwy",
       "flavorText": null,
-      "rulesText": "możesz odrzucić Ulepszenie wyposażone przez przyjaznego wojownika, a następnie wybrać Zagrywkę z twojego stosu odrzuconych kart Power i dodać ją do ręki. Nie możesz wybrać tej samej Zagrywki więcej niż raz na grę."
+      "rulesText": "Na początku pierwszego Action step w każdej rundzie bitwy, jeśli twój lider ({icon:leader}) jest na polu bitwy, możesz odrzucić Upgrade wyposażony przez przyjaznego wojownika, a następnie wybrać Ploy ze swojego stosu odrzuconych kart Power i dodać go do ręki. Nie możesz wybrać tego samego Ploy więcej niż raz na grę."
     }
   ],
   "abilities": [
     {
       "name": "Część Planu",
-      "flavorText": "Wierni Morka uważają za całkowicie dopuszczalne, by rzucić się na wroga gromadą i porządnie go skłuć.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu celu Ataku, jeśli cel jest Flanked lub Surrounded. Wyniki {icon:fury} i {icon:dodge} liczą się jako sukcesy dla tego Ataku. Ta zdolność może być użyta tylko raz na grę."
+      "trigger": "Użyj tego natychmiast po wybraniu celu Ataku, jeśli cel jest Flanked lub Surrounded.",
+      "flavorText": "Wierni Morka uważają za całkowicie dopuszczalne, by zebrać się w grupę przeciwko wrogowi i porządnie go podziurawić.",
+      "rulesText": "Wyniki {icon:swords} i {icon:hammer} liczą się jako sukcesy w tym Ataku. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Paskudne Pułapki",
-      "flavorText": "Kolce, sieci, bomby z gazem i toksyczny szlam: te plugawe narzędzia mogą wytrącić wroga z równowagi. Łatwy cel dla celnego uderzenia.",
-      "rulesText": "Użyj tej zdolności w fazie Power step. Do końca rundy bitwy, heksy sąsiadujące z przyjaznymi wojownikami są traktowane jako stagger hexes, oprócz innych typów heksów. Ta zdolność może być użyta tylko raz na grę."
+      "name": "Podstępne Pułapki",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Kolczatki, sieci, bomby gazowe i toksyczny szlam: te paskudne narzędzia mogą zostawić wroga oszołomionego. Łatwy cel dla dobrze wymierzonego ciosu.",
+      "rulesText": "Do końca rundy bitwy heksy sąsiadujące z przyjaznymi wojownikami są traktowane jako stagger hexes, oprócz innych typów heksów. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "To Mój Teren, Koleś",
-      "flavorText": "Ci, którzy próbują wyprzeć armie Gorkamorki z zajętego przez nie terytorium, najprawdopodobniej spotkają makabryczny los.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po wybraniu celu Ataku. Rzuty na Atak wręcz wykonywane przez atakującego w ramach Ataków wręcz zawsze liczą się jako posiadające więcej {icon:fury} niż rzut na Obronę dla celów Drive Back i Overrun, dopóki ten Atak nie zostanie rozstrzygnięty. Ta zdolność może być użyta tylko raz na grę."
+      "name": "To Mój Teren, Kolego",
+      "trigger": "Użyj tego natychmiast po wybraniu celu Ataku.",
+      "flavorText": "Ci, którzy próbują wypędzić armie Gorkamorki z zajętego przez nie terytorium, najpewniej spotkają makabryczny koniec.",
+      "rulesText": "Rzuty Ataku wręcz wykonane dla atakującego w ramach Ataków wręcz zawsze liczą się jako mające więcej {icon:crit} niż rzut Obrony na potrzeby Drive Back i Overrun, dopóki ten Atak nie zostanie rozpatrzony. Tej zdolności można użyć tylko raz na grę."
     }
   ]
 }

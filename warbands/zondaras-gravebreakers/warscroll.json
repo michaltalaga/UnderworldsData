@@ -8,9 +8,9 @@
     {
       "name": "Gravebreakers",
       "type": "reaction",
-      "trigger": "Use this immediately after a friendly minion ({icon:minion}) delves. That fighter can Unearth or a friendly leader ({icon:leader}) can Exhume.",
+      "trigger": "Use this immediately after a friendly minion ({icon:minion}) delves.",
       "flavorText": null,
-      "rulesText": "Use this immediately after a friendly minion ({icon:minion}) delves. That fighter can Unearth or a friendly leader ({icon:leader}) can Exhume."
+      "rulesText": "That fighter can Unearth or a friendly leader ({icon:leader}) can Exhume."
     }
   ],
   "abilities": [
@@ -23,18 +23,19 @@
     {
       "name": "Undying Love",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "Despite the darkness that has taken them both, Zondara and Ferlain remain devoted to one another.",
-      "rulesText": "Use this in a Power step. Pick 2 friendly destined ({icon:destined}) fighters. Heal 1 of those fighters and push the other fighter up to 3 hexes towards the other fighter. You can only use this ability once per battle round."
+      "rulesText": "Pick 2 friendly destined ({icon:destined}) fighters. Heal 1 of those fighters and push the other fighter up to 3 hexes towards the other fighter. You can only use this ability once per battle round."
     },
     {
       "name": "Exhume",
-      "type": "action",
+      "type": "passive",
       "flavorText": "Zondara is not the sort to give up her minions while she still has need of their services.",
       "rulesText": "Pick a slain friendly minion ({icon:minion}). Raise that fighter and place them in a hex adjacent to the friendly fighter that delved. You can only use this ability if it is picked when resolving the Gravebreakers ability."
     },
     {
       "name": "Unearth",
-      "type": "action",
+      "type": "passive",
       "flavorText": "In the blood and bones of the dead might lie the secrets Zondara seeks.",
       "rulesText": "Draw a number of Power cards equal to the number of slain friendly fighters. You can only use this ability if it is picked when resolving the Gravebreakers ability."
     }

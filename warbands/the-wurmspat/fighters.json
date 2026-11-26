@@ -9,26 +9,10 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 3,
-        "runemarks": ["wurmspat", "leader"],
+        "runemarks": ["the-wurmspat", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "ranged",
-            "range": 3,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 1,
-            "abilities": [ { "name": "stagger", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "bile-blade", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "inspired": {
@@ -36,26 +20,10 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 3,
-        "runemarks": ["wurmspat", "leader"],
+        "runemarks": ["the-wurmspat", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "ranged",
-            "range": 3,
-            "symbol": "swords",
-            "dice": 4,
-            "damage": 1,
-            "abilities": [ { "name": "stagger", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "bile-blade", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -68,17 +36,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["wurmspat"],
+        "runemarks": ["the-wurmspat"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "bile-blade", "critical": false }] }
         ]
       },
       "inspired": {
@@ -86,17 +46,9 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["wurmspat"],
+        "runemarks": ["the-wurmspat"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": [ { "name": "cleave", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "bile-blade", "critical": false }, { "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -109,26 +61,10 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["wurmspat"],
+        "runemarks": ["the-wurmspat"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "bile-blade", "critical": false }] }
         ]
       },
       "inspired": {
@@ -136,26 +72,10 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["wurmspat"],
+        "runemarks": ["the-wurmspat"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 4,
-            "damage": 3,
-            "abilities": [ { "name": "brutal", "critical": false } ]
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 3, "abilities": [{ "name": "brutal", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "bile-blade", "critical": false }] }
         ]
       },
       "cardRulesText": null

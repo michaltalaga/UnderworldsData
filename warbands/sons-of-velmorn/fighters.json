@@ -6,22 +6,22 @@
       "name": "Morlak",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 1 },
+        "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["sons-of-velmorn", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["sons-of-velmorn", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -31,7 +31,7 @@
       "name": "Jedran",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 1 },
+        "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
         "runemarks": ["sons-of-velmorn", "bulwark"],
@@ -41,7 +41,7 @@
       },
       "inspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 2,
         "runemarks": ["sons-of-velmorn", "bulwark"],
@@ -56,22 +56,22 @@
       "name": "Thain",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion"],
+        "runemarks": ["sons-of-velmorn", "grave-guard"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [ { "name": "stagger", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion"],
+        "runemarks": ["sons-of-velmorn", "grave-guard"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -81,22 +81,22 @@
       "name": "Helmar",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion", "bulwark"],
+        "runemarks": ["sons-of-velmorn", "grave-guard", "bulwark"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion", "bulwark"],
+        "runemarks": ["sons-of-velmorn", "grave-guard", "bulwark"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -106,22 +106,22 @@
       "name": "Faulk",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion", "bulwark"],
+        "runemarks": ["sons-of-velmorn", "grave-guard", "bulwark"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 3,
-        "save": { "symbol": "dodge", "dice": 2 },
+        "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["sons-of-velmorn", "minion", "bulwark"],
+        "runemarks": ["sons-of-velmorn", "grave-guard", "bulwark"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null

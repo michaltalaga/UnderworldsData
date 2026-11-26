@@ -1,0 +1,254 @@
+{
+  "warband": "sons-of-velmorn",
+  "runemarks": [
+    {
+      "id": "sons-of-velmorn",
+      "label": "own runemark of Sons of Velmorn",
+      "kind": "fighter",
+      "source": "warband",
+      "keyword": null,
+      "sheetPicture": "icons/sons-of-velmorn.png",
+      "appIcon": "icons/sons-of-velmorn.png"
+    },
+    {
+      "id": "leader",
+      "label": "Leader (crown)",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "minion",
+      "label": "Minion",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "fly",
+      "label": "Fly",
+      "kind": "fighter",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "crit",
+      "label": "Critical marker (makes the next runemark critical)",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "cleave",
+      "label": "Cleave",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "ensnare",
+      "label": "Ensnare",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "brutal",
+      "label": "Brutal",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "grievous",
+      "label": "Grievous",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "stagger",
+      "label": "Stagger",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "grapple",
+      "label": "Grapple",
+      "kind": "weapon",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "hammer",
+      "label": "Hammer (attack dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "swords",
+      "label": "Swords (attack dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "shield",
+      "label": "Shield (save dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "dodge",
+      "label": "Dodge (save dice symbol)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "flanked",
+      "label": "Flanked",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "surrounded",
+      "label": "Surrounded",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "hex",
+      "label": "Range (hexagon)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "damage",
+      "label": "Damage (star)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "surge",
+      "label": "Surge",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "core-ability",
+      "label": "Core ability",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "inspired",
+      "label": "Inspired (skull in a spiked ring)",
+      "kind": "symbol",
+      "source": "core",
+      "keyword": null,
+      "sheetPicture": null,
+      "appIcon": null
+    },
+    {
+      "id": "grave-guard",
+      "label": "Grave Guard (warscroll): round horned skull-like helm runemark",
+      "kind": "fighter",
+      "source": "warscroll",
+      "keyword": "Grave Guard",
+      "sheetPicture": "keywords/grave-guard.png",
+      "appIcon": "icons/grave-guard.png"
+    },
+    {
+      "id": "bulwark",
+      "label": "bulwark (warscroll): shield with a skull emblem",
+      "kind": "fighter",
+      "source": "warscroll",
+      "keyword": "bulwark",
+      "sheetPicture": "keywords/bulwark.png",
+      "appIcon": null
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Leader",
+      "id": "leader",
+      "kind": "fighter",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Grave Guard",
+      "id": "grave-guard",
+      "kind": "fighter",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "bulwark",
+      "id": "bulwark",
+      "kind": "fighter",
+      "status": "unanimous",
+      "votes": "7/7"
+    },
+    {
+      "keyword": "Critical",
+      "id": "crit",
+      "kind": "symbol",
+      "status": "majority",
+      "votes": "6/7"
+    }
+  ],
+  "flags": [
+    "warscroll icon \"bulwark\": no picture of the icon alone passed its check (1 place tried), so the app shows the keyword as text"
+  ]
+}

@@ -6,22 +6,22 @@
       "name": "Morgwaeth",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["morgwaeths-blade-coven", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["morgwaeths-blade-coven", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -45,10 +45,10 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["destined", "morgwaeths-blade-coven"],
+        "runemarks": ["morgwaeths-blade-coven"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -58,7 +58,7 @@
       "name": "Khamyss",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["morgwaeths-blade-coven"],
@@ -69,13 +69,13 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["destined", "morgwaeths-blade-coven"],
+        "runemarks": ["morgwaeths-blade-coven"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] },
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] },
+          { "name": null, "reach": "ranged", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -88,9 +88,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["order", "morgwaeths-blade-coven"],
+        "runemarks": ["morgwaeths-blade-coven"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }, { "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -98,9 +98,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["order", "morgwaeths-blade-coven"],
+        "runemarks": ["morgwaeths-blade-coven"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }, { "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -110,7 +110,7 @@
       "name": "Lethyr",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["morgwaeths-blade-coven"],
@@ -120,7 +120,7 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["morgwaeths-blade-coven"],

@@ -21,7 +21,7 @@
         "bounty": 3,
         "runemarks": ["ironskulls-boyz", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [{ "name": "guard", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -46,7 +46,7 @@
         "bounty": 2,
         "runemarks": ["ironskulls-boyz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -61,8 +61,7 @@
         "bounty": 1,
         "runemarks": ["ironskulls-boyz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "ensnare", "critical": true }] }
         ]
       },
       "inspired": {
@@ -72,8 +71,7 @@
         "bounty": 1,
         "runemarks": ["ironskulls-boyz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -88,7 +86,7 @@
         "bounty": 1,
         "runemarks": ["ironskulls-boyz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "cleave", "critical": true }] }
         ]
       },
       "inspired": {
@@ -98,7 +96,7 @@
         "bounty": 1,
         "runemarks": ["ironskulls-boyz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null

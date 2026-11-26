@@ -11,7 +11,7 @@
         "bounty": 3,
         "runemarks": ["blackpowders-buccaneers", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "swashbuckle", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -22,11 +22,11 @@
         "bounty": 3,
         "runemarks": ["blackpowders-buccaneers", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 3, "abilities": [{ "name": "swashbuckle", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [] }
         ]
       },
-      "cardRulesText": "Melee weapon bears the warband Swashbuckle skull runemark ({icon:skull}); the ranged weapon (grunderbuss) does not."
+      "cardRulesText": null
     },
     {
       "index": 2,
@@ -38,7 +38,7 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers", "fly"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
       "inspired": {
@@ -48,10 +48,10 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers", "fly"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
-      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+      "cardRulesText": null
     },
     {
       "index": 3,
@@ -63,7 +63,7 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
       "inspired": {
@@ -73,10 +73,10 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
-      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+      "cardRulesText": null
     },
     {
       "index": 4,
@@ -88,7 +88,7 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers", "fly"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -101,7 +101,7 @@
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
-      "cardRulesText": "Uninspired weapon has Critical Grievous (crit starburst + cloven skull). Inspired weapon drops the ability and gains +1 Damage (2). Does NOT bear the warband Swashbuckle skull runemark."
+      "cardRulesText": null
     },
     {
       "index": 5,
@@ -113,7 +113,7 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
       "inspired": {
@@ -123,10 +123,10 @@
         "bounty": 1,
         "runemarks": ["blackpowders-buccaneers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "swashbuckle", "critical": false }] }
         ]
       },
-      "cardRulesText": "Weapon bears the warband Swashbuckle skull runemark ({icon:skull})."
+      "cardRulesText": null
     }
   ]
 }

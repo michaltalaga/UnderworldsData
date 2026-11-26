@@ -1,12 +1,13 @@
 {
   "inspire": "Każdy przyjazny wojownik rozpoczyna grę jako Natchniony.\n\nBezpośrednio po kroku Akcji, w którym przyjazny wojownik był wojownikiem przewodzącym, Inspire tego wojownika.\n\nUNINSPIRE\nBezpośrednio po udanym Ataku przyjaznego wojownika, Uninspire tego przyjaznego wojownika.",
-  "reactions": [],
-  "abilities": [
+  "reactions": [
     {
       "name": "Święte Kondensatory",
       "flavorText": null,
       "rulesText": "Odejmij 1 od dystansu między przyjaznym atakującym a jego celem za każdego przyjaznego wojownika znajdującego się między atakującym a celem. Ci przyjazni wojownicy są przewodzącymi."
-    },
+    }
+  ],
+  "abilities": [
     {
       "name": "Piorunujący Hymn",
       "flavorText": "Pieśni Braci zdają się rozpalać święte błyskawice.",
@@ -14,18 +15,21 @@
     },
     {
       "name": "Trzaskający Wybuch",
-      "flavorText": "Wypełnieni żarliwym dynamizmem, Bracia ruszają naprzód.",
-      "rulesText": "Użyj tej zdolności w kroku Power step. Wybierz przyjaznego wojownika. Ten wojownik wykonuje ruch Move. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego w kroku Power step.",
+      "flavorText": "Przepełnieni gorliwym dynamizmem Bracia ruszają naprzód.",
+      "rulesText": "Wybierz przyjaznego wojownika. Ten wojownik wykonuje Move. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Szarża Niebios",
-      "flavorText": "Skandując, kultyści 'dzielą się' swoim elektrycznym darem.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika. Uninspire tego wojownika, a następnie zadaj 1 obrażenie sąsiadującemu wrogemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Niebiański Ładunek",
+      "trigger": "Użyj tego bezpośrednio po swoim kroku Akcji.",
+      "flavorText": "Śpiewając, kultyści „dzielą się” swym elektrycznym darem.",
+      "rulesText": "Wybierz przyjaznego wojownika. Uninspire tego wojownika, a następnie zadaj 1 obrażenie sąsiadującemu wrogiemu wojownikowi. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Błyskawiczne Ożywienie",
-      "flavorText": "Dotyk pioruna tchnął życie w braci.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po swoim kroku Akcji. Wybierz przyjaznego wojownika, który był przewodzącym podczas tego kroku. Ulecz tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Migoczące Odrodzenie",
+      "trigger": "Użyj tego bezpośrednio po swoim kroku Akcji.",
+      "flavorText": "Pocałunek błyskawicy ożywia braci.",
+      "rulesText": "Wybierz przyjaznego wojownika, który był przewodzącym podczas tego kroku. Wylecz tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Pięciu fanatycznych kultystów, którzy rozpoczynają grę w pełni Inspired i walczą jako zgrana linia ostrzału. Ich sygnaturowa mechanika skraca zasięg ostrzału za każdego przyjaznego wojownika stojącego między atakującym a celem, nagradzając staranne ustawienie w szereg, a ci przewodzący wojownicy uzyskują Inspire. Wybrana aura fazy walki daje całej drużynie wspólną premię w każdej rundzie."

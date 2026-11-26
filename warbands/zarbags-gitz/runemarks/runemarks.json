@@ -200,15 +200,6 @@
       "appIcon": null
     },
     {
-      "id": "grot",
-      "label": "Grot (warscroll): grot head with large pointed ears",
-      "kind": "fighter",
-      "source": "warscroll",
-      "keyword": "Grot",
-      "sheetPicture": "keywords/grot.png",
-      "appIcon": "icons/grot.png"
-    },
-    {
       "id": "squig",
       "label": "Squig (warscroll): round squig head with a wide toothy mouth",
       "kind": "fighter",
@@ -219,22 +210,24 @@
     },
     {
       "id": "volley",
-      "label": "Volley (warscroll): curved arrow/bolt runemark with a hooked tail",
+      "label": "Volley (warscroll): small curled hook shape over a horizontal stroke",
       "kind": "weapon",
       "source": "warscroll",
       "keyword": "Volley",
       "sheetPicture": "keywords/volley.png",
-      "appIcon": null
+      "appIcon": "icons/volley.png"
+    },
+    {
+      "id": "grot",
+      "label": "Grot (warscroll): grot face with pointed ears and a pointed chin",
+      "kind": "fighter",
+      "source": "warscroll",
+      "keyword": "Grot",
+      "sheetPicture": "keywords/grot.png",
+      "appIcon": "icons/grot.png"
     }
   ],
   "keywords": [
-    {
-      "keyword": "Grot",
-      "id": "grot",
-      "kind": "fighter",
-      "status": "unanimous",
-      "votes": "3/3"
-    },
     {
       "keyword": "Squig",
       "id": "squig",
@@ -248,9 +241,14 @@
       "kind": "weapon",
       "status": "unanimous",
       "votes": "3/3"
+    },
+    {
+      "keyword": "Grot",
+      "id": "grot",
+      "kind": "fighter",
+      "status": "unanimous",
+      "votes": "3/3"
     }
   ],
-  "flags": [
-    "warscroll icon \"Volley\": the icon could not be found again in a closer look, so the sheet shows a wider part of the warscroll and the app shows the keyword as text"
-  ]
+  "flags": []
 }

@@ -8,7 +8,7 @@
     {
       "name": "Predatory Fighters",
       "type": "reaction",
-      "trigger": "Use this immediately after an enemy fighter's failed melee Attack if the target was a friendly saurus ({icon:leader}) and the Save roll contained any {icon:dodge}.",
+      "trigger": "Use this immediately after an enemy fighter's failed melee Attack if the target was a friendly saurus ({icon:saurus}) and the Save roll contained any {icon:shield}.",
       "flavorText": "With bladed shields and vice-like jaws, the saurus are just as deadly on the defence as they are on the attack.",
       "rulesText": "Inflict 1 damage on that enemy fighter."
     }
@@ -17,20 +17,23 @@
     {
       "name": "Instinctual Control",
       "type": "reaction",
+      "trigger": "Use this immediately after you pick a target as part of an Attack made by a friendly saurus ({icon:saurus}).",
       "flavorText": "Saurus are no beastmasters, but the reptilian creatures that swarm around them respond to their aggression, falling on enemies with venomous jaws flashing.",
-      "rulesText": "Use this immediately after you pick a target as part of an Attack made by a friendly saurus ({icon:leader}). Pick a friendly minion ({icon:minion}) with no Move or Charge tokens. That fighter can Move."
+      "rulesText": "Pick a friendly minion ({icon:minion}) with no Move or Charge tokens. That fighter can Move."
     },
     {
       "name": "Savage Mauling",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "When severed from the influence of their masters, saurus revert to their feral instincts, using natural weapons to tear apart prey in sprays of blood and viscera.",
-      "rulesText": "Use this in a Power step. Pick an enemy fighter adjacent to a damaged friendly saurus ({icon:leader}) that has no Charge tokens. Roll an Attack dice for each damage token that friendly fighter has. Inflict an amount of damage on that enemy fighter equal to the number of {icon:fury} and {icon:crit} rolled. You can only use this ability once per game. Each time an enemy fighter is slain by this ability, you can use this ability once more this game."
+      "rulesText": "Pick an enemy fighter adjacent to a damaged friendly saurus ({icon:saurus}) that has no Charge tokens. Roll an Attack dice for each damage token that friendly fighter has. Inflict an amount of damage on that enemy fighter equal to the number of {icon:swords} and {icon:crit} rolled. You can only use this ability once per game. Each time an enemy fighter is slain by this ability, you can use this ability once more this game."
     },
     {
       "name": "Obstinate",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "Saurus are creatures of cold-blooded focus. If the Great Plan requires them to defend a point, they will do so without flinching.",
-      "rulesText": "Use this in a Power step. Pick a friendly saurus ({icon:leader}). That fighter cannot be driven back until the end of the battle round. You can only use this ability once per game."
+      "rulesText": "Pick a friendly saurus ({icon:saurus}). That fighter cannot be driven back until the end of the battle round. You can only use this ability once per game."
     }
   ],
   "playstyle": "Four Seraphon led by a hulking, immovable Saurus surrounded by skink minions. The Saurus anchors objectives and cannot be driven back, while its attacks let minions swarm in. Its feral Savage Mauling nuke scales with the damage it has taken and can be reused after each kill, and the warband Inspires by wounding foes on the opponent's turn."

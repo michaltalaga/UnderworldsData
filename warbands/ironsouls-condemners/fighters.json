@@ -11,15 +11,7 @@
         "bounty": 3,
         "runemarks": ["ironsouls-condemners", "leader", "shield-aetheric"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -29,15 +21,7 @@
         "bounty": 3,
         "runemarks": ["ironsouls-condemners", "leader", "shield-aetheric"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": [ { "name": "stagger", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -52,15 +36,7 @@
         "bounty": 2,
         "runemarks": ["ironsouls-condemners", "shield-aetheric"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -70,15 +46,7 @@
         "bounty": 2,
         "runemarks": ["ironsouls-condemners", "shield-aetheric"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": [ { "name": "stagger", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -93,15 +61,7 @@
         "bounty": 2,
         "runemarks": ["ironsouls-condemners"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": [ { "name": "grievous", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "inspired": {
@@ -111,15 +71,7 @@
         "bounty": 2,
         "runemarks": ["ironsouls-condemners"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": [ { "name": "grievous", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null

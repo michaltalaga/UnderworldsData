@@ -9,7 +9,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 3,
-        "runemarks": ["leader", "thricefold-discord"],
+        "runemarks": ["the-thricefold-discord", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [] }
         ]
@@ -19,7 +19,7 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 3,
-        "runemarks": ["leader", "thricefold-discord"],
+        "runemarks": ["the-thricefold-discord", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -34,7 +34,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["fly", "thricefold-discord"],
+        "runemarks": ["the-thricefold-discord", "fly"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
@@ -45,7 +45,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["fly", "thricefold-discord"],
+        "runemarks": ["the-thricefold-discord", "fly"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
           { "name": null, "reach": "ranged", "range": 4, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
@@ -61,7 +61,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["thricefold-discord"],
+        "runemarks": ["the-thricefold-discord"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -71,9 +71,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["thricefold-discord"],
+        "runemarks": ["the-thricefold-discord"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null

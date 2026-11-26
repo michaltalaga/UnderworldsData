@@ -3,10 +3,21 @@
   "reactions": [
     {
       "name": "Przypływ",
-      "trigger": "W pierwszej rundzie bitwy, natychmiast po wręcznym Ataku wojownika wroga,",
       "flavorText": null,
-      "rulesText": "daj atakującemu żeton Stagger."
+      "rulesText": "W pierwszej rundzie bitwy, natychmiast po Ataku wręcz wrogiego wojownika, daj atakującemu żeton Stagger."
     },
+    {
+      "name": "Wysoka Fala",
+      "flavorText": null,
+      "rulesText": "W drugiej rundzie bitwy przyjazni wojownicy mają +1 Ruch."
+    },
+    {
+      "name": "Odpływ",
+      "flavorText": null,
+      "rulesText": "W trzeciej rundzie bitwy bronie wręczne przyjaznych wojowników (z wyłączeniem Ulepszeń) mają Grapple ({icon:grapple})."
+    }
+  ],
+  "abilities": [
     {
       "name": "Harpun Rwącego Nurtu",
       "trigger": "Użyj tej reakcji natychmiast po wybraniu Tammaela do wykonania Szarży.",
@@ -21,27 +32,14 @@
     },
     {
       "name": "Drapieżniki Eteru",
-      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny Idoneth ({icon:destined}) użyje zdolności podstawowej.",
+      "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny Idoneth ({icon:idoneth}) użyje zdolności podstawowej.",
       "flavorText": "Zawsze dosięga cię ten, którego nie widzisz.",
       "rulesText": "Przesuń każdego przyjaznego sługę ({icon:minion}) o 1 pole bliżej tego wojownika."
     },
     {
-      "name": "Widmowe Kształty",
-      "trigger": "Natychmiast po kroku Określenia Wyniku udanego Ataku wymierzonego w przyjazną Fuirann,",
-      "flavorText": "Nawet akheliańska szlachta, taka jak Fuirann, posługuje się iluzją i podstępem, by uniknąć brutalnego wroga.",
-      "rulesText": "ta przyjazna Fuirann może użyć Stand Fast. Możesz użyć tej zdolności tylko raz na rundę bitwy."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Wysoka Fala",
-      "flavorText": null,
-      "rulesText": "W drugiej rundzie bitwy przyjazni wojownicy mają +1 Ruch."
-    },
-    {
-      "name": "Odpływ",
-      "flavorText": null,
-      "rulesText": "W trzeciej rundzie bitwy bronie wręczne przyjaznych wojowników (z wyłączeniem Ulepszeń) mają Grapple ({icon:fury})."
+      "name": "Upiorne Postacie",
+      "flavorText": "Nawet akheliańscy szlachcice tacy jak Fuirann używają iluzji i podstępów, by uniknąć brutalnego wroga.",
+      "rulesText": "Natychmiast po kroku Determine Success udanego Ataku, którego celem jest przyjazny Fuirann, ten przyjazny Fuirann może użyć Stand Fast. Możesz użyć tej zdolności tylko raz na rundę bitwy."
     }
   ],
   "playstyle": "Pięciu najeźdźców Idoneth Deepkin, których szturm wzbiera w jednej przypływowej fali. Każdy wojownik uzyskuje Inspire na początku drugiej rundy i zyskuje dodatkowy Ruch, po czym w trzeciej rundzie traci Inspire, co wymusza wybuchowe uderzenie w drugiej rundzie. Zdolności Core ściągają ich sługi w zwartą grupę, a poległy Tammael może zostać podniesiony z powrotem na przyjazne terytorium dzięki zabójstwom lidera."

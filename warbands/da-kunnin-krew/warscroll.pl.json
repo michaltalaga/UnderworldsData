@@ -2,25 +2,30 @@
   "inspire": "Po udanym Ataku friendly fightera, jeśli cel został zabity, Flankowany lub Otoczony, Inspire atakującego oraz każdego friendly fightera sąsiadującego z celem.",
   "abilities": [
     {
-      "name": "Ból w Kolanie",
-      "flavorText": "Czy to podstawiając nogi, zaczepiając płaszcze, czy wbijając sztylet w kostkę — grot-służki Mannoka doskonale wiedzą, jak być użytecznymi podczas bójki.",
-      "rulesText": "Jeśli atakującym jest friendly Mannok lub Torka, friendly miniony ({icon:minion}) liczą się jako 2 fighterzy przy określaniu, czy cel jest Flankowany lub Otoczony."
-    },
-    {
-      "name": "Przebiegły Plan",
-      "flavorText": "Mannok to orruk o zadziwiającej przebiegłości — a każdy, kto twierdzi inaczej, zostaje posiekany.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po Action stepie, jeśli twój leader ({icon:leader}) jest na polu bitwy. Pchnij każdego friendly miniona ({icon:minion}) o liczbę heksów równą numerowi rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Chytry Plan",
+      "trigger": "Użyj tego natychmiast po Action step, jeśli twój lider ({icon:leader}) jest na polu bitwy.",
+      "flavorText": "Mannok to inspirująco chytry orruk, a każdy, kto twierdzi inaczej, zostaje posiekany.",
+      "rulesText": "Push każdego friendly miniona ({icon:minion}) o liczbę heksów nie większą niż numer rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Brudne Sztuczki",
-      "flavorText": "Krew uwielbia ryzykowne zagrania — ale nigdy uczciwe.",
-      "rulesText": "Użyj tej zdolności bezpośrednio przed wykonaniem rzutu na Atak lub rzutu na Save przez ciebie lub twojego przeciwnika. Twój przeciwnik musi zadeklarować 'Upgrade' lub 'Ploy'. Weź 3 karty Power z ręki i potasuj je rewersem do góry. Przeciwnik musi wybrać 1 z tych kart. Następnie odkryj każdą z tych kart. Jeśli karta wybrana przez przeciwnika pasuje do jego deklaracji, dobierz 1 kartę Power. W przeciwnym razie ten rzut na Atak lub rzut na Save nie jest wykonywany i zamiast tego musisz samodzielnie ustalić wynik na każdej kości. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego natychmiast przed tym, jak ty lub twój przeciwnik wykonacie Attack roll lub Save roll.",
+      "flavorText": "Krew uwielbia bezczelny hazard - ale nigdy uczciwy.",
+      "rulesText": "Twój przeciwnik musi zadeklarować 'Upgrade' lub 'Ploy'. Weź 3 Power cards z ręki i przetasuj je zakryte. Twój przeciwnik musi wybrać 1 z tych kart. Następnie odkryj każdą z tych kart. Jeśli karta wybrana przez przeciwnika jest zgodna z tym, co zadeklarował, dobierz 1 Power card. W przeciwnym razie ten Attack roll lub Save roll nie zostaje wykonany, a zamiast tego musisz ustawić wynik na każdej kości. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Czaici się w Mroku",
-      "flavorText": "Gdy Krew nie chce zostać odnaleziona, nawet najlepsi tropiciele w krainach mogą mieć trudności z jej wytropieniem.",
-      "rulesText": "Użyj tej zdolności bezpośrednio po tym, jak friendly fighter zostanie wybrany jako cel Ataku. Wyniki {icon:dodge} i {icon:shield} są sukcesami w rzutach na Save wykonywanych dla tego fightera w tym Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Czający się w Mroku",
+      "trigger": "Użyj tego natychmiast po tym, jak friendly fighter zostanie wybrany na cel Ataku.",
+      "flavorText": "Gdy Krew nie chce zostać znaleziona, nawet najlepsi tropiciele w krainach mogą mieć trudności z jej odnalezieniem.",
+      "rulesText": "Wyniki {icon:flanked} i {icon:surrounded} są sukcesami w Save rolls wykonywanych dla tego fightera podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Pięciu orruckich i grotowych rabusiów z najsilniejszą nagrodą za Flankowanie i Otaczanie w całej Destrukcji. Czające się miniony liczą się podwójnie przy okrążaniu wroga, więc liderzy zdobywają zabójstwa Flankowanych i Otoczonych celów, które inspirują całe skupisko wokół ofiary. Pchnięcia pod koniec rundy utrzymują załogę w ruchu, gdy zlatuje się, by usidlić i zarżnąć osamotnionych wrogów."
+  "playstyle": "Pięciu orruckich i grotowych rabusiów z najsilniejszą nagrodą za Flankowanie i Otaczanie w całej Destrukcji. Czające się miniony liczą się podwójnie przy okrążaniu wroga, więc liderzy zdobywają zabójstwa Flankowanych i Otoczonych celów, które inspirują całe skupisko wokół ofiary. Pchnięcia pod koniec rundy utrzymują załogę w ruchu, gdy zlatuje się, by usidlić i zarżnąć osamotnionych wrogów.",
+  "reactions": [
+    {
+      "name": "Ból w Kolanie",
+      "flavorText": "Czy to podstawiając nogi, zaczepiając płaszcze, czy wbijając sztylet w kostkę — grot-służki Mannoka doskonale wiedzą, jak być użytecznymi podczas bójki.",
+      "rulesText": "Jeśli atakującym jest friendly Mannok lub Torka, friendly miniony ({icon:minion}) liczą się jako 2 fighterzy przy określaniu, czy cel jest Flankowany lub Otoczony."
+    }
+  ]
 }

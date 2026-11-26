@@ -22,7 +22,7 @@
         "bounty": 1,
         "runemarks": ["thorns-of-the-briar-queen", "leader", "fly"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -73,7 +73,7 @@
         "bounty": 1,
         "runemarks": ["thorns-of-the-briar-queen", "fly", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null

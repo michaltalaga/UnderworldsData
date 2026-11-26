@@ -9,9 +9,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "inspired": {
@@ -19,9 +19,9 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false }, { "name": "grievous", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }, { "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -34,9 +34,9 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["leader", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -44,9 +44,9 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["leader", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -59,9 +59,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "grapple", "critical": false }] }
         ]
       },
       "inspired": {
@@ -69,9 +69,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "grapple", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -84,9 +84,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "inspired": {
@@ -94,9 +94,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -109,9 +109,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "inspired": {
@@ -119,9 +119,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["minion", "beastgrabbaz"],
+        "runemarks": ["borgits-beastgrabbaz", "minion"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null

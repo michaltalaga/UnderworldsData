@@ -9,26 +9,10 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 7,
         "bounty": 4,
-        "runemarks": ["mushroom", "leader"],
+        "runemarks": ["mollogs-mob", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 3,
-            "abilities": [ { "name": "brutal", "critical": false } ]
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "brutal", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -36,26 +20,10 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 7,
         "bounty": 4,
-        "runemarks": ["mushroom", "leader"],
+        "runemarks": ["mollogs-mob", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 3,
-            "abilities": [ { "name": "brutal", "critical": false }, { "name": "grievous", "critical": false } ]
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": [ { "name": "brutal", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "brutal", "critical": false }, { "name": "grievous", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -68,17 +36,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "fly", "minion"],
+        "runemarks": ["mollogs-mob", "fly", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
@@ -86,17 +46,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "fly", "minion"],
+        "runemarks": ["mollogs-mob", "fly", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -109,17 +61,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "minion"],
+        "runemarks": ["mollogs-mob", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
@@ -127,17 +71,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "minion"],
+        "runemarks": ["mollogs-mob", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": [ { "name": "grapple", "critical": false } ]
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -150,17 +86,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "minion"],
+        "runemarks": ["mollogs-mob", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 2,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
@@ -168,17 +96,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["mushroom", "minion"],
+        "runemarks": ["mollogs-mob", "minion"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "cardRulesText": null

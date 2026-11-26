@@ -2,32 +2,34 @@
   "inspire": "Jeśli 3 lub więcej wrogich wojowników zostało pokonanych lub rannych, Inspire każdego przyjaznego wojownika.\n\nGdy wrogi wojownik posiadający żetony żółci zostanie pokonany przez przyjaznego wojownika, Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Obrzydliwie Wytrzymały",
-      "trigger": "Bezpośrednio przed zadaniem obrażeń przyjaznemu wojownikowi przez Atak bez Cleave ({icon:cleave}), jeśli rzut na Obronę zawierał jakiekolwiek {icon:shield}",
-      "flavorText": "Wybrańcy Nurgle'a są niemal całkowicie uodpornieni na ból.",
-      "rulesText": "Bezpośrednio przed zadaniem obrażeń przyjaznemu wojownikowi przez Atak bez Cleave ({icon:cleave}), jeśli rzut na Obronę zawierał jakiekolwiek {icon:shield}, zmniejsz obrażenia tego Ataku o 1."
+      "name": "Obrzydliwie Wytrzymali",
+      "flavorText": "Wybrańcy Nurgla są niemal całkowicie odporni na ból.",
+      "rulesText": "Bezpośrednio przed zadaniem obrażeń przyjaznemu wojownikowi przez Atak bez Cleave ({icon:cleave}), jeśli rzut Save zawierał jakiekolwiek {icon:shield}, zmniejsz obrażenia tego Ataku o 1."
+    },
+    {
+      "name": "Dary Dziadka",
+      "flavorText": "Jedno zadraśnięcie, a zarazy biorą się do swojej wielkiej roboty…",
+      "rulesText": "Ostrze Żółci {icon:bile-blade}: Jeśli Atak zakończył się powodzeniem, daj celowi żeton żółci po rozpatrzeniu Ataku.\n\nWrodzy wojownicy mają -1 Move, dopóki posiadają jakiekolwiek żetony żółci. Usuń wszystkie żetony żółci od wrogich wojowników na końcu rundy bitewnej."
     }
   ],
   "abilities": [
     {
-      "name": "Dary Dziadka",
-      "flavorText": "Jedno zadraśnięcie, a zarazy biorą się do swojej wielkiej roboty…",
-      "rulesText": "Ostrze Żółci {icon:fury}: Jeśli Atak zakończył się powodzeniem, daj celowi żeton żółci po rozpatrzeniu Ataku.\n\nWrodzy wojownicy mają -1 Move, dopóki posiadają jakiekolwiek żetony żółci. Usuń wszystkie żetony żółci od wrogich wojowników na końcu rundy bitewnej."
+      "name": "Niespieszny Marsz",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Nie ma potrzeby się spieszyć - w swoim czasie wystarczy darów dla wszystkich.",
+      "rulesText": "Wybierz do 2 przyjaznych wojowników. Przesuń (Push) każdego z tych wojowników o 1 heks. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Spokojne Natarcie",
-      "flavorText": "Nie ma powodu do pośpiechu - dla wszystkich znajdą się łaski, we właściwym czasie.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz do 2 przyjaznych wojowników. Przesuń każdego z tych wojowników o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Mdlący Wstręt",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Nie każdy docenia naturę darów Fekuli. Niewdzięcznicy...",
+      "rulesText": "Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Mdląca Odraza",
-      "flavorText": "Nie każdy docenia naturę darów Feculi. Niewdzięcznicy…",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Bronie do walki wręcz wrogich wojowników mają -1 kość Ataku w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
-    },
-    {
-      "name": "Ostrza Gnicia",
-      "flavorText": "Plugawa maź i ciekłe zarazy skapują z krawędzi ostrzy Wurmspatu.",
-      "rulesText": "Użyj tej zdolności w Power step. Bronie do walki wręcz przyjaznych wojowników mają Grievous ({icon:grievous}) dodatkowo do wszelkich innych zdolności broni w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Ostrza Rozkładu",
+      "trigger": "Użyj tego w dowolnym Power step.",
+      "flavorText": "Plugawy śluz i płynne febry kapią z krawędzi ostrzy Wurmspat.",
+      "rulesText": "Bronie do walki wręcz przyjaznych wojowników mają Grievous ({icon:grievous}) oprócz wszelkich innych zdolności broni w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Trójka twardych elitarnych wojowników Nurgle'a, którzy nacierają powoli i stopniowo wykruszają przeciwnika. Ich pokryte żółcią ostrza zatruwają wrogów, odbierając im Move, tak że nie mogą uciec, a redukcja obrażeń od ataków bez Cleave czyni ich brutalnie trudnymi do zabicia. Ceną jest niska mobilność, więc warband wygrywa, przyjmując ciosy, spowalniając grę do pełzania i rozbierając na części odizolowane cele przez wiele rund."

@@ -4,8 +4,7 @@
   "version": null,
   "grandAlliance": "Destruction",
   "inspire": "After your leader ({icon:leader}) is given a damage token, if they have 4 or more damage tokens, Inspire each friendly fighter.",
-  "reactions": [],
-  "abilities": [
+  "reactions": [
     {
       "name": "Lurker",
       "type": "passive",
@@ -14,27 +13,32 @@
     },
     {
       "name": "Troggoth Regeneration",
-      "type": "action",
+      "type": "reaction",
+      "trigger": "Use this at the end of each battle round after following the end phase sequence.",
       "flavorText": null,
-      "rulesText": "Use this at the end of each battle round after following the end phase sequence. Heal your leader ({icon:leader})."
-    },
+      "rulesText": "Heal your leader ({icon:leader})."
+    }
+  ],
+  "abilities": [
     {
       "name": "Unnatural Hazards",
       "type": "passive",
       "flavorText": "Wherever Mollog roams, the creepy-crawly nature of the deep-earth dankholds seems to come with him.",
-      "rulesText": "At the start of the first Action step in each battle round, pick 1 of the following effects. Each effect can only be picked once per game.\n\n• Until the end of the battle round, enemy fighters adjacent to a friendly minion ({icon:minion}) are Surrounded.\n\n• Until the end of the battle round, each time an enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), give that enemy fighter a Stagger token.\n\n• Until the end of the battle round, the first time each enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), roll an Attack dice. On a {icon:fury} or {icon:crit}, inflict 1 damage on that fighter."
+      "rulesText": "At the start of the first Action step in each battle round, pick 1 of the following effects. Each effect can only be picked once per game.\n\n• Until the end of the battle round, enemy fighters adjacent to a friendly minion ({icon:minion}) are Surrounded.\n\n• Until the end of the battle round, each time an enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), give that enemy fighter a Stagger token.\n\n• Until the end of the battle round, the first time each enemy fighter is placed in, is pushed into or enters a hex adjacent to a friendly minion ({icon:minion}), roll an Attack dice. On a {icon:hammer} or {icon:crit}, inflict 1 damage on that fighter."
     },
     {
       "name": "Tag Along",
       "type": "reaction",
+      "trigger": "Use this immediately after your leader ({icon:leader}) Moves.",
       "flavorText": "Mollog doesn't exactly command his peculiar menagerie of troglodytes, but they can be trusted to follow him anyway.",
-      "rulesText": "Use this immediately after your leader ({icon:leader}) Moves. Pick another friendly fighter. Push that fighter up to 2 hexes. That push must end either adjacent to your leader ({icon:leader}) or adjacent to an enemy fighter that is adjacent to your leader ({icon:leader})."
+      "rulesText": "Pick another friendly fighter. Push that fighter up to 2 hexes. That push must end either adjacent to your leader ({icon:leader}) or adjacent to an enemy fighter that is adjacent to your leader ({icon:leader})."
     },
     {
       "name": "Infestation",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "Even if one of Mollog's critters is killed, another pops up to take its place.",
-      "rulesText": "Use this in your Power step. Pick a slain friendly minion ({icon:minion}). Raise that fighter, place them in an empty starting hex and then give them a Charge token. You can only use this ability once per game."
+      "rulesText": "Pick a slain friendly minion ({icon:minion}). Raise that fighter, place them in an empty starting hex and then give them a Charge token. You can only use this ability once per game."
     }
   ],
   "playstyle": "A four-model troggoth mob led by one enormous, hard-hitting brute backed by three expendable minions. It plays as a durable beatstick, healing the leader every battle round and Inspiring once he soaks four damage, so attrition favours him. Minions seed deep-strike hazards and a slain one can be raised to keep the pressure relentless."

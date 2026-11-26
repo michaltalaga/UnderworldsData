@@ -4,28 +4,27 @@
   "version": null,
   "grandAlliance": "Chaos",
   "inspire": "When you use a daemonforge dice in the Attack roll or Save roll for a friendly fighter, after that Attack, Inspire that fighter.\n\nAfter an Attack made by a friendly Chaos Duardin ({icon:chaos-duardin}), if the target was adjacent to a friendly Grisk, Inspire that Grisk.",
-  "reactions": [
-    {
-      "name": "Enhance Arsenal",
-      "type": "reaction",
-      "trigger": "Immediately after you pick a weapon as part of an Attack made by a friendly Chaos Duardin ({icon:chaos-duardin})",
-      "flavorText": null,
-      "rulesText": "you can use 1 daemonforge dice in the Attack roll. If you do so, that weapon has +1 Attack dice for that Attack."
-    },
-    {
-      "name": "Reinforce Armoury",
-      "type": "reaction",
-      "trigger": "Immediately after a friendly Chaos Duardin ({icon:chaos-duardin}) is picked to be the target of an Attack",
-      "flavorText": null,
-      "rulesText": "you can use 1 daemonforge dice in the Save roll. If you do so, that fighter has +1 Save for that Attack."
-    }
-  ],
+  "reactions": [],
   "abilities": [
     {
       "name": "Empowered by Spite",
       "type": "passive",
       "flavorText": "As Zuldrakka and her warriors kill, burn and despoil, their daemon-crafted arms and armour grow ever more powerful.",
       "rulesText": "You start the game with 1 daemonforge dice.\n\nIn your Power step, if a friendly fighter with no Stagger tokens Delves a treasure token, gain 1 daemonforge dice. All daemonforge dice are lost at the end of each battle round."
+    },
+    {
+      "name": "Enhance Arsenal",
+      "type": "reaction",
+      "trigger": "Immediately after you pick a weapon as part of an Attack made by a friendly Chaos Duardin ({icon:chaos-duardin}), you can use 1 daemonforge dice in the Attack roll.",
+      "flavorText": null,
+      "rulesText": "If you do so, that weapon has +1 Attack dice for that Attack."
+    },
+    {
+      "name": "Reinforce Armoury",
+      "type": "reaction",
+      "trigger": "Immediately after a friendly Chaos Duardin ({icon:chaos-duardin}) is picked to be the target of an Attack, you can use 1 daemonforge dice in the Save roll.",
+      "flavorText": null,
+      "rulesText": "If you do so, that fighter has +1 Save for that Attack."
     },
     {
       "name": "Infernal Conflagration",
@@ -37,7 +36,7 @@
       "name": "Hobgrot Cunning",
       "type": "passive",
       "flavorText": "Grisk might be a conniving, murderous back-stabber, but he has his uses...",
-      "rulesText": "Rolls of both {icon:fury} and {icon:dodge} are successes in an Attack roll for a friendly Chaos Duardin ({icon:chaos-duardin}) while the target is adjacent to a friendly Grisk."
+      "rulesText": "Rolls of both {icon:swords} and {icon:hammer} are successes in an Attack roll for a friendly Chaos Duardin ({icon:chaos-duardin}) while the target is adjacent to a friendly Grisk."
     }
   ],
   "playstyle": "Five Chaos Duardin who forge power from plunder. Delving treasure tokens generates daemonforge dice that boost their attacks and saves, while adjacency synergies let one fighter unlock extra successes and another add Grievous shooting at close range. The warband rewards tight, coordinated positioning, converting objectives into combat dice to grow steadily deadlier as it claims the board's loot."

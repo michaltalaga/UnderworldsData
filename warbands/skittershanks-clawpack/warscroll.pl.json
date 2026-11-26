@@ -9,9 +9,8 @@
     },
     {
       "name": "Kolczaste Pułapki i Sidła",
-      "trigger": "Natychmiast po udanym ataku wręcz przyjaznego wojownika, daj celowi żeton kolca.\n\nNatychmiast po tym, jak wrogi wojownik posiadający żetony kolca wykona Ruch, zadaj temu wojownikowi 1 obrażenie, a następnie usuń jego żetony kolca. Usuń wszystkie żetony kolca z wrogich wojowników na końcu rundy bitewnej.",
-      "flavorText": "Skittershank i jego poplecznicy znają wszelkie sposoby na to, by wykrwawić i nękać swój cel.",
-      "rulesText": "Natychmiast po udanym ataku wręcz przyjaznego wojownika, daj celowi żeton kolca.\n\nNatychmiast po tym, jak wrogi wojownik posiadający żetony kolca wykona Ruch, zadaj temu wojownikowi 1 obrażenie, a następnie usuń jego żetony kolca. Usuń wszystkie żetony kolca z wrogich wojowników na końcu rundy bitewnej."
+      "flavorText": "Skittershank i jego sługusy znają wszelkie sposoby, by wykrwawić i nękać swój cel.",
+      "rulesText": "Natychmiast po udanym Ataku wręcz przyjaznego wojownika, daj celowi żeton kolca.\n\nNatychmiast po tym, jak wrogi wojownik posiadający jakiekolwiek żetony kolca wykona Ruch, zadaj temu wojownikowi 1 obrażenie, a następnie usuń żetony kolca tego wojownika. Usuń wszystkie żetony kolca z wrogich wojowników na koniec rundy bitwy."
     }
   ],
   "abilities": [
@@ -21,14 +20,16 @@
       "rulesText": "Natychmiast po Ataku przyjaznego wojownika, daj każdemu wrogiemu wojownikowi sąsiadującemu z atakującym żeton Stagger. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Szczęki się Zaciskają",
-      "flavorText": "Wabienie celów z miejsca schronienia to standardowa praktyka każdego prawdziwego zabójcy.",
-      "rulesText": "Użyj tego w swoim Power step. Wybierz wrogiego przywódcę ({icon:leader}) znajdującego się na terytorium wroga. Odepchnij tego wojownika o 1 pole. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Zatrzaśnięcie Szczęk",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Wywabianie celów z ich bezpiecznego schronienia to standardowa praktyka każdego prawdziwego zabójcy.",
+      "rulesText": "Wybierz wroga będącego przywódcą ({icon:leader}) na terytorium wroga. Przepchnij tego wojownika o 1 heks. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Migotliwa Plama",
-      "flavorText": "Gdy wabik i oślepienie zawodzą, czysta prędkość może kupić kolejną szansę...",
-      "rulesText": "Użyj tego w swoim Power step. W następnej turze przyjaźni zabójcy ({icon:minion}) nie mogą być wybierani jako cel Ataków ani Ploys. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Przemykająca Smuga",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Gdy przynęta i oślepienie zawodzą, czysta szybkość może dać kolejną szansę...",
+      "rulesText": "W następnej turze przyjaźni zabójcy ({icon:assassin}) nie mogą zostać wybrani jako cel Ataków ani Ploys. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Piątka kruchych, hipermobilnych zabójców Skavenów skupionych na wrogim liderze. Wabią go z bezpiecznej pozycji, przerzucają przeciwko niemu ataki i nakładają krwawiące żetony kolca, które karzą każdy ruch, ścigając się, by go zabić lub okaleczyć i tym samym Inspire cały warband. Lekko opancerzeni i polegający na prędkości oraz sztuczkach unikowych, żyją i giną, polując na jeden cel o wysokiej wartości."

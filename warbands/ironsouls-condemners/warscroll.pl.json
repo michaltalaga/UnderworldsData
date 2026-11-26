@@ -2,6 +2,13 @@
   "inspire": "Natychmiast po wykonaniu rzutu na Atak lub rzutu na Obronę za przyjaznego wojownika, jeśli ten rzut zawierał jakikolwiek {icon:crit}, Inspire tego wojownika.",
   "reactions": [
     {
+      "name": "Bastion przeciw Ciemności",
+      "flavorText": "Potępiający stoją nieugięcie wobec okropności krain.",
+      "rulesText": "Przyjaznych wojowników bez żetonów Ruchu i/lub Szarży nie można odpychać."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Karzący Cios",
       "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjaznego Brodusa.",
       "flavorText": "Wielki maczuga Brodusa ładuje się niebiańską energią.",
@@ -9,22 +16,15 @@
     },
     {
       "name": "Eterycznie Naładowana Tarcza",
-      "trigger": "Użyj tego natychmiast po tym, jak przeciwnik wybierze broń w ramach Ataku wymierzonego w przyjazną tarczę eteryczną ({icon:shield}).",
+      "trigger": "Użyj tego natychmiast po tym, jak przeciwnik wybierze broń w ramach Ataku wymierzonego w przyjazną tarczę eteryczną ({icon:shield-aetheric}).",
       "flavorText": "Dzięki potężnej niebiańskiej magii tarcze Sekwitorów rozżarzają się błękitną mocą.",
       "rulesText": "Zdolności broni nie mogą być używane podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Eterycznie Naładowany Młot",
-      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjazną tarczę eteryczną ({icon:shield}).",
+      "trigger": "Użyj tego natychmiast po wybraniu broni w ramach Ataku wykonywanego przez przyjazną tarczę eteryczną ({icon:shield-aetheric}).",
       "flavorText": "Broń trzeszcząca od mocy, Sekwitorzy unicestwiają wroga, obracając go w dymiące gruzy.",
       "rulesText": "Ta broń otrzymuje +1 do Zasięgu podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Bastion przeciw Ciemności",
-      "flavorText": "Potępiający stoją nieugięcie wobec okropności krain.",
-      "rulesText": "Przyjaznych wojowników bez żetonów Ruchu i/lub Szarży nie można odpychać."
     }
   ],
   "playstyle": "Trzej wyjątkowo wytrzymali Sekwitorzy Stormcastów, którzy utrzymują pozycje, zamiast gonić wroga. Wojowników bez żetonów Ruchu lub Szarży po prostu nie da się odepchnąć, a tarcze eteryczne mogą wyłączać zdolności broni wroga, czyniąc ich niezwykle trudnymi do ruszenia z miejsca. Inspire uzyskują, wyrzucając krytyka w dowolnym rzucie na Atak lub Obronę, a Wielki Maczuga ich lidera skaluje liczbę kości wraz z numerem rundy bitewnej."

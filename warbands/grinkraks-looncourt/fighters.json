@@ -9,7 +9,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "leader"],
+        "runemarks": ["grinkraks-looncourt", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -19,7 +19,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "leader"],
+        "runemarks": ["grinkraks-looncourt", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -34,9 +34,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "knight", "minion"],
+        "runemarks": ["grinkraks-looncourt", "fly", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "inspired": {
@@ -44,9 +44,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "knight", "minion"],
+        "runemarks": ["grinkraks-looncourt", "fly", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -59,9 +59,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 4, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 4, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "inspired": {
@@ -69,9 +69,9 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 4, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 4, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -84,7 +84,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
         ]
@@ -94,7 +94,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -109,9 +109,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "inspired": {
@@ -119,9 +119,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 3, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -134,7 +134,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -144,7 +144,7 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -159,7 +159,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
@@ -169,7 +169,7 @@
         "save": { "symbol": "shield", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["looncourt", "minion"],
+        "runemarks": ["grinkraks-looncourt", "loonknight"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]

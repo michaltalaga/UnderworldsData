@@ -9,26 +9,10 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 3,
-        "runemarks": ["leader", "slaanesh"],
+        "runemarks": ["the-dread-pageant", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 2,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
@@ -36,19 +20,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 3,
-        "runemarks": ["leader", "slaanesh"],
+        "runemarks": ["the-dread-pageant", "leader"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "hammer",
-            "dice": 3,
-            "damage": 2,
-            "abilities": [
-              { "name": "grievous", "critical": false }
-            ]
-          }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -61,17 +35,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -79,17 +45,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 5,
         "bounty": 2,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 4,
-            "damage": 2,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -102,26 +60,10 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 2,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "swords",
-            "dice": 2,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
@@ -129,26 +71,10 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 1,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 2,
-            "abilities": []
-          },
-          {
-            "name": null,
-            "reach": "melee",
-            "range": 2,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 1,
-            "abilities": []
-          }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] },
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -161,19 +87,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "ranged",
-            "range": 3,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 1,
-            "abilities": [
-              { "name": "grapple", "critical": false }
-            ]
-          }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grapple", "critical": false }] }
         ]
       },
       "inspired": {
@@ -181,19 +97,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["slaanesh"],
+        "runemarks": ["the-dread-pageant"],
         "weapons": [
-          {
-            "name": null,
-            "reach": "ranged",
-            "range": 4,
-            "symbol": "swords",
-            "dice": 3,
-            "damage": 1,
-            "abilities": [
-              { "name": "grapple", "critical": false }
-            ]
-          }
+          { "name": null, "reach": "ranged", "range": 4, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grapple", "critical": false }] }
         ]
       },
       "cardRulesText": null

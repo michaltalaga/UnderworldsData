@@ -4,14 +4,15 @@
   "version": null,
   "grandAlliance": "Order",
   "inspire": "After you make an Attack roll or Save roll for a friendly fighter, if all of the results were successes, Inspire that fighter.",
-  "reactions": [],
-  "abilities": [
+  "reactions": [
     {
       "name": "Aetherquartz Reserve",
       "type": "passive",
       "flavorText": null,
-      "rulesText": "After a friendly fighter is deployed, give that fighter an aetherquartz token.\n\nA friendly fighter that has an aetherquartz token can use the Heightened Senses ability:\n\n{icon:fury} Heightened Senses: Use this immediately after you make an Attack roll or Save roll. Discard this fighter's aetherquartz token. Re-roll any dice in that Attack roll or Save roll."
-    },
+      "rulesText": "After a friendly fighter is deployed, give that fighter an aetherquartz token.\n\nA friendly fighter that has an aetherquartz token can use the Heightened Senses ability:\n\n{icon:surge} Heightened Senses: Use this immediately after you make an Attack roll or Save roll. Discard this fighter's aetherquartz token. Re-roll any dice in that Attack roll or Save roll."
+    }
+  ],
+  "abilities": [
     {
       "name": "Blinding Corona",
       "type": "passive",
@@ -28,7 +29,7 @@
       "name": "Impeccable Aim",
       "type": "passive",
       "flavorText": "Senaela can guide a blazing sunmetal arrow to its target under the most difficult of conditions.",
-      "rulesText": "While a friendly Senaela has an aetherquartz token, their ranged weapons have Brutal ({icon:grievous}) and Ensnare ({icon:cleave})."
+      "rulesText": "While a friendly Senaela has an aetherquartz token, their ranged weapons have Brutal ({icon:brutal}) and Ensnare ({icon:ensnare})."
     },
     {
       "name": "Masterful Stroke",

@@ -2,33 +2,31 @@
   "inspire": "Bezpośrednio po usunięciu żetonu ducha od przyjaznego wojownika, Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Uninspire",
-      "trigger": "Bezpośrednio po przyznaniu Inspired przyjaznego wojownika żetonem ducha, Uninspire tego wojownika.",
+      "name": "Żetony Ducha",
       "flavorText": null,
-      "rulesText": "Bezpośrednio po przyznaniu Inspired przyjaznego wojownika żetonem ducha, Uninspire tego wojownika."
+      "rulesText": "Bezpośrednio po wybraniu przyjaznego wojownika do użycia zdolności Core, możesz usunąć żetony ducha tego wojownika. Bezpośrednio po rozpatrzeniu zdolności Core dla przyjaznego wojownika, możesz dać mu żeton ducha. Przyjaźni wojownicy posiadający jakiekolwiek żetony ducha nie mogą być Inspired ani posiadać żetonów skarbów.\n\nSarrakkar Unleashed: Ten wojownik ma +2 Move, dopóki posiada jakiekolwiek żetony ducha.\n\nGorl Unleashed: Ten wojownik ma +1 Save, dopóki posiada jakiekolwiek żetony ducha.\n\nKheira Unleashed: Broń biała tego wojownika (z wyłączeniem Upgrades) ma +1 kość ataku, dopóki posiada jakiekolwiek żetony ducha.\n\nLupan Unleashed: Wyniki {icon:surrounded} liczą się jako sukcesy w rzutach na atak wykonywanych dla przyjaznego Lupana, dopóki posiada jakiekolwiek żetony ducha."
     }
   ],
   "abilities": [
     {
-      "name": "Żetony Ducha",
-      "flavorText": null,
-      "rulesText": "Bezpośrednio po wybraniu przyjaznego wojownika do użycia zdolności Core, możesz usunąć żetony ducha tego wojownika. Bezpośrednio po rozpatrzeniu zdolności Core dla przyjaznego wojownika, możesz dać mu żeton ducha. Przyjaźni wojownicy posiadający jakiekolwiek żetony ducha nie mogą być Inspired ani posiadać żetonów skarbów.\n\nSarrakkar Unleashed: Ten wojownik ma +2 Move, dopóki posiada jakiekolwiek żetony ducha.\n\nGorl Unleashed: Ten wojownik ma +1 Save, dopóki posiada jakiekolwiek żetony ducha.\n\nKheira Unleashed: Broń biała tego wojownika (z wyłączeniem Upgrades) ma +1 kość ataku, dopóki posiada jakiekolwiek żetony ducha.\n\nLupan Unleashed: Wyniki {icon:fury} liczą się jako sukcesy w rzutach na atak wykonywanych dla przyjaznego Lupana, dopóki posiada jakiekolwiek żetony ducha."
-    },
-    {
       "name": "Pod Kontrolą",
+      "trigger": "Użyj tego w swoim Power step.",
       "flavorText": null,
-      "rulesText": "Użyj tej zdolności w swoim Power step. Jeśli na polu bitwy znajdują się jacykolwiek przyjaźni Inspired wojownicy, przesuń każdego przyjaznego Uninspired wojownika o maksymalnie 1 heks. Możesz użyć tej zdolności tylko raz na grę."
+      "rulesText": "Jeśli na polu bitwy znajdują się jacykolwiek przyjaźni wojownicy, którzy są Inspired, pchnij każdego przyjaznego wojownika, który jest Uninspired, o maksymalnie 1 heks. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Samowładztwo",
+      "name": "Samokontrola",
+      "trigger": "Użyj tego w swoim Power step.",
       "flavorText": null,
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego Uninspired wojownika. Usuń żetony ducha tego wojownika, a następnie daj mu Guard token. Możesz użyć tej zdolności tylko raz na grę."
+      "rulesText": "Wybierz przyjaznego wojownika, który jest Uninspired. Usuń żetony ducha tego wojownika, a następnie daj mu Guard token. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Wybudzone Instynkty",
+      "name": "Uwolnione Instynkty",
+      "trigger": "Użyj tego w swoim Power step.",
       "flavorText": null,
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Rzuty na Save tego wojownika nie mogą być modyfikowane przez Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
+      "rulesText": "Wybierz przyjaznego wojownika. Na rzuty obronne tego wojownika nie mogą wpływać Cleave ({icon:cleave}) ani Ensnare ({icon:ensnare}) w następnej turze. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
-  "playstyle": "Czwórka agresywnych beastmenów, którzy wzmacniają się żetonami ducha, zyskując dodatkowy Move, Save lub kości ataku — zależnie od wojownika. Haczyk w tym, że wojownicy noszący żetony ducha nie mogą być Inspired ani trzymać skarbów, co wymusza ciągły wybór między czystą siłą bojową a kontrolą celów. Sfora gra jak szybki, mocno bijący zawadiaka, który musi w odpowiednim momencie zrzucić żetony i wykonać Inspire."
+  "playstyle": "Czwórka agresywnych beastmenów, którzy wzmacniają się żetonami ducha, zyskując dodatkowy Move, Save lub kości ataku — zależnie od wojownika. Haczyk w tym, że wojownicy noszący żetony ducha nie mogą być Inspired ani trzymać skarbów, co wymusza ciągły wybór między czystą siłą bojową a kontrolą celów. Sfora gra jak szybki, mocno bijący zawadiaka, który musi w odpowiednim momencie zrzucić żetony i wykonać Inspire.",
+  "generalRules": "Uninspire: Bezpośrednio po daniu żetonu ducha przyjaznemu wojownikowi, który jest Inspired, Uninspire tego wojownika."
 }

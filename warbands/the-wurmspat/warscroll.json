@@ -7,36 +7,38 @@
   "reactions": [
     {
       "name": "Disgustingly Resilient",
-      "type": "reaction",
-      "trigger": "Immediately before damage is inflicted on a friendly fighter by an Attack without Cleave ({icon:cleave}), if the Save roll contained any {icon:shield}",
+      "type": "passive",
       "flavorText": "Nurgle's chosen are all but inured to pain.",
       "rulesText": "Immediately before damage is inflicted on a friendly fighter by an Attack without Cleave ({icon:cleave}), if the Save roll contained any {icon:shield}, reduce the damage of that Attack by 1."
+    },
+    {
+      "name": "Grandfather's Gifts",
+      "type": "passive",
+      "flavorText": "One scratch, and the plagues do their great work...",
+      "rulesText": "Bile Blade {icon:bile-blade}: If the Attack was successful, give the target a bile token after the Attack has been resolved.\n\nEnemy fighters have -1 Move while they have any bile tokens. Remove all bile tokens from enemy fighters at the end of the battle round."
     }
   ],
   "abilities": [
     {
-      "name": "Grandfather's Gifts",
-      "type": "passive",
-      "flavorText": "One scratch, and the plagues do their great work…",
-      "rulesText": "Bile Blade {icon:fury}: If the Attack was successful, give the target a bile token after the Attack has been resolved.\n\nEnemy fighters have -1 Move while they have any bile tokens. Remove all bile tokens from enemy fighters at the end of the battle round."
-    },
-    {
       "name": "Steady Advance",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "No need to hurry - there will be boons for all, in due time.",
-      "rulesText": "Use this in your Power step. Pick up to 2 friendly fighters. Push each of those fighters 1 hex. You can only use this ability once per game."
+      "rulesText": "Pick up to 2 friendly fighters. Push each of those fighters 1 hex. You can only use this ability once per game."
     },
     {
       "name": "Nauseous Revulsion",
       "type": "action",
-      "flavorText": "Not everyone appreciates the nature of Fecula's gifts. Ingrates…",
-      "rulesText": "Use this in your Power step. Enemy fighters' melee weapons have -1 Attack dice in the next turn. You can only use this ability once per game."
+      "trigger": "Use this in your Power step.",
+      "flavorText": "Not everyone appreciates the nature of Fecula's gifts. Ingrates...",
+      "rulesText": "Enemy fighters' melee weapons have -1 Attack dice in the next turn. You can only use this ability once per game."
     },
     {
       "name": "Blades of Putrefaction",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "Vile slime and liquid agues drip from the edges of the Wurmspat's blades.",
-      "rulesText": "Use this in a Power step. Friendly fighters' melee weapons have Grievous ({icon:grievous}) in addition to any other Weapon abilities in the next turn. You can only use this ability once per game."
+      "rulesText": "Friendly fighters' melee weapons have Grievous ({icon:grievous}) in addition to any other Weapon abilities in the next turn. You can only use this ability once per game."
     }
   ],
   "playstyle": "Three tough Nurgle elites who advance slowly and grind opponents down. Their bile-coated blades poison enemies, stripping Move so foes cannot escape, while damage-reduction against non-Cleaving attacks makes them brutally hard to kill. Low mobility is the trade-off, so the warband wins by tanking hits, slowing the board to a crawl and dismantling isolated targets over many rounds."

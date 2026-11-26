@@ -10,27 +10,30 @@
       "type": "reaction",
       "trigger": "Use this immediately after an Inspired vulnerable friendly fighter in enemy territory used a Core ability.",
       "flavorText": null,
-      "rulesText": "Pick one:\n\n• Uninspire and heal that fighter. For the rest of the battle round, this fighter cannot be healed or Inspired.\n\n• Pick an enemy fighter within 3 hexes of this fighter and roll a number of Attack dice equal to the battle round. On a roll of {icon:fury} or {icon:crit}, inflict 1 damage on that fighter."
+      "rulesText": "Pick one:\n\n- Uninspire and heal that fighter. For the rest of the battle round, this fighter cannot be healed or Inspired.\n\n- Pick an enemy fighter within 3 hexes of this fighter and roll a number of Attack dice equal to the battle round. On a roll of {icon:hammer} or {icon:crit}, inflict 1 damage on that fighter."
     }
   ],
   "abilities": [
     {
       "name": "Ranger Elite",
-      "type": "action",
-      "flavorText": "To deliver the killing blow, first a hunter must find the right position…",
-      "rulesText": "Use this immediately after your Action step. Push each friendly fighter a number of hexes equal to the battle round. Those pushes must end in enemy territory. You can only use this ability once per game."
+      "type": "reaction",
+      "trigger": "Use this immediately after your Action step.",
+      "flavorText": "To deliver the killing blow, first a hunter must find the right position...",
+      "rulesText": "Push each friendly fighter a number of hexes equal to the battle round. Those pushes must end in enemy territory. You can only use this ability once per game."
     },
     {
       "name": "Forward the Vanguard!",
-      "type": "action",
+      "type": "reaction",
+      "trigger": "Use this immediately after your Action step.",
       "flavorText": "To fight in the Vanguard Chamber demands a courageous and adventurous spirit indeed.",
-      "rulesText": "Use this immediately after your Action step. Pick a friendly fighter that is not in enemy territory and not adjacent to any enemy fighters. That friendly fighter can Move. You can only use this ability once per game."
+      "rulesText": "Pick a friendly fighter that is not in enemy territory and not adjacent to any enemy fighters. That friendly fighter can Move. You can only use this ability once per game."
     },
     {
       "name": "Behind Enemy Lines",
-      "type": "action",
+      "type": "reaction",
+      "trigger": "Use this immediately after your Action step.",
       "flavorText": "Like all Vanguard warriors, the Farstriders are well used to fighting in hostile conditions and without support.",
-      "rulesText": "Use this immediately after your Action step. Pick a damaged friendly fighter in enemy territory. Give that fighter a Guard token. You can only use this ability once per game."
+      "rulesText": "Pick a damaged friendly fighter in enemy territory. Give that fighter a Guard token. You can only use this ability once per game."
     }
   ],
   "playstyle": "Three elite Stormcast Vanguard rangers, each armed with both ranged and melee weapons. They thrive on aggressive board control, using one-shot abilities to push the whole trio deep into enemy territory turn one and Inspire by attacking twice with different weapons in a phase. Once Inspired and in enemy lines, their Vanguard reaction lets them heal or pick off nearby foes."

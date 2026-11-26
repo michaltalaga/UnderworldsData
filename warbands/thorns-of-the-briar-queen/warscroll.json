@@ -6,6 +6,26 @@
   "inspire": "At the start of your turn, Inspire each friendly fighter that is adjacent to any enemy fighters.",
   "reactions": [
     {
+      "name": "Wave of Terror",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "If the target of a friendly fighter's Attack is adjacent to another friendly fighter that has any Charge tokens, the target is Surrounded for that Attack."
+    },
+    {
+      "name": "Soul Warden",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Pick a friendly Varclav to use this ability. Pick up to 2 friendly minions ({icon:minion}). Push each of those fighters up to 2 hexes. Then, you can give each of those fighters a Charge token. This ability can only be used once per battle round."
+    },
+    {
+      "name": "Mugged",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Immediately after an enemy fighter is picked to be mugged (see right), pick a friendly fighter that is not your leader ({icon:leader}). Remove that fighter from the battlefield and place them in an empty hex adjacent to that enemy fighter. Then, you can give that friendly fighter a Charge token."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Paired Thugs",
       "type": "reaction",
       "trigger": "Use this immediately after a friendly fighter Moves.",
@@ -32,26 +52,6 @@
       "trigger": "Use this immediately after an enemy fighter Moves if they are holding a treasure token.",
       "flavorText": "Darest thou clasp a relic of yore when the spirits of the dead are abroad?",
       "rulesText": "Pick that fighter to be mugged. You can only use this ability once per game."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Wave of Terror",
-      "type": "passive",
-      "flavorText": "",
-      "rulesText": "If the target of a friendly fighter's Attack is adjacent to another friendly fighter that has any Charge tokens, the target is Surrounded for that Attack."
-    },
-    {
-      "name": "Soul Warden",
-      "type": "action",
-      "flavorText": "",
-      "rulesText": "Pick a friendly Varclav to use this ability. Pick up to 2 friendly minions ({icon:minion}). Push each of those fighters up to 2 hexes. Then, you can give each of those fighters a Charge token. This ability can only be used once per battle round."
-    },
-    {
-      "name": "Mugged",
-      "type": "passive",
-      "flavorText": "",
-      "rulesText": "Immediately after an enemy fighter is picked to be mugged (see right), pick a friendly fighter that is not your leader ({icon:leader}). Remove that fighter from the battlefield and place them in an empty hex adjacent to that enemy fighter. Then, you can give that friendly fighter a Charge token."
     }
   ],
   "playstyle": "Seven brittle Nighthaunt spirit hosts that win through relentless repositioning rather than raw toughness. Reactions let a chosen ghost teleport adjacent to a marked enemy, and charged fighters surround targets to strip their saves. They inspire by ending the turn next to enemies, rewarding an aggressive teleport-swarm that crashes into the foe and refuses to let them act unpunished."

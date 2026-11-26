@@ -4,8 +4,8 @@
   "version": null,
   "grandAlliance": "Chaos",
   "inspire": "After an Action step, if a friendly fighter is vulnerable, Inspire that fighter.",
-  "reactions": [],
-  "abilities": [
+  "generalRules": "In the Muster Warbands step of 'Setting Up', place a generic token on the 'Start' space of this warscroll's tracker. Advance that token 1 space clockwise immediately:\n\n- after your turn.\n- after damage is inflicted on a friendly fighter.\n- after your turn if your warband holds more treasure tokens than your opponent.\n\nTracker spaces, clockwise from Start: 1 (Start), 1, Round Number, 2, 2 (see {icon:surge} Reap a Harvest), 3, 2.",
+  "reactions": [
     {
       "name": "Blooming Plague",
       "type": "passive",
@@ -21,15 +21,11 @@
     {
       "name": "Reap a Harvest",
       "type": "reaction",
+      "trigger": "Use this immediately after placing your token on this space.",
       "flavorText": null,
-      "rulesText": "Use this immediately after placing your token on this space. Pick a friendly fighter. Heal that fighter."
-    },
-    {
-      "name": "Tracker",
-      "type": "passive",
-      "flavorText": null,
-      "rulesText": "In the Muster Warbands step of 'Setting Up', place a generic token on the 'Start' space of this warscroll's tracker. Advance that token 1 space clockwise immediately:\n\n• after your turn.\n\n• after damage is inflicted on a friendly fighter.\n\n• after your turn if your warband holds more treasure tokens than your opponent."
+      "rulesText": "Pick a friendly fighter. Heal that fighter."
     }
   ],
+  "abilities": [],
   "playstyle": "Five near-unkillable Nurgle fighters whose uninspired bodies cap incoming damage at two per turn. A clockwise tracker advances as turns pass, damage lands and treasure is held, scaling Gardener characteristics and healing fighters as it ticks. The warband grinds slowly forward, all but impossible to remove, winning through sheer endurance while its objective-fed engine steadily strengthens its fighters."
 }

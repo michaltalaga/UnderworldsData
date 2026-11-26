@@ -11,7 +11,7 @@
         "bounty": 3,
         "runemarks": ["magores-fiends", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "inspired": {
@@ -21,7 +21,7 @@
         "bounty": 3,
         "runemarks": ["magores-fiends", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [{ "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -31,7 +31,7 @@
       "name": "Riptooth",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["magores-fiends"],
@@ -41,12 +41,12 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["magores-fiends"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -61,7 +61,7 @@
         "bounty": 1,
         "runemarks": ["magores-fiends"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "inspired": {
@@ -71,7 +71,7 @@
         "bounty": 1,
         "runemarks": ["magores-fiends"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -84,9 +84,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["leader", "magores-fiends"],
+        "runemarks": ["magores-fiends"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -94,9 +94,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["leader", "magores-fiends"],
+        "runemarks": ["magores-fiends"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null

@@ -12,7 +12,7 @@
         "runemarks": ["hedkrakkas-madmob", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": true }] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": true }] }
         ]
       },
       "inspired": {
@@ -23,7 +23,7 @@
         "runemarks": ["hedkrakkas-madmob", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "stagger", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -46,9 +46,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["leader", "hedkrakkas-madmob"],
+        "runemarks": ["hedkrakkas-madmob"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }, { "name": "brutal", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -58,22 +58,22 @@
       "name": "Wollop",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["hedkrakkas-madmob"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 4,
         "bounty": 2,
         "runemarks": ["hedkrakkas-madmob"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }, { "name": "cleave", "critical": false }] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }, { "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -83,24 +83,24 @@
       "name": "Dakko",
       "uninspired": {
         "move": 3,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 4,
         "bounty": 1,
         "runemarks": ["hedkrakkas-madmob"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "brutal", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 4,
         "bounty": 1,
         "runemarks": ["hedkrakkas-madmob"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] },
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "brutal", "critical": false }] }
         ]
       },
       "cardRulesText": null

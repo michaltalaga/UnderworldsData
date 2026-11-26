@@ -6,6 +6,26 @@
   "inspire": "Immediately after resolving a Ploy that picked a friendly fighter, Inspire that fighter.",
   "reactions": [
     {
+      "name": "Swarm",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Pick a friendly leader ({icon:leader}) to use this ability. Pick a slain friendly minion ({icon:minion}). Raise that fighter and place them on an empty starting hex then give that fighter a Raise token."
+    },
+    {
+      "name": "Scheming Pack",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "Friendly schemers' ({icon:schemer}) melee weapons have Grievous ({icon:grievous}) while the target is Flanked or Surrounded."
+    },
+    {
+      "name": "Untimely Promotion",
+      "type": "passive",
+      "flavorText": null,
+      "rulesText": "While a friendly Skritch is slain, Krrk is a leader ({icon:leader})."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Skitter",
       "type": "reaction",
       "trigger": "Use this immediately after a friendly fighter adjacent to any friendly fighters is picked to use a Core ability.",
@@ -18,32 +38,13 @@
       "trigger": "Use this immediately after a friendly fighter adjacent to any friendly fighters is picked to use a Core ability.",
       "flavorText": "A Skaven must always be on their guard. Especially when around other Skaven.",
       "rulesText": "Give that fighter a Guard token. You can only use this ability once per game."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Swarm",
-      "type": "action",
-      "flavorText": "",
-      "rulesText": "Pick a friendly leader ({icon:leader}) to use this ability. Pick a slain friendly minion ({icon:minion}). Raise that fighter and place them on an empty starting hex then give that fighter a Raise token."
-    },
-    {
-      "name": "Scheming Pack",
-      "type": "passive",
-      "flavorText": "",
-      "rulesText": "Friendly schemers' ({icon:destined}) melee weapons have Grievous ({icon:grievous}) while the target is Flanked or Surrounded."
-    },
-    {
-      "name": "Untimely Promotion",
-      "type": "passive",
-      "flavorText": "",
-      "rulesText": "While a friendly Skritch is slain, Krrk is a leader ({icon:leader})."
     },
     {
       "name": "'Out my way, fool-things!'",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "Skritch and his more useful minions are well-versed in getting themselves out of danger, and into the best position.",
-      "rulesText": "Use this in your Power step. Pick a friendly fighter and another fighter that is adjacent to them. Remove those fighters from the battlefield and then place each in the hex the other was removed from. You can only use this ability once per game."
+      "rulesText": "Pick a friendly fighter and another fighter that is adjacent to them. Remove those fighters from the battlefield and then place each in the hex the other was removed from. You can only use this ability once per game."
     }
   ],
   "playstyle": "A five-strong skaven swarm of fragile, expendable bodies. The pack clusters together so flanked and surrounded enemies suffer Grievous strikes, while its leader raises slain minions back onto starting hexes to keep the numbers up. Survival depends on weight of bodies rather than resilience, trading cheap minions to grind opponents down through positioning and attrition."

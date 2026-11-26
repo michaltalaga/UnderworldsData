@@ -2,6 +2,23 @@
   "inspire": "Na początku swojej tury, Inspire każdego przyjaznego wojownika, który jest sąsiadujący z dowolnym wrogim wojownikiem.",
   "reactions": [
     {
+      "name": "Fala Grozy",
+      "flavorText": null,
+      "rulesText": "Jeśli cel Ataku przyjaznego wojownika sąsiaduje z innym przyjaznym wojownikiem, który ma dowolne żetony Charge, cel jest Surrounded na czas tego Ataku."
+    },
+    {
+      "name": "Strażnik Dusz",
+      "flavorText": null,
+      "rulesText": "Wybierz przyjaznego Varclava, który użyje tej zdolności. Wybierz do 2 przyjaznych sługusów ({icon:minion}). Przepchnij każdego z tych wojowników o maksymalnie 2 heksy. Następnie możesz dać każdemu z tych wojowników żeton Charge. Tej zdolności można użyć tylko raz na rundę bitwy."
+    },
+    {
+      "name": "Napadnięty",
+      "flavorText": null,
+      "rulesText": "Natychmiast po tym, jak wrogi wojownik zostanie wybrany do napadnięcia (patrz po prawej), wybierz przyjaznego wojownika, który nie jest twoim przywódcą ({icon:leader}). Usuń tamtego wojownika z pola bitwy i umieść go na pustym heksie sąsiadującym z tamtym wrogim wojownikiem. Następnie możesz dać temu przyjaznemu wojownikowi żeton Charge."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Zgrany Duet",
       "trigger": "Użyj natychmiast po tym, jak przyjazny wojownik wykona Ruch.",
       "flavorText": "Przestępcy i zabójcy za życia, przestępcy i zabójcy na wieki...",
@@ -24,23 +41,6 @@
       "trigger": "Użyj natychmiast po tym, jak wrogi wojownik wykona Ruch, jeśli trzyma żeton skarbu.",
       "flavorText": "Czy śmiesz dotykać reliktu dawnych czasów, gdy duchy umarłych krążą wśród żywych?",
       "rulesText": "Wybierz tamtego wojownika, który zostanie napadnięty. Możesz użyć tej zdolności tylko raz na grę."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Fala Terroru",
-      "flavorText": "",
-      "rulesText": "Jeśli cel Ataku przyjaznego wojownika sąsiaduje z innym przyjaznym wojownikiem posiadającym jakiekolwiek żetony Szarży, cel jest Otoczony podczas tego Ataku."
-    },
-    {
-      "name": "Strażnik Dusz",
-      "flavorText": "",
-      "rulesText": "Wybierz przyjaznego Varclave'a, aby użył tej zdolności. Wybierz do 2 przyjaznych sługusów ({icon:minion}). Przesuń każdego z tych wojowników o do 2 pól. Następnie możesz dać każdemu z tych wojowników żeton Szarży. Ta zdolność może być użyta tylko raz na rundę bitewną."
-    },
-    {
-      "name": "Napad",
-      "flavorText": "",
-      "rulesText": "Natychmiast po tym, jak wrogi wojownik zostanie wybrany do napadnięcia (patrz obok), wybierz przyjaznego wojownika, który nie jest twoim przywódcą ({icon:leader}). Usuń tamtego wojownika z pola bitwy i umieść go w pustym polu sąsiadującym z tamtym wrogim wojownikiem. Następnie możesz dać temu przyjaznemu wojownikowi żeton Szarży."
     }
   ],
   "playstyle": "Siedem kruchych duchowych zastępów Nighthaunt, które zwyciężają dzięki nieustannemu repozycjonowaniu, a nie surowej wytrzymałości. Reakcje pozwalają wybranemu duchowi teleportować się obok oznaczonego wroga, a wojownicy z żetonami Szarży otaczają cele, by pozbawić ich rzutów na Obronę. Inspirują się (Inspire), kończąc turę obok wrogów, co nagradza agresywny rój teleportujących się duchów, który wbija się w przeciwnika i nie pozwala mu działać bezkarnie."

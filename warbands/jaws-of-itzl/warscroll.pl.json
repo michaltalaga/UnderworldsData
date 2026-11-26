@@ -3,7 +3,7 @@
   "reactions": [
     {
       "name": "Drapieżni Wojownicy",
-      "trigger": "Użyj tego natychmiast po nieudanym ataku wręcz wrogiego wojownika, jeśli celem był przyjazny saurus ({icon:leader}), a rzut na Save zawierał jakikolwiek {icon:dodge}.",
+      "trigger": "Użyj tego natychmiast po nieudanym ataku wręcz wrogiego wojownika, jeśli celem był przyjazny saurus ({icon:saurus}), a rzut na Save zawierał jakikolwiek {icon:shield}.",
       "flavorText": "Z ostrzami tarcz i szczękami niczym imadła, saurusy są równie śmiertelne w obronie, jak i w ataku.",
       "rulesText": "Zadaj 1 obrażenie temu wrogiemu wojownikowi."
     }
@@ -11,18 +11,21 @@
   "abilities": [
     {
       "name": "Instynktowna Kontrola",
-      "flavorText": "Saurusy nie są poskramiaczami bestii, lecz gadziopodobne stworzenia, które się wokół nich roją, odpowiadają na ich agresję, rzucając się na wrogów z błyskiem jadowitych szczęk.",
-      "rulesText": "Użyj tego natychmiast po wybraniu celu jako części ataku wykonanego przez przyjaznego saurusa ({icon:leader}). Wybierz przyjaznego miniona ({icon:minion}), który nie posiada żetonów Move ani Charge. Ten wojownik może wykonać Move."
+      "trigger": "Użyj tego natychmiast po wybraniu celu w ramach ataku wykonywanego przez przyjaznego saurusa ({icon:saurus}).",
+      "flavorText": "Saurusy nie są treserami bestii, lecz gadzie stworzenia roją się wokół nich, reagując na ich agresję i rzucając się na wrogów z kłapiącymi, jadowitymi szczękami.",
+      "rulesText": "Wybierz przyjaznego minionа ({icon:minion}) bez żetonów Move ani Charge. Ten wojownik może wykonać Move."
     },
     {
-      "name": "Dzika Masakra",
-      "flavorText": "Gdy zostaną odcięte od wpływu swych panów, saurusy powracają do dzikich instynktów, używając naturalnej broni, by rozszarpywać ofiary w fontannach krwi i wnętrzności.",
-      "rulesText": "Użyj tego podczas Power step. Wybierz wrogiego wojownika sąsiadującego z uszkodzonym przyjaznym saurusem ({icon:leader}), który nie posiada żetonów Charge. Rzuć kością ataku za każdy żeton obrażeń, który posiada ten przyjazny wojownik. Zadaj wrogiemu wojownikowi tyle obrażeń, ile wyrzucono {icon:fury} i {icon:crit}. Możesz użyć tej zdolności tylko raz na grę. Za każdym razem, gdy wrogie wojownik zostanie pokonany przez tę zdolność, możesz użyć jej jeszcze raz w tej grze."
+      "name": "Dzikie Szarpanie",
+      "trigger": "Użyj tego podczas Power step.",
+      "flavorText": "Odcięte od wpływu swoich panów, saurusy wracają do dzikich instynktów, rozszarpując ofiary naturalną bronią wśród fontann krwi i wnętrzności.",
+      "rulesText": "Wybierz wrogiego wojownika przylegającego do rannego przyjaznego saurusa ({icon:saurus}), który nie ma żetonów Charge. Rzuć kością ataku za każdy żeton obrażeń, który ma ten przyjazny wojownik. Zadaj temu wrogiemu wojownikowi liczbę obrażeń równą liczbie wyrzuconych {icon:swords} i {icon:crit}. Możesz użyć tej zdolności tylko raz na grę. Za każdym razem, gdy wrogi wojownik zostanie zabity przez tę zdolność, możesz użyć tej zdolności jeszcze raz w tej grze."
     },
     {
-      "name": "Nieugięty",
-      "flavorText": "Saurusy to stworzenia o zimnokrwistej determinacji. Jeśli Wielki Plan wymaga od nich obrony pozycji, wypełnią to zadanie bez drżenia.",
-      "rulesText": "Użyj tego podczas Power step. Wybierz przyjaznego saurusa ({icon:leader}). Ten wojownik nie może zostać odparty do końca rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Nieustępliwy",
+      "trigger": "Użyj tego podczas Power step.",
+      "flavorText": "Saurusy to istoty o zimnokrwistym skupieniu. Jeśli Wielki Plan wymaga od nich obrony jakiegoś punktu, uczynią to bez mrugnięcia okiem.",
+      "rulesText": "Wybierz przyjaznego saurusa ({icon:saurus}). Tego wojownika nie można odepchnąć do końca rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Czworo Seraphon dowodzonych przez potężnego, niewzruszonego Saurusa otoczonego sługami-skinkami. Saurus kotwiczy cele i nie da się go odeprzeć, a jego ataki pozwalają sługom rzucać się do natarcia. Jego dzika Dzika Masakra skaluje się z otrzymanymi obrażeniami i może zostać użyta ponownie po każdym zabójstwie, a drużyna uzyskuje Inspire, raniąc przeciwników podczas tury wroga."

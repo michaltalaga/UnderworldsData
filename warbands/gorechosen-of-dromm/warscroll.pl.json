@@ -3,32 +3,33 @@
   "reactions": [
     {
       "name": "Krwawa Danina",
-      "trigger": "Natychmiast po zadaniu obrażeń wojownikowi",
-      "flavorText": "Khorne nie dba o to, skąd płynie krew — liczy się jedynie to, że płynie.",
-      "rulesText": "zyskaj 1 żeton krwawej daniny."
+      "flavorText": "Khorne nie dba o to, skąd płynie krew, liczy się tylko to, że płynie.",
+      "rulesText": "Natychmiast po zadaniu obrażeń wojownikowi zdobądź 1 żeton krwawej daniny."
     },
     {
-      "name": "Brutalne Porachunki",
-      "trigger": "Natychmiast po tym, jak wróg wojownik zostaje poległy",
+      "name": "Brutalne Rozliczenie",
       "flavorText": "Dromm żąda całkowitego i ostatecznego unicestwienia wroga.",
-      "rulesText": "zyskaj liczbę żetonów krwawej daniny równą charakterystyce Bounty tego wojownika."
+      "rulesText": "Natychmiast po tym, jak wrogi wojownik zostanie zabity, zdobądź liczbę żetonów krwawej daniny równą wartości cechy Bounty tego wojownika."
     }
   ],
   "abilities": [
     {
       "name": "Zew Krwi",
-      "flavorText": "W miarę jak gorączka bitwy narasta, wojownicy rzucają się ku sobie, ogarnięci nieodpartą żądzą krwi i przemocy.",
-      "rulesText": "Użyj tego w kroku Power step. Wybierz 2 wojowników bez żetonów ruchu ani szarży. Przesuń każdego wojownika o 1 pole tak, aby byli sąsiadujący. Przed każdym przesunięciem możesz odrzucić 1 ze swoich żetonów krwawej daniny. Jeśli to zrobisz, możesz zamiast tego przesunąć tego wojownika o 2 pola. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego w Power step.",
+      "flavorText": "Gdy narasta gorączka bitwy, wojownicy rzucają się ku sobie, owładnięci żądzą krwi i przemocy.",
+      "rulesText": "Wybierz 2 wojowników bez żetonów Move ani Charge. Przesuń (push) każdego z nich o 1 heks tak, aby stali obok siebie. Przed każdym przesunięciem możesz odrzucić 1 ze swoich żetonów krwawej daniny. Jeśli to zrobisz, możesz zamiast tego przesunąć tego wojownika o 2 heksy. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Wzbudzenie Wściekłości",
-      "flavorText": "Gdy Khorne raz zapanuje nad miejscem, niewielu ma dość siły, by oprzeć się jego wezwaniu do rzezi.",
-      "rulesText": "Użyj tego w kroku Power step. Odrzuć 8 żetonów krwawej daniny, a następnie wybierz wrogiego wojownika. Twój przeciwnik wykonuje Szarżę tym wojownikiem. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Rozwścieczenie",
+      "trigger": "Użyj tego w Power step.",
+      "flavorText": "Gdy Khorne obejmie panowanie nad jakimś miejscem, niewielu ma dość siły, by odrzucić jego wezwanie do rzezi.",
+      "rulesText": "Odrzuć 8 żetonów krwawej daniny, a następnie wybierz wrogiego wojownika. Twój przeciwnik rozpatruje Charge tym wojownikiem. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Ostateczne Szaleństwo",
-      "flavorText": "Wojownicy Khorne'a potrafią zlekceważyć nawet najcięższe rany w amoku krwawej rzezi.",
-      "rulesText": "Użyj tego natychmiast po zadaniu obrażeń przyjaznemu wojownikowi, jeśli ten wojownik miałby zostać poległy. Odrzuć dowolną liczbę swoich żetonów krwawej daniny. Rzuć kością ataku za każdy odrzucony w ten sposób żeton. Za każdy wynik {icon:crit} usuń żetony obrażeń z tego wojownika, aż stanie się vulnerable. Ten wojownik zostaje poległy na końcu rundy bitewnej. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Ostatni Szał",
+      "trigger": "Użyj tego natychmiast po zadaniu obrażeń przyjaznemu wojownikowi, jeśli ten wojownik miałby zostać zabity.",
+      "flavorText": "Wojownicy Khorne'a w szale rozlewu krwi potrafią zignorować nawet najcięższe rany.",
+      "rulesText": "Odrzuć dowolną liczbę swoich żetonów krwawej daniny. Rzuć jedną kością Ataku za każdy żeton odrzucony w ten sposób. Jeśli wypadnie jakikolwiek {icon:crit}, usuwaj żetony obrażeń z tego wojownika, aż stanie się vulnerable. Ten wojownik zostaje zabity na koniec rundy bitwy. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Trójka berserkerów Khorne'a oddanych skrajnej, nieustępliwej agresji. Każde obrażenie zadane jakiemukolwiek wojownikowi zasila żetony krwawej daniny, które napędzają Inspire całego warbandu i pozwalają konającym wojownikom uczepić się życia dla jednej ostatniej krwawej rzezi. Mając niewielu wojowników i żadnej subtelności, warband rzuca się na oślep w zwarcie, zbierając krew z obu stron, by podsycać swą eskalującą przemoc."

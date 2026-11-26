@@ -10,24 +10,28 @@
   ],
   "abilities": [
     {
-      "name": "Sroga Ultimatum",
+      "name": "Straszliwe Ultimatum",
+      "trigger": "Użyj tego w swoim Power step.",
       "flavorText": "Żądanie, któremu nie można odmówić.",
-      "rulesText": "Użyj tego w swoim Power step. Przyjaźni wojownicy nie mogą być wybierani jako cel Ataku w następnym kroku Akcji, chyba że są twoim przywódcą ({icon:leader}). Możesz użyć tej zdolności tylko raz na grę. Tej zdolności nie można użyć, jeśli Mir Kainan został pokonany."
+      "rulesText": "Przyjaźni wojownicy nie mogą zostać wybrani na cel Ataku w następnym kroku Akcji, chyba że są twoim przywódcą ({icon:leader}). Możesz użyć tej zdolności tylko raz na grę. Tej zdolności nie można użyć, jeśli Mir Kainan został zabity."
     },
     {
-      "name": "Szeregi Nienaruszone Przez Bunt",
-      "flavorText": "Każde nadiritowe ostrze Straży Morteków to jedynie jedna z facet przerażająco sprawnej machiny wojennej.",
-      "rulesText": "Użyj tego natychmiast po wybraniu broni jako części ataku wręcz. Jeśli cel jest Flanked i/lub Surrounded, ta broń posiada cechę Grievous ({icon:grievous}) dla tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Szeregi Niezłomne Wobec Sprzeciwu",
+      "trigger": "Użyj tego natychmiast po tym, jak wybierzesz broń w ramach Ataku wręcz.",
+      "flavorText": "Każde nadirytowe ostrze Gwardii Morteków jest jedynie cząstką przerażająco sprawnej machiny wojennej.",
+      "rulesText": "Jeśli cel jest Oskrzydlony i/lub Otoczony, ta broń ma Grievous ({icon:grievous}) podczas tego Ataku. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Postawa Monolitu",
-      "flavorText": "Straż Morteków przyjmuje postawę obronną, znosząc ciosy wroga z lodowatą pogardą.",
-      "rulesText": "Użyj tego w swoim Power step. Wybierz liczbę przyjaznych minionów ({icon:minion}) równą lub mniejszą od numeru rundy bitewnej. Daj każdemu z tych wojowników żeton Guard. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Gwardia Morteków przechodzi do obrony, znosząc ciosy wroga z chłodną pogardą.",
+      "rulesText": "Wybierz liczbę przyjaznych minionów ({icon:minion}) równą lub mniejszą niż numer rundy bitwy. Daj każdemu z tych wojowników Guard token. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Nieustępliwy Szturm",
-      "flavorText": "Ossiarch Bonereapers nie spoczywają, dopóki danina nie zostanie zebrana.",
-      "rulesText": "Użyj tego w swoim Power step. Wybierz przyjaznego miniona ({icon:minion}) posiadającego jakiekolwiek żetony Ruchu i/lub Szarży. Usuń żetony Ruchu i/lub Szarży tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Ossiarch Bonereapers nie spoczną, dopóki danina nie zostanie zebrana.",
+      "rulesText": "Wybierz przyjaznego miniona ({icon:minion}), który ma jakiekolwiek Move token i/lub Charge token. Usuń Move token i/lub Charge token tego wojownika. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Sześć wytrzymałych konstruktów Ossiarch Bonereapers, które walczą jak zdyscyplinowany blok, nacierając w idealnym szyku, tak by każdy Mortek kończył ruch w sąsiedztwie towarzysza. Żetony Guard i blokada uniemożliwiająca obieranie ich za cel sprawiają, że trudno ich wyprzeć, a wrogowie Flanked lub Surrounded cierpią od ciosów Grievous. Zabijanie wrogów zasila żetony bone-tithe, które wydaje się na inspirowanie (Inspire), co nagradza cierpliwe, oparte na szyku zabijanie."

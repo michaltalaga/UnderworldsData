@@ -49,7 +49,7 @@
         "bounty": 2,
         "runemarks": ["ephilims-pandaemonium", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "ensnare", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -100,7 +100,7 @@
         "bounty": 1,
         "runemarks": ["ephilims-pandaemonium", "fly", "minion"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "stagger", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] }
         ]
       },
       "cardRulesText": null

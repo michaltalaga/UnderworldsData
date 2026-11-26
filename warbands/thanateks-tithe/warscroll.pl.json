@@ -2,38 +2,39 @@
   "inspire": "Raz na turę, w swoim Power step, zamiast zagrywać kartę Power, możesz wybrać przyjaznego wojownika i usunąć liczbę swoich cadaver tokenów równą ich charakterystyce Bounty. Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Makabryczni Słudzy",
-      "trigger": "Natychmiast po udanym Ataku przyjaznego wojownika, jeśli cel jest sąsiaduje z jakimkolwiek przyjaznym Retainer {icon:minion}",
+      "name": "Upiorna Świta",
       "flavorText": null,
-      "rulesText": "zyskaj 1 cadaver token."
+      "rulesText": "Natychmiast po udanym Attack przyjaznego wojownika, jeśli cel sąsiaduje z jakimikolwiek przyjaznymi Retainers ({icon:retainer}), zyskaj 1 cadaver token."
     },
     {
-      "name": "Ulotne Miraże",
-      "trigger": "Natychmiast po udanym Ataku wrogiego wojownika wymierzonym w przyjaznego Mortis Reaper {icon:destined}, jeśli rzut na Save zawierał jakiekolwiek sukcesy",
+      "name": "Konstrukty Związane Duszą",
       "flavorText": null,
-      "rulesText": "ten przyjazny wojownik może użyć Stand Fast."
+      "rulesText": "Charakterystyk broni twojego lidera ({icon:leader}) nie można modyfikować. Gdy wybierasz cel w ramach Attack twojego lidera ({icon:leader}) przy użyciu broni do walki wręcz, która nie jest Upgrade, możesz mierzyć zasięg tej broni od przyjaznego Retainera ({icon:retainer}) zamiast od twojego lidera ({icon:leader})."
+    },
+    {
+      "name": "Nieuchwytne Miraże",
+      "flavorText": null,
+      "rulesText": "Natychmiast po udanym Attack wrogiego wojownika, którego celem był przyjazny Mortis Reaper ({icon:mortis-reaper}), jeśli rzut Save zawierał jakiekolwiek sukcesy, ten przyjazny wojownik może użyć Stand Fast."
     }
   ],
   "abilities": [
     {
-      "name": "Konstrukty Związane Duszą",
-      "flavorText": null,
-      "rulesText": "Charakterystyki broni twojego lidera {icon:leader} nie mogą być modyfikowane. Gdy wybierasz cel w ramach Ataku twojego lidera {icon:leader} z użyciem broni do walki wręcz niebędącej Ulepszeniem, możesz mierzyć zasięg tej broni od przyjaznego Retainer {icon:minion} zamiast od swojego lidera {icon:leader}."
-    },
-    {
-      "name": "Niedobrowolni Ofiarodawcy",
-      "flavorText": "Żywi złożą swe kości w ofierze wielkiemu imperium Ossiarchów — czy tego chcą, czy nie.",
-      "rulesText": "Użyj tego na początku kroku Action przeciwnika, jeśli twój lider {icon:leader} jest na polu bitwy. Wybierz wrogiego wojownika, który będzie posiadaczem do końca twojej następnej tury. Natychmiast po tym, jak posiadacz otrzyma obrażenia w wyniku Ataku przyjaznego wojownika, możesz przesunąć każdego przyjaznego Retainer {icon:minion} o 1 hex bliżej posiadacza."
+      "name": "Niechętni Dawcy",
+      "trigger": "Użyj tego na początku Action step przeciwnika, jeśli twój lider ({icon:leader}) jest na polu bitwy.",
+      "flavorText": "Żywi oddadzą swe kości wielkiemu imperium Ossiarchów, z własnej woli bądź nie.",
+      "rulesText": "Wybierz wrogiego wojownika, który będzie posiadaczem do końca twojej następnej tury. Natychmiast po zadaniu obrażeń posiadaczowi w ramach Attack przyjaznego wojownika możesz przepchnąć każdego przyjaznego Retainera ({icon:retainer}) o 1 heks bliżej posiadacza."
     },
     {
       "name": "Wieczna Służba",
-      "flavorText": "Nawet zniszczenie ich fizycznej postaci nie zwalnia Bonereapera z wiecznej służby Nagashowi.",
-      "rulesText": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Wybierz poległego przyjaznego Mortis Reaper {icon:destined}, a następnie rzuć kostką Ataku za każdy usunięty cadaver token. Jeśli rzut zawiera jakikolwiek {icon:fury} lub {icon:crit}, Raise tego wojownika i umieść go na startowym polu w przyjaznym terytorium. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Nawet zniszczenie fizycznej formy nie zwalnia Bonereapera z wiecznej służby Nagashowi.",
+      "rulesText": "Usuń dowolną liczbę swoich cadaver tokenów. Wybierz zabitego przyjaznego Mortis Reapera ({icon:mortis-reaper}), a następnie rzuć jedną kością Attack za każdy usunięty cadaver token. Jeśli rzut zawiera jakiekolwiek {icon:hammer} lub {icon:crit}, Raise tego wojownika i umieść go na heksie startowym na przyjaznym terytorium. Możesz użyć tej zdolności tylko raz na rundę bitwy."
     },
     {
-      "name": "Nekromantyczny Impuls",
-      "flavorText": "Thanatek kanalizuje śmiertelną energię w druzgocącą falę, odpychając wrogów.",
-      "rulesText": "Użyj tego w swoim Power step. Usuń dowolną liczbę swoich cadaver tokenów. Dla każdego wrogiego wojownika sąsiadującego z jakimkolwiek przyjaznym Retainer {icon:minion}, rzuć liczbą kostek Ataku równą liczbie usuniętych cadaver tokenów. Jeśli rzut zawiera jakikolwiek {icon:skull} lub {icon:crit}, zadaj 1 obrażenie temu wrogiemu wojownikowi. W przeciwnym razie usuń Guard tokeny tego wrogiego wojownika i daj mu Stagger token. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Nekromantyczny Puls",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Thanatek przekuwa śmiercionośną energię w miażdżącą falę, by odepchnąć swoich wrogów.",
+      "rulesText": "Usuń dowolną liczbę swoich cadaver tokenów. Za każdego wrogiego wojownika sąsiadującego z jakimikolwiek przyjaznymi Retainers ({icon:retainer}) rzuć liczbą kości Attack równą liczbie usuniętych cadaver tokenów. Jeśli rzut zawiera jakiekolwiek {icon:swords} lub {icon:crit}, zadaj temu wrogiemu wojownikowi 1 obrażenie. W przeciwnym razie usuń Guard tokeny tego wrogiego wojownika i daj mu Stagger token. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Pięć wytrzymałych konstruktów Ossiarch Bonereapers ustawionych tak, by przywódca mierzył ataki od przyległych Retainerów ({icon:minion}), kotwicząc formację opartą na sąsiedztwie sług. Zabójstwa w pobliżu Retainerów odkładają żetony cadaver, które inspirują (Inspire) wojowników i zasilają nekromantyczne zdolności, w tym podnoszenie (Raise) poległych Mortis Reaperów z powrotem na przyjazne terytorium. Solidny i metodyczny oddział napiera naprzód, zbierając żetony, by napędzać wskrzeszanie i kontrolę planszy."

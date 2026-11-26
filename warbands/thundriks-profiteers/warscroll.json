@@ -6,6 +6,14 @@
   "inspire": "After you score an Objective card, if a friendly leader ({icon:leader}) is on the battlefield, you can pick a friendly fighter. Inspire that fighter.",
   "reactions": [
     {
+      "name": "'This is Mine, Fair and Square'",
+      "type": "passive",
+      "flavorText": "The Kharadron have no time for non-binding contracts.",
+      "rulesText": "While a friendly fighter is holding a treasure token and there are no enemy fighters adjacent to them, that fighter cannot be pushed by enemy abilities."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Atmospheric Isolation",
       "type": "reaction",
       "trigger": "Use this immediately after your Action step if a friendly leader ({icon:leader}) used any Core abilities in that step.",
@@ -25,20 +33,13 @@
       "trigger": "Use this immediately after a friendly fighter's ranged Attack if they have no Move or Charge tokens.",
       "flavorText": "Volume of fire solves most problems.",
       "rulesText": "That fighter Attacks again using the same weapon. The target of that Attack must be different to the target of the first Attack and must be within 2 hexes of the first target. You can only use this ability once per game."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "'This is Mine, Fair and Square'",
-      "type": "passive",
-      "flavorText": "The Kharadron have no time for non-binding contracts.",
-      "rulesText": "While a friendly fighter is holding a treasure token and there are no enemy fighters adjacent to them, that fighter cannot be pushed by enemy abilities."
     },
     {
       "name": "By the Code",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "The Kharadron Code grants the duardin leeway to pursue their goals, provided lawful profits are earned and taxes duly paid.",
-      "rulesText": "Use this in a Power step. Pick a friendly fighter. Push that fighter up to 3 hexes. That push must end on a feature token. You can only use this ability once per game."
+      "rulesText": "Pick a friendly fighter. Push that fighter up to 3 hexes. That push must end on a feature token. You can only use this ability once per game."
     }
   ],
   "playstyle": "A five-strong Kharadron Overlords gunline built around overwhelming firepower. They camp objectives and feature tokens, layering ranged reactions for extra range, dice and bonus shots, and Inspire by scoring objectives while their leader lives. A treasure-holding fighter with no adjacent enemies becomes immovable, anchoring their hold-and-shoot game."

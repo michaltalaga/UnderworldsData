@@ -3,26 +3,28 @@
   "reactions": [
     {
       "name": "Pionierzy",
-      "trigger": "Bezpośrednio po tym, jak przyjazny wojownik zakończy Ruch w odległości 1 heksa od żetonu skarbu, możesz popchnąć tego wojownika o 1 heks.",
       "flavorText": null,
-      "rulesText": "Bezpośrednio po tym, jak przyjazny wojownik zakończy Ruch w odległości 1 heksa od żetonu skarbu, możesz popchnąć tego wojownika o 1 heks. To pchnięcie musi zakończyć się na żetonie skarbu."
+      "rulesText": "Bezpośrednio po tym, jak przyjazny wojownik zakończy Move w odległości 1 heksa od żetonu skarbu, możesz pchnąć tego wojownika o 1 heks. To pchnięcie musi zakończyć się na żetonie skarbu."
     }
   ],
   "abilities": [
     {
-      "name": "Niezłomny Obrońca",
-      "flavorText": "Obrońcy cywilizacji oddadzą życie, by chronić skarby śmiertelników przed zniszczeniem i profanacją.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika dzierżącego żeton skarbu. Do końca następnej tury, cecha Save tego wojownika wynosi 3 {icon:shield}. Ta zdolność może być użyta tylko raz na grę."
+      "name": "Niezłomny obrońca",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Obrońcy cywilizacji drogo sprzedadzą swoje życie, by uchronić skarby śmiertelników przed zniszczeniem i zbezczeszczeniem.",
+      "rulesText": "Wybierz przyjaznego wojownika dzierżącego żeton skarbu. Do końca następnej tury cecha Save tego wojownika wynosi 3 {icon:dodge}. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Żarliwa Determinacja",
-      "flavorText": "Ci, którzy wierzą w ideały sprawiedliwości, nie oddadzą ani piędzi ziemi sługom zła.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Do końca następnej tury, przyjaźni wojownicy nie mogą być odpychani ani popychani. Ta zdolność może być użyta tylko raz na grę."
+      "name": "Żarliwa determinacja",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Ci, którzy wierzą w ideały sprawiedliwości, nigdy nie oddadzą sługom zła ani piędzi ziemi.",
+      "rulesText": "Do końca następnej tury przyjaźni wojownicy nie mogą zostać odepchnięci (driven back) ani pchnięci. Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Odzyskać Ziemię",
-      "flavorText": "Mantra obrońców Porządku jest prosta: odzyskamy to, co nam zabrano, cokolwiek by to kosztowało.",
-      "rulesText": "Użyj tej zdolności w swoim Power step. Wybierz przyjaznego wojownika. Do końca następnej tury, rzuty na atak wręcz wykonywane dla tego wojownika w ramach ataków wręcz zawsze uznaje się za posiadające więcej {icon:fury} niż rzut na Save dla celów Drive Back i Overrun. Ta zdolność może być użyta tylko raz na grę."
+      "name": "Odzyskać ziemię",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Mantra czempionów Porządku jest prosta: odzyskamy to, co nam odebrano, bez względu na koszt.",
+      "rulesText": "Wybierz przyjaznego wojownika. Do końca następnej tury rzuty Attack w zwarciu wykonywane dla tego wojownika w ramach Attacków w zwarciu zawsze liczą się jako mające więcej {icon:crit} niż rzut Save na potrzeby Drive Back i Overrun. Tej zdolności można użyć tylko raz na grę."
     }
   ]
 }

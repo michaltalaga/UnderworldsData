@@ -11,7 +11,7 @@
         "bounty": 2,
         "runemarks": ["garreks-reavers", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [] }
         ]
       },
       "inspired": {
@@ -21,7 +21,7 @@
         "bounty": 2,
         "runemarks": ["garreks-reavers", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 3, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 3, "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -31,7 +31,7 @@
       "name": "Karsus",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["garreks-reavers"],
@@ -42,12 +42,12 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["leader", "garreks-reavers"],
+        "runemarks": ["garreks-reavers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "guard", "critical": false }] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "stagger", "critical": false }] },
           { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },
@@ -58,7 +58,7 @@
       "name": "Saek",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 2,
         "runemarks": ["garreks-reavers"],
@@ -68,7 +68,7 @@
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 2 },
+        "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 2,
         "runemarks": ["garreks-reavers"],
@@ -83,22 +83,22 @@
       "name": "Arnulf",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["garreks-reavers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["garreks-reavers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null
@@ -108,23 +108,21 @@
       "name": "Targor",
       "uninspired": {
         "move": 4,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["garreks-reavers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 1, "abilities": [] },
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 2, "damage": 1, "abilities": [] }
         ]
       },
       "inspired": {
         "move": 5,
-        "save": { "symbol": "shield", "dice": 1 },
+        "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
         "runemarks": ["garreks-reavers"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 1, "damage": 2, "abilities": [] },
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
       },

@@ -7,15 +7,14 @@
   "reactions": [
     {
       "name": "Razed Realm",
-      "type": "reaction",
+      "type": "action",
       "trigger": "You can use this ability once per Power step.",
       "flavorText": "The Ravagers leave naught but ruin in their wake.",
-      "rulesText": "You can use this ability once per Power step. Pick a treasure token held by a friendly fighter. That treasure token is desecrated until it is flipped."
+      "rulesText": "Pick a treasure token held by a friendly fighter. That treasure token is desecrated until it is flipped."
     },
     {
       "name": "Ritual Desecration",
       "type": "reaction",
-      "trigger": "Immediately after an enemy fighter is slain, if the attacker or target was holding a treasure token.",
       "flavorText": "Through slaughter and blood are the realms desecrated.",
       "rulesText": "Immediately after an enemy fighter is slain, if the attacker or target was holding a treasure token, you can pick that treasure token. That treasure token is desecrated until it is flipped."
     }
@@ -24,20 +23,22 @@
     {
       "name": "Dark Approval",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "To catch the attention of the Dark Gods is to be lavishly rewarded.",
-      "rulesText": "Use this in a Power step. Draw 1 Power card for each desecrated treasure token. You can only use this ability once per game."
+      "rulesText": "Draw 1 Power card for each desecrated treasure token. You can only use this ability once per game."
     },
     {
       "name": "The Eye of the Gods",
       "type": "reaction",
       "flavorText": "To court the gaze of the Dark Gods is perilous - but those who prove worthy are made mighty indeed.",
-      "rulesText": "Pick 1 of the following:\n• Use this immediately after a friendly fighter holding a treasure token is picked to be the target of an Attack. The target has +1 Save for that Attack.\n• Use this immediately after you pick an enemy fighter holding a treasure token to be the target of an Attack. The weapon you picked for that Attack has +1 Attack dice for that Attack.\nYou can only use this ability once per game."
+      "rulesText": "Pick 1 of the following:\n\n• Use this immediately after a friendly fighter holding a treasure token is picked to be the target of an Attack. The target has +1 Save for that Attack.\n\n• Use this immediately after you pick an enemy fighter holding a treasure token to be the target of an Attack. The weapon you picked for that Attack has +1 Attack dice for that Attack.\n\nYou can only use this ability once per game."
     },
     {
       "name": "Ravaging Advance",
       "type": "action",
+      "trigger": "Use this in a Power step.",
       "flavorText": "Chaos Warriors never falter in their zealous campaign to desecrate all before them.",
-      "rulesText": "Use this in a Power step. Pick a friendly fighter. Push that fighter a number of hexes up to the number of desecrated treasure tokens. That push must end on a treasure token and/or adjacent to an enemy fighter. You can only use this ability once per game."
+      "rulesText": "Pick a friendly fighter. Push that fighter a number of hexes up to the number of desecrated treasure tokens. That push must end on a treasure token and/or adjacent to an enemy fighter.\nYou can only use this ability once per game."
     }
   ],
   "playstyle": "Four tanky Chaos Warriors built around a treasure-desecration engine. They seize and desecrate treasure tokens, fuelling extra Power-card draws and longer advancing pushes the more desecrated tokens pile up. Resilient and protective of their carriers, the warband wins through board control and card advantage, turning the objectives themselves into the fuel that powers its aggression."

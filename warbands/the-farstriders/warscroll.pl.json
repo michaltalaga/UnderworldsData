@@ -2,27 +2,30 @@
   "inspire": "Natychmiast po tym, jak przyjazny wojownik wykonał swój drugi Atak w tej samej fazie i do tych Ataków wybrano różną broń, Inspire tego wojownika.",
   "reactions": [
     {
-      "name": "Straż Przednia",
-      "trigger": "Użyj tej reakcji natychmiast po tym, jak Inspired przyjazny wojownik będący w niebezpieczeństwie i znajdujący się na terytorium wroga użył zdolności podstawowej (Core ability).",
+      "name": "Straż przednia",
+      "trigger": "Użyj tego natychmiast po tym, jak Inspired podatny na ciosy przyjazny wojownik na terytorium wroga użył zdolności Core.",
       "flavorText": null,
-      "rulesText": "Wybierz jedną z opcji:\n\n• Uninspire i ulecz tego wojownika. Do końca rundy bitewnej ten wojownik nie może być leczony ani Inspired.\n\n• Wybierz wrogiego wojownika znajdującego się w odległości do 3 heksów od tego wojownika i rzuć liczbą kości Ataku równą numerowi rundy bitewnej. Wynik {icon:fury} lub {icon:crit} oznacza zadanie 1 obrażenia temu wojownikowi."
+      "rulesText": "Wybierz jedno:\n\n- Uninspire i ulecz tego wojownika. Do końca rundy bitwy ten wojownik nie może zostać uleczony ani Inspired.\n\n- Wybierz wrogiego wojownika w odległości do 3 heksów od tego wojownika i rzuć liczbą kości Ataku równą numerowi rundy bitwy. Za każdy wynik {icon:hammer} lub {icon:crit} zadaj temu wojownikowi 1 obrażenie."
     }
   ],
   "abilities": [
     {
-      "name": "Elita Zwiadowców",
-      "flavorText": "By zadać śmiertelny cios, myśliwy musi najpierw znaleźć właściwą pozycję…",
-      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Pchnij każdego przyjaznego wojownika o liczbę heksów równą numerowi rundy bitewnej. Te pchnięcia muszą zakończyć się na terytorium wroga. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Elita zwiadowców",
+      "trigger": "Użyj tego natychmiast po swoim Action step.",
+      "flavorText": "Aby zadać śmiertelny cios, łowca musi najpierw znaleźć właściwą pozycję...",
+      "rulesText": "Przepchnij każdego przyjaznego wojownika o liczbę heksów równą numerowi rundy bitwy. Te przepchnięcia muszą zakończyć się na terytorium wroga. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
       "name": "Naprzód, Straży Przednia!",
-      "flavorText": "Walka w Komnacie Straży Przedniej wymaga prawdziwie odważnego i pełnego przygód ducha.",
-      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Wybierz przyjaznego wojownika, który nie znajduje się na terytorium wroga i nie sąsiaduje z żadnym wrogim wojownikiem. Ten przyjazny wojownik może wykonać ruch (Move). Możesz użyć tej zdolności tylko raz na grę."
+      "trigger": "Użyj tego natychmiast po swoim Action step.",
+      "flavorText": "Walka w Komnacie Straży Przedniej wymaga doprawdy odważnego i żądnego przygód ducha.",
+      "rulesText": "Wybierz przyjaznego wojownika, który nie znajduje się na terytorium wroga i nie sąsiaduje z żadnym wrogim wojownikiem. Ten przyjazny wojownik może wykonać Ruch. Możesz użyć tej zdolności tylko raz na grę."
     },
     {
-      "name": "Za Liniami Wroga",
-      "flavorText": "Podobnie jak wszyscy wojownicy Straży Przedniej, Farstriderzy doskonale radzą sobie z walką w nieprzyjaznych warunkach i bez wsparcia.",
-      "rulesText": "Użyj tej zdolności natychmiast po swoim kroku Akcji. Wybierz rannego przyjaznego wojownika znajdującego się na terytorium wroga. Daj temu wojownikowi żeton Guard token. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "Za liniami wroga",
+      "trigger": "Użyj tego natychmiast po swoim Action step.",
+      "flavorText": "Jak wszyscy wojownicy Straży Przedniej, Farstriderzy są przyzwyczajeni do walki w nieprzyjaznych warunkach i bez wsparcia.",
+      "rulesText": "Wybierz rannego przyjaznego wojownika na terytorium wroga. Daj temu wojownikowi Guard token. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Trzej elitarni zwiadowcy Straży Przedniej Stormcastów, każdy uzbrojony zarówno w broń dystansową, jak i do walki wręcz. Doskonale czują się w agresywnej kontroli planszy, wykorzystując jednorazowe zdolności, by w pierwszej turze pchnąć całe trio głęboko na terytorium wroga, a Inspire uzyskują, atakując dwukrotnie różną bronią w tej samej fazie. Gdy już są Inspired i znajdą się za liniami wroga, ich reakcja Straży Przedniej pozwala im się leczyć lub eliminować pobliskich przeciwników."

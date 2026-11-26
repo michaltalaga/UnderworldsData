@@ -9,9 +9,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["gardener", "leader"],
+        "runemarks": ["grandfathers-gardeners", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": "gardener", "abilities": [] }
         ]
       },
       "inspired": {
@@ -19,9 +19,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["gardener", "leader"],
+        "runemarks": ["grandfathers-gardeners", "leader"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": "gardener", "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -34,9 +34,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 3, "damage": "gardener", "abilities": [] }
         ]
       },
       "inspired": {
@@ -44,9 +44,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 3, "damage": "gardener", "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -59,9 +59,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "swords", "dice": 2, "damage": "gardener", "abilities": [] }
         ]
       },
       "inspired": {
@@ -69,9 +69,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 2, "symbol": "hammer", "dice": 2, "damage": "gardener", "abilities": [] }
         ]
       },
       "cardRulesText": null
@@ -84,9 +84,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 0, "abilities": [] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": "gardener", "abilities": [] }
         ]
       },
       "inspired": {
@@ -94,9 +94,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 1,
-        "runemarks": ["gardener"],
+        "runemarks": ["grandfathers-gardeners"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 0, "abilities": [ { "name": "grapple", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": "gardener", "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -109,9 +109,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["gardener", "fly"],
+        "runemarks": ["grandfathers-gardeners", "fly"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -119,9 +119,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 2,
         "bounty": 1,
-        "runemarks": ["gardener", "fly"],
+        "runemarks": ["grandfathers-gardeners", "fly"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "cardRulesText": null

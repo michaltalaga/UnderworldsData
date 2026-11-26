@@ -2,10 +2,9 @@
   "inspire": "Po Power stepie przeciwnika, jeśli twoja drużyna posiada 3 lub więcej żetonów skarbów, Inspire każdego przyjaznego wojownika.",
   "reactions": [
     {
-      "name": "Zwinność Skinka",
-      "trigger": "Natychmiast po wykonaniu rzutu obronnego jako część wręcz Attack dla przyjaznego Skinka ({icon:minion}) bez żetonów Charge na przyjaznym terytorium",
-      "flavorText": "Zręczne i gibkie, skinki z Tropicieli Gwiezdnej Krwi potrafią wymknąć się z opresji z zadziwiającą szybkością.",
-      "rulesText": "możesz przerzucić 1 kość obronną w tym rzucie obronnym."
+      "name": "Zwinność Skinków",
+      "flavorText": "Zręczne i zwinne skinki ze Starblood Stalkers potrafią z niezwykłą szybkością wymknąć się z niebezpieczeństwa.",
+      "rulesText": "Natychmiast po wykonaniu rzutu Save w ramach ataku wręcz dla przyjaznego Skinka ({icon:skink}) bez żetonów Charge, znajdującego się na przyjaznym terytorium, możesz przerzucić 1 kość Save w tym rzucie Save."
     }
   ],
   "abilities": [
@@ -16,18 +15,21 @@
     },
     {
       "name": "Niebiański Bastion",
-      "flavorText": "Te najpotężniejsze kosmiczne koniunkcje wypełniają Seraphon podobnie niezachwianą wytrwałością.",
-      "rulesText": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy nie mogą być odpychani do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      "trigger": "Użyj tego w swoim Power stepie.",
+      "flavorText": "Te najbardziej niezłomne z kosmicznych koniunkcji napełniają Seraphonów równie twardą wytrwałością.",
+      "rulesText": "Przyjaźni wojownicy nie mogą zostać odepchnięci do końca rundy bitewnej lub do momentu, aż którykolwiek gracz użyje zdolności Asteryzmu ({icon:asterism}). Tej zdolności można użyć tylko raz na grę."
     },
     {
       "name": "Wielki Smok",
-      "flavorText": "Wznoszące się konstelacje wszechmocnego Dracothiona obdarzają broń Tropicieli Gwiezdnej Krwi kosmiczną potęgą.",
-      "rulesText": "Użyj tej zdolności w swoim Power stepie. Broń do walki wręcz przyjaznych wojowników ma +1 kość Attack do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      "trigger": "Użyj tego w swoim Power stepie.",
+      "flavorText": "Wschodzące konstelacje wszechmocnego Dracothiona obdarzają broń Starblood Stalkers kosmiczną mocą.",
+      "rulesText": "Bronie do walki wręcz przyjaznych wojowników mają +1 kość ataku do końca rundy bitewnej lub do momentu, aż którykolwiek gracz użyje zdolności Asteryzmu ({icon:asterism}). Tej zdolności można użyć tylko raz na grę."
     },
     {
-      "name": "Wierzchowiec Łowcy",
-      "flavorText": "Gdy gwiazdy wierzchowca wznoszą się, by zawładnąć niebiosami, drapieżna szybkość przenika Tropicieli.",
-      "rulesText": "Użyj tej zdolności w swoim Power stepie. Przyjaźni wojownicy mają +1 Move do końca rundy bitewnej lub dopóki którykolwiek gracz nie użyje zdolności Asterism ({icon:hex}). Tej zdolności można użyć tylko raz na grę."
+      "name": "Rumak Łowcy",
+      "trigger": "Użyj tego w swoim Power stepie.",
+      "flavorText": "Gdy gwiazdy rumaka wznoszą się, by zapanować nad niebiosami, Stalkerów przepełnia drapieżna szybkość.",
+      "rulesText": "Przyjaźni wojownicy mają +1 do Move do końca rundy bitewnej lub do momentu, aż którykolwiek gracz użyje zdolności Asteryzmu ({icon:asterism}). Tej zdolności można użyć tylko raz na grę."
     }
   ],
   "playstyle": "Sześcioosobowa drużyna łowiecka Seraphon — wytrzymały, ciężki Saurus i lider-kosmiczny przewodnik wspierający czterech kruchych skinków o Zdrowiu 2. Pędzą, by zająć i odwracać żetony terenu, a Inspire dla całej drużyny zdobywają tylko wtedy, gdy trzymają trzy lub więcej żetonów skarbów, co nagradza dominację na planszy. Ich zdolności Asterism dają zrywy dodatkowego Ruchu, kości Ataku lub odporności na odpychanie, napędzając szybką grę nastawioną na cele."

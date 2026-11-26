@@ -38,7 +38,7 @@
         "bounty": 2,
         "runemarks": ["the-farstriders"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "brutal", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -49,7 +49,7 @@
         "bounty": 2,
         "runemarks": ["the-farstriders"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "brutal", "critical": false }, { "name": "grievous", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "brutal", "critical": false }, { "name": "grievous", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
       },
@@ -76,7 +76,7 @@
         "bounty": 2,
         "runemarks": ["the-farstriders"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [ { "name": "grapple", "critical": false } ] },
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "cleave", "critical": false }] },
           { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [] }
         ]
       },

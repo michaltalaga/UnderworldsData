@@ -9,7 +9,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["leader", "the-crimson-court"],
+        "runemarks": ["the-crimson-court", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -19,7 +19,7 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["leader", "the-crimson-court"],
+        "runemarks": ["the-crimson-court", "leader"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 4, "damage": 2, "abilities": [] }
         ]
@@ -86,7 +86,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["fly", "the-crimson-court"],
+        "runemarks": ["the-crimson-court", "fly"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [] }
         ]
@@ -96,7 +96,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["fly", "the-crimson-court"],
+        "runemarks": ["the-crimson-court", "fly"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [] }
         ]

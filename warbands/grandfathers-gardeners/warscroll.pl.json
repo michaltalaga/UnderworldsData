@@ -1,6 +1,8 @@
 {
   "inspire": "Po kroku Akcji, jeśli przyjazny wojownik jest bezbronny, Inspire tego wojownika.",
-  "abilities": [
+  "abilities": [],
+  "playstyle": "Piątka niemal niezniszczalnych wojowników Nurgle'a, których Uninspired ciała ograniczają przyjmowane obrażenia do dwóch na turę. Tor śledzenia przesuwa się zgodnie z ruchem wskazówek zegara w miarę upływu tur, zadawania obrażeń i utrzymywania skarbów, skalując cechy Ogrodnika i lecząc wojowników z każdym tyknięciem. Warband powoli pełznie naprzód, niemal niemożliwy do usunięcia, wygrywając czystą wytrzymałością, podczas gdy napędzany celami mechanizm nieprzerwanie wzmacnia jego wojowników.",
+  "reactions": [
     {
       "name": "Kwitnąca Plaga",
       "rulesText": "Gdy przyjazny wojownik posiada runiczny znak Ogrodnika ({icon:gardener}) zamiast cechy, {icon:gardener} jest równe wartości aktualnego pola na twoim torze śledzenia."
@@ -10,13 +12,11 @@
       "rulesText": "Na Uninspired przyjaznych wojowników można zadać nie więcej niż 2 obrażenia w tej samej turze."
     },
     {
-      "name": "Zbierz Żniwo",
-      "rulesText": "Użyj tego natychmiast po umieszczeniu twojego żetonu na tym polu. Wybierz przyjaznego wojownika. Ulecz tego wojownika."
-    },
-    {
-      "name": "Tor Śledzenia",
-      "rulesText": "W kroku Muster Warbands podczas 'Ustawiania', umieść zwykły żeton na polu 'Start' toru śledzenia tej karty. Przesuń ten żeton o 1 pole zgodnie z ruchem wskazówek zegara natychmiast:\n\n• po twojej turze.\n\n• po zadaniu obrażeń przyjznemu wojownikowi.\n\n• po twojej turze, jeśli twoja drużyna posiada więcej żetonów skarbów niż twój przeciwnik."
+      "name": "Zbierz Plony",
+      "trigger": "Użyj tego natychmiast po umieszczeniu twojego żetonu na tym polu.",
+      "flavorText": null,
+      "rulesText": "Wybierz przyjaznego wojownika. Ulecz tego wojownika."
     }
   ],
-  "playstyle": "Piątka niemal niezniszczalnych wojowników Nurgle'a, których Uninspired ciała ograniczają przyjmowane obrażenia do dwóch na turę. Tor śledzenia przesuwa się zgodnie z ruchem wskazówek zegara w miarę upływu tur, zadawania obrażeń i utrzymywania skarbów, skalując cechy Ogrodnika i lecząc wojowników z każdym tyknięciem. Warband powoli pełznie naprzód, niemal niemożliwy do usunięcia, wygrywając czystą wytrzymałością, podczas gdy napędzany celami mechanizm nieprzerwanie wzmacnia jego wojowników."
+  "generalRules": "W kroku Muster Warbands fazy 'Setting Up' umieść ogólny żeton na polu 'Start' toru śledzenia tego warscrolla. Natychmiast przesuń ten żeton o 1 pole zgodnie z ruchem wskazówek zegara:\n\n- po twojej turze.\n- po zadaniu obrażeń przyjaznemu wojownikowi.\n- po twojej turze, jeśli twoja drużyna posiada więcej żetonów skarbu niż twój przeciwnik.\n\nPola toru, zgodnie z ruchem wskazówek zegara od Startu: 1 (Start), 1, numer rundy, 2, 2 (patrz {icon:surge} Zbierz Plony), 3, 2."
 }

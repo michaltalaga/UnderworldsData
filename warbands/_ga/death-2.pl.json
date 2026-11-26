@@ -3,9 +3,8 @@
   "reactions": [
     {
       "name": "Powstań, sługo!",
-      "trigger": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności",
       "flavorText": null,
-      "rulesText": "Wybierz poległego przyjaznego wojownika. Podnieś tego wojownika i umieść go na pustym polu startowym na przyjaznym terytorium. Jeśli ten wojownik nie jest sługą ({icon:minion}), zadawaj mu obrażenia, dopóki nie stanie się podatny na zranienie. Możesz użyć tej zdolności tylko raz na rundę bitwy."
+      "rulesText": "Wybierz swojego przywódcę ({icon:leader}), aby użyć tej zdolności. Wybierz pokonanego przyjaznego wojownika. Wskrześ tego wojownika i umieść go na pustym heksie startowym na przyjaznym terytorium. Jeśli ten wojownik nie jest sługą ({icon:minion}), zadawaj mu obrażenia, dopóki nie stanie się podatny. Tej zdolności można użyć tylko raz na rundę bitwy."
     }
   ],
   "abilities": [
@@ -21,8 +20,9 @@
     },
     {
       "name": "Niespokojni umarli",
-      "flavorText": "Nieumarli nie znają zmęczenia i będą chwiejnym krokiem parli naprzód na wezwanie swego pana.",
-      "rulesText": "Użyj tej zdolności w fazie Power step. Wybierz do 3 przyjaznych sług ({icon:minion}) lub przyjaznych wojowników z charakterystyką Zdrowia wynoszącą 3 lub mniej. Przesuń każdego wojownika o 1 pole. Tej zdolności można użyć tylko raz w grze."
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Nieumarli nie znają zmęczenia i będą nieustannie zataczać się naprzód na wezwanie swojego pana.",
+      "rulesText": "Wybierz do 3 przyjaznych sług ({icon:minion}) lub przyjaznych wojowników z charakterystyką Zdrowia wynoszącą 3 lub mniej. Przesuń każdego z tych wojowników o 1 heks. Tej zdolności można użyć tylko raz w grze."
     }
   ]
 }

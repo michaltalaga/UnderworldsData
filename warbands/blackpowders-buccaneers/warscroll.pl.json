@@ -2,14 +2,9 @@
   "inspire": "Po usunięciu trzeciego lub kolejnego żetonu łupu, Inspire każdego przyjaznego wojownika.",
   "abilities": [
     {
-      "name": "Łup i Grabież",
-      "flavorText": "Własność niewiele znaczy dla tych złodziejskich piratów.",
-      "rulesText": "Rozpoczynasz grę z 1 żetonem łupu.\n\nJeśli broń przyjaznego wojownika posiada runiczną pieczęć {icon:skull}, masz dostęp do następującej zdolności Broni:\n\nSwashbuckle {icon:skull}:\nJeśli Atak zakończył się sukcesem, zdobądź 1 żeton łupu. Jeśli jesteś underdogiem ({icon:destined}) lub cel był wyposażony w jakiekolwiek Ulepszenia, zdobądź zamiast tego 2 żetony łupu."
-    },
-    {
-      "name": "Odłamki z Łupu",
-      "flavorText": "Skradzione złoto, srebrne łyżki, zardzewiałe gwoździe — wszystko to wylatuje z grunderbusa Gorloka w rozrywającym ciało wybuchu odłamków.",
-      "rulesText": "Możesz użyć 1 z następujących zdolności bezpośrednio po wybraniu broni dystansowej w ramach Ataku twojego lidera ({icon:leader}). Wybierając zdolność, możesz usunąć do 2 swoich żetonów łupu. Każdą zdolność możesz użyć tylko raz na grę.\n\nPo tym Ataku możesz wybrać do 2 innych wrogich wojowników w odległości 2 heksów od celu. Następnie rzuć liczbą kości Ataku równą liczbie usuniętych żetonów łupu. Jeśli rzut zawierał jakiekolwiek {icon:fury} lub {icon:crit}, zadaj 1 obrażenie każdemu z tych wojowników i daj celowi oraz każdemu z tych wojowników żeton Stagger."
+      "name": "Szrapnel z Łupu",
+      "flavorText": "Skradzione złoto, srebrne łyżeczki, zardzewiałe gwoździe: wszystko to wylatuje z grunderbusa Gorloka w podmuchu rozdzierającego ciało szrapnela.",
+      "rulesText": "Po tym ataku możesz wybrać do 2 innych wrogich wojowników w promieniu 2 heksów od celu. Następnie rzuć liczbą kości Ataku równą liczbie usuniętych żetonów łupu. Jeśli w rzucie wypadł jakikolwiek {icon:hammer} lub {icon:crit}, zadaj 1 obrażenie każdemu z tych wojowników i daj celowi oraz każdemu z tych wojowników żeton Stagger."
     },
     {
       "name": "Wybuch z Łupu",
@@ -22,5 +17,13 @@
       "rulesText": "Ta broń ma +1 Obrażeń i +X Zasięgu podczas tego Ataku, gdzie X to liczba usuniętych żetonów łupu. Po tym ataku możesz zepchnąć do X innych przyjaznych wojowników o 1 heks i możesz dać każdemu z nich żeton Charge, gdzie X to liczba usuniętych żetonów łupu."
     }
   ],
-  "playstyle": "Pięciu grotowych piratów, którzy łączą zwarcie w walce wręcz z ogniem z grunderbusa. Ich ataki wręcz gromadzą żetony łupu, które napędzają niszczycielskie opcje dystansowe, w tym wybuchy Odłamków z Łupu rozpryskujące obrażenia i Stagger na pobliskich wrogów. Wydanie trzeciego żetonu łupu inspiruje całą załogę, więc napędzana walką wręcz ekonomia łupu zasila zarówno ich siłę ognia, jak i tempo."
+  "playstyle": "Pięciu grotowych piratów, którzy łączą zwarcie w walce wręcz z ogniem z grunderbusa. Ich ataki wręcz gromadzą żetony łupu, które napędzają niszczycielskie opcje dystansowe, w tym wybuchy Odłamków z Łupu rozpryskujące obrażenia i Stagger na pobliskich wrogów. Wydanie trzeciego żetonu łupu inspiruje całą załogę, więc napędzana walką wręcz ekonomia łupu zasila zarówno ich siłę ognia, jak i tempo.",
+  "reactions": [
+    {
+      "name": "Łup i Grabież",
+      "flavorText": "Własność niewiele znaczy dla tych złodziejskich piratów.",
+      "rulesText": "Rozpoczynasz grę z 1 żetonem łupu.\n\nJeśli broń przyjaznego wojownika posiada runiczną pieczęć {icon:swashbuckle}, masz dostęp do następującej zdolności Broni:\n\nSwashbuckle {icon:swashbuckle}:\nJeśli Atak zakończył się sukcesem, zdobądź 1 żeton łupu. Jeśli jesteś underdogiem ({icon:underdog}) lub cel był wyposażony w jakiekolwiek Ulepszenia, zdobądź zamiast tego 2 żetony łupu."
+    }
+  ],
+  "generalRules": "Możesz użyć 1 z poniższych zdolności natychmiast po wybraniu broni dystansowej w ramach Ataku twojego lidera ({icon:leader}). Wybierając zdolność, możesz usunąć do 2 swoich żetonów łupu. Każdej zdolności możesz użyć tylko raz na grę."
 }

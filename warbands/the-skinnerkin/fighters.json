@@ -9,9 +9,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["chef", "leader", "haunch"],
+        "runemarks": ["the-skinnerkin", "leader", "chef"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [ { "name": "cleave", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 2, "abilities": [{ "name": "fillet", "critical": true }] }
         ]
       },
       "inspired": {
@@ -19,9 +19,9 @@
         "save": { "symbol": "shield", "dice": 1 },
         "health": 4,
         "bounty": 2,
-        "runemarks": ["chef", "leader", "haunch"],
+        "runemarks": ["the-skinnerkin", "leader", "chef"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 2, "abilities": [{ "name": "fillet", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -34,9 +34,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["chef", "haunch"],
+        "runemarks": ["the-skinnerkin", "chef"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [ { "name": "cleave", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 2, "damage": 2, "abilities": [{ "name": "fillet", "critical": true }] }
         ]
       },
       "inspired": {
@@ -44,9 +44,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 2,
-        "runemarks": ["chef", "haunch"],
+        "runemarks": ["the-skinnerkin", "chef"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [ { "name": "cleave", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "hammer", "dice": 3, "damage": 2, "abilities": [{ "name": "fillet", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -59,9 +59,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef"],
+        "runemarks": ["the-skinnerkin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "grievous", "critical": true } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "grievous", "critical": true }] }
         ]
       },
       "inspired": {
@@ -69,9 +69,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef"],
+        "runemarks": ["the-skinnerkin"],
         "weapons": [
-          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [ { "name": "grievous", "critical": false } ] }
+          { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 4, "damage": 1, "abilities": [{ "name": "grievous", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -84,9 +84,9 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef"],
+        "runemarks": ["the-skinnerkin"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "ensnare", "critical": true } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "ensnare", "critical": true }] }
         ]
       },
       "inspired": {
@@ -94,9 +94,9 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef"],
+        "runemarks": ["the-skinnerkin"],
         "weapons": [
-          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [ { "name": "ensnare", "critical": false } ] }
+          { "name": null, "reach": "ranged", "range": 3, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [{ "name": "ensnare", "critical": false }] }
         ]
       },
       "cardRulesText": null
@@ -109,7 +109,7 @@
         "save": { "symbol": "dodge", "dice": 1 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef", "fly", "minion"],
+        "runemarks": ["the-skinnerkin", "fly", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]
@@ -119,7 +119,7 @@
         "save": { "symbol": "dodge", "dice": 2 },
         "health": 3,
         "bounty": 1,
-        "runemarks": ["chef", "fly", "minion"],
+        "runemarks": ["the-skinnerkin", "fly", "minion"],
         "weapons": [
           { "name": null, "reach": "melee", "range": 1, "symbol": "swords", "dice": 3, "damage": 1, "abilities": [] }
         ]

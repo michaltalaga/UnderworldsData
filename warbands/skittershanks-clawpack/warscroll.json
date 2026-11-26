@@ -14,8 +14,7 @@
     },
     {
       "name": "Spiketraps and Snares",
-      "type": "reaction",
-      "trigger": "Immediately after a friendly fighter's successful melee Attack, give the target a barb token.\n\nImmediately after an enemy fighter with any barb tokens Moves, inflict 1 damage on that fighter, then remove that fighter's barb tokens. Remove all barb tokens from enemy fighters at the end of the battle round.",
+      "type": "passive",
       "flavorText": "Skittershank and his minions know all sorts of ways to bleed and harry their target.",
       "rulesText": "Immediately after a friendly fighter's successful melee Attack, give the target a barb token.\n\nImmediately after an enemy fighter with any barb tokens Moves, inflict 1 damage on that fighter, then remove that fighter's barb tokens. Remove all barb tokens from enemy fighters at the end of the battle round."
     }
@@ -30,14 +29,16 @@
     {
       "name": "The Jaws Snap",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "Luring targets from their place of safety is standard practice for any true assassin.",
-      "rulesText": "Use this in your Power step. Pick an enemy leader ({icon:leader}) in enemy territory. Push that fighter 1 hex. You can only use this ability once per game."
+      "rulesText": "Pick an enemy leader ({icon:leader}) in enemy territory. Push that fighter 1 hex. You can only use this ability once per game."
     },
     {
       "name": "Skittering Blur",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "When the lure and the blind fails, pure speed can buy another chance...",
-      "rulesText": "Use this in your Power step. In the next turn, friendly assassins ({icon:minion}) cannot be picked to be the target of Attacks or Ploys. You can only use this ability once per game."
+      "rulesText": "In the next turn, friendly assassins ({icon:assassin}) cannot be picked to be the target of Attacks or Ploys. You can only use this ability once per game."
     }
   ],
   "playstyle": "Five fragile, hyper-mobile skaven assassins fixated on the enemy leader. They lure that leader from safety, re-roll attacks against it and stack bleeding barb tokens that punish any movement, racing to slay or cripple it for a warband-wide inspire. Lightly armoured and reliant on speed and evasion tricks, they live and die by hunting down a single high-value target."

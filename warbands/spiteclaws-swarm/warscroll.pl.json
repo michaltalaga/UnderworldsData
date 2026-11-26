@@ -2,6 +2,23 @@
   "inspire": "Natychmiast po rozstrzygnięciu Ploy, który wskazał przyjaznego wojownika, Inspire tego wojownika.",
   "reactions": [
     {
+      "name": "Rój",
+      "flavorText": null,
+      "rulesText": "Wskaż przyjaznego lidera ({icon:leader}), aby użył tej zdolności. Wskaż zabitego przyjaznego minion ({icon:minion}). Raise tego wojownika i umieść go na pustym hexie startowym, a następnie daj temu wojownikowi token Raise."
+    },
+    {
+      "name": "Knująca Sfora",
+      "flavorText": null,
+      "rulesText": "Bronie do walki wręcz przyjaznych schemer ({icon:schemer}) mają Grievous ({icon:grievous}), dopóki cel jest Flanked lub Surrounded."
+    },
+    {
+      "name": "Przedwczesny Awans",
+      "flavorText": null,
+      "rulesText": "Dopóki przyjazny Skritch jest zabity, Krrk jest liderem ({icon:leader})."
+    }
+  ],
+  "abilities": [
+    {
       "name": "Skitter",
       "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik sąsiadujący z dowolnym przyjaznym wojownikiem zostanie wskazany do użycia zdolności Core.",
       "flavorText": "'Kto walczy i ucieka...'",
@@ -12,28 +29,12 @@
       "trigger": "Użyj tej reakcji natychmiast po tym, jak przyjazny wojownik sąsiadujący z dowolnym przyjaznym wojownikiem zostanie wskazany do użycia zdolności Core.",
       "flavorText": "Skaven musi zawsze być czujny. Szczególnie gdy przebywa wśród innych Skavenów.",
       "rulesText": "Daj temu wojownikowi token Guard. Możesz użyć tej zdolności tylko raz na grę."
-    }
-  ],
-  "abilities": [
-    {
-      "name": "Rój",
-      "flavorText": "",
-      "rulesText": "Wskaż przyjaznego lidera ({icon:leader}), aby użyć tej zdolności. Wskaż poległego przyjaznego miniona ({icon:minion}). Wskrześ tego wojownika, umieść go na pustym polu startowym, a następnie daj mu token Raise."
     },
     {
-      "name": "Knująca Sfora",
-      "flavorText": "",
-      "rulesText": "Broń biała przyjaznych skrzętnych ({icon:destined}) posiada cechę Grievous ({icon:grievous}), gdy cel jest Flanked lub Surrounded."
-    },
-    {
-      "name": "Przedwczesny Awans",
-      "flavorText": "",
-      "rulesText": "Dopóki przyjazny Skritch jest poległy, Krrk jest liderem ({icon:leader})."
-    },
-    {
-      "name": "'Zejdź mi z drogi, głuptasie!'",
-      "flavorText": "Skritch i jego bardziej użyteczni słudzy są dobrze wprawieni w wyciąganiu się z opałów i zajmowaniu najlepszych pozycji.",
-      "rulesText": "Użyj tej zdolności podczas swojego Power step. Wskaż przyjaznego wojownika i innego wojownika sąsiadującego z nim. Usuń obydwu wojowników z pola bitwy, a następnie umieść każdego z nich na heksie, z którego usunięto drugiego. Możesz użyć tej zdolności tylko raz na grę."
+      "name": "'Z drogi, głupie-rzeczy!'",
+      "trigger": "Użyj tego w swoim Power step.",
+      "flavorText": "Skritch i jego bardziej przydatni podwładni są biegli w wydostawaniu się z niebezpieczeństwa i zajmowaniu najlepszej pozycji.",
+      "rulesText": "Wskaż przyjaznego wojownika i innego wojownika, który z nim sąsiaduje. Usuń tych wojowników z pola bitwy, a następnie umieść każdego z nich na hexie, z którego usunięto drugiego. Możesz użyć tej zdolności tylko raz na grę."
     }
   ],
   "playstyle": "Pięcioosobowy rój Skavenów złożony z kruchych, łatwych do poświęcenia ciał. Sfora trzyma się w skupisku, dzięki czemu wrogowie, którzy są Flanked lub Surrounded, obrywają ciosami Grievous, a jej lider wskrzesza poległych minionów z powrotem na pola startowe, by utrzymać liczebność. Przetrwanie zależy od masy ciał, a nie od wytrzymałości — warband poświęca tanich minionów, by stopniowo wykruszać przeciwnika pozycjonowaniem i wojną na wyniszczenie."

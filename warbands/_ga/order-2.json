@@ -7,8 +7,7 @@
   "reactions": [
     {
       "name": "Deny Trespassers",
-      "type": "reaction",
-      "trigger": null,
+      "type": "passive",
       "flavorText": null,
       "rulesText": "Friendly fighters cannot be Flanked or Surrounded while they are in friendly territory."
     }
@@ -23,14 +22,16 @@
     {
       "name": "Active Defence",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "It is important that defenders do not revert to static warfare, but instead constantly harry and outmanoeuvre their foes.",
-      "rulesText": "Use this in your Power step. Pick a friendly fighter in friendly territory. Push that fighter up to 2 hexes. That push must end in friendly territory. This ability can only be used once per game."
+      "rulesText": "Pick a friendly fighter in friendly territory. Push that fighter up to 2 hexes. That push must end in friendly territory. This ability can only be used once per game."
     },
     {
       "name": "Secret Pathway",
       "type": "action",
+      "trigger": "Use this in your Power step.",
       "flavorText": "The canny defender has the advantage in a pitched battle, for they know the terrain and its secret pathways.",
-      "rulesText": "Use this in your Power step. Pick a friendly fighter on a feature token in friendly territory. Remove that fighter from the battlefield and place them on another feature token in friendly territory, then give that fighter a Move token. This ability can only be used once per game."
+      "rulesText": "Pick a friendly fighter on a feature token in friendly territory. Remove that fighter from the battlefield and place them on another feature token in friendly territory, then give that fighter a Move token. This ability can only be used once per game."
     }
   ]
 }
