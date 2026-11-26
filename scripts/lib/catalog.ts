@@ -1,9 +1,9 @@
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import sharp, { type OverlayOptions } from 'sharp';
 import { askJson, png, slugify, text, type ReadContext } from './ai-read';
 import { cropFraction } from './card-image';
-import { ROOT } from './data';
+import { ROOT, WARBANDS_DIR } from './data';
 import { DEFAULT_VOTE_SETTINGS, RegionVote, voteRegion, type FieldOutcome, type FieldVote, type VoteSettings } from './votes';
 
 /**
@@ -33,8 +33,8 @@ export interface RunemarkEntry {
   image: Buffer;
   /** For warscroll entries: the keyword printed next to the icon. */
   keyword?: string;
-  /** For warscroll entries: the icon alone (no keyword or brackets), for the app; only when a check confirmed it. */
-  appIcon?: Buffer;
+  /** For warscroll entries: the icon alone (no keyword or brackets), which npm run icons can trace; only when a check confirmed it. */
+  cutOut?: Buffer;
 }
 
 export interface KeywordIcon {
@@ -199,8 +199,8 @@ async function tileImage(entry: RunemarkEntry): Promise<Buffer> {
   if (entry.source === 'core') return cardStyle(entry.image, entry.kind === 'fighter' ? 'circle' : entry.kind === 'weapon' ? 'hex' : 'plain');
   // A warband keyword drawn the way the cards print it (pale on a dark circle or hexagon), so it
   // is compared with the card on the same terms as the core runemarks; the sheet label names it.
-  if (entry.source === 'warscroll' && entry.appIcon && entry.kind !== 'symbol') {
-    return cardStyle(await glyphFromPrint(entry.appIcon), entry.kind === 'fighter' ? 'circle' : 'hex');
+  if (entry.source === 'warscroll' && entry.cutOut && entry.kind !== 'symbol') {
+    return cardStyle(await glyphFromPrint(entry.cutOut), entry.kind === 'fighter' ? 'circle' : 'hex');
   }
   return sharp(entry.image)
     .resize(TILE_W - 20, ICON_BOX, { fit: 'contain', background: '#ffffff' })
@@ -342,18 +342,18 @@ async function readWarscrollIcons(
     const places = points.get(kw) ?? [];
     const description = descriptions.get(kw)?.[0];
     let image: Buffer;
-    let appIcon: Buffer | undefined;
+    let cutOut: Buffer | undefined;
     if (places.length) {
       const cropped = await cropKeyword(ctx, warscroll, keyword, description, places);
       image = cropped.image;
-      appIcon = cropped.icon;
+      cutOut = cropped.icon;
       flags.push(...cropped.flags);
     } else {
       // Still a valid answer, just without a picture on the sheet.
       flags.push(`warscroll icon "${keyword}": no read gave its position, so the sheet shows its name only`);
       image = await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="230" height="120"><rect width="100%" height="100%" fill="#fff"/><text x="115" y="70" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">${escapeXml(keyword)} (no picture)</text></svg>`)).png().toBuffer();
     }
-    entries.push({ id, label: `${keyword} (warscroll)${description ? `: ${description}` : ''}`, kind: kind.canon as RunemarkKind, source: 'warscroll', image, keyword, appIcon });
+    entries.push({ id, label: `${keyword} (warscroll)${description ? `: ${description}` : ''}`, kind: kind.canon as RunemarkKind, source: 'warscroll', image, keyword, cutOut });
   }
   return { keywords, entries, outcomes, flags, reads: region.reads + region.failures.length };
 }
@@ -406,7 +406,7 @@ interface Attempt {
  * One place: a generous area around the model's rough point is cut and enlarged, and the model
  * places the icon again inside it (its centre, and the box around the icon alone). The sheet
  * picture is a fixed window around the centre, wider to the left where the keyword is, so the
- * icon is never cut in half; the app picture is the icon's box. A last call checks both, and
+ * icon is never cut in half; the cut-out is the icon's box alone. A last call checks both, and
  * only pictures that pass are returned.
  */
 async function cropAt(ctx: ReadContext, warscroll: Buffer, keyword: string, description: string | undefined, point: [number, number]): Promise<Attempt> {
@@ -442,7 +442,7 @@ Return ONLY valid JSON.`),
  * their check. The model's points can land on any place the icon is printed, including one
  * where the keyword is not next to it ("has the (icon) runemark"), which is why one place is
  * not enough. Without a sheet picture that passes, the sheet shows a wider part of the
- * warscroll; without an app picture, the app shows the keyword as text.
+ * warscroll; without a cut-out, npm run icons has no picture of it from the warscroll to trace.
  */
 async function cropKeyword(
   ctx: ReadContext,
@@ -473,7 +473,7 @@ async function cropKeyword(
   }
   const where = `${tried} place${tried === 1 ? '' : 's'} tried${errors.length ? `; errors: ${errors.join('; ')}` : ''}`;
   const flags: string[] = [];
-  if (!icon) flags.push(`warscroll icon "${keyword}": no picture of the icon alone passed its check (${where}), so the app shows the keyword as text`);
+  if (!icon) flags.push(`warscroll icon "${keyword}": no picture of the icon alone passed its check (${where}), so there is no cut-out of it (npm run icons can trace it from a PDF or the fighter cards)`);
   if (!phrase) flags.push(`warscroll icon "${keyword}": no picture of the keyword with its icon passed its check (${where}), so the sheet shows a wider part of the warscroll`);
   const image = phrase ?? iconArea ?? firstArea ?? (await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="230" height="120"><rect width="100%" height="100%" fill="#fff"/><text x="115" y="70" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">${escapeXml(keyword)} (no picture)</text></svg>`)).png().toBuffer());
   return { image, icon, flags };
@@ -560,21 +560,21 @@ export async function refreshPictures(ctx: ReadContext, dir: string, warscroll: 
   const saved = JSON.parse(readFileSync(join(dir, 'runemarks.json'), 'utf8')) as ReturnType<typeof catalogJson>;
   const core = coreEntries();
   // Picture flags are replaced; flags about the votes are kept.
-  const flags = saved.flags.filter((f) => !/^warscroll icon "[^"]*": .*(picture|app shows|sheet shows|placing it failed)/.test(f));
+  const flags = saved.flags.filter((f) => !/^warscroll icon "[^"]*": .*(picture|cut-out|app shows|sheet shows|placing it failed)/.test(f));
   const entries: RunemarkEntry[] = [];
   for (const r of saved.runemarks) {
     if (r.source === 'core') {
       const entry = core.find((e) => e.id === r.id && e.kind === r.kind) ?? core.find((e) => e.id === r.id);
       if (entry) entries.push(entry);
     } else if (r.source === 'warband') {
-      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warband', image: readFileSync(join(dir, 'icons', `${r.id}.png`)) });
+      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warband', image: readFileSync(join(WARBANDS_DIR, r.id, 'icon.png')) });
     } else {
       const keyword = r.keyword ?? r.id;
       const description = r.label.includes(': ') ? r.label.slice(r.label.indexOf(': ') + 2) : undefined;
       const places = await locateIcon(ctx, warscroll, keyword, description);
       const cropped = await cropKeyword(ctx, warscroll, keyword, description, places);
       flags.push(...cropped.flags);
-      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warscroll', image: cropped.image, keyword, appIcon: cropped.icon });
+      entries.push({ id: r.id, label: r.label, kind: r.kind, source: 'warscroll', image: cropped.image, keyword, cutOut: cropped.icon });
     }
   }
   const catalog: Catalog = { warband: warband.slug, entries, keywords: saved.keywords, iconVotes: [], flags, reads: 0 };
@@ -583,27 +583,34 @@ export async function refreshPictures(ctx: ReadContext, dir: string, warscroll: 
   return catalog;
 }
 
-/** Writes runemarks.json, the warband's own icons (icons/<id>.png) and the reference sheets into dir. */
+/**
+ * Writes runemarks.json, the warscroll keyword pictures and the reference sheets into dir. Not
+ * icons/: that holds the SVGs the app shows, which npm run icons draws.
+ */
 export function saveCatalog(dir: string, catalog: Catalog, sheets: CatalogSheets): void {
-  mkdirSync(join(dir, 'icons'), { recursive: true });
+  mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, 'runemarks.json'), `${JSON.stringify(catalogJson(catalog), null, 2)}
 `);
-  // icons/ is what the app shows for {icon:<id>}: the warband's own icon, and keyword icons that were cut out cleanly.
-  // keywords/ keeps the "keyword (icon)" pictures from the sheet, for reference.
+  // keywords/: for each warscroll keyword, the "keyword (icon)" picture from the sheet (<id>.png)
+  // and, when it was cut out cleanly, the icon alone (<id>-icon.png).
   for (const e of catalog.entries) {
-    if (e.source === 'warband') writeFileSync(join(dir, 'icons', `${e.id}.png`), e.image);
     if (e.source !== 'warscroll') continue;
     mkdirSync(join(dir, 'keywords'), { recursive: true });
     writeFileSync(join(dir, 'keywords', `${e.id}.png`), e.image);
-    if (e.appIcon) writeFileSync(join(dir, 'icons', `${e.id}.png`), e.appIcon);
+    if (e.cutOut) writeFileSync(join(dir, 'keywords', `${e.id}-icon.png`), e.cutOut);
   }
   writeFileSync(join(dir, 'fighter-runemarks.png'), sheets.fighter);
   writeFileSync(join(dir, 'weapon-runemarks.png'), sheets.weapon);
   writeFileSync(join(dir, 'all-icons.png'), sheets.all);
 }
 
-/** The catalog as JSON for the output folder (images are saved next to it as icons/<id>.png). */
+/**
+ * The catalog as JSON for the output folder; paths are relative to it. appIcon is the warband's
+ * own SVG the app shows, when npm run icons has drawn one (null: the app shows the core icon of
+ * that id, or the keyword as text); cutOut is the icon alone, cut out of the warscroll.
+ */
 export function catalogJson(c: Catalog) {
+  const ownSvg = (id: string) => existsSync(join(WARBANDS_DIR, c.warband, 'runemarks', 'icons', `${id}.svg`));
   return {
     warband: c.warband,
     runemarks: c.entries.map((e) => ({
@@ -612,8 +619,9 @@ export function catalogJson(c: Catalog) {
       kind: e.kind,
       source: e.source,
       keyword: e.keyword ?? null,
-      sheetPicture: e.source === 'warscroll' ? `keywords/${e.id}.png` : e.source === 'warband' ? `icons/${e.id}.png` : null,
-      appIcon: e.source === 'warband' || e.appIcon ? `icons/${e.id}.png` : null,
+      sheetPicture: e.source === 'warscroll' ? `keywords/${e.id}.png` : e.source === 'warband' ? '../icon.png' : null,
+      appIcon: e.source === 'warband' ? '../icon.svg' : e.source === 'warscroll' && ownSvg(e.id) ? `icons/${e.id}.svg` : null,
+      cutOut: e.cutOut ? `keywords/${e.id}-icon.png` : null,
     })),
     keywords: c.keywords,
     flags: c.flags,

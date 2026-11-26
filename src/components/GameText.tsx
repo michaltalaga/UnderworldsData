@@ -48,7 +48,7 @@ const CORE_ICONS: Record<string, string> = {
 };
 
 // A warband's own keyword runemarks (Grot, Squig, Volley...): one-colour SVGs made by npm run icons
-// in warbands/<slug>/runemarks/icons/<id>.svg, next to the pictures npm run extract cut out.
+// in warbands/<slug>/runemarks/icons/<id>.svg.
 const warbandRunemarkModules = import.meta.glob('../../warbands/*/runemarks/icons/*.svg', {
   eager: true,
   import: 'default',

@@ -8,7 +8,9 @@
  *   - The tokens and the card-type symbols exist only as small pictures in the core rules, so they
  *     are traced with Potrace from the picture, oriented as it is printed and enlarged first (TRACED).
  *   - Keyword runemarks no PDF draws are traced from the runemark circles of the fighter cards,
- *     averaged over every card that shows them (CARD), or from the icon cut out of the warscroll (SCAN).
+ *     averaged over every card that shows them (CARD), or from the icon npm run extract cut out of
+ *     the warscroll, runemarks/keywords/<id>-icon.png (SCAN). runemarks.json's appIcon is brought up
+ *     to date: the SVG when there is one.
  * - Faction runemarks (warbands/<slug>/icon.png, warbands/_ga/<faction>-icon.png) go next to the
  *   picture as icon.svg / <faction>-icon.svg: the glyph traced from the picture over the coloured
  *   disc and dark rim it sits on, in the picture's colours, with the disc filling the viewBox.
@@ -127,7 +129,7 @@ const CARD: { name: string; warband: string }[] = [
   { name: 'swashbuckle', warband: 'blackpowders-buccaneers' },
 ];
 
-/** Keywords printed only in warscroll text: traced from the icon npm run extract cut out of the warscroll (dark on paper). */
+/** Keywords printed only in warscroll text: traced from the icon npm run extract cut out of the warscroll (runemarks/keywords/<id>-icon.png, dark on paper). */
 const SCAN: { name: string; warband: string }[] = [
   { name: 'asterism', warband: 'the-starblood-stalkers' },
   { name: 'gardener', warband: 'grandfathers-gardeners' },
@@ -535,7 +537,7 @@ async function buildTraced(icon: (typeof TRACED)[number]): Promise<Built> {
 }
 
 async function buildScan(icon: (typeof SCAN)[number]): Promise<Built> {
-  const source = join(WARBANDS_DIR, icon.warband, 'runemarks', 'icons', `${icon.name}.png`);
+  const source = join(WARBANDS_DIR, icon.warband, 'runemarks', 'keywords', `${icon.name}-icon.png`);
   const picture = readFileSync(source);
   const { width, height } = await sharp(picture).metadata();
   return fromBitmap(icon.name, keywordFile(icon.warband, icon.name), await glyphBitmap(picture, 'dark'), picture, `traced, warscroll cut-out ${width}x${height}`);
@@ -877,20 +879,23 @@ async function main() {
   }
   writeFileSync(join(CACHE, 'factions.png'), await factionSheet(factions));
 
-  // Warscroll keyword pictures (cut out by npm run extract) that got no SVG here.
-  const written = new Set(built.map((b) => b.file));
+  // The warscroll keywords of each catalog (runemarks.json): point appIcon at the SVG, and list those without one.
   const core = new Set(built.filter((b) => b.file.startsWith(OUT)).map((b) => b.name));
   const left: string[] = [];
   for (const slug of readdirSync(WARBANDS_DIR).filter((s) => !s.startsWith('_'))) {
-    const dir = join(WARBANDS_DIR, slug, 'runemarks', 'icons');
-    if (!existsSync(dir)) continue;
-    for (const png of readdirSync(dir).filter((f) => f.endsWith('.png'))) {
-      const id = png.replace('.png', '');
-      if (id === slug || written.has(keywordFile(slug, id))) continue;
-      left.push(`${slug}/${id}${core.has(id) ? ' (the core icon is used)' : ' (no SVG: add it to VECTOR, CARD or SCAN)'}`);
+    const file = join(WARBANDS_DIR, slug, 'runemarks', 'runemarks.json');
+    if (!existsSync(file)) continue;
+    const text = readFileSync(file, 'utf8');
+    const catalog = JSON.parse(text) as { runemarks: { id: string; source: string; appIcon?: string | null }[] };
+    for (const r of catalog.runemarks.filter((r) => r.source === 'warscroll')) {
+      const own = existsSync(keywordFile(slug, r.id));
+      r.appIcon = own ? `icons/${r.id}.svg` : null;
+      if (!own) left.push(`${slug}/${r.id}${core.has(r.id) ? ' (the core icon is used)' : ' (no SVG: add it to VECTOR, CARD or SCAN)'}`);
     }
+    const updated = `${JSON.stringify(catalog, null, 2)}\n`;
+    if (updated !== text) writeFileSync(file, updated);
   }
-  if (left.length) console.log(`\n  keyword pictures without their own SVG:\n${left.map((l) => `    ${l}`).join('\n')}`);
+  if (left.length) console.log(`\n  warscroll keywords without their own SVG:\n${left.map((l) => `    ${l}`).join('\n')}`);
   console.log(`\n  ${built.length} icons and ${factions.length} faction runemarks; contact sheets: extraction/icons/contact-sheet.png, extraction/icons/factions.png`);
 }
 

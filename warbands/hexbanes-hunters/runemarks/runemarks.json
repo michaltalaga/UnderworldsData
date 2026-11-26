@@ -7,8 +7,9 @@
       "kind": "fighter",
       "source": "warband",
       "keyword": null,
-      "sheetPicture": "icons/hexbanes-hunters.png",
-      "appIcon": "icons/hexbanes-hunters.png"
+      "sheetPicture": "../icon.png",
+      "appIcon": "../icon.svg",
+      "cutOut": null
     },
     {
       "id": "leader",
@@ -17,7 +18,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "minion",
@@ -26,7 +28,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "fly",
@@ -35,7 +38,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "crit",
@@ -44,7 +48,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "cleave",
@@ -53,7 +58,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "ensnare",
@@ -62,7 +68,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "brutal",
@@ -71,7 +78,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "grievous",
@@ -80,7 +88,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "stagger",
@@ -89,7 +98,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "grapple",
@@ -98,7 +108,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "hammer",
@@ -107,7 +118,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "swords",
@@ -116,7 +128,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "shield",
@@ -125,7 +138,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "dodge",
@@ -134,7 +148,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "flanked",
@@ -143,7 +158,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "surrounded",
@@ -152,7 +168,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "hex",
@@ -161,7 +178,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "damage",
@@ -170,7 +188,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "surge",
@@ -179,7 +198,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "core-ability",
@@ -188,7 +208,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "inspired",
@@ -197,7 +218,8 @@
       "source": "core",
       "keyword": null,
       "sheetPicture": null,
-      "appIcon": null
+      "appIcon": null,
+      "cutOut": null
     },
     {
       "id": "agent-azyrite",
@@ -206,7 +228,8 @@
       "source": "warscroll",
       "keyword": "Agent Azyrite",
       "sheetPicture": "keywords/agent-azyrite.png",
-      "appIcon": "icons/agent-azyrite.png"
+      "appIcon": "icons/agent-azyrite.svg",
+      "cutOut": "keywords/agent-azyrite-icon.png"
     }
   ],
   "keywords": [

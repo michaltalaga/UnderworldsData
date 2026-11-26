@@ -1,5 +1,5 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
-import { basename, join, relative } from 'path';
+import { basename, join, relative, sep } from 'path';
 import { AiClient, DEFAULT_MODEL, NoProviderLeftError, runJobs, takeAiOptions, type ProviderId } from './ai';
 import { jobNote } from './ai/jobs';
 import { positiveInt, takeFlag, takeValue } from './lib/args';
@@ -112,9 +112,17 @@ function apply(runArg: string, slugs: string[]): void {
       copy('warscroll.json');
       copy('warscroll.pl.json');
       if (existsSync(join(from, 'runemarks'))) {
-        // Replaced as a whole, so the catalog and its pictures always come from the same run.
-        rmSync(warbandFile(slug, 'runemarks'), { recursive: true, force: true });
-        cpSync(join(from, 'runemarks'), warbandFile(slug, 'runemarks'), { recursive: true });
+        // Replaced as a whole, so the catalog and its pictures always come from the same run, except
+        // icons/: the app's SVGs, which npm run icons draws and a run does not make.
+        const target = warbandFile(slug, 'runemarks');
+        for (const entry of existsSync(target) ? readdirSync(target) : []) if (entry !== 'icons') rmSync(join(target, entry), { recursive: true, force: true });
+        const runIcons = join(from, 'runemarks', 'icons');
+        cpSync(join(from, 'runemarks'), target, { recursive: true, filter: (src) => src !== runIcons && !src.startsWith(runIcons + sep) });
+        // Runs made before keywords/<id>-icon.png kept the cut-outs in icons/<id>.png, next to a copy of icon.png.
+        for (const file of existsSync(runIcons) ? readdirSync(runIcons).filter((f) => f.endsWith('.png') && f !== `${slug}.png`) : []) {
+          mkdirSync(join(target, 'keywords'), { recursive: true });
+          cpSync(join(runIcons, file), join(target, 'keywords', file.replace(/\.png$/, '-icon.png')));
+        }
         copied.push('runemarks/');
       }
     }
@@ -155,7 +163,7 @@ async function refreshRunPictures(runArg: string, provider: ProviderId | undefin
     const record = readJsonIfExists<WarbandRecord>(join(runDir, t.slug, 'result.json'));
     if (record) write(join(runDir, t.slug, 'result.json'), json({ ...record, catalogFlags: catalog.flags }));
     const icons = catalog.entries.filter((e) => e.source === 'warscroll');
-    return `app icons: ${icons.filter((e) => e.appIcon).map((e) => e.id).join(', ') || 'none'}${icons.some((e) => !e.appIcon) ? `; as text: ${icons.filter((e) => !e.appIcon).map((e) => e.id).join(', ')}` : ''}`;
+    return `cut out alone: ${icons.filter((e) => e.cutOut).map((e) => e.id).join(', ') || 'none'}${icons.some((e) => !e.cutOut) ? `; not: ${icons.filter((e) => !e.cutOut).map((e) => e.id).join(', ')}` : ''}`;
   });
 
   const usage = ai.usage();
