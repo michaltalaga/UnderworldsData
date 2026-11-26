@@ -1,4 +1,4 @@
-import { fighterRunemarks, weaponRunemarks, type Catalog, type KeywordIcon } from './catalog';
+import { CORE_IDS, fighterRunemarks, weaponRunemarks, type Catalog, type KeywordIcon } from './catalog';
 import type { Flag, FighterReading } from './fighter-reader';
 import { SIDES, type Characteristic, type Fighter, type FightersFile } from './fighters';
 import { canonText, type FieldOutcome } from './votes';
@@ -57,17 +57,24 @@ export function crossChecks(
 
   const fighterIds = new Set(fighterRunemarks(catalog).map((e) => e.id));
   const weaponIds = new Set(weaponRunemarks(catalog).map((e) => e.id));
-  for (const k of catalog.keywords) {
-    if (fighterIds.has(k.id) && k.kind === 'fighter') {
-      const has = readings.some((r) => SIDES.some((s) => r.fighter[s].runemarks.includes(k.id)));
-      if (!has) out.push(`the warscroll names the ${k.keyword} runemark (${k.id}), but no fighter has it`);
-    }
-    if (weaponIds.has(k.id) && k.kind === 'weapon') {
-      const has = readings.some((r) => SIDES.some((s) => r.fighter[s].weapons.some((w) => w.abilities.some((a) => a.name === k.id))));
-      if (!has) out.push(`the warscroll names the ${k.keyword} weapon runemark (${k.id}), but no weapon has it`);
+  // Only the warband's own keywords: the rules text also mentions core runemarks (for example
+  // "cannot be affected by Cleave and Ensnare") without any fighter having them.
+  for (const k of catalog.keywords.filter((k) => !CORE_IDS.has(k.id) && k.kind !== 'symbol')) {
+    if (!fighterIds.has(k.id) && !weaponIds.has(k.id)) continue;
+    if (!readings.some((r) => usesRunemark(r.fighter, k.id))) {
+      out.push(`the warscroll names the ${k.keyword} runemark (${k.id}), but no fighter, weapon or characteristic has it`);
     }
   }
   return out;
+}
+
+/** Whether a fighter shows a runemark anywhere: its runemarks, a weapon's runemarks, or in place of a characteristic. */
+export function usesRunemark(f: Fighter, id: string): boolean {
+  return SIDES.some((side) => {
+    const s = f[side];
+    const values = [s.move, s.save.dice, s.health, s.bounty, ...s.weapons.flatMap((w) => [w.range, w.dice, w.damage])];
+    return s.runemarks.includes(id) || s.weapons.some((w) => w.abilities.some((a) => a.name === id)) || values.includes(id);
+  });
 }
 
 // ---------- diffs against the current files ----------
