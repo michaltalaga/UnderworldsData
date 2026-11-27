@@ -13,7 +13,7 @@
     },
     {
       "name": "Da Bait",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after a friendly minion ({icon:minion}) is slain, push your leader ({icon:leader}) a number of hexes equal to the Health characteristic of the slain minion ({icon:minion}). That push must end adjacent to an enemy fighter."
     }

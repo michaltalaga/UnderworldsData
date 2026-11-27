@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Rise, Minion!",
-      "type": "passive",
+      "type": "action",
       "flavorText": null,
       "rulesText": "Pick your leader ({icon:leader}) to use this ability. Pick a slain friendly fighter. Raise that fighter and place them in an empty starting hex in friendly territory. If that fighter is not a minion ({icon:minion}) inflict damage on that fighter until they are vulnerable. You can only use this ability once per battle round."
     }

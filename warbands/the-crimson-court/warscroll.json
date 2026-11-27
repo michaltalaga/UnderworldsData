@@ -13,7 +13,7 @@
     },
     {
       "name": "The Hunger",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after a friendly fighter's successful Attack, remove 1 of that fighter's hunger tokens. If the target of that Attack was slain, remove all of that fighter's hunger tokens instead."
     },
@@ -48,7 +48,7 @@
     },
     {
       "name": "Dark Transfusion",
-      "type": "passive",
+      "type": "action",
       "flavorText": "Life force is ripped from the victim as the vampire feeds.",
       "rulesText": "Pick a friendly fighter to use this Core ability. Pick an enemy fighter within 1 hex of that fighter. You can pick an enemy fighter within 2 hexes instead if that friendly fighter is Inspired. Inflict 1 damage on that enemy fighter and then heal that friendly fighter. You can only use this ability once per game."
     }

@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Raptor's Eye",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "After another friendly fighter Moves, push a friendly Taros up to 3 hexes. After this push, Taros must be within 2 hexes of that fighter."
     },

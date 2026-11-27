@@ -29,7 +29,7 @@
     },
     {
       "name": "Discorporate",
-      "type": "passive",
+      "type": "action",
       "flavorText": "If given the order, the Nighthaunt can flicker between the realms of the living and dead.",
       "rulesText": "Pick a friendly fighter to use this Core ability. Remove that fighter from the battlefield and then place them in an empty hex. You can only use this ability once per game."
     },

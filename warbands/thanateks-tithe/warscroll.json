@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Morbid Retainers",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after a friendly fighter's successful Attack, if the target is adjacent to any friendly Retainers ({icon:retainer}), gain 1 cadaver token."
     },
@@ -19,7 +19,7 @@
     },
     {
       "name": "Elusive Mirages",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after an enemy fighter's successful Attack that targeted a friendly Mortis Reaper ({icon:mortis-reaper}), if the Save roll contained any successes, that friendly fighter can use Stand Fast."
     }
@@ -41,7 +41,7 @@
     },
     {
       "name": "Necromantic Pulse",
-      "type": "action",
+      "type": "reaction",
       "trigger": "Use this in your Power step.",
       "flavorText": "Thanatek channels deathly energy into a crushing wave to drive his enemies back.",
       "rulesText": "Remove any of your cadaver tokens. For each enemy fighter adjacent to any friendly Retainers ({icon:retainer}), roll a number of Attack dice equal to the number of cadaver tokens you removed. If the roll contains any {icon:swords} or {icon:crit}, inflict 1 damage on that enemy fighter. Otherwise, remove that enemy fighter's Guard tokens and give them a Stagger token. You can only use this ability once per game."

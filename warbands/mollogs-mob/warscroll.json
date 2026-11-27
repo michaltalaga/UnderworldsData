@@ -13,7 +13,7 @@
     },
     {
       "name": "Troggoth Regeneration",
-      "type": "reaction",
+      "type": "passive",
       "trigger": "Use this at the end of each battle round after following the end phase sequence.",
       "flavorText": null,
       "rulesText": "Heal your leader ({icon:leader})."

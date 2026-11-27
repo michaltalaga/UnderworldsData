@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Hammertide",
-      "type": "passive",
+      "type": "action",
       "flavorText": null,
       "rulesText": "You can use this ability if your leader ({icon:leader}) is on the battlefield and has no Charge tokens. Draw a straight line from your leader's ({icon:leader}) hex that passes through the centre of an adjacent hex and goes all the way to the edge of the battlefield. Inflict 1 damage on the first enemy fighter that line crosses and give that fighter a Stagger token. The line ends if it touches a blocked hex."
     }

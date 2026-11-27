@@ -15,7 +15,7 @@
   "abilities": [
     {
       "name": "Fulminating Hymn",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "The chants of the Brethren seems to spark holy lightning.",
       "rulesText": "Pick one of the following abilities at the start of the combat phase. While there are two or more friendly fighters, each fighter can use that ability.\n\nCharged Aura: Friendly fighters cannot be Flanked.\n\nReckless Abandon: Each time a friendly fighter would be given a Charge token, you can inflict 1 damage on that fighter instead of giving them a Charge token.\n\nFaithful Dynamos: Friendly fighter's weapons have Stagger ({icon:stagger})."
     },

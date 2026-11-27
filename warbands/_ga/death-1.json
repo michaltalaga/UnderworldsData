@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Locus of Shyish",
-      "type": "passive",
+      "type": "action",
       "flavorText": null,
       "rulesText": "Roll 3 Attack dice. If the roll contains 1 of the results on the Locus of Shyish table, immediately use the relevant ability. That ability persists until the end of the battle round. If the roll contains any {icon:crit}, you can replace each {icon:crit} with another symbol of your choice ({icon:swords}, {icon:hammer}, {icon:flanked} or {icon:surrounded}).\n\nThe same fighter cannot be picked to be affected by a Locus of Shyish ability more than once per battle round."
     }

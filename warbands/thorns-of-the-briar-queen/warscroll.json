@@ -13,7 +13,7 @@
     },
     {
       "name": "Soul Warden",
-      "type": "passive",
+      "type": "action",
       "flavorText": null,
       "rulesText": "Pick a friendly Varclav to use this ability. Pick up to 2 friendly minions ({icon:minion}). Push each of those fighters up to 2 hexes. Then, you can give each of those fighters a Charge token. This ability can only be used once per battle round."
     },

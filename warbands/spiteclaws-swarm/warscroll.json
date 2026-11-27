@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Swarm",
-      "type": "passive",
+      "type": "action",
       "flavorText": null,
       "rulesText": "Pick a friendly leader ({icon:leader}) to use this ability. Pick a slain friendly minion ({icon:minion}). Raise that fighter and place them on an empty starting hex then give that fighter a Raise token."
     },

@@ -7,13 +7,13 @@
   "reactions": [
     {
       "name": "Glorious Change",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Unpredictable and chaotic are the whims of the Change God.",
       "rulesText": "Immediately after the first Action step of each battle round, pick a friendly minion ({icon:minion}). Inspire that fighter. Then pick a friendly minion ({icon:minion}). Give that fighter a Stagger token."
     },
     {
       "name": "Power Leech",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Ephilim won't hesitate to draw power from a viable source.",
       "rulesText": "Immediately after a friendly minion ({icon:minion}) within 2 hexes of your leader ({icon:leader}) is slain, you can draw 1 Power card."
     }

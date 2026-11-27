@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Swell of Power",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after an Action step, in which an enemy fighter was slain by a friendly fighter's melee Attack, give the attacker a chaotic power token. That fighter's melee weapons have +1 Attack dice for the next Attack they make. Then remove that fighter's chaotic power token."
     }
@@ -15,7 +15,7 @@
   "abilities": [
     {
       "name": "Reckless Rage",
-      "type": "passive",
+      "type": "action",
       "flavorText": "Some warriors rely upon raw, unchecked fury in lieu of martial grace, not caring for their own wounds as they rip and kill.",
       "rulesText": "Pick a friendly fighter with any Charge tokens to use this ability. That fighter can immediately Charge. Inflict 2 damage on that fighter after resolving this ability. This ability can only be used once per game."
     },

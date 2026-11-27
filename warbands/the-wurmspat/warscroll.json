@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Disgustingly Resilient",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Nurgle's chosen are all but inured to pain.",
       "rulesText": "Immediately before damage is inflicted on a friendly fighter by an Attack without Cleave ({icon:cleave}), if the Save roll contained any {icon:shield}, reduce the damage of that Attack by 1."
     },

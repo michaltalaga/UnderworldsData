@@ -15,7 +15,7 @@
   "abilities": [
     {
       "name": "Slaughterous Pilgrimage",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Kamandora's Blades burn with zeal and see the taking of skulls as their holy purpose.",
       "rulesText": "Immediately after you pick an enemy fighter to be the worthy skull, you must push each friendly fighter 1 hex closer to the enemy worthy skull."
     },

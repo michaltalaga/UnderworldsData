@@ -3,7 +3,8 @@
  *
  * - Core icons go to public/assets/<name>.svg, a warband's keyword runemarks (Grot, Volley...) to
  *   warbands/<slug>/runemarks/icons/<id>.svg. Both have the same 100x100 viewBox, with the glyph's
- *   bounding box fitted to 92x92 and centred, and use currentColor.
+ *   bounding box fitted to 92x92 and centred (Flanked: centred on its dot, like Surrounded), and
+ *   use currentColor.
  *   - Vector icons are the official PDFs' own paths, copied as they are (VECTOR below).
  *   - The tokens and the card-type symbols exist only as small pictures in the core rules, so they
  *     are traced with Potrace from the picture, oriented as it is printed and enlarged first (TRACED).
@@ -17,7 +18,9 @@
  *
  * Each SVG is rendered back and compared with its source (the PDF render, or the traced picture):
  * the overlap is printed, with contact sheets in extraction/icons/ (contact-sheet.png for the
- * one-colour icons, factions.png). The PDFs are downloaded to extraction/icons (not committed).
+ * one-colour icons, flanked-surrounded.png for the two centred on their dot, factions.png with each
+ * faction runemark's rim and an edge colour check that catches a lost rim). The PDFs are
+ * downloaded to extraction/icons (not committed).
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { createRequire } from 'module';
@@ -48,9 +51,12 @@ type Box = [number, number, number, number];
 
 /**
  * Glyphs drawn as paths: the page and the box (PDF points, top-left origin) that holds the glyph.
- * With `warband`, a keyword runemark of that warband rather than a core icon.
+ * With `warband`, a keyword runemark of that warband rather than a core icon. With `centreOn:
+ * 'dot'`, the glyph is centred on its smallest path (a dot) instead of on its bounding box, and
+ * sized so its farthest edge from the dot is 46 from the centre: Flanked is half of Surrounded's
+ * ring around the same dot, and centring its box would push the dot off to the side.
  */
-const VECTOR: { name: string; warband?: string; pdf: Pdf; page: number; box: Box }[] = [
+const VECTOR: { name: string; warband?: string; pdf: Pdf; page: number; box: Box; centreOn?: 'dot' }[] = [
   // core rules p18, index of runemarks and symbols
   { name: 'core-ability', pdf: 'core', page: 18, box: [147.9, 668, 153.7, 677] },
   { name: 'melee', pdf: 'core', page: 18, box: [150.9, 688.2, 157.6, 695] },
@@ -62,7 +68,7 @@ const VECTOR: { name: string; warband?: string; pdf: Pdf; page: number; box: Box
   { name: 'hammer', pdf: 'core', page: 18, box: [223.6, 698.1, 230.4, 706.8] },
   { name: 'shield', pdf: 'core', page: 18, box: [214.3, 708.5, 220, 717] },
   { name: 'dodge', pdf: 'core', page: 18, box: [298.7, 667.7, 306.3, 675.9] },
-  { name: 'flanked', pdf: 'core', page: 18, box: [305.8, 678, 311.5, 686.5] },
+  { name: 'flanked', pdf: 'core', page: 18, box: [305.8, 678, 311.5, 686.5], centreOn: 'dot' },
   { name: 'surrounded', pdf: 'core', page: 18, box: [320, 688, 328.5, 696.5] },
   { name: 'fly', pdf: 'core', page: 18, box: [287.3, 698, 293.7, 706] },
   { name: 'leader', pdf: 'core', page: 18, box: [300.9, 709.2, 309.7, 715] },
@@ -365,6 +371,13 @@ function fit(box: Box): Affine {
   return { scale, dx: SIZE / 2 - ((box[0] + box[2]) / 2) * scale, dy: SIZE / 2 - ((box[1] + box[3]) / 2) * scale };
 }
 
+/** The transform that puts `centre` in the middle of the viewBox, with all of box inside the 92x92 square. */
+function fitAround(box: Box, [cx, cy]: [number, number]): Affine {
+  const half = Math.max(cx - box[0], box[2] - cx, cy - box[1], box[3] - cy);
+  const scale = GLYPH / 2 / half;
+  return { scale, dx: SIZE / 2 - cx * scale, dy: SIZE / 2 - cy * scale };
+}
+
 // ---------- tracing ----------
 
 /** Otsu's threshold of a 0-255 histogram. */
@@ -509,7 +522,13 @@ async function buildVector(icon: (typeof VECTOR)[number]): Promise<Built> {
   const [x0, y0, x1, y1] = icon.box;
   const view: Box = [x0 - 1, y0 - 1, x1 - x0 + 2, y1 - y0 + 2];
   const painted = await paintedBox(svgBody(icon.name, ops, { scale: 1, dx: 0, dy: 0 }, view), view);
-  const t = fit(painted);
+  let t = fit(painted);
+  if (icon.centreOn === 'dot') {
+    const area = (b: Box) => (b[2] - b[0]) * (b[3] - b[1]);
+    const dot = ops.filter((o) => !o.paper).reduce((a, b) => (area(b.box) < area(a.box) ? b : a));
+    const d = await paintedBox(svgBody(icon.name, [dot], { scale: 1, dx: 0, dy: 0 }, view), view);
+    t = fitAround(painted, [(d[0] + d[2]) / 2, (d[1] + d[3]) / 2]);
+  }
   const svg = svgDoc(svgBody(icon.name, ops, t));
   const ref = pdfMask(page, t, mapBox(painted, t));
   const score = overlap(ref.mask, await svgMask(svg, CHECK_PX / SIZE, CHECK_PX, CHECK_PX));
@@ -689,7 +708,12 @@ async function buildCard(icon: (typeof CARD)[number]): Promise<Built> {
 interface Faction extends Built {
   /** Mean difference of the rendered SVG from the picture over the disc, 0-255 per channel. */
   colour: number;
+  /** The same over the outer tenth of the disc (the rim and the disc's edge). */
+  edge: number;
 }
+
+/** Edge colour differences above this are listed: the rim is likely lost or misplaced. */
+const EDGE_LIMIT = 25;
 
 const hex = (rgb: number[]) => `#${rgb.map((v) => Math.round(v).toString(16).padStart(2, '0')).join('')}`;
 const median = (values: number[]) => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)];
@@ -713,15 +737,42 @@ async function buildFaction(name: string, source: string, file: string): Promise
   }
   const [cx, cy, R] = [(x0 + x1 + 1) / 2, (y0 + y1 + 1) / 2, Math.max(x1 - x0 + 1, y1 - y0 + 1) / 2];
   const at = (x: number, y: number) => (Math.min(height - 1, Math.max(0, Math.floor(y))) * width + Math.min(width - 1, Math.max(0, Math.floor(x)))) * 4;
-  // The rim: how far in from the edge the pixels stay near black, along 90 rays.
+  // A pixel's brightest channel, read between pixel centres (bilinear) so a ray's profile is smooth.
+  const pixel = (x: number, y: number) => {
+    const i = at(x, y);
+    return Math.max(data[i], data[i + 1], data[i + 2]);
+  };
+  const level = (x: number, y: number) => {
+    const [fx, fy] = [x - 0.5, y - 0.5];
+    const [x0, y0] = [Math.floor(fx), Math.floor(fy)];
+    const [dx, dy] = [fx - x0, fy - y0];
+    return (
+      pixel(x0, y0) * (1 - dx) * (1 - dy) + pixel(x0 + 1, y0) * dx * (1 - dy) + pixel(x0, y0 + 1) * (1 - dx) * dy + pixel(x0 + 1, y0 + 1) * dx * dy
+    );
+  };
+  const around = (r: number, n = 180) => Array.from({ length: n }, (_, k) => level(cx + r * Math.cos((k / n) * 2 * Math.PI), cy + r * Math.sin((k / n) * 2 * Math.PI)));
+  // The rim: how far in from the edge the pixels stay as dark as the rim, along 90 rays, to where
+  // each ray crosses halfway between the rim (just inside the edge) and the disc (its darker
+  // quarter, so the light glyph does not count). A fixed cut-off misses the rim of a disc that is
+  // nearly black itself (Zarbag's Gitz: rim 0, disc about 52).
+  const rimLevel = Math.round(median(around(R - 1.5)));
+  const discSamples = [0.55, 0.65, 0.75].flatMap((f) => around(f * R)).sort((a, b) => a - b);
+  const discLevel = Math.round(discSamples[Math.floor(discSamples.length / 4)]);
+  const cutOff = (rimLevel + discLevel) / 2;
   const rims: number[] = [];
+  const step = 0.25;
   for (let k = 0; k < 90; k++) {
     const a = (k / 90) * 2 * Math.PI;
-    let t = 0.5;
+    const along = (t: number) => level(cx + (R - t) * Math.cos(a), cy + (R - t) * Math.sin(a));
+    let [t, previous] = [0.5, along(0.5)];
     while (t < R * 0.3) {
-      const i = at(cx + (R - t) * Math.cos(a), cy + (R - t) * Math.sin(a));
-      if (Math.max(data[i], data[i + 1], data[i + 2]) > 60) break;
-      t += 0.5;
+      const next = along(t + step);
+      if (next > cutOff) {
+        // Where the profile crosses the cut-off between the two samples.
+        t += previous >= cutOff ? 0 : (step * (cutOff - previous)) / (next - previous);
+        break;
+      }
+      [t, previous] = [t + step, next];
     }
     rims.push(t);
   }
@@ -777,16 +828,21 @@ async function buildFaction(name: string, source: string, file: string): Promise
   for (let i = 0; i < reference.length; i++) reference[i] = bitmap.bitmap[i] < 128 ? 1 : 0;
   const score = overlap(reference, await svgMask(placed(bitmap.width, bitmap.height, UPSCALE, `<path d="${glyph}"/>`), 1, bitmap.width, bitmap.height));
   const render = await sharp(Buffer.from(placed(width, height, 1, svg.replace(/^<svg[^>]*>|<\/svg>\n$/g, '')))).ensureAlpha().raw().toBuffer();
-  let [diff, count] = [0, 0];
+  // Over the whole disc, and over the outer tenth alone, where a lost rim shows.
+  let [diff, count, edgeDiff, edgeCount] = [0, 0, 0, 0];
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      if (Math.hypot(x + 0.5 - cx, y + 0.5 - cy) >= R - 1) continue;
+      const dist = Math.hypot(x + 0.5 - cx, y + 0.5 - cy);
+      if (dist >= R - 1) continue;
       const i = (y * width + x) * 4;
-      diff += (Math.abs(data[i] - render[i]) + Math.abs(data[i + 1] - render[i + 1]) + Math.abs(data[i + 2] - render[i + 2])) / 3;
+      const d = (Math.abs(data[i] - render[i]) + Math.abs(data[i + 1] - render[i + 1]) + Math.abs(data[i + 2] - render[i + 2])) / 3;
+      diff += d;
       count++;
+      if (dist > 0.9 * R) [edgeDiff, edgeCount] = [edgeDiff + d, edgeCount + 1];
     }
   }
-  return { name, file, svg, source: picture, score, colour: diff / count, how: `traced, ${width}x${height} picture` };
+  const rim = `rim ${fmt(((R - inner) / R) * 100)}% of the radius (cut-off ${Math.round(cutOff)} between rim ${rimLevel} and disc ${discLevel}${discLevel - rimLevel < 20 ? ', hardly darker than the disc: check it' : ''})`;
+  return { name, file, svg, source: picture, score, colour: diff / count, edge: edgeDiff / edgeCount, how: `traced, ${width}x${height} picture, ${rim}` };
 }
 
 /** Every faction runemark picture: the warbands' icon.png and the Grand Alliances' <faction>-icon.png. */
@@ -802,11 +858,11 @@ function factionSources(): { name: string; source: string; file: string }[] {
 
 // ---------- contact sheets ----------
 
-async function contactSheet(built: Built[]): Promise<Buffer> {
-  const cell = 96;
+/** The source, the SVG on light and on dark for each icon; `crosshair` marks the viewBox centre on the SVGs. */
+async function contactSheet(built: Built[], crosshair = false, cell = 96): Promise<Buffer> {
   const tileW = cell * 3 + 40;
   const tileH = cell + 44;
-  const cols = 4;
+  const cols = Math.min(4, built.length);
   const rows = Math.ceil(built.length / cols);
   const composites: OverlayOptions[] = [];
   let marks = '';
@@ -824,6 +880,10 @@ async function contactSheet(built: Built[]): Promise<Buffer> {
       `<rect x="${x + 2 * cell + 20}" y="${y}" width="${cell}" height="${cell}" fill="#1a1a2e"/>` +
       `<text x="${x}" y="${y + cell + 18}" font-family="Arial" font-size="15" font-weight="bold" fill="${b.score < 0.98 ? '#c00' : '#000'}">${b.name}  ${(b.score * 100).toFixed(1)}%</text>` +
       `<text x="${x}" y="${y + cell + 34}" font-family="Arial" font-size="11" fill="#555">${warband ? `${warband}: ` : ''}${b.how}</text>`;
+    if (crosshair) {
+      const lines = `<svg xmlns="http://www.w3.org/2000/svg" width="${cell}" height="${cell}"><path d="M${cell / 2} 0V${cell}M0 ${cell / 2}H${cell}" stroke="#e33" stroke-width="1"/></svg>`;
+      composites.push({ input: Buffer.from(lines), left: x + cell + 10, top: y }, { input: Buffer.from(lines), left: x + 2 * cell + 20, top: y });
+    }
   }
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${cols * tileW + 10}" height="${rows * tileH + 10}"><rect width="100%" height="100%" fill="#fff"/>${marks}</svg>`;
   return sharp(Buffer.from(svg)).composite(composites).png().toBuffer();
@@ -845,7 +905,7 @@ async function factionSheet(built: Faction[]): Promise<Buffer> {
     composites.push({ input: source, left: x, top: y }, { input: svg, left: x + cell + 10, top: y });
     marks +=
       `<text x="${x}" y="${y + cell + 18}" font-family="Arial" font-size="13" font-weight="bold" fill="${b.score < 0.98 ? '#c00' : '#000'}">${b.name.slice(0, 24)}</text>` +
-      `<text x="${x}" y="${y + cell + 34}" font-family="Arial" font-size="11" fill="#555">glyph ${(b.score * 100).toFixed(1)}%, colour off by ${b.colour.toFixed(0)}</text>`;
+      `<text x="${x}" y="${y + cell + 34}" font-family="Arial" font-size="11" fill="${b.edge > EDGE_LIMIT ? '#c00' : '#555'}">glyph ${(b.score * 100).toFixed(1)}%, colour off ${b.colour.toFixed(0)}, edge ${b.edge.toFixed(0)}</text>`;
   }
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${cols * tileW + 10}" height="${rows * tileH + 10}"><rect width="100%" height="100%" fill="#fff"/>${marks}</svg>`;
   return sharp(Buffer.from(svg)).composite(composites).png().toBuffer();
@@ -869,13 +929,17 @@ async function main() {
     console.log(`  ${b.name.padEnd(18)} ${(b.score * 100).toFixed(1).padStart(6)}%  ${shown(b.file)}, ${b.how}${b.score < 0.98 ? '  <- under 98%' : ''}`);
   }
   writeFileSync(join(CACHE, 'contact-sheet.png'), await contactSheet(built));
+  // Flanked is centred on its dot like Surrounded: side by side, with the viewBox centre marked.
+  const pair = ['flanked', 'surrounded'].map((n) => built.find((b) => b.name === n && b.file.startsWith(OUT))!);
+  writeFileSync(join(CACHE, 'flanked-surrounded.png'), await contactSheet(pair, true, 160));
 
   const factions: Faction[] = [];
   for (const f of factionSources()) factions.push(await buildFaction(f.name, f.source, f.file));
-  console.log('\n  faction runemark                glyph  colour  file');
+  console.log('\n  faction runemark                glyph  colour  edge  file');
   for (const f of factions) {
     writeFileSync(f.file, f.svg);
-    console.log(`  ${f.name.padEnd(30)} ${(f.score * 100).toFixed(1).padStart(6)}%  ${f.colour.toFixed(0).padStart(5)}  ${shown(f.file)}${f.score < 0.98 ? '  <- under 98%' : ''}`);
+    const warn = [f.score < 0.98 ? 'glyph under 98%' : '', f.edge > EDGE_LIMIT ? `edge off by more than ${EDGE_LIMIT}: rim lost?` : ''].filter(Boolean).join(', ');
+    console.log(`  ${f.name.padEnd(30)} ${(f.score * 100).toFixed(1).padStart(6)}%  ${f.colour.toFixed(0).padStart(5)}  ${f.edge.toFixed(0).padStart(4)}  ${shown(f.file)}${warn ? `  <- ${warn}` : ''}`);
   }
   writeFileSync(join(CACHE, 'factions.png'), await factionSheet(factions));
 

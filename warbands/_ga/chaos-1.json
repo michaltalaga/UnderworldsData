@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Roots of Chaos",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after a friendly fighter Delves a feature token, give each enemy fighter within 2 hexes of that feature token/within 2 hexes of them a Stagger token."
     }

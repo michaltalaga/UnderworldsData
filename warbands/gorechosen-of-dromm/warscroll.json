@@ -7,13 +7,13 @@
   "reactions": [
     {
       "name": "The Blood Tithe",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Khorne cares not from whence the blood flows, only that it flows.",
       "rulesText": "Immediately after damage is inflicted on a fighter, gain 1 blood tithe token."
     },
     {
       "name": "Brutal Reckoning",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Dromm demands the complete and final obliteration of the enemy.",
       "rulesText": "Immediately after an enemy fighter is slain, gain a number of blood tithe tokens equal to that fighter's Bounty characteristic."
     }

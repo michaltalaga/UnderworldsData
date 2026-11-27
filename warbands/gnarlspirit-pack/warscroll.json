@@ -8,7 +8,7 @@
   "reactions": [
     {
       "name": "Spirit Tokens",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "Immediately after picking a friendly fighter to use a Core ability, you can remove that fighter's spirit tokens. Immediately after resolving a Core ability for a friendly fighter, you can give them a spirit token. Friendly fighters with any spirit tokens cannot be Inspired or hold treasure tokens.\n\nSarrakkar Unleashed: This fighter has +2 Move while they have any spirit tokens.\n\nGorl Unleashed: This fighter has +1 Save while they have any spirit tokens.\n\nKheira Unleashed: This fighter's melee weapons (excluding Upgrades) have +1 Attack dice while they have any spirit tokens.\n\nLupan Unleashed: Rolls of {icon:surrounded} count as successes in Attack rolls made for a friendly Lupan while they have any spirit tokens."
     }

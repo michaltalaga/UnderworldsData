@@ -14,7 +14,7 @@
     },
     {
       "name": "Spiketraps and Snares",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": "Skittershank and his minions know all sorts of ways to bleed and harry their target.",
       "rulesText": "Immediately after a friendly fighter's successful melee Attack, give the target a barb token.\n\nImmediately after an enemy fighter with any barb tokens Moves, inflict 1 damage on that fighter, then remove that fighter's barb tokens. Remove all barb tokens from enemy fighters at the end of the battle round."
     }

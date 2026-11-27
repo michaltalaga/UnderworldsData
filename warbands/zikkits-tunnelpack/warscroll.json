@@ -30,7 +30,7 @@
     },
     {
       "name": "Kaboom!",
-      "type": "passive",
+      "type": "action",
       "flavorText": "A rat with a bomb... simple, yet effective.",
       "rulesText": "Pick a friendly minion ({icon:minion}) with no Charge tokens to use this ability. That minion Moves. Then, roll a number of Attack dice equal to the battle round number for each fighter within 2 hexes of that minion. If the roll contains any {icon:hammer}, inflict 1 damage on that fighter. If the roll contains any {icon:crit}, inflict 2 damage on that fighter instead. Then, that minion is slain."
     }

@@ -7,7 +7,7 @@
   "reactions": [
     {
       "name": "Flood Tide",
-      "type": "passive",
+      "type": "reaction",
       "flavorText": null,
       "rulesText": "In the first battle round, immediately after an enemy fighter's melee Attack, give the attacker a Stagger token."
     },
